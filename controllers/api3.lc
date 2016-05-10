@@ -26,7 +26,7 @@ global gXML
 
 command api3
     
-	rigLogMessage "debug","API 3.2 Controller Loaded:"
+	rigLogMessage "debug","API 3.2 Controller Loading..."
 	# code...
 	set the errormode to "stderr"
 	rigLoadModel "get-book-data"
@@ -38,15 +38,11 @@ command api3
 	rigLoaderLoadLibrary  "arraytools"
 	--rigLoaderLoadLibrary  "fastjson"
 	rigLoaderLoadLibrary  "cms"
-	rigLoaderLoadLibrary "Email"
-	rigLogMessage "debug","API 3.1 Controller Loaded:" && rigFetchRSegment(2)
+	--rigLoaderLoadLibrary "Email" // source of hapman problems
+    
+	rigLogMessage "debug","API 3.2 Controller Loaded:" && rigFetchRSegment(2)
 	
-	if rigFetchRSegment(2) is empty then
-		rigLogMessage "error", "strange request incoming, abort"
-		
-		sendError "Request is not welformed"
-		quit
-	end if
+
 	
 	# The first thing to do is check the API assumptions.
 
