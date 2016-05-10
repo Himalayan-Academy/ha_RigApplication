@@ -8,6 +8,9 @@ if gBASEPATH is "gBASEPATH" then
     exit to top
 end if
 
+rigLogMessage "debug", "FastJSON Library Loaded"
+
+
 # DECLARE SCRIPT LOCAL VARIABLES
 
 local sOutputUTF8
@@ -503,3 +506,5 @@ function numTokens @pJson
 
    return sNumTokensJsonData
 end numTokens
+
+
