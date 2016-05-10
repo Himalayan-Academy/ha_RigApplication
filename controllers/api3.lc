@@ -41,6 +41,13 @@ command api3
 	rigLoaderLoadLibrary "Email"
 	rigLogMessage "debug","API 3.1 Controller Loaded:" && rigFetchRSegment(2)
 	
+	if rigFetchRSegment(2) is empty then
+		rigLogMessage "error", "strange request incoming, abort"
+		
+		sendError "Request is not welformed"
+		quit
+	end if
+	
 	# The first thing to do is check the API assumptions.
 
     put rigFetchRsegment(3) into gData["output format"]
