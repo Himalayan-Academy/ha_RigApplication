@@ -25,9 +25,10 @@ put ",getDataForPage,setDataForPage" after gControllerHandlers
 global gXML
 
 command api3
-         rigLogMessage "debug","API 3.2 Controller Loaded:"
+    
+	rigLogMessage "debug","API 3.2 Controller Loaded:"
 	# code...
-	set the errormode to "inline"
+	set the errormode to "stderr"
 	rigLoadModel "get-book-data"
 	rigLoaderLoadLibrary  "epub"
 	rigLoaderLoadLibrary  "audio"
