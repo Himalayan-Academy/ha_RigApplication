@@ -36,7 +36,7 @@ command api3
 	rigLoaderLoadLibrary  "app"
 	rigLoaderLoadLibrary  "slideshow"
 	rigLoaderLoadLibrary  "arraytools"
-	--rigLoaderLoadLibrary  "fastjson"
+	rigLoaderLoadLibrary  "fastjson"
 	rigLoaderLoadLibrary  "cms"
 	--rigLoaderLoadLibrary "Email" // source of hapman problems
     
@@ -114,15 +114,7 @@ command api3
 end api3
 
 command outputArray pA	
-	if gData["output format"] is "json" then
-	/*	
-		repeat for each key tK in pA
-			put quote & tK & quote & ":" && quote & pA[tK] & quote & "," after tRetVal
-		end repeat
-		delete char -1 of tRetVal
-		put "{"&tRetVal&"}"
-	*/
-    
+	if gData["output format"] is "json" then   
         rigLogMessage "debug", "responding with JSON"
         put the millisecs into tStart
 		put header "Content-Type: application/json; charset=utf-8"
