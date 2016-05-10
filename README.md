@@ -1,5 +1,5 @@
 # ha_RigApplication
-This repository is for the www.himalaynacademy.com web site.
+This repository is for the www.himalayanacademy.com web site.
 
 As a start we have checked out the existing site on dev.himalayanacademy.com in the revIgniter application folder whch can be found at the following path:
 
