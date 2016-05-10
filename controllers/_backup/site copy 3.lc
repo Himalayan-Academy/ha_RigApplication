@@ -1,0 +1,469 @@
+<?rev
+
+global gControllerHandlers, gData
+
+put "site,index,viewmedia,search,randomitem,reviews" into gControllerHandlers
+
+
+command site
+	# initialization...
+	
+	# Loading libraries
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "cms"
+	rigLoadLibrary "markdown"
+	rigLoadLibrary "audio"
+	rigLoadLibrary "art"
+	rigLoadLibrary "construct-audio-data" # Added by Brahmanathaswami 2012-07-13
+	rigLoadLibrary "epub" # Added by AAG 2012-08-15 for Monocle Support	
+		
+	# Loading helpers
+	rigLoadHelper "asset"
+	rigLoadHelper "file"
+	rigLoadHelper "array"
+	
+	# Loading plugins
+    rigLoadPlugin "galleria"
+    
+    # let's log what page is the user hits on   
+    rigLogMessage "Requested:", rigUriString()
+	rigOutputCache 0
+end site
+
+command index
+	
+end index
+
+command reviews
+	put rigFetchRsegment(3) into tFileID
+	rigLogMessage "debug", "loading reviews for" && tFileID
+	
+	put getRecord(tFileID) into gData["record"]
+	put getReviewsForFileID(tFileID) into tReviewsA
+	-- loop reviews
+	put the keys of tReviewsA into tKeys
+	sort numeric tKeys
+	repeat for each line k in tKeys
+		put tReviewsA[k] into gData["temp review"]
+		put mergeView("chunks/review-item") after gData["singleArticle"]
+	end repeat
+	-- load page
+	put "Reviews for" && gData["record"]["title"] into gData["pageTitle"] 
+	put getSetHeadNav("skinny",gData["pageTitle"] ,">Read &amp; Learn<", "cat-books") into gData["pageHeader"]
+	get rigLoadView("sitewide/two-column")
+end reviews
+
+
+
+
+command viewmedia
+	put rigFetchRsegment(3) into tFileID
+	rigLogMessage "debug", "loading" && tFileID
+	
+	put getRecord(tFileID) into gData["record"]
+	-- Get Related Content and Topics and Random Gurudeva image for all media types except books
+	put randomArrayElement(getRelatedContent(gData["record"]),4) into gData["related content"] # function in Utils.lc
+	put randomArrayElement(getRelatedTopics(gData["record"]),5) into gData["related topics"]
+	get getGurudevaCircleQuote()  # function 
+	
+	switch gData["record"]["media_type"]
+		case "text/book"
+		case "text/booklet" 
+			put "detail book" into sPageMetadataA["body_class"]
+			put "Publications" into gData["pageTitle"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Read &amp; Learn<","cat-books") into gData["pageHeader"]
+			put isThereAnEpubForFileID(gData["record"]["file_id"]) into gData["monocle"]["support"]
+			-- Disable monocle for Internet Explorer
+			if "MSIE" is in $_SERVER["HTTP_USER_AGENT"] then
+				put false into gData["monocle"]["support"]
+			end if
+			if gData["monocle"]["support"] is true then
+				put monocleGetBookDataObject(gData["record"]["file_id"]) into gData["monocle"]["book data object"]
+				put mergeView("cloudreader/small-reader.lc") into gData["monocle"]["support data"]
+			else
+				put mergeView("cloudreader/no-support.lc") into gData["monocle"]["support data"]
+			end if
+			-- Get review blurb
+			put (getReviewsForFileID(gData["record"]["file_id"])) into tReviewsA
+			put tReviewsA[1] into gData["review"]
+			put textcut(gData["review"]["sales_blurb"],40) into gData["review"]["sales_blurb"]
+			put "/media/books/"& gData["record"]["file_id"] & "/reviews/" &gData["review"]["file_id"] &"/"& gData["review"]["file_id"] & "_circle.png"  into gData["review"]["circle image"]
+			get rigLoadView("media/book-details", gData)
+		break
+		case "audio/chant" 
+			put "Chanting" into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			get rigLoadView("media/audio-details", gData)
+		break
+		case "audio/inspiredtalk"
+			put "Talks by Our Gurus" into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-talks-by-our-gurus") into gData["pageHeader"]
+			buildAudioDataDisplay # Added by Brahmanathaswami 2012-07-13
+			get rigLoadView("media/audio-details", gData)
+		break
+		case "audio/song"
+			put "Songs" into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			buildAudioDataDisplay # Added by Brahmanathaswami 2012-07-13
+			get rigLoadView("media/audio-details", gData)
+		break 
+		case "audio/podcasts" 
+		case "audio/instrumental"
+			put "Music" into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			get rigLoadView("media/audio-details", gData)
+		break
+		case "audio/shum" 
+			put empty into tStyle
+			put "Shum" into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			get rigLoadView("media/audio-details", gData)
+		break
+		case "app/mac" 
+		case "app/windows" 
+		case "app/iphone" 
+		case "app/ipad" 
+		case "app/android" 
+		case "app/linux" 
+		case "app/web" 
+		break
+		case "video/pubdesk" 
+		case "video/travel" 
+		case "video/teaching" 
+		case "video/ritual" 
+		case "video/building" 
+		case "video/talk" 
+		case "video/news"
+			put 979 into tW
+			put 550 into tH
+			if gData["record"]["framesize"] is not empty then
+				put the itemdel into tItemDel
+				set the itemdel to "x"
+				put item 1 of gData["record"]["framesize"] into tW
+				put item 2 of gData["record"]["framesize"] into tH
+				set the itemdel to tItemDel
+			end if
+			put empty into tStyle
+			put "Videos" into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put fileIDToYoutubeID(gData["record"]["file_id"]) into tVideoID
+			put format("<iframe width=\"%s\" height=\"%s\" src=\"http://www.youtube.com/embed/%s?rel=0\" frameborder=\"0\" %s allowfullscreen></iframe>", tW, tH, tVideoID, tStyle) into gData["video"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-videos") into gData["pageHeader"]
+			get rigLoadView("media/video-details", gData)
+		break 
+		case "external/page"
+			repeat for each key tK in gData["record"]["formats"]
+				if gData["record"]["formats"][tK]["url"] is not empty then
+					put gData["record"]["formats"][tK]["url"] into tURL
+					put header "Location: http://" & $_SERVER["SERVER_NAME"] & tURL
+					put header "Status: 301"
+					put "Loading..."
+					quit
+				end if
+			end repeat
+		break
+		case "art/photography" 
+		case "art/painting" 
+		case "art/drawing" 
+		case "art/vector"
+		  # BR: each type of art is in a different folder... 
+		  # We need this for the path on the art-details.lc page
+		        put the itemdel into tOldDelimiter
+		        set the itemDel to "/"
+		        put item 2 of gData["record"]["media_type"] into gData["artFolder"]
+		        set the itemDel to tOldDelimiter
+			put empty into tStyle
+			put "Art &amp; Photos" into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-art-photo-galleries") into gData["pageHeader"]
+			get rigLoadView("media/art-details", gData) 
+		break
+		case "slideshow/external" 
+			repeat for each key tK in gData["record"]["formats"]
+				if gData["record"]["formats"][tK]["url"] is not empty then
+					put gData["record"]["formats"][tK]["url"] into tURL
+					rigLogMessage "debug", "slideshow url:" &&  tURL
+					put header "Location: http://" & $_SERVER["SERVER_NAME"] & tURL
+					put header "Status: 301"
+					put "Loading..."
+					quit
+				end if
+			end repeat
+		break
+		case "slideshow/galleria" 
+				put "Slideshows" into gData["pageTitle"]
+			
+				put "detail art" into sPageMetadataA["body_class"]
+				put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-art-photo-galleries") into gData["pageHeader"]
+				
+# BR: June 11, 2012: Added code to get the frame size from the record and then  set the Galleria stage size accordingly.
+# Some slideshows are small size and we don't want them to default to 979 because they are res'd up and look bad
+				
+					put gData["record"]["framesize"] into frameSize
+					if (frameSize is empty) or (frameSize=0) then
+						put 979 into gData["record"]["width"]
+						put 600 into gData["record"]["height"]
+					else
+						put item 1 of frameSize into gData["record"]["width"]
+						put item 2 of frameSize into gData["record"]["height"]
+					end if
+				
+				put galleria(gData["record"]) into gData["slideshow_chunk"]
+				get rigLoadView("media/slideshow-details", gData)
+			break
+		case "slideshow/vr"
+		default
+	end switch
+			
+end viewmedia
+
+on search
+
+# BR: We leave the last param blank in the getSetHeadNav so that the CSS does not highlight any secondary navigation
+# because we are not actually on any landing page, we are just in "Look & Listen"  No need to highlight any secondary nav.
+# 
+
+	
+	put getSetHeadNav("catalog",gData["pageTitle"],">Look &amp; Listen<","") into gData["pageHeader"]
+	
+	if $_SERVER["REQUEST_METHOD"] is "GET" then
+		put rigRuriToAssoc(3) into tSearchTermsA
+	
+		put recordsForSearch(tSearchTermsA) into tRecordsA
+	end if
+	
+	if $_SERVER["REQUEST_METHOD"] is "POST"  and rigVarPost["query"] is not empty then
+		repeat for each key k in $_POST
+			put rigVarPost[k] into tSearchTermsA[k]
+		end repeat
+		-- fix to enable the use of some hard coded search terms on HTML forms.
+		if rigTotalRsegments() > 3 then
+			-- we have extra segments, add them to the search
+			put rigRuriToAssoc(3) into tExtraSearchTermsA
+			repeat for each key k in tExtraSearchTermsA
+				put tExtraSearchTermsA[k] into tSearchTermsA[k]
+			end repeat  
+		end if
+	
+		put recordsForSearch(tSearchTermsA) into tRecordsA
+	end if
+	
+	
+	
+	if the keys of tRecordsA is empty then
+		-- no search query causes no result page to show.
+		get rigLoadView("sitewide/search-results-notfound",gData)
+	else
+		
+		-- add pagination.
+		if tSearchTermsA["page"] is not empty then
+			put tSearchTermsA["page"] into tPage
+		else
+			put 1 into tPage
+		end if
+		
+		put tPage into gData["active page"]
+		
+		put tRecordsA["number of pages"] into gData["number of pages"]
+		if "/page" is not in rigVarServer("REQUEST_URI") then
+			put getSafeRequestURI() & "/page/" & (tPage+1) into gData["next page link"]
+			put getSafeRequestURI() & "/page/" & (tPage-1) into gData["previous page link"]
+		else
+			set the itemdel to "/"
+			put getSafeRequestURI() into tURL
+			put itemoffset("page", tURL) into z
+			put tPage+1 into item (z + 1) of tURL 
+			put tURL into gData["next page link"]
+			put tPage-1 into item (z + 1) of tURL
+			put tURL into gData["previous page link"]
+		end if
+		replace "//" with "/" in gData["next page link"]
+		replace "//" with "/" in gData["previous page link"]
+		-- end of pagination link routines 
+		
+		delete char -2 to -1 of gData["query string"]
+		put emitSearchResultForMediaCatalogPage(tRecordsA["records"]) into gData["search results"]
+		get rigLoadView("sitewide/search-results",gData)
+	end if
+end search
+
+on searchBackup
+	put getSetHeadNav("catalog",gData["pageTitle"],">Look &amp; Listen<","cat-art") into gData["pageHeader"]
+	
+	put rigRuriToAssoc(3) into tSearchTermsA
+	
+	# rigDbLimit 100
+	
+	if the keys of tSearchTermsA is empty then
+		-- no search query causes no result page to show.
+		get rigLoadView("sitewide/search-results-notfound",gData)
+	else
+		-- add sorting options as described in
+		-- http://wiki.hindu.org/sevatracker/index.php?do=details&task_id=632&project=24
+		if tSearchTermsA["sort"] is not empty then
+			switch tSearchTermsA["sort"]
+				case "time-descending"
+					rigDbOrderBy "date_entered", "DESC"
+				break
+				case "time-ascending"
+					rigDbOrderBy "date_entered"
+				break
+				case "alpha-descending"
+					rigDbOrderBy "title", "DESC"
+				break
+				case "alpha-ascending"
+					rigDbOrderBy "title"
+				break
+			end switch
+			delete variable tSearchTermsA["sort"]
+		end if
+		
+		-- add pagination.
+		if tSearchTermsA["page"] is not empty then
+			put tSearchTermsA["page"] into tPage
+			delete variable tSearchTermsA["page"]
+		else
+			put 1 into tPage
+		end if
+		
+		-- settings the number of results per page
+	
+		put 9 into tResultsPerPage
+		put (tPage - 1) *  tResultsPerPage into tOffset
+		
+		if tOffset <= 0 then
+			rigDbLimit tResultsPerPage
+		else
+			rigDbLimit tResultsPerPage, tOffset
+		end if
+		
+		put tPage into gData["active page"]
+		
+		
+		--rigDbSelect "file_id,title,description"
+		
+		# BR: 2012-08-27
+		# rigDbWhere "approved_for_public", "YES"
+		# The above does not work because 1000's of items have APPROVED as null
+		# Because we imported them programatically must use:
+		
+		 rigDbWhere "approved_for_public <>", "NO"
+		
+		repeat for each key tK in tSearchTermsA
+			put tK & ":" && tSearchTermsA[tK] &", " after gData["query string"]
+			rigLogMessage "debug", ("search" && tK && "=" && tSearchTermsA[tK])
+		 	rigDbWhere (tK && "LIKE"), ("%" & tSearchTermsA[tK] & "%")
+		end repeat
+		put rigDbGet("item") into tQ
+		rigLogMessage "debug", "number of results:" &&  tQ["numrows"]
+		repeat with x = 1 to tQ["numrows"]
+			put rigDbRow(x) into tA[x]
+		end repeat
+		
+		-- count all results for pagination...
+	# 	rigDbWhere "approved_for_public <>", "NO"
+# 		repeat for each key tK in tSearchTermsA
+# 			put tK & ":" && tSearchTermsA[tK] &", " after gData["query string"]
+# 			rigLogMessage "debug", ("search" && tK && "=" && tSearchTermsA[tK])
+# 			rigDbWhere (tK && "LIKE"), ("%" & tSearchTermsA[tK] & "%")
+# 		end repeat
+		
+		put rigDbCountAllResults("item") into tResultCount
+		put (tResultCount div tResultsPerPage) + 1 into gData["number of pages"]
+		
+		if "/page" is not in rigVarServer("REQUEST_URI") then
+			put rigVarServer("REQUEST_URI") & "/page/" & (tPage+1) into gData["next page link"]
+			put rigVarServer("REQUEST_URI") & "/page/" & (tPage-1) into gData["previous page link"]
+		else
+			set the itemdel to "/"
+			put rigVarServer("REQUEST_URI") into tURL
+			put itemoffset("page", tURL) into z
+			put tPage+1 into item (z + 1) of tURL 
+			put tURL into gData["next page link"]
+			put tPage-1 into item (z + 1) of tURL
+			put tURL into gData["previous page link"]
+		end if
+		replace "//" with "/" in gData["next page link"]
+		replace "//" with "/" in gData["previous page link"]
+		
+		if "?" is in gData["next page link"] then
+			put the itemdel into tItemDel
+			set the itemdel to "?"
+			put item 1 of gData["next page link"] into gData["next page link"]
+			set the itemdel to tItemDel
+		end if
+		
+		if "?" is in gData["previous page link"] then
+			put the itemdel into tItemDel
+			set the itemdel to "?"
+			put item 1 of gData["previous page link"] into gData["previous page link"]
+			set the itemdel to tItemDel
+		end if
+		
+		-- end of pagination link routines 
+		
+		delete char -2 to -1 of gData["query string"]
+		
+		put emitSearchResultForMediaCatalogPage(tA) into gData["search results"]
+		
+		get rigLoadView("sitewide/search-results",gData)
+	end if
+end searchBackup
+
+
+
+on randomitem
+	put rigRuriToAssoc(3) into tSearchTermsA
+	
+	put randomItemForSearch(tSearchTermsA) into tRecordA
+		
+	if the keys of tRecordsA is empty then
+		-- no search query causes no result page to show.
+		get rigLoadView("sitewide/search-results-notfound",gData)
+	else
+		put header "Status: 307"
+		put header "Location: /site/viewmedia/" & tRecordA["file_id"]
+		put "redirect"
+		quit
+	end if
+end randomitem
+
+function galleria pRecordA
+	put pRecordA["width"] into tWidth
+	put pRecordA["height"] into tHeight
+	rigLogMessage "debug", "slideshow dimensions:" &&  tWidth&","&tHeight
+	put pRecordA["file_id"] into tFileID
+ 	set the itemdel to "-"
+	put item 1 of pRecordA["date_created"] into tYear
+	put tWidth into tOptions["width"]
+	put tHeight into tOptions["height"]
+	put "'landscape'" into tOptions["imageCrop"]
+	put "false" into tOptions["thumbCrop"]
+	put "true" into tOptions["imagePan"]
+	put "100" into tOptions["transitionSpeed"] 
+	put "false" into tOptions["idleMode"] 
+	put tWidth into gData["width"]
+	put tHeight into gData["height"]
+	
+	put format("media/slideshows/%s/%s", tYear, tFileID) into tPath
+
+	if there is a file ("/home/devhap/public_html/" & tPath & "/galleriaData.js") then
+		delete file ("/home/devhap/public_html/" & tPath & "/galleriaData.js")
+	end if
+    put rigCssAsset("galleria.twelve.css") into gData["galleriaCSS"]
+    
+	put rigGalleriaData(tPath,tOptions,,,FALSE,TRUE) into gData["slideShow"]
+	put rigLoadView("media/galleria-chunk", TRUE) into tRetVal
+	return tRetVal
+end galleria
+
+
+
+--| END OF site.lc
+--| Location: ./system/application/controllers/site.lc
+----------------------------------------------------------------------

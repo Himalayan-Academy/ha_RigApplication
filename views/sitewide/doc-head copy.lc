@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			[[gData["pageTitle"] ]]
+		</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<meta name="author" content="Kauai's Hindu Monastery" />
+	<meta name="description" content="Description about Kauai's Hindu Monastery" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" /> 
+	<script type="text/javascript" src="http://use.typekit.com/jpt0led.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="http://dev.himalayanacademy.com/assets/css/style.css" type="text/css" media="screen, projection" />
+	<noscript><link rel="stylesheet" href="http://dev.himalayanacademy.com/assets/css/noscript.css" type="text/css" media="screen, projection" /></noscript>
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="http://dev.himalayanacademy.com/assets/css/ie9.css" />
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="http://dev.himalayanacademy.com/assets/css/ie8.css" />
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="http://dev.himalayanacademy.com/assets/css/ie7.css" />
+	<![endif]-->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> -->
+	<link rel="stylesheet" href="http://dev.himalayanacademy.com/assets/css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" media="screen, projection" />
+	
+	<script src="http://dev.himalayanacademy.com/assets/js/jquery-1.7.1.min.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/jquery.cycle.all.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/jquery.scroll.min.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/scripts.js"></script>
+	<script src="/assets/js/mejs/mediaelement-and-player.min.js"></script>
+	<link  href="/assets/js/mejs/mediaelementplayer.min.css" rel="Stylesheet" />
+	<link  href="/assets/js/mejs/mejs-skins.css" rel="Stylesheet" />
+	
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="http://dev.himalayanacademy.com/assets/js/selectivizr-min.js"></script>
+	<![endif]-->
+   [[ gData["galleriaCSS"] ]]	<!--will be null if slideshow is not instantiated on this page -->
+</head>
+
+[[ gData["pageHeader"] ]]
+
+
+
+
+	
+	

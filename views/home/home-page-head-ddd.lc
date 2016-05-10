@@ -1,0 +1,88 @@
+<body class="home">
+
+<!-- begin ddd banner block -->
+
+	<div id="ddd-banner-wrapper">
+	
+		<div id= "ddd-banner">
+		
+			<a href="https://donate.himalayanacademy.com/ddd/"  title="Go to Donation Site" ><img src="[[ gData["bannerPath"] ]]" /></a>
+
+		
+						<div id="banner-links">							
+				          <p> Goal: <span class="ddd-total ddd-progress-number">$70,000  </span>			
+					            <a href="https://donate.himalayanacademy.com/ddd/ddd-donor-list.lc">Raised So Far: </a> 
+					            <span class="ddd-total ddd-progress-number"><a href="https://donate.himalayanacademy.com/ddd/ddd-donor-list.lc" title="View Report">[[ gData["currentTotal"] ]]</a>
+							   </span>
+											&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="https://donate.himalayanacademy.com/ddd/ddd-bodhinatha-letter.shtml" title="Bodhinatha's Message" >Learn More</a>&nbsp;&bull;&nbsp;<a href="https://donate.himalayanacademy.com/ddd/"  title="Go to Donation Site" >Donate</a>
+							</p>		  
+						</div> <!-- end banner links -->
+			
+			</div> <!-- end ddd banner -->	
+ 	</div> <!-- end ddd banner wrapper -->
+	
+<!-- end ddd banner block -->
+<div class="page-container">
+	<aside class="pulldown" role="complementary"> 
+	<div class="pulldown-content">
+		<ul>
+			<li><a href="/monastery">Kauai's Hindu Monastery</a></li>
+			<li><a href="http://www.hinduismtoday.com">Hinduism Today</a></li>
+			<li><a href="http://www.hheonline.org">Hindu Heritage Endowment</a></li>
+			<li><a href="http://www.minimela.com">Minimela Store</a></li>
+		</ul>
+	</div>
+	</aside> 
+<!-- end header pulldown -->
+
+
+	<header class="page-header"> 
+		
+		<div class="inner-wrapper">
+			<a class="logo" href="/monastery">
+			<h2>
+				Kauai's Hindu Monastery
+			</h2></a>
+		<h3 class="tagline">{where hinduism meets the future}</h3>
+	<!-- Start Global Navigation -->		
+		<? 
+			put rigLoadView("sitewide/global-navigation", TRUE) into tGlobalNav 
+			return tGlobalNav 
+		?>
+	<!-- end global nav -->
+<!-- note that the area heading follows the currently active navigation. So there
+			must be a away to programmatically set the active class as well as pass the header -->
+			
+		<form class="form-search" method="post" action="/site/gsearch">
+			<input type="text" id="search-query" name="query" value="search this site" />
+			<input type="submit" value="search" name="submit" title="search" />
+		</form>
+			<script type="text/javascript">
+			$(".form-search").submit(function(){
+			var tQuery = $("#search-query").val();
+			window.location = "/site/gsearch/?q=" + encodeURIComponent(tQuery);
+			return false;
+			})
+		</script>
+
+			<section class="slideshow hero" role="region">
+				
+				<ul class="slidecontrol-nextprev">
+					<li class="arrow-prev"><a href="#">Previous Slide</a></li>
+					<li class="arrow-next"><a href="#">Next Slide</a></li>
+				</ul>
+				
+				<div class="slides hero-slides">
+			
+					<? return emitHeroImagesModule(gData["modules"]["Hero Images Module"]) ?>
+			
+				</div>
+			
+			</section> <!-- end slideshow -->
+						
+		</div> <!-- end header content inner-wrapper -->
+	
+	</header> <!-- end page header -->
+	
+	

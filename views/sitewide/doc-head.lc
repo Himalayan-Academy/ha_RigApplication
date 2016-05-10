@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>
+			[[gData["pageTitle"] ]]
+		</title> 
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<meta name="author" content="Kauai's Hindu Monastery" />
+	<meta name="description" content="A Hindu monastery-temple complex in Hawaii of the Tamil Saivite tradition, home to two dozen monks, pilgrimage destination for sincere devotees, highly respected producer of contemporary, world-class, Hindu religious publications" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" /> 
+	<script type="text/javascript" src="https://use.typekit.com/jpt0led.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<? return rigCssAsset("style.css") ?>
+	<!-- <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="screen, projection" /> -->
+	<noscript><link rel="stylesheet" href="/assets/css/noscript.css" type="text/css" media="screen, projection" /></noscript>
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/ie9.css" />
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/ie8.css" />
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/ie7.css" />
+	<![endif]-->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/ddd-banner.css" type="text/css" media="screen, projection" />
+	<script type="text/javascript" src="/assets/js/jquery.js"></script>
+	<script src="/assets/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script src="/assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script src="/assets/js/jquery.cycle.all.js"></script>
+	<script src="/assets/js/jquery.scroll.min.js"></script>
+    <script src="/assets/js/tinynav.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<!--[if lt IE 9]>
+	  <script type="text/javascript" src="/assets/js/lightview/js/excanvas/excanvas.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="/assets/js/lightview/js/spinners/spinners.min.js"></script>
+	<script type="text/javascript" src="/assets/js/lightview/js/lightview/lightview.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/js/lightview/css/lightview/lightview.css" />
+    <script src="/assets/js/scripts.js"></script>
+	<script src="/assets/js/mejs/mediaelement-and-player.min.js"></script>
+	<link  href="/assets/js/mejs/mediaelementplayer.min.css" rel="Stylesheet" />
+	<link  href="/assets/js/mejs/mejs-skins.css" rel="Stylesheet" />
+	<script type="text/javascript" src="/assets/js/galleria/galleria.js"> </script>
+	<script type="text/javascript" src="/assets/js/galleria/themes/twelve/galleria.twelve.min.js"> </script>
+	<link rel="stylesheet" type="text/css" href= "/assets/js/galleria/themes/twelve/galleria.twelve.css" />
+	<script>
+Galleria.ready(function() {
+	this.addElement('barbac');
+	this.appendChild('bar','barbac');
+	this.appendChild('stage','info-text');
+	// AAG: Trying  to lazy load...
+	this.lazyLoadChunks( 10 );
+});
+</script>
+
+	
+	<?
+	if gData["base url"] is not empty then
+	  return format("<base href=\"%s\" />", gData["base url"])
+	else
+	  return empty
+	end if
+	?>
+	
+    <script>
+  $(function () {
+    $(".nav-global .nav-parent").tinyNav();
+  });
+</script>
+			
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="http://dev.himalayanacademy.com/assets/js/selectivizr-min.js"></script>
+	<![endif]-->
+   [[ gData["galleriaCSS"] ]]	<!--will be null if slideshow is not instantiated on this page -->
+<!-- start Google Analytics tracking code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+   '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-1029288-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- end Google Analytics tracking code -->
+
+
+
+<meta name="google-translate-customization" content="5820da4efc9d8706-bb68a23ebef6a846-g77aeeb49546b0e4f-18"></meta>
+</head>
+
+[[ gData["pageHeader"] ]]

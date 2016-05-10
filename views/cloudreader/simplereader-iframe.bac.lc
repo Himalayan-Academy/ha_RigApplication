@@ -1,0 +1,19 @@
+<style type="text/css">
+.simplereader {
+	width: 100%;
+	height: auto;
+}
+</style>
+<script src="/assets/js/lexicon.js"></script>
+<iframe id="reader" class="simplereader" src="[[ gData["book"]["src"] ]]"></iframe>
+<div class="simplereader-navigation">
+<span><a href="[[ gData["book"]["previous page"] ]]">Previous</a></span> | 
+<span><a href="[[ gData["book"]["next page"] ]]">Next</a></span>
+
+</div>
+<script>
+
+     $('.simplereader').contents().find('body').css({"min-height": "100", "overflow" : "hidden"});
+	setInterval( "$('.simplereader').height($('.simplereader').contents().find('body').height() + 100)", 1 );
+	bindLexiconToID("#reader");
+    </script>

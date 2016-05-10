@@ -1,0 +1,64 @@
+	<div id="main-content">
+	
+	<div class="slideshow">
+		<br /><br /><br />
+		<h2 style="text-align:center;"> Slideshow:  captions inside (click the "i" icon); self-contained option, allows for full width visual. (click image to go full screen)</h2> 
+		
+		<br /><br />
+		
+		[[gData["slideShow"] ]]</div> 
+	
+	<hr />	
+	
+	<div id="google-test-links">
+	<p><br /><br /><br /><br /><br /><br /><a href="http://dev.himalayanacademy.com/book/gurudeva-spiritual-visions">Read Gurudeva's Spiritual Visions  on the Web Now!</a><br /><br />
+	<a href="http://dev.himalayanacademy.com/book/dancing-with-siva">Read Dancing with Siva on the Web Now!</a><br /><br /></p>
+	</div> <!-- end google-test-links -->
+
+
+		<div id="latest-taka-post">
+		<p><br /><br /><br /></p>
+		<h1 style="text-align:center;">Andre: insert your gData(latestTaka) here. Last 5 posts from TAKA</h1>
+		<?
+		 put takaGetRecentPosts(5) into tA
+		 repeat with x = 1 to the number of lines in the keys of tA
+			put "<div><p>" after tBuf
+			put tA[x]["description"] after tBuf
+			put "<hr/>" after tBuf
+			replace format("src=\"/") with format("src=\"http://himalayanacademy.com/") in tBuf
+			put "</p></div>" after tBuf
+			
+		end repeat
+		return tBuf
+		?>
+		<br /><br />
+		<br /><br />
+		<br /><br />
+		<br /><br />
+		<br /><br />
+		<br /><br />
+		<br /><br /><br />
+		
+		</div><!-- end latest-taka-post -->
+	<hr />	
+		
+
+<div class="static-content">
+
+<!-- Sandbox-test Section for Static content 
+# for html content that is not coming from the database
+# we will have to decide how to insert this later
+# if we hard code this into the view then it goes sitewide
+# we can't do (obviously) that so probably we want to use something
+# like gData[staticContent]
+# then we can insert other views... those "other views"
+# will need to be organized on disk as html or .irev files
+# but on the top level of the web site and not in "views" because they become assets like anything else, only static content assets
+# it will need to also easily available for editing.
+# for now I create a top level folder "public-html/static-html/"
+#  We can talk about this later...for now I just want to poke in some content for viewing.
+-->
+[[gData["staticHMTL1"] ]]
+		
+	</div><!-- end static-content -->
+	</div> <!-- end main-content -->

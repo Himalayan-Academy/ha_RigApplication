@@ -1,0 +1,1665 @@
+<?rev
+put gBASEPATH into gBASEPATH
+
+if gBASEPATH is "gBASEPATH" then
+    put "No direct script access allowed."
+    exit to top
+end if
+
+global gData  -- global used by RevIgniter
+global sXML -- XML Document ID for a given XML Data File
+global sXA -- Temporary data array
+
+/*
+
+CMS Library
+
+Author: Andre Alves Garzia (andre@andregarzia.com)
+30/01/12
+
+License: BSD 
+
+============
+ Objective
+============
+
+This library contains auxiliary functions that are used by the controllers to build the website.
+It is used mainly to parse our data XML files and generate multi-level content arrays that are used by
+the templates to render content.
+
+=======================
+ Important Information
+=======================
+
+The main entry point for this library is the function called cmsParseXMLDataFile(). This is the function that picks
+and XML file and launches the cascading processes that parses it and generates the arrays.
+
+Our XML Files contain module nodes at root level. Each module node must be extracted and converted to an array. There are
+functions that begin with the word "extract" that will do this task for a given module type. For example, the function that
+extracts the "Featured Item" module is called extractFeaturedItemModule().
+
+There are other functions that begin with the word "emit" and they are responsible for generating HTML chunks for a given media type.
+For example, when we want to embed a youtube video on a page, we use the emitYoutubeVideo() function. These emitters are usually called
+by the "extract" functions to assemble the needed chunks.
+
+*/
+
+
+# LOGGING
+rigLogMessage "debug", "CMS Library Loaded"
+rigLoadLibrary "aagdblib"
+rigLoadLibrary "lexiconaux"
+
+# DECLARE LOCAL VARIABLES
+local sCMSDataFolder
+put $_SERVER["DOCUMENT_ROOT"] & "/html" into sCMSDataFolder
+
+
+## Controller initialization
+command rigRunInitialCMSConfig
+	rigLoaderLoadLibrary "markdown"
+	rigLoaderLoadLibrary "arraytools"
+	rigLoaderLoadLibrary "utils"
+	rigLoaderLoadLibrary "audio"
+	rigLoaderLoadLibrary "pagemetadata"
+	rigLoaderLoadLibrary "lexiconaux"
+	rigLogMessage "debug","Libraries Loaded"
+	
+		
+	set the randomSeed to the seconds -- this is needed for the random links to be trully random.
+end rigRunInitialCMSConfig
+
+## Just a getter for the datafolder
+function cmsDataFolder
+	return sCMSDataFolder
+end cmsDataFolder
+
+
+/*
+Returns the file type of a given file.
+
+It is used by cmsFile() to decide how to process a given data file
+*/
+function cmsFileType pFile
+	set the itemdel to "."
+	
+	put item -1 of pFile into tExtension
+	
+	switch tExtension
+		case "html"
+			return "HTML file"
+		break
+		case "xhtml"
+			return "XHTML file"
+		break
+		case "xml"
+			return "XML file"
+		break
+		case "md"
+			return "Markdown file"
+		break
+		default
+		return (toUpper(tExtension) && "file")
+	end switch
+end cmsFileType
+
+/*
+Returns the content for a given data file.
+
+ Important
+===========
+
+It will process markdown type files before returning the content
+*/
+function cmsFile pFile
+	if there is not a file (sCMSDataFolder & pFile) then
+		rigLogMessage "error","CMS file not found:" && pFile
+		return empty
+	end if
+	
+	put sCMSDataFolder & pFile into tFilePath
+	
+	switch cmsFileType(pFile)
+		case "Markdown file"
+			return markdown(tFilePath)
+		break
+		default
+		return url ("binfile:" & tFilePath)
+	end switch
+end cmsFile
+
+function extractSecondaryContentModule pNode
+	/*
+	This function extracts a "Secondary Content Images" module node and return an structured array
+	with the data needed to output that item.
+	
+	Our promoted collections are usually composed of three collections. The example below is showing just two.
+	
+	
+	==========================================
+	  Example of Secondary Content Module
+	==========================================
+	
+	<module name="Secondary Content Module">
+		<header>Our Guru Lineage</header>
+		<image>/assets/img/FPO/img-guru-home.jpg</image>
+		<title>Satguru Sivaya Subramuniyaswami</title>
+		<description>Once in a while on this Earth there arises a soul who, by living his tradition rightly and wholly, perfects his path and becomes a light to the world. Satguru Sivaya Subramuniyaswami was such a being, a living example of awakening and wisdom, a leader recognized worldwide as one of Hinduism's foremost ministers.</description>
+		<cta type="link" url="/monastery/satgurus">continue reading</cta>
+	</module>
+	
+	*/
+	
+	put revXMLNodeContents(sXML, (pNode & "/header")) into tRetValA["header"]
+	put revXMLNodeContents(sXML, (pNode & "/title")) into tRetValA["title"]
+	put revXMLNodeContents(sXML, (pNode & "/image")) into tRetValA["image"]
+	put revXMLNodeContents(sXML, (pNode & "/cta")) into tRetValA["cta"]
+	put revXMLNodeContents(sXML, (pNode & "/description")) into tRetValA["description"]
+	put revXMLAttribute(sXML, (pNode & "/cta"), "url") into tRetValA["cta_link"]	
+	return tRetValA
+end extractSecondaryContentModule
+
+function extractHeroImagesModule pNode
+	/*
+	This function extracts a "Hero Images" module node and return an structured array
+	with the data needed to output that item.	
+	
+	==========================================
+	  Example of Hero Images Module
+	==========================================
+	
+	<module name="Hero Images Module">
+		<hero>
+			<image>/html/home/img/heros/hero_art-photo_04-Tatpurusha-3000w.jpg</image>
+			<title>Priests Meet in Chennai</title>
+			<subtitle>Scriptures</subtitle>
+			<cta icon="watch" url="">Watch the Video</cta>
+		</hero>
+		<hero>
+			<image>/html/home/img/heros/hero_audio_GR-Dedication.jpg</image>
+			<title>Monthly Chitra Puja</title>
+			<subtitle>Worship</subtitle>
+			<cta icon="watch" url="">Watch the Video</cta>
+		</hero>
+	</module>
+	
+	*/
+	
+	put revXMLNumberOfChildren(sXML, pNode,"hero",1) into tNumberOfHeroes
+	repeat with c = 1 to tNumberOfHeroes
+		put pNode & "/hero["&c&"]" into tHeroNode
+		put revXMLNodeContents(sXML, (tHeroNode & "/title")) into tRetValA["heroes"][c]["title"]
+		put revXMLNodeContents(sXML, (tHeroNode & "/subtitle")) into tRetValA["heroes"][c]["subtitle"]
+		put revXMLNodeContents(sXML, (tHeroNode & "/image")) into tRetValA["heroes"][c]["image"]
+		put revXMLNodeContents(sXML, (tHeroNode & "/cta")) into tRetValA["heroes"][c]["cta"]
+		put revXMLAttribute(sXML, (tHeroNode & "/cta"), "url") into tRetValA["heroes"][c]["cta_link"]	
+		put revXMLAttribute(sXML, (tHeroNode & "/cta"), "icon") into tRetValA["heroes"][c]["cta_class"]	
+	end repeat
+	return tRetValA
+end extractHeroImagesModule
+
+function emitHeroImagesModule pA
+	/*
+	This function is an emitter that will generate the figure nodes for the hero image slideshow used
+	by the home page.
+	
+	It uses a chunk view located at /views/chunks/hero-images-figure.lc as a template for the figure node.
+	
+	This function is called from the template for the home page.
+	*/
+	repeat with x = 1 to the number of lines in the keys of pA["heroes"]
+		put pA["heroes"][x] into gData["temporary"]["hero"]
+		put mergeView("chunks/hero-images-figure") after tBuf
+	end repeat
+	delete variable gData["temporary"]
+	return tBuf
+end emitHeroImagesModule
+
+function extractSidebarModule pNode
+	/*
+	This function extracts a "Sidebar Images" module node and return an structured array
+	with the data needed to output that item.	
+	
+	==========================================
+	  Example of Sidebar Module
+	==========================================
+	
+	<module name="Sidebar Module">
+		<title>Our Publications</title>
+		<item>
+			<image>/assets/img/FPO/img-books-1.jpg</image>
+			<title>Dancing With Siva</title>
+			<subtitle>Hinduism's Contemporary Catechism</subtitle>
+			<cta url="/view/dancing-with-siva">Read Online</cta>
+		</item>
+		<item>
+			<image>/assets/img/FPO/img-books-2.jpg</image>
+			<title>The Guru Chronicles</title>
+			<subtitle>The Makings of the First American Satguru</subtitle>
+			<cta url="/view/the-guru-chronicles">Read Online</cta>
+		</item>
+		<item>
+			<image>/assets/img/FPO/img-books-2.jpg</image>
+			<title>The Guru Chronicles</title>
+			<subtitle>The Makings of the First American Satguru</subtitle>
+			<cta url="/view/the-guru-chronicles">Read Online</cta>
+		</item>
+			
+	</module>
+	
+	*/
+	
+	put revXMLNumberOfChildren(sXML, pNode,"item",1) into tNumberOfItems
+	put revXMLNodeContents(sXML, (pNode & "/title")) into tRetValA["title"]
+	
+	repeat with c = 1 to tNumberOfItems
+		put pNode & "/item["&c&"]" into tItemNode
+		put revXMLNodeContents(sXML, (tItemNode & "/title")) into tRetValA["items"][c]["title"]
+		put revXMLNodeContents(sXML, (tItemNode & "/subtitle")) into tRetValA["items"][c]["subtitle"]
+		put revXMLNodeContents(sXML, (tItemNode & "/image")) into tRetValA["items"][c]["image"]
+		put revXMLNodeContents(sXML, (tItemNode & "/cta")) into tRetValA["items"][c]["cta"]
+		put revXMLAttribute(sXML, (tItemNode & "/cta"), "url") into tRetValA["items"][c]["cta_link"]	
+	end repeat
+	return tRetValA
+end extractSidebarModule
+
+function emitSidebarModuleItems pA
+	/*
+	This function is an emitter that will generate the item nodes for the sidebar used
+	by the home page.
+	
+	It uses a chunk view located at /views/chunks/sidebar-item.lc as a template for the figure node.
+	
+	This function is called from the template for the home page.
+	*/
+	repeat with x = 1 to the number of lines in the keys of pA["items"]
+		put pA["items"][x] into gData["temporary"]["item"]
+		put mergeView("chunks/sidebar-item") after tBuf
+	end repeat
+	delete variable gData["temporary"]
+	return tBuf
+end emitSidebarModuleItems
+
+
+function extractPromotedCollectionsModule pNode
+	/*
+	This function extracts a "Promoted Collections" module or "Links" module node and return an structured array
+	with the data needed to output that item.
+	
+	Our promoted collections are usually composed of three collections. The example below is showing just two.
+	
+	Both Links and Promoted Collections are handled by this function, they have the same data file representation but they are 
+	rendered differently by our templates.
+	
+	An annotated representation of the rendering of a Promoted Collection can be seen at:
+	
+	http://dev.himalayanacademy.com/andre/s/promoted_collections_module.png
+	
+	An annotated example of the rendering of a links module can be seen at:
+	
+	http://dev.himalayanacademy.com/andre/s/links_module.png
+	
+	==========================================
+	  Example of Promoted Collections Module
+	==========================================
+	
+	<module name="Promoted Collections Module">
+		<title>Resources</title>
+		<collection>
+			<title>Hinduism at a Glance </title>
+			<thumbnail>/html/img/circles/iraivan-from-road-circle.png</thumbnail>
+			<links>
+				<link url="/view/what-is-hinduism">What is Hinduism?</link>
+				<link url="/view/four-sects">Hinduism's Four Sects</link>
+				<link url="/readlearn/basics/fourteen-questions">Fourteen Questions</link>
+			</links>
+			<cta></cta>
+		</collection>
+		<collection>
+			<title>Books</title>
+			<thumbnail>/html/img/circles/books-circle.png</thumbnail>
+			<links>
+				<link url="/site/search/media_type/book/tags/trilogy">The Master Course Trilogy</link>
+				<link url="/view/loving-ganesha">Loving Ganesha</link>
+				<link url="/view/how-to-become-a-hindu">How to Become a Hindu</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/book">View All</cta>
+		</collection>
+	</module>
+	
+	*/
+	
+	# Pick module title
+	put revXMLNodeContents(sXML, (pNode & "/title")) into tRetValA["title"]
+	put revXMLAttribute(sXML, (pNode & "/title"), "class") into tRetValA["class"]
+	
+	# Loop collections
+	put revXMLNumberOfChildren(sXML, pNode,"collection",1) into tNumberOfCollections
+	repeat with c = 1 to tNumberOfCollections
+		put pNode & "/collection["&c&"]" into tCollectionNode
+		put revXMLNodeContents(sXML, (tCollectionNode & "/title")) into tRetValA["collections"][c]["title"]
+		put revXMLNodeContents(sXML, (tCollectionNode & "/thumbnail")) into tRetValA["collections"][c]["thumbnail"]
+		put revXMLNodeContents(sXML, (tCollectionNode & "/cta")) into tRetValA["collections"][c]["cta"]
+		put revXMLAttribute(sXML, (tCollectionNode & "/cta"), "url") into tRetValA["collections"][c]["cta_link"]
+		if "xmlerr" is in tRetValA["collections"][c]["cta_link"] then
+			put "#" into tRetValA["collections"][c]["cta_link"]
+		end if
+		if "#" is in tRetValA["collections"][c]["cta_link"] then
+			get revXMLAttribute(sXML, (pNode & "/cta"), "file_id")
+			if "xmlerr" is not in it then
+				put "/view/" & it into tRetValA["collections"][c]["cta_link"]
+			end if
+		end if
+		
+		if "xmlerr" is in tRetValA["collections"][c]["cta"] then
+			put empty into tRetValA["collections"][c]["cta"]
+			put empty into tRetValA["collections"][c]["cta_link"]
+		end if
+		
+		# Extract links.
+		put revXMLNumberOfChildren(sXML, (tCollectionNode & "/links"),"link",1) into tNumberOfLinks
+		repeat with l = 1 to tNumberOfLinks
+			put revXMLNodeContents(sXML, (tCollectionNode & "/links/link["&l&"]")) into tRetValA["collections"][c]["links"][l]["title"]
+			put revXMLAttribute(sXML, (tCollectionNode & "/links/link["&l&"]"), "url") into tRetValA["collections"][c]["links"][l]["url"]
+			# Look for random item
+			if "xmlerr" is not in revXMLAttribute(sXML, (tCollectionNode & "/links/link["&l&"]"), "random") then
+				-- if there is a random attribute then...
+				put revXMLAttribute(sXML, (tCollectionNode & "/links/link["&l&"]"), "random") into tSearchTermsA
+				rigLogMessage "debug", "Random Promoted Collection!" && tSearchTermsA
+				replace space with empty in tSearchTermsA
+				split tSearchTermsA by comma and ":"
+				put randomItemForSearch(tSearchTermsA) into tRecordA
+				put tRecordA["title"] into  tRetValA["collections"][c]["links"][l]["title"]
+				put "/view/" & tRecordA["file_id"] into tRetValA["collections"][c]["links"][l]["url"]
+			end if
+			if "xmlerr" is not in revXMLAttribute(sXML, (tCollectionNode & "/links/link["&l&"]"), "latest") then
+				-- if there is a latest attribute then...
+				put revXMLAttribute(sXML, (tCollectionNode & "/links/link["&l&"]"), "latest") into tSearchTermsA
+				rigLogMessage "debug", "Random Promoted Collection!" && tSearchTermsA
+				replace space with empty in tSearchTermsA
+				split tSearchTermsA by comma and ":"
+				put "time-descending" into tSearchTermsA["sort"]
+				if tSearchTermsA["pick"] is not a number then
+					put 1 into tSearchTermsA["pick"]
+				end if
+				put tSearchTermsA["pick"] into tPick
+				delete variable tSearchTermsA["pick"]
+				put recordsForSearch(tSearchTermsA) into tRecordsA
+				put tRecordsA["records"][tPick] into tRecordA
+				put tRecordA["title"] into  tRetValA["collections"][c]["links"][l]["title"]
+				put "/view/" & tRecordA["file_id"] into tRetValA["collections"][c]["links"][l]["url"]
+			end if
+		end repeat
+	end repeat
+	return tRetValA
+end extractPromotedCollectionsModule
+
+function extractFeaturedItemModule pNode
+	/*
+	This function extracts a "Featured Item" module node and return an structured array
+	with the data needed to output that item.
+	
+	This module is present on our landing pages and its display is governed by the view file called
+	landing.lc
+	
+	An annotated example of the rendering of a featured item module can be seen at:
+	
+	http://dev.himalayanacademy.com/andre/s/featured_item_module.png
+	
+	===================================
+	  Example of Featured Item Module
+	===================================
+	
+	<module name="Featured Item Module">
+		<media  width="296" height="384" file_id="hinduism-today-current-issue" style="float: left;" />
+		<cta type="link" url="http://www.hinduismtoday.com">Go to the Hinduism Today Web site</cta>
+	</module>
+	
+	*/
+	
+	##
+	## Picking the media node.
+	##
+	put xmlAttributesToArray(sXML, (pNode & "/media")) into tMediaNodeA
+	switch
+	case tMediaNodeA["file_id"] is not empty
+		rigLogMessage "debug", "file_id ===" && tMediaNodeA["file_id"]
+		put tMediaNodeA["file_id"] into tFileID
+		put byline(getRecord(tFileID)) into tRetValA["author"]
+		#SKTS: Get title and description
+		put getRecord(tFileID) into tRecordA
+		put tRecordA into gData["record"]
+		put tRecordA["file_id"] into tRetValA["file_id"]
+		switch
+			case "audio" is in tRecordA["media_type"]
+				put "audio" into tRetValA["media_type"]
+				put emitAudio(empty, tMediaNodeA) into tRetValA["media"]
+			break
+			case "video" is in tRecordA["media_type"]
+				put "video" into tRetValA["media_type"]
+				put emitYoutubeVideo(tMediaNodeA["width"], tMediaNodeA["height"], fileIDToYoutubeID(tFileID), tMediaNodeA["style"]) into tRetValA["media"]
+			break
+			case "galleria" is in tRecordA["media_type"]
+				# put "galleria" into tRetValA["media_type"]
+				put "slideshow" into tRetValA["media_type"] # Needed to display the right 
+				put emitGalleria(empty, tMediaNodeA) into tRetValA["media"]
+			break
+			case "text" is in tRecordA["media_type"]
+				put "book" into tRetValA["media_type"]
+				put emitBook(tRecordA) into tRetValA["media"]
+			break
+		end switch
+		
+		put tRecordA["title"] into tRetValA["title"]
+		put textcut( tRecordA["description"],tRecordA["media_type"],tRecordA["file_id"])  into tRetValA["description"]
+	break
+	
+	## In case it is random media
+	case tMediaNodeA["type"] is "random"
+		put tMediaNodeA["search"] into tSearchTermsA
+		rigLogMessage "debug", "random search ===" && tSearchTermsA
+		replace space with empty in tSearchTermsA
+		split tSearchTermsA by comma and ":"
+		repeat for each key tK in tSearchTermsA
+			rigLogMessage "debug", tK && "===" && tSearchTermsA[tK]
+		end repeat
+		put randomItemForSearch(tSearchTermsA) into tRecordA
+		if the keys of tRecordA is empty then
+			rigLogMessage "debug", "search returned no result"
+		end if
+		put tRecordA["file_id"] into tFileID
+		put byline(tRecordA) into tRetValA["author"]
+		put tRecordA["file_id"] into tRetValA["file_id"]
+		put tRecordA["media_type"] into tRetValA["media_type"]
+		put tRecordA["title"] into tRetValA["title"]
+		put textcut(tRecordA["description"],tRecordA["media_type"],tRecordA["file_id"]) into tRetValA["description"]
+		switch
+			case "video" is in tRecordA["media_type"]
+				put emitYoutubeVideo(tMediaNodeA["width"], tMediaNodeA["height"], fileIDToYoutubeID(tFileID), tMediaNodeA["style"]) into tRetValA["media"]
+			break
+			case "galleria" is in tRecordA["media_type"]
+				put tMediaNodeA["width"] into tRecordA["width"]
+				put tMediaNodeA["height"] into tRecordA["height"]
+				put tMediaNodeA["style"] into tRecordA["style"]
+				put emitGalleria(empty,tRecordA) into tRetValA["media"]
+			break
+			case "audio" is in tRecordA["media_type"]
+				put tMediaNodeA["width"] into tRecordA["width"]
+				put tMediaNodeA["height"] into tRecordA["height"]
+				put tMediaNodeA["style"] into tRecordA["style"]
+				put emitAudio(empty, tRecordA) into tRetValA["media"]
+			break
+			case "text" is in tRecordA["media_type"]
+				put tMediaNodeA["width"] into tRecordA["width"]
+				put tMediaNodeA["height"] into tRecordA["height"]
+				put tMediaNodeA["style"] into tRecordA["style"]
+				put emitBook(tRecordA) into tRetValA["media"]
+			break
+		end switch
+	break
+	## In case it is latest media
+	case tMediaNodeA["type"] is "latest"
+		put tMediaNodeA["search"] into tSearchTermsA
+		rigLogMessage "debug", "latest search ===" && tSearchTermsA
+		replace space with empty in tSearchTermsA
+		split tSearchTermsA by comma and ":"
+		repeat for each key tK in tSearchTermsA
+			rigLogMessage "debug", tK && "===" && tSearchTermsA[tK]
+		end repeat
+		put "time-descending" into tSearchTermsA["sort"]
+		put recordsForSearch(tSearchTermsA) into tRecordsA
+		if the keys of tRecordsA is empty then
+			rigLogMessage "debug", "search returned no result"
+		end if
+		if tMediaNodeA["pick"] is not a number then
+			put 1 into tMediaNodeA["pick"]
+		end if
+		rigLogMessage "debug", "pick is" && tMediaNodeA["pick"]
+		put tRecordsA["records"][tMediaNodeA["pick"]] into tRecordA
+		rigLogMessage "debug", "selected item was" && tRecordA["file_id"]
+		put tRecordA["file_id"] into tFileID
+		put byline(tRecordA) into tRetValA["author"]
+		put tRecordA["file_id"] into tRetValA["file_id"]
+		put tRecordA["media_type"] into tRetValA["media_type"]
+		put tRecordA["title"] into tRetValA["title"]
+		put textcut(tRecordA["description"],tRecordA["media_type"],tRecordA["file_id"]) into tRetValA["description"]
+		switch
+			case "video" is in tRecordA["media_type"]
+				put emitYoutubeVideo(tMediaNodeA["width"], tMediaNodeA["height"], fileIDToYoutubeID(tFileID), tMediaNodeA["style"]) into tRetValA["media"]
+			break
+			case "galleria" is in tRecordA["media_type"]
+				put tMediaNodeA["width"] into tRecordA["width"]
+				put tMediaNodeA["height"] into tRecordA["height"]
+				put tMediaNodeA["style"] into tRecordA["style"]
+				put emitGalleria(empty,tRecordA) into tRetValA["media"]
+			break
+			case "audio" is in tRecordA["media_type"]
+				put tMediaNodeA["width"] into tRecordA["width"]
+				put tMediaNodeA["height"] into tRecordA["height"]
+				put tMediaNodeA["style"] into tRecordA["style"]
+				put emitAudio(empty, tRecordA) into tRetValA["media"]
+			break
+		end switch
+	break	
+	end switch
+	
+	##
+	## Picking CTA
+	##
+	put xmlAttributesToArray(sXML, (pNode & "/cta")) into tCTANodeA
+	put revXMLNodeContents(sXML, (pNode & "/cta")) into tRetValA["cta"]
+	switch tCTANodeA["type"]
+		case "link"
+			put tCTANodeA["url"] into tRetValA["cta_link"]
+		break
+	end switch
+	
+	return tRetValA
+end extractFeaturedItemModule
+
+function extractTabbedContentModule pNode
+	/*
+	This function extracts a "Tabbed Content" module node and return an structured array
+	with the data needed to render it.
+	
+	This module has a complex rendering but its structure is pretty simple. It is a collection
+	of "tab" nodes. Each tab node contains "item" or "search" nodes. The collection of each
+	item node and the result from each search node is then inserted as content of the given tab.
+	
+	An annotated example of the rendering of a tabbed content module can be seen at:
+	
+	http://dev.himalayanacademy.com/andre/s/tabbed_content_module.png
+	
+	===================================
+	  Example of Tabbed Content Module
+	===================================
+	
+	<module name="Tabbed Content Module">
+		<tab title="eBooks">
+			<search media_type="book"/>
+		</tab>
+			
+		<tab title="For Children">
+			<search media_type="book" tags="youth"/>
+		</tab>
+		
+		<tab title="For Teachers">
+			<search media_type="book" title="history"/>
+			<item file_id="fourteen-questions"/>
+			<item media_type="book" title="saivite hindu religion"/>
+			<item file_id="yogas-forgotten-foundation"/>
+		</tab>
+		
+		<tab title="Other Languages">
+			<search media_type="book" language="french"/>
+			<search media_type="book" language="spanish"/>
+			<search media_type="book" language="hindi"/>
+			<search media_type="book" language="tamil"/>
+			<search media_type="book" language="sanskrit"/>
+		</tab>
+		
+	</module>
+	
+	*/
+	rigLogMessage "debug", "Begin extract tabbed content"
+	put revXMLNodeContents(sXML, (pNode & "/title")) into tRetValA["title"]
+	put revXMLNumberOfChildren(sXML, pNode,"tab",1) into tNumberOfTabs
+	rigLogMessage "debug", "number of tabs:" && tNumberOfTabs
+	# Pick Tabs
+	repeat with c = 1 to tNumberOfTabs
+		put pNode & "/tab["&c&"]" into tTabNode
+		put revXMLAttribute(sXML, tTabNode, "title") into tRetValA["tabs"][c]["title"]
+		rigLogMessage "debug", "Tab:" && tRetValA["tabs"][c]["title"]
+		put revXMLChildNames(sXML, tTabNode,comma,,true) into tTabContent
+		put 0 into y
+		put empty into tThisTabContentA
+		# Pick Items
+		repeat for each item tItem in tTabContent
+			set the itemdel to "["
+			put item 1 of tItem into tNodeName
+			rigLogMessage "debug", "tab node:" && tNodeName
+			set the itemdel to comma
+			switch tNodeName
+				case "search"
+					-- do search
+					rigDbWhere "approved_for_public", "YES"
+					repeat for each line thisLine in revXMLAttributes(sXML,(tTabNode & "/" & tItem),comma,return)
+						put item 1 of thisLine into tKey
+						put item 2 of thisLine into tValue
+						rigLogMessage "debug", "search for" && tKey &&"->" && tValue
+						rigDbWhere (tKey && "LIKE"), ("%" & tValue & "%")
+					end repeat
+					rigDbLimit 100
+					put rigDbGet("item") into tQ
+					rigLogMessage "debug", "results:" && tQ["numrows"]
+					repeat with x = 1 to tQ["numrows"]
+						put rigDbRow(x) into tThisTabContentA[y+x]
+					end repeat
+					put x+y into y
+				break
+				case "item"
+					get revXMLAttribute(sXML,(tTabNode & "/" & tItem),"file_id" )
+					rigDbWhere "file_id", it
+					put rigDbGet("item") into tQ
+					add 1 to y
+					put rigDbRow(1) into tThisTabContentA[y]
+				break
+			end switch
+		end repeat
+		put tThisTabContentA into tRetValA["tabs"][c]["content"]
+	end repeat
+	rigLogMessage "debug", "End extract tabbed content"
+	return tRetValA
+end extractTabbedContentModule
+
+function extractSquareSliderModule pNode
+	/*
+	This function extracts a "Square Slider" module node and return an structured array
+	with the data needed to render it.
+	
+	This module is a little slideshow that we used on our landing.lc template.
+	
+	An annotated example of the rendering of a square slider module can be seen at:
+	
+	http://dev.himalayanacademy.com/andre/s/square_slider_module.png
+	
+	===================================
+	  Example of Square Slider Module
+	===================================
+	
+	<module name="Square Slider Module">
+		<title>Your Spiritual Journey Begins Here...</title>
+		<slides>
+			<item>
+				<image>/html/readlearn/img/slider/70-steps-to-iraivan.jpg</image>
+				<caption>Your First Steps into the World of Hinduism - Know the Basics</caption>
+				<link>/readlearn/basics</link>
+				<comment>This links to the "basic of hinduism" page. Should it link to the Hindu Basics Book instead?</comment>
+			</item>
+			<item>
+				<image>/html/readlearn/img/slider/132-Sloka_2.jpg</image>
+				<caption>Study the Timeless Truths of India</caption>
+				<link>/site/search/media_type/book</link>
+				<comment>This links to all the books. Should it link to the "Books" page instead?</comment>
+			</item>
+			<item>
+				<image>/html/readlearn/img/slider/003-sloka_2.jpg</image>
+				<caption>See What's Happening Today in the Hindu World</caption>
+				<link>http://www.hinduismtoday.com/</link>
+			</item>
+			<item>
+				<image>/html/readlearn/img/slider/dreamstime_3728612.jpg</image>
+				<caption>Take these Teaching Tools for Passing on Our Heritage</caption>
+				<link>/readlearn/teachers-parents</link>
+			</item>
+			<item>
+				<image>/html/readlearn/img/slider/32-holisept2001ht.jpg</image>
+				<caption>Resources for Sharing with the Media</caption>
+				<link>/readlearn/for-media</link>
+			</item>
+		</slides>
+		<cta>More about Hinduism</cta>
+	</module>
+	
+	*/
+	put revXMLNodeContents(sXML, (pNode & "/title")) into tRetValA["title"]
+	put revXMLNodeContents(sXML, (pNode & "/cta")) into tRetValA["cta"]
+	put revXMLAttribute(sXML, (pNode & "/cta"), "url") into tRetValA["cta_link"]
+	if "xmlerr" is in tRetValA["cta_link"] then
+		put "#" into tRetValA["cta_link"]
+	end if
+	if "#" is in tRetValA["cta_link"] then
+		get revXMLAttribute(sXML, (pNode & "/cta"), "file_id")
+		if "xmlerr" is not in it then
+			put "/view/" & it into tRetValA["cta_link"]
+		end if
+	end if
+	put revXMLNumberOfChildren(sXML, (pNode & "/slides"),"item",1) into tNumberOfItems
+	repeat with c = 1 to tNumberOfItems
+		put pNode & "/slides/item["&c&"]" into tItemNode
+		put revXMLNodeContents(sXML, (tItemNode & "/image")) into tRetValA["items"][c]["image"]
+		put revXMLNodeContents(sXML, (tItemNode & "/caption")) into tRetValA["items"][c]["caption"]
+		put revXMLNodeContents(sXML, (tItemNode & "/link")) into tRetValA["items"][c]["link"]
+		put revXMLAttribute(sXML, (tItemNode & "/link"), "url") into tRetValA["items"][c]["link_link"]
+		if "xmlerr" is in tRetValA["items"][c]["link_link"] then
+			put "#" into tRetValA["items"][c]["link_link"]
+		end if
+	end repeat
+	put emitSquareSliderModuleHTML(tRetValA["items"]) into tRetValA["html"]
+	return tRetValA	
+end extractSquareSliderModule
+
+function emitSquareSliderModuleHTML pListA
+	/*
+	This function is an emitter for the Square Slider module. It generates the HTML chunk used by extractSquareSliderModule().	
+	*/
+	repeat with x = 1 to the number of lines in the keys of pListA
+		put pListA[x] into gData["square slider item"]
+		put mergeView("chunks/square-slider-item") after tRetVal
+	end repeat
+	delete variable gData["square slider item"]
+	return tRetVal	
+end emitSquareSliderModuleHTML
+
+function emitTabbedContentModuleHTML pTabsA, pTitle
+	/*
+	This function is an emitter for the Tabbed Content module. It generates the HTML chunk used by extractTabbedContentModule().
+	
+	--!!! AAG Needs more refactoring.
+	*/
+    
+    if pTitle is empty or "xmlerr" is in pTitle then
+        put "" into pTitle # if the editor chooses to leave the title blank, it should be blank...
+    end if
+	rigLogMessage "debug", "begin emit tabbed content module HTML"
+	if the keys of pTabsA is empty then
+		rigLogMessage "debug", "no tabbed content"
+		return empty
+	end if
+	-- emit titles
+	put format("<section class=\"tabbed-content-container browse\"><h2 class=\"h2\">%s</h2><ul class=\"tabs\">", pTitle) into tRetVal
+	repeat with x = 1 to the number of lines in the keys of pTabsA
+		rigLogMessage "debug", "found tab:" && pTabsA[x]["title"]
+		if x is 1 then
+			put format("<li class=\"active\"><a href=\"#\">%s</a></li>", pTabsA[x]["title"]) after tRetVal
+		else
+			put format("<li><a href=\"#\">%s</a></li>", pTabsA[x]["title"]) after tRetVal
+		end if
+	end repeat
+	put format("</ul><div class=\"tabbed-content tabulate\">") after tRetVal
+	-- Emit Tabs
+	repeat with x = 1 to the number of lines in the keys of pTabsA
+		put pTabsA[x] into pTabA
+		-- Emit Header thing for tab
+		put format("<div class=\"ebooks\"><ul class=\"archives-pagination\"><li class=\"arrow-prev\"><a href=\"#\">Previous</a></li><li class=\"arrow-next\"><a href=\"#\">Next</a></li></ul><div class=\"slidecontrol-select\"></div><div class=\"paginate\">") after tRetVal
+	
+		-- Emit groups (for pagination)
+		rigLogMessage "debug","number of items in tab '" && pTabsA[x]["title"] && "':" && the number of lines in the keys of pTabA["content"]
+		repeat with y = 1 to the number of lines in the keys of pTabA["content"] step 4
+				if pTabA["content"][y]["file_id"] is empty then
+					next repeat
+				end if
+				put format("<div class=\"browse-group\">") after tRetVal -- Begin page
+			
+				-- each item
+				repeat with k = 0 to 3
+					put pTabA["content"][y+k] into pTabItemA
+					if pTabItemA["file_id"] is empty then
+						next repeat
+					end if
+					put format("<div class=\"browse-item\">") after tRetVal	
+					put format("<a href=\"/view/%s\"><img src=\"/media/books/%s/%s_cover_thm.jpg\" alt=\"Image of %s\"></img></a>",pTabItemA["file_id"], pTabItemA["file_id"], pTabItemA["file_id"], pTabItemA["title"]) after tRetVal
+					put "<hgroup>" after tRetVal
+					put format("<h5 class=\"title\"><a href=\"/view/%s\">%s</a></h5>", pTabItemA["file_id"], pTabItemA["title"]) after tRetVal
+					put format("<h6 class=\"subtitle\">%s</h6>", pTabItemA["sub_title"]) after tRetVal
+					put "</hgroup>" after tRetVal
+					put format("<a class=\"action\" href=\"/view/%s\">Read Online</a>", pTabItemA["file_id"]) after tRetVal
+				    put "</div>" after tRetVal
+				end repeat
+				put "</div>" after tRetVal -- end browser group
+			    
+		end repeat
+		put "</div></div>" after tRetVal -- end paginate and tab
+	end repeat
+	put "</section>" after tRetVal -- end section
+	--rigLogMessage "debug", tRetVal
+	return tRetVal
+end emitTabbedContentModuleHTML
+
+function emitLinkList pListA
+	/*
+	This function is a generic emitter for linked lists.
+	
+	It receives an array and generates a linked list from it. 
+	
+	It can be used in many places but it is specially useful for modules such as the Promoted Collections & Links.
+	*/
+	repeat with x = 1 to the number of lines in the keys of pListA
+		put format("<li><a href=\"%s\">%s</a></li>\n", pListA[x]["url"], pListA[x]["title"]) after tRetVal
+	end repeat
+	return tRetVal
+end emitLinkList
+
+function emitYoutubeVideo pW, pH, pVideoID, pStyle
+	/* 
+	This emitter will generate the HTML chunk to embed an Youtube video.
+	
+	This function is usually called from the "Featured Item" module but it may also be called directly from an HTML Data file.
+	*/
+	if pW is empty then
+		put 560 into pW
+	end if
+	if pH is empty then
+		put 315 into pH
+	end if
+	if pStyle is not empty then
+		put "style=" & quote & pStyle & quote into pStyle
+	end if
+	put pW into gData["video"]["width"]
+	put pH into gData["video"]["height"]
+	put pStyle into gData["video"]["style"]
+	put pVideoID into gData["video"]["id"]
+	put mergeView("chunks/youtube-iframe") into tRetVal
+	delete variable gData["video"]
+	return tRetVal
+end emitYoutubeVideo
+
+function emitVideo pNode
+	/*
+	This emitter is just an wrapper around the youtube video emitter. Its only used when parsing an xml file because
+	it picks its data from the XML node. 
+	
+	 Remarks
+	==========
+	
+	I am trying to phase this function out and trying to move stuff to use emitYoutubeVideo() directly because it is more flexible.
+	*/
+	put revXMLAttribute(sXML, pNode, "width") into tWidth
+	put revXMLAttribute(sXML, pNode, "height") into tHeight
+	put revXMLAttribute(sXML, pNode, "file_id") into tFileID
+	put revXMLAttribute(sXML, pNode, "style") into pStyle
+	if "xmlerr" is in pStyle then
+		put empty into pStyle
+	end if
+	return emitYoutubeVideo(tWidth, tHeight, fileIDToYoutubeID(tFileID), pStyle)
+end emitVideo
+
+function emitAudio pNode, pA
+	/*
+	This emitter is used by the "Featured Item" module to display audio content.
+	*/
+	if pNode is not empty then
+		put revXMLAttribute(sXML, pNode, "width") into tWidth
+		put revXMLAttribute(sXML, pNode, "height") into tHeight
+		put revXMLAttribute(sXML, pNode, "file_id") into tFileID
+		put revXMLAttribute(sXML, pNode, "style") into pStyle
+		if "xmlerr" is in pStyle then
+			put empty into pStyle
+		end if
+	else
+		put pA into tRecordA
+		put pA["file_id"] into tFileID
+		put pA["width"] into tWidth
+		put pA["height"] into tHeight
+		put pA["style"] into gData["style"] 
+	end if
+	rigLogMessage "debug", "audio:" && tFileID
+	put the seconds & random(99999) into gData["record"]["unique id"]
+	put getRecord(tFileID) into gData["record"]
+	put getAudioFile(gData["record"], "mp3") into gData["record"]["audio file"]
+	put mergeView("modules/featured-item/audio") into tViewData
+	rigLogMessage "debug", tViewData	
+	return tViewData
+end emitAudio
+
+
+function textcut pText, pUseCase, pFileID 
+	/*
+	This is an auxiliary function that will constrain a text to a certain length. 
+	This length depends on the use case. If there is more text then a link is added
+	to the description to prompt the user to go to the media detail page.
+	
+	BR: pUseCase could be the media type or a custom value
+	if you want to fine tune the description length then pass
+	a custom string (make is reflect the use case) and set your length accordingly
+	The feature item module is "responsive" to the text length, so we have to
+	adjust the number of lines to make each media type fit the design.
+	*/
+	
+	switch 
+	    case pUseCase = "audioResultsDisplay" #  for the media catalog view; want short vertical results.
+	         put 18 into tDescLen
+			break
+		case pUseCase contains "video" # for the featured item module view.
+			put 45 into tDescLen
+			break
+		case pUseCase contains "slideshow" # for the featured item module view.
+			put 45 into tDescLen
+			break
+		case pUseCase contains "audio" # for the featured item module view.
+			put 50 into tDescLen
+			break
+		case pUseCase contains "book" # for the featured item module view.
+			put 95 into tDescLen
+			break
+		case pUseCase is a number
+			put pUseCase into tDescLen
+		break
+		case pUseCase is "first sentence"
+			put wordOffset(".", pText) into tDescLen
+		break
+		default 
+		put 150 into tDescLen
+	end switch
+	if the number of words in pText <= tDescLen then
+		return pText
+	else
+		put word 1 to tDescLen of pText & "... " into tDescription
+		if pFileID<> empty then
+			put format ("<a href=\"/view/%s\">(more)</a>",pFileID) after tDescription
+		end if
+		return tDescription
+	end if
+end textcut
+
+function featuredItemModuleTitleForMediaType pMediaType
+	/*
+	This function is used by the landing.lc template to generate the header for the media type such as "Featured Video" or "Featured Audio".
+	*/
+	switch
+		case "video" is in pMediaType
+			return "video"
+		break
+		case "book" is in pMediaType
+			return "publication"
+		break
+		case "audio" is in pMediaType
+			return "audio"
+		break
+		case "slideshow" is in pMediaType
+			return "slideshow"
+		break
+		default
+		return empty
+	end switch
+end featuredItemModuleTitleForMediaType
+
+function featuredItemModuleClassForMediaType pMediaType
+	/*
+	This function is used by the landing.lc template to generate the HTML CSS class depending on the media type of the displayed item.. you must pass "slideshow" and not "galleria"  if it is a slideshow see the 
+	*/
+	switch
+		case "video" is in pMediaType
+			return "featured-video"
+		break
+			case "audio" is in pMediaType
+			return "featured-podcast"
+		break
+		case "book" is in pMediaType
+			return "featured-book"
+		break
+		case "slideshow" is in pMediaType
+			return "featured-slideshow"
+		break
+		default
+		return "featured-video"
+	end switch
+end featuredItemModuleClassForMediaType
+
+
+function emitSearchResultForMediaCatalogPage pA
+	/*
+	This is a large function that is responsible for generating the HTML chunks used by the search results page.
+	
+	The chunks vary depending on the record media type and thats why the function is so big.
+	*/
+	rigOutputCache 0
+	put the number of lines in the keys of pA into tNumResults
+	rigLogMessage "debug","result count:" && tNumResults
+		
+	put tNumResults div 3 into tNumRows
+	if tNumResults mod 3 > 0 then 
+		add 1 to tNumRows
+	end if
+	put 1 into c
+	repeat with x = 1 to tNumRows
+		put format("<div class=\"row\">\n") after tBuf
+		repeat 3 times
+			-- rigLogMessage "debug",(x,c && pA[c]["file_id"])
+			if the keys of pA[c] is not empty then
+				delete variable gData["record"]
+				put getRecord(pA[c]["file_id"]) into gData["record"]
+				put the ticks & random(9999) into gData["record"]["unique id"]
+				put format("\t<div class=\"column\">\n") after tBuf
+				switch pA[c]["media_type"]
+					case "audio/inspiredtalk"
+						put mergeView("search-results/inspiredtalk") after tBuf
+					break
+					case "audio/chant"
+						put mergeView("search-results/chant") after tBuf
+					break
+					case "audio/song"
+						put mergeView("search-results/song") after tBuf
+					break
+					case "audio/instrumental"
+						put mergeView("search-results/instrumental") after tBuf
+					break
+					case "audio/podcast"
+						put mergeView("search-results/podcast") after tBuf
+					break
+					case "audio/shum"
+						put mergeView("search-results/shum") after tBuf
+					break
+					case "art/drawing"
+						put mergeView("search-results/drawing") after tBuf
+					break
+					case "art/vector"
+						put mergeView("search-results/vector", true) after tBuf
+					break
+					case "art/painting"
+						put mergeView("search-results/painting", true) after tBuf
+					break
+					case "art/photography"
+						put mergeView("search-results/photography", true) after tBuf
+					break
+					case "video/pubdesk"
+						put fileIDToYoutubeID(pA[c]["file_id"]) into gData["record"]["youtube id"]
+						put mergeView("search-results/pubdesk", true) after tBuf
+					break
+					case "video/travel"
+						put fileIDToYoutubeID(pA[c]["file_id"]) into gData["record"]["youtube id"]
+						put mergeView("search-results/travel", true) after tBuf
+					break 
+					case "video/teaching"
+						put fileIDToYoutubeID(pA[c]["file_id"]) into gData["record"]["youtube id"]
+						put mergeView("search-results/teaching", true) after tBuf
+					break 
+					case "video/ritual"
+						put fileIDToYoutubeID(pA[c]["file_id"]) into gData["record"]["youtube id"]
+						put mergeView("search-results/ritual", true) after tBuf
+					break 
+					case "video/building"
+						put fileIDToYoutubeID(pA[c]["file_id"]) into gData["record"]["youtube id"]
+						put mergeView("search-results/building", true) after tBuf
+					break 
+					case "video/talk"
+						put fileIDToYoutubeID(pA[c]["file_id"]) into gData["record"]["youtube id"]
+						put mergeView("search-results/talk", true) after tBuf
+					break 
+					case "video/news"
+						--background-image: url("http://i4.ytimg.com/vi/cuWUwfNzWog/hqdefault.jpg");
+						put fileIDToYoutubeID(pA[c]["file_id"]) into gData["record"]["youtube id"]
+						put mergeView("search-results/news", true) after tBuf
+						-- put format("\t\t<a href=\"/view/%s\"><img src=\"http://i4.ytimg.com/vi/%s/hqdefault.jpg\" alt=\"Image of...\" /></a>\n", pA[c]["file_id"], fileIDToYoutubeID(pA[c]["file_id"])) after tBuf
+					break
+					case "slideshow/external"
+					# BR: We have an issue with the path changing in the generator used
+					# by Sadasivanathaswami (iView Meda, later "Expressions"
+					# in some cases the primary image is in a top folder "images" in later cases, they moved it to "source/image"
+					# Andre: please optimize this  with your getpath utility and if you have a better way to switch folders where 
+					# the image source changed, go ahead and make it better
+					    set the itemdel to "-"
+             	        put item 1 of pA[c]["date_created"] into tYear
+             	        put the defaultfolder into tCurrentDefaultFolder
+         	            put  $_SERVER["DOCUMENT_ROOT"] &"/media/slideshows/" & tYear & "/" & pA[c]["file_id"] & "/image" into tThumbsFolder
+             	         if not (there is a folder tThumbsFolder) then
+									put $_SERVER["DOCUMENT_ROOT"] &"/media/slideshows/" & tYear & "/" & pA[c]["file_id"] & "/source/image" into tThumbsFolder
+									set the defaultfolder to tThumbsFolder
+									put the files into tThumbs                                                          
+									filter tThumbs with "*.jpg"
+									put line 1 of  tThumbs  into tGalleryThumb                       
+									put format("/media/slideshows/%s/%s/source/image/%s",tYear,pA[c]["file_id"], tGalleryThumb) into gData["record"]["path to thumb"]
+									put mergeView("search-results/slideshow-external") after tBuf
+		             	         else
+									set the defaultfolder to tThumbsFolder
+									put the files into tThumbs                                                          
+									filter tThumbs with "*.jpg"
+									put line 1 of  tThumbs  into tGalleryThumb                       
+									put format("/media/slideshows/%s/%s/image/%s",tYear,pA[c]["file_id"], tGalleryThumb) into gData["record"]["path to thumb"]
+									put mergeView("search-results/slideshow-external") after tBuf
+             	         end if             	                          
+                      set the defaultfolder to  tCurrentDefaultFolder
+                break
+                case "slideshow/galleria"
+					# This will have images that we can use for the thumbnail in a folder 
+					# /media/slideshows/YYYY/file_id/thumb				
+					set the itemdel to "-"
+           	     	put item 1 of pA[c]["date_created"] into tYear
+                    put $_SERVER["DOCUMENT_ROOT"] & "/media/slideshows/" & tYear & "/" & pA[c]["file_id"]  into tThumbsFolder
+                    set the defaultfolder to tThumbsFolder
+                    put the files into tThumbs
+                    filter tThumbs with "*.jpg"
+                    put line 1 of  tThumbs  into tGalleryThumb
+                 	put format("/media/slideshows/%s/%s/%s",tYear,pA[c]["file_id"],tGalleryThumb) into gData["record"]["path to thumb"]
+					put mergeView("search-results/slideshow-galleria") after tBuf
+                break
+
+					case "text/book"
+						put mergeView("search-results/booklet") after tBuf
+						break				
+					case "text/booklet"
+						put mergeView("search-results/booklet") after tBuf
+					break
+				end switch
+				
+				put format("\t\t<h3 class=\"title\"><a href=\"/view/%s\" title=\"Click for more details on this media item\">%s</a></h3>\n",  pA[c]["file_id"], pA[c]["title"]) after tBuf
+			
+			--switch gData["record"]["media_type"] 
+			switch pA[c]["media_type"] 
+			  case "audio/song" 			
+					put format("\t\t<p>&nbsp;&nbsp;Sung by: %s</p>\n", pA[c]["artists"]) after tBuf
+					put format("\t\t<p>%s</p>\n", textcut(pA[c]["description"],"audioResultsDisplay")) after tBuf
+					break
+				case "audio/inspiredtalk"
+					put format("\t\t<b>%s</br>Given On: %s</b>\n", pA[c]["author"],pA[c]["date_created"]) after tBuf
+					put format("\t\t<p>%s</p>\n", textcut(pA[c]["description"],"audioResultsDisplay")) after tBuf
+					break
+				case "app/web"
+					put format("\t\t<p>%s</p>\n", textcut(pA[c]["description"],"100", pA[c]["file_id"])) after tBuf
+				break
+				default 
+					put format("\t\t<p>%s</p>\n", textcut(pA[c]["description"],"audioResultsDisplay")) after tBuf
+				
+			end switch
+				
+				put format("\t</div>\n") after tBuf
+			end if
+			add 1 to c
+		end repeat
+		put format("</div>\n") after tBuf
+	end repeat
+	return tBuf
+end emitSearchResultForMediaCatalogPage
+
+function emitGalleria pNode, pA
+	/*
+	This function is an emitter that will generate the HTML chunk needed to display a slideshow that is based on Galleria JS.
+	
+	It is used not only by our "Featured Item" module but from HTML Data files as well.
+	*/
+	if the keys of pA is empty then
+		put revXMLAttribute(sXML, pNode, "width") into tWidth
+		put revXMLAttribute(sXML, pNode, "height") into tHeight
+		put revXMLAttribute(sXML, pNode, "style") into gData["style"]
+		put revXMLAttribute(sXML, pNode, "file_id") into tFileID
+		put getRecord(tFileID) into tRecordA
+	else
+		put pA["file_id"] into tFileID
+		put getRecord(tFileID) into tRecordA
+		put pA["width"] into tWidth
+		put pA["height"] into tHeight
+		put pA["style"] into gData["style"]
+		
+	end if
+	set the itemdel to "-"
+	put item 1 of tRecordA["date_created"] into tYear
+	put tWidth into tOptions["width"]
+	put tHeight into tOptions["height"]
+	put "'landscape'" into tOptions["imageCrop"]
+	put "'lazy'" into tOptions["thumbnails"]
+	put "false" into tOptions["thumbCrop"]
+	put "true" into tOptions["imagePan"]
+	put "100" into tOptions["transitionSpeed"] 
+	put "false" into tOptions["idleMode"]  
+	# See galleria docs for effects of these options http://galleria.io/docs/options/
+
+	
+	put tWidth into gData["width"]
+	put tHeight into gData["height"]
+	
+	put format("media/slideshows/%s/%s", tYear, tFileID) into tPath
+	rigLogMessage "debug", "slideshow path:" && tPath
+
+	if there is a file ($_SERVER["DOCUMENT_ROOT"] & "/" & tPath & "/galleriaData.js") then
+		delete file ($_SERVER["DOCUMENT_ROOT"] & "/" & tPath & "/galleriaData.js")
+	end if
+	
+	# SKTS: March, 14, 2012 the above if statement to delete the galleriaData.js 
+	# is not working, but there is no need for it. The galleria plug-in rigGalleriaData
+	# take, as parameter # 6 the option to replace the existing galleriaData.js file
+	# by default it is set to "FALSE"
+	# But I am setting it to TRUE because the  are "stuck" on their
+	# last width and height settings 
+	
+	put makeValidSelector("p" & tFileID & "_divid") into tContainerID
+	put makeValidSelector("p" & tFileID & "_var") into tDataVariableName
+	put tContainerID into gData["galleriaDiv"]
+	put rigGalleriaData(tPath,tOptions,tContainerID,tDataVariableName,FALSE,TRUE) into gData["slideShow"]
+	
+	# I added the word "twelve" to the view file because we will also be using 
+	# other themes in some contexts (Classic) 
+	put rigLoadView("media/galleria-load-twelve-assets", TRUE) into tRetVal
+	
+	return tRetVal
+end emitGalleria
+
+function emitBook pRecordA
+	/*
+	This function will emit the HTML chunk needed by the "Featured Item" module to display a book.
+	*/
+ 	put pRecordA into gData["record"]
+
+	put rigLoadView("modules/featured-item/book", TRUE) into tRetVal
+
+	return tRetVal 
+end emitBook
+
+function bewareOfAmpersandsInXML tFilePath
+	/*
+	This is an auxiliary function to fix the possible problems that can happen if an ampersand is found inside the XML data
+	file. It just fixes ampersands in URLs.
+	*/
+	put url ("binfile:" & tFilePath) into tBuffer
+	repeat with x = 1 to the number of lines in tBuffer
+		if "&amp;" is not in line x of tBuffer then
+			if "&" is in line x of tBuffer and "http" is in line x of tBuffer then
+				replace "&" with "&amp;" in line x of tBuffer
+			end if
+		end if
+	end repeat
+	return tBuffer
+end bewareOfAmpersandsInXML
+
+function arrayAppend pArray, pData
+    put the number of lines in the keys of pArray into tNum
+    add 1 to tNum
+    put pData into pArray[tNum]
+    return pArray
+end arrayAppend
+
+function cmsParseXMLDataFile pFile
+	/*
+	This function is the main entry point for this library. It receives a file name and then it loads and parse it
+	generating the multi-level content array used by the templates to display our content.
+	
+	Steps:
+	1 - The first step is loading the content.
+	1.5 - Fixes metadata record on database if it is not up to date.
+	2 - Fixes possible & characters in URLs inside the content
+	3 - Extract modules
+	4 - return data.
+	
+	Be aware that step 3 is a loop that will extract all modules present on the xml data file.
+	
+	*/
+	
+	if there is not a file (sCMSDataFolder & pFile) then
+		rigLogMessage "error", "CMS Can't load XML data file. File not found:" && sCMSDataFolder & pFile
+		return empty
+	end if
+	
+	put (sCMSDataFolder & pFile) into tFilePath
+	
+	updatePageMetadataIfPathOnDiskChanged pFile
+	
+	-- AAG: changes to support ampersands in the XML file
+	put bewareOfAmpersandsInXML(tFilePath) into tBuffer
+	
+	put revCreateXMLTree(tBuffer, true, true, false) into sXML
+	
+	if sXML is not a number then
+		rigLogMessage "error", "CMS Data file is not valid XML." && pFile && sXML
+		return empty
+	end if
+	
+	put revXMLNumberOfChildren(sXML, "/data","module",1) into tNumberOfChildren
+	
+	repeat with x = 1 to tNumberOfChildren
+		put "/data/module[" & x & "]" into tModuleNode
+		put revXMLAttribute(sXML, tModuleNode, "name") into tModuleName
+		# extract data
+		put revXMLFirstChild(sXML, tModuleNode) into tNode
+        
+        put tModuleName & "s" into tModuleNameCollection
+		
+			switch tModuleName
+				case "Sidebar Module"
+                    put extractSidebarModule(tModuleNode) into tValue
+                    if tRetValA[tModuleName] is empty then
+    					put tValue into tRetValA[tModuleName]
+                    end if
+                    
+                    put arrayAppend(tRetValA[tModuleNameCollection], tValue) into tRetValA[tModuleNameCollection]
+                    
+					next repeat
+				break
+				case "Hero Images Module"
+                    put extractHeroImagesModule(tModuleNode) into tValue
+                    
+                    if tRetValA[tModuleName] is empty then
+    					put extractHeroImagesModule(tModuleNode) into tRetValA[tModuleName]
+                    end if
+                    
+                    put arrayAppend(tRetValA[tModuleNameCollection], tValue) into tRetValA[tModuleNameCollection]
+                    
+					next repeat
+				break
+				case "Links Module"
+				case "Promoted Collections Module"
+                    put extractPromotedCollectionsModule(tModuleNode) into tValue
+                    
+                    if tRetValA[tModuleName] is empty then
+    					put extractPromotedCollectionsModule(tModuleNode) into tRetValA[tModuleName]
+                    end if
+                    
+                    put arrayAppend(tRetValA[tModuleNameCollection], tValue) into tRetValA[tModuleNameCollection]
+                    
+					next repeat
+				break
+				case "Square Slider Module"
+                    put extractSquareSliderModule(tModuleNode) into tValue
+                    
+                    if tRetValA[tModuleName] is empty then
+    					put extractSquareSliderModule(tModuleNode) into tRetValA[tModuleName]
+                    end if
+                    
+                    put arrayAppend(tRetValA[tModuleNameCollection], tValue) into tRetValA[tModuleNameCollection]
+                    
+					next repeat
+				break
+				case "Tabbed Content Module"
+                    put extractTabbedContentModule(tModuleNode) into tValue
+                    
+                    if tRetValA[tModuleName] is empty then
+    					put tValue into tRetValA[tModuleName]
+                    end if
+					--put emitTabbedContentModuleHTML(tRetValA[tModuleName]["tabs"]) into ecaA
+                    put arrayAppend(tRetValA[tModuleNameCollection], tValue) into tRetValA[tModuleNameCollection]
+                    rigLogMessage "debug", "keys: " && the keys of tRetValA[tModuleNameCollection]
+                    rigLogMessage "debug", "value: " && the keys of tValue
+                    
+					next repeat
+				break
+				case "Secondary Content Module"
+                    put extractSecondaryContentModule(tModuleNode) into tValue
+                    
+                    if tRetValA[tModuleName] is empty then
+    					put extractSecondaryContentModule(tModuleNode) into tRetValA[tModuleName]
+                    end if
+                    put arrayAppend(tRetValA[tModuleNameCollection], tValue) into tRetValA[tModuleNameCollection]
+                    
+					next repeat
+				break
+				case "Featured Item Module"
+                    put extractFeaturedItemModule(tModuleNode) into tValue
+                    
+                    if tRetValA[tModuleName] is empty then
+    					put extractFeaturedItemModule(tModuleNode) into tRetValA[tModuleName]
+                    end if
+                    
+                    put arrayAppend(tRetValA[tModuleNameCollection], tValue) into tRetValA[tModuleNameCollection]
+                    
+					next repeat
+				break
+			end switch	
+	end repeat
+	
+	revDeleteXMLTree sXML
+	
+	return tRetValA
+end cmsParseXMLDataFile
+
+
+
+function getAllRecordsFromSearch pSearchTermsA
+	/*
+	This function will return all file_ids for a given search.
+	*/
+
+## BR: This is a temporary fix for use with the featureItems and index.xml pages
+##  until Andre refactors... I need to get *all* the records... 
+## we don't want any sort or pagination here.. that really should be done outside this
+## simple task, which is just to get all there records
+	
+	if the keys of pSearchTermsA is empty then
+		-- no search query causes no result page to show.
+		return empty
+	else
+				
+		rigDbWhere "approved_for_public <>", "NO"
+		repeat for each key tK in pSearchTermsA
+		   put  pSearchTermsA[tK] &", " after gData["query string"]	
+			rigLogMessage "debug", ("search all records" && tK && "=" && pSearchTermsA[tK])
+		 	rigDbLike tK, pSearchTermsA[tK]
+		end repeat
+		rigDbSelect "file_id"
+		put rigDbGet("item") into tQ
+		rigLogMessage "debug", "number of results:" &&  tQ["numrows"]
+		rigLogMessage "debug", "last query:" && rigDbLastQuery()
+		repeat with x = 1 to tQ["numrows"]
+			put rigDbRow(x) into tRetValA["records"][x]
+		end repeat
+					
+		put rigDbCountAllResults("item") into tResultCount
+		put tResultCount into tRetValA["result count"]
+		return tRetValA
+	end if
+end getAllRecordsFromSearch
+
+
+function recordsForSearch pSearchTermsA
+	
+	if the keys of pSearchTermsA is empty then
+		-- no search query causes no result page to show.
+		return empty
+	else
+		
+		put pSearchTermsA into gData["search terms array"]
+		
+		-- add sorting options as described in
+		-- http://wiki.hindu.org/sevatracker/index.php?do=details&task_id=632&project=24
+		if pSearchTermsA["sort"] is not empty then
+			switch pSearchTermsA["sort"]
+				case "time-descending"
+					rigDbOrderBy "date_entered", "DESC"
+				break
+				case "time-ascending"
+					rigDbOrderBy "date_entered"
+				break
+				case "alpha-descending"
+					rigDbOrderBy "title", "DESC"
+				break
+				case "alpha-ascending"
+					rigDbOrderBy "title"
+				break
+			end switch
+			delete variable pSearchTermsA["sort"]
+		else
+			rigDbOrderBy "date_entered", "DESC"
+		end if
+		
+		-- add pagination.
+		if pSearchTermsA["page"] is not empty then
+			put pSearchTermsA["page"] into tPage
+			delete variable pSearchTermsA["page"]
+		else
+			put 1 into tPage
+		end if
+		
+		-- setting the number of results per page
+		
+
+		
+		put 9 into tResultsPerPage 
+		
+		if pSearchTermsA["media_type"] contains "audio" then
+			put 36 into tResultsPerPage
+		end if
+		
+		#BR: OK so I tried 9 and only got seven... So I'm thinking
+		# add to 2 any multiple of 3?
+		# but if you set it to e.g. 20
+		# put 20 into tResultsPerPage  you only get 15!
+		# five rows of 3
+		# how do we  set it to show more results for Audio?
+		
+		put (tPage - 1) *  tResultsPerPage into tOffset
+		
+		if tOffset <= 0 then
+			rigDbLimit tResultsPerPage, 0
+		else
+			rigDbLimit tResultsPerPage, tOffset
+		end if
+				
+				
+		rigDbWhere "approved_for_public <>", "NO"
+		repeat for each key tK in pSearchTermsA
+			if tK is among the items of "query,submit" then
+				if tK is "query" then
+					put  pSearchTermsA[tK] &", " after gData["query string"]	
+			   end if 
+				next repeat 
+			end if
+		   put  pSearchTermsA[tK] &", " after gData["query string"]	
+			# put tK & ":" && pSearchTermsA[tK] &", " after gData["query string"]		
+			rigLogMessage "debug", ("search" && tK && "=" && pSearchTermsA[tK])
+		 	rigDbLike tK, pSearchTermsA[tK]
+		end repeat
+		-- AAG 
+		-- Since the Query is the last thing to be added to the where clause,
+		-- we can use the newly added parenthesis features of RevIgniter to group
+		-- that search.
+		if pSearchTermsA["query"] is not empty then
+			-- comming from the search form.
+			repeat for each word w in pSearchTermsA["query"]
+				replace quote with empty in w
+				rigDbOpenParenthesis
+				rigDbLike "title", w
+				repeat for each item tF in "sub_title,description,author,artists,composer,tags,source,deity,genre,language,audio_file_transcript,lyrics_original,lyrics_original_transliteration,lyrics_literal_translation,media_type"
+					rigDbOrLike tF, w
+				end repeat
+				rigDbCloseParenthesis
+			end repeat
+			
+		end if
+	
+		put rigDbGet("item") into tQ
+		rigLogMessage "debug", "number of results:" &&  tQ["numrows"]
+		rigLogMessage "debug", "last query:" && rigDbLastQuery()
+		repeat with x = 1 to tQ["numrows"]
+			put rigDbRow(x) into tRetValA["records"][x]
+			rigLogMessage "debug", x && tRetValA["records"][x]["file_id"]
+		end repeat
+		
+		-- count all results for pagination...
+		
+	# BR: 	i want to ask about this: It looks like duplicate code of the above
+	# but if you comment this out, you get too many pages.  Why?
+	#
+		
+		rigDbWhere "approved_for_public <>", "NO"
+		repeat for each key tK in pSearchTermsA
+			if tK is among the items of "query,submit" then
+				next repeat
+			end if
+				
+				# I don't think we need this next line again, because it is repeating query keys and values over and over again
+				# and this appears in the Results page:				
+		# put tK & ":" && pSearchTermsA[tK] &", " after gData["query string"]
+				# results are the same now but only one instance of the query string in the head of the results pages.
+		
+		rigLogMessage "debug", ("search" && tK && "=" && pSearchTermsA[tK])
+			rigDbWhere (tK && "LIKE"), ("%" & pSearchTermsA[tK] & "%")
+		end repeat
+			if pSearchTermsA["query"] is not empty then
+				-- comming from the search form.
+				repeat for each word w in pSearchTermsA["query"]
+					replace quote with empty in w
+					rigDbOpenParenthesis
+					rigDbLike "title", w
+					repeat for each item tF in "sub_title,description,author,artists,composer,tags,source,deity,genre,language,audio_file_transcript,lyrics_original,lyrics_original_transliteration,lyrics_literal_translation,media_type"
+						rigDbOrLike tF, w
+					end repeat
+					rigDbCloseParenthesis
+				end repeat
+
+			end if
+		
+		
+		put rigDbCountAllResults("item") into tResultCount
+		-- AAG quick fix for Lexicon results
+		if pSearchTermsA["query"] is not empty then
+			put lexiconGetDefinition(pSearchTermsA["query"]) into tWordA
+			if tWordA["error"] is empty then
+				add 1 to tResultCount
+				repeat with x = 1 to tResultCount
+					put tRetValA["records"][x] into tTempA[x+1]
+				end repeat
+				put tTempA into tRetValA["records"]
+				rigLogMessage "debug", "found lexicon match"
+				delete variable tRetValA["records"][1]
+				put "app/web" into tRetValA["records"][1]["media_type"]
+				put "lexicon/" & tWordA["word"] into tRetValA["records"][1]["file_id"]
+				put "Definition for" && tWordA["word"] into tRetValA["records"][1]["title"]
+				put tWordA["definition"] into tRetValA["records"][1]["description"]
+				rigLogMessage "debug", "word:" && tRetValA["records"][1]["title"]
+			end if
+		end if
+		-- end
+		put tResultCount into tRetValA["result count"]
+		put (tResultCount div tResultsPerPage) + 1 into tRetValA["number of pages"]
+		return tRetValA
+	end if
+end recordsForSearch
+
+function randomItemForSearch pSearchTermsA
+	/*
+	This function will return a random record array depending on the search data array that is
+	passed to it.
+	*/
+
+   
+   put getAllRecordsFromSearch(pSearchTermsA) into tRecordsA
+		
+	if the keys of tRecordsA is empty then
+		-- no search query causes empty to be returned.
+		return empty
+	else
+		put the keys of tRecordsA["records"] into tSet
+		put any line of tSet into tPick
+		put getRecord(tRecordsA["records"][tPick]["file_id"]) into tRetValA
+		rigLogMessage "debug", "Randomizer:" && tRetValA["file_id"]
+		return tRetValA
+	end if
+	
+	
+end randomItemForSearch
+
+function emitArtistsSongsLinks
+	/*
+	This function generates linked lists items for song artists.
+	*/ 
+# BR:  This function gets all the artists that are assigned to 
+# all songs (not chants) it then creates links to be placed where needs
+				
+		rigDbWhere "media_type", "audio/song"
+		rigDbWhere "approved_for_public", "YES"
+		rigDbSelect "artists"
+		put rigDbGet("item") into tQ
+	     	
+		repeat with x = 1 to tQ["numrows"]
+			put rigDbRow(x) into tOneArtistA
+			put tOneArtistA["artists"]	& cr after tArtists
+		end repeat
+		
+		# strip dups by creating an array using the artists as the keys
+		# everytime the artist is the same in the loop it simple replaces itself as the key
+		# leaving one set of unique keys/artists as the keys of the array	
+		repeat for each line tArtist in tArtists
+		   put 1 into tArtistsA[tArtist]
+		end repeat											
+	    put the keys of tArtistsA into tArtists
+	    sort  lines of tArtists by word 2 of each
+	      
+	    # now we can make links using the site/search field/value pairs URL schema
+	    
+	    repeat for each line tSinger in tArtists
+			if tSinger <> empty then 
+			put tSinger into tQueryString
+			replace " " with "+" in tQueryString
+				 put format ("<li><a href=\"/site/search/media_type/song/artists/%s\">%s</a></li>\n",tQueryString,tSinger) after tArtistsLinks
+			end if
+		end repeat
+		put tArtistsLinks into gData["artistLinks"]				
+end emitArtistsSongsLinks
+
+/* Our Media Detail pages have a circle image and a quote at the bottom. For books this pulls a reviewer - comment.
+for other media detail pages we are picking random circle image of Gurudeva and quote from the same
+set of quotes used on TAKA for now. */
+
+function getGurudevaCircleQuote
+  # CMS NOTE: all the circles must be in the right folder as indicated by path here:
+    put $_SERVER["DOCUMENT_ROOT"] &"/html/img/circles/" into tCirclesFolder
+	put rigGetFileNames(tCirclesFolder,TRUE) into tCircleFiles
+	put rigElementsList(tCircleFiles) into tCircleFiles
+	filter tCircleFiles with ("*gurudeva*") 
+	put  line (random(the number of lines of tCirclefiles)) of tCircleFiles  into tOneGurudevaCircle
+	set the itemdel to "/"
+	put  "/"& item 5 to -1 of tOneGurudevaCircle  into gData["gurudevaCircleImage"]
+
+# Next we get a aquote from the blog theme quotes file
+		put url ("file:" &$_SERVER["DOCUMENT_ROOT"] & "/blog/wp-content/themes/taka/includes/quotes.txt") into tQuotes
+		put  line (random(the number of lines of tQuotes)) of tQuotes  into gData["gurudevaQuote"]	
+end getGurudevaCircleQuote
+
+	

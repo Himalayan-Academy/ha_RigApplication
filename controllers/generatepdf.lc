@@ -1,0 +1,52 @@
+<?rev
+# This Controller can be used for   one-off jobs, database work, maintenance etc.
+# and testing  new ideas without breaking existing controllers.
+
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "makePDF,generatepdf,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+on generatepdf
+       rigLoaderLoadLibrary "qrtpdflib"	
+end generatepdf
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFYED IN THE URI
+
+command index   
+end index
+
+on makePDF
+   local tFilePath, tDocRef
+   put "/home/devhap/public_html/Make-PDF.pdf" into tFilePath
+   try
+      put qrtPDF_CreateDocument() into tDocRef
+      qrtPDF_OpenDocument tDocRef
+      qrtPDF_CreatePage tDocRef
+      qrtPDF_SetTextColor tDocRef, "blue"
+      qrtPDF_SetFont tDocRef, "Arial", "bold,underline", 18
+      qrtPDF_WriteTextBox tDocRef, 40, 10, "Hello World!"
+      ## Wrap it up
+      qrtPDF_CloseDocument tDocRef
+      qrtPDF_SaveDocument tDocRef, tFilePath
+      qrtPDF_DeleteDocument tDocRef
+      put "Success!"
+   catch tError
+     rigLogMessage "error",  rigHtmlSpecialChars(tError), TRUE 
+     #  answer error tError
+      qrtPDF_DeleteAllDocuments
+   end try
+
+end makePDF
+
+
+--| END OF generatepdf.lc
+--| Location: ./system/application/ha/controllers/generatepdf.lc
+----------------------------------------------------------------------

@@ -1,0 +1,112 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "zmonastery,kadavul,iraivan,mehtaFlyAsh,iraivanStones,helpBuild,inTheNews,meet,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+# this command will build the slideshow DOM for the simple
+# dotted slider  We also have one for Galleria
+
+
+/*
+command dottedSlideShow pGalleryImagesPath
+    rigLoadLibrary "dotted-slideshow"  
+    put dottedSlideShow(pGalleryImagesPath) into tGalleryImages
+	put rigLoadView("media/dottedSlideshow",TRUE) into tSlideShow
+		replace "###SLIDES###" with tGalleryImages in tSlideShow
+	put tSlideShow into gData["slideShow"]	
+end dottedSlideShow
+*/
+
+
+
+command kadavul
+    put "Kauai's Hindu Monastery - Kadavul Temple" into gData["pageTitle"]  
+	put getSetHeadNav("skinny","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]	
+	put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+	put url("file:/home/devhap/public_html/html/monastery/kadavul/kadavul.html") into gData["singleArticle"]
+	get rigLoadView("sitewide/two-column")
+	get rigLoadView("sitewide/footer")		 	 
+end kadavul
+
+command iraivan
+	put "/home/devhap/public_html/html/monastery/iraivan/img/slides/" into  pGalleryImagesPath
+ 	dottedSlideShow pGalleryImagesPath, "pageTopSlideshow"
+	put "Kauai's Hindu Monastery - Iraivan Temple" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]	
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-sidebar.html")  into gData["sideBar"]
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan.html") into gData["singleArticle"]
+	get rigLoadView("sitewide/two-column")
+	get rigLoadView("sitewide/footer")		 	 
+end iraivan
+
+command mehtaFlyAsh
+	put "Iraivan's Foundation: the Wonder of Fly Ash Concrete" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]	
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-sidebar.html")  into gData["sideBar"]
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/mehta-speaks-on-fly-ash-concrete.html") into gData["singleArticle"]
+	get rigLoadView("sitewide/two-column")
+	get rigLoadView("sitewide/footer")		 	 
+end mehtaFlyAsh
+
+command helpBuild
+	put "Help Build Iraivan Temple" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]	
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-sidebar.html")  into gData["sideBar"]
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/help-build-temple.html") into gData["singleArticle"]
+	get rigLoadView("sitewide/two-column")
+	get rigLoadView("sitewide/footer")		 	 
+end helpBuild
+
+command iraivanStones
+	put "Sponsor a Temple Stone" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]	
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-sidebar.html")  into gData["sideBar"]
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-stones.html") into gData["singleArticle"]
+	get rigLoadView("sitewide/two-column")
+	get rigLoadView("sitewide/footer")		 	 
+end iraivanStones
+
+command inTheNews
+	put "Iraivan Temple in the News Media" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]	
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-sidebar.html")  into gData["sideBar"]
+	put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-in-the-news.html") into gData["singleArticle"]
+	get rigLoadView("sitewide/two-column")
+	get rigLoadView("sitewide/footer")		 	 
+end inTheNews
+
+command meet
+	put "Kauai's Hindu Monastery - Meet the Monks" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Meet The Monks",">Monastery<","cat-meet-the-monks") into gData["pageHeader"]	
+	put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+	put url("file:/home/devhap/public_html/html/monastery/monastic-life/meet-the-monks.html") into gData["singleArticle"]
+	get rigLoadView("sitewide/two-column")
+	get rigLoadView("sitewide/footer")		 	 
+end meet
+
+command index
+end index
+	
+command zmonastery
+	rigLoadLibrary "Getsetheadnav"
+	rigLoadLibrary "dotted-slideshow"  
+	get rigLoadView("sitewide/doc-head")
+
+end zmonastery
+
+
+# CALL THE CONTROLLER HANDLER
+
+
+
+--| END OF zmonastery.lc
+--| Location: ./system/application/ha/controllers/zmonastery.lc
+----------------------------------------------------------------------

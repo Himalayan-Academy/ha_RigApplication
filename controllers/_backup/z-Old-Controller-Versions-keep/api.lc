@@ -1,0 +1,1240 @@
+<?rev
+
+global gControllerHandlers, gData
+
+-- common handlers
+put "api,index,enumoptions" into gControllerHandlers
+-- book handlers
+put ",bookget,bookupdate,bookinsert,savecover,listbooks,listbookslc,bookcover,changebookfileid," after gControllerHandlers
+-- audio handlers
+put ",listaudio,audioget,audioupdate,audiodump,audioinsert,listrecords,audioupload,changeaudiofileid" after gControllerHandlers
+-- collection handlers
+put ",savecollection,collectiondata,newcollection,verifylogin" after gControllerHandlers
+-- API Version 2 handlers
+put ",insertitem,listitems,getitem" after gControllerHandlers
+
+
+local sReport
+
+command api
+	# code...
+	set the errormode to "inline"
+	rigLoadModel "get-book-data"
+	rigLoadLibrary "epub"
+	rigLoadLibrary "audio"
+	rigLoadLibrary "arraytools"
+	rigLoaderLoadLibrary "Email"
+	rigLogMessage "debug","API Controller Loaded:" && rigFetchRSegment(2)
+	
+	# API version 2: authentication of users. below
+	
+	if $_SERVER["REQUEST_METHOD"] is "POST" then
+		if rigVarPost("version") is "2" then
+			put rigVarPost("username") into gData["api"]["username"]
+			put rigVarPost("password") into gData["api"]["password"]
+			put rigVarPost("output_format") into gData["api"]["output encoding"]
+			put rigVarPost("input_format") into gData["api"]["input encoding"]
+			rigLogMessage "debug", "API Version 2. User:" && gData["api"]["username"]
+		end if
+	end if
+	
+end api
+
+
+command index
+	# SET PAGE TITLE
+	put "YourPageTitle" into gData["pageTitle"]
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("apiView")
+end index
+
+# This command is used by the many stack manager applications
+# that we're seeding to third-party users.
+command verifylogin
+  put rigUriToAssoc(3) into tDataA
+  ct "text/plain"
+  switch
+    case tDataA["login"] is empty
+    case tDataA["password"] is empty
+      put "error: login/password empty."
+      quit
+    break
+  end switch
+  put url "file:/home/devhap/etc/accounts.conf" into tAccountsData
+  repeat for each line tLine in tAccountsData
+    if tDataA["login"] & "|" & tDataA["password"] is tLine then
+      put "ok: user valid."
+      quit
+    end if
+  end repeat
+  put "error: login/password does not match."
+end verifylogin
+
+command enumoptions
+	put rigFetchRSegment(3) into tTable
+	put rigFetchRSegment(4) into tField
+	put enumOptionsArray(tTable, tField) into tA
+	ct "text/plain"
+	repeat with x = 1 to the number of lines in the keys of tA
+		put tA[x] & cr
+	end repeat
+end enumoptions
+		
+	
+
+command listbooks
+	rigDbWhere "media_type","text/book"
+	put rigDbGet("item") into tQ
+	put "<?xml version="& q(1.0) & "?>" into tBuf
+	put "<books total=" & q(tQ["numrows"]) &">" after tBuf
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tBookA
+		put "<book>" after tBuf
+		put "<title>" & tBookA["title"] &"</title>" after tBuf
+		put "<approved_for_public>" & tBookA["approved_for_public"] &"</approved_for_public>" after tBuf
+		put "<subtitle>" & tBookA["subtitle"] &"</subtitle>" after tBuf
+		put "<file_id>" & tBookA["file_id"] &"</file_id>" after tBuf
+		put "</book>" after tBuf
+	end repeat
+	put "</books>" after tBuf
+  put tBuf
+end listbooks
+
+command listbookslc
+	rigDbWhere "media_type","text/book"
+	put rigDbGet("item") into tQ
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tBookA[x]
+	end repeat
+	put the base64encode of the arrayencode of tBookA
+end listbookslc
+
+command bookcover
+	put rigFetchRSegment(3) into tBookA["file_id"]
+	put findBookByArray(tBookA) into tBookA
+	if tBookA[1]["cover"] is not empty then
+		put url (tBookA[1]["cover"])
+		quit
+	end if 
+	put "false: no cover"
+	quit
+end bookcover
+		
+
+command bookget
+	put rigFetchRSegment(3) into tBookA["file_id"]
+	rigLogMessage "debug","bookget:" && tBookA["file_id"]
+	put findBookByArray(tBookA) into tBookA
+	put the base64encode of the arrayencode of tBookA
+end bookget
+
+command savecover
+	put rigFetchRSegment(3) into tFileID
+	put the base64decode of $_POST_RAW into url ("binfile:" & epubPath(tFileID) & tFileID & "_cover.jpg")
+	put epubURLWithFile(tFileID, (tFileID & "_cover.jpg"))
+	quit
+end savecover
+
+on bookupdate
+	##
+	## Step - 1
+	##
+	## get book and book data.
+	##
+	put rigFetchRSegment(3) into tBookA["file_id"]
+	rigLogMessage "debug","updating book" && tBookA["file_id"]
+	try
+		put the arraydecode of the base64decode of $_POST_RAW into tNewDataA
+	catch n
+		put "error: malformed data"
+		exit bookupdate
+	end try
+	repeat for each key tK in tNewDataA
+		rigLogMessage "debug", tK &":" && tNewDataA[tK]
+	end repeat
+	if tBookA["file_id"] is tNewDataA["file_id"] then
+		checkAndCreateBookFolder tNewDataA["file_id"]
+	else
+		try
+		checkAndCreateBookFolder tBookA["file_id"]
+		rename folder ($_SERVER["DOCUMENT_ROOT"] & "/books/" & tBookA["file_id"]) to ($_SERVER["DOCUMENT_ROOT"] & "/books/" & tNewDataA["file_id"])
+		rename file ($_SERVER["DOCUMENT_ROOT"] & "/books/" & tBookA["file_id"] & "_cover.jpg") to ($_SERVER["DOCUMENT_ROOT"] & "/books/" & tNewDataA["file_id"] & "_cover.jpg")
+		rename file ($_SERVER["DOCUMENT_ROOT"] & "/books/" & tBookA["file_id"]& "_thumb.jpg") to ($_SERVER["DOCUMENT_ROOT"] & "/books/" & tNewDataA["file_id"]& "_thumb.jpg")
+		catch m
+		end try
+	end if
+	rigLogMessage "debug","extracting channels and formats"
+	## Now extract channel and formats
+	put tNewDataA["channels"] into tChannelsA
+	delete variable tNewDataA["channels"]
+	put tNewDataA["formats"] into tFormatsA
+	delete variable tNewDataA["formats"]
+
+	##
+	## Step - 2
+	##
+	## Update book in the "item" table
+	##
+	rigLogMessage "debug","updating item in table"
+	rigDbWhere "file_id", tBookA["file_id"]
+	get rigDbUpdate("item", tNewDataA)
+	rigLogMessage "debug","result:" && it
+	## Now that we've updated the book data,
+	## Loop thru channels updating them.
+	##
+	## If a channel has no "channel_id" then
+	## it is a new channel. Should be inserted.
+
+	rigLogMessage "debug","looping thru channels"
+	repeat for each key tC in tChannelsA
+		if tChannelsA[tC]["channel_id"] is empty then
+			rigLogMessage "debug","new channel" && tChannelsA[tC]["channel_name"]
+			get rigDbInsert("channel",tChannelsA[tC])
+			rigLogMessage "debug","result:" && it
+		else
+			rigLogMessage "debug","update channel" && tChannelsA[tC]["channel_name"]
+			rigDbWhere "channel_id", tChannelsA[tC]["channel_id"]
+			get rigDbUpdate("channel",tChannelsA[tC])
+			rigLogMessage "debug","result:" && it
+		end if
+	end repeat
+
+	## After the channels, it is time to update the book formats
+	## We follow the same procedure as in the channels, loop thru
+	## each format available, if it has an item_format_id, then
+	## update it, else, we insert it as new.
+	rigLogMessage "debug","looping thru formats"	
+	repeat for each key tC in tFormatsA
+		if tFormatsA[tC]["item_format_id"] is empty then
+			rigLogMessage "debug","new format" && tFormatsA[tC]["format_name"]
+			get rigDbInsert("item_format",tFormatsA[tC])
+			rigLogMessage "debug","result:" && it
+		else
+			rigLogMessage "debug","update format" && tFormatsA[tC]["format_name"]
+			rigDbWhere "item_format_id", tFormatsA[tC]["item_format_id"]
+			get rigDbUpdate("item_format",tFormatsA[tC])
+			rigLogMessage "debug","result:" && it
+		end if
+	end repeat
+
+	##
+	## Step - 3
+	##
+	## Echo back the book data ...
+	## 
+	rigLogMessage "debug","step - 3 echoing book back:" && tNewDataA["file_id"]
+	put empty into tBookA
+	put tNewDataA["file_id"] into tBookA["file_id"]
+	put findBookByArray(tBookA) into tBookA
+	put the base64encode of the arrayencode of tBookA
+end bookupdate
+
+on bookinsert
+	##
+	## Step - 1
+	##
+	## get book and book data.
+	##
+	put rigFetchRSegment(3) into tBookA["file_id"]
+	rigLogMessage "debug","inserting book" && tBookA["file_id"]
+	try
+		put the arraydecode of the base64decode of $_POST_RAW into tNewDataA
+	catch n
+		put "error: malformed data"
+		exit bookinsert
+	end try
+	repeat for each key tK in tNewDataA
+		rigLogMessage "debug", tK &":" && tNewDataA[tK]
+	end repeat
+	checkAndCreateBookFolder tBookA["file_id"]
+	rigLogMessage "debug","extracting channels and formats"
+	## Now extract channel and formats
+	put tNewDataA["channels"] into tChannelsA
+	delete variable tNewDataA["channels"]
+	put tNewDataA["formats"] into tFormatsA
+	delete variable tNewDataA["formats"]
+
+	##
+	## Step - 2
+	##
+	## Update book in the "item" table
+	##
+	rigLogMessage "debug","inserting item"&& tBookA["file_id"]&&"in table"
+	get rigDbInsert("item", tNewDataA)
+	rigLogMessage "debug","result:" && it
+	--put findBookByArray(tBookA) into tBookA
+	rigDbWhere "file_id", tBookA["file_id"]
+	put rigDbGet("item") into tQ
+	put rigDbRow(1) into tBookA
+	rigLogMessage "debug","new book id:" && tBookA["item_id"]
+	## Now that we've updated the book data,
+	## Loop thru channels updating them.
+	##
+	## If a channel has no "channel_id" then
+	## it is a new channel. Should be inserted.
+
+	rigLogMessage "debug","looping thru channels"
+	repeat for each key tC in tChannelsA
+		rigLogMessage "debug","new channel" && tChannelsA[tC]["channel_name"]
+		put tBookA["item_id"] into tChannelsA[tC]["item_id"]
+		get rigDbInsert("channel",tChannelsA[tC])
+		rigLogMessage "debug","result:" && it
+	end repeat
+
+	## After the channels, it is time to update the book formats
+	## We follow the same procedure as in the channels, loop thru
+	## each format available, if it has an item_format_id, then
+	## update it, else, we insert it as new.
+	rigLogMessage "debug","looping thru formats"	
+	repeat for each key tC in tFormatsA
+		rigLogMessage "debug","new format" && tFormatsA[tC]["format_name"]
+		put tBookA["item_id"] into tFormatsA[tC]["item_id"]
+		get rigDbInsert("item_format",tFormatsA[tC])
+		rigLogMessage "debug","result:" && it
+	end repeat
+
+	##
+	## Step - 3
+	##
+	## Echo back the book data ...
+	## 
+	rigLogMessage "debug","step - 3 echoing new book back"
+	put tBookA["file_id"] into tLookFor["file_id"]
+	put empty into tBookA
+	put findBookByArray(tLookFor) into tBookA
+	put the base64encode of the arrayencode of tBookA
+	quit
+end bookinsert
+
+command checkAndCreateBookFolder pID
+	if there is not a folder ($_SERVER["DOCUMENT_ROOT"] & "/books/" & pID) then
+		create folder ($_SERVER["DOCUMENT_ROOT"] & "/books/" & pID)
+	end if
+end checkAndCreateBookFolder
+
+
+
+---> Audio
+
+command checkAndCreateAudioFolder pA
+	rigLogMessage "debug", "checking audio folder:" && folderForAudio(pA)
+	if there is not a folder folderForAudio(pA) then
+		rigLogMessage "debug", "creating audio folder:" && folderForAudio(pA)
+		#create folder folderForAudio(pA)
+		get shell("mkdir -p" && folderForAudio(pA))
+	end if
+end checkAndCreateAudioFolder
+
+command audiodump
+	put rigFetchRSegment(3) into tAudioA["file_id"]
+	put rigFetchRSegment(4) into tFormatA["format_name"]
+	rigLogMessage "debug","audiodump:" && tAudioA["file_id"]
+	put findAudioByArray(tAudioA) into tAudioA
+	if tAudioA is false then
+		put "audioerr, can't find audio"
+		exit audiodump
+	end if 
+	put getAudioFormat(tAudioA[1], tFormatA["format_name"]) into tFormatA
+	put folderForAudio(tAudioA[1]) & "/" & tFormatA["filename"] into tPath
+	ct mime(tPath)
+	put url ("binfile:" & tPath)
+end audiodump
+
+command audioupload
+	put rigFetchRSegment(3) into tAudioA["file_id"]
+	put rigFetchRSegment(4) into tFileName
+	put rigFetchRSegment(5) into tEmail
+	rigLogMessage "debug","audioupload:" && tAudioA["file_id"] && "size:" && $_FILES["file"]["size"]
+	
+	put "system/uploads/" into tConfig["UploadPath"]
+  	put "*" into tConfig["AllowedTypes"]
+ 	rigLoaderLoadLibrary "Upload", tConfig
+	
+	put "file" into tFieldname
+	rigDoUpload tFieldname
+	if the result is false then
+		rigLogMessage "debug","upload failed." && rigDisplayUploadErrors()
+		put "audioerr, can't upload file." && rigDisplayUploadErrors()
+		exit audioupload
+	end if
+	
+
+	put findAudioByArray(tAudioA) into tAudioA
+	if tAudioA is false then
+		put "audioerr, can't find audio"
+		exit audioupload
+	end if 
+	
+	put rigUploadData() into tUploadA
+	
+	rigLogMessage "debug", (tUploadA["fullpath"] && "-->" && folderForAudio(tAudioA[1]) & "/" & tFileName) 
+	put url ("binfile:" & tUploadA["fullpath"]) into url ("binfile:" & folderForAudio(tAudioA[1]) & "/" & tFileName)
+	ct "text/plain"
+	## check if the file uploaded was actually an audio file
+	get identifyfile(folderForAudio(tAudioA[1]) & "/" & tFileName)
+	set the itemdel to ":"
+	put item -1 of it into tFileMagic
+	switch
+		case "audio" is in tFileMagic
+		case "MPEG" is in tFileMagic
+			put "ok: file uploaded. Identified as" && tFileMagic
+			put "New audio upload. (file_id:" && tAudioA[1]["file_id"] &")" into tSubject
+			put "An audio upload went ok." & cr into tReportContent
+			put "Uploader:" && tEmail & cr after tReportContent
+			put "File:" && folderForAudio(tAudioA[1]) & "/" & tFileName & cr after tReportContent
+			put "File identified as:" &cr & tFileMagic & cr after tReportContent
+			
+			hapReport tSubject, tReportContent
+			quit
+		break
+	end switch
+	## if we reach this point, the file is not an recognized audio file and it is rejected.
+	put "error: file is not audio. Identified as" && tFileMagic
+	delete file (folderForAudio(tAudioA[1]) & "/" & tFileName)
+	put "Rejected audio upload. (file_id:" && tAudioA[1]["file_id"] &")" into tSubject
+	put "An audio upload was REJECTED." & cr into tReportContent
+	put "Uploader:" && tEmail & cr after tReportContent
+	put "File identified as:" && tFileMagic & cr after tReportContent
+	hapReport tSubject, tReportContent
+end audioupload
+
+
+/*
+
+-- This function is a part of Utils.irev now
+-- it is left here because I am afraid something will break
+-- so for a while it will rest here as a comment.
+
+function folderForAudio pA
+	switch pA["media_type"]
+		case "media/audio/song"
+			put "songs" into tType
+			put "/" & pA["genre"] after tType
+			## Audio folders need more options depending on their genre.
+			switch pA["genre"]
+				case "bhajan"
+				case "Bhakti-Gitam"
+					put "/" & toLower(pA["deity"])  after tType
+				break
+			end switch
+		break
+		case "media/audio/chant"
+			put "chants" into tType
+		break
+		case "media/audio/inspiredtalk"
+			put "inspired-talks" into tType
+		break
+		case "media/audio/podcasts"
+			put "podcasts" into tType
+		break
+		case "media/audio/instrumental"
+			put "instrumental" into tType
+		break
+		case "media/audio/shum"
+			put "shum" into tType
+		break
+	end switch	
+	return ($_SERVER["DOCUMENT_ROOT"] & "/media/audio/" & tType &"/"& pA["file_id"]) 
+end folderForAudio
+*/
+
+command changeaudiofileid
+	-- pick the old and the new file_ids
+	put rigFetchRSegment(3) into tCurrentA["file_id"]
+	put rigFetchRSegment(4) into tNewA["file_id"]
+	rigLogMessage "debug",("audio file_id change:" && tCurrentA["file_id"] &&"->"&&tNewA["file_id"])
+	
+	ct "text/plain"
+	
+	-- find the song and check paths...
+	put findAudioByArray(tCurrentA) into tRecordA
+	put tRecordA[1] into tRecordA
+	put folderForAudio(tRecordA) into tCurrentFolderPath
+	rigLogMessage "debug","current:" && tCurrentFolderPath
+	put tCurrentFolderPath into tNewFolderPath
+	replace tCurrentA["file_id"] with tNewA["file_id"] in tNewFolderPath
+	rigLogMessage "debug","new:" && tNewFolderPath
+	rigLogMessage "debug","checking current audio path..."
+	if there is not a folder tCurrentFolderPath then
+		rigLogMessage "error","current audio path does not exists!!!"
+		put "audioerr, no such folder."
+		quit
+	end if
+	rigLogMessage "debug","current audio path exists..."
+	rigLogMessage "debug","check new audio path..."
+	if there is a folder tNewFolderPath then
+		rigLogMessage "error","new audio path already exists!!!"
+		put "audioerr, new folder already exist."
+		quit
+	end if
+	rigLogMessage "debug","new audio path does not exists... (this is correct)"
+	
+	-- if we reached here, we can start updating the values.
+	
+	-- first let us rename the folder
+	rigLogMessage "debug","renaming folder..."
+	rigLogMessage "debug","current:" && tCurrentFolderPath
+	rigLogMessage "debug","new:" && tNewFolderPath
+	
+	rename folder tCurrentFolderPath to tNewFolderPath
+	
+	-- now, update the file_id on the record
+	rigLogMessage "debug","updating item in table"
+	rigDbWhere "file_id", tCurrentA["file_id"]
+	put tNewA["file_id"] into tRecordA["file_id"]
+	delete variable tRecordA["item_id"]
+	delete variable tRecordA["formats"]
+	get rigDbUpdate("item", tRecordA)
+	rigLogMessage "debug","result:" && it
+	
+	outputEncodedArray tRecordA
+	
+end changeaudiofileid
+
+command changebookfileid
+	-- pick the old and the new file_ids
+	put rigFetchRSegment(3) into tCurrentA["file_id"]
+	put rigFetchRSegment(4) into tNewA["file_id"]
+	rigLogMessage "debug",("book file_id change:" && tCurrentA["file_id"] &&"->"&&tNewA["file_id"])
+	
+	ct "text/plain"
+	
+	-- find the song and check paths...
+	put findBookByArray(tCurrentA) into tRecordA
+	put tRecordA[1] into tRecordA
+	put folderForBook(tRecordA) into tCurrentFolderPath
+	rigLogMessage "debug","current:" && tCurrentFolderPath
+	put tCurrentFolderPath into tNewFolderPath
+	replace tCurrentA["file_id"] with tNewA["file_id"] in tNewFolderPath
+	rigLogMessage "debug","new:" && tNewFolderPath
+	rigLogMessage "debug","checking current book path..."
+	if there is not a folder tCurrentFolderPath then
+		rigLogMessage "error","current book path does not exists!!!"
+		put "bookerr, no such folder."
+		quit
+	end if
+	rigLogMessage "debug","current book path exists..."
+	rigLogMessage "debug","check new book path..."
+	if there is a folder tNewFolderPath then
+		rigLogMessage "error","new book path already exists!!!"
+		put "bookerr, new folder already exist."
+		quit
+	end if
+	rigLogMessage "debug","new book path does not exists... (this is correct)"
+	
+	-- if we reached here, we can start updating the values.
+	
+	-- first let us rename the folder
+	rigLogMessage "debug","renaming folder..."
+	rigLogMessage "debug","current:" && tCurrentFolderPath
+	rigLogMessage "debug","new:" && tNewFolderPath
+	
+	rename folder tCurrentFolderPath to tNewFolderPath
+	
+	-- now, update the file_id on the record
+	rigLogMessage "debug","updating item in table"
+	rigDbWhere "file_id", tCurrentA["file_id"]
+	put tNewA["file_id"] into tRecordA["file_id"]
+	-- remove items from array that were added as a convenience from findBookByArray()
+	delete variable tRecordA["item_id"]
+	delete variable tRecordA["formats"]
+	delete variable tRecordA["channels"]
+	delete variable tRecordA["cover"]
+	
+	get rigDbUpdate("item", tRecordA)
+	rigLogMessage "debug","result:" && it
+	
+	outputEncodedArray tRecordA
+	
+end changebookfileid
+
+
+command listaudio
+	rigDbWhere "media_type LIKE 'audio%'"
+	rigDbSelect "item_id,file_id,media_type,title,genre,artists,model_for_study"
+	put rigDbGet("item") into tQ
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tAudioA[x]
+	end repeat
+	put the base64encode of the arrayencode of tAudioA
+end listaudio
+
+command audioget
+	put rigFetchRSegment(3) into tAudioA["file_id"]
+	rigLogMessage "debug","audioget:" && tAudioA["file_id"]
+	put findAudioByArray(tAudioA) into tAudioA
+	outputEncodedArray tAudioA
+end audioget
+
+on audioinsert
+	##
+	## Step - 1
+	##
+	## get book and book data.
+	##
+	put rigFetchRSegment(3) into tAudioA["file_id"]
+	rigLogMessage "debug","inserting audio" && tAudioA["file_id"]
+	try
+		put the arraydecode of the base64decode of $_POST_RAW into tNewDataA
+	catch n
+		put "error: malformed data"
+		exit audioinsert
+	end try
+	logArrayData tNewDataA
+	
+	put folderForAudio(tNewDataA) into tFolder
+	if there is a folder tFolder then
+		#rigLogMessage "debug","cant insert audio, folder exists:" && tFolder
+		#put "audioerr, this file id already exists. check for duplicate and change file_id."
+		#quit
+	end if
+	
+	checkAndCreateAudioFolder tNewDataA
+
+	rigLogMessage "debug","extracting channels and formats"
+	## Now extract formats
+	put tNewDataA["formats"] into tFormatsA
+	delete variable tNewDataA["formats"]
+
+	##
+	## Step - 2
+	##
+	## Insert audio in the "item" table
+	##
+	rigLogMessage "debug","inserting item in table"
+	get rigDbInsert("item", tNewDataA)
+	rigLogMessage "debug","result:" && it
+	put tNewDataA["file_id"] into tAudioA["file_id"]
+	put findAudioByArray(tAudioA) into tAudioA
+	rigLogMessage "debug","looping thru formats"	
+	repeat for each key tC in tFormatsA
+		rigLogMessage "debug","new format" && tFormatsA[tC]["format_name"] && "for item" && tAudioA[1]["item_id"]
+		put tAudioA[1]["item_id"] into tFormatsA[tC]["item_id"]
+		get rigDbInsert("item_format",tFormatsA[tC])
+		rigLogMessage "debug","result:" && it
+	end repeat
+
+	##
+	## Step - 3
+	##
+	## Report the new audio insertion.
+	##
+	put "New" && tNewDataA["media_type"] && tNewDataA["title"] && "Inserted. (file_id:" && tNewDataA["file_id"] &")" into tSubject
+	
+	put "A new audio was inserted in the database by" & tNewDataA["entered_by"] & "." & cr & cr into tReportContent
+	put the keys of tNewDataA into tKeys
+	sort tKeys
+	repeat for each line tK in tKeys
+		put tK & ":" & tab & tNewDataA[tK] & cr after tReportContent
+	end repeat
+	hapReport tSubject, tReportContent
+
+	##
+	## Step - 4
+	##
+	## Echo back the audio data ...
+	## 
+	rigLogMessage "debug","step - 4 echoing audio back:" && tNewDataA["file_id"]
+	put empty into tAudioA
+	put tNewDataA["file_id"] into tAudioA["file_id"]
+	put findAudioByArray(tAudioA) into tAudioA
+	put the base64encode of the arrayencode of tAudioA
+end audioinsert
+
+on audioupdate
+	##
+	## Step - 1
+	##
+	## get book and book data.
+	##
+	put rigFetchRSegment(3) into tAudioA["file_id"]
+	rigLogMessage "debug","updating audio" && tAudioA["file_id"]
+	try
+		put the arraydecode of the base64decode of $_POST_RAW into tNewDataA
+	catch n
+		put "error: malformed data"
+		exit audioupdate
+	end try
+	logArrayData tNewDataA
+	if tAudioA["file_id"] is tNewDataA["file_id"] then
+		checkAndCreateAudioFolder tNewDataA
+	else
+		try
+		checkAndCreateAudioFolder tNewDataA
+		rename folder ($_SERVER["DOCUMENT_ROOT"] & "/media/audio/" & tBookA["file_id"]) to ($_SERVER["DOCUMENT_ROOT"] & "/media/audio/" & tNewDataA["file_id"])
+		catch m
+		end try
+	end if
+	rigLogMessage "debug","extracting formats"
+	## Now extract formats
+	put tNewDataA["formats"] into tFormatsA
+	delete variable tNewDataA["formats"]
+
+	##
+	## Step - 2
+	##
+	## Update audio in the "item" table
+	##
+	rigLogMessage "debug","updating item in table"
+	rigDbWhere "file_id", tAudioA["file_id"]
+	get rigDbUpdate("item", tNewDataA)
+	rigLogMessage "debug","result:" && it
+
+	rigLogMessage "debug","looping thru formats"	
+	
+	#
+	# Update formats
+	#
+	
+	# Pick current formats table for item ...
+	put tNewDataA["file_id"] into tAudioA["file_id"]
+	put findAudioByArray(tAudioA) into tCurrentAudioA
+	put tCurrentAudioA[1]["formats"] into tCurrentFormatsA
+	rigLogMessage "debug","Current formats table:"
+	logArrayData tCurrentFormatsA
+	rigLogMessage "debug","End of formats table"
+	
+	
+	#
+	# Look for deleted formats
+	#
+	rigLogMessage "debug","Looking for format records to delete..."	
+	repeat for each key tC in tCurrentFormatsA
+		put false into tFound
+		repeat for each key tK in tFormatsA
+			if tCurrentFormatsA[tC]["item_format_id"] is tFormatsA[tK]["item_format_id"] then
+				put true into tFound
+			end if
+		end repeat
+		if tFound is false then
+			# the record was not found on the current formats array, so delete it
+			put tCurrentFormatsA[tC]["item_format_id"] into tRecordID
+			rigLogMessage "debug","found one! id:" && tRecordID
+		
+			if tRecordID is not a number then
+				rigLogMessage "error","panic!!! almost deleted the wrong item."
+				next repeat
+			end if
+			rigDbWhere "item_format_id", tRecordID
+			rigDbLimit 1
+			get rigDbDelete("item_format") 
+			rigLogMessage "debug","result:" && it
+		end if
+	end repeat
+	
+	#
+	# Looking for format records to insert or update...
+	#
+	
+	repeat for each key tC in tFormatsA
+		if tFormatsA[tC]["item_format_id"] is empty then
+			rigLogMessage "debug","new format" && tFormatsA[tC]["format_name"]
+			get rigDbInsert("item_format",tFormatsA[tC])
+			rigLogMessage "debug","result:" && it
+		else
+			# Might need to change the filename on disk...
+			put formatForID(tCurrentFormatsA,tFormatsA[tC]["item_format_id"]) into tCurrentA
+			rigLogMessage "debug","format item exists." && tCurrentA["filename"]
+			if the keys of tCurrentA is not empty then
+				
+				#
+				# Check for new format items and for updated format items...
+				#
+				if tCurrentA["filename"] is not tFormatsA[tC]["filename"] then
+					rigLogMessage "debug","filename changed from" &&  tCurrentA["filename"] && "to" && tFormatsA[tC]["filename"]
+					put folderForAudio(tCurrentAudioA[1]) & "/" & tCurrentA["filename"] into tCurrentPath
+					put folderForAudio(tCurrentAudioA[1]) & "/" & tFormatsA[tC]["filename"] into tNewPath
+					try
+						rigLogMessage "debug","current:" && tCurrentPath
+						rigLogMessage "debug","new:" && tNewPath
+						rename file tCurrentPath to tNewPath
+						rigLogMessage "debug","result:" && the result && "it:" && it
+					catch n
+						rigLogMessage "error","renaming file:" && n
+					end try
+				end if
+			end if
+			
+			# Update record ...
+			rigLogMessage "debug","update format" && tFormatsA[tC]["format_name"]
+			rigDbWhere "item_format_id", tFormatsA[tC]["item_format_id"]
+			get rigDbUpdate("item_format",tFormatsA[tC])
+			rigLogMessage "debug","result:" && it
+			
+		end if
+	end repeat
+
+
+	##
+	## Step - 3
+	##
+	## Report the new audio insertion.
+	##
+	put "Updated" && tNewDataA["media_type"] && tNewDataA["title"] && "(file_id:" && tNewDataA["file_id"] &")" into tSubject
+	
+	put "An audio item was updated in the database by" & tNewDataA["entered_by"] & "." & cr & cr into tReportContent
+	put the keys of tNewDataA into tKeys
+	sort tKeys
+	repeat for each line tK in tKeys
+		put tK & ":" & tab & tNewDataA[tK] & cr after tReportContent
+	end repeat
+	hapReport tSubject, tReportContent
+
+	##
+	## Step - 4
+	##
+	## Echo back the audio data ...
+	## 
+	rigLogMessage "debug","step - 4 echoing audio back:" && tNewDataA["file_id"]
+	put empty into tAudioA
+	put tNewDataA["file_id"] into tAudioA["file_id"]
+	put findAudioByArray(tAudioA) into tAudioA
+	put the base64encode of the arrayencode of tAudioA
+end audioupdate
+	
+	
+--> Generic methods for the database
+
+command listrecords
+	put rigFetchRSegment(3) into tTable
+	put decodeArray64($_POST_RAW) into tArrayA
+	if the keys of tArrayA is not empty then
+		rigDbWhere(tArrayA)
+	end if
+	put rigDbGet(tTable) into tQ
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tRetA[x]
+	end repeat
+	outputEncodedArray tRetA
+end listrecords
+
+--> collections
+
+command savecollection
+	put rigFetchRSegment(3) into tCollectionID
+	put decodeArray64($_POST_RAW) into tArrayA
+	if tArrayA is false then
+		rigLogMessage "debug", "savecollectionerr, $_POST_RAW is wrong"
+		put "savecollectionerr, $_POST_RAW is wrong"
+		quit
+	end if
+	
+	-- empty the collection first
+	put tCollectionID into tArray["collection_id"]
+	get rigDbDelete("collection_item", tArray) 
+	rigLogMessage "debug","result:" && it
+
+	-- insert records
+	put the keys of tArrayA into tList
+	sort numeric tList
+	repeat for each line tOrder in tList
+		put tArrayA[tOrder] into tItemA
+		add 1 to tPlayOrder
+		put tPlayOrder into tRecordA["play_order"]
+		put tCollectionID into tRecordA["collection_id"]
+		put tItemA["item_id"] into tRecordA["item_id"]
+		rigLogMessage "debug", ("inserting new record in the collection" && tCollectionID)
+		get rigDbInsert("collection_item", tRecordA)
+		rigLogMessage "debug","result:" && it
+		add 1 to tTotal
+	end repeat
+	put "records inserted:"&& tTotal
+end savecollection
+
+command newcollection
+	put rigFetchRSegment(3) into tRecordA["name"]
+	get rigDbInsert("collection", tRecordA)
+    rigLogMessage "debug","result:" && it
+	put "ok"
+end newcollection
+
+command collectiondata
+	put rigFetchRSegment(3) into tCollectionID
+	rigDbWhere "collection_id", tCollectionID
+	put rigDbGet("collection_item") into tQ
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tRecA
+		rigDbWhere "item_id", tRecA["item_id"]
+		put rigDbGet("item") into tQ2
+		put rigDbRow(1) into tRetA[x]
+		rigDbWhere "collection_id", tCollectionID
+		put rigDbGet("collection_item") into tQ
+	end repeat
+	put the base64encode of the arrayencode of tRetA
+end collectiondata
+
+
+#
+# NEW GENERATION API BELOW
+# 
+# The current API model is getting too big and confuse.
+# We need to rework it into a simpler model that can
+# handle all our data. 
+#
+# I will rework this below with a generic API.
+#
+# The first manager to support the new API will be the hapVideoManager
+#
+#
+# DESIGN DECISIONS
+#
+# The new API will be based on POST calls only. No GET whatsoever, I will
+# break up with the REST method and use a single method for simplicity sake
+#
+# All post calls need to contain the following variables:
+#
+#		version = 2
+#		username = (the email of the user)
+#		password = (the password of the user)
+#
+# This variables will be checked on the constructor. Depending on their presence
+# we'll serve with the new API or not.
+#
+
+function isUserAuthenticated
+	if gData["api"]["username"] is empty or gData["api"]["password"] is empty then
+		return false
+	end if
+	put url "file:/home/devhap/etc/accounts.conf" into tAccountsData
+  repeat for each line tLine in tAccountsData
+    if gData["api"]["username"] & "|" & gData["api"]["password"] is tLine then
+      return true
+    end if
+  end repeat
+	return false
+end isUserAuthenticated
+
+command version2only pRequireAuthentication
+	if $_SERVER["REQUEST_METHOD"] is not "POST" then
+		put "error: version 2 requests are POST only."
+		quit
+	end if
+	
+	if rigVarPost("version") is not "2" then
+		put "error: this endpoint requires API version 2 conventions."
+		quit
+	end if
+	if pRequireAuthentication is true then
+		if isUserAuthenticated() is false then
+			put "error: user not authenticated"
+		end if
+	end if 
+end version2only
+
+command outputArray pA
+	switch gData["api"]["output encoding"]
+		case "gzip"
+			put header "Content-type: application/x-compressed-livecode-array"
+			put binary the compress of the arrayencode of pA
+		break
+		default
+			put header "Content-type: text/x-base64-compressed-livecode-array"
+			put binary the base64encode of the arrayencode of pA
+		break
+	end switch
+end outputArray
+
+command decodeInputArray pA
+	switch gData["api"]["input encoding"]
+		case "gzip"
+			return the arraydecode of the decompress of pA
+		break
+		default
+			return the arraydecode of the base64decode of pA
+		break
+	end switch
+end decodeInputArray
+
+function folderForMediaType pA
+	switch
+	case "text" is in pA["media_type"]
+		return ($_SERVER["DOCUMENT_ROOT"] & "/books/" & pA["file_id"])
+	break
+	case "audio" is in pA["media_type"]
+		return folderForAudio(pA)
+	break
+	end switch
+end folderForMediaType
+
+command checkAndCreateFolderForMediaType pA
+	put folderForMediaType(pA) into tFolder
+	rigLogMessage "debug", "checking folder:" && tFolder
+	if tFolder is empty then
+		exit checkAndCreateFolderForMediaType
+	end if
+	if there is not a folder folderForMediaType(pA) then
+		rigLogMessage "debug", "creating audio folder:" && tFolder
+		get shell("mkdir -p" && tFolder)
+	end if
+end checkAndCreateFolderForMediaType
+
+function findItemByArray pA
+	rigDbWhere "file_id", pA["file_id"]
+	combine pA by "," and "="
+	rigLogMessage "debug", "looking for item:" && pA
+	put rigDbGet("item") into tQuery
+	if tQuery["numrows"] > 0 then
+		repeat with x = 1 to tQuery["numrows"]
+			put rigDbRow(x) into tRetA[x]
+			-- get the channels of distribution (mainly print version)
+			rigDbWhere "item_id", tRetA[x]["item_id"]
+			put rigDbGet("channel") into tChannelQuery
+			if tChannelQuery["numrows"] > 0 then
+				repeat with y = 1 to tChannelQuery["numrows"]
+						put rigDbRow(y) into tRetA[x]["channels"][y]
+				end repeat
+			end if
+			-- get the available formats
+			rigDbWhere "item_id", tRetA[x]["item_id"]
+			put rigDbGet("item_format") into tChannelQuery
+			if tChannelQuery["numrows"] > 0 then
+				repeat with y = 1 to tChannelQuery["numrows"]
+						put rigDbRow(y) into tRetA[x]["formats"][y]
+				end repeat
+			end if
+			-- go back to the item query
+			rigDbWhere "file_id", pA["file_id"]
+			put rigDbGet("item") into tQuery
+		end repeat
+	  return tRetA
+	else
+		return false
+	end if
+end findItemByArray
+
+command insertItem
+	verison2only true
+	##
+	## Step - 0
+	##
+	## Check authentication
+	##
+	if isUserAuthenticated() is false then
+		put "error: user not authenticated."
+		exit insertItem
+	end if
+	
+	##
+	## Step - 1
+	##
+	## get item data
+	##
+	put rigFetchRSegment(3) into tItemA["file_id"]
+	rigLogMessage "debug","inserting item" && tItemA["file_id"]
+	try
+		put decodeInputArray(rigVarPost("data")) into tNewDataA
+	catch n
+		put "error: malformed data" 
+		exit insertItem
+	end try
+	logArrayData tNewDataA
+	
+	put folderForMediaType(tNewDataA) into tFolder
+	if there is a folder tFolder then
+		#rigLogMessage "debug","cant insert audio, folder exists:" && tFolder
+		#put "audioerr, this file id already exists. check for duplicate and change file_id."
+		#quit
+	end if
+	
+	checkAndCreateFolderForMediaType tNewDataA
+
+	rigLogMessage "debug","extracting channels and formats"
+	## Now extract formats
+	put tNewDataA["formats"] into tFormatsA
+	delete variable tNewDataA["formats"]
+	
+	
+	#
+	# Update formats
+	#
+	
+	# Pick current formats table for item ...
+	put tNewDataA["file_id"] into tItemA["file_id"]
+	put findItemByArray(tItemA) into tCurrentItemA
+	put tCurrentItemA[1]["formats"] into tCurrentFormatsA
+	rigLogMessage "debug","Current formats table:"
+	logArrayData tCurrentFormatsA
+	rigLogMessage "debug","End of formats table"
+	
+	
+	#
+	# Look for deleted formats
+	#
+	rigLogMessage "debug","Looking for format records to delete..."	
+	repeat for each key tC in tCurrentFormatsA
+		put false into tFound
+		repeat for each key tK in tFormatsA
+			if tCurrentFormatsA[tC]["item_format_id"] is tFormatsA[tK]["item_format_id"] then
+				put true into tFound
+			end if
+		end repeat
+		if tFound is false then
+			# the record was not found on the current formats array, so delete it
+			put tCurrentFormatsA[tC]["item_format_id"] into tRecordID
+			rigLogMessage "debug","found one! id:" && tRecordID
+		
+			if tRecordID is not a number then
+				rigLogMessage "error","panic!!! almost deleted the wrong item."
+				next repeat
+			end if
+			rigDbWhere "item_format_id", tRecordID
+			rigDbLimit 1
+			get rigDbDelete("item_format") 
+			rigLogMessage "debug","result:" && it
+		end if
+	end repeat
+	
+	#
+	# Looking for format records to insert or update...
+	#
+	
+	repeat for each key tC in tFormatsA
+		if tFormatsA[tC]["item_format_id"] is empty then
+			rigLogMessage "debug","new format" && tFormatsA[tC]["format_name"]
+			get rigDbInsert("item_format",tFormatsA[tC])
+			rigLogMessage "debug","result:" && it
+		else
+			# Might need to change the filename on disk...
+			put formatForID(tCurrentFormatsA,tFormatsA[tC]["item_format_id"]) into tCurrentA
+			rigLogMessage "debug","format item exists." && tCurrentA["filename"]
+			if the keys of tCurrentA is not empty then
+				
+				#
+				# Check for new format items and for updated format items...
+				#
+				if tCurrentA["filename"] is not tFormatsA[tC]["filename"] then
+					rigLogMessage "debug","filename changed from" &&  tCurrentA["filename"] && "to" && tFormatsA[tC]["filename"]
+					put folderForMediaType(tCurrentItemA[1]) & "/" & tCurrentA["filename"] into tCurrentPath
+					put folderForMediaType(tCurrentItemA[1]) & "/" & tFormatsA[tC]["filename"] into tNewPath
+					try
+						rigLogMessage "debug","current:" && tCurrentPath
+						rigLogMessage "debug","new:" && tNewPath
+						rename file tCurrentPath to tNewPath
+						rigLogMessage "debug","result:" && the result && "it:" && it
+					catch n
+						rigLogMessage "error","renaming file:" && n
+					end try
+				end if
+			end if
+			
+			# Update record ...
+			rigLogMessage "debug","update format" && tFormatsA[tC]["format_name"]
+			rigDbWhere "item_format_id", tFormatsA[tC]["item_format_id"]
+			get rigDbUpdate("item_format",tFormatsA[tC])
+			rigLogMessage "debug","result:" && it
+			
+		end if
+	end repeat
+		
+
+	##
+	## Step - 2
+	##
+	## Insert record in the "item" table
+	##
+	rigLogMessage "debug","inserting item in table"
+	get rigDbInsert("item", tNewDataA)
+	rigLogMessage "debug","result:" && it
+	put tNewDataA["file_id"] into tItemA["file_id"]
+	put findItemByArray(tItemA) into tItemA
+	rigLogMessage "debug","looping thru formats"	
+	repeat for each key tC in tFormatsA
+		rigLogMessage "debug","new format" && tFormatsA[tC]["format_name"] && "for item" && tItemA[1]["item_id"]
+		put tAudioA[1]["item_id"] into tFormatsA[tC]["item_id"]
+		get rigDbInsert("item_format",tFormatsA[tC])
+		rigLogMessage "debug","result:" && it
+	end repeat
+
+	##
+	## Step - 3
+	##
+	## Report the new item insertion.
+	##
+	put "New" && tNewDataA["media_type"] && tNewDataA["title"] && "Inserted. (file_id:" && tNewDataA["file_id"] &")" into tSubject
+	
+	put "A new item was inserted in the database by" & tNewDataA["entered_by"] & "." & cr & cr into tReportContent
+	put the keys of tNewDataA into tKeys
+	sort tKeys
+	repeat for each line tK in tKeys
+		put tK & ":" & tab & tNewDataA[tK] & cr after tReportContent
+	end repeat
+	hapReport tSubject, tReportContent
+
+	##
+	## Step - 4
+	##
+	## Echo back the audio data ...
+	## 
+	rigLogMessage "debug","step - 4 echoing item back:" && tNewDataA["file_id"]
+	put empty into tItemA
+	put tNewDataA["file_id"] into tItemA["file_id"]
+	put findItemByArray(tItemA) into tItemA
+	outputArray tItemA
+end insertItem
+
+command listitems
+	version2only
+	rigLogMessage "debug","called listitems"
+	if rigVarPost("filter") is "like" then
+		rigLogMessage "debug","filter: LIKE" && ("%" & rigVarPost("media_type") & "%")
+		rigDbWhere "media_type LIKE", ("%" & rigVarPost("media_type") & "%")
+	else
+		rigLogMessage "debug", "filte: EXACT" && rigVarPost("media_type")
+		rigDbWhere "media_type", rigVarPost("media_type")
+	end if
+	
+	if rigVarPost("select") is not false then
+		rigLogMessage "SELECT:" && rigVarPost("select")
+		rigDbSelect rigVarPost("select")
+	end if
+	put rigDbGet("item") into tQ
+	
+	# method 1 - very slow
+	rigLogMessage "debug","numrows:" && tQ["numrows"]
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tItemsA[x]
+	end repeat
+	
+	# method 2
+	# put tQ["resultarray"] into tItemsA
+	outputArray tItemsA
+end listitems
+
+command getitem
+	version2only
+	rigDbWhere "file_id", rigVarPost("file_id")
+	
+	if rigVarPost("select") is not false then
+		rigDbSelect rigVarPost("select")
+	end if
+	put rigDbGet("item") into tQ
+	
+	# method 1 - very slow
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tItemsA[x]
+	end repeat
+	
+	# method 2
+	# put tQ["resultarray"] into tItemsA
+	outputArray tItemsA
+end getitem
+
+function formatForId pA, pItemFormatID
+	repeat for each key tK in pA
+		if pA[tK]["item_format_id"] is pItemFormatID then
+			return pA[tK]
+		end if
+	end repeat
+	return empty
+end formatForID
+
+
+
+# CALL THE CONTROLLER HANDLER
+# api
+
+
+--| END OF api.irev
+--| Location: ./system/application/controllers/api.irev
+----------------------------------------------------------------------

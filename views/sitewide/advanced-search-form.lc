@@ -1,0 +1,85 @@
+
+
+<div id="search-form-wrapper">
+
+<img class="close-x-out" src="/assets/img/close-x-out.png" id="hide-search"  title="Close Advanced Search" / >
+
+<form id="advanced-search-form" action="/site/search/advanced" method="POST">
+
+		<input type="text" name="query" title="Enter words or phrase to search for" /> 
+		<button class="commentsubmit" type="submit" id="submit" name="submit" value="Submit">Search</button>
+		
+<fieldset class="media-type-selector" style="margin:10px 0 0 0;">
+		
+	<input class="option" name="media_type" id="search-audio" type="checkbox" value="audio"  />Audio
+	<input class="option" name="media_type" id="search-video" type="checkbox" value="video"  />Video
+	<input class="option" name="media_type" id="search-slideshows" type="checkbox" value="slideshow"  />Slideshows
+	<input class="option" name="media_type" id="search-images" type="checkbox" value="image"  />Images
+	<input class="option" name="media_type" id="search-publications" type="checkbox" value="text"  />Publications
+	<input class="option" name="media_type" id="search-webpages" type="checkbox" value="page"  />Web pages
+
+</fieldset>
+			
+	<!--			 BR The following is Brian's html for check boxes but I can't get it to behave properly at all.		
+	
+	<fieldset>
+		
+								<div class="checkbox">
+									<input type="checkbox" id="find-audio" value="find-audio" /> <label for="find-audio" class="option">Audio</label>
+									<input type="checkbox" id="find-video" value="find-video" /> <label for="find-video" class="option">Video</label>
+									<input type="checkbox" id="find-slideshows" value="find-slideshows" /> <label for="find-slideshows" class="option">Slideshows</label>
+									<input type="checkbox" id="find-images" value="find-images" /> <label for="find-images" class="option">Images</label>
+									<input type="checkbox" id="find-publications" value="find-publications" /> <label for="find-publications" class="option">Publications</label>
+									<input type="checkbox" id="find-webpages" value="find-webpages" /> <label for="find-webpages" class="option">Web pages</label>
+								</div>
+	  </fieldset>
+	  -->
+	
+	
+		<fieldset id="audio-filters" style="display:none;">
+					
+								<select class="genre" name="genre">			
+						           <option selected="selected" disabled="disabled">Genres</option>
+									<option value="inspired-talks">Inspired Talks</option>
+									<option value="chants">Chants</option>
+									<option value="bhajans">Bhajans</option>
+									<option value="gitams">Gitams</option>
+									<option value="natchintanai">Natchintanai</option>
+									<option value="stotram">Stotram</option>
+									<option value="tirumurai">Tirumurai</option>
+								</select>
+							
+								
+								<!-- maps to database field deity  but we use Themes on the UI  because guru and vedic are not deities -->		
+								
+								<select  class="deity" name="deity" >		
+						           <option selected="selected" disabled="disabled">Song-Chants Themes</option>
+									<option value="Ganesha">Ganesha</option>
+									<option value="Muruga">Muruga</option>
+									<option value="Siva">Siva</option>
+									<option value="Guru">Guru</option>
+									<option value="Vedic">Vedic</option>
+									<option value="other">Other</option>
+								</select>
+								
+
+		</fieldset>
+		
+				<fieldset id="image-filters" style="display:none;">
+					
+								<select class="image-type" name="art-type">	
+								<!-- Maps to art type in the database. We decided not to set up a separate folder for photos 
+								      but include them in the class of media under art, but on the UI we us the word Images-->
+						            <option selected="selected" disabled="disabled">Image Types</option>
+									<option value="Paintings">Paintings</option>
+									<option value="Drawings">Drawings</option>
+									<option value="Photos">Photos</option>
+									<option value="Vector">Vector</option>
+									
+								</select>
+
+		</fieldset>
+	
+		</form>
+
+</div><!-- end advanced search form wrapper -->

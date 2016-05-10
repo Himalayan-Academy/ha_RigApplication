@@ -1,0 +1,21 @@
+<div class="audio-player" style="float:left;">
+ 
+ 
+ 
+ <img src="<? return getFeaturedAudioImage(gData["record"]) ?>" />
+ 
+					    <audio id="audio-[[gData["record"]["unique id"] ]]" controls="control" preload="none" src="<? return getAudioFile(gData["record"], "mp3") ?>" type="audio/mp3" >
+					    </audio>
+					 
+					    	      
+				
+					       
+					    <script type="text/javascript">
+					    $(document).ready(function () {
+					               var mePlayer = $('#audio-[[gData["record"]["unique id"] ]]').mediaelementplayer({loop:true,
+           features: ['playpause','progress','current','duration','volume'],
+           audioWidth:517,
+						               });					              					
+					           });   
+					    </script>
+			</div>

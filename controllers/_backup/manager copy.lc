@@ -1,0 +1,519 @@
+<?rev
+
+## note we use "manager" for the name of this controller because "admin" goes to a different web app. but in the html folder we have "admin" for related content.
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData, gReportType
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "manager,updateChunks,index,getBooksReport,getFilesTest" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+local tSegs
+
+command manager
+# NB! for this to work the /html/* folder must have the same name as the controller
+	
+	put rigFetchSegment(2, 0) into gRealm # top level - depth of URLs this is the command invoked above
+	put rigFetchSegment(3, 0) into gZone  # second depth/nav
+	put rigFetchSegment(4, 0) into gPage  # pages in this realm-zone
+	rigLoaderLoadLibrary "Table"
+		rigLoadLibrary "Getsetheadnav"
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadHelper "asset"
+	rigLoadHelper "file"
+	rigLoadHelper "array"
+	rigLoadPlugin "galleria" 
+
+	rigLoadLibrary "fetchhtml" 
+	rigLoadLibrary "digembeddedcomments"
+    rigLoadLibrary "searchreplaceinfiles"
+	rigLoadLibrary "json" 	
+	
+	put rigLoadView("sitewide/advanced-search-form", TRUE)  into gData["advancedSearchForm"]
+	
+	# for testing the searchform
+	
+	
+	 
+	put rigSegmentArray() into tSegs 
+	
+	# handle special cases first and exit
+	    if tSegs[3]= "update" then
+			updateChunks
+			exit manager
+		end if
+		
+		  if (tSegs[3] is not empty) and (tSegs[2]= "book-report") then
+		     put tSegs[3] into gReportType
+		     getBooksReport(gReportType)
+			 exit manager
+		end if
+		
+		
+		
+						
+	# Deal with two segment 2 URI's which have special handlers
+	# or default to external html for longer URI's
+			
+			if tSegs[3] is empty  then 
+			   # it means we only have two segments and we may want to load
+			   # some other handler here to do other work..
+			   # but we don't have any so far in this controller
+			   switch 
+				 case (tSegs[2] is empty) 
+				 # dig for index.html
+						fetchExternalHTML
+				        viewExternalPage	
+					break 
+					
+					 case (tSegs[2] = "view404s") 
+					view404s
+					break 
+				
+				 case (tSegs[2] = "missing-images") 
+					missingimages
+				break 
+				
+				 case (tSegs[2] = "viewRedirects") 
+					viewRedirects
+				break 
+				
+		 
+				 
+	            case (tSegs[2] = "preview-search") 
+					viewSearchForm
+				break 
+				
+				case (tSegs[2] = "book-report") 
+					getBooksReport
+				break 
+				
+				case (tSegs[2] = "embedded-tasks") 
+					embeddedTasksReport
+				break 
+				case (tSegs[2] = "get-tags") 
+					 getAllTags
+				break 
+				case (tSegs[2] = "search-replace") 
+					searchReplace
+				break 
+				
+					case (tSegs[2] = "get-files") 
+					getFilesTest
+				break 
+				
+					case (tSegs[2] = "channels") 
+					GetChannelsReport
+				break 
+				
+				
+				
+				default 		 	
+				fetchExternalHTML
+				viewExternalPage		  	
+			 end switch 	 
+			 else 
+			  fetchExternalHTML
+			  viewExternalPage			 
+			end if 
+	
+   	
+end manager
+
+command updateChunks
+
+ put getSetHeadNav("skinny","About the Monastery",">Monastery<","cat-about-the-monastery") into gData["pageHeader"]
+		
+  
+  switch tSegs[4]        
+		 case "monastery-sidebar" 
+		 put "<h1>Monastery Sidebar</h1>" into gData["singleArticle"]	 		
+put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/monastery/monastery-sidebar.html") into gData["sideBar"]
+			 break		 
+		case "iraivan-sidebar"
+		 put "<h1>Iraivan Sidebar</h1>" into gData["singleArticle"]	
+		  	put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/monastery/iraivan/iraivan-sidebar.html") into gData["sideBar"]	   		 
+		   break    
+		 case "bangalore-sidebar"
+		  put "<h1>Bangalore Carving Site Sidebar</h1>" into gData["singleArticle"]		 
+			 put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/monastery/iraivan/bangalore/bangalore-sidebar.html") into gData["sideBar"]
+			 break   
+			  case "readlearn-sidebar"
+		  put "<h1>Read Learn Site Sidebar</h1>" into gData["singleArticle"]		 
+			 put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/readlearn/readlearn-sidebar.html")after gData["singleArticle"]
+			 break    	
+	end switch 
+	
+	put "From here you may edit the <b> " && tSegs[4] &"</b> "& "html chunk.<p>"  before gData["singleArticle"]
+	
+	get rigLoadView("sitewide/two-column")  
+		
+end updateChunks
+
+
+command index
+end index
+
+command viewSearchForm
+    put "Kauai's Hindu Monastery - Management" into gData["pageTitle"] 
+    put getSetHeadNav("landing","Preview Search Form",">Monastery<","") into gData["pageHeader"]		   
+    put format ("<style type=\"text/css\">" & cr & "#search-form-wrapper {display: block;}"	& cr & "</style>"  & cr & cr) into tArticle
+		get rigLoadView("sitewide/two-column")  
+end viewSearchForm
+ 
+
+command getLyricsReport gReportType
+
+if gReporttype is empty then put "final" into gReportType
+
+# find all records where lyrics are not empty.... we have four different fields.
+# assume if translitertion
+# fields are in database : lyrics_original, lyrics_original_transliteration, lyrics_literal_translation
+
+	rigDbWhere "lyrics_original_transliteration !=", ""
+
+end getLyricsReport
+
+
+command getBooksReport gReportType
+
+if gReportType is empty then put "atritex" into gReportType
+
+ 	rigDbWhere "media_type", "text/book"
+
+switch gReportType
+
+		 case "atritex"
+		  	rigDbLike "production_notes", "ATRITEX:"
+		  	put "Pending from Atritex" into tReportTitle
+		 	break
+		 	case "todo"
+		 	rigDbLike "production_notes", "TO DO:"
+		 	put "Next Steps" into tReportTitle
+		 	break
+		 	case "completed"
+		 		rigDBLike "production_notes", "Completed"
+		 		put "Completed Titles" into tReportTitle
+		 	break
+		 	case "deployed"
+		 		rigDbWhere "approved_for_public", "YES"
+		 		put "All Publications That Are Approved and Deployed" into tReportTitle
+		 	break
+		 	case "not-live"
+		 		rigDbWhere "approved_for_public", "NO"
+		 			put "Records Entered but Not Published on Web Yet" into tReportTitle
+		 	break
+		
+ 	
+ 	end switch
+ 	
+ 	
+	put rigDbGet("item") into tBookQuery
+	put tBookQuery["numrows"] into tBookRowCount
+	
+	
+   repeat with x = 1 to tBookQuery["numrows"]
+	        put rigDbRow(x) into tRow
+			put tRow["title"]  into tData[x][1]
+			put tRow["item_id"]  into tData[x][2]
+			put tRow["approved_for_public"]  into tData[x][3]
+			put tRow["production_notes"] into tData[x][5]		        
+		end repeat
+		    	    
+		     # dig the formats for the individual book
+			repeat with x = 1 to tBookRowCount		 
+			      put empty into tFormats			     
+			         put "SELECT format_name FROM item_format WHERE item_id = :1" into tSQL
+			         put  tData[x][2] into tArray[1]  # this it the item ID from above for each row
+		             get rigDbQuery(tSQL, tArray) 
+		             put rigDBresult() into tResult
+
+					repeat for each key tKey in tResult
+					    put tResult[tKey] into tRow
+					    put tRow[1] & ", " after tFormats
+					end repeat
+					delete char -2 to -1 of tFormats
+ 			           put tFormats into tData[x][4]
+ 			end repeat	
+
+  
+
+		        			
+		rigSetTableHeading "<b>Title</b>,<b>ID</b>,<b>Live</b>,<b>Formats</b>,<b>Notes</b>"
+		put format("<th align=\"left\">") into tTmpl["headingCellStart"]
+		put "<table border=" & quote & "1" & quote && "class=" & quote &"table-standard" & quote && "cellpadding=" & quote & "0" & quote && "cellspacing=" & quote & "2" & quote & ">" into tTmpl["tableOpen"]
+		
+		rigSetTableTemplate tTmpl 
+	
+				put rigGenerateTable(tData) into tListing  
+
+				put  rigAnchor("/manager/book-report/atritex","Atritex In Progress") & " | " INTO tReportLinks
+				put  rigAnchor("/manager/book-report/todo","To Do") & " | " after tReportLinks
+				put  rigAnchor("/manager/book-report/completed","Completed") & " | " after tReportLinks
+				put  rigAnchor("/manager/book-report/deployed","All Live - Deployed") & " | " after tReportLinks
+				put  rigAnchor("/manager/book-report/not-live","Not Deployed") & " | " after tReportLinks
+				put  rigAnchor("/manager/channels","Channels") after tReportLinks
+				
+				put "<p>" & tReportLinks& "</p>" into gData["singleArticle"]
+				
+				put "<p><b>" && tReportTitle &  " as of &mdash;" & the date & ": "&  tBookRowCount & " Publications</b></p>" & tListing after gData["singleArticle"]
+				
+	
+
+	put "Kauai's Hindu Monastery - On Line Publications Report" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Web Publications Production Status",">Read &amp; Learn<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+	
+ end getBooksReport
+ 
+ command getAllTags
+ 
+	rigDbSelect "tags"
+	put rigDbGet("item") into tQuery
+		repeat with x = 1 to tQuery["numrows"]
+			put rigDbRow(x) into tRow
+			if tRow["tags"] <>empty then
+				put  tRow["tags"]  into tItemTags
+				repeat for each item y in tItemTags
+				   repeat 4 times 
+					   if char 1 of y= " " then 
+					        delete char 1 of y
+				        end if
+			        end repeat
+					 put y & cr after tAllTagsList
+				end repeat
+			end if
+		end repeat
+		
+		# old strip dups function:
+		put cr into theitemDel
+		set the itemDelimiter to char 1 of theitemDel
+		put empty into tResultList
+			repeat for each item tItem in tAllTagsList
+			if tItemList[tItem] is empty then
+				put 1 into tItemList[tItem]
+				put tItem & theitemDel  after tResultList
+			end if
+			end repeat
+		sort lines of tResultLIst
+		replace cr with (cr &"<br />") in tResultList
+
+		
+			put "<p>All tags as of  " & the date &"</p></p>" &tResultList & "</p>" into gData["singleArticle"]
+			put "Kauai's Hindu Monastery - Tags Report" into gData["pageTitle"] 
+			put getSetHeadNav("landing","Tags Report",">Read &amp; Learn<","") into gData["pageHeader"]		
+			get rigLoadView("sitewide/two-column")  
+		
+ 
+ end getAllTags
+ 
+ command embeddedTasksReport
+ 
+ put digEmbeddedComments() into tWorkList
+ put the number of lines of tWorkList into tCount
+
+    
+	put "<p><br />Comments, Tasks, ??  in all HTML and XML files " & the date &": "& tcount & "<br />[Note: only the first comment, task or unresolved item is listed here. There may be more in the file. As each one is resolved, removed it from the file and then future reports will pick up the next one down.] </p><p> Content Codes:</p><ul><li>CU: Content upgrade, works, OK for launch but need upgrade</li><li>FIX: Broken, must be done before launch.</li></ul>"& tWorkList into gData["singleArticle"]
+	put "Kauai's Hindu Monastery -Task-Comments Report" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Tasks, Comments, Unresolved (??)",">Monastery<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+	
+	
+ end embeddedTasksReport
+ 
+command searchReplace
+    put SearchReplaceInFiles()  into gData["singleArticle"]
+	put "Kauai's Hindu Monastery - Seach and Replace Report" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Search and Replace Report",">Monastery<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+end searchReplace
+
+command getFilesTest
+  put ($_SERVER["DOCUMENT_ROOT"] &"/html/img/circles/") into tCirclesFolder
+   put rigGetFileNames(tCirclesFolder,TRUE) into tFiles
+
+	filter tFiles with ("*gurudeva*") 
+	replace cr with "<br />" in tFiles
+	put tFiles into gData["singleArticle"]
+	put "Kauai's Hindu Monastery - Seach and Replace Report" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Search and Replace Report",">Monastery<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+end getFilesTest
+
+command view404s
+
+	put url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/404s_not-redirected.log") into tNotRedirected
+    replace cr with "<br />" in tNotRedirected
+    
+    put format ("<a href=\"/manager/view404s/rotate\">(Archive the Log)</a><br /><br />") before tNotRedirected
+	put tNotRedirected  into gData["singleArticle"]
+
+		if tSegs[3] = "rotate" then
+			put the date && the time into jai
+			replace "/" with  "-" in jai
+			put url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/404s_not-redirected.log") into\
+			url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/" & jai & "_not-redirected.log")
+			put empty into url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/404s_not-redirected.log") 
+			put "Log Was Archived" into gData["singleArticle"]	
+		end if
+  
+  	put "Kauai's Hindu Monastery - Pages Not Found Report" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Pages Not Found Report",">Monastery<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+
+end view404s
+
+command viewRedirects
+
+	put url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/404s_redirected.log") into tRedirected
+    replace cr with "<br />" in tRedirected
+    
+    put format ("<a href=\"/manager/viewRedirects/rotate\">(Archive the Log)</a><br /><br />") before tRedirected
+	put tRedirected  into gData["singleArticle"]
+
+		if tSegs[3] = "rotate" then
+			put the date && the time into jai
+			replace "/" with  "-" in jai
+			put url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/404s_redirected.log") into\
+			url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/" & jai & "404s_redirected.log")
+			put empty into url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/404s_redirected.log") 
+			put "Log Was Archived" into gData["singleArticle"]	
+		end if
+  
+  	put "Kauai's Hindu Monastery - Pages Not Found and Redirected Report" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Pages Not Found and Redirected Report",">Monastery<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+
+end viewRedirects
+
+
+command missingImages
+
+	put url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/images_not_found.log") into tImagesNotFound
+    replace cr with "<br />" in tImagesNotFound
+    
+    put format ("<a href=\"/manager/missing-images/rotate\">(Archive the Missing Images Log)</a><br /><br />") before tImagesNotFound
+	put tImagesNotFound  into gData["singleArticle"]
+
+		if tSegs[3] = "rotate" then
+			put the date && the time into jai
+			replace "/" with  "-" in jai
+			put url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/images_not_found.log") into\
+			url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/" & jai & "_images_not_found.log")
+			put empty into url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/system/logs/images_not_found.log")			
+			put "Log Was Archived" into gData["singleArticle"]	
+		end if
+  
+  	put "Kauai's Hindu Monastery - Missing Images Report" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Missing Images Report",">Monastery<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+
+end missingImages
+
+command getChannelsReport
+
+# we dig the channels table. if there are channels then we have expect and
+# associated book and it gets added to the listing.
+	    put rigDbGet("channel") into tQuery
+		put tQuery["numrows"] into tChannelsCount
+		
+          repeat with x = 1 to tQuery["numrows"]
+       	
+		    put rigDbRow(x) into tRow
+			put tRow["item_id"]  into  tChannelData[x][1] 		 
+			put tRow["channel_name"]  into tChannelData[x][2]    
+			put tRow["url"]  into tChannelData[x][3]   
+			put tRow["channel_id"]   into tChannelDatat[x][4] 
+		end repeat
+		
+	      repeat with x = 1 to tChannelsCount
+        	rigDbWhere "item_id", tChannelData[x][1] 	
+			 put rigDbGet("item") into tBookQuery
+			if  tBookQuery["numrows"] <> 0 then
+				put rigDbRow() into tBookRow
+				put (tBookRow["title"] &" - " &  tChannelData[x][1])  into tData[x][1]
+			else
+				put ("No Associated Book (Channel ID: "  & tChannelData[x][4] &")" ) into tData[x][1]
+			end if
+      
+          put tChannelData[x][2]  into  tData[x][2]
+          
+          # let's format this URL and link text
+         put  tChannelData[x][3] into tURL
+          put tURL into tArray[title]
+         put  rigAnchor(tURL, (char 1 to 24 of tURL), tArray) into  tData[x][3]
+        end repeat
+        
+        # Now we need a list of all complete and deployed publications that have no channels
+        # not all will have a print version to sell, but PK can scan this to see what items
+        # they have yet to add channels for in case they *are* selling it
+        
+			rigDBLike "production_notes", "Completed"	
+			rigDbNotLike "production_notes", "Not For Sale"	
+			put rigDbGet("item") into tDeployedPublications
+			put tDeployedPublications["numrows"] into tDeployedCount   
+			
+		repeat with y = 1 to tDeployedCount		    	
+		    put rigDbRow(y) into tItemRow
+			##put tItemRow["item_id"]  into  tItemData[y][1] 	
+			##	 put tItemRow["title"]  into tItemData[y][2]    				
+			  put tItemRow["item_id"]  into  tID
+			  put tItemRow["title"]  into tTitle
+			  put tItemRow["file_id"]  into tFileID
+			  put tID &"|" & tTitle & "|"& tFileID & cr after tCompletedList
+		  end repeat
+			  	
+# 			# for each book that is complete we check the channels table for anything.
+           repeat for each line z in tCompletedList
+               set the itemdel to "|"
+			  rigDBwhere "item_id",(item 1 of z)
+              put rigDbGet("channel") into tChannelQuery		 
+			 	if  tChannelQuery["numrows"] = 0 then
+			         put ( rigAnchor("/view/"&(item 3 of z),(item 2 of z) )  )&", "& (item 1 of z) &  "<br />" after tNoChannelsBooks
+ 		       end if
+		end repeat
+		
+		# Now get a list of books that are presumed not for sale.. so PK can see these. They might want to try selling them
+		
+	     	rigDBLike "production_notes", "Not For Sale"
+			put rigDbGet("item") into tNotForSale
+			put tNotForSale["numrows"] into tNotForSaleCount  
+           repeat with a = 1 to tNotForSaleCount		    	
+		      put rigDbRow(a) into tNoSaleRow			
+			  put tNoSaleRow["item_id"]  into  tNotSoldID
+			  put tNoSaleRow["title"]  into tNotSoldTitle
+			   put tNoSaleRow["file_id"]  into tNotSoldFileID
+
+			  put ( rigAnchor("/view/"&tNotSoldFileID,tNotSoldTitle )  )&", "&tNotSoldID&  "<br />" after tNotForSaleList
+		  end repeat
+      
+                 
+                 
+        
+		rigSetTableHeading "<b>Books with Channels - IDs</b>,<b>Channel</b>,<b>URL</b>"
+		put format("<th align=\"left\">") into tTmpl["headingCellStart"]
+		put "<table border=" & quote & "1" & quote && "class=" & quote &"table-standard" & quote && "cellpadding=" & quote & "0" & quote && "cellspacing=" & quote & "2" & quote & ">" into tTmpl["tableOpen"]
+		
+		rigSetTableTemplate tTmpl 
+	
+	put rigGenerateTable(tData) into tListing  
+	put format ("<p><br /><a href=\"/manager/book-report\">[Publications Deployment Report]</a><br /><br />The number of Books with Channel Info, ") & the date &": " & tChannelsCount & "</p>" & tListing into gData["singleArticle"]
+	
+     put "<hr /> <br /><br /><b>Deployed Online But No channels Yet: </b><br /> " & tNoChannelsBooks after gData["singleArticle"]	
+ put "<hr /> <br /><b>Presumed Not For Sale: </b><br /><br /> " & tNotForSaleList after gData["singleArticle"]
+ 
+
+
+	put "Kauai's Hindu Monastery - Book Channels Report" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Books With Channels Entered",">Read &amp; Learn<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+
+end getChannelsReport
+
+ 
+--| END OF manager.lc
+--| Location: ./system/application/ha/controllers/manager.lc
+----------------------------------------------------------------------

@@ -1,0 +1,89 @@
+<?lc
+
+   global gControllerHandlers, gData
+
+   put "index,hap_ListImageFileIDs" into gControllerHandlers
+
+   on test_sitemap.lc
+      start using stack (gAPPPATH & "stacks/lib_Array.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Files.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Gist.livecode")
+      start using stack (gAPPPATH & "stacks/lib_GitHub.livecode")
+      start using stack (gAPPPATH & "stacks/lib_HAP.livecode")
+      start using stack (gAPPPATH & "stacks/lib_HTML.livecode")
+      start using stack (gAPPPATH & "stacks/lib_LiveWorld.livecode")
+      start using stack (gAPPPATH & "stacks/lib_RemoteServer.livecode")
+      start using stack (gAPPPATH & "stacks/lib_RevIgniter.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Scrape.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Sitemap.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Text.livecode")
+      start using stack (gAPPPATH & "stacks/lib_XML.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Youtube.livecode")
+   end test_sitemap.lc
+
+   on index
+      put kwote ("Hello World")
+   end index
+
+   function sitemap_ListFileIDs refinementName
+      put sitemap_HapRefinementToMediaTypes (refinementName) into mTypeList
+      put sitemap_FileIDsFromMediaType (mTypeList) into fileIDs
+      return fileIDs
+   end sitemap_ListFileIDs
+
+   on hap_ListImageFileIDs
+      put sitemap_ListFileIDs ("Image") into fileIDs
+      put fileIDs
+   end hap_ListImageFileIDs
+
+   function rigDB_ExtractFirstThing tQuery
+      repeat for each key tKey in tQuery ["resultarray"]
+         put tQuery ["resultarray"][tKey][1] into fThing
+         put empty into indexArray [fThing]
+      end repeat
+      put keys (indexArray) into fThings
+      return fThings
+   end rigDB_ExtractFirstThing
+
+   command rigDB_ItemByMediaType mTypeList
+      rigDbFrom "item"
+      repeat for each item mType in mTypeList
+         rigDbOrWhere "media_type", mType
+      end repeat
+      rigDbWhere "approved_for_public", "YES"
+   end rigDB_ItemByMediaType
+
+   function sitemap_FileIDsFromMediaType mTypeList
+      rigDB_ItemByMediaType mTypeList
+      rigDbSelect "file_id"
+      put rigDbGet() into tQuery
+
+      put rigDB_ExtractFirstThing (tQuery) into fileIDs
+      return fileIDs
+   end sitemap_FileIDsFromMediaType
+
+   function sitemap_HapRefinementToMediaTypes refinementName
+      switch refinementName
+         case "Image"
+            put "art/photography,art/painting,art/drawing,art/vector" into mTypeList
+         case "Photo"
+            return "art/photography,slideshow/external,slideshow/galleria" into mTypeList
+         case "Art"
+            return "art/drawing,art/painting,art/vector" into mTypeList
+         case "ArtPhoto"
+            return "art/photography" into mTypeList
+         case "Galleria"
+            return "slideshow/galleria" into mTypeList
+         case "Slideshow"
+            return "slideshow/external,slideshow/galleria" into mTypeList
+         case "Book"
+            return "text/book,text/booklet,text/review" into mTypeList
+         case "Audio"
+            return "audio/inspiredtalk,audio/shum,audio/chant,audio/song" into mTypeList
+         case "Video"
+            return "video/building,video/news,video/pubdesk,video/ritual,video/talk,video/teaching,video/travel" into mTypeList
+         default
+            return empty
+      end switch
+   end sitemap_HapRefinementToMediaTypes
+?>

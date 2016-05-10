@@ -1,0 +1,41 @@
+<?
+local tResultCount, tGenreReminder
+put the number of lines in the keys of gData["search results"] into tResultCount
+	if tResultCount=0 then put "<p>(Reminder: You must select a genre or speaker)</p>" into tGenreReminder	 
+?>
+
+
+<div id="search-results" style="clear:both; padding-top:15px; margin:25px;line-height:1.2em">
+<!-- <h3>Found [[ the number of lines in the keys of gData["search results"] ]] results. </h3> -->
+
+<b>Found [[ tResultCount ]]</b> 
+[[ tGenreReminder ]]
+
+<ul>
+<?
+put empty into tBuf
+put 0 into y # throttle Variable
+
+## repeat with x = 1 to the number of lines in the keys of gData["search results"]
+repeat with x = 1 to tResultCount
+  add 1 to y
+		 ## throttle results, disabled for now
+		 # if y > 50 then
+		##    exit repeat
+ 		## end if
+  put gData["search results"][x]["file_id"] into tFileID
+  put gData["search results"][x]["title"] into tTitle
+  put gData["search results"][x]["artists"] into tArtists
+  put gData["search results"][x]["description"] into tDescription
+  
+ 
+  # put format("<li><a href=\"http://dev.himalayanacademy.com/listen/%s/mp3\">%s</a>, %s",tFileID, tTitle, tArtists) after tBuf
+put format("<li><a href=\"http://dev.himalayanacademy.com/view/%s\">%s</a>, %s",tFileID, tTitle, tArtists) after tBuf
+   if tDescription <> empty then
+  put format("<blockquote style=\"padding:3px 65px 4px 20px;\" class=\"audio-description\" no-style=\"display:none\">%s</blockquote></li>",tDescription) after tBuf
+  end if
+end repeat
+return tBuf
+?>
+</ul>
+</div><!-- end search-results -->

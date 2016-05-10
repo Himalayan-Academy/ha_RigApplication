@@ -1,0 +1,3 @@
+<a href="/view/[[ gData["record"]["file_id"] ]]">
+	<img src="/media/books/[[ gData["record"]["file_id"] ]]/[[ gData["record"]["file_id"] ]]_cover_med.jpg" alt="Image of..." />
+</a>

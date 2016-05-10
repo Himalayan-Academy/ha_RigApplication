@@ -1,0 +1,572 @@
+<?rev
+
+/*
+API2.LC - The new API 2.0 for Himalayan Academy WebSite
+
+author: Andre Alves Garzia (andre@andregarzia.com)
+2011
+
+*/
+
+
+global gControllerHandlers, gData
+
+-- common handlers
+put "api2,index,enumoptions" into gControllerHandlers
+-- collection handlers
+put ",savecollection,collectiondata,newcollection,verifylogin" after gControllerHandlers
+-- API Version 2 handlers
+put ",insertitem,listitems,getitem" after gControllerHandlers
+
+
+global gXML
+
+command api2
+	# code...
+	set the errormode to "inline"
+	rigLoadModel "get-book-data"
+	rigLoadLibrary "epub"
+	rigLoadLibrary "audio"
+	rigLoadLibrary "arraytools"
+	rigLoaderLoadLibrary "Email"
+	rigLogMessage "debug","API 2.0 Controller Loaded:" && rigFetchRSegment(2)
+	
+	# The first thing to do is check the API assumptions.
+	
+	if $_SERVER["REQUEST_METHOD"] is not "POST" then
+		sendError "This API only answers POST requests."
+	end if
+	
+	get revCreateXMLTree($_POST_RAW, true, true, false)
+	if it is not a number then
+		sendError "xmlerr,Could not parse XML Request. Reason:" && it
+	end if
+	
+	put it into gXML
+	
+	put xmltoarray(gXML) into gData
+	
+	# Check user login
+	get verifyLogin()
+	if it is not true then
+		sendError it
+	end if
+	
+	# Verify if the user has permission for that command
+	put rigFetchRsegment(2) into tCommandToCall
+	get verifyPermission(tCommandToCall)
+	if it is not true then
+		sendError it
+	end if
+	
+end api2
+
+command xmlescape @pText
+	replace "&" with "&amp;" in pText
+	replace "<" with "&lt;" in pText
+	replace ">" with "&gt;" in pText
+end xmlescape
+
+command sendError pMessage, pType
+	ct "text/xml"
+	if pType is empty then
+		put "NON_SPECIFIC_ERROR" into pType
+	end if
+	xmlescape pMessage
+	get rigLoadView("api/error", true)
+	put the merge of it
+	quit
+end sendError
+
+command sendOK pMessage, pData
+	ct "text/xml"
+	put empty into pEncode
+	if the keys of pData is not empty then
+		put " encoding=" & quote & "base64-arrayencode" & quote into pEncode
+		put the base64encode of the arrayEncode of pData into pData
+	end if
+	xmlescape pMessage
+	get rigLoadView("api/ok", true)
+	put the merge of it
+	quit
+end sendOK
+	
+
+
+command index
+	put "azul" into tA["array_base64"]["cor"]
+	put "maçã" into tA["array_base64"]["fruta"]
+	
+	sendOK "API Test OK", tA
+end index
+
+# This command is used by the many stack manager applications
+# that we're seeding to third-party users.
+function verifylogin
+  switch
+    case gData["request"]["login"] is empty
+    case gData["request"]["password"] is empty
+      return "verifyloginerr,login/password empty."
+    break
+  end switch
+  put url "file:/home/devhap/etc/accounts.conf" into tAccountsData
+  repeat for each line tLine in tAccountsData
+    if gData["request"]["login"] & "|" & gData["request"]["password"] is in tLine then
+     return true
+    end if
+  end repeat
+  return "verifyloginerr,login/password does not match."
+end verifylogin
+
+function verifyPermission pPermissionsToCheck
+	put url "file:/home/devhap/etc/accounts.conf" into tAccountsData
+	set the itemdel to "|"
+  repeat for each line tLine in tAccountsData
+    if gData["request"]["login"] & "|" & gData["request"]["password"] is in tLine then
+			repeat for each item tPermission in pPermissionsToCheck
+				if tPermission is not among the items of tLine then
+					return "verifypermissionerr","user does not have permission for"&&tPermission&&"."
+				end if
+			end repeat
+     return true
+    end if
+  end repeat
+  return "verifypermissionerr,login/password does not match."
+end verifyPermission
+
+
+command enumoptions
+	put rigFetchRSegment(3) into tTable
+	put rigFetchRSegment(4) into tField
+	put enumOptionsArray(tTable, tField) into tA
+	repeat with x = 1 to the number of lines in the keys of tA
+		put tA[x] & cr after tBuf
+	end repeat
+	sendOK (tTable &"."&tField),tBuf
+end enumoptions
+		
+
+command bookcover
+	put rigFetchRSegment(3) into tBookA["file_id"]
+	put findBookByArray(tBookA) into tBookA
+	if tBookA[1]["cover"] is not empty then
+		put url (tBookA[1]["cover"]) into tA["cover"]
+		sendOK ("Cover for" && tBookA["file_id"]), tA
+	end if 
+	sendError "false: no cover"
+end bookcover
+
+command savecover
+	put rigFetchRSegment(3) into tFileID
+	put gData["cover"] into url ("binfile:" & epubPath(tFileID) & tFileID & "_cover.jpg")
+	put epubURLWithFile(tFileID, (tFileID & "_cover.jpg"))
+	quit
+end savecover
+
+	
+	
+--> Generic methods for the database
+
+command listrecords
+	put rigFetchRSegment(3) into tTable
+	put decodeArray64($_POST_RAW) into tArrayA
+	if the keys of tArrayA is not empty then
+		rigDbWhere(tArrayA)
+	end if
+	put rigDbGet(tTable) into tQ
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tRetA[x]
+	end repeat
+	outputEncodedArray tRetA
+end listrecords
+
+--> collections
+
+command savecollection
+	put rigFetchRSegment(3) into tCollectionID
+	put decodeArray64($_POST_RAW) into tArrayA
+	if tArrayA is false then
+		rigLogMessage "debug", "savecollectionerr, $_POST_RAW is wrong"
+		put "savecollectionerr, $_POST_RAW is wrong"
+		quit
+	end if
+	
+	-- empty the collection first
+	put tCollectionID into tArray["collection_id"]
+	get rigDbDelete("collection_item", tArray) 
+	rigLogMessage "debug","result:" && it
+
+	-- insert records
+	put the keys of tArrayA into tList
+	sort numeric tList
+	repeat for each line tOrder in tList
+		put tArrayA[tOrder] into tItemA
+		add 1 to tPlayOrder
+		put tPlayOrder into tRecordA["play_order"]
+		put tCollectionID into tRecordA["collection_id"]
+		put tItemA["item_id"] into tRecordA["item_id"]
+		rigLogMessage "debug", ("inserting new record in the collection" && tCollectionID)
+		get rigDbInsert("collection_item", tRecordA)
+		rigLogMessage "debug","result:" && it
+		add 1 to tTotal
+	end repeat
+	put "records inserted:"&& tTotal
+end savecollection
+
+command newcollection
+	put rigFetchRSegment(3) into tRecordA["name"]
+	get rigDbInsert("collection", tRecordA)
+    rigLogMessage "debug","result:" && it
+	put "ok"
+end newcollection
+
+command collectiondata
+	put rigFetchRSegment(3) into tCollectionID
+	rigDbWhere "collection_id", tCollectionID
+	put rigDbGet("collection_item") into tQ
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tRecA
+		rigDbWhere "item_id", tRecA["item_id"]
+		put rigDbGet("item") into tQ2
+		put rigDbRow(1) into tRetA[x]
+		rigDbWhere "collection_id", tCollectionID
+		put rigDbGet("collection_item") into tQ
+	end repeat
+	put the base64encode of the arrayencode of tRetA
+end collectiondata
+
+
+#
+# NEW GENERATION API BELOW
+# 
+# The current API model is getting too big and confuse.
+# We need to rework it into a simpler model that can
+# handle all our data. 
+#
+# I will rework this below with a generic API.
+#
+# The first manager to support the new API will be the hapVideoManager
+#
+#
+# DESIGN DECISIONS
+#
+# The new API will be based on POST calls only. No GET whatsoever, I will
+# break up with the REST method and use a single method for simplicity sake
+#
+# All post calls need to contain the following variables:
+#
+#		version = 2
+#		username = (the email of the user)
+#		password = (the password of the user)
+#
+# This variables will be checked on the constructor. Depending on their presence
+# we'll serve with the new API or not.
+#
+
+function isUserAuthenticated
+	if gData["request"]["username"] is empty or gData["request"]["password"] is empty then
+		return false
+	end if
+	put url "file:/home/devhap/etc/accounts.conf" into tAccountsData
+  repeat for each line tLine in tAccountsData
+    if gData["request"]["username"] & "|" & gData["request"]["password"] is tLine then
+      return true
+    end if
+  end repeat
+	return false
+end isUserAuthenticated
+
+command version2only pRequireAuthentication
+	if $_SERVER["REQUEST_METHOD"] is not "POST" then
+		sendError "version 2 requests are POST only."
+	end if
+	
+	if pRequireAuthentication is true then
+		if isUserAuthenticated() is false then
+			sendError "user not authenticated"
+		end if
+	end if 
+end version2only
+
+command outputArray pA, pMessage
+	sendOK pMessage, pA
+end outputArray
+
+function folderForMediaType pA
+	switch
+	case "text" is in pA["media_type"]
+		return ($_SERVER["DOCUMENT_ROOT"] & "/books/" & pA["file_id"])
+	break
+	case "audio" is in pA["media_type"]
+		return folderForAudio(pA)
+	break
+	end switch
+end folderForMediaType
+
+command checkAndCreateFolderForMediaType pA
+	put folderForMediaType(pA) into tFolder
+	rigLogMessage "debug", "checking folder:" && tFolder
+	if tFolder is empty then
+		exit checkAndCreateFolderForMediaType
+	end if
+	if there is not a folder folderForMediaType(pA) then
+		rigLogMessage "debug", "creating audio folder:" && tFolder
+		get shell("mkdir -p" && tFolder)
+	end if
+end checkAndCreateFolderForMediaType
+
+function findItemByArray pA
+	rigDbWhere "file_id", pA["file_id"]
+	combine pA by "," and "="
+	rigLogMessage "debug", "looking for item:" && pA
+	put rigDbGet("item") into tQuery
+	if tQuery["numrows"] > 0 then
+		repeat with x = 1 to tQuery["numrows"]
+			put rigDbRow(x) into tRetA[x]
+			-- get the channels of distribution (mainly print version)
+			rigDbWhere "item_id", tRetA[x]["item_id"]
+			put rigDbGet("channel") into tChannelQuery
+			if tChannelQuery["numrows"] > 0 then
+				repeat with y = 1 to tChannelQuery["numrows"]
+						put rigDbRow(y) into tRetA[x]["channels"][y]
+				end repeat
+			end if
+			-- get the available formats
+			rigDbWhere "item_id", tRetA[x]["item_id"]
+			put rigDbGet("item_format") into tChannelQuery
+			if tChannelQuery["numrows"] > 0 then
+				repeat with y = 1 to tChannelQuery["numrows"]
+						put rigDbRow(y) into tRetA[x]["formats"][y]
+				end repeat
+			end if
+			-- go back to the item query
+			rigDbWhere "file_id", pA["file_id"]
+			put rigDbGet("item") into tQuery
+		end repeat
+	  return tRetA
+	else
+		return false
+	end if
+end findItemByArray
+
+command insertItem
+	verison2only true
+	put gData["request"]["data"] into tNewDataA
+	
+	##
+	## Step - 1
+	##
+	## get item data
+	##
+	put gData["request"]["file_id"] into tItemA["file_id"]
+	rigLogMessage "debug","inserting item" && tItemA["file_id"]
+	
+	logArrayData tNewDataA
+	
+	put folderForMediaType(tNewDataA) into tFolder
+	if there is a folder tFolder then
+		#rigLogMessage "debug","cant insert audio, folder exists:" && tFolder
+		#put "audioerr, this file id already exists. check for duplicate and change file_id."
+		#quit
+	end if
+	
+	checkAndCreateFolderForMediaType tNewDataA
+
+	rigLogMessage "debug","extracting channels and formats"
+	## Now extract formats
+	put tNewDataA["formats"] into tFormatsA
+	delete variable tNewDataA["formats"]
+	
+	
+	#
+	# Update formats
+	#
+	
+	# Pick current formats table for item ...
+	put tNewDataA["file_id"] into tItemA["file_id"]
+	put findItemByArray(tItemA) into tCurrentItemA
+	put tCurrentItemA[1]["formats"] into tCurrentFormatsA
+	rigLogMessage "debug","Current formats table:"
+	logArrayData tCurrentFormatsA
+	rigLogMessage "debug","End of formats table"
+	
+	
+	#
+	# Look for deleted formats
+	#
+	rigLogMessage "debug","Looking for format records to delete..."	
+	repeat for each key tC in tCurrentFormatsA
+		put false into tFound
+		repeat for each key tK in tFormatsA
+			if tCurrentFormatsA[tC]["item_format_id"] is tFormatsA[tK]["item_format_id"] then
+				put true into tFound
+			end if
+		end repeat
+		if tFound is false then
+			# the record was not found on the current formats array, so delete it
+			put tCurrentFormatsA[tC]["item_format_id"] into tRecordID
+			rigLogMessage "debug","found one! id:" && tRecordID
+		
+			if tRecordID is not a number then
+				rigLogMessage "error","panic!!! almost deleted the wrong item."
+				next repeat
+			end if
+			rigDbWhere "item_format_id", tRecordID
+			rigDbLimit 1
+			get rigDbDelete("item_format") 
+			rigLogMessage "debug","result:" && it
+		end if
+	end repeat
+	
+	#
+	# Looking for format records to insert or update...
+	#
+	
+	repeat for each key tC in tFormatsA
+		if tFormatsA[tC]["item_format_id"] is empty then
+			rigLogMessage "debug","new format" && tFormatsA[tC]["format_name"]
+			get rigDbInsert("item_format",tFormatsA[tC])
+			rigLogMessage "debug","result:" && it
+		else
+			# Might need to change the filename on disk...
+			put formatForID(tCurrentFormatsA,tFormatsA[tC]["item_format_id"]) into tCurrentA
+			rigLogMessage "debug","format item exists." && tCurrentA["filename"]
+			if the keys of tCurrentA is not empty then
+				
+				#
+				# Check for new format items and for updated format items...
+				#
+				if tCurrentA["filename"] is not tFormatsA[tC]["filename"] then
+					rigLogMessage "debug","filename changed from" &&  tCurrentA["filename"] && "to" && tFormatsA[tC]["filename"]
+					put folderForMediaType(tCurrentItemA[1]) & "/" & tCurrentA["filename"] into tCurrentPath
+					put folderForMediaType(tCurrentItemA[1]) & "/" & tFormatsA[tC]["filename"] into tNewPath
+					try
+						rigLogMessage "debug","current:" && tCurrentPath
+						rigLogMessage "debug","new:" && tNewPath
+						rename file tCurrentPath to tNewPath
+						rigLogMessage "debug","result:" && the result && "it:" && it
+					catch n
+						rigLogMessage "error","renaming file:" && n
+					end try
+				end if
+			end if
+			
+			# Update record ...
+			rigLogMessage "debug","update format" && tFormatsA[tC]["format_name"]
+			rigDbWhere "item_format_id", tFormatsA[tC]["item_format_id"]
+			get rigDbUpdate("item_format",tFormatsA[tC])
+			rigLogMessage "debug","result:" && it
+			
+		end if
+	end repeat
+		
+
+	##
+	## Step - 2
+	##
+	## Insert record in the "item" table
+	##
+	rigLogMessage "debug","inserting item in table"
+	get rigDbInsert("item", tNewDataA)
+	rigLogMessage "debug","result:" && it
+	put tNewDataA["file_id"] into tItemA["file_id"]
+	put findItemByArray(tItemA) into tItemA
+	rigLogMessage "debug","looping thru formats"	
+	repeat for each key tC in tFormatsA
+		rigLogMessage "debug","new format" && tFormatsA[tC]["format_name"] && "for item" && tItemA[1]["item_id"]
+		put tAudioA[1]["item_id"] into tFormatsA[tC]["item_id"]
+		get rigDbInsert("item_format",tFormatsA[tC])
+		rigLogMessage "debug","result:" && it
+	end repeat
+
+	##
+	## Step - 3
+	##
+	## Report the new item insertion.
+	##
+	put "New" && tNewDataA["media_type"] && tNewDataA["title"] && "Inserted. (file_id:" && tNewDataA["file_id"] &")" into tSubject
+	
+	put "A new item was inserted in the database by" & tNewDataA["entered_by"] & "." & cr & cr into tReportContent
+	put the keys of tNewDataA into tKeys
+	sort tKeys
+	repeat for each line tK in tKeys
+		put tK & ":" & tab & tNewDataA[tK] & cr after tReportContent
+	end repeat
+	hapReport tSubject, tReportContent
+
+	##
+	## Step - 4
+	##
+	## Echo back the audio data ...
+	## 
+	rigLogMessage "debug","step - 4 echoing item back:" && tNewDataA["file_id"]
+	put empty into tItemA
+	put tNewDataA["file_id"] into tItemA["file_id"]
+	put findItemByArray(tItemA) into tItemA
+	outputArray tItemA, ("record for file_id:" && tItemA["file_id"])
+end insertItem
+
+command listitems
+	rigLogMessage "debug","called listitems"
+	if gData["request"]["data"]["filter"] is "like" then
+		rigLogMessage "debug","filter: LIKE" && ("%" & gData["request"]["data"]["media_type"] & "%")
+		rigDbWhere "media_type LIKE", ("%" & gData["request"]["data"]["media_type"] & "%")
+	else
+		rigLogMessage "debug", "filter: EXACT" && gData["request"]["data"]["media_type"]
+		rigDbWhere "media_type", gData["request"]["data"]["media_type"]
+	end if
+	
+	if gData["request"]["data"]["select"] is not false then
+		rigLogMessage "SELECT:" && gData["request"]["data"]["select"]
+		rigDbSelect gData["request"]["data"]["select"]
+	end if
+	put rigDbGet("item") into tQ
+	
+	# method 1 - very slow
+	rigLogMessage "debug","numrows:" && tQ["numrows"]
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tItemsA[x]
+	end repeat
+	
+	# method 2
+	# put tQ["resultarray"] into tItemsA
+	outputArray tItemsA
+end listitems
+
+command getitem
+	version2only
+	rigDbWhere "file_id", rigVarPost("file_id")
+	
+	if rigVarPost("select") is not false then
+		rigDbSelect rigVarPost("select")
+	end if
+	put rigDbGet("item") into tQ
+	
+	# method 1 - very slow
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tItemsA[x]
+	end repeat
+	
+	# method 2
+	# put tQ["resultarray"] into tItemsA
+	outputArray tItemsA
+end getitem
+
+function formatForId pA, pItemFormatID
+	repeat for each key tK in pA
+		if pA[tK]["item_format_id"] is pItemFormatID then
+			return pA[tK]
+		end if
+	end repeat
+	return empty
+end formatForID
+
+
+
+# CALL THE CONTROLLER HANDLER
+# api2
+
+
+--| END OF api2.irev
+--| Location: ./system/application/controllers/api2.irev
+----------------------------------------------------------------------

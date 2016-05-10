@@ -1,0 +1,23 @@
+<?rev
+put gBASEPATH into gBASEPATH
+
+if gBASEPATH is "gBASEPATH" then
+    put "No direct script access allowed."
+    exit to top
+end if
+
+# LOGGING
+rigLogMessage "debug", "XML-RPC Server Library Loaded"
+
+# DECLARE LOCAL VARIABLES
+local sServer
+
+# PROTOTYPE OF THE FOLLOWING HANDLER NAME: rigRunInitialLibrarynameConfig
+command rigRunInitialxmlrpcsConfig pConfig
+    --Run initial configuration procedures. Don't remove this handler, even if it does nothing.
+end rigRunInitialxmlrpcsConfig
+
+--> XML-RPC Server Suite
+
+
+	

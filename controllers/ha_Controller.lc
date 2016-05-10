@@ -1,0 +1,56 @@
+<?lc
+   /* =  DESCRIPTION  =
+   --
+   The ha_Controller.lc controller can be found at: ha_Controller.lc
+   
+   Once upon a time.
+   
+   Below we declare the global variables gControllerHandlers AND gData
+   And put the public method names that we wish to expose into gControllerHandlers
+   --
+   */
+   
+   global gControllerHandlers, gData
+   
+   put "index" into gControllerHandlers
+
+   
+   /* ==  INITIALISATION  ==
+   --
+   Put all the handlers and variables that you wish to merge into your views
+   into the global array "gData".
+
+   Write any initialisation statements (loaing any neeeded libraries for instance)
+   into the initialisation handler "ha_Controller.lc" below.
+   
+   --
+   */
+
+   on ha_Controller.lc
+      start using stack (gAPPPATH & "stacks/lib_Array.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Files.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Gist.livecode")
+      start using stack (gAPPPATH & "stacks/lib_GitHub.livecode")
+      start using stack (gAPPPATH & "stacks/lib_HAP.livecode")
+      start using stack (gAPPPATH & "stacks/lib_HTML.livecode")
+      start using stack (gAPPPATH & "stacks/lib_LiveWorld.livecode")
+      start using stack (gAPPPATH & "stacks/lib_RemoteServer.livecode")
+      start using stack (gAPPPATH & "stacks/lib_RevIgniter.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Scrape.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Sitemap.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Text.livecode")
+      start using stack (gAPPPATH & "stacks/lib_XML.livecode")
+      start using stack (gAPPPATH & "stacks/lib_Youtube.livecode")
+   end ha_Controller.lc
+   
+   /* ==  CODE  ==
+   --
+   Here we put the public handlers the controller uses and exposes as urls.
+   --
+   */
+   
+   on index
+      put "hello new world!"
+   end index
+
+?>

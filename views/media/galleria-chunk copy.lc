@@ -1,0 +1,9 @@
+<div class="content">
+<div id="galleria"></div>
+</div>
+<!-- Brahmanathaswami: I moved the call for the CSS for Galleria to the site.lc controller
+So that we would load it in the head and not in them middle of the page because
+this has been an issue with IE in the past. -->
+<? return rigJsAsset("galleria.js") ?>
+<? return rigJsAsset("galleria.twelve.min.js") ?>
+[[gData["slideShow"] ]]

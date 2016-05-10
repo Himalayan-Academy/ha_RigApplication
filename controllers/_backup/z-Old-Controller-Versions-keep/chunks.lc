@@ -1,0 +1,77 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers,gData,gZone,gRealm,gPage
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "chunks,update,index" into gControllerHandlers
+
+# this controller does one thing: updates metadata for page chuncks
+
+command chunks
+		rigLoadLibrary "pagemetadata" 
+		rigLoadLibrary "Getsetheadnav" # required opening for all pages
+		put rigFetchSegment(2, 0) into gRealm # top level - depth of URLs this is the command invoked above
+        put rigFetchSegment(3, "hello") into gZone  # second depth/nav
+        put rigFetchSegment(4, 0) into gPage  # pages in this realm-zone	            
+end chunks
+
+command index	
+	    put getSetHeadNav("skinny","Monastery",">Monastery<","cat-about-the-monastery") into gData["pageHeader"]		
+		put "Site Miscellaneous Chunks Index" into gData["pageTitle"] 
+			 
+		put url("file:/home/devhap/public_html/html/admin/chunks.html") into gData["singleArticle"]	
+		updatePageMetadataIfPathOnDiskChanged "/admin/chunks.html"
+		get rigLoadView("sitewide/two-column")  
+end index
+
+command update
+
+ put getSetHeadNav("skinny","About the Monastery",">Monastery<","cat-about-the-monastery") into gData["pageHeader"]
+		
+if gZone = 0 then 
+	   # this is the admin page with the links to chunks and we 
+	          
+   else # we have a URL that loads for a chunk
+    
+  switch gZone         
+		 case "monastery-sidebar" 
+		 put "<h1>Monastery Sidebar</h1>" into gData["singleArticle"]	 
+		 put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html") into gData["sideBar"]
+			 updatePageMetadataIfPathOnDiskChanged "/monastery/about/monastery-sidebar.html"
+				
+			
+			 break		 
+		case "iraivan-sidebar"
+		 put "<h1>Iraivan Sidebar</h1>" into gData["singleArticle"]
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-sidebar.html") into gData["sideBar"]
+		   updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/iraivan-sidebar.html"
+		   
+		 
+		   break    
+		 case "bangalore-sidebar"
+		  put "<h1>Bangalore Carving Site Sidebar</h1>" into gData["singleArticle"]
+		  put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/bangalore-sidebar.html") into gData["sideBar"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/bangalore-sidebar.html"
+						
+			 break    	
+	end switch 
+	
+	put "You're editing" && gZone && "sidebar"  into gData["singleArticle"]
+	
+	get rigLoadView("sitewide/two-column")  
+	
+	end if
+ 
+	
+end update
+
+
+
+# CALL THE CONTROLLER HANDLER
+
+
+
+--| END OF chunks.lc
+--| Location: ./system/application/ha/controllers/chunks.lc
+----------------------------------------------------------------------

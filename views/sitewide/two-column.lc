@@ -1,0 +1,45 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>	
+
+	<div class="page-wrapper">
+	
+		[[ gData["sideBar"] ]]
+	
+		<section class="page-content" role="main"  itemscope="" itemtype="http://schema.org/WebPage">
+			
+			<div class="wrapper">
+	
+				<article class="content-article">
+				
+					<div class="article-wrapper">
+					
+					        [[ gData["singleArticle"] ]]
+					    											
+<!-- Add more content here if you like 
+	# If we want to put more content after the primary page we can do so here.
+	# remember these are now run
+	# so be sure to use any required wrappers need to call the necessary CSs
+	# we are including 2 generic horizontal block variable we can use as needed 
+	# if these are empty, nothing happens, 
+-->	
+		[[ gData["bottom-block-one"] ]]
+	
+		[[ gData["bottom-block-two"] ]]	
+		
+			</div> <!-- end article wrapper -->								
+			</article> <!-- end article -->
+		
+		
+			
+			</div> <!-- end page content wrapper -->
+		
+		</section> <!-- end page content -->
+		
+		[[ gData["bottom-block-three"] ]]	
+
+	</div> <!-- end page wrapper -->
+
+	<?
+	return rigLoadView("sitewide/footer", TRUE)
+	?>

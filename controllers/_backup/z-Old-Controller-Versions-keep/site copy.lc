@@ -1,0 +1,91 @@
+<?rev
+
+global gControllerHandlers, gData
+
+put "site,index,viewPage" into gControllerHandlers
+
+
+local sTemplate, sPageToLoad, sHTMLFolder, sPageMetadataA
+
+command site
+	# code...
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadLibrary "lorempixel"
+	rigLoadLibrary "json"
+	rigLoadHelper "asset"
+    rigLoadPlugin "galleria"
+
+	rigLogMessage "debug", "Loading Site Controller"
+
+	put "/home/devhap/public_html/html/" into sHTMLFolder
+	
+    put rigRuriString() into tURIString
+	set the itemdel to "/"
+	put item 4 to -1 of tURIString into sPageToLoad
+	
+	# KT: suggest you add here:
+	# put item -2  of tURIString into tEnclosingFolder
+	
+	## Cascading metadata file.
+	
+	# first pick default.metadata from toplevel folder and downwards.
+	repeat with x = 1 to (the number of items in sPageToLoad - 1)
+		put item x of sPageToLoad & "/" after tFolder
+		
+		# then here you could use:
+		# put sHTMLFolder & tFolder & tEnclosingFolder &".metadata" into sPageMetadataFile
+		# instead of this:
+		
+		put sHTMLFolder & tFolder & "default.metadata" into sPageMetadataFile
+		
+		if there is a file sPageMetadataFile then	
+			put url ("file:" & sPageMetadataFile) into tTempMetadataA
+			put jsontoarray(tTempMetadataA) into tTempMetadataA
+			repeat for each key tK in tTempMetadataA
+				rigLogMessage "debug", (tFolder & "default.metadata -->" && tK && tTempMetadataA[tK] )
+				put tTempMetadataA[tK] into sPageMetadataA[tK]
+			end repeat
+		end if
+	end repeat
+	
+
+	# Now check for override
+	put sHTMLFolder & sPageToLoad & ".metadata" into sPageMetadataFile
+	if there is a file sPageMetadataFile then
+		put url  ("file:" & sPageMetadataFile) into tTempMetadataA
+		put jsontoarray(tTempMetadataA) into tTempMetadataA
+		repeat for each key tK in tTempMetadataA
+			rigLogMessage "debug", (sPageToLoad && "-->" && tK && tTempMetadataA[tK] )
+			put tTempMetadataA[tK] into sPageMetadataA[tK]
+		end repeat
+	end if
+end site
+
+command viewPage
+	put sPageMetadataA["title"] into gData["pageTitle"] 
+	put url ("file:" & sHTMLFolder & sPageMetadataA["sidebar"]) into gData["sidebar"] 
+	
+	put getSetHeadNav(sPageMetadataA["body_class"],sPageMetadataA["page_heading"],sPageMetadataA["navigation"],sPageMetadataA["navigation_category"]) into gData["pageHeader"]
+	put url(("file:/home/devhap/public_html/html/" & sPageToLoad & ".html")) into gData["singleArticle"]		 
+	updatePageMetadataIfPathOnDiskChanged ("/" & sPageToLoad & ".html")
+	get rigLoadView(("sitewide/" & sPageMetadataA["template"]), gData)
+end viewPage
+
+
+command index
+	# SET PAGE TITLE
+	put "YourPageTitle" into gData["pageTitle"]
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("siteView")
+end index
+
+
+
+
+--| END OF site.lc
+--| Location: ./system/application/controllers/site.lc
+----------------------------------------------------------------------

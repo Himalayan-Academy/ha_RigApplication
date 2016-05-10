@@ -1,0 +1,114 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "readlearn,loadIndex,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+command readlearn		
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadLibrary "lorempixel"
+	rigLoadHelper "asset"
+	rigLoadPlugin "galleria" 
+	rigLoadLibrary "fetchhtml"
+	--rigLoadLibrary "json"  
+	
+	    # let's log what page is the user hits on   
+    rigLogMessage "Requested:", rigUriString()
+	
+##### For any URI's with 2 or more segments ####
+
+ put rigSegmentArray() into tSegs
+    
+    # handle special cases first for longer URI's and be done
+    # this is just here to use if needed and a reminder 
+	    if tSegs[3]= "specialCases" then
+			specialCases # or whatever you want to do with it...
+			exit readlearn
+		end if
+		
+	# Deal with two segment 2 URI's which have special handlers
+	# or default to external html and pass longer URIs to external html
+		
+    if tSegs[3] is empty  then 
+       # it means we only have two segments and we may want to load
+       # some landing pages otherwise we will treat it as external html
+       switch
+    
+		 case (tSegs[2]  is empty) 
+					loadIndex
+			break 	
+			
+		 case (tSegs[2] = "basics") 
+			basics
+			break 
+		 case (tSegs[2] = "books") 
+			books
+			break 	
+		 case (tSegs[2] = "teachers-parents") 
+			teach
+			break 
+			
+	    default  # the second segment is an html file at the top level		 	
+		fetchExternalHTML
+		viewExternalPage		  	
+	 end switch
+	 
+	 else # longer URI: assume html since special cases were 
+	 # handled above	 
+	  	 
+	  fetchExternalHTML
+	  viewExternalPage		  	 
+    end if   
+end readlearn
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFIED IN THE URI
+
+command index
+   
+end index
+
+command loadIndex
+	put "Read & Learn" into gData["pageTitle"] 
+	# no secondary navigation is set, so pass the parameter empty...
+	put getSetHeadNav("landing","Read & Learn",">Read &amp; Learn<","") into gData["pageHeader"]			 
+	put cmsParseXMLDataFile("/readlearn/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end loadIndex
+
+command basics
+	put "Read & Learn - Basics" into gData["pageTitle"] 
+	put getSetHeadNav("landing","Basics of Hinduism",">Read &amp; Learn<","cat-basics-of-hinduism") into gData["pageHeader"]		 
+	put cmsParseXMLDataFile("/readlearn/basics/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end basics
+
+command books
+    put "Read & Learn - Books" into gData["pageTitle"] 
+	put getSetHeadNav("book-portal","Books",">Read &amp; Learn<","cat-books") into gData["pageHeader"]	
+	put cmsParseXMLDataFile("/readlearn/books/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/multiple-tabs", gData)
+end books
+
+command teach
+	put "Read & Learn - For Teachers & Parents" into gData["pageTitle"] 
+	put getSetHeadNav("landing","For Teachers & Parents",">Read &amp; Learn<","cat-for-teachers-parents") into gData["pageHeader"]	 
+	put cmsParseXMLDataFile("/readlearn/teachers-parents/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end teach
+
+
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF readlearn.lc
+--| Location: ./system/application/ha/controllers/readlearn.lc
+----------------------------------------------------------------------

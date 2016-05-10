@@ -1,0 +1,172 @@
+</div> <!-- page-content-->
+
+<div id="controls-wrapper">
+
+<div id="controls">
+<a href="/book/[[ gData["book"]["file_id"] ]]/web/<? return gData["book"]["previous_chapter"] ?>"><img src="/assets/img/icons/arrow-west.png" title="Go to Previous Chapter" alt="Go to previous chapter"/></a>&nbsp;
+<a href="/book/[[ gData["book"]["file_id"] ]]/web/<? return gData["book"]["next_chapter"] ?>"><img src="/assets/img/icons/arrow-east.png" title="Go to Next Chapter"  alt="Go to next chapter"/></a>&nbsp;
+<span id="TOC" title="Table of Contents" >TOC</span>
+<img id="settings-toogle" src="/assets/img/icons/gear.png"  title="Settings"  style="float:right;margin-right:100px;cursor:pointer" alt="settings"/>
+<a href="/book/[[ gData["book"]["file_id"] ]]" target="_blank" id="more" title="Learn More" style="padding-right:10px;float:right;cursor:pointer">More</a>
+<br/>
+<div id="flasher"></div>
+<div id="settings">
+  <h2>Settings</h2>
+  <hr class="thin" />
+  <h3>Font size</h3>
+  <input type="radio" name="font_size" value="0.7em">Minuscule</input><br/>
+    <input type="radio" name="font_size" value="0.9em">Small</input><br/>
+    <input type="radio" name="font_size" value="1.1em">Normal</input><br/>
+  <input type="radio" name="font_size" value="1.4em">Large</input><br/>
+  <input type="radio" name="font_size" value="1.8em">Biggest</input> <br/>
+</div> <!-- settings -->
+
+<div id="table_of_contents">
+  <h3>[[gData["book"]["title"] ]]</h3>
+  <h2>Table of Contents</h2>
+  <hr class="thin"/>
+	<div style="overflow: auto;">
+  <?
+  put empty into tBuf
+  put the keys of gData["book"]["toc"] into tKeys
+  sort numeric tKeys
+  repeat for each line x in tKeys
+    put format("<a href=\"/book/%s/web/%s\">%s</a><br/>", gData["book"]["file_id"], epubSpineItemNumberForTOCItem(gData["book"]["file_id"],x), gData["book"]["toc"][x]["title"]) after tBuf
+  end repeat
+  return tBuf
+  ?>
+  </div> <!-- the actual contents of TOC -->
+</div> <!-- table of contents -->
+<div id="lexicon_element" style="display: none;">
+  <hr class="thin"/>
+  <p id="lexicon_element_definition"></p>
+  <p onclick="$('#lexicon_element').hide();">Close</p>
+</div>
+</div> <!-- controls -->
+</div> <!-- controls-wrapper -->
+<script type="text/javascript">
+
+var wordlist; // this is a global
+
+
+/*
+* Auxiliary functions
+*/
+
+function isWordOnLexicon(word, lexicon) {
+ 	 var r = "\\n("+word.toLowerCase()+")\\n";
+   var rr = new RegExp(r, "g");
+	 if (lexicon.search(rr)==-1) {
+		return false;
+	} else {
+		return true;
+	}
+		
+}
+
+function flasher(pMsg) {
+	$("#flasher").html(pMsg);
+}
+
+
+function initializeLexicon(lexicon) {
+   wordlist = lexicon.replace(" ","").toLowerCase();;
+   var p = $('p');
+
+    $.each(p, function(index, value) {
+         var t = $(value).text();
+
+         if (t=="") return;
+         var m = t.match(/\b(\w+?)\b/g);
+				 if (m==null) return;
+         $.each(m, function(i, word){
+           if (!isWordOnLexicon(word.toLowerCase(), wordlist)) return;
+           var h = $(value).html();
+           var r = "\\b("+word+")\\b";
+           var rr = new RegExp(r, "g");
+           h = h.replace(rr, '<span class="lexicon_word">'+word+'</span>');
+           $(value).html(h);
+         });					
+     });
+
+     // This intercepts the clicks and communicates with the lexicon.
+     $(".lexicon_word").click(function(event) {
+       var word = event.target.innerHTML;
+       $.getJSON("/lexicon/jsondefinition/"+word, function(data){  
+         var def = data.lexicon.entry.definition;  
+         if (def !== "") {  
+           $("#lexicon_element_definition").html("<b>"+word+":</b><br/><p style='width: 80%'>"+def+"</p>");
+           $("#lexicon_element").show();
+         } else {
+           $("#lexicon_element").hide();
+         }
+       }) 
+      });
+      $(".lexicon_word").hover(
+				function(event){
+					var word = event.target.innerHTML;
+					flasher("Click to see the definition for "+word+".");
+				},
+				function(event){
+					flasher("");
+				}
+				);
+    flasher("");
+}
+
+/*
+* Lexicon replacement occurs when the wordlist arrives, this will be a little
+* later than when the page loads.
+*/
+
+$(document).ready(function()
+{
+
+  // Check if font size has been set, if so, then
+  // use it.
+  if (localStorage["fontsize"] !== null) {
+		$('body').css('font-size', localStorage["fontsize"]);
+  }
+
+	// Replace possible SVG Cover (*hack*)
+	var replace_svg_images = $("div#page-content").html().replace("svg:image","img class='from_svg'").replace("xlink:href","src");
+	$("div#page-content").html(replace_svg_images);
+	
+	// Bind Table of Contents Toggle
+	$("#TOC").bind("click", function(){
+	  $("#table_of_contents").toggle();
+	});
+	
+	// Bind Settings Toggle
+	$("#settings-toogle").bind("click", function(){
+	  $("#settings").toggle();
+	});
+	
+	// Bind font size changes.
+	$("input[name=font_size]:radio").bind("click", function(){
+	  $('body').css('font-size', $(this).val());
+		localStorage["fontsize"] = $(this).val();
+	  $("#settings").toggle();
+	});
+  
+  // get a wordlist... might be handy.
+  flasher("Loading lexicon...")
+  if (localStorage["lexicon"] == null) { 
+	  $.get("/lexicon/wordlist",function(data) {
+		 localStorage["lexicon"] = data;
+	   initializeLexicon(data);
+	  });
+	} else {
+		initializeLexicon(localStorage["lexicon"]);
+	}
+	
+	
+  
+	
+});
+
+ </script>
+ 
+ <a  class="action" href="/book/[[ gData["record"]["file_id"] ]]">Web View</a>
+
+</body>

@@ -1,0 +1,174 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+
+	
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main">
+		
+			<div class="wrapper">
+							
+				<section class="<?return featuredItemModuleClassForMediaType(gData["modules"]["Featured Item Module"]["media_type"])?>">
+				
+				    [[ gData["modules"]["Featured Item Module"]["Media"] ]]
+					<article class="content-article">
+									
+						<header class="article-header">
+							
+							<hgroup>						
+								<h2 class="h2">Featured <?return featuredItemModuleTitleForMediaType(gData["modules"]["Featured Item Module"]["media_type"]) ?></h2>
+								<h1 class="h1"><a href="/view/[[ gData["modules"]["Featured Item Module"]["file_id"] ]]">[[ gData["modules"]["Featured Item Module"]["Title"] ]]</a></h1>
+								<h5 class="byline">[[ gData["modules"]["Featured Item Module"]["Author"] ]]</h5>
+							</hgroup>
+						
+						</header>
+						
+						<div class="article-body">
+							
+							<p>[[ gData["modules"]["Featured Item Module"]["Description"] ]]</p>
+							
+							<a class="share" href="#">Share</a>
+							<a class="share" href="#">Email</a>
+						
+						</div> <!-- end article body -->
+						
+						<div class="article-footer">
+							<?
+							if gData["modules"]["Featured Item Module"]["CTA"] is not empty then
+								return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Featured Item Module\"][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Featured Item Module\"][\"CTA\"] ]]</a>")
+							end if
+							?>
+						</div>
+					
+					</article>
+					
+				</section> <!-- end featured video -->
+					
+				<section class="recent-content">
+				
+					<div class="recent-podcasts">
+					
+						<h2 class="h2">[[ gData["modules"]["Promoted Collections Module"]["Title"] ]]</h2>
+						
+						<div class="list">
+						
+							<h3 class="h3">[[ gData["modules"]["Promoted Collections Module"]["collections"][1]["title"] ]]</h3>
+						
+							<img src="[[ gData["modules"]["Promoted Collections Module"]["collections"][1]["thumbnail"] ]]" alt="Photo of..." />
+							
+							<ul>
+								[[ emitLinkList(gData["modules"]["Promoted Collections Module"]["collections"][1]["links"]) ]]
+							</ul>
+								<?
+								
+								if gData["modules"]["Promoted Collections Module"]["collections"][1]["CTA"] is not empty then
+									return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][1][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][1][\"CTA\"] ]]</a>")
+								end if
+								?>
+						
+						</div>
+						
+						<div class="list">
+						
+							<h3 class="h3">[[ gData["modules"]["Promoted Collections Module"]["collections"][2]["title"] ]]</h3>
+						
+							<img src="[[ gData["modules"]["Promoted Collections Module"]["collections"][2]["thumbnail"] ]]" alt="Photo of..." />
+							
+								<ul>
+									[[ emitLinkList(gData["modules"]["Promoted Collections Module"]["collections"][2]["links"]) ]]
+								</ul>
+								<?
+								if gData["modules"]["Promoted Collections Module"]["collections"][2]["CTA"] is not empty then
+									return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][2][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][2][\"CTA\"] ]]</a>")
+								end if
+								?>
+						
+						</div>
+						
+						<div class="list">
+						
+							<h3 class="h3">[[ gData["modules"]["Promoted Collections Module"]["collections"][3]["title"] ]]</h3>
+						
+							<img src="[[ gData["modules"]["Promoted Collections Module"]["collections"][3]["thumbnail"] ]]" alt="Photo of..." />
+						
+							<ul>
+								[[ emitLinkList(gData["modules"]["Promoted Collections Module"]["collections"][3]["links"]) ]]
+							</ul>
+						
+								<?
+								if gData["modules"]["Promoted Collections Module"]["collections"][3]["CTA"] is not empty then
+									return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][3][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][3][\"CTA\"] ]]</a>")
+								end if
+								?>						
+						</div>
+					
+					</div> <!-- end recent podcasts -->
+					
+					<div class="square-slider">
+					
+						<h2 class="h2">[[ gData["modules"]["Square Slider Module"]["Title"] ]]</h2>
+						
+						<div class="paginate">
+						
+						[[ gData["modules"]["Square Slider Module"]["html"] ]]
+						
+						</div> <!-- end paginate container -->
+						
+						<ul class="archives-pagination slider-pagination">
+							<li class="arrow-prev"><a href="#">Previous</a></li>
+							<li class="arrow-next"><a href="#">Next</a></li>
+						</ul>
+						
+						<?
+						if gData["modules"]["Square Slider Module"]["CTA"] is not empty then
+							return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Square Slider Module\"][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Square Slider Module\"][\"CTA\"] ]]</a>")
+						end if
+						?>
+						
+					
+					</div> <!-- end recent gallery -->
+				
+				</section> <!-- end recent content -->
+				
+				<section class="more-links">
+				
+					<div class="column">
+					
+						<h3 class="h3">[[ gData["modules"]["Links Module"]["collections"][1]["Title"] ]]</h3>
+					
+						<ul>
+						 [[ emitLinkList(gData["modules"]["Links Module"]["collections"][1]["links"]) ]]
+
+						</ul>
+					
+					</div>
+					
+					<div class="column">
+					
+						<h3 class="h3">[[ gData["modules"]["Links Module"]["collections"][2]["Title"] ]]</h3>
+					
+						<ul>
+						[[ emitLinkList(gData["modules"]["Links Module"]["collections"][2]["links"]) ]]
+						</ul>
+					
+					</div>
+				
+				</section> <!-- end more links -->
+				
+			</div> <!-- end page content wrapper -->
+											
+		</section> <!-- end page content -->
+		
+		[[ emitTabbedContentModuleHTML(gData["modules"]["Tabbed Content Module"]["tabs"]) ]]
+		
+		
+	
+	
+	</div> <!-- end page wrapper -->
+	
+	
+
+<?
+return rigLoadView("sitewide/footer", TRUE)
+?>

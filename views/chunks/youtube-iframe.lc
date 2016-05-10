@@ -1,0 +1,1 @@
+<iframe width="[[ gData["video"]["width"] ]]" height="[[ gData["video"]["height"] ]]" src="http://www.youtube.com/embed/[[ gData["video"]["id"] ]]" frameborder="0" [[ gData["video"]["style"] ]] allowfullscreen></iframe>

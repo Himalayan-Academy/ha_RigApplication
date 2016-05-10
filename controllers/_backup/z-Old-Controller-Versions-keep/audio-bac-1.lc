@@ -1,0 +1,346 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "search,audio,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+function getImageURLString pTaggedImage
+   set the itemdel to quote
+   return item 2 of pTaggedImage
+end getImageURLString
+
+
+##-----temporarily turn of Rotating Backgrounds ----------- ##
+function rotateMastheadBackground
+   set the defaultFolder to "/home/devhap/public_html/assets/img/masthead/rotation/"
+   put the files into tBackgrounds
+   put line (random (the number of lines of tBackgrounds)) of tBackgrounds into tBackground
+   put ("masthead/rotation/" & tBackground) into tBackGroundPath
+   put (rigImageAsset(tBackGroundPath,,,TRUE))  into pTaggedImage
+   return getImageURLString (pTaggedImage)
+end rotateMastheadBackground
+
+#function rotateMastheadBackground
+   #  put rigImageAsset("masthead.jpg",,,TRUE) into tTaggedImage
+     #put getImageURLString(tTaggedImage) into gData["mastheadBackground"] 
+#end rotateMastheadBackground
+
+
+
+command audio
+	# SAVE PAGE IN CACHE DIRECTORY WITH AN EXPIRATION TIME OF n MINUTES
+	# NOTE: THIS IS NOT MANDATORY, DON'T USE CACHING WHILE WORKING ON THE CODE,
+	# OTHERWISE YOU WON'T SEE YOUR CHANGES IMMEDIATELY
+	# rigOutputCache 3
+		
+	put rigCssAsset("ha-new.css",,,TRUE) into gData["haNewCSS"] # Load Base Styles
+	put rigCssAsset("galleria/galleria.classic.css",,,TRUE) into gData["galleriaThemeCSS"] 
+	
+	# Load Galleria CSS directly. This overrides the Galleria theme JS attempt to fetch and install the CSS for the theme
+	# This does not work in IE8 so we have to get it ourselves. This is also recommended to improve performance
+	
+	put rigJsAsset("jquery-1.4.3.min.js",,FALSE) into gData["loadJQuery"]	
+	put rigJsAsset("galleria/galleria-1.2.2.js",,FALSE) into gData["galleriaCoreJS"]
+     put rigJsAsset("galleria/themes/classic/galleria.classic.js",,FALSE) into gData["galleriaThemeJS"]
+	put rigJsAsset("dom-labels.js",,TRUE) into gData["loadDomLabelJS"]
+
+		
+	# IF YOU ARE NOT USING ROTATING HEADS then just hard wire your mast head image here:
+	#put rigImageAsset("ENTER-IMAGE-CHOICE-HERE.JPG",,,TRUE) into tTaggedImage
+     #put getImageURLString(tTaggedImage) into gData["mastheadBackground"] 
+     #put rigImageAsset("/mastheader/rotation/clouds.jpg",,,TRUE) into gData["mastheadBackground"]
+     
+		rigLoadHelper "form"
+end audio
+
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFYED IN THE URI
+
+command index
+	# SET PAGE TITLE
+	put "Nada Loka: The World of Sound" into gData["pageTitle"]
+
+	# INCLUDE TOP BANNER DIV
+	# ACTUAL CONTENT IS HARD CODED INOTO THE TOP BANNER VIEW FILE
+	# UNCOMMENT THIS TO MAKE IT LIVE:
+   	# put rigLoadView("sitewide/top-banner") into gData["siteWideBanner"] 
+   	
+   	# Load Site Wide assets
+
+     put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]
+      put rigImageAsset("sitewide/thin-orange-border.png",,,TRUE) into gData["thinBorder"]
+	put rigCssAsset("books.css",,,TRUE) into gData["booksCSS"]
+     put rotateMastheadBackground() into gData["mastheadBackground"]
+     
+     # Load Images for audio page
+     
+      put rigImageAsset("audio/nada-loka-title.png",,,TRUE) into gData["audioTitleImg"]
+      put "margin-left:12px; float:right;" into tArray["style"]
+     put rigImageAsset("audio/instruments.png",tArray,,TRUE) into gData["instrumentsImg"]
+         
+	# LOAD THE VIEW FILE
+	get rigLoadView("sitewide/head")	 	
+	get rigLoadView("sitewide/masthead")
+	get rigLoadView("sitewide/main-nav")
+	get rigLoadView("audio/audio-main-content.irev")
+	get rigLoadView("sitewide/footer")
+	
+	# DISABLED DIVS that would 
+	# HORIZONTAL DIV THAT GOES AFTER MAIN-CONTENT IF NEEDED:
+	# get rigLoadView("sitewide/bottom-content")
+	
+	# HORIZONTAL DIV THAT GOES ABOVE FOOTER IF NEEDED:
+	# NOTE KT: having this in SiteWide could be wrong because 
+	# it will differ depending on context. The only way to make it 
+	# universal would be to enter something like: gData[bottomNav]
+	# and then the constructor for a particular page insert what he
+	# wants there as needed. That could work:
+	# idea is like apple or other sites: usually multi-column with more links
+	# or a pop up like Happy Cog did on another site.
+	# get rigLoadView("sitewide/bottom-nav") 
+	
+end index
+
+
+/*
+* Render Search Results
+*
+* This command is used by the different search routines to display
+* the audio results from the search.
+*
+* It will loop thru the gData["search results"][x], where x = 1 to the number
+* of matches, rendering the data.
+*
+* It has the same structure as the index routines but it will add stuff to the
+* audio/audio-main-content.irev file
+*
+* OBS: RenderSearchResults is not a command to be called from a URL so it does not
+* need to be present in the commands array at the top.
+*
+*/
+
+on rendersearchresults
+	# SET PAGE TITLE
+	put "Nada Loka: The World of Sound: Search Results" into gData["pageTitle"]
+
+	# INCLUDE TOP BANNER DIV
+	# ACTUAL CONTENT IS HARD CODED INTO THE TOP BANNER VIEW FILE
+	# UNCOMMENT THIS TO MAKE IT LIVE:
+	# put rigLoadView("sitewide/top-banner") into gData["siteWideBanner"] 
+
+	# Load Site Wide assets
+
+	put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]
+	put rigImageAsset("sitewide/thin-orange-border.png",,,TRUE) into gData["thinBorder"]
+	put rigCssAsset("books.css",,,TRUE) into gData["booksCSS"]
+	put rotateMastheadBackground() into gData["mastheadBackground"]
+
+	# Load Images for audio page
+
+	put rigImageAsset("audio/nada-loka-title.png",,,TRUE) into gData["audioTitleImg"]
+	put "margin-left:12px; float:right;" into tArray["style"]
+	put rigImageAsset("audio/instruments.png",tArray,,TRUE) into gData["instrumentsImg"]
+   
+	# LOAD THE VIEW FILE
+	get rigLoadView("sitewide/head")	 	
+	get rigLoadView("sitewide/masthead")
+	get rigLoadView("sitewide/main-nav")
+	put rigLoadView("audio/search-results",true) into gData["search innerHTML"]
+	get rigLoadView("audio/audio-main-content.irev")
+	get rigLoadView("sitewide/footer")
+end rendersearchresults
+
+
+/*
+* Search routine
+*/
+
+on search
+	rigLogMessage "debug","searching for audio"
+	
+	# select only the specified media type
+	rigDbWhere "media_type", rigVarPost("media_type")
+	
+	# now we'll check the different filters. The more filters, the worst the performance
+	
+	# check titles
+	if rigVarPost("filter_by_title") is "YES" then
+		rigLogMessage "debug","Filter by title: YES"
+		rigDbLike "title", rigVarPost("query")
+	end if
+	
+	# check description
+	if rigVarPost("filter_by_description") is "YES" then
+		rigLogMessage "debug","Filter by description: YES"
+		rigDbLike "description", rigVarPost("query")
+	end if
+	
+	# check transcription
+	if rigVarPost("filter_by_transcript") is "YES" then
+		rigLogMessage "debug","Filter by transcript: YES"
+		rigDbLike "description", rigVarPost("query")
+	end if
+		
+	put rigDbGet("item") into tQ
+	rigLogMessage "debug","Number of results:" && tQ["numrows"]
+	rigLogMessage "debug","SQL:" && rigDbLastQuery()
+	if tQ["numrows"] < 1 then
+		rigLogMessage "debug","No Results!!!"
+		RenderSearchResults
+		exit search
+	end if
+	
+
+	# Some filters would required "grouped or" SQL statements which we
+	# can't do with the RevIgniter Active Record implementation.
+	# 
+	# Instead of crafting this really complex SQL by hand, we avoid it by
+	# throwing more CPU cycles into the problem. We pick every results from
+	# the broad search terms and then using a loop, we refine the results cherry
+	# picking what is needed.
+	#
+	# It is a waste of resources (CPU wise) but it is the easiest way to do it.
+
+  put 0 into y
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tR
+		
+		## INSPIRED TALK ORs
+		
+		if rigVarPost("media_type") is "audio/inspiredtalk" then
+			# include Gurudevas talks in the results
+			if rigVarPost("include_gurudeva") is "YES" and tR["author"] is "Satguru Sivaya Subramuniyaswami" then
+				rigLogMessage "debug","Include Gurudevas Talks: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+
+			# include Bodhinathas talks in the results
+			if rigVarPost("include_bodhinatha") is "YES" and tR["author"] is "Satguru Bodhinatha Veylanswami" then
+				rigLogMessage "debug","Include Bodhinatas Talks: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# ... or next repeat
+			next repeat
+		end if
+		
+		## SONGS ORs
+		if rigVarPost("media_type") is "audio/song" then
+			
+			## LOOP GENRE
+			
+			# include bhajam in the results
+			if rigVarPost("include_bhajan") is "YES" and tR["genre"] is "bhajam" then
+				rigLogMessage "debug","Include bhajam: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include gitam in the results
+			if rigVarPost("include_gitam") is "YES" and tR["genre"] is "gitam" then
+				rigLogMessage "debug","Include gitam: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include stotram in the results
+			if rigVarPost("include_stotram") is "YES" and tR["genre"] is "stotram" then
+				rigLogMessage "debug","Include stotram: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include tirumurai in the results
+			if rigVarPost("include_tirumurai") is "YES" and tR["genre"] is "tirumurai" then
+				rigLogMessage "debug","Include tirumurai: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+
+			## LOOP DEITY
+			
+			# include Ganesha in the results
+			if rigVarPost("include_ganesha") is "YES" and tR["deity"] is "ganesha" then
+				rigLogMessage "debug","Include Ganesha: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include Muruga in the results
+			if rigVarPost("include_muruga") is "YES" and tR["deity"] is "muruga" then
+				rigLogMessage "debug","Include Muruga: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include Siva in the results
+			if rigVarPost("include_siva") is "YES" and tR["deity"] is "siva" then
+				rigLogMessage "debug","Include Siva: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include guru in the results
+			if rigVarPost("include_guru") is "YES" and tR["deity"] is "guru" then
+				rigLogMessage "debug","Include Guru: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include Vedic in the results
+			if rigVarPost("include_vedic") is "YES" and tR["deity"] is "vedic" then
+				rigLogMessage "debug","Include Vedic: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include other in the results
+			if rigVarPost("include_other") is "YES" and tR["deity"] is "other" then
+				rigLogMessage "debug","Include Other: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# ... or next repeat
+			next repeat
+		end if
+		
+		add 1 to y
+		put tR into gData["search results"][y]
+	end repeat
+	RenderSearchResults
+end search
+
+
+
+# CALL THE CONTROLLER HANDLER
+audio
+
+
+--| END OF welcome.irev
+--| Location: ./system/application/controllers/welcome.irev
+----------------------------------------------------------------------

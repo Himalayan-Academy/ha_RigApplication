@@ -1,0 +1,33 @@
+<?lc
+/* Brahmanathaswami 2014/6/24
+
+# used to fetch metadata on InspiredTalks from the database
+
+*/
+put gBASEPATH into gBASEPATH
+
+if gBASEPATH is "gBASEPATH" then
+    put "No direct script access allowed."
+    exit to top
+end if
+
+# RUN INITIAL CONFIGURATION PROCEDURES
+# Whether Need or Not
+command rigRunInitialGetQuotesConfig
+	rigLogMessage "debug", "getQuotes Library Loaded"
+end rigRunInitialGetQuotesConfig
+
+
+command getOneQuote
+	# rigLogMessage "Library:getQuotes", "Handler:getOneQuote is firing"
+	# rigLogMessage "Are Segs being passed thru to here?", ("ID:" && tSegs[3])	
+				
+	rigDbSelect "content"
+	rigDbWhere "quote_id", tSegs[3]
+	put rigDbGet("quote") into tQuoteQuery
+	put tQuoteQuery["resultarray"][1] into tRow
+	put tRow[1] into gData["gurudevaQuote"] 	
+	put "/media/apps/gurudeva/img/" & tSegs[4] & ".jpg" into gData["gurudevaPhoto"]
+	
+end getOneQuote
+ 

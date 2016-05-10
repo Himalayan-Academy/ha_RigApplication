@@ -1,0 +1,235 @@
+<?lc
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "looklisten,loadIndex,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+
+local tSegs
+
+command looklisten
+	rigEnableProfiler FALSE
+	rigLoadLibrary "getQuotes"
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "pagemetadata"
+	rigLoadLibrary "cms"
+	rigLoadLibrary "lorempixel"
+	rigLoadHelper "asset"
+	rigLoadPlugin "galleria"
+	rigLoadLibrary "fetchhtml"
+	--rigLoadLibrary "json"
+	rigLoadLibrary "audio"
+
+	# BR: Mini library I created... i did not want to keep polluting cms.lc with badly coded functions
+	# We can redo this later once we understand how to separate generic functions
+
+	rigLoadLibrary "random-slider"
+
+		# Loading helpers
+	rigLoadHelper "asset"
+	rigLoadHelper "file"
+	rigLoadHelper "array"
+
+	# Loading plugins
+    rigLoadPlugin "galleria"
+
+
+
+	    # let's log what page is the user hits on
+    rigLogMessage "Requested:", rigUriString()
+
+##### For any URI's with 2 or more segments with more than 2 segments ####
+
+ put rigSegmentArray() into tSegs
+ put tSegs[1] && tSegs[2] && tSegs[3] && tSegs[4] into tURLSegs
+ 
+ # rigLogMessage "Getting Segs?", tURLSegs
+ 
+
+	# handle special cases first for longer URI's and be done
+	# this is just here to use if needed and a reminder
+	    if tSegs[3] <> empty then
+	
+	        switch 
+	           case (tSegs[2]= "gurudeva-quotes")
+	              # rigLogMessage "Reached Our Case:", "Yes"
+			    gurudevaQuotePage			    
+				break
+				# if we are actually delivering plain html
+				# we have to fire fetchHTML handlers to use the segs
+				# to dig the html folder for the content:
+				case (tSegs[3]= "gurudeva")
+					fetchExternalHTML
+					viewExternalPage
+				break
+			end switch
+			exit looklisten
+		end if
+
+
+	# Deal with two segment 2 URI's which have special handlers
+	# or default to external html and pass longer URIs to external html
+
+     if tSegs[3] is empty then
+      # it means we only have two segments and we may want to load
+       # some landing pages otherwise we will treat it as external html
+       switch
+
+			case (tSegs[2] = "gurus-talks")
+				gurustalks
+				break
+			case (tSegs[2] = "videos")
+				videos
+				break
+
+			case (tSegs[2] = "art-photos")
+				artphotos
+				break
+
+			case (tSegs[2] = "chanting-songs")
+				chantingsongs
+				break
+
+			case (tSegs[2]= "talksindex")
+				getTalksIndex
+				fetchExternalHTML
+				viewExternalPage
+				break
+			case (tSegs[2]= "getOneGurudeva")
+				getOneGurudevaTalk
+				break
+		
+			case (tSegs[2] is empty)
+				loadIndex
+				break
+
+			# We can also do things now that could poke data into html files
+			# just be sure not to close the case with "break"
+			# Caveat: if you have more thatn one of these it won't work
+			# without "break" it drops to the next case... so this
+			# only works for the last one
+			# Other wise call the fetch External and View external in the command below
+			case (tSegs[2]  = "music")
+				# We want to create a slider at the top of the page
+
+				put $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/music/img/song-page-slides/" into  pGalleryImagesPath
+				# Load slideshow to global:
+				dottedSlideShow pGalleryImagesPath, "pageTopSlideshow"
+				get emitArtistsSongsLinks()
+
+				# not working because the JSON library is escaping slashes in my paths to images:
+				# put emitDynamicRandomSlideShow("/html/looklisten/music/img/song-page-slides")	into gData["slideShow"]
+				#put rigLoadView("media/galleria-load-classic-assets", TRUE)  into  gData ["topSlider"]
+
+			default  # the second segment is an html file at the top level
+
+			fetchExternalHTML
+			viewExternalPage
+		 end switch
+	 else # longer URI: assume html since special cases were handled above
+	 	  fetchExternalHTML
+		  viewExternalPage
+    end if
+end looklisten
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFIED IN THE URI
+
+command index
+
+end index
+
+command loadIndex
+	put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/looklisten-sidebar.html")  into gData["sideBar"]
+	put "Look &amp;  Listen" into gData["pageTitle"]
+	# no secondary navigation is set, so pass the parameter empty...
+	put getSetHeadNav("landing","Look &amp; Listen",">Look &amp; Listen<","") into gData["pageHeader"]
+	put cmsParseXMLDataFile("/looklisten/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end loadIndex
+
+command gurustalks
+		put "Look &amp;  Listen - Talks By Our Satgurus" into gData["pageTitle"]
+		put getSetHeadNav("landing","Talks By Our Satgurus",">Look &amp; Listen<","cat-talks-by-our-gurus") into gData["pageHeader"]
+		put cmsParseXMLDataFile("/looklisten/gurus-talks.xml") into gData["modules"]
+		get rigLoadView("sitewide/landing", gData)
+end gurustalks
+
+#command talksindex
+#    put "Look &amp; Listen - Chanting and Songs" into gData["pageTitle"]
+#    put getSetHeadNav("landing","Chanting and Songs",">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+#	put cmsParseXMLDataFile("/looklisten/chanting-songs.xml") into gData["modules"]
+#	get rigLoadView("sitewide/landing", gData)
+#end talksindex
+
+command videos
+    put "Look &amp;  Listen - Videos" into gData["pageTitle"]
+    put getSetHeadNav("landing","Videos",">Look &amp; Listen<","cat-videos") into gData["pageHeader"]
+	put cmsParseXMLDataFile("/looklisten/videos.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end videos
+
+command artphotos
+		put "Look &amp;  Listen - Art and Photo Galleries" into gData["pageTitle"]
+		put getSetHeadNav("landing","Art and Photo Galleries",">Look &amp; Listen<","cat-art-photo-galleries") into gData["pageHeader"]
+		put cmsParseXMLDataFile("/looklisten/art-photos.xml") into gData["modules"]
+		get rigLoadView("sitewide/landing", gData)
+end artphotos
+
+command chantingsongs
+		put "Look &amp; Listen - Chanting and Songs" into gData["pageTitle"]
+		put getSetHeadNav("landing","Chanting and Songs",">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+		put cmsParseXMLDataFile("/looklisten/chanting-songs.xml") into gData["modules"]
+		get rigLoadView("sitewide/landing", gData)
+end chantingsongs
+
+command getTalksIndex
+		rigLoaderLoadLibrary "fetchtalksindex"
+		fetchInspiredTalkData
+		put getSetHeadNav("skinny","Talks By Our Satgurus",">Look &amp; Listen<","cat-talks-by-our-gurus") into gData["pageHeader"]
+end getTalksIndex
+
+command getOneGurudevaTalk
+       rigLoaderLoadLibrary "fetchtalksindex"
+       fetchRandomGurudevaTalk
+       put gData["oneRandomGurudevaTalk"]
+end getOneGurudevaTalk
+
+command gurudevaQuotePage
+		
+		# rigLogMessage "Reached our gurudevaQuotePage Command", "Yes"		
+		
+		# get URL Segs: NOTE! must declare  -- local tSegs --  at the top!
+		# then they are also available inside loaded libraries 
+		# so we don't need to stage them first as params
+		
+		getOneQuote
+        
+        # NOTE: FetchExternalHTML:viewExternalPage  only work
+        # where the segments have matching folders in the /html directory
+        # They are not meant as params for handlers
+        # If segments are params for working handlers, then 
+        # do not call them... 
+        # in which case we have to do that work in the handler itself
+        # by fetching both the content, the sidebar and setting the page header variables here:
+     
+        put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/gurudeva-quotes/index.html") into gData["singleArticle"]	    
+		put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/gurudeva-quotes/gurudeva-quotes-sidebar.html") into gData["sideBar"]
+		# set metadata tile required also here:
+		put "Gurudeva Quotes" into gData["pageTitle"]
+		put getSetHeadNav("skinny","Gurudeva Quotes") into gData["pageHeader"]
+		get rigLoadView("sitewide/two-column", gData)
+end gurudevaQuotePage
+
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF looklisten.lc
+--| Location: ./system/application/ha/controllers/looklisten.lc
+----------------------------------------------------------------------

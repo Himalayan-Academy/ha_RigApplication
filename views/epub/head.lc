@@ -1,0 +1,75 @@
+<head>
+<script src="/assets/js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="/assets/js/fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="/assets/js/fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<style type="text/css">
+  
+  
+#controls-wrapper {
+     width:100%;
+     height:50px;
+     background-color:#fff;
+     margin:0;
+     padding-right: 100px;
+     position:fixed;top:0;left:0;
+  }
+  
+  #controls {
+    border: solid 1px black;
+    width: 85%;    
+    position: fixed;
+    top: 0; left: 0%;
+    z-index: 10;
+    background:#ffc;
+    padding:10px 50px 2px;
+    border:1px solid #CCCCCC;
+    font-weight:bold;
+    text-decoration: none;
+		overflow: auto;
+  }
+  
+  #controls > a {
+    text-decoration: none;
+    
+  }
+
+	#lexicon_element {
+		overflow: auto;
+		max-height: 600px; 
+	}
+  
+  #table_of_contents {
+		overflow: auto;
+    display: none;
+		height: 600px;
+  }
+  
+  #settings {
+    display: none;
+  }
+  
+  hr.thin {
+    height: 1px;
+    border: 0;
+    color: #333;
+    background-color: #333;
+    width: 80%;
+  }
+  
+  #page-content{
+  position:absolute;
+  top:60px;
+
+  }
+  
+  .lexicon_word:hover {
+    cursor: help;
+  }
+
+  .from_svg {
+		height: 800px;
+		width: auto;
+}
+   
+</style>
+<base href="<? return epubBaseURL() ?>" />

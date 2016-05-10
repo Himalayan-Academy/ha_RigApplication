@@ -1,0 +1,8 @@
+<figure class="slider-item">
+	<a href="[[ gData["square slider item"]["link"] ]]">
+		<div class="img-crop">
+			<img src="[[ gData["square slider item"]["image"] ]]" alt="[[ gData["square slider item"]["caption"] ]]" />
+		</div>
+	</a>
+	<figcaption class="caption">[[ gData["square slider item"]["caption"] ]]</figcaption>
+</figure>

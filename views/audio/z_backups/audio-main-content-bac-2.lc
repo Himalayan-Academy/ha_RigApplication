@@ -1,0 +1,89 @@
+<div id="main-content">
+	
+<div id="left-content"  style="width:400px;margin:30px;float:left;">
+[[gData["audioTitleImg"] ]] [[gData["instrumentsImg"] ]]
+
+<p>This is your gateway to thousands of audio files. Access the spiritual discourses of Satguru Sivaya Subramuniyaswami and his successor Satguru Bodhinatha Veylanswami, the songs of our Paramaguru Siva Yogaswami called Natchintanai, basic Sanskrit chants for devotees and a small but growing collection of Saivite Bhajans and Gitams.</p>
+
+
+</div><!-- end left-content -->
+
+<div id="get-audio" style="width:370px; margin-top:12px;float:right;line-height:150%">
+
+	<form id="search-talks" action="/index.irev/audio/search" method="POST">
+
+		<b>Inspired Talks</b><br />
+    <input type="hidden" name="media_type" value="audio/inspiredtalk">
+		<input name="include_gurudeva" id="gurudeva" type="checkbox" value="YES"> Gurudeva
+		<input name="include_bodhinatha" id="bodhinatha" type="checkbox" value="YES"> Bodhinatha <br />
+		<b>Search:</b> <input name="filter_by_title" id="title" type="checkbox" value="YES"> Title <input name="filter_by_description" id="description" type="checkbox" value="YES"> Description 
+		<input name="filter_by_transcript" id="transcript" type="checkbox" value="YES"> Transcript <br />
+		<b>For: </b>
+		<input name="query" id="search-string" type="text" size="30" maxlength="100" />
+		<button type="submit" id="submit" name="submit" value="inspired-talks"> Go</button>
+	</form>
+<hr />
+
+	<form id="search-natchintanai" action="/index.irev/audio/search" method="POST">
+		<b>Yogaswami's Natchintanai Songs</b><br />
+    <input type="hidden" name="media_type" value="audio/song">
+		<input name="include_natchintanai" id="include_natchintanai" type="checkbox" value="YES"> All </input>
+		<input name="filter_by_model" id="filter_by_model" type="checkbox" value="YES"> Selected for Learning  </input>
+		<button type="submit" id="submit" name="submit" value="natchintanai">  Go</button>
+
+	</form>
+<hr />
+
+	<form id="search-chants" action="/index.irev/audio/search" method="POST">
+
+		<b>Sanskrit Chants </b>
+		<input type="hidden" name="media_type" value="audio/chant">
+  
+		<button type="submit" id="submit" name="submit" value="chants">  Go All</button>
+
+	</form>
+<hr />
+
+	<form id="search-songs" action="/index.irev/audio/search" method="POST">
+		<input type="hidden" name="media_type" value="audio/song">
+	
+		<b>World of Songs (filter by:)</b><br />	
+	
+	
+		<b>Genre (Choose at least one)</b>:<br />
+		<input name="include_bhajan" id="genre-bhajan" type="checkbox" title="Short, easy to follow leader-response songs. Good for children and groups. " value="YES"> Bhajan </input>
+		<input name="include_gitam" id="genre-gitam" title="Complex songs, must be memorized or have lyrics available "  type="checkbox" value="YES"> Gitam </input>
+		<input name="include_stotram" id="genre-stotram" type="checkbox" value="YES"> Stotram </input><br />
+		<input name="include_natchintanai" id="genre-natchintanai" type="checkbox" value="YES"> Natchintanai </input>
+		<input name="include_tirumurai" id="genre-tirumurai" type="checkbox" value="YES"> Tirumurai </input><br />
+		
+     <b>Only for:</b>:<br />		
+		<input type="Radio" name="filter_by_deity" value="ganesha" /> Ganesha
+		<input type="Radio" name="filter_by_deity" value="muruga" /> Muruga
+		<input type="Radio" name="filter_by_deity" value="siva" /> Siva
+		<input type="Radio" name="filter_by_deity" value="guru" /> Guru
+		<input type="Radio" name="filter_by_deity" value="vedic" /> Vedic
+		<input type="Radio" name="filter_by_deity" value="other" /> Other<br />
+			
+		<input  name="filter_by_model" id="filter_by_model" type="checkbox" title="Traditional melodies used worldwide and recommended to be learned." value="YES"> Selected for Learning </input>
+		<button type="submit" id="submit" name="submit" value="songs">  Go</button>
+
+	</form>
+
+<hr />
+
+	<form id="search-instrumental" action="/index.irev/audio/search" method="POST">
+
+		<b>Instrumental Music </b>
+		<input type="hidden" name="media_type" value="audio/instrumental">
+		<button type="submit" id="submit" name="submit" value="instrumental"> Go All</button>
+	</form>
+
+
+</div>  <!-- end get-audio -->
+
+[[ gData["search innerHTML"] ]]
+	
+</div> <!-- end main-content -->
+
+<br /><br /><br /><br /><br /><br /><br />

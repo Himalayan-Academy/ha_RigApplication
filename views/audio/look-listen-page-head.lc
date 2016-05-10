@@ -1,0 +1,93 @@
+<body class="skinny">
+
+<div class="page-container">
+
+	<aside class="pulldown" role="complementary">
+			
+		<div class="pulldown-content">
+					
+			<ul>
+				<li><a href="#">Kauai's Hindu Monastery</a></li>
+				<li><a href="#">Hinduism Today</a></li>
+				<li><a href="#">Hindu Heritage Endowment</a></li>
+				<li><a href="#">Minimela Store</a></li>
+			</ul>
+		
+		</div>
+	
+	</aside> <!-- end header pulldown -->
+
+	<header class="page-header">
+	
+		<div class="wrapper">
+		<div class="inner-wrapper">
+		
+			<a class="logo" href="#"><h2>Kauai's Hindu Monastery</h2></a>
+			
+			<nav class="nav-global">
+			
+				<ul class="nav-parent">
+					<li class="inactive"><a href="#">Monastery</a>
+						<ul class="nav-child">
+							<li><a href="#">About the Monastery</a></li>
+							<li><a href="#">Guru Lineage &amp; Philosophy</a></li>
+							<li><a href="#">Monastery Blog</a></li>
+							<li><a href="#">Our Temples</a></li>
+							<li><a href="#">Meet the Monks</a></li>
+						</ul>
+					</li>
+					<li class="inactive"><a href="#">Read &amp; Learn</a>
+						<ul class="nav-child">
+							<li><a href="#">Basics of Hinduism</a></li>
+							<li><a href="#">Books</a></li>
+							<li><a href="#">Hinduism Today Magazine</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">For Teachers &amp; Parents</a></li>
+							<li><a href="#">For the Media</a></li>
+							<li><a href="#">Other Languages</a></li>
+						</ul>
+					</li>
+					<li class="active"><a href="#">Look &amp; Listen</a>
+						<ul class="nav-child">
+							<li class="cat-talks-by-our-gurus"><a href="#">Talks By Our Gurus</a></li>
+							<li class="cat-videos"><a href="#">Videos</a></li>
+							<li class="cat-art-photo-galleries"><a href="#">Art &amp; Photo Galleries</a></li>
+							<li class="cat-chanting-songs"><a href="#">Chanting &amp; Songs</a></li>
+							<li class="cat-podcasts"><a href="#">Podcasts</a></li>
+						</ul>
+					</li>
+					<li class="inactive"><a href="#">Live Spiritually</a>
+						<ul class="nav-child">
+							<li class="cat-lorem-ipsum"><a href="#">Lorem Ipsum</a></li>
+							<li class="cat-consectetur-adipiscing"><a href="#">Consectetur adipiscing</a></li>
+							<li class="cat-donec-pretium"><a href="#">Donec pretium</a></li>
+						</ul>
+					</li>
+					<li class="inactive"><a href="#">Visit</a>
+						<ul class="nav-child">
+							<li class="cat-come-on-a-tour"><a href="#">Come On a Tour</a></li>
+							<li class="cat-take-a-virtual-tour"><a href="#">Take a Virtual Tour</a></li>
+							<li class="cat-daily-puja"><a href="#">Daily Puja</a></li>
+							<li class="cat-come-on-a-pilgrimage"><a href="#">Come on a Pilgrimage</a></li>
+							<li class="cat-our-center-in-mauritius"><a href="#">Our Center in Mauritius</a></li>
+							<li class="cat-meet-us-when-we-travel"><a href="#">Meet Us When We Travel</a></li>
+							<li class="cat-shop-online"><a href="#">Shop Online</a></li>
+						</ul>
+					</li>
+				</ul>
+			
+			</nav> <!-- end global nav -->
+			
+			<h2 class="page-heading">Look &amp; Listen</h2>
+			
+			<form class="form-search">
+				<input type="text" value="search this site" />
+				<input type="submit" value="search" title="search" />
+				
+				<a class="adv-search" title="Advanced Search" href="#">Advanced Search</a>
+			</form>
+			
+		</div>
+		</div> <!-- end header content wrapper -->
+	
+	</header> <!-- end page header -->

@@ -1,0 +1,503 @@
+﻿script "lib_RevIgniter"
+--> MetaData
+-
+copyright: David Bovill
+license: GPLv3
+name: lib_RevIgniter
+type: script library
+version: 0.4
+
+
+/*
+This library contains all the revIgniter specific code for teh Himalayan Academy project.
+*/
+
+--> revIgniter
+-
+function rig_ConstructRouteArray
+   -- this code is taken directly from routes.lc
+   -- maybe it should use introspection on get access to global gRoute on server
+   -- is there a revIgnitor function for this?
+   
+   put "api/bookget/$1" into gRoute[8]["api/book/get/(:any)"]
+   put "api/bookupdate/$1" into gRoute[9]["api/book/update/(:any)"]
+   put "api/bookinsert/$1" into gRoute[10]["api/book/new/(:any)"]
+   put "api/savecover/$1" into gRoute[11]["api/book/setcover/(:any)"]
+   put "books/sender/$1/$2" into gRoute[12]["books/(:any)/web/(:any)"]
+   put "listen/index/$1/mp3" into gRoute[13]["listen/(:any)"]
+   put "listen/index/$1/$2" into gRoute[14]["listen/(:any)/(:any)"]
+   put "bodhinatha" into gRoute[29]["bodhinatha/:any"]
+   put "manager" into gRoute[15]["manager/:any"]
+   put "info" into gRoute[15]["info/:any"]
+   put "monastery" into gRoute[16]["monastery/:any"]
+   put "readlearn" into gRoute[17]["readlearn/:any"]
+   put "looklisten" into gRoute[18]["looklisten/:any"]
+   put "donations/student-donate" into gRoute[26]["livespiritually/become-student/donate"]
+   put "livespiritually" into gRoute[19]["livespiritually/:any"]
+   put "visit" into gRoute[27]["visit/:any"]
+   put "donations" into gRoute[20]["donations/:any"]
+   put "site/viewmedia/$1" into gRoute[21]["view/(:any)"]
+   put "site/downloadfile/$1" into gRoute[22]["download/(:any)"]
+   put "cloudreader/readbook/$1" into gRoute[23]["readbook/(:any)"]
+   put "site/reviews/$1" into gRoute[24]["reviews/(:any)"]
+   put "cloudreader/simplereader/$1" into gRoute[25]["book/(:any)"]
+   put "cloudreader/simplereader/$1/$2" into gRoute[26]["book/(:any)/(:any)"]
+   # put "cloudreader/simplereader/$1/$2" into gRoute[27]["media/books/(:any)/web/ops/xhtml/(:any)"]
+   put "cloudreader/bookPageToSpineNo/$1/$2" into gRoute[27]["media/books/(:any)/web/ops/xhtml/(:any)"]
+   put "site/viewmedia/$1" into gRoute[28]["apps/(:any)"]
+   
+   return gRoute
+end rig_ConstructRouteArray
+
+
+--> revIgniter | Wiki
+-
+function rig_ConstructFedwikiPageArray headerPageArray
+   local lookUpArray, markdownTOC, pVersionNum
+   
+   put headerPageArray [1] into topSectionArray
+   put topSectionArray ["@attributes"]["title"] into pageTitle
+   put topSectionArray ["@content"] into rigPageContentArray
+   put pageTitle into fedwikiPageArray ["title"]
+   rig_AddContentToFedwikiPageArray fedwikiPageArray, rigPageContentArray
+   
+   -- make a TOC
+   rig_ConstructMarkdownToc topSectionArray, 1, lookUpArray, markdownTOC
+   put "# TOC" & CR before markdownTOC
+   fedwiki_AddMarkdownToPageArray fedwikiPageArray, markdownTOC
+   
+   put rig_ConstructSourceArray (pageTitle, sourceUrl, lookUpArray, pVersionNum) into sourceArray
+   put fedwiki_ConstructJournalArray (pageTitle, sourceArray) into fedwikiPageArray ["journal"]
+   
+   return fedwikiPageArray
+end rig_ConstructFedwikiPageArray
+   
+private function rig_ConstructSourceArray pageTitle, sourceUrl, lookUpArray, pVersionNum
+   put "https://livecode.world/revIgniter/transportAgain" into transportURL
+   put "https://github.com/LiveCodeWorld/revIgniter,lc" into repoURL
+   put the milliseconds into dateTransported
+   
+   put fedwiki_ConstructCreateSourceArray (transportURL, sourceUrl, dateTransported, repoURL, pVersionNum) into pSourceArray
+   put pageTitle into pSourceArray ["pageTitle"]
+   if lookUpArray is an array then
+      put lookUpArray into pSourceArray ["link_dictionary"]
+   end if
+   return pSourceArray
+end rig_ConstructSourceArray
+   
+private command rig_ConstructMarkdownToc sectionArray, sectionPath, @lookUpArray, @markdownTOC
+   put (the number of lines of the keys of sectionArray) - 2 into subSectionNum
+   repeat with sectionNum = subSectionNum down to 1
+      put sectionArray [sectionNum] into subSectionArray
+      put subSectionArray ["@attributes"] into attributeArray
+      put attributeArray ["title"] into sectionTitle
+      put attributeArray ["level"] into sectionLevel
+      
+      put sectionPath & comma & sectionNum into subSectionPath
+      put subSectionPath into lookUpArray [sectionTitle]["sectionPath"]
+      put sectionLevel into lookUpArray [sectionTitle]["sectionLevel"]
+      put sectionNum into lookUpArray [sectionTitle]["sectionNum"]
+      
+      -- don't really need this as the idea is to fetch it with sectionPath and sourceURL
+      put subSectionArray ["@content"] into lookUpArray [sectionTitle]["@content"]
+      
+      put "* [[" & sectionTitle & "]]" & CR before markdownTOC
+   end repeat
+   delete char -1 of markdownTOC
+end rig_ConstructMarkdownToc
+   
+command rig_AddContentToFedwikiPageArray @fedwikiPageArray, sectionContentArray
+   repeat for each key itemNum in sectionContentArray
+      put sectionContentArray [itemNum] into someHTML
+      
+      -- here we can tidy and process each section
+      switch
+         default
+            fedwiki_AddHtmlToPageArray fedwikiPageArray, someHTML
+      end switch
+   end repeat
+end rig_AddContentToFedwikiPageArray
+
+command rig_ScrapeHeadings someHtml, @pageTitle, @handlerNames, @handerTitleNodes
+   -- revXMLDeleteAllTrees
+   
+   if pTidyIsTrue then html_Tidy someHtml
+   put revXMLCreateTree (someHTML, false, true, false) into treeID
+   --
+   put scrapeID_GetDiv (treeID, "id", "content") into contentsDiv
+   put xpath_ConstructHeadingPath (1, "content") into someXPath
+   put word 1 to -1 of line 1 of revXMLDataFromXPathQuery (treeID, someXPath) into pageTitle
+   -- 
+   put xpath_ConstructHeadingPath (3, "content") into someXPath
+   put word 1 to -1 of revXMLEvaluateXPath (treeID, someXPath) into handerTitleNodes
+   put revXMLDataFromXPathQuery (treeID, someXPath) into handlerNames
+   rig_CleanHandlerNames handlerNames
+   
+   put scrapeID_ConstructHeaderPageArray (treeID) into headerPageArray
+   --
+   revDeleteXMLTree treeID
+   return headerPageArray
+end rig_ScrapeHeadings
+
+command rig_CleanHandlerNames @someContent
+   put "[^\)]*" into notaBracket
+   put "\(" & notaBracket & "\)" into someReg
+   put "\n" after someReg
+   put word 1 to -1 of replaceText (someContent, someReg, empty) into someContent
+end rig_CleanHandlerNames
+
+
+--> Rig | List
+-
+function rig_ListHelperFiles
+   put rig_GetFolder ("helpers") into someFolder
+   put rig_ListFiles (someFolder) into shortFiles
+   return shortFiles
+end rig_ListHelperFiles
+
+function rig_ListControllerFiles
+   put rig_GetFolder ("controllers") into someFolder
+   put rig_ListFiles (someFolder) into shortFiles
+   return shortFiles
+end rig_ListControllerFiles
+
+function rig_ListStackFiles
+   put rig_GetFolder ("stacks") into someFolder
+   put rig_ListFiles (someFolder) into shortFiles
+   return shortFiles
+end rig_ListStackFiles
+
+function rig_ListSystemHelperFiles
+   put rig_GetSystemFolder ("helpers") into someFolder
+   put rig_ListFiles (someFolder) into shortFiles
+   return shortFiles
+end rig_ListSystemHelperFiles
+
+function rig_ListFiles someFolder
+   if the environment = "server" then
+      put rig_ListServerFiles (someFolder) into shortFiles
+   else
+      put rig_FetchPathArray (someFolder) into fileArray
+      put rig_SortAndFilterCodeFiles (fileArray) into shortFiles
+   end if
+   return shortFiles
+end rig_ListFiles
+
+function rig_ListServerFiles someFolder
+   put rigGetFileNames (someFolder) into shortFiles
+   set the columndelimiter to CR
+   combine shortFiles by column
+   sort shortFiles
+   return shortFiles
+end rig_ListServerFiles
+
+
+--> revIgniter | Fetch
+-
+function rig_FetchController shortFile, pServerURL
+   put rig_GetFolder ("controllers") & shortFile into somePath
+   put rig_FetchFile (somePath, pServerURL) into someData
+   return someData
+end rig_FetchController
+
+function rig_FetchStack shortFile, pServerURL
+   put rig_GetFolder ("stacks") & shortFile into somePath
+   put rig_FetchFile (somePath, pServerURL) into someData
+   return someData
+end rig_FetchStack
+
+function rig_FetchSystemHelper shortFile, pServerURL
+   put rig_GetFolder ("helpers") & shortFile into somePath
+   put rig_FetchFile (somePath, pServerURL) into someData
+   return someData
+end rig_FetchSystemHelper
+
+function rig_FetchProjectFile shortFile, shortFolder, pServerURL  
+   put rig_GetFolder ("helpers") & shortFile into somePath
+   put rig_FetchFile (somePath, pServerURL) into someData
+   return someData
+end rig_FetchProjectFile
+
+function rig_FetchSystemFile shortStackFile, shortFolder, pServerURL  
+   put rig_GetSystemFolder (shortFolder) & shortStackFile into somePath
+   put rig_FetchFile (somePath, pServerURL) into someData
+   return someData
+end rig_FetchSystemFile
+
+function rig_FetchFile somePath, pServerURL  
+   if pServerURL is not empty then
+      put server_GetURL() into oServerURL
+      server_LoadDetails pServerURL
+   end if
+   
+   put server_GetURL() into serverAddress
+   put server_GetSshUser() into sshUser
+   put server_FetchFile (somePath, serverAddress, sshUser) into stackOrScript
+   if pServerURL is not empty then
+      server_LoadDetails oServerURL
+   end if
+   return stackOrScript
+end rig_FetchFile
+
+
+--> revIgniter | Store
+-
+command rig_StoreController shortFile, rigScript
+   put rig_ApplicationPath ("controllers/" & shortFile) into somePath
+   rig_StoreData rigScript, somePath
+end rig_StoreController
+
+command rig_StoreStacks stackNames
+   repeat for each line stackName in stackNames
+      set the cursor to busy
+      rig_StoreStack stackName
+   end repeat
+end rig_StoreStacks
+
+command rig_StoreStack stackName
+   if exists (stack stackName) is false then
+      return merge ("error, stack '[[stackName]]' does not exist")
+   end if
+   
+   put the name of stack stackName into stackObject
+   stack_Save stackObject
+   
+   put the filename of stack stackName into localFile
+   set the itemdelimiter to slash
+   put item -1 of localFile into shortFile
+   put rig_ApplicationPath ("stacks/" & shortFile) into somePath
+   put rig_GetFolder ("stacks") & shortFile into somePath
+   
+   rig_UploadLocalFile localFile, somePath
+   return the result
+end rig_StoreStack
+
+command rig_StoreStackData shortFile, stackData
+   put rig_ApplicationPath ("stacks/" & shortFile) into somePath
+   put rig_GetFolder ("stacks") & shortFile into somePath
+   rig_StoreData stackData, somePath
+   return the result
+end rig_StoreStackData
+
+command rig_UploadLocalFile localFile, pathToStore
+   put server_GetURL() into serverAddress
+   put server_GetSshUser() into sshUser
+   server_StoreFile localFile, pathToStore, serverAddress, sshUser
+   put the result into someResult
+   return someResult
+end rig_UploadLocalFile
+
+command rig_StoreData someData, somePath
+   put server_GetURL() into serverAddress
+   put server_GetSshUser() into sshUser
+   server_StoreData someData, somePath, serverAddress, sshUser
+   put the result into someResult
+   return someResult
+end rig_StoreData
+
+command rig_DeleteStack shortStackFile, pDontNotify
+   -- should really do this checking on the shortStackFile first
+   
+   put rig_GetFolder ("stacks") & shortStackFile into stackPath
+   
+   put server_GetURL() into remoteDomain
+   put server_GetSshUser() into sshUser
+   
+   -- should do some checks to make sure it is a stack and not a folder?
+   put server_FileInfoArray (stackPath) into fileArray
+   switch
+      case fileArray ["isFolder"] is true
+         put merge ("Did not delete folder from [[remoteDomain]]. rig_DeleteStack does not allow deletion of folders.") into someComment
+         if pDontNotify is not true then opn_Notify someComment
+         return someComment
+      case fileArray ["file"] is empty
+         put merge ("Did not delete file [[shortStackFile]] from [[remoteDomain]]. It does not exist.") into someComment
+         if pDontNotify is not true then opn_Notify someComment
+         return someComment
+      case fileArray ["fileExtension"] is not among the items of "lc,livecode,rev,livecodescript"
+         put merge ("Did not delete file [[shortStackFile]] from [[remoteDomain]]. It was not a stack.") into someComment
+         if pDontNotify is not true then opn_Notify someComment
+         return someComment
+      default
+         -- it's a livecode file
+   end switch
+   
+   shell_DeleteFile sshUser, remoteDomain, stackPath
+   put the result into someResult
+   
+   if pDontNotify is not true then
+      put merge ("Deleted stack [[shortStackFile]] from [[remoteDomain]]!") into someComment
+      opn_Notify someComment
+   end if
+   return someResult
+end rig_DeleteStack
+
+
+--> revIgniter | Path | Array
+-
+function rig_FetchControllerPathArray
+   put rig_ControllerFolder () into controllerFolder
+   put rig_FetchPathArray (controllerFolder) into fileArray
+   return fileArray
+end rig_FetchControllerPathArray
+
+function rig_FetchStackPathArray
+   put rig_StackFolder () into controllerFolder
+   put rig_FetchPathArray (controllerFolder) into fileArray
+   return fileArray
+end rig_FetchStackPathArray
+
+function rig_FetchPathArray someFolder
+   put server_GetURL() into serverURL
+   put server_GetSshUser() into sshUser
+   put server_GetSshKeyPath() into sshKeyPath
+   
+   put server_FetchFileArray (serverURL, sshUser, someFolder, sshKeyPath) into fileAndFolderArray
+   return fileAndFolderArray ["file"]
+end rig_FetchPathArray
+
+function rig_SortAndFilterCodeFiles fileArray
+   put keys (fileArray) into shortFiles
+   line_Delete "index.html", shortFiles
+   line_Delete "welcome.lc", shortFiles
+   sort shortFiles
+   return shortFiles
+end rig_SortAndFilterCodeFiles
+
+
+--> Rig | Files
+-
+function rig_StackPath shortPath
+   put rig_GetApplicationFolder() into someFolder
+   put someFolder & shortPath into serverStackPath
+   return serverStackPath
+end rig_StackPath
+
+function rig_ControllerPath pShortControllerFile
+   put rig_ApplicationPath ("controllers/" & pShortControllerFile) into somePath
+   return somePath
+end rig_ControllerPath
+
+
+--> Rig | Folders
+-
+function rig_HelperFolder
+   put rig_GetFolder ("helpers") into someFolder
+   return someFolder
+end rig_HelperFolder
+
+function rig_StackFolder
+   put rig_GetApplicationFolder() into someFolder
+   put "stacks/" after someFolder
+   return someFolder
+end rig_StackFolder
+
+function rig_GetFolder shortFolder
+   put rig_GetApplicationFolder() into someFolder
+   put shortFolder & "/" after someFolder
+   return someFolder
+end rig_GetFolder
+
+function rig_ControllerFolder
+   if the environment = "server" then
+      return gAPPPATH & "controllers/"
+   else
+      put server_RigApplicationFolder() into rigApplicationFolder
+      text_AddTrailing rigApplicationFolder, "/"
+      put "controllers/" after rigApplicationFolder
+      return rigApplicationFolder
+   end if
+end rig_ControllerFolder
+
+function rig_RoutingScript
+   -- was "rig_RoutingScript"
+   put rig_ApplicationPath() & "/config/routes.lc" into somePath
+   put server_GetURL() into serverAddress
+   put server_GetSshUser() into sshUser
+   put server_FetchFile (somePath, serverAddress, sshUser) into rigScript
+   return rigScript
+end rig_RoutingScript
+
+function rig_ApplicationPath pShortpath
+   -- was "revigniter_ApplicationPath"
+   put rig_GetApplicationFolder() into rigApplicationPath
+   if pShortpath is not empty then put pShortpath after rigApplicationPath
+   return rigApplicationPath
+end rig_ApplicationPath
+
+function rig_GetSystemFolder pFolder
+   -- quick hack
+   -- this depends on the site specific configuration
+   -- ie is it configured to have multiple sites
+   
+   if the environment = "server" then
+      put gAPPPATH into rigSystemFolder
+   else
+      put server_RigApplicationFolder() into rigSystemFolder
+   end if
+   
+   -- here is the hack :)
+   set the itemdelimiter to "/"
+   if server_GetURL() = "livecode.world" then
+      delete item -1 of rigSystemFolder
+   else
+      delete item -2 to -1 of rigSystemFolder
+   end if
+   
+   text_AddTrailing rigSystemFolder, "/"
+   if pFolder is not empty then
+      put pFolder & "/" after rigSystemFolder
+   end if
+   return rigSystemFolder
+end rig_GetSystemFolder
+
+function rig_GetApplicationFolder
+   if the environment = "server" then
+      put gAPPPATH into rigApplicationFolder
+   else
+      put server_RigApplicationFolder() into rigApplicationFolder
+   end if
+   text_AddTrailing rigApplicationFolder, "/"
+   return rigApplicationFolder
+end rig_GetApplicationFolder
+
+
+--> Private | revIgniter
+-
+private function _setControllerHelp mergeHelp, shortServer
+   if mergeHelp is not empty then return mergeHelp
+   switch shortServer
+      case "livecode.world"
+         if mergeHelp is empty then put "[[shortController]] is a revIgniter controller for the www.livecode.world web site." into mergeHelp
+         break
+      case "himalayanacademy.com"
+         if mergeHelp is empty then put "[[shortController]] is a revIgniter controller for the Himalayan Academy web site." into mergeHelp
+         break
+      case "dev.himalayanacademy.com"
+         if mergeHelp is empty then put "[[shortController]] is a revIgniter controller for the Himalayan Academy developer web site." into mergeHelp
+         break
+      default
+         if mergeHelp is empty then put "[[shortController]] is a revIgniter controller." into mergeHelp
+   end switch
+   return mergeHelp
+end _setControllerHelp
+
+private command _setScriptStackGistHelp @mergeHelp, shortServer
+   if mergeHelp is not empty then return mergeHelp
+   switch shortServer
+      case "livecode.world"
+         if mergeHelp is empty then put "[[shortStack]] is a revIgniter script-only stack for the www.livecode.world web site." into mergeHelp
+         break
+      case "himalayanacademy.com"
+         if mergeHelp is empty then put "[[shortStack]] is a revIgniter script-only stack for the Himalayan Academy web site." into mergeHelp
+         break
+      case "dev.himalayanacademy.com"
+         if mergeHelp is empty then put "[[shortStack]] is a revIgniter script-only stack for the Himalayan Academy developer web site." into mergeHelp
+         break
+      default
+         if mergeHelp is empty then put "[[shortStack]] is a revIgniter script-only stack." into mergeHelp
+   end switch
+   return mergeHelp
+end _setScriptStackGistHelp
+
+

@@ -1,0 +1,35 @@
+
+		<div id="stage-wrapper" > 
+		<div id="gallery" title="Click to toggle fullscreen">
+			###tGalleryDiv###
+			
+	</div> <!-- end galleria gallery instance -->
+	
+</div> <!-- end stage-wrapper -->
+	
+
+<script>
+$("#gallery").galleria({
+        height: ###HEIGHT###,
+          width: ###WIDTH###,
+         transition: "pulse",
+
+     transitionSpeed: 500,
+    imageCrop: ###CROP###,
+    thumbCrop: true,
+    carousel: true, 
+    image_pan: ###PAN###,
+ 	
+ 	extend: function(options) {
+ 	
+ 	   var gallery = this; 
+ 	     this.bind('image', function(e) {  								$(e.imageTarget).unbind('click').click(function() 
+ 	   { gallery.toggleFullscreen();
+ 	  //  { gallery.openLightbox(); 
+ 	     }); 
+ 	     }); 	   	     
+   	 }     	 
+    });   
+  
+</script>
+	

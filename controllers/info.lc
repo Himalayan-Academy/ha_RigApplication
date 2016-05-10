@@ -1,0 +1,100 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers,gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "info,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE MAIN CONTROLLER HANDLER CALLED "the Constructor"
+# this command is the same name as this file
+
+command info
+
+# NB! for this to work the /html/* folder must have the same name as the controller
+
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadLibrary "lorempixel"
+	rigLoadHelper "asset"
+    rigLoadPlugin "galleria" 
+	rigLoadLibrary "fetchhtml"
+		
+		    # let's log what page is the user hits on   
+    rigLogMessage "Requested:", rigCurrentUriString()
+   
+    
+    put rigSegmentArray() into tSegs
+    
+    # handle special cases first for longer URI's and be done
+    # this is just here to use if needed and a reminder 
+    	
+  	
+		
+	    if tSegs[3]= "specialCases" then
+			specialCases # or whatever you want to do with it...
+			exit info # only if needed
+		end if
+		
+	# Deal with two segment 2 URI's which have special handlers
+	# or default to external html and pass longer URIs to external html
+		
+    if tSegs[3] is empty  then 
+       # it means we only have two segments and we may want to load
+       # some landing pages otherwise we will treat it as external html
+       switch
+         case (tSegs[2] is empty) 
+             loadIndex
+			break 
+
+       	
+			
+		# Now you can introduce more dynamic content
+		# here, if you have the variables in the HTML 
+		# just don't use "break" so that it calls the external page 
+		# I don't know how we can do this in the html content itself...
+		# but we probably should....	
+
+	    default  # means the second segment is an html file at the top level	
+	 	
+		fetchExternalHTML
+		viewExternalPage		  	
+	 end switch 
+	 
+	 else
+	 
+	  # We have more segments and for now we assume external HTML
+	 # if you want to use this controller for other things 
+	 # using a 3 segment URL, then you need to put code in the top
+	 # if statement to handle those first and exit the constructor
+ 	 
+	  fetchExternalHTML
+	  viewExternalPage		  	 
+    end if 
+end info
+
+command index
+ # you must not put anything here because
+ # this is called by default unless you want to use it for
+ # some config or something...
+ # this is always called and you must leave it here.
+end index
+
+command loadIndex  
+	put "Information on this Web Site" into gData["pageTitle"] 
+    put getSetHeadNav("landing","Monastery",">Monastery<","") into gData["pageHeader"]			 
+	put cmsParseXMLDataFile("/monastery/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end loadIndex
+
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF info.lc
+--| Location: ./system/application/ha/controllers/info.lc
+----------------------------------------------------------------------

@@ -1,0 +1,8 @@
+<? return rigCssAsset("galleria.classic.css") ?>
+
+<div id="[[ gData["galleraDiv"] ]]" style="[[ gData["style"] ]]"></div>
+
+<? return rigJsAsset("galleria.js") ?>
+<? return rigJsAsset("galleria.classic.js") ?>
+
+[[gData["slideShow"] ]]

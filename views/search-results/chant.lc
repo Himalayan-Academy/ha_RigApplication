@@ -1,0 +1,10 @@
+<div class="audio-player">
+					    <audio style="width:70%;" id="audio-[[gData["record"]["unique id"] ]]" controls="control" preload="none" src="<? return getAudioFile(gData["record"], "mp3") ?>" type="audio/mp3" >
+					    </audio>
+					    <script type="text/javascript">
+					    $(document).ready(function () {
+					               var mePlayer = $('#audio-[[gData["record"]["unique id"] ]]').mediaelementplayer({loop: true, audioWidth: 200, features: ['playpause','current','progress']});
+					
+					           });   
+					    </script>
+			</div>

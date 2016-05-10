@@ -1,0 +1,200 @@
+<!--This slice is taken from the Media Detail template
+You must have body class set to "detail art" for it to render correctly-->
+
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main">
+			
+			<div class="wrapper">
+			
+				<aside class="featured-item" role="complementary">
+				
+					<!-- AAG: <h1 class="h1"><?return gData["record"]["title"]?></h1> -->
+					
+					 
+					<style type="text/css">
+					.app {
+						width: 100%;
+						height: auto;
+					}
+					</style>
+					<iframe class="app" src="/media/apps/web/[[ gData["record"]["file_id"] ]]"></iframe>
+					<script>
+						<?
+						put empty into tBuf
+					    if gData["record"]["framesize"] is not a number then
+							put format("$('.app').contents().find('body').css({\"min-height\": \"100\", \"overflow\" : \"hidden\"});") after tBuf
+							put format("setInterval( \"$('.app').height($('.app').contents().find('body').height() + 100)\", 1 );") after tBuf
+						else
+							put format("$('.app').height(%s);", gData["record"]["framesize"]) after tBuf
+						end if
+						return tBuf
+						?>
+
+				    </script>
+					
+					<form class="form-search" action="/site/search" method="POST">
+						<input type="hidden" name="media_type" value="app" />
+						<input type="text" value="search all apps" />
+						<input type="submit" value="search" />
+						
+						<!-- <a class="adv-search" title="Advanced Search" href="#">Advanced Search</a> -->
+					</form>
+				
+				</aside> <!-- end featured item -->
+			
+				<article class="content-article">
+				
+					<div class="article-wrapper">
+				
+						<aside class="sidebar" role="complementary">
+						
+							<div class="share share-options"><a class="open-menu" href="#">Share</a>
+								<ul class="social nojs">
+										<!-- Facebook -->
+										<div id="fb-root"></div>
+										<script>(function(d, s, id) {
+										  var js, fjs = d.getElementsByTagName(s)[0];
+										  if (d.getElementById(id)) return;
+										  js = d.createElement(s); js.id = id;
+										  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+										  fjs.parentNode.insertBefore(js, fjs);
+										}(document, 'script', 'facebook-jssdk'));</script>
+										<div class="fb-like" data-href="<?return urlencode("http://" & $_SERVER["SERVER_NAME"] & $_SERVER["REQUEST_URI"]) ?>" data-send="false" data-layout="button_count" 
+										data-width="90" data-show-faces="false" data-font="lucida grande" data-action="like"></div>
+										<!-- End of Facebook -->
+
+										<!-- Google Plus -->
+										<!-- Place this tag where you want the +1 button to render. -->
+										<div class="g-plusone"></div>
+										<!-- Place this tag after the last +1 button tag. -->
+										<script type="text/javascript">
+										  (function() {
+										    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										    po.src = 'https://apis.google.com/js/plusone.js';
+										    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+										  })();
+										</script>
+										<!-- End of Google Plus -->
+
+
+										<!-- Twitter -->
+										<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+										<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);} }(document,"script","twitter-wjs");</script>
+										<!-- End of Twitter -->
+								</ul>
+							</div>
+								
+							<a class="share" href="mailto:?subject=[[ gData["record"]["Title"] ]]%20from%20Kauai's%20Hindu%20Monastery&body=[[ gData["record"]["Title"] ]]%20from%20Kauai's%20Hindu%20Monastery%0D[[ "http://" & $_SERVER["HTTP_HOST"] & "/view/" & gData["record"]["file_id"] ]]">Email</a>
+							
+							
+		
+									
+															
+							<?
+							/*
+							<a class="action-bg" href="#">Download</a>
+							
+							<h4 class="h3">Also Available At</h4>
+							<ul>
+								<li><a class="action" href="#">Amazon Kindle Store</a></li>
+								<li><a class="action" href="#">Apple ibookstore</a></li>
+								<li><a class="action" href="#">Google Books</a></li>
+							</ul>
+							*/
+							?>
+							
+					
+						
+						</aside> <!-- end sidebar -->
+					
+						<header class="article-header">
+							
+							<hgroup>						
+								<h3 class="h1"><?return gData["record"]["title"]?></h3>
+								<h4 class="subhead"><?return gData["record"]["sub_title"]?></h4>
+								<h5 class="byline">
+									<?
+									put empty into tBuf
+									if gData["record"]["author"] is not empty then
+										put gData["record"]["author"] into tBuf
+									end if
+									
+									return tBuf
+									?>
+								</h5>
+							</hgroup>
+						
+						</header>
+						
+						<div class="article-body">
+							
+							<?return markdown(gData["record"]["description"])?>	
+												
+						</div> <!-- end article body -->
+						
+							<footer class="article-footer">
+
+									<div class="related-topics column">
+								<?
+								put empty into tBuf
+							
+								if gData["record"]["tags"] is not empty then
+									put "<h4 class='h4'>Related Media:</h4>" into tBuf
+									put "<ul>" after tBuf
+									repeat for each item x in  gData["record"]["tags"]
+									if char 1 of x = space then delete char 1 of x
+									put x into tQueryString
+									replace " " with "+" in tQueryString								
+									put format("<li> <a href=\"/site/search/tags/%s\">%s</a></li>\n",tQueryString,x)  after tBuf
+									end repeat
+									put "</ul>" after tBuf
+								end if
+								return tBuf
+								?>
+								</div>
+
+								<div class="related-topics column">
+										<?
+								put empty into tBuf
+								put  gData["record"]["category"] into x
+								if  x is not empty then								
+									put "<h4 class='h4'>In Category:</h4>" into tBuf
+									put "<ul>" after tBuf
+									if char 1 of x = space then delete char 1 of x
+									put x into tQueryString
+									replace " " with "+" in tQueryString
+									put format("<li> <a href=\"/site/search/category/%s\">%s</a></li>\n",tQueryString,x)  after tBuf							
+									put "</ul>" after tBuf						
+								end if
+								return tBuf
+										?>
+								</div>
+
+								<figure class="quote quote-photo float-right">
+									<img src="[[ gData["gurudevaCircleImage"] ]] " alt="Photo of  Gurudeva " />
+									<blockquote>[[ gData["gurudevaQuote"] ]]</blockquote>
+									<figcaption>&#8212Gurudeva</figcaption>
+								</figure>
+
+								
+							</footer>
+					
+					</div> <!-- end article wrapper -->
+				
+				</article> <!-- end content article -->
+				
+			</div> <!-- end page content wrapper -->
+		
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+	<?
+	return rigLoadView("sitewide/footer", TRUE)
+	?>
+	

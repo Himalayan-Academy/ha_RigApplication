@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>Simple Audio Player</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script> 
+    	<script src="/assets/js/mejs/mediaelement-and-player.min.js"></script>
+    	<link  href="/assets/js/mejs/mediaelementplayer.min.css" rel="Stylesheet" />
+    	<link  href="/assets/js/mejs/mejs-skins.css" rel="Stylesheet" />
+    	<meta http-equiv="content-type" content="text-html; charset=utf-8">
+  
+  </head>
+  <body>
+    <h1>[[ gData["title"] ]]</h1>
+  
+<div class="audio-player">
+    <audio controls="control" preload="none" src="[[ gData["file_path"] ]]" type="[[ gData["format_mime"] ]]" >
+    </audio>
+    <script type="text/javascript">
+    $(document).ready(function () {
+               var mePlayer = $('audio').mediaelementplayer();
+           });   
+    </script>
+    
+</div> <!-- end audio-player -->
+    
+    <p title="Right-Click or Control Click and Choose Save Link As">
+   	 <b><a href="[[ gData["file_path"] ]]">Download Sound File</a></b> 
+   	 
+   	 <!--(File id: <b>[[ gData["file_id"] ]]</b>)-->
+    </p>
+    <?  
+     get gData["model_for_study"]
+		if it = "Yes" then
+		put it into tModel
+		 get gData["genre"]
+    		 if it = "natchintanai" then 
+    				 put ".*</p>" into tClosing
+    		 	else 
+    				put ".</p>" into tClosing
+    			end if
+    		return ("<p>This melody is suggested as a model for global group learning: "& tModel &  tClosing)
+     	end if
+    ?>
+    
+<!--Song Metadata Section: only displays if present in dBase -->  
+
+<div class="song-info"> 
+
+<ul>
+
+ <?  
+     get gData["genre"]
+    		return ("<li><b>Genre</b>: "&it)
+    ?>
+    
+     <?  
+     get gData["deity"]
+    		return ("<b>Deity</b>: "&it&"</li>")
+    ?>
+
+ <?  
+     get gData["source"]
+		if it <> empty then
+    		return ("<li><b>Source</b>: "&it&"</li>")
+     	end if
+    ?>
+<?  
+    get gData["artists"]
+		if it <> empty then
+    		return ("<li><b>Artists</b>: "&it&"</li>")
+     	end if
+    ?>
+
+   
+  <li id="music-info"> <?  
+     get gData["ragam"]
+		if it <> empty then
+    		return ("<b>Ragam</b>: "&it&" | ")
+     	end if
+    ?>
+    <?  
+     get gData["talam"]
+		if it <> empty then
+    		return ("<b>Talam</b>: "&it&" | ")
+     	end if
+    ?>
+    <?  
+     get gData["sruti_tonic"]
+		if it <> empty then
+    		return ("<b>Sruti</b>: "&it&" | ")
+     	end if
+    ?>
+    <?  
+     get gData["graha_note"]
+		if it <> empty then
+    		return ("<b>Graha</b>: "&it)
+     	end if
+    ?>
+    </li>
+     </ul> 
+     
+      <?  
+     get gData["description"]
+		if it <> empty then
+    		return ("<p><b>Notes</b>: "&it&"</p>")
+     	end if
+    ?>
+</div> <!-- end song-info -->
+
+
+  
+
+    
+<!--Lyrics Section: only displays if present in dBase -->
+
+<div class="lyrics">   
+	
+    <?
+     get gData["lyrics_original_transliteration"]
+		if it <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<h3>Transliteration</h3><p>"&it&"</p>")
+     	end if
+    ?>
+    <?
+    get (gData["lyrics_original"])
+		if tBuf <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<h3>Original Lyrics</h3><p>"&it&"</p>")
+     	end if
+    ?>
+    <?
+     get gData["lyrics_literal_translation"]
+		if it <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<h3>Translation</h3><p>"&it&"</p>")
+     	end if
+    ?>    
+</div> <!-- end lyrics -->
+
+
+ <?  
+     get gData["model_for_study"]
+     put it into tModel
+     get gData["genre"]
+     put it into tGenre
+     if (tModel = "Yes" and tGenre ="natchintanai") then
+    		return ("<hr /><p><b>* Model for Study: </b>A major impediment to the spread of Natchintanai has been the diversity of melodies used for any given song. Hindu music is very creative and professionally trained Carnatic singers have a great deal of freedom for improvisation, much like modern western jazz musicians. But this leaves the average lay person with a big problem as well as teachers of groups or children when they come to learn the song. &quot;How should we sing it? What is the tune?&quot; To facilitate the dissemination of Yogaswami's songs the Swamis at Kauai Aadheenam have selected standardized tunes. Wherever possible we have tried to source these melodies from the Sri Lankan Jaffna community itself. Sometimes a complicated carnatic melody by a professional Jaffna Tamil singer has been simplified. (Gamakams are reduced for children) In cases where melodies are not known or are &quot;boring&quot; from a modern youth angle, we have adopted a more rhythmic, upbeat melody. We have to give credit to the Tiruvadi Niliyam (Jaffna Sai Baba devotees) who have sponsored some recordings by the All Ceylon Radio Singers for leading the way in this regard. These are good examples of Yogaswami's songs sung in a pleasing style. It is well known that Yogaswami himself did on occasion tell his devotees to sing such-and-such a Natchintanai song according to the melody of a song sung by one of the current popular devotional singers of his day. The melodies for many Natchintanai have yet to be selected for groups and children. If you would care to suggest some tunes we will would like to hear them. Please email studyhall@hindu.org</p>")
+    		end if
+    ?>
+  </body>
+</html>

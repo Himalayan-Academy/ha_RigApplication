@@ -1,0 +1,106 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+
+
+	
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main">
+		
+			<div class="wrapper">
+							
+				<section class="media-images">
+									
+					<header class="media-images-header">
+					
+						<div class="sort">
+							<h6 class="h6">Sort By:</h6>
+							<a class="share" onclick="sortResults('time-descending'); return false;" href="#">Newest First</a>
+							<a class="share" onclick="sortResults('alpha-ascending'); return false;" href="#">Alphabetical</a>
+						</div>
+						<script type="text/javascript">
+						// this script will implement the "newest first" and the "alphabetical" searches
+						
+						function sortResults(pType) {
+							var url = window.location + "";
+							url = url.replace("#",'');
+							
+							var segments = url.split("/");
+							for (x=0; x< segments.length; x++) {
+								if (segments[x].indexOf("sort") != -1) {
+									segments[x+1] = pType;
+									var newUrl = segments.join("/");
+									window.location = newUrl;
+									return false;
+								}
+							}
+							// the part below executes if there is no sort element in the url.
+							var newUrl = url + "/sort/" + pType;
+							newUrl = newUrl.replace('//sort','/sort');
+							window.location = newUrl;
+							return false;
+						};
+						
+						</script>
+						
+						<h1 class="h1">Results for: [[ gData["query string"] ]]</h1>
+								
+					</header>
+											
+					[[ gData["search results"] ]]
+					
+				</section> <!-- end media images -->
+				
+				<div class="pagination">
+				
+					<ul>
+				
+						<li class="arrow-prev"><a href="[[ gData["previous page link"] ]]">Previous Page</a></li>
+						
+						<li class="pages">
+							<ul>
+							<?
+							put empty into tBuf
+							repeat with x = (gData["active page"]-10) to gData["active page"]+10)
+							if x > gData["number of pages"] then next repeat									
+							if "/page" is not in rigVarServer("REQUEST_URI") then
+									put getURLWithSearchTerms() & "/page/" & x into tURL
+									replace "//" with "/" in tURL
+								else
+									set the itemdel to "/"
+									put getURLWithSearchTerms() into tURL
+									get itemoffset("page", tURL)
+									put x into item (it + 1) of tURL
+								end if
+								if (x is not gData["active page"]) and (x>0) then
+									put format("<li><a href=\"%s\">%s</a></li>\n",tURL, x) after tBuf
+								else
+								if x > 0 then
+									put format("<li class='active'>%s</li>\n", x) after tBuf
+									end if
+								end if
+							end repeat
+							return tBuf
+							?>
+								
+							</ul>
+						</li>
+						
+						<li class="arrow-next"><a href="[[ gData["next page link"] ]]">Next Page</a></li>
+					
+					</ul>				
+				</div>
+				
+			</div>
+											
+		</section> <!-- end page content -->
+		<!-- number of result pages: [[ gData["number of pages"] ]] -->
+	
+	</div> <!-- end page wrapper -->
+	
+
+
+	<?
+	return rigLoadView("sitewide/footer", TRUE)
+	?>

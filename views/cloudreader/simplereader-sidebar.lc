@@ -1,0 +1,9 @@
+<aside class="sidebar" role="complementary">
+
+<a  class="action" href="/view/[[ gData["record"]["file_id"] ]]">Download eBook</a>
+
+<h3 class="h3 header">Table of Contents</h3>
+<ul class="nav-sidebar">
+<?return emitLinkedList(gData["book"]["toc"]) ?>
+</ul>
+</aside> <!-- end sidebar -->

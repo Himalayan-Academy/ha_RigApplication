@@ -1,0 +1,60 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData, gRealm, gZone, gPage
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "zteaching,jigsaw,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+# this command will build the slideshow DOM for the simple
+# dotted slider  We also have one for Galleria
+
+
+
+
+command jigsaw
+
+# header and Sidebar same for all
+ 
+   put getSetHeadNav("skinny","Jigsaw Puzzles",">Read &amp; Learn<","cat-for-teachers-parents") into gData["pageHeader"]	
+
+	put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+
+ 
+	switch gZone
+		case "ganesha_1" 
+			put "Lord Ganesha Jigsaw Puzzle" into gData["pageTitle"] 	
+			put url("file:/home/devhap/public_html/media/apps/web/jigsaw-puzzle_ganesha-1/ganesha_1.html") into gData["singleArticle"]	
+	     break
+		case "iraivan_1"
+		  put "Iraivan Temple Jigsaw Puzzle" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/media/apps/web/jigsaw-puzzle_iraivan-1/img_0831.html") into gData["singleArticle"]	
+	       break
+	end switch
+		
+	get rigLoadView("sitewide/two-column")	
+
+end jigsaw
+	
+
+command index
+end index
+	
+command zteaching
+  put rigFetchSegment(2, 0) into gRealm # top level - depth of URLs this is the command invoked above
+    put rigFetchSegment(3, 0) into gZone  # second depth/nav
+    put rigFetchSegment(4, 0) into gPage  # pages in this realm-zone
+	rigLoadLibrary "Getsetheadnav"
+	rigLoadLibrary "dotted-slideshow"  
+
+end zteaching
+
+
+--| END OF zteaching.lc
+--| Location: ./system/application/ha/controllers/zmonastery.lc
+----------------------------------------------------------------------

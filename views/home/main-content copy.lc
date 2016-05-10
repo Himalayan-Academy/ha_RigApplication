@@ -1,0 +1,269 @@
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main">
+		
+			<div class="featured-stories">
+			
+				<div class="stories-header">
+					
+					<h2 class="blog-heading">Taka: Our Daily Blog</h2>
+					
+					<a class="action" href="#">Read the Blog</a>
+				
+				</div>
+		
+				<article class="content-article has-image">
+									
+					<time pubdate class="timestamp" datetime="[[ gData["taka"][1]["timestamp"] ]]">[[ gData["taka"][1]["date"] ]]</time>
+					
+					<h1 class="h1"><a href="[[ gData["taka"][1]["link"] ]]">[[ gData["taka"][1]["title"] ]]</a></h1>
+					
+					[[ gData["taka"][1]["content"] ]]
+					
+					<figure class="image">
+										
+						<img src="[[ gData["taka"][1]["image"] ]]"  />
+						
+						<figcaption class="caption">[[ gData["taka"][1]["caption"] ]]</figcaption>
+					
+					</figure>
+					
+					<p>[[ gData["taka"][1]["story"] ]]</p>
+				
+					<a class="action" href="[[ gData["taka"][1]["link"] ]]">Continue Reading</a>
+					
+					<footer class="article-footer">
+					
+						<h3 class="h2">Recent Articles</h3>
+						
+						<ul class="recent-articles">
+						
+							<?
+							put empty into tBuf
+							put the keys of gData["taka"] into tKeys
+							sort numeric tKeys
+							delete line 1 of tKeys
+							repeat for each line k in tKeys
+								if k > 5 then next repeat
+								put format("<li><time pubdate class='timestamp' datetime='%s'>%s</time><a href='%s'>%s</a></li>", gData["taka"][k]["timestamp"],gData["taka"][k]["date"], gData["taka"][k]["link"], gData["taka"][k]["title"]) after tBuf
+							end repeat
+							return tBuf
+							?>
+						
+						</ul>
+					
+					</footer>
+									
+				</article> <!-- end content article -->
+				
+				<aside class="publications" role="complementary">
+				
+					<div class="pub-wrapper">
+				
+						<h3 class="h2">[[ gData["modules"]["Sidebar Module"]["title"] ]]</h3>
+						
+						<? return emitSidebarModuleItems(gData["modules"]["sidebar module"]) ?>
+					
+					</div>
+				
+				</aside> <!-- end publications -->
+			
+			</div> <!-- end featured stories -->
+			
+			<section class="guru" role="region">
+			
+				<h3 class="h2">[[ gData["modules"]["secondary content module"]["header"] ]]</h3>
+				
+				<div class="image"><img src="[[ gData["modules"]["secondary content module"]["image"] ]]" alt="[[ gData["modules"]["secondary content module"]["title"] ]]" /></div>
+				
+				<div class="description">
+				
+					<h2 class="h1"><a href="#">[[ gData["modules"]["secondary content module"]["title"] ]]</a></h2>
+					
+					<p>[[ gData["modules"]["secondary content module"]["description"] ]]</p>
+					<a class="action" href="[[ gData["modules"]["secondary content module"]["cta_link"] ]]">[[ gData["modules"]["secondary content module"]["cta"] ]]</a>
+				
+				</div>
+			
+			</section>
+											
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+	<section class="media-images">
+	
+		<div class="wrapper">
+		
+			<header class="media-images-header">
+	
+				<h2 class="h2">Images from the Book</h2>
+				
+				<ul class="archives-pagination">
+					<li class="arrow-prev"><a href="#">Previous</a></li>
+					<li class="arrow-next"><a href="#">Next</a></li>
+				</ul>
+			
+			</header>
+			
+			<div class="slidecontrol-select">
+
+			</div>
+			
+			<div class="paginate">
+			
+				<div class="row">
+				
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-1.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Lorem Ipsum Dolor</a></h3>
+						
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-2.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Sed Ut Perspiciatis</a></h3>
+						
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-3.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Consectetur Adipisicing Elit</a></h3>
+						
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+				</div> <!-- end row -->
+				
+				<div class="row">
+				
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-1.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Lorem Ipsum Dolor</a></h3>
+						
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-2.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Sed Ut Perspiciatis</a></h3>
+						
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-3.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Consectetur Adipisicing Elit</a></h3>
+						
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+				</div> <!-- end row -->
+				
+				<div class="row">
+				
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-1.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Lorem Ipsum Dolor</a></h3>
+						
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-2.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Sed Ut Perspiciatis</a></h3>
+						
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-3.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Consectetur Adipisicing Elit</a></h3>
+						
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+				</div> <!-- end row -->
+			
+			</div> <!-- end paginate container -->
+		
+		</div> <!-- end media wrapper -->
+	
+	</section> <!-- end media images -->
+		
+		[[gData["slideShow"] ]]</div> 
+	
+	<hr />	
+
+		<div id="latest-taka-post">
+		
+		</div><!-- end latest-taka-post -->
+	<hr />	
+		
+
+<div class="static-content">
+
+<!-- Sandbox-test Section for Static content 
+# for html content that is not coming from the database
+# we will have to decide how to insert this later
+# if we hard code this into the view then it goes sitewide
+# we can't do (obviously) that so probably we want to use something
+# like gData[staticContent]
+# then we can insert other views... those "other views"
+# will need to be organized on disk as html or .irev files
+# but on the top level of the web site and not in "views" because they become assets like anything else, only static content assets
+# it will need to also easily available for editing.
+# for now I create a top level folder "public-html/static-html/"
+#  We can talk about this later...for now I just want to poke in some content for viewing.
+-->
+[[gData["staticHMTL1"] ]]
+		
+	</div><!-- end static-content -->
+	</div> <!-- end main-content -->

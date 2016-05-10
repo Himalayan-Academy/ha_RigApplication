@@ -1,0 +1,13 @@
+<figure class="slide">
+	<img src="[[ gData["temporary"]["hero"]["image"] ]]" alt="[[ gData["temporary"]["hero"]["title"] ]]" />
+	<figcaption class="caption">
+		
+		<hgroup>
+			<h3 class="subtitle"><a href="[[ gData["temporary"]["hero"]["cta_link"] ]]">[[ gData["temporary"]["hero"]["subtitle"] ]]</a></h3>
+			<h1 class="title"><a href="[[ gData["temporary"]["hero"]["cta_link"] ]]">[[ gData["temporary"]["hero"]["title"] ]]</a></h1>
+		</hgroup>
+		
+		<a class="[[ gData["temporary"]["hero"]["cta_class"] ]]" href="[[ gData["temporary"]["hero"]["cta_link"] ]]">[[ gData["temporary"]["hero"]["cta"] ]]</a>
+		
+	</figcaption>
+</figure>
