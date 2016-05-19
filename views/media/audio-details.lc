@@ -15,7 +15,7 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 				<aside class="featured-item" role="complementary">
 				
 					<h1 class="h1" itemprop="name"><? return gData["record"]["title"]?>  </h1>
-					
+					<h1 class="h2" ><? return gData["record"]["sub_title"]?>  </h2>
 					<figure class="media-detail">
 					<meta itemprop="encodingFormat" content="mp3" />
 					 <meta itemprop="contentURL" content="<? return getAudioFile(gData["record"], "mp3") ?>" />
@@ -150,7 +150,7 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 							</hgroup>
 						
 						</header>
-						
+						<br />
 						<div class="article-body" itemprop="description">
 							<?return markdown(gData["record"]["description"])?>	
 													
