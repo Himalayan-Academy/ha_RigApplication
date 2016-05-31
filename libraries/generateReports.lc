@@ -229,14 +229,16 @@ command getQuotesReport  gReportType
 
 put the seconds into tStartTimer
 
-# 2015-08-20 current hard wired to pick up only Tirumular quotes
-    #put "SELECT q.quote_id, q.content, q.author,q.source_url, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id WHERE q.author = 'Saint Tirumular' GROUP BY q.quote_id, q.content;" into tQuoteSelection
+# 2015-08-20 wire to pick up only Tirumular quotes
+    --#put "SELECT q.quote_id, q.content, q.subject, q.author,q.source_url, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id WHERE q.author = 'Saint Tirumular' GROUP BY q.quote_id, q.content;" into tQuoteSelection
 
-# 2015-08-20 current hard wired to pick up only Gurudeva quotes
-     put "SELECT q.quote_id, q.content, q.author,q.source_url, q.entered_by, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id WHERE q.author = 'Satguru Sivaya Subramuniyaswami' GROUP BY q.quote_id, q.content;" into tQuoteSelection
+# 2015-08-20  wire to pick up only Gurudeva quotes
+    -- # put "SELECT q.quote_id, q.content, q.subject, q.author,q.source_url, q.entered_by, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id WHERE q.author = 'Satguru Sivaya Subramuniyaswami' GROUP BY q.quote_id, q.content;" into tQuoteSelection
 
-# 2015-10-30 current hard wired to pick all quotes ; just remove the where clause
-     # put "SELECT q.quote_id, q.content, q.author,q.source_url, q.entered_by, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id GROUP BY q.quote_id, q.content;" into tQuoteSelection
+# 2015-10-30  wire to pick all quotes ; just remove the where clause
+-- Active Query is Here! 
+
+     put "SELECT q.quote_id, q.content, q.subject, q.author,q.source_url, q.entered_by, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id GROUP BY q.quote_id, q.content;" into tQuoteSelection
 	
 	put rigDbQuery(tQuoteSelection) into tQuoteQuery
 	
@@ -255,7 +257,8 @@ put the seconds into tStartTimer
 		put tRow["source_url"] into tData[x][4]	
 		put tRow["quote_id"] into tData[x][5]
 		put tRow["categories"] into tData[x][6]	
-		put tRow["entered_by"] into tData[x][7]	        
+		put tRow["entered_by"] into tData[x][7]	
+		put tRow["subject"] into tData[x][8]	        
 		# for web display
 		# check for URL first and don't use any if it is empty
 		if tData[x][4]	<> empty then
@@ -266,7 +269,7 @@ put the seconds into tStartTimer
         put tData[x][4] into tSourceURL
 	
 		put "<hr /><p>ID |" & tData[x][5]  &"| <br />"  & tData[x][1] & "<br /><br /><b>Author:</b> <i>" & tData[x][2] & "" & tData[x][3] \
-		& "</i><br /><b>Source:</b> " & tSourceURL & "<br /><b>Categories: </b>"& tData[x][6] & "<br /><b>Entered by: </b>" & tData[x][7] &  "</p>"  & cr after tListOfQuotes
+		& "</i><br /><b>Source:</b> " & tSourceURL & "<br /><b>Categories: </b>"& tData[x][6] & "<br /><b>Entered by: " & tData[x][7] & "; Subject:" & tData[x][8] & "</b></p>"  & cr after tListOfQuotes
 		
 		
 		# Prep for lean view for app to call 
@@ -290,7 +293,7 @@ put the seconds into tStartTimer
 	
 	set the itemdel to tab
 	sort lines of tLeanListOfQuotes ascending numeric by item 1 of each
-	put tLeanListOfQuotes into url "file:/home/devhap/public_html/media/apps/gurudeva/gurudeva-quotes.txt"
+	put tLeanListOfQuotes into url "file:/home/devhap/public_html/media/apps/sivasiva/all-quotes.txt"
 	 
 	# web Preview next
 

@@ -345,27 +345,28 @@ end insertFormats
 
 ### Inserts into the quotes table
 
-#on insertQuotes
-#
-#	put url ("file:/home/devhap/public_html/media/gurudeva-quotes.txt") into tInput
-#
-#	# here we set the array of all data to be added into the records as they are created
-#
-#	set the itemdel to "|"
-#
-#	repeat for each item x in tInput
-#		put  line 1 of x into tData["content"]
-#		try
-#			put  line 2 of x into tData["source_url"]
-#		 end try
-#		put "Satguru Sivaya Subramuniyaswami" into tData["author"]
-#		put "1927-2001" into tData["author_dates"]
-#		get rigDbInsert("quote", tData) 
-#	end repeat
-#
-#	checkResults "Done","quote Table Updated"
-#
-#end insertQuotes
+on insertQuotes
+
+put url ("file:/home/devhap/public_html/media/books/vedic-experience/VedicVersesreadyforupload.txt") into tInput
+
+# here we set the array of all data to be added into the records as they are created
+
+set the itemdel to "|"
+
+repeat for each item x in tInput
+	put  line 1 of x into tData["content"]
+	try
+		put  line 2 of x into tData["citation"]
+	 end try
+	 put "Vedas" into tData["subject"]
+	#put "Satguru Sivaya Subramuniyaswami" into tData["author"]
+	# put "1927-2001" into tData["author_dates"]
+	get rigDbInsert("quote", tData) 
+end repeat
+
+checkResults "Done","quote Table Updated"
+
+end insertQuotes
 
 on insertCategories
 
