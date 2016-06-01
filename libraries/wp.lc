@@ -76,9 +76,7 @@ function parseForCaption pContent
 end parseForCaption
 
 function parseForStory pContent
- if  ( (pContent contains "var data") OR (pContent contains "iframe" ) ) then
-     # We have a slideshow or a web app in an iFrame. We can't show these on the home page
-    # dig for any <p> section, otherwise skip it completely
+    # dig for any <p> section
         if pContent contains "<p>" then 
             put	 (offset ("<p>",pContent) + 3) into tStartText
             put	 (offset ("</p>",pContent)-1) into tEndText
@@ -86,9 +84,9 @@ function parseForStory pContent
             put word 1 to 60 of tStory into tStory
             put "..." after tStory
             return  tStory
-        end if
 	      else
 	      # assume this is a iPhone Apps WP post and it is plain HTML with breaks and tags
+	      # check for a paragraph firx
 	         replace "=" with cr in pContent
 			   replace "alt" with cr in pContent
 			   replace "<br" with (cr &"<br") in pContent
