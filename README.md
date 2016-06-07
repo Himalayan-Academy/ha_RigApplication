@@ -12,3 +12,4 @@ It looks like there was a big old git project initiated for the whole public_htm
 You can view further help regarding this repository over at:
 
   - http://dev.himalayan.academy/harigapplication.html
+
