@@ -523,7 +523,7 @@ end getitem
 command getRandomItem
     
     repeat for each key tKey in gData["request"]
-        rigDbWhere tKey, ("*" & gData["request"][tKey] "*")
+        rigDbWhere tKey, ("*" & gData["request"][tKey] & "*")
     end repeat
     
     rigDbOrderBy "item_id", "random"
