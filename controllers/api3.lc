@@ -526,9 +526,9 @@ command getRandomItem
     
     
     repeat for each key tKey in gData["data"]
-        put ("*" & gData["data"][tKey] & "*") into tSearchTerm
+        put gData["data"][tKey] into tSearchTerm
     	rigLogMessage "debug","Key:" && tSearchTerm
-        rigDbWhere tKey, tSearchTerm
+        rigDbLike tKey, tSearchTerm
     end repeat
     
     rigDbOrderBy "item_id", "random"
