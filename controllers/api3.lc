@@ -55,7 +55,7 @@ command api3
 		sendError "This API only answers POST requests."
 	end if
 	
-		rigLogMessage "debug", ("Post Values:  "&& $_POST["login"] && $_POST["password"]  )
+	rigLogMessage "debug", ("Post Values:  "&& $_POST["login"] && $_POST["password"]  )
 
 	
 	try
@@ -100,6 +100,7 @@ command api3
 			
 		break
 	end switch
+    
 	rigLogMessage "debug", "login:" &&  gData["request"]["login"] &"/"& gData["request"]["password"]
 
 	# Check user login
@@ -522,8 +523,8 @@ end getitem
 
 command getRandomItem
     
-    repeat for each key tKey in gData["request"]
-        rigDbWhere tKey, ("*" & gData["request"][tKey] & "*")
+    repeat for each key tKey in gData["data"]
+        rigDbWhere tKey, ("*" & gData["data"][tKey] & "*")
     end repeat
     
     rigDbOrderBy "item_id", "random"
@@ -531,14 +532,14 @@ command getRandomItem
 	put rigDbRow(1) into tResponseA
 	
     -- get formats
-	rigDbWhere "item_id", gData["request"]["item_id"]
+	rigDbWhere "item_id", tResponseA["item_id"]
 	put rigDbGet("item_format") into tQuery
 	repeat with x = 1 to tQuery["numrows"]
 	  put rigDbRow(x) into tResponseA["formats"][x]
     end repeat
 	
     -- get channels
-	rigDbWhere "item_id", gData["request"]["item_id"]
+	rigDbWhere "item_id", tResponseA["item_id"]
 	put rigDbGet("channel") into tQuery
 	repeat with x = 1 to tQuery["numrows"]
 	  put rigDbRow(x) into tResponseA["channels"][x]
