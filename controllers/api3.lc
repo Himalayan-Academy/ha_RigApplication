@@ -21,6 +21,9 @@ put ",insertitem,listitems,getitem,getItemByFileID,saveitem,permissions,getPageM
 -- API Metadata stuff
 put ",getDataForPage,setDataForPage" after gControllerHandlers
 
+-- new APIs originaly for Siva Siva app
+put ",getrandomitem" after gControllerHandlers
+
 
 global gXML
 
@@ -515,6 +518,46 @@ command getitem
     
 	outputArray tResponseA
 end getitem
+
+
+command getRandomItem
+    
+    repeat for each key tKey in gData["request"]
+        rigDbWhere tKey, ("*" & gData["request"][tKey] "*")
+    end repeat
+    
+    rigDbOrderBy "item_id", "random"
+	put rigDbGet("item") into tQuery
+	put rigDbRow(1) into tResponseA
+	
+    -- get formats
+	rigDbWhere "item_id", gData["request"]["item_id"]
+	put rigDbGet("item_format") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["formats"][x]
+    end repeat
+	
+    -- get channels
+	rigDbWhere "item_id", gData["request"]["item_id"]
+	put rigDbGet("channel") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["channels"][x]
+    end repeat
+    
+    -- get categories
+    rigDbSelect "category.category_id, name"
+    rigDbFrom "category"
+    rigDbJoin "category_item", "category.category_id = category_item.category_id"
+    rigDbJoin "item", "category_item.item_id = item.item_id"
+    
+	rigDbWhere "item.item_id", tResponseA["item_id"]
+	put rigDbGet() into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["categories"][x]
+    end repeat
+    
+	outputArray tResponseA
+end getRandomItem
 
 command getItemByFileID
 	rigDbWhere "file_id", gData["request"]["file_id"]
