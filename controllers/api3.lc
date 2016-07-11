@@ -106,7 +106,7 @@ command api3
 	# Check user login
     switch tCommandToCall
         case "getrandomitem"
-            ## doesn't require login or permission. 
+            ## AAG: doesn't require login or permission. 
             ## AAG: should we add other calls here?
         break
         default
