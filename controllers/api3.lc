@@ -107,6 +107,7 @@ command api3
     switch tCommandToCall
         case "getrandomitem"
             ## doesn't require login or permission. 
+            ## AAG: should we add other calls here?
         break
         default
         	get verifyLogin()
