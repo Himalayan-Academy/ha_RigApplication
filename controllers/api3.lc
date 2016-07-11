@@ -561,7 +561,8 @@ command getRandomItem
 	  put rigDbRow(x) into tResponseA["categories"][x]
     end repeat
     
-	rigLogMessage "debug","Output Random media"
+	rigLogMessage "debug","Output Random media:" && the keys of tResponseA
+    
 	outputJson tResponseA
 end getRandomItem
 
