@@ -562,7 +562,7 @@ command getRandomItem
     end repeat
     
 	rigLogMessage "debug","Output Random media"
-	outputArray tResponseA
+	outputJson tResponseA
 end getRandomItem
 
 command getItemByFileID
