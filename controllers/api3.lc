@@ -522,9 +522,13 @@ end getitem
 
 
 command getRandomItem
+	rigLogMessage "debug","Get Random Item"
+    
     
     repeat for each key tKey in gData["data"]
-        rigDbWhere tKey, ("*" & gData["data"][tKey] & "*")
+        put ("*" & gData["data"][tKey] & "*") into tSearchTerm
+    	rigLogMessage "debug","Key:" && tSearchTerm
+        rigDbWhere tKey, tSearchTerm
     end repeat
     
     rigDbOrderBy "item_id", "random"
@@ -557,6 +561,7 @@ command getRandomItem
 	  put rigDbRow(x) into tResponseA["categories"][x]
     end repeat
     
+	rigLogMessage "debug","Output Random media"
 	outputArray tResponseA
 end getRandomItem
 
