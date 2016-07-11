@@ -104,16 +104,23 @@ command api3
 	rigLogMessage "debug", "login:" &&  gData["request"]["login"] &"/"& gData["request"]["password"]
 
 	# Check user login
-	get verifyLogin()
-	if it is not true then
-		sendError it
-	end if
+    switch tCommandToCall
+        case "getrandomitem"
+            ## doesn't require login or permission. 
+        break
+        default
+        	get verifyLogin()
+        	if it is not true then
+        		sendError it
+        	end if
 	
-	# Verify if the user has permission for that command
-	get verifyPermission(tCommandToCall)
-	if it is not true then
-		sendError it
-	end if
+        	# Verify if the user has permission for that command
+        	get verifyPermission(tCommandToCall)
+        	if it is not true then
+        		sendError it
+        	end if
+        break
+    end switch
 	
 end api3
 
@@ -560,9 +567,7 @@ command getRandomItem
 	repeat with x = 1 to tQuery["numrows"]
 	  put rigDbRow(x) into tResponseA["categories"][x]
     end repeat
-    
-	rigLogMessage "debug","Output Random media:" && the keys of tResponseA
-    
+        
 	outputJson tResponseA
 end getRandomItem
 
