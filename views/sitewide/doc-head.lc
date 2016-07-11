@@ -27,18 +27,10 @@
 	<link rel="stylesheet" href="/assets/css/ddd-banner.css" type="text/css" media="screen, projection" />
 	<script type="text/javascript" src="/assets/js/jquery.js"></script>
 	<script src="/assets/js/jquery-ui-1.8.16.custom.min.js"></script>
-    <script src="/assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 	<script src="/assets/js/jquery.cycle.all.js"></script>
 	<script src="/assets/js/jquery.scroll.min.js"></script>
-    <script src="/assets/js/tinynav.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-	<!--[if lt IE 9]>
-	  <script type="text/javascript" src="/assets/js/lightview/js/excanvas/excanvas.js"></script>
-	<![endif]-->
-	<script type="text/javascript" src="/assets/js/lightview/js/spinners/spinners.min.js"></script>
-	<script type="text/javascript" src="/assets/js/lightview/js/lightview/lightview.js"></script>
-	<link rel="stylesheet" type="text/css" href="/assets/js/lightview/css/lightview/lightview.css" />
-    <script src="/assets/js/scripts.js"></script>
+	<script src="/assets/js/jquery.sidr.min.js"></script>
+	<script src="/assets/js/scripts.js"></script>
 	<script src="/assets/js/mejs/mediaelement-and-player.min.js"></script>
 	<link  href="/assets/js/mejs/mediaelementplayer.min.css" rel="Stylesheet" />
 	<link  href="/assets/js/mejs/mejs-skins.css" rel="Stylesheet" />
@@ -64,12 +56,17 @@ Galleria.ready(function() {
 	end if
 	?>
 	
-    <script>
-  $(function () {
-    $(".nav-global .nav-parent").tinyNav();
-  });
+<script>
+$(document).ready(function() {
+    $('#responsive-menu-button').sidr({
+      name: 'sidr-main',
+			side: 'right',
+      source: '#navigation'
+    });
+});
 </script>
-			
+
+
 	<!--[if (gte IE 6)&(lte IE 8)]>
 		<script type="text/javascript" src="http://dev.himalayanacademy.com/assets/js/selectivizr-min.js"></script>
 	<![endif]-->

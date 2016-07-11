@@ -1,4 +1,9 @@
-<nav class="nav-global"> 
+<div id="mobile-header">
+    <a id="responsive-menu-button" href="#sidr-main" class="box-shadow-menu"><span>Menus</span></a>
+</div>
+
+
+<nav class="nav-global"> <div id="navigation">
 <ul class="nav-parent">
 <li class="nav-header"> <a href="/monastery"> Monastery </a> 
 	<ul class="nav-child monastery">
@@ -180,4 +185,4 @@
 </ul>
 </li>
 </ul>
-</nav> 
+</div></nav>

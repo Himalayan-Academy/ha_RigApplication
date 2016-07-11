@@ -345,45 +345,60 @@ end insertFormats
 
 ### Inserts into the quotes table
 
-on insertQuotes
+# on insertQuotes
+# 
+#  put url ("file:/home/devhap/public_html/media/books/atti-chudi/attichudi-for-upload.txt") into tInput
+#  
+# # # here we set the array of all data to be added into the records as they are created
+# # # this function changes based in the structure of th incoming data
+#  
+#  set the itemdel to "|"
+#  
+#  repeat for each item x in tInput
+#     split x with tab
+#    put x[1] into tData["content"]
+#    # put x[3] into tData["source_url"]
+#  	put x[2] into tData["citation"]
+# 	put "Atti Chudi" into tData["subject"]
+# 	put "Saint Auvaiyar" into tData["author"]
+# 	put "6961" into tData["source_item_id"]
+# 	put "circa 200 b.c.e." into tData["author_dates"]
+# 	get rigDbInsert("quote", tData) 
+# end repeat
+# # 
+# # # this method was used for Tayumanavar:
+# # # repeat for each item x in tInput
+# # # 	split x with tab
+# # # 	put x[1] into tData["content"]
+# # # 	put x[2] into tData["source_url"]
+# # # 	put x[3] into tData["citation"]
+# # # 	 put "Tayumanavar" into tData["subject"]
+# # # 	 put "Saint Tayumanavar" into tData["author"]
+# # # 	# put "1872-1964" into tData["author_dates"]
+# # # 	get rigDbInsert("quote", tData) 
+# # # end repeat
+# # 
+# # 
+#  checkResults "Done","quote Table Updated"
+# # 
+#  end insertQuotes
 
-put url ("file:/home/devhap/public_html/media/books/vedic-experience/VedicVersesreadyforupload.txt") into tInput
-
-# here we set the array of all data to be added into the records as they are created
-
-set the itemdel to "|"
-
-repeat for each item x in tInput
-	put  line 1 of x into tData["content"]
-	try
-		put  line 2 of x into tData["citation"]
-	 end try
-	 put "Vedas" into tData["subject"]
-	#put "Satguru Sivaya Subramuniyaswami" into tData["author"]
-	# put "1927-2001" into tData["author_dates"]
-	get rigDbInsert("quote", tData) 
-end repeat
-
-checkResults "Done","quote Table Updated"
-
-end insertQuotes
-
-on insertCategories
-
-put url ("file:/home/devhap/tmp/categories.txt") into tInput
-
-# here we set the array of all data to be added into the records as they are created
-
-#set the itemdel to "|"
-
-repeat for each line x in tInput
-	put  x into tData["name"]
-	get rigDbInsert("category", tData) 
-end repeat
-
-checkResults "Done","Category Table Updated"
-
-end insertCategories
+# on insertCategories
+# 
+# put url ("file:/home/devhap/tmp/categories.txt") into tInput
+# 
+# # here we set the array of all data to be added into the records as they are created
+# 
+# #set the itemdel to "|"
+# 
+# repeat for each line x in tInput
+# 	put  x into tData["name"]
+# 	get rigDbInsert("category", tData) 
+# end repeat
+# 
+# checkResults "Done","Category Table Updated"
+# 
+# end insertCategories
 
 
 

@@ -234,11 +234,14 @@ put the seconds into tStartTimer
 
 # 2015-08-20  wire to pick up only Gurudeva quotes
     -- # put "SELECT q.quote_id, q.content, q.subject, q.author,q.source_url, q.entered_by, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id WHERE q.author = 'Satguru Sivaya Subramuniyaswami' GROUP BY q.quote_id, q.content;" into tQuoteSelection
+    
+#2015-05-31  wire to pick up a set based on quote ID range
+ put "SELECT q.quote_id, q.content, q.subject, q.author,q.source_url, q.entered_by, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id WHERE q.quote_id < 1500 GROUP BY q.quote_id, q.content;" into tQuoteSelection
 
 # 2015-10-30  wire to pick all quotes ; just remove the where clause
 -- Active Query is Here! 
 
-     put "SELECT q.quote_id, q.content, q.subject, q.author,q.source_url, q.entered_by, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id GROUP BY q.quote_id, q.content;" into tQuoteSelection
+#     put "SELECT q.quote_id, q.content, q.subject, q.author,q.source_url, q.entered_by, group_concat( c.name ) categories FROM quote q LEFT JOIN category_quote cq ON cq.quote_id = q.quote_id LEFT JOIN category c ON c.category_id = cq.category_id GROUP BY q.quote_id, q.content;" into tQuoteSelection
 	
 	put rigDbQuery(tQuoteSelection) into tQuoteQuery
 	
@@ -269,7 +272,7 @@ put the seconds into tStartTimer
         put tData[x][4] into tSourceURL
 	
 		put "<hr /><p>ID |" & tData[x][5]  &"| <br />"  & tData[x][1] & "<br /><br /><b>Author:</b> <i>" & tData[x][2] & "" & tData[x][3] \
-		& "</i><br /><b>Source:</b> " & tSourceURL & "<br /><b>Categories: </b>"& tData[x][6] & "<br /><b>Entered by: " & tData[x][7] & "; Subject:" & tData[x][8] & "</b></p>"  & cr after tListOfQuotes
+		& "</i><br /><b>Source:</b> " & tSourceURL & "<br /><b>Categories: </b>"& tData[x][6] & "<br /><b>Entered by: " & tData[x][7] & " -- Subject: " & tData[x][8] & "</b></p>"  & cr after tListOfQuotes
 		
 		
 		# Prep for lean view for app to call 
@@ -277,12 +280,13 @@ put the seconds into tStartTimer
 		# deal with returns in quotes
 		
 		replace cr with " " in tData[x][1]
-		put tData[x][5]  & tab & tData[x][1] & tab & tData[x][2] & tab & tData[x][3] & tab & tData[x][4] & tab & tData[x][6] & cr & "|" after tLeanListOfQuotes
+		put tData[x][5]  & tab & tData[x][1] & tab & tData[x][2] & tab & tData[x][3] & tab & tData[x][4] & cr & "Categories: " & tData[x][6] & cr & "|" after tLeanListOfQuotes
 	   
 	end repeat
 	
 	    set the itemdel to "|"
-		sort lines of tListOfQuotes descending numeric by item 2 of each
+		--sort lines of tListOfQuotes descending numeric by item 2 of each
+		sort lines of tListOfQuotes ascending numeric by item 2 of each
 		#delete line 501 to -1 of tListOfQuotes
 	
 	put the seconds into tEndBuildHTML
@@ -293,7 +297,7 @@ put the seconds into tStartTimer
 	
 	set the itemdel to tab
 	sort lines of tLeanListOfQuotes ascending numeric by item 1 of each
-	put tLeanListOfQuotes into url "file:/home/devhap/public_html/media/apps/sivasiva/all-quotes.txt"
+	put tLeanListOfQuotes into url "file:/home/devhap/public_html/media/apps/sivasiva/quotes_1-1500.txt"
 	 
 	# web Preview next
 
