@@ -577,8 +577,7 @@ command getRandomItem
 end getRandomItem
 
 command getRandomQuote
-	rigLogMessage "debug","Get Random qu"
-    
+	rigLogMessage "debug","Get Random quote"
     
     repeat for each key tKey in gData["data"]
         put gData["data"][tKey] into tSearchTerm
@@ -604,7 +603,7 @@ command getRandomQuote
     end repeat
         
 	outputJson tResponseA
-end getRandomItem
+end getRandomQuote
 
 command getItemByFileID
 	rigDbWhere "file_id", gData["request"]["file_id"]
