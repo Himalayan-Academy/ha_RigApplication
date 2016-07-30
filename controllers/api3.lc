@@ -109,6 +109,10 @@ command api3
             ## AAG: doesn't require login or permission. 
             ## AAG: should we add other calls here?
         break
+         case "getrandomQuote"
+            ## AAG: doesn't require login or permission. 
+            ## AAG: should we add other calls here?
+        break
         default
         	get verifyLogin()
         	if it is not true then
