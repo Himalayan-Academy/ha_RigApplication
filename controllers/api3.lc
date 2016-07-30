@@ -21,8 +21,8 @@ put ",insertitem,listitems,getitem,getItemByFileID,saveitem,permissions,getPageM
 -- API Metadata stuff
 put ",getDataForPage,setDataForPage" after gControllerHandlers
 
--- new APIs originaly for Siva Siva app
-put ",getrandomitem" after gControllerHandlers
+-- new APIs originally for Siva Siva app
+put ",getrandomitem,getRandomQuote" after gControllerHandlers
 
 
 global gXML
@@ -573,7 +573,7 @@ command getRandomItem
 end getRandomItem
 
 command getRandomQuote
-	rigLogMessage "debug","Get Random Item"
+	rigLogMessage "debug","Get Random qu"
     
     
     repeat for each key tKey in gData["data"]
