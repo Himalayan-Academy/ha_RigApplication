@@ -81,7 +81,7 @@ return rigLoadView("sitewide/doc-head", TRUE)
 							</div> <!-- end share wrapper -->
 																						
 							<hgroup>						
-								<h3 class="h1" itemprop="name"><? return gData["record"]["title"] ?></h3>
+							
 								<h4 class="subhead" itemprop="alternativeHeadline"><? return gData["record"]["sub_title"] ?></h4>
 								<h5 class="byline" itemprop="author"><? return gData["record"]["author"] ?></h5>
 							</hgroup>
@@ -140,7 +140,7 @@ return rigLoadView("sitewide/doc-head", TRUE)
 								
 								<?
 								if the keys of gData["record"]["channels"] is not empty then
-									put "<h4 class='h4'>Available at</h4>" into tBuf
+									put "<h4 class='h4'>Download the Free App Here</h4>" into tBuf
 									put "<ul>" after tBuf
 									repeat for each key tK in gData["record"]["channels"]
 										if gData["record"]["channels"][tK]["channel_name"] is empty then
