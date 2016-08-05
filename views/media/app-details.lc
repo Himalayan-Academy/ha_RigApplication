@@ -80,8 +80,9 @@ return rigLoadView("sitewide/doc-head", TRUE)
 							
 							</div> <!-- end share wrapper -->
 																						
-							<hgroup>						
-							
+							<hgroup>	
+							<!-- title duplicates page header, so we don't need it, but we need the space -->					
+							<h3>&nbsp;</h3>
 								<h4 class="subhead" itemprop="alternativeHeadline"><? return gData["record"]["sub_title"] ?></h4>
 								<h5 class="byline" itemprop="author"><? return gData["record"]["author"] ?></h5>
 							</hgroup>
