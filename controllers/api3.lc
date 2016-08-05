@@ -21,8 +21,8 @@ put ",insertitem,listitems,getitem,getItemByFileID,saveitem,permissions,getPageM
 -- API Metadata stuff
 put ",getDataForPage,setDataForPage" after gControllerHandlers
 
--- new APIs originaly for Siva Siva app
-put ",getrandomitem" after gControllerHandlers
+-- new APIs originally for Siva Siva app
+put ",getrandomitem,getRandomQuote" after gControllerHandlers
 
 
 global gXML
@@ -106,6 +106,10 @@ command api3
 	# Check user login
     switch tCommandToCall
         case "getrandomitem"
+            ## AAG: doesn't require login or permission. 
+            ## AAG: should we add other calls here?
+        break
+         case "getrandomQuote"
             ## AAG: doesn't require login or permission. 
             ## AAG: should we add other calls here?
         break
@@ -571,6 +575,35 @@ command getRandomItem
         
 	outputJson tResponseA
 end getRandomItem
+
+command getRandomQuote
+	rigLogMessage "debug","Get Random quote"
+    
+    repeat for each key tKey in gData["data"]
+        put gData["data"][tKey] into tSearchTerm
+    	rigLogMessage "debug","Key:" && tSearchTerm
+        rigDbLike tKey, tSearchTerm
+    end repeat
+    
+    rigDbOrderBy "quote_id", "random"
+	put rigDbGet("quote") into tQuery
+	put rigDbRow(1) into tResponseA
+	
+    
+    -- get categories
+    rigDbSelect "category.category_id, name"
+    rigDbFrom "category"
+    rigDbJoin "category_quote", "category.category_id = category_quote.category_id"
+    rigDbJoin "quote", "category_quote.quote_id = quote.quote_id"
+    
+	rigDbWhere "quote.quote_id", tResponseA["quote_id"]
+	put rigDbGet() into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["categories"][x]
+    end repeat
+        
+	outputJson tResponseA
+end getRandomQuote
 
 command getItemByFileID
 	rigDbWhere "file_id", gData["request"]["file_id"]
