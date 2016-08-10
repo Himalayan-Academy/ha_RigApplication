@@ -1141,7 +1141,7 @@ function emitSearchResultForMediaCatalogPage pA
 					put format("\t\t<p>%s</p>\n", textcut(pA[c]["description"],"audioResultsDisplay")) after tBuf
 				
 			end switch
-				
+				put format("</div>\n") after tBuf	
 			end if
 			add 1 to c
 		end repeat
