@@ -1131,7 +1131,7 @@ function emitSearchResultForMediaCatalogPage pA
 					put format("\t\t<p>%s</p>\n", textcut(pA[c]["description"],"audioResultsDisplay")) after tBuf
 					break
 				case "audio/inspiredtalk"
-					put format("\t\t<b>%s</br>Given On: %s</b>\n", pA[c]["author"],pA[c]["date_created"]) after tBuf
+					put format("\t\t<b>%s<br />Given On: %s</b>\n", pA[c]["author"],pA[c]["date_created"]) after tBuf
 					put format("\t\t<p>%s</p>\n", textcut(pA[c]["description"],"audioResultsDisplay")) after tBuf
 					break
 				case "app/web"
@@ -1142,7 +1142,6 @@ function emitSearchResultForMediaCatalogPage pA
 				
 			end switch
 				
-				put format("\t</div>\n") after tBuf
 			end if
 			add 1 to c
 		end repeat
