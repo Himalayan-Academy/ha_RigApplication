@@ -471,10 +471,9 @@ end addCategory
 
 on getCategorizedQuoteIdList
 	rigDbSelect "category_id,quote_id" 
-	rigDbGet("category_quote")
-	put rigDBresult() into tResult
-	repeat for each key tKey in tResult
-		put tResult[tKey] into tRow
+	put rigDbGet("category_quote") into tQuery
+	repeat for each key tKey in tQuery["resultarray"]
+		put tQuery["resultarray"][tKey] into tRow
 		put tRow[1] into tCategoryId
 		put tRow[2] into tQuoteId
 		--put tCategoryId into tCategorizedQuotes[tQuoteID]
