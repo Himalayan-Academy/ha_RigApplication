@@ -477,7 +477,7 @@ on getCategorizedQuoteIdList
 		put tRow[1] into tCategoryId
 		put tRow[2] into tQuoteId
 		--put tCategoryId into tCategorizedQuotes[tQuoteID]
-		put tCatgoryID &, " & tQuoteID &"<br /" & cr  after tOutput
+		put tCategoryID &" , " & tQuoteID &"<br /" & cr  after tOutput
 	end repeat
 	--put the keys of tCategorizedQuotes into tAllCategorizedQuotes
 	--Sort tAllCategorizedQuotes
