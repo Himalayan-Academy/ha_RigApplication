@@ -7,7 +7,7 @@
 global gControllerHandlers, gData
 
 # PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
-put "toolbox,uploadCategoryTree,index,moveLyrics,updateNotes,checkResults,insertRecords,insertFormats,getID3Tags,moveFolders,UpdateAudioItems,insertQuotes,insertCategories,addCategory,fetchCategories,insertSingleQuote" into gControllerHandlers
+put "toolbox,uploadCategoryTree,index,moveLyrics,updateNotes,checkResults,insertRecords,insertFormats,getID3Tags,moveFolders,UpdateAudioItems,insertQuotes,insertCategories,addCategory,fetchCategories,insertSingleQuote,getCategorizedQuoteIdList" into gControllerHandlers
 
 # for security remove handlers when not in production use. 
 #insertArt,buildDailyLesson,displayServerArray,checkPostGet,UpDateVideoFields,
@@ -343,62 +343,53 @@ checkResults "Done","Item Table Updated"
 
 end insertFormats
 
-### Inserts into the quotes table
+##########################################
+####### INSERTS INTO THE QUOTES TABLE
+##########################################
 
-# on insertQuotes
-# 
-#  put url ("file:/home/devhap/public_html/media/books/atti-chudi/attichudi-for-upload.txt") into tInput
-#  
-# # # here we set the array of all data to be added into the records as they are created
-# # # this function changes based in the structure of th incoming data
-#  
-#  set the itemdel to "|"
-#  
-#  repeat for each item x in tInput
-#     split x with tab
-#    put x[1] into tData["content"]
-#    # put x[3] into tData["source_url"]
-#  	put x[2] into tData["citation"]
-# 	put "Atti Chudi" into tData["subject"]
-# 	put "Saint Auvaiyar" into tData["author"]
-# 	put "6961" into tData["source_item_id"]
-# 	put "circa 200 b.c.e." into tData["author_dates"]
-# 	get rigDbInsert("quote", tData) 
-# end repeat
-# # 
-# # # this method was used for Tayumanavar:
-# # # repeat for each item x in tInput
-# # # 	split x with tab
-# # # 	put x[1] into tData["content"]
-# # # 	put x[2] into tData["source_url"]
-# # # 	put x[3] into tData["citation"]
-# # # 	 put "Tayumanavar" into tData["subject"]
-# # # 	 put "Saint Tayumanavar" into tData["author"]
-# # # 	# put "1872-1964" into tData["author_dates"]
-# # # 	get rigDbInsert("quote", tData) 
-# # # end repeat
-# # 
-# # 
-#  checkResults "Done","quote Table Updated"
-# # 
-#  end insertQuotes
+on insertQuotes
 
-# on insertCategories
-# 
-# put url ("file:/home/devhap/tmp/categories.txt") into tInput
-# 
-# # here we set the array of all data to be added into the records as they are created
-# 
-# #set the itemdel to "|"
-# 
-# repeat for each line x in tInput
-# 	put  x into tData["name"]
-# 	get rigDbInsert("category", tData) 
-# end repeat
-# 
-# checkResults "Done","Category Table Updated"
-# 
-# end insertCategories
+put url ("file:/home/devhap/public_html/media/books/vedic-experience/VedicVersesreadyforupload.txt") into tInput
+
+# here we set the array of all data to be added into the records as they are created
+
+set the itemdel to "|"
+
+repeat for each item x in tInput
+	put  line 1 of x into tData["content"]
+	try
+		put  line 2 of x into tData["citation"]
+	 end try
+	 put "Vedas" into tData["subject"]
+	#put "Satguru Sivaya Subramuniyaswami" into tData["author"]
+	# put "1927-2001" into tData["author_dates"]
+	get rigDbInsert("quote", tData) 
+end repeat
+
+checkResults "Done","quote Table Updated"
+
+end insertQuotes
+
+##########################################
+#######  CATEGORIES TABLES OPERATIONS
+##########################################
+
+on insertCategories
+
+put url ("file:/home/devhap/tmp/categories.txt") into tInput
+
+# here we set the array of all data to be added into the records as they are created
+
+#set the itemdel to "|"
+
+repeat for each line x in tInput
+	put  x into tData["name"]
+	get rigDbInsert("category", tData) 
+end repeat
+
+checkResults "Done","Category Table Updated"
+
+end insertCategories
 
 
 
@@ -475,8 +466,27 @@ end addCategory
 #	checkResults "done", "Category Tree Uploaded"
 #
 #end uploadCategoryTree
-#
 
+######  CHECK ON QUOTES THAT HAVE BEEN CATEGORIZED
+
+on getCategorizedQuoteIdList
+	rigDbSelect "category_id,quote_id" 
+	put rigDbGet("category_quote") into tResult
+	repeat for each key tKey in tResult
+		put tResult[tKey] into tRow
+		put tRow[1] into tCategoryId
+		put tRow[2] into tQuoteId
+		put tCategoryId into tCategorizedQuotes[tQuoteID]
+	end repeat
+	put the keys of tCategorizedQuotes into tAllCategorizedQuotes
+	Sort the lines of tAllCategorizedQuotes
+	checkResults tAllCategorizedQuotes, "Categorized Quotes (IDs)"
+end getCategorizedQuoteIdList
+
+
+##########################################
+#######  MUSIC AND LYRICS OPERATIONS
+##########################################
 
 command moveLyrics
     
@@ -549,6 +559,16 @@ on updateNotes
      
 end updateNotes
 
+
+
+
+
+
+
+###########################################################################
+#######  RETURN RESULTS TO A WEB PAGE FOR VIEWING AND CONFIRMATION
+###########################################################################
+
 command checkResults tTestData, tPageHeader
 
 # Call this command anywhere in your scripts to push output to a web page... 
@@ -560,7 +580,7 @@ command checkResults tTestData, tPageHeader
 	
 
 	put tTestData into gData["singleArticle"]
-	put getSetHeadNav("skinny",tPageHeader,">Live Spiritually<","cat-become-a-student") into gData["pageHeader"]
+	put getSetHeadNav("skinny",tPageHeader) into gData["pageHeader"]
 	get rigLoadView("sitewide/two-column", gData)
  
 end checkResults
