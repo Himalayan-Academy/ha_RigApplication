@@ -470,18 +470,47 @@ end addCategory
 ######  CHECK ON QUOTES THAT HAVE BEEN CATEGORIZED
 
 on getCategorizedQuoteIdList
-	rigDbSelect "category_id,quote_id" 
+	rigDbSelect "category_quote_id,category_id,quote_id" 
 	put rigDbGet("category_quote") into tQuery
-	repeat for each key tKey in tQuery["resultarray"]
-		put tQuery["resultarray"][tKey] into tRow
-		put tRow[1] into tCategoryId
-		put tRow[2] into tQuoteId
-		--put tCategoryId into tCategorizedQuotes[tQuoteID]
-		put tCategoryID &" , " & tQuoteID &"<br /" & cr  after tOutput
+	put rigDBresult() into tRecords
+	repeat for each key tKey in tRecords
+	    add 1 to tIncr
+		put tRecords[tIncr] into tRow
+		---put tRow[1] & comma after tResultData
+		put tRow[2] into tCategoryID
+		put tRow[3] into tQuoteID
+		put tCategoryId into tCategorizedQuotes[tQuoteID]		
 	end repeat
-	--put the keys of tCategorizedQuotes into tAllCategorizedQuotes
-	--Sort tAllCategorizedQuotes
-	checkResults tOutput, "Categorized Quotes (IDs)"
+	
+	put the keys of tCategorizedQuotes into tCategorizedQuotesList
+	sort tCategorizedQuotesList numeric ascending
+	put the number of lines of tCategorizedQuotesList into tTotal
+	repeat for each line x in tCategorizedQuotesList
+		put x & "<br />" after tOutput
+	end repeat
+	
+	
+
+# fetch all quote id's and compare to those that have categories
+ 	rigDbSelect "quote_id"
+ 	put rigDbGet("quote") into tQuoteQuery
+ 	put rigDBresult() into tQuotesRecords
+ 	repeat for each key	tKey in tQuotesRecords
+ 		add 1 to tIncr
+ 		put tQuotesRecords[tIncr]  into tRow
+ 		put tRow[1] & cr after tQuotesIDList
+ 	end repeat
+ 	put the number of lines of tQuotesIDList into tAllQuotes
+# 	repeat for each line z in tQuotesIDList
+# 		if z is among the lines of (the keys of tCategorizedQuotes) then
+# 				next repeat
+# 			else
+# 				put z & "<br />" & cr after tOutput
+# 		end if
+# 		
+# 	end repeat
+
+	checkResults ("All Quotes: " & tAllQuotes & "<br />Done So Far: " & tTotal & "<br />Remaining: " & (tAllQuotes-tTotal) & "<br /><br />" &  tOutput), "Categorized Quotes (IDs)"
 end getCategorizedQuoteIdList
 
 
