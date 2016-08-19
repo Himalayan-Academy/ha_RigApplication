@@ -476,11 +476,12 @@ on getCategorizedQuoteIdList
 		put tResult[tKey] into tRow
 		put tRow[1] into tCategoryId
 		put tRow[2] into tQuoteId
-		put tCategoryId into tCategorizedQuotes[tQuoteID]
+		--put tCategoryId into tCategorizedQuotes[tQuoteID]
+		put tCatgoryID &, " & tQuoteID &"<br /" & cr  after tOutput
 	end repeat
-	put the keys of tCategorizedQuotes into tAllCategorizedQuotes
-	Sort tAllCategorizedQuotes
-	checkResults tAllCategorizedQuotes, "Categorized Quotes (IDs)"
+	--put the keys of tCategorizedQuotes into tAllCategorizedQuotes
+	--Sort tAllCategorizedQuotes
+	checkResults tOutput, "Categorized Quotes (IDs)"
 end getCategorizedQuoteIdList
 
 
