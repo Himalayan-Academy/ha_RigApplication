@@ -479,7 +479,7 @@ on getCategorizedQuoteIdList
 		put tCategoryId into tCategorizedQuotes[tQuoteID]
 	end repeat
 	put the keys of tCategorizedQuotes into tAllCategorizedQuotes
-	Sort the lines of tAllCategorizedQuotes
+	Sort tAllCategorizedQuotes
 	checkResults tAllCategorizedQuotes, "Categorized Quotes (IDs)"
 end getCategorizedQuoteIdList
 
