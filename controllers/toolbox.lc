@@ -7,7 +7,7 @@
 global gControllerHandlers, gData
 
 # PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
-put "toolbox,uploadCategoryTree,index,moveLyrics,updateNotes,checkResults,insertRecords,insertFormats,getID3Tags,moveFolders,UpdateAudioItems,insertQuotes,insertCategories,addCategory,fetchCategories,insertSingleQuote" into gControllerHandlers
+put "toolbox,uploadCategoryTree,index,moveLyrics,updateNotes,checkResults,insertRecords,insertFormats,getID3Tags,moveFolders,UpdateAudioItems,insertQuotes,insertCategories,addCategory,fetchCategories,insertSingleQuote,getCategorizedQuoteIdList" into gControllerHandlers
 
 # for security remove handlers when not in production use. 
 #insertArt,buildDailyLesson,displayServerArray,checkPostGet,UpDateVideoFields,
@@ -343,7 +343,9 @@ checkResults "Done","Item Table Updated"
 
 end insertFormats
 
-### Inserts into the quotes table
+##########################################
+####### INSERTS INTO THE QUOTES TABLE
+##########################################
 
 on insertQuotes
 
@@ -367,6 +369,10 @@ end repeat
 checkResults "Done","quote Table Updated"
 
 end insertQuotes
+
+##########################################
+#######  CATEGORIES TABLES OPERATIONS
+##########################################
 
 on insertCategories
 
@@ -460,8 +466,27 @@ end addCategory
 #	checkResults "done", "Category Tree Uploaded"
 #
 #end uploadCategoryTree
-#
 
+######  CHECK ON QUOTES THAT HAVE BEEN CATEGORIZED
+
+on getCategorizedQuoteIdList
+	rigDbSelect "category_id,quote_id" 
+	put rigDbGet("category_quote") into tResult
+	repeat for each key tKey in tResult
+		put tResult[tKey] into tRow
+		put tRow[1] into tCategoryId
+		put tRow[2] into tQuoteId
+		put tCategoryId into tCategorizedQuotes[tQuoteID]
+	end repeat
+	put the keys of tCategorizedQuotes into tAllCategorizedQuotes
+	Sort the lines of tAllCategorizedQuotes
+	checkResults tAllCategorizedQuotes, "Categorized Quotes (IDs)"
+end getCategorizedQuoteIdList
+
+
+##########################################
+#######  MUSIC AND LYRICS OPERATIONS
+##########################################
 
 command moveLyrics
     
@@ -534,6 +559,16 @@ on updateNotes
      
 end updateNotes
 
+
+
+
+
+
+
+###########################################################################
+#######  RETURN RESULTS TO A WEB PAGE FOR VIEWING AND CONFIRMATION
+###########################################################################
+
 command checkResults tTestData, tPageHeader
 
 # Call this command anywhere in your scripts to push output to a web page... 
@@ -545,7 +580,7 @@ command checkResults tTestData, tPageHeader
 	
 
 	put tTestData into gData["singleArticle"]
-	put getSetHeadNav("skinny",tPageHeader,">Live Spiritually<","cat-become-a-student") into gData["pageHeader"]
+	put getSetHeadNav("skinny",tPageHeader) into gData["pageHeader"]
 	get rigLoadView("sitewide/two-column", gData)
  
 end checkResults
