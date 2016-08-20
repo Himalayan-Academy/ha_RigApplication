@@ -546,45 +546,34 @@ command getRandomItem
     rigDbOrderBy "item_id", "random"
 	put rigDbGet("item") into tQuery
 	put rigDbRow(1) into tResponseA
-	  
-	if tResponseA["approved_for_public"] = "NO" then
-		## BR: 2016-08-20  If the approved_for_public is "NO" we have to get a different one
-		# because it will turn bad URL that may not work at all
-		# back for another one
-		
-		getRandomItem
-		
-		else # we have a valid URL, we hope!
-    	
-		-- get formats
-		rigDbWhere "item_id", tResponseA["item_id"]
-		put rigDbGet("item_format") into tQuery
-		repeat with x = 1 to tQuery["numrows"]
-		  put rigDbRow(x) into tResponseA["formats"][x]
-		end repeat
 	
-		-- get channels
-		rigDbWhere "item_id", tResponseA["item_id"]
-		put rigDbGet("channel") into tQuery
-		repeat with x = 1 to tQuery["numrows"]
-		  put rigDbRow(x) into tResponseA["channels"][x]
-		end repeat
+    -- get formats
+	rigDbWhere "item_id", tResponseA["item_id"]
+	put rigDbGet("item_format") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["formats"][x]
+    end repeat
 	
-		-- get categories
-		rigDbSelect "category.category_id, name"
-		rigDbFrom "category"
-		rigDbJoin "category_item", "category.category_id = category_item.category_id"
-		rigDbJoin "item", "category_item.item_id = item.item_id"
-	
-		rigDbWhere "item.item_id", tResponseA["item_id"]
-		put rigDbGet() into tQuery
-		repeat with x = 1 to tQuery["numrows"]
-		  put rigDbRow(x) into tResponseA["categories"][x]
-		end repeat
-
-
-		outputJson tResponseA
-	end if
+    -- get channels
+	rigDbWhere "item_id", tResponseA["item_id"]
+	put rigDbGet("channel") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["channels"][x]
+    end repeat
+    
+    -- get categories
+    rigDbSelect "category.category_id, name"
+    rigDbFrom "category"
+    rigDbJoin "category_item", "category.category_id = category_item.category_id"
+    rigDbJoin "item", "category_item.item_id = item.item_id"
+    
+	rigDbWhere "item.item_id", tResponseA["item_id"]
+	put rigDbGet() into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["categories"][x]
+    end repeat
+        
+	outputJson tResponseA
 end getRandomItem
 
 command getRandomQuote
