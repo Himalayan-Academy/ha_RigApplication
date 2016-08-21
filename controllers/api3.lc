@@ -548,9 +548,10 @@ command getRandomItem
 	put rigDbRow(1) into tResponseA
 	  
 	if tResponseA["approved_for_public"] = "NO" then
-		## BR: 2016-08-20  If the approved_for_public is "NO" we have to get a different one
+		# BR: 2016-08-20  If the approved_for_public is "NO" 
+		# we have to get a different one
 		# because it will turn bad URL that may not work at all
-		# back for another one
+		# loop back:
 		
 		getRandomItem
 		
