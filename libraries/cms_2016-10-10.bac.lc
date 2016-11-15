@@ -1172,13 +1172,8 @@ function emitGalleria pNode, pA
 	end if
 	set the itemdel to "-"
 	put item 1 of tRecordA["date_created"] into tYear
-	
-	if tWidth <> empty then
-		 put tWidth into tOptions["width"]
-	end if
-	 
+	put tWidth into tOptions["width"]
 	put tHeight into tOptions["height"]
-	put "true" into tOptions["responsive"]
 	put "'landscape'" into tOptions["imageCrop"]
 	put "'lazy'" into tOptions["thumbnails"]
 	put "false" into tOptions["thumbCrop"]

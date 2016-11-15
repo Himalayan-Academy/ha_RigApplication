@@ -546,10 +546,6 @@ command getRandomItem
     rigDbOrderBy "item_id", "random"
 	put rigDbGet("item") into tQuery
 	put rigDbRow(1) into tResponseA
-	
-	if tResponseA["item_id"]=2023 then
-	exit  to top
-	end if
 	  
 	if tResponseA["approved_for_public"] = "NO" then
 		# BR: 2016-08-20  If the approved_for_public is "NO" 

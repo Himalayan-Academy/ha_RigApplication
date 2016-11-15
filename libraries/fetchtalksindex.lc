@@ -217,6 +217,6 @@ command fetchRandomGurudevaTalk
     set the itemdel to "-"
 	put item 1 of tDateCreated into tYear 
 	put "/inspired-talks/gurudeva/" & tYear &"/"& tFileID &"/"& (tFileID&".mp3") into tLocation
-    put "http://www.himalayanacademy.com/media/audio"& tLocation into tURL
+    put "https://www.himalayanacademy.com/media/audio"& tLocation into tURL
     put tURL &"|"& tTitle  into gData["oneRandomGurudevaTalk"]  
 end fetchRandomGurudevaTalk

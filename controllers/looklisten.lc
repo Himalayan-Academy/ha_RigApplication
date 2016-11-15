@@ -65,7 +65,7 @@ command looklisten
 				# if we are actually delivering plain html
 				# we have to fire fetchHTML handlers to use the segs
 				# to dig the html folder for the content:
-				case (tSegs[3]= "gurudeva")
+				case (tSegs[3]= "sivasiva")
 					fetchExternalHTML
 					viewExternalPage
 				break
