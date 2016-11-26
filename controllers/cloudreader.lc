@@ -130,7 +130,7 @@ command simplereader pFileID,tSpineNumber
         put URL ("binfile:" & tSpineCSV) into tSpineData
         set the itemdel to comma
         put item 2 of line tTocItemRequested of tSpineData into tChapterFile
-        put "http://"& $_SERVER["SERVER_NAME"] & "/media/books/" & tFileID & "/web/" & tChapterFile into tBookURL
+        put "https://"& $_SERVER["SERVER_NAME"] & "/media/books/" & tFileID & "/web/" & tChapterFile into tBookURL
         rigRedirect tBookURL, "refresh", 302
         put "redirect... "
         quit
