@@ -42,7 +42,8 @@ end home
 command test
 	ct "text/plain"
 	put wpGetLastPosts(sWordpressBlogID, sWordpressUsername,sWordpressPassword) into tA
-		
+	combine tA by cr and " = "
+    put tA 	
 end test
 
 

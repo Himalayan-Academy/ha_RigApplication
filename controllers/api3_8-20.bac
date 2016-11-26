@@ -535,8 +535,7 @@ end getitem
 
 command getRandomItem
 	rigLogMessage "debug","Get Random Item"
-
-    rigDbWhere "approved_for_public", "YES"
+    
     
     repeat for each key tKey in gData["data"]
         put gData["data"][tKey] into tSearchTerm
@@ -547,36 +546,34 @@ command getRandomItem
     rigDbOrderBy "item_id", "random"
 	put rigDbGet("item") into tQuery
 	put rigDbRow(1) into tResponseA
-
-    	
+	
     -- get formats
-    rigDbWhere "item_id", tResponseA["item_id"]
-    put rigDbGet("item_format") into tQuery
-    repeat with x = 1 to tQuery["numrows"]
-      put rigDbRow(x) into tResponseA["formats"][x]
+	rigDbWhere "item_id", tResponseA["item_id"]
+	put rigDbGet("item_format") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["formats"][x]
     end repeat
-
+	
     -- get channels
-    rigDbWhere "item_id", tResponseA["item_id"]
-    put rigDbGet("channel") into tQuery
-    repeat with x = 1 to tQuery["numrows"]
-      put rigDbRow(x) into tResponseA["channels"][x]
+	rigDbWhere "item_id", tResponseA["item_id"]
+	put rigDbGet("channel") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["channels"][x]
     end repeat
-
+    
     -- get categories
     rigDbSelect "category.category_id, name"
     rigDbFrom "category"
     rigDbJoin "category_item", "category.category_id = category_item.category_id"
     rigDbJoin "item", "category_item.item_id = item.item_id"
-
-    rigDbWhere "item.item_id", tResponseA["item_id"]
-    put rigDbGet() into tQuery
-    repeat with x = 1 to tQuery["numrows"]
-      put rigDbRow(x) into tResponseA["categories"][x]
+    
+	rigDbWhere "item.item_id", tResponseA["item_id"]
+	put rigDbGet() into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["categories"][x]
     end repeat
-
-
-    outputJson tResponseA
+        
+	outputJson tResponseA
 end getRandomItem
 
 command getRandomQuote
