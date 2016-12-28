@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<data>
+
+	<module name="Featured Item Module">
+		<media width="629" height="384" file_id="bd_making-your-home-gods-home-publishers-desk"  style="float: left;" />
+		<cta type="link" url="/site/search/media_type/video/file_id/desk">View More Publisher's Desk Videos</cta>
+	</module> 
+		
+	<module name="Promoted Collections Module">
+	<comment> BR: we need this following "title" to pass a style to call the correct icon, once we get what we need... SN: icons to match all title in all landing page promoted collection Title, with class. AG: we will need to call the icon that applies to the class.  i.e. pass a style along with the input for this title.</comment>
+		<title  class="topics">Tools for Your Worship</title>
+		<collection>
+			<title>Ganesha Home Puja and Other Chants</title>
+			<thumbnail>/html/img/circles/ganesha-festival_circle.png</thumbnail>
+			<links>
+				<link url="/looklisten/chanting">Ganesha Puja Audio and PDF</link>
+				<link url="http://www.minimela.com/index.php?main_page=index&cPath=82">Puja Supplies</link>
+			</links>
+		<cta></cta>
+		</collection>
+		<collection>
+			<title>Worship through Song</title>
+			<thumbnail>/html/img/circles/gurudeva_ocean_circle.png</thumbnail>
+			<links>
+				<link url="/site/search/media_type/song/deity/ganesha">Ganesha Songs</link>
+				<link url="/site/search/media_type/song/deity/muruga">Muruga Songs</link>
+				<link url="/site/search/media_type/song/deity/siva">Shiva Songs</link>
+			</links>
+			<comment></comment>
+			<cta></cta>
+		</collection>
+		<collection>
+			<title>Talks on Daily Worship and Sadhana</title>
+			<thumbnail>/html/img/circles/bodhinatha-color_circle.png</thumbnail>
+			<links>
+				<link random="media_type:inspiredtalk, description:puja"></link>
+				<link random="media_type:inspiredtalk, description:sadhana"></link>
+				<link random="media_type:inspiredtalk, description:worship"></link>
+			</links>
+			<cta></cta>
+		</collection>
+	</module>
+	
+	<module name="Square Slider Module">
+		<title>Get to Know Ganesha First</title>
+		<slides>
+ <item>
+<image>/html/livespiritually/home-puja/img/ganesha-img/GANESHA-big2.jpg</image>
+<caption>Who is Lord Ganesha?</caption>
+<link>/book/dancing-with-siva/80</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/home-puja/img/ganesha-img/GANESHA-big3.jpg</image>
+<caption>Learn All about Loving Ganesha"</caption>
+<link>/view/loving-ganesha</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/home-puja/img/ganesha-img/Happy-Pancha-Ganapathi.jpg</image>
+<caption>Learn How Ganesha Rules Your Karma</caption>
+<link>/view/bd_2002-03-31_karma-management-and-gane</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/home-puja/img/ganesha-img/GANESHA-big.jpg</image>
+<caption>Why We worship Ganesha First</caption>
+<link>/book/dancing-with-siva/82</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/home-puja/img/ganesha-img/ganeshaOrangeBgk.jpg</image>
+<caption>Listen to a Talk about Ganesha</caption>
+<link>/view/bd_2006-04-15_ganesha-worship</link>
+</item>
+
+
+		</slides>
+		<comment>proposed: link to a gallery of more meditation photos or slideshow of such photos: BR: no such content</comment>
+		<cta></cta>
+	</module>	
+	
+		<module name="Links Module">
+		<collection>
+			<title>Other Popular Resources</title>
+			<links>
+
+				<link url="/monastery/meet-the-monks">Meet the Monks</link>
+				<link url="/view/ganesha-puja_13_ashtottaraganesha">108 Names of Ganesha</link>
+				<link url="/site/search/media_type/book/tags/youth">Books for Teens and Children</link>
+				<link url="/monastery/about/philosophy">Our Philosphy</link>
+				<link url="view/bodhinatha-ashtottara">108 Names of Bodhinatha</link>
+				<CU>make links live after books are up url="http://www.himalayanacademy.com/resources/books/vows/SannyasinSong.html">??Song of the Sannyasin??
+				 url="/view/twelve-shum-meditations">??Twelve Shum Meditations
+				 url="/view/holy-orders-of-sannyas">??Holy Orders of Sannyas
+				 url="/view/saiva-dharma-shastras">??Saiva Dharma Shastras??</CU>
+
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>	
+			</collection>
+	</module>
+
+</data>

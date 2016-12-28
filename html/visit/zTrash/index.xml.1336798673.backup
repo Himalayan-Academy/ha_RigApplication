@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<title>Visitor Activities at the Monastery</title>
+		<description>Nestled under a sacred volcano, painted with waterfalls, rainbows, jungles, and flowers, sits Kauai's Hindu Monastery. A true place of peace. Here the sounds of the world fade away, until all that's left is the flowing river, singing birds, rippling leaves, and the resounding echo of the soul.</description>
+		<cta type="link" url="/videos">??View All Videos</cta>
+		<media width="629" height="384" file_id="visitors-main-page-slideshow" style="float: left;"/>
+	</module>
+	
+<module name="Square Slider Module">
+		<title>Kauai Island</title>
+		<slides>
+			 <item>
+<image>/html/visit/img/2012-05-10_square-slider/01-BACK-Island-chain.jpg</image>
+<caption>Kauai--the most remote land mass on earth</caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/02-IMG_1143.jpg</image>
+<caption>Wondrous water falls</caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/03-09kauai.jpg</image>
+<caption> </caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/04-DSCN2193.jpg</image>
+<caption>Glorious gardens</caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/05-DSCN2195.jpg</image>
+<caption></caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/06-DSCN7646.jpg</image>
+<caption>Awesome ocean</caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/07-DSCN5794.jpg</image>
+<caption>Pure water, pure sands</caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/08-DSCN0523.jpg</image>
+<caption>Magical sunsets on the beach</caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/09-P0004309.jpg</image>
+<caption></caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/10-DSCN6031.jpg</image>
+<caption>Sights around Kauai Aadheenam</caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/11-P0003406.jpg</image>
+<caption>Mount Waialeale over the monastery</caption>
+</item>
+
+ <item>
+<image>/html/visit/img/2012-05-10_square-slider/12-P0004315.jpg</image>
+<caption></caption>
+</item>
+
+
+		</slides>
+		<cta></cta>
+	</module>
+	
+	<module name="Promoted Collections Module">
+		<title>What Pilgrims and Visitors Need to Know</title>
+		<collection>
+			<title>Plan Well In Advance</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>
+			<links>
+				<link url="/visit/guide-public">Guide for Public Visitors</link>
+				<link url="/visit/guide-hindus">Guide for Members of the Hindu Faith</link>
+				<link url="/visit/pilgrim-info">Hindu Pilgrim Info (remove once pages contents are reconciled</link>	
+				<link url="/visit/directions">Directions</link>		
+			</links>
+				<cta></cta>
+		</collection>
+		<collection>
+			<title>Visitor Logistics</title>
+			<thumbnail>/html/img/circles/gurudeva-hat-ocean-circle.png</thumbnail>
+			<links>				
+				<link url="/visit/lodging">Lodgings on Kauai</link>
+				<link url="/visit/dining">Vegetarian Dining on Kauai</link>
+				<link url="/visit/cruise-passengers">Cruise Boat Passenger Visitors</link>
+				<link url="/visit/weddings">Weddings</link>			
+			</links>
+			<cta></cta>
+		</collection>
+		<collection>
+			<title>Programs at the Monastery</title>
+			<thumbnail>/html/img/circles/devotee-rajam-circle.png</thumbnail>
+			<links>				
+				<link url="/monastery/about/two-temples">Worship in our temples</link>
+				<link url="/visit/bodhinatha-travel">Meet Bodhinatha (schedule)</link>
+				<link url="/monastery/about/philosophy">Learn Our Tradition and Philosophy</link>
+			</links>
+				<cta></cta>
+		</collection>
+	</module>
+	
+</data>
+	
+	

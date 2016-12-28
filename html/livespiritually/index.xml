@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<data>
+
+	<module name="Featured Item Module">
+		<media width="629" height="384" file_id="noninjury-the-foremost-virtue---publisher's-desk"  style="float: left;" />
+		<cta type="link" url="/site/search/media_type/video">View All Videos</cta>
+	</module> 
+		
+	<module name="Promoted Collections Module">
+	
+		<title class="topics">Featured Resources</title>
+		<collection>
+			<title>Study the Master Course</title>
+			<thumbnail>/html/img/circles/category_Master-Course_circle.png</thumbnail>
+			<links>
+				<link url="/livespiritually/become-student/todays-lesson">Read the Daily Lesson</link>
+				<link url="/livespiritually/become-student/mc-options">Three Ways to Study</link>
+				<link url="/livespiritually/global-fellowship/spiritual-path">Our Spiritual Path</link>			
+			</links>
+			<cta type="link" url="http://www.minimela.com/index.php?main_page=product_info&cPath=69_70&products_id=522">Buy the Trilogy</cta>
+		</collection>
+		<collection>
+			<title>Hinduism's Code of Conduct</title>
+				<task>JY: Need circle here</task>
+			<thumbnail>/html/img/circles/kadavul-temple_circle.png</thumbnail>
+			<links>
+				<link url="/view/yogas-forgotten-foundation">Yoga's Forgotten Foundation</link>
+				<link url="/site/search/tags/ethics/coverage/children">Children's books on good conduct</link>
+				<link url="/book/what-is-hinduism/134">Yamas and Niyamas</link>
+			</links>
+			<comment>Proposed CTA: "Download an eBook": what ebook? we don't know what platform the user is on. All we can do is link a book.</comment>
+			<cta type="link" url="/view/twelve-shum-meditations">Perform These Monthly Meditations</cta>
+			
+		</collection>
+		<collection>
+			<title>Meditation</title>
+			<thumbnail>/html/img/circles/category_Sadhana_circle.png</thumbnail>
+			<links>
+			<CU>CU find audio of Preparation for Meditation and process and upload to web AG: 2) Drive inner pages in books to two-column layout</CU>
+				<link url="/book/merging-with-siva/74">Five Steps to Enlightenment</link>
+				<link url="/site/search/media_type/audio/author/subramuniyaswami/description/meditation">Gurudeva Talks about Meditation</link>
+				<link url="/site/search/media_type/audio/author/veylanswami/description/sadhana">Bodhinatha talks about spiritual practice</link>
+			</links>
+			<cta url="/book/merging-with-siva/68">Beginning to Meditate</cta>
+		</collection>
+	</module>
+	
+	<module name="Square Slider Module">
+		<title>Finding the Self Within</title>
+		<slides>
+			 <item>
+<image>/html/livespiritually/img/index-square-slider/TENQ-03-Karma.jpg</image>
+<caption>Learn about Hindu culture</caption>
+<link>/site/search/media_type/book/tags/culture</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/img/index-square-slider/56678638.jpg</image>
+<caption>Hindu Worship and Devotion</caption>
+<link>/site/search/media_type/book/description/god</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/img/index-square-slider/50-Vishesha_Diksha_Homa_DSC_6513.jpg</image>
+<caption>The Role of the Guru</caption>
+<link>/book/what-is-hinduism/75</link>
+<CU>This link is temporary. It may be a good idea to have a little info (perhaps on the basics page) about the need for a guru</CU>
+</item>
+ 
+ <item>
+<image>/html/livespiritually/img/index-square-slider/13-Hatha.jpg</image>
+<caption>Simple Hatha Yoga</caption>
+<link>/book/living-with-siva/267</link>
+</item>
+
+<item>
+<image>/html/livespiritually/img/index-square-slider/MWS-23-Yoga-of-Incantation.jpg</image>
+<caption>Foundations for Contemplation and Meditation</caption>
+<link>/view/yogas-forgotten-foundation</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/img/index-square-slider/DSC_3963.jpg</image>
+<caption>Realize God through Practical Meditative Practice</caption>
+<link>/book/living-with-siva/75</link>
+
+</item>
+
+		</slides>
+		<CU>proposed: link to a gallery of more meditation photos or slideshow of such photos: BR: no such content</CU>
+		<cta></cta>
+	</module>
+	
+	<module name="Links Module">
+		<collection>
+			<title>Other Popular Resources</title>
+			<links>
+				<link url="/livespiritually/become-student/todays-lesson">Lesson of the Day</link>
+				<link url="http://www.feedblitz.com/f/?Sub=&amp;Publisher=7522423&amp;portal=331383">Sign up for eNews</link>
+				<link url="/looklisten/chanting">Ganesha Puja</link>
+				<link url="/monastery/meet-the-monks">Meet the Monks</link>
+				<link url="/view/ganesha-puja_13_ashtottaraganesha">108 Names of Ganesha</link>
+				<link url="/site/search/media_type/book/tags/youth">Books for Teens and Children</link>
+				<link url="/monastery/about/philosophy">Our Philosophy</link>
+				<link url="/view/bodhinatha-ashtottara">108 Names of Bodhinatha</link>
+				<CU> Make links live after books are up url="http://www.himalayanacademy.com/resources/books/vows/SannyasinSong.html">??Song of the Sannyasin??
+				 url="/view/twelve-shum-meditations">??Twelve Shum Meditations
+				 url="/view/holy-orders-of-sannyas">??Holy Orders of Sannyas
+				 url="/view/saiva-dharma-shastras">??Saiva Dharma Shastras??</CU>
+				 			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+		<links>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/other-languages">Translations</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>		</collection>
+	</module>
+</data>

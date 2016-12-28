@@ -1,0 +1,53 @@
+<h2>Please document details of book delivery here that are not clear from the comments in the code. Paths are all below: /system/application/ha </h2>
+
+
+<h2> URLS - Routing </h2>
+
+<p>See /system/application/ha/config.lc for routes url-to-controller mapping:</p>
+
+<ul>
+<li> /view/*book-file_id*  --> /site/viewmedia --> media detail for books</li>
+<li> /readbook/*book-file_id*  --> /cloudreader/readbook --> Monocle full screen</li>
+<li> /book/*book-file_id*  --> /cloudreader/simplereader --> loads book and TOC in 2-column view</li>
+<ul>
+
+
+<h2> Templates </h2>
+
+<ul>
+<li> /views/media/book-details.lc</li>
+<li> /views/cloudreader.lc and simplereader.lc</li>
+<ul>
+
+<h2> CSS </h2>
+
+<ul>
+<li> Media detail page --> /assets/css/style.css</li>
+<li> Monocle full readers --> CSS is embedded in views see /views/cloudreader.lc and simplereader.lc</li>
+<ul>
+
+<h2>Controllers/Libs</h2>
+
+<p>Like Apache says about the httpd.conf file "You should know what you are doing before touching any of these and *always* make a back up"  before any experimentation or attempts to fix bugs or do upgrades:</p>
+
+
+<ul>
+<li> /controllers/cloudreader.lc</li>
+<li> /libraries/epub.lc</li>
+<ul>
+
+<h2> Back Links on the Monocle Full Screen View </h2>
+<p> When the user goes to the full screen reader there were no back links. Inserting extraneous elements into the actual monocle tool bar at the bottom is an arcane process. For now I (BR) opted to add an extra div at the bottom of the page. see the /views/cloudreader/monocle.lc  the div is at the end of the file and the styles for his are embedded.</p>
+
+<h2>Unresolved:<h2>
+
+<ul>
+<li> BR: 2012-11-17: unable to get the CTA links at the bottom of the full screen monocle reader to behave like the CTA links on the rest of the site. We need to port some subset of the CSS from styles.css to the monocle embedded css. But the implementation is multi-nested and I could not figure it out. the links still show underline and the small arrow will not appear. </li>
+<li>BR: 2012-11-17: unable to get the links for the web view and download to appear outside the monocle "little-reader" which opens on the book detail page. Monocle takes over the whole div and the figcaption which contains the CTA links and the book details disappears as the Javascript replaces the entire [div id="book"] area. I played with all kinds of options in the CSS but was unable to solve that. User is left with one choice: go to full screen and then from there he can click to web view. Not that big of a deal, but nice to solve one day... all we need under the on-page monocle reader would be the one CTA "--> Web View. We can lose the product detail and "read now" because the user is already "reading now"  in that space.</li>
+</ul>
+
+
+
+
+
+

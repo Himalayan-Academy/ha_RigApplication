@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<data> 
+	<module name="Featured Item Module">	
+		<media width="629" height="384" file_id="introduction-to-the-monastery" style="float: left;"/>
+		<cta type="link" url="/site/search/media_type/video">View All Videos</cta>
+	</module>
+	
+	<module name="Promoted Collections Module">
+		<title class="videos">Special Video Collections</title>
+		<collection>
+			<title>Monthly News Update</title>
+			<thumbnail>/html/img/circles/kadavul-temple_circle.png</thumbnail>		
+			<links>
+				<link latest="pick:1,media_type:video,file_id:news-video">Latest Monthly News Video</link>
+				<link latest="pick:2,media_type:video,file_id:news-video">Latest Monthly News Video</link>
+				<link latest="pick:3,media_type:video,file_id:news-video">Latest Monthly News Video</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/news">View All</cta>
+		</collection>
+			<collection>
+			<title>Teaching Collections</title>
+			<thumbnail>/html/img/circles/category_Bodhinatha_circle.png</thumbnail>
+			<links>
+				<link url="/site/search/media_type/video/title/Introduction%20to%20Hinduism/sort/alpha-ascending">Introduction to Hinduism </link>
+				<link url="/site/search/media_type/video/title/Claiming Your Spiritual Identity Exercise ">Claiming Your Spiritual Identity</link>
+				<link url="/site/search/media_type/video/title/chicago%20satsang/sort/alpha-ascending">2008 Chicago Satsang</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/video/tags/Master Course">Master Course Videos</cta>
+		</collection>
+		<collection>
+			<title>Temple Festivals</title>
+			<thumbnail>/html/img/circles/muruga-festival_circle.png</thumbnail>
+			<links>
+				<link latest="pick:1,media_type:video,category:Festivals">Latest Festival Video</link>
+				<link latest="pick:2,media_type:video,category:Festivals">Latest Festival Video</link>
+				<link latest="pick:3,media_type:video,category:Festivals">Latest Festival Video</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/video/description/puja">All Puja Videos</cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>Video Collections</title>
+		<comment>Slider should feature a show of 6 images of Kauai</comment>
+		<slides>
+			<item>
+				<image>/html/looklisten/img/videos-slider/DSCN2194.jpg</image>
+				<caption>Video Collection 1: Introduction to Hinduism</caption>
+				<link>/site/search/media_type/video/title/Introduction%20to%20Hinduism/sort/alpha-ascending</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/videos-slider/DSCN6122.jpg</image>
+				<caption>Video Collection 2: From the Publisher's Desk of Hinduism Today</caption>
+				<link>/site/search/media_type/pubdesk</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/videos-slider/DSCN9636.jpg</image>
+				<caption>Video Collection 3: Kauai Aadheenam's Year-in-Review</caption>
+				<link>/site/search/media_type/video/title/year+in+review</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/videos-slider/Bud-Arj-ju5.jpg</image>
+				<caption>Video Collection 4: Hinduism Today Summaries</caption>
+				<link>/site/search/media_type/video/title/hinduism+today/description/highlights</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/videos-slider/DSC_3275.jpg</image>
+				<caption>Video Collection 5: Hindu History Lessons</caption>
+				<link>/site/search/media_type/video/title/hindu+history+lesson</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/videos-slider/Himalayan_Academy_096.jpg</image>
+				<caption>Video Collection 6: Videos of Satguru Bodhinatha</caption>
+				<link>/site/search/media_type/video/title/bodhinatha</link>
+			</item>
+		</slides>
+		<cta><CU>??See more photos in our gallery(link to Kauai Imagery)</CU></cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>Popular Video Collections</title>
+			<links>
+				<link url="/site/search/media_type/video/author/bodhinatha">Bodhinatha</link>
+				<link url="/site/search/media_type/video/description/gurudeva/">Videos of or about Gurudeva</link>
+				<link url="/site/search/media_type/video/description/monastery">Monastery</link>
+				<link url="/site/search/media_type/video/description/innersearch">Innersearch</link>
+				<link url="/site/search/media_type/video/file_id/iraivan">Iraivan Temple</link>
+				<link url="/site/search/media_type/video/description/puja">Festivals</link>
+				<link url="/site/search/media_type/video/title/news">News</link>
+				<link url="/site/search/media_type/video/title/desk">Bodhinatha's Quarterly Editorials</link>
+
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/livespiritually/home-puja">Chanting and Songs</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="http://dev.himalayanacademy.com/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+		</module>
+</data>

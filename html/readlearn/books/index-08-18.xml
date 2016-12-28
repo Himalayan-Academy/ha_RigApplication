@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<title>Book Carousel here?</title>
+		<description>Senthilnathaswami: Need to solve the CSS issue for the feature item h2.h2 always set to call the "Feature video" background image.</description>
+		<cta type="link" url="/videos">View our Ebooks</cta>
+		<media width="630" height="440" file_id="kadavul_main-slideshow" style="float: left;" />
+	</module> 
+	<module name="Square Slider Module">
+		<title>WHAT TO FEATURE HERE??</title>
+		<slides>
+			<item>
+				<image>/html/monastery/about/img/square-slider/guru-purnima_DSC7708_sml.jpg</image>
+				<caption>The home of Satguru Bodhinatha Veylanswami</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/sannyas_DSC_5000_sml.jpg</image>
+				<caption>The source of the spark of initiations</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/muruga-abhishekam_DSC_5058_sml.jpg</image>
+				<caption>Kadavul Temple: home of magical Gods</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>Nestled beneath the wettest place on earth</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/wall-meditation_IMG_0455_sml.jpg</image>
+				<caption>A place for rigorous raja yoga meditation</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/dakshina-class_DSC_6377_sml.jpg</image>
+				<caption>A fountain of teaching that flows to the world</caption>
+			</item>
+		</slides>
+		<cta type="link" file_id="2012-02-07_about-monastery">See a complete slideshow</cta>
+	</module>
+	<module name="Promoted Collections Module">
+		<title>TITLE NEEDED HERE</title>
+		<collection>
+			<title>DEFINE PROMOTED COLLECTIONS/LINKS</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>
+			<links>
+				<link url="#">All About Kauai's Hindu Monastery</link>
+				<link url="#">The Guru Chronicles</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/newsletter/">Latest Monthly Newsletter</link>
+			</links>
+			<cta>View all books</cta>
+		</collection>
+		<collection>
+			<title>Our Temples</title>
+			<thumbnail>/html/img/circles/iraivan-from-road-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/temples">About the Monastery's Temples</link>
+				<link url="/monastery/temples/kadavul">Kadavul Temple</link>
+				<link url="/monastery/temples/iraivan">San Marga Iraivan Temple</link>
+			</links>
+			<cta>Read more</cta>
+		</collection>
+		<collection>
+			<title>Monastic Life</title>
+			<thumbnail>/html/img/circles/devotee-rajam-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/monks/meet">Meet the Monks</link>
+				<link url="#">Our Guru</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/newsletter/">Our Vows</link>
+			</links>
+			<cta type="link" url="/monastery/monks/how-to">How to become a monk</cta>
+		</collection>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>Even More Popular Resources</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+	</module>
+</data>

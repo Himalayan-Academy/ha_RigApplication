@@ -1,0 +1,13 @@
+<h1> Controller Framerwork Notes </h1>
+<p>By Brahmanathaswami: last update to this documentation: 2012-09-30</p>
+
+<h2>Controllers which deliver HTML</h2>
+
+<p>RevIgniter will typically try to process all the segments of an array, treat the first as a controller start look for handlers in that controller to match the second segment and so on. To take custom control over our URL's we are using this form in the /config/routes.lc:</p>
+
+<pre>put "monastery" into gRoute[16]["monastery/:any"]</pre>
+
+<p> This basically  says "Whenever you get a routing request that begins with Monastery and has anything after that, then simply pass it to the monastery controller and do nothing after that."</p>p>
+
+<p>Then we grab the segments of the URL as use them in our own handlers, which do not match the URL as such. This allows us to completely customize the URL's and even make them up as we go. Our method for delivery HTML requires this and if the controller is not declared in the routes.lc as described above you will get a "page not found" So be sure when you make new controllers to determine your routing requirements and enter them accordingly.</p> 
+

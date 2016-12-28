@@ -1,0 +1,35 @@
+<h1>Preparing Newsletter for Email via FeedBlitz</h1>
+
+<h3>Goal:</h3> 
+
+<p>We need to get the current newsletter process to get all the styles inline before we can put it on FeedBlitz because HTML email just include all styles internally to the email body. Otherwise a) it appears in an email client without any styles  or b) the CSS of the browser email  reader (gmail, yahoo etc. email interfaces) will take over the appearance of the email and look really odd.</p>
+
+<h3>Process Overview</h3>
+
+<ul>
+<li>Take the current newsletter and insert releveant into a template that includes all our styles. Use a previous template from the /html/monastery/newsletter/email folder such as simple-page-template-aug.html (or the most recent one)</li>
+<li>straighten quotes, check for mdashes and other special Mac ANSI characters. Either dumb down to ASCII (e.g. change mdashes to hyphens) or change to html entities (e.g. &mdash;)</li>
+<li> Sections to Skip in Email. Goal is to make the email short enough the people will actually read it. use "Click for More" links to take them back to the web site/named anchors in the document:
+		<ol>
+		<li>Gurudeva's Wisdom</li>
+		<li> News that is tangential to the Aadheenam/Iraivan itself</li>
+		<li> Donor Table</li>
+		<li> MC Advertisement (too tall) </li>		
+		</ol>
+		</li>
+<li>Truncate sections that are overly long and use "....more" at the end with a named link. It is no longer necessary to have a named anchor. You can target any div that has a unique ID  like this:  <br />
+<xmp><a href="http://www.himalayanacademy.com/monastery/newsletter/#announcements">[Click to read the full story of the audio book]</a></xmp><br />
+will take the user to:
+<xmp>  <div id="announcements"> </xmp> on the page.
+<li>Update all href and src attribute values to absolute URL's by prepending the full domain path. Search and replace e.g. <xmp><img src="/html/</xmp> with <xmp><img src="http://www.himalayanacademy.com/html/</xmp>  </li>
+<li>Run thru TIDY or check syntax to be sure all structure is good</li>
+<li> </li>
+<li>Take the current newsletter and insert it into a template that includes all our styles. </li>
+<li>Get the web URL for the sample newsletter template e.g. <xmp>http://dev.himalayanacademy.com/html/monastery/newsletter/email/simple-page-template-nov.html</xmp></li>
+<li> go to premailer.com; paste in this URL and submit to get styles in line; check the only view from Montreal server (where premailer lives) if it looks good copy the HTML from premailer to a blank document for safe keeping.</li>
+<li> go to Feedblitz --> Dashboard --> Kauai's Hindu Monastery News --> Send Mailing (small link under the subscribers' totals)</li>
+<li>Click "Manage Articles" (the model is: a blog post with a single article comprising the whole html newsletter) --> Under "Published Articles" pause the newsletter from last month (click double bars) and then click "Draft a new Article"</li>
+<li>Go back to your temp document with the in line styles and copy out the entire HTML in the inside of the body tag. Click on source; paste in between the body and closing body tags</li>
+<li>Save Article; click to publish it; preview as web page</li>
+<li> if all is well then send and on demand mailing with only this article. </li>
+<ul>

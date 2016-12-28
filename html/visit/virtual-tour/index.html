@@ -1,0 +1,53 @@
+<h1 class="h1"> 
+	Take a Walk in Cyberspace Through <br />
+  Our Beautiful Monastery and Temple Grounds. 
+</h1>
+<p> Kauai's Hindu Monastery is the home of monks dedicating their life to the spiritual path. The Monastery grounds span over 51 acres,  landscaped for a sublime journey. Virtually tour the monastery and these uplifting grounds and plan your visit soon. </p>
+
+
+
+<h2>Take a look around our monastery</h2>
+
+  <?
+    put getRecord("2014-10-04_about-monastery") into pRecordA
+    #put "726" into pRecordA["width"]
+    put "0.617" into pRecordA["height"]
+    return emitGalleria(,pRecordA)   
+  ?>
+      
+
+          <br /><br /> 
+
+<h2>Our two temples</h2>
+  <?
+    put getRecord("2012-11-25_kadavul-iraivan-combo") into pRecordA
+   #put "726" into pRecordA["width"]
+    put "0.617" into pRecordA["height"]
+    return emitGalleria(,pRecordA)   
+  ?>
+
+  <br /><br /> 
+
+  <h2>Our Majestic Nature Setting and Unusual Garden Wonders</h2>
+  <?
+    put getRecord("sacred-gardens-of-kauai-aadheenam") into pRecordA
+   #put "726" into pRecordA["width"]
+    put "0.617" into pRecordA["height"]
+    return emitGalleria(,pRecordA)   
+  ?>
+  
+  <br /><br /> 
+  
+    <h2>Short Introductory Film</h2>
+  <?
+return emitYoutubeVideo(726, 483, fileIDToYoutubeID("introduction-to-the-monastery"))
+ 
+  ?>
+  
+  <br /><br /> 
+  
+    <h2>A View From Above</h2>
+  <?
+return emitYoutubeVideo(726, 483, fileIDToYoutubeID("kauai-aadheenam-quad-copter-compilation"))
+ 
+  ?>

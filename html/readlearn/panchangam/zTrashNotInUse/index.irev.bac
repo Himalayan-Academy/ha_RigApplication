@@ -1,0 +1,1528 @@
+<?rev
+
+
+
+# you must declare locals to use the later in the document
+
+local tBlurb,tImage
+
+# Define a handler
+
+on RandomPromoPicker
+  set the defaultfolder to "../promos"
+  put the files into tList
+  filter tList with "*.txt"
+  put  (random(the number of lines of tList)) into tLineNo
+  put line tLineNo of tList into tBlurbFileName
+  put url ("file:../promos/" & tBlurbFileName) into tBlurb
+  set the itemdel to "."
+  put item -2 to 1 of tBlurbFileName &".jpg" into tImage
+end RandomPromoPicker
+
+# fire the handler to load the local variables
+
+RandomPromoPicker
+
+# Call Sidebar links right away
+
+include "/home/himalayan/cgi-bin/local_nav_include.inc"
+  ?>
+  
+  
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Himalayan Academy Publications" />
+	<meta name="keywords" content="Hinduism, Hindu, Ganesha, Shiva, Siva, Saiva, Saivism, Saivite, Krishna, Vishnu, Hanuman, Vaishnava, Vaishnavism, Vaishnavite, Shakti, Sakti, Sakta, Saktism, Smarta, Smartism, Yoga, Metaphysics, Culture, Sutra, Nandinatha, Sampradaya, Kailasa, Parampara, Guru, Church, Heritage, Endowment, Ashram, Hawaii, Kauai, Iraivan, Temple, Gurudeva, Swami, Satguru, Art, Aum, Calendar, Vedic, Birth Chart, Rasi, Panchang, Panchangam, Panchanga, Hindu Calendar, Hindu Calender, tithi, nakshatra, rahu" />
+	<meta name="description" content="Hinduism Online is a vast resource of knowledge and experience on Hinduism, one of the world's oldest living religions." />
+	<meta name="robots" content="all" />
+	<title> Hindu Calendars</title> 
+<link rel="stylesheet" type="text/css" href= "/css/main_home_pages.css" /> 
+
+
+
+</head>
+<style type="text/css">
+
+#promo {
+
+width: 600px;
+margin: 10px,10px,10px,10px;
+padding: 6px;
+border: 0px #eee3d9 ridge;
+position: relative;
+left: 10px;
+top: 10px;
+}
+
+</style>
+<body id="mainHomePage">
+<div id="container">
+	  <?rev 
+  put url "file:/home/himalayan/public_html/ssi/site_wide_nav.html"
+  ?>
+	<div id="intro">
+		<div id="pageHeader">
+			<h1> Himalayan Academy Publications </h1> 
+			<div id="areaSymbol">
+				<img src="/images/main_page_symbol.gif" alt="Aum symbol" /> 
+			</div>
+			
+			<div id="promo">
+
+ <img src="../promos/<?rev put tImage ?>" alt="Books" hspace="12" align="left" />
+                <p class="p1">   <?rev put tBlurb ?></p>
+                </div>
+                
+                <br clear="left"/>
+                <hr />
+                
+			<h3> <a id="top_of_page" name="top_of_page"> </a><br> Hindu Panchangam: 
+				<br />
+				
+				
+				Hindu Calendars for Over 240 Cities Only US 99&cent; each<br />
+				</h3> 
+		</div>
+		
+		<div id="quickSummary">
+			<p class="p1">
+				
+				May 2012 thru April 2013 panchangams for over 240 USA and World locations are now on-line! 
+			<br><br>
+			
+                 <!-- ***** Birth chart service removed by SM on 10/18/08. Reinstated on 02/11/10 with new price of $10. As of 03/23/11 the price is $6.99.
+                 ***** -->
+                 
+                  <a href="http://www.minimela.com/index.php?main_page=product_info&cPath=108&products_id=662"target="_blank">Hindu Birth Chart Service!</a><br>
+				Now you may order a Hindu birth chart for yourself, a friend or a new baby. <br>
+				  <br><br>
+                
+			The book on Hinduism that everyone is talking about! What your family has been waiting for!<br>
+
+                   <img src="/resources/books/wih/images/wih-cover_250px-wide.jpg" vspace="12" align="left"  width="115" height="150" /><br clear="left" /><a href="http://www.minimela.com/index.php?main_page=product_info&cPath=69_72&products_id=548"
+                   target="_blank">Now Available!</a><br><br><br>
+                   
+                   <a href="http://www.minimela.com/index.php?main_page=page&id=5"target="_blank">Everything Ganesha</a><br>
+                   Buy Crystal & Other Ganesha Statues<br>
+                   Books, Cards, DVDs, Posters & More<br>
+                  <br><br>
+                  
+                  <a href="http://www.himalayanacademy.com/art/"target="_blank">Royalty Free Hindu Art</a><br>
+                   4,800 Awesome hi-res images; 
+                   Paintings, borders, motifs, clipart<br>
+                <br>
+                
+                <br><br>
+                  
+                  <a href="http://www.hheonline.org/reports/2010/jan-feb-mar/"target="_blank">Hindu Heritage Endowment</a><br>
+                   Read the latest newsletter from Hinduism's premier charitable endowment<br>
+                <br>
+                  
+                  <br>
+                  <a href="http://www.minimela.com/index.php?main_page=product_info&cPath=106&products_id=640"target="_blank">Gurudeva's Spiritual Visions eBook</a><br>
+                   Fourteen charming stories of Gurudeva's visions, from his first crib experience of the soul body to a dynamic vision of Ganesha and a shark in Mauritius.<br>
+                  <br>
+                  
+                  <br>
+                  <a href="www.hinduismtoday.com/modules/smartsection/item.php?itemid=3842&keywords=saturn"target="_blank">Karma Management</a><br>
+                   Two misconceptions about karma debuffed. Learn about ten correct concepts and ten principles for effective karma management.<br>
+                  <br>
+                   <br>
+                  <a href="http://www.hinduismtoday.com/modules/wfchannel/index.php?wfc_cid=4"target="_blank">Astrologers & Temple Priests</a><br>
+                  Advertise your services in Hinduism Today magazine. Reach your perfect audience.<br>
+                  <br>
+			</p>
+		</div>
+		
+		
+		<div id="preamble">
+			<p class="p1">
+				Welcome to the International Hindu Calendar. If this is your first introduction to a Hindu calendar, you have a great adventure ahead of you which we know will give you a new appreciation of time.   </p>
+				<p><br />
+				
+				Read the story of the <a href="http://www.hheonline.org/newsletters/ka_2011/KA_Mar11.shtml">panchangam's evolution</a> since 1984.
+				<br /><br />
+				
+				Are you interested in helping to provide the <b>panchangams for free?</b> Give a $25 or more donation to the   <a href="https://hheonline.org/donate/fund.irev?id=84"target="_blank"><b>Panchangam Endowment Fund</b></a> and receive lifetime unlimited free downloads. When the fund reaches $45,000 we can give everyone the panchangams for free. The fund principal is now <b>$4,660.10</b>. After donating you will be sent instructions on email on how to access the free downloads.<br><br>
+				
+				<b>Click <a href="Sample_Page.pdf">here</a> to download a sample page of the London calendar for 2010.</b><br>
+				
+				To learn more about the calendar we use at our Hindu monastery in Hawaii, you can <a href="http://himalayanacademy.com/resources/panchangam/pancha_intro.PDF"> click here to download the full Introduction to the Hindu Calendar</a>.<br><br>
+				
+				
+				
+			Several people have requested our calendar in the Tamil script. To help determine if there is enough demand for a calendar in Tamil please send an <a href="mailto:shan@hindu.org?subject=I am interested in a Tamil version of the panchangam"> email</a>. 
+			<br><br>
+			<b>iCal and Google</b> calendar format calendars are now available for most cities for 2011-2012. Look for the city with the (iCal) next to it. The file is in iCalendar format and can be imported into iCal and Google calendars. <b>Mac OSX Lion users: iCal 5.0.1 has a bug which imports multiple copies of the panchangam events. Currently there is no fix from Apple, but if you need the panchangam on iCal when using Lion, place your order, and then send an email request to <a href="mailto:books@hindu.org">books@hindu.org</a>. We shall then send you eight separate files which can be uploaded into iCal.</b>
+		</p>
+			
+Click on one of the links below to purchase a calendar. Please note our calendars begin in April of each year. If you need all of 2011 then you need both the 2010-2011 and the 2011-2012 calendars.
+<br><br>
+
+
+
+				
+				
+
+		</div>
+	</div>
+	
+	<div id="maincontent">
+	<p class="centered"><a href="#2011-2012">April 19, 2011-May 6, 2012</a></p> 
+	<p class="centered"><a href="#2012-2013">May 7, 2012-April 26, 2013</a></p> 
+	
+	
+	<p class="centered"><a href="archives/">1999 thru 2004 archives</a></p> 
+	
+	<p class="centered"> <a href="http://www.himalayanacademy.com/resources/panchangam/index_2004-2008.shtml#2004-2005">April 2004 thru April 2011 archives</a></p> 
+	
+	<a href="http://www.minimela.com/index.php?main_page=product_info&cPath=105&products_id=616">Order a panchangam city not shown in the list of cities for $2.99 at our Mini Mela Gift Shop</a> <br><br>
+	
+	</p>
+	
+
+
+	<p>
+	If you need the nakshatra, birth syllable and complete data for a child born on a given day in the past <a href="http://www.minimela.com/index.php?main_page=product_info&cPath=108&products_id=662"><b>order a Hindu birth chart here.</b></a>
+	
+	</p>
+
+
+
+
+
+		<p>
+			<b>Planning for life in tune with the universe.</b> The Hindu Calendar has Hindu festivals, nakshatra, tithi, rahukala, pradosh, yoga, sunrise/sunset and more. It is a sophisticated tool for planning, not unlike a western farmer's almanac. It provides vital information about astrological factors, planets and stars--aspects of our subtle environment which are unseen but strongly felt. With this esoteric knowledge at our disposal, we come to understand the characteristics of the planets and the stars and how they relate to the human psyche.  <a href="http://himalayanacademy.com/resources/panchangam/panchangam_intro.shtml"target="_blank">Read more about the panchangam...</a><br>
+		</p>
+		
+	
+		<b> NOTE ABOUT DOWNLOADING PDF FILES:</b> 
+		<br />
+		<br />
+		After choosing your file, you will be given the option to enter your payment of US$0.99. Upon verificaton of the charge, the PDF will download for you. If your browser is not set up to automatically open PDF files in Acrobat, option-click (Mac) or right-click (PC) on the link for the desired panchangam to save it directly to your hard disk. Then open the file with Acrobat Reader.  You must have Adobe Acrobat Reader version 5.0 or greater. We have tested files that people say are not opening, and they are opening fine on any MacIntosh running Acrobat Reader 6.0. If you have 5.0 or greater and still have problems, you may wish to upgrade to the latest Acrobat Reader. It is free from Adobe... Download here:
+		
+		<a href="http://www.adobe.com/products/acrobat/readermain.html" target="blank">http://www.adobe.com/products/acrobat/readermain.html</a>
+		<br /><br />
+		
+		<p>
+			Please note that each panchangam is calculated for standard time, not daylight savings time. Also, our Hindu calendar follows a traditional South Indian new year which begins approximately April 15th. 
+		</p>
+		<p>
+			<a href="http://www.minimela.com/index.php?main_page=product_info&cPath=105&products_id=616">Order a panchangam city not shown in the list of cities for $1.99</a> <br>
+		</p>
+		<p>
+			Until your city or country is listed here, you can calculate the ending times of nakshatras, tithis, yogas etc. in your location by simply adding or subtracting from the times in one of the calendars listed above. (This does not apply to sunrise, sunset or the kalas). 
+		</p>
+		
+<!-- Panchangam Links Table -->
+<center>
+<h3> [Acrobat 6.0 or higher is recommended.]</h3>
+<h2><a id="2012-2013" name="2012-2013">May 7, 2012-April 26, 2013 </a></h2>
+
+</center>
+
+<table bgcolor="#EFEDC5" border="1" cellpadding="4" align="center">
+<tr>
+<th align="center">
+United States 
+</th>
+<th>
+International 
+</th>
+</tr>
+
+<tr valign="top"><td width = "200"><table summary="USA" align="left">
+   <!-- ***** USA cities start here. ***** -->
+   <tr><td><a href="/charge/resources/panchangam/2012-2013/usa/albany_ny.pdf">Albany NY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/albany_ny.ics">Albany NY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/albuquerque_nm.pdf">Albuquerque NM </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/albuquerque_nm.ics">Albuquerque NM (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/amarillo_tx.pdf">Amarillo TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/amarillo_tx.ics">Amarillo TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/anchorage_ak.pdf">Anchorage AK </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/anchorage_ak.ics">Anchorage AK (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/asheville_nc.pdf">Asheville NC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/asheville_nc.ics">Asheville NC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/athens_ga.pdf">Athens GA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/athens_ga.ics">Athens GA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/atlanta_ga.pdf">Atlanta GA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/atlanta_ga.ics">Atlanta GA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/auburn_al.pdf">Auburn AL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/auburn_al.ics">Auburn AL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/austin_tx.pdf">Austin TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/austin_tx.ics">Austin TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/baton_rouge_la.pdf">Baton Rouge LA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/baton_rouge_la.ics">Baton Rouge LA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bettendorf_ia.pdf">Bettendorf IA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bettendorf_ia.ics">Bettendorf IA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/birmingham_al.pdf">Birmingham AL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/birmingham_al.ics">Birmingham AL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bloomfield_nj.pdf">Bloomfield NJ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bloomfield_nj.ics">Bloomfield NJ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bloomington_il.pdf">Bloomington IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bloomington_il.ics">Bloomington IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bloomington_in.pdf">Bloomington IN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bloomington_in.ics">Bloomington IN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/boca_raton_fl.pdf">Boca Raton FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/boca_raton_fl.ics">Boca Raton FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/boise_id.pdf">Boise ID </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/boise_id.ics">Boise ID (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/boston_ma.pdf">Boston MA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/boston_ma.ics">Boston MA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bowling_green_ky.pdf">Bowling Green KY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/bowling_green_ky.ics">Bowling Green KY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/buffalo_ny.pdf">Buffalo NY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/buffalo_ny.ics">Buffalo NY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/cary_nc.pdf">Cary NC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/cary_nc.ics">Cary NC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/chapel_hill_nc.pdf">Chapel Hill NC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/chapel_hill_nc.ics">Chapel Hill NC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/charlotte_nc.pdf">Charlotte NC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/charlotte_nc.ics">Charlotte NC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/charlottesville_va.pdf">Charlottesville VA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/charlottesville_va.ics">Charlottesville VA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/chicago_il.pdf">Chicago IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/chicago_il.ics">Chicago IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/cincinnati_oh.pdf">Cincinnati OH </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/cincinnati_oh.ics">Cincinnati OH (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/cleveland_oh.pdf">Cleveland OH </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/cleveland_oh.ics">Cleveland OH (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/cogswell_nd.pdf">Cogswell ND </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/cogswell_nd.ics">Cogswell ND (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/columbia_sc.pdf">Columbia SC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/columbia_sc.ics">Columbia SC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/columbus_oh.pdf">Columbus OH </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/columbus_oh.ics">Columbus OH (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/dallas_tx.pdf">Dallas TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/dallas_tx.ics">Dallas TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/davenport_ia.pdf">Davenport IA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/davenport_ia.ics">Davenport IA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/denver_co.pdf">Denver CO </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/denver_co.ics">Denver CO (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/des_moines_ia.pdf">Des Moines IA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/des_moines_ia.ics">Des Moines IA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/detroit_mi.pdf">Detroit MI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/detroit_mi.ics">Detroit MI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/downers_grove_il.pdf">Downers Grove IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/downers_grove_il.ics">Downers Grove IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/easton_md.pdf">Easton MD </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/easton_md.ics">Easton MD (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/edison_nj.pdf">Edison NJ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/edison_nj.ics">Edison NJ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/el_paso_tx.pdf">El Paso TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/el_paso_tx.ics">El Paso TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/eugene_or.pdf">Eugene OR </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/eugene_or.ics">Eugene OR (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/fleminton_nj.pdf">Fleminton NJ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/fleminton_nj.ics">Fleminton NJ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/fort_lauderdale_fl.pdf">Fort Lauderdale FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/fort_lauderdale_fl.ics">Fort Lauderdale FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/fort_wayne_in.pdf">Fort Wayne IN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/fort_wayne_in.ics">Fort Wayne IN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/frederick_md.pdf">Frederick MD </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/frederick_md.ics">Frederick MD (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/fresno_ca.pdf">Fresno CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/fresno_ca.ics">Fresno CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/gainesville_fl.pdf">Gainesville FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/gainesville_fl.ics">Gainesville FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/greenville_sc.pdf">Greenville SC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/greenville_sc.ics">Greenville SC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/hartford_ct.pdf">Hartford CT </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/hartford_ct.ics">Hartford CT (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/honolulu.pdf">Honolulu HI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/honolulu.ics">Honolulu HI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/houston_tx.pdf">Houston TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/houston_tx.ics">Houston TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/indianapolis_in.pdf">Indianapolis IN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/indianapolis_in.ics">Indianapolis IN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/jacksonville_fl.pdf">Jacksonville FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/jacksonville_fl.ics">Jacksonville FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/kansas_city_ks.pdf">Kansas City KS </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/kansas_city_ks.ics">Kansas City KS (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/knoxville_tn.pdf">Knoxville TN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/knoxville_tn.ics">Knoxville TN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/lanham_md.pdf">Lanham MD </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/lanham_md.ics">Lanham MD (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/lansing_mi.pdf">Lansing MI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/lansing_mi.ics">Lansing MI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/las_vegas_nv.pdf">Las Vegas NV </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/las_vegas_nv.ics">Las Vegas NV (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/los_angeles_ca.pdf">Los Angeles CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/los_angeles_ca.ics">Los Angeles CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/madison_wi.pdf">Madison WI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/madison_wi.ics">Madison WI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/memphis_tn.pdf">Memphis TN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/memphis_tn.ics">Memphis TN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/miami_fl.pdf">Miami FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/miami_fl.ics">Miami FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/midland_tx.pdf">Midland TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/midland_tx.ics">Midland TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/milwaukee_wi.pdf">Milwaukee WI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/milwaukee_wi.ics">Milwaukee WI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/minneapolis_st_paul_mn.pdf">Minneapolis St Paul MN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/minneapolis_st_paul_mn.ics">Minneapolis St Paul MN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/mobile_al.pdf">Mobile AL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/mobile_al.ics">Mobile AL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/modesto_ca.pdf">Modesto CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/modesto_ca.ics">Modesto CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/montpelier_vt.pdf">Montpelier VT </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/montpelier_vt.ics">Montpelier VT (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/nashville_tn.pdf">Nashville TN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/nashville_tn.ics">Nashville TN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/new_york_city_ny.pdf">New York City NY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/new_york_city_ny.ics">New York City NY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/normal_il.pdf">Normal IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/normal_il.ics">Normal IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/omaha_ne.pdf">Omaha NE </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/omaha_ne.ics">Omaha NE (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/orlando_fl.pdf">Orlando FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/orlando_fl.ics">Orlando FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/peoria_il.pdf">Peoria IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/peoria_il.ics">Peoria IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/philadelphia_pa.pdf">Philadelphia PA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/philadelphia_pa.ics">Philadelphia PA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/phoenix_az.pdf">Phoenix AZ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/phoenix_az.ics">Phoenix AZ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/phoenixville_pa.pdf">Phoenixville PA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/phoenixville_pa.ics">Phoenixville PA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/pittsburgh_pa.pdf">Pittsburgh PA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/pittsburgh_pa.ics">Pittsburgh PA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/portland_or.pdf">Portland OR </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/portland_or.ics">Portland OR (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/richmond_va.pdf">Richmond VA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/richmond_va.ics">Richmond VA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/sacramento_ca.pdf">Sacramento CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/sacramento_ca.ics">Sacramento CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/salt_lake_city_ut.pdf">Salt Lake City UT </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/salt_lake_city_ut.ics">Salt Lake City UT (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_antonio_tx.pdf">San Antonio TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_antonio_tx.ics">San Antonio TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_diego_ca.pdf">San Diego CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_diego_ca.ics">San Diego CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_francisco_ca.pdf">San Francisco CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_francisco_ca.ics">San Francisco CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_jose_ca.pdf">San Jose CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_jose_ca.ics">San Jose CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_ramon_ca.pdf">San Ramon CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/san_ramon_ca.ics">San Ramon CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/scottsdale_az.pdf">Scottsdale AZ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/scottsdale_az.ics">Scottsdale AZ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/seattle_wa.pdf">Seattle WA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/seattle_wa.ics">Seattle WA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/spokane_wa.pdf">Spokane WA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/spokane_wa.ics">Spokane WA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/springfield_or.pdf">Springfield OR </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/springfield_or.ics">Springfield OR (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/st_helena_ca.pdf">St Helena CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/st_helena_ca.ics">St Helena CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/st_louis_mo.pdf">St Louis MO </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/st_louis_mo.ics">St Louis MO (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/stamford_ct.pdf">Stamford CT </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/stamford_ct.ics">Stamford CT (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/syracuse_ny.pdf">Syracuse NY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/syracuse_ny.ics">Syracuse NY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/tampa_fl.pdf">Tampa FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/tampa_fl.ics">Tampa FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/walnut_creek_ca.pdf">Walnut Creek CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/walnut_creek_ca.ics">Walnut Creek CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/washington_dc.pdf">Washington DC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/usa/washington_dc.ics">Washington DC (iCal) </a></td></tr>
+
+
+   <!-- ***** USA cities end here. ***** -->
+</table></td>
+
+
+
+
+<td width = "200"><table summary="Foreign">
+ <!-- ***** World cities start here. ***** -->
+   <tr><td><a href="/charge/resources/panchangam/2012-2013/world/abu_dhabi_ae.pdf">Abu Dhabi AE </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/abu_dhabi_ae.ics">Abu Dhabi AE (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/abu_road_india.pdf">Abu Road India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/abu_road_india.ics">Abu Road India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/adana_turkey.pdf">Adana Turkey </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/adana_turkey.ics">Adana Turkey (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/adelaide_s_australia.pdf">Adelaide S Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/adelaide_s_australia.ics">Adelaide S Australia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ahmedabad_india.pdf">Ahmedabad India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ahmedabad_india.ics">Ahmedabad India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/al-khubar_saudi_arabia.pdf">Al-Khubar Saudi Arabia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/al-khubar_saudi_arabia.ics">Al-Khubar Saudi Arabia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ambala_india.pdf">Ambala India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ambala_india.ics">Ambala India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/amsterdam_netherlands.pdf">Amsterdam Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/amsterdam_netherlands.ics">Amsterdam Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/athens_greece.pdf">Athens Greece </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/athens_greece.ics">Athens Greece (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/auckland_new_zealand.pdf">Auckland New Zealand </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/auckland_new_zealand.ics">Auckland New Zealand (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bali_indonesia.pdf">Bali Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bali_indonesia.ics">Bali Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bangalore_india.pdf">Bangalore India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bangalore_india.ics">Bangalore India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bangkok_thailand.pdf">Bangkok Thailand </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bangkok_thailand.ics">Bangkok Thailand (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/barcelona_spain.pdf">Barcelona Spain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/barcelona_spain.ics">Barcelona Spain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/beijing_china.pdf">Beijing China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/beijing_china.ics">Beijing China (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/berlin_germany.pdf">Berlin Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/berlin_germany.ics">Berlin Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/birming_uk.pdf">Birming Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/birming_uk.ics">Birming Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bradford_uk.pdf">Bradford Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bradford_uk.ics">Bradford Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bremen_germany.pdf">Bremen Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bremen_germany.ics">Bremen Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/brunei.pdf">Brunei </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/brunei.ics">Brunei (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bucaramanga_columbia.pdf">Bucaramanga Columbia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bucaramanga_columbia.ics">Bucaramanga Columbia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/budapest_hungary.pdf">Budapest Hungary </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/budapest_hungary.ics">Budapest Hungary (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cairo_egypt.pdf">Cairo Egypt </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cairo_egypt.ics">Cairo Egypt (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/calgary_ab_canada.pdf">Calgary Ab Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/calgary_ab_canada.ics">Calgary Ab Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/canberra_australia.pdf">Canberra Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/canberra_australia.ics">Canberra Australia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cape_town_south_africa.pdf">Cape Town South Africa </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cape_town_south_africa.ics">Cape Town South Africa (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/carcare_switzerland.pdf">Carcare Switzerland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/carcare_switzerland.ics">Carcare Switzerland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chandigarh_india.pdf">Chandigarh India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chandigarh_india.ics">Chandigarh India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chennai_india.pdf">Chennai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chennai_india.ics">Chennai India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chernigov_ukraine.pdf">Chernigov Ukraine </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chernigov_ukraine.ics">Chernigov Ukraine (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chidambaram_india.pdf">Chidambaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chidambaram_india.ics">Chidambaram India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cologne_germany.pdf">Cologne Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cologne_germany.ics">Cologne Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/colombo_sri_lanka.pdf">Colombo Sri Lanka </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/colombo_sri_lanka.ics">Colombo Sri Lanka (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/copenhagen_denmark.pdf">Copenhagen Denmark </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/copenhagen_denmark.ics">Copenhagen Denmark (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/darwin_australia.pdf">Darwin Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/darwin_australia.ics">Darwin Australia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/doha_qatar.pdf">Doha Qatar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/doha_qatar.ics">Doha Qatar (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dubai_ae.pdf">Dubai Ae </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dubai_ae.ics">Dubai Ae (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dublin_ire.pdf">Dublin Ire </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dublin_ire.ics">Dublin Ire (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/durban_south_africa.pdf">Durban South Africa </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/durban_south_africa.ics">Durban South Africa (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dushanbe_tajikastan.pdf">Dushanbe Tajikastan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dushanbe_tajikastan.ics">Dushanbe Tajikastan (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dwarka_india.pdf">Dwarka India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dwarka_india.ics">Dwarka India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/edmonton_canada.pdf">Edmonton Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/edmonton_canada.ics">Edmonton Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ellora_india.pdf">Ellora India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ellora_india.ics">Ellora India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/gaborone_botswana.pdf">Gaborone Botswana </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/gaborone_botswana.ics">Gaborone Botswana (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/galway_ireland.pdf">Galway Ireland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/galway_ireland.ics">Galway Ireland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/georgetown_guyana.pdf">Georgetown Guyana </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/georgetown_guyana.ics">Georgetown Guyana (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/gosnells_aust.pdf">Gosnells Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/gosnells_aust.ics">Gosnells Aust (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/grevenbroich_germany.pdf">Grevenbroich Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/grevenbroich_germany.ics">Grevenbroich Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/halifax_canada.pdf">Halifax Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/halifax_canada.ics">Halifax Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hamm_germany.pdf">Hamm Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hamm_germany.ics">Hamm Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ho_chi_minh.pdf">Ho Chi Minh </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ho_chi_minh.ics">Ho Chi Minh (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hobart_tasmania.pdf">Hobart Tasmania </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hobart_tasmania.ics">Hobart Tasmania (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hong_kong_china.pdf">Hong Kong China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hong_kong_china.ics">Hong Kong China (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hyderabad_india.pdf">Hyderabad India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hyderabad_india.ics">Hyderabad India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/imphal_india.pdf">Imphal India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/imphal_india.ics">Imphal India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/istanbul_turkey.pdf">Istanbul Turkey </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/istanbul_turkey.ics">Istanbul Turkey (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/jakarta_indonesia.pdf">Jakarta Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/jakarta_indonesia.ics">Jakarta Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/jalandhar_india.pdf">Jalandhar India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/jalandhar_india.ics">Jalandhar India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/johannesburg_za.pdf">Johannesburg Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/johannesburg_za.ics">Johannesburg Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/karachi_pakistan.pdf">Karachi Pakistan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/karachi_pakistan.ics">Karachi Pakistan (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kathmandu_nepal.pdf">Kathmandu Nepal </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kathmandu_nepal.ics">Kathmandu Nepal (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kedarnath_india.pdf">Kedarnath India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kedarnath_india.ics">Kedarnath India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kharagpur_india.pdf">Kharagpur India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kharagpur_india.ics">Kharagpur India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kiev_ukraine.pdf">Kiev Ukraine </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kiev_ukraine.ics">Kiev Ukraine (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kingston_jamaica.pdf">Kingston Jamaica </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kingston_jamaica.ics">Kingston Jamaica (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kinshasa_zaire.pdf">Kinshasa Zaire </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kinshasa_zaire.ics">Kinshasa Zaire (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kl_malaysia.pdf">Kl Malaysia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kl_malaysia.ics">Kl Malaysia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kolkata_india.pdf">Kolkata India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kolkata_india.ics">Kolkata India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kottayam_india.pdf">Kottayam India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kottayam_india.ics">Kottayam India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kuwait_city_kuwait.pdf">Kuwait City Kuwait </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kuwait_city_kuwait.ics">Kuwait City Kuwait (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lelystad_netherlands.pdf">Lelystad Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lelystad_netherlands.ics">Lelystad Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lima_peru.pdf">Lima Peru </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lima_peru.ics">Lima Peru (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ljubljana_solvenia.pdf">Ljubljana Solvenia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ljubljana_solvenia.ics">Ljubljana Solvenia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/london_uk.pdf">London Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/london_uk.ics">London Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lucknow_india.pdf">Lucknow India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lucknow_india.ics">Lucknow India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lusaka_zambia.pdf">Lusaka Zambia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lusaka_zambia.ics">Lusaka Zambia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/madrid_spain.pdf">Madrid Spain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/madrid_spain.ics">Madrid Spain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/madurai_india.pdf">Madurai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/madurai_india.ics">Madurai India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/malmo_sweden.pdf">Malmo Sweden </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/malmo_sweden.ics">Malmo Sweden (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/manama_bahrain.pdf">Manama Bahrain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/manama_bahrain.ics">Manama Bahrain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/manokwari_indonesia.pdf">Manokwari Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/manokwari_indonesia.ics">Manokwari Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/medellin_colombia.pdf">Medellin Colombia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/medellin_colombia.ics">Medellin Colombia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/melbourne_aust.pdf">Melbourne Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/melbourne_aust.ics">Melbourne Aust (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mexico_city_mexico.pdf">Mexico City Mexico </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mexico_city_mexico.ics">Mexico City Mexico (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/milan_italy.pdf">Milan Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/milan_italy.ics">Milan Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/moncton_nb_canada.pdf">Moncton Nb Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/moncton_nb_canada.ics">Moncton Nb Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/montevideo_uruguay.pdf">Montevideo Uruguay </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/montevideo_uruguay.ics">Montevideo Uruguay (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/montreal_canada.pdf">Montreal Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/montreal_canada.ics">Montreal Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/moscow_russia.pdf">Moscow Russia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/moscow_russia.ics">Moscow Russia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mosul_iraq.pdf">Mosul Iraq </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mosul_iraq.ics">Mosul Iraq (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mumbai_india.pdf">Mumbai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mumbai_india.ics">Mumbai India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mundare_canada.pdf">Mundare Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mundare_canada.ics">Mundare Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/munich_germany.pdf">Munich Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/munich_germany.ics">Munich Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/muscat_oman.pdf">Muscat Oman </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/muscat_oman.ics">Muscat Oman (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nadi_fiji_islands.pdf">Nadi Fiji Islands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nadi_fiji_islands.ics">Nadi Fiji Islands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nairobi_kenya.pdf">Nairobi Kenya </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nairobi_kenya.ics">Nairobi Kenya (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nasik_india.pdf">Nasik India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nasik_india.ics">Nasik India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/new_delhi_india.pdf">New Delhi India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/new_delhi_india.ics">New Delhi India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/oslo_norway.pdf">Oslo Norway </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/oslo_norway.ics">Oslo Norway (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/padua_italy.pdf">Padua Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/padua_italy.ics">Padua Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/paramaribo_suriname.pdf">Paramaribo Suriname </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/paramaribo_suriname.ics">Paramaribo Suriname (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/paris_france.pdf">Paris France </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/paris_france.ics">Paris France (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/perth_aust.pdf">Perth Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/perth_aust.ics">Perth Aust (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pietermaritzburg_za.pdf">Pietermaritzburg Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pietermaritzburg_za.ics">Pietermaritzburg Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/poortugaal_netherlands.pdf">Poortugaal Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/poortugaal_netherlands.ics">Poortugaal Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/port_louis_mauritius.pdf">Port Louis Mauritius </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/port_louis_mauritius.ics">Port Louis Mauritius (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/port-of-spain_trinidad_and_tobago.pdf">Port-Of-Spain Trinidad And Tobago </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/port-of-spain_trinidad_and_tobago.ics">Port-Of-Spain Trinidad And Tobago (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/porto_portugal.pdf">Porto Portugal </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/porto_portugal.ics">Porto Portugal (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pune_india.pdf">Pune India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pune_india.ics">Pune India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pyinmana_myanmar.pdf">Pyinmana Myanmar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pyinmana_myanmar.ics">Pyinmana Myanmar (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pyrenees-orientales_france.pdf">Pyrenees-Orientales France </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pyrenees-orientales_france.ics">Pyrenees-Orientales France (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rameswaram_india.pdf">Rameswaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rameswaram_india.ics">Rameswaram India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ranikhet_india.pdf">Ranikhet India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ranikhet_india.ics">Ranikhet India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/regina_sk_canada.pdf">Regina Sk Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/regina_sk_canada.ics">Regina Sk Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/riga_latvia.pdf">Riga Latvia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/riga_latvia.ics">Riga Latvia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rio_de_janeiro_brazil.pdf">Rio De Janeiro Brazil </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rio_de_janeiro_brazil.ics">Rio De Janeiro Brazil (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/riyadh_saudi_arabia.pdf">Riyadh Saudi Arabia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/riyadh_saudi_arabia.ics">Riyadh Saudi Arabia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rome_italy.pdf">Rome Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rome_italy.ics">Rome Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/saint-denis_reunion.pdf">Saint-Denis Reunion </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/saint-denis_reunion.ics">Saint-Denis Reunion (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sao_paulo_brazil.pdf">Sao Paulo Brazil </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sao_paulo_brazil.ics">Sao Paulo Brazil (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/saskatoon_canada.pdf">Saskatoon Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/saskatoon_canada.ics">Saskatoon Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/shanghai_china.pdf">Shanghai China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/shanghai_china.ics">Shanghai China (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/singapore.pdf">Singapore </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/singapore.ics">Singapore (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/somerset_west_za.pdf">Somerset West Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/somerset_west_za.ics">Somerset West Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sri_sailam_india.pdf">Sri Sailam India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sri_sailam_india.ics">Sri Sailam India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/stockholm_sweden.pdf">Stockholm Sweden </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/stockholm_sweden.ics">Stockholm Sweden (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/surabaya_indonesia.pdf">Surabaya Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/surabaya_indonesia.ics">Surabaya Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/suva_fiji_islands.pdf">Suva Fiji Islands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/suva_fiji_islands.ics">Suva Fiji Islands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sydney_australia.pdf">Sydney Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sydney_australia.ics">Sydney Australia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tallinn_estonia.pdf">Tallinn Estonia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tallinn_estonia.ics">Tallinn Estonia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tehran_iran.pdf">Tehran Iran </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tehran_iran.ics">Tehran Iran (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/thane_maharashtra_in.pdf">Thane Maharashtra In </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/thane_maharashtra_in.ics">Thane Maharashtra In (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tirupati_india.pdf">Tirupati India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tirupati_india.ics">Tirupati India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tokyo_japan.pdf">Tokyo Japan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tokyo_japan.ics">Tokyo Japan (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/toronto_canada.pdf">Toronto Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/toronto_canada.ics">Toronto Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trichirappalli_india.pdf">Trichirappalli India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trichirappalli_india.ics">Trichirappalli India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trieste_italy.pdf">Trieste Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trieste_italy.ics">Trieste Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trivandrum_india.pdf">Trivandrum India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trivandrum_india.ics">Trivandrum India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/udaipur_india.pdf">Udaipur India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/udaipur_india.ics">Udaipur India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vancouver_canada.pdf">Vancouver Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vancouver_canada.ics">Vancouver Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/varanasi_india.pdf">Varanasi India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/varanasi_india.ics">Varanasi India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vienna_austria.pdf">Vienna Austria </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vienna_austria.ics">Vienna Austria (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vizianagaram_india.pdf">Vizianagaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vizianagaram_india.ics">Vizianagaram India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/warsaw_poland.pdf">Warsaw Poland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/warsaw_poland.ics">Warsaw Poland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/winnipeg_mb_canada.pdf">Winnipeg Mb Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/winnipeg_mb_canada.ics">Winnipeg Mb Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/winterthur_switzerland.pdf">Winterthur Switzerland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/winterthur_switzerland.ics">Winterthur Switzerland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/yangon_myanmar.pdf">Yangon Myanmar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/yangon_myanmar.ics">Yangon Myanmar (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/yogyakarta_indonesia.pdf">Yogyakarta Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/yogyakarta_indonesia.ics">Yogyakarta Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/"> </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/"> (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/abu_dhabi_ae.pdf">Abu Dhabi Ae </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/abu_dhabi_ae.ics">Abu Dhabi Ae (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/abu_road_india.pdf">Abu Road India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/abu_road_india.ics">Abu Road India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/adana_turkey.pdf">Adana Turkey </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/adana_turkey.ics">Adana Turkey (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/adelaide_s_australia.pdf">Adelaide S Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/adelaide_s_australia.ics">Adelaide S Australia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ahmedabad_india.pdf">Ahmedabad India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ahmedabad_india.ics">Ahmedabad India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/al-khubar_saudi_arabia.pdf">Al-Khubar Saudi Arabia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/al-khubar_saudi_arabia.ics">Al-Khubar Saudi Arabia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ambala_india.pdf">Ambala India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ambala_india.ics">Ambala India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/amsterdam_netherlands.pdf">Amsterdam Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/amsterdam_netherlands.ics">Amsterdam Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/athens_greece.pdf">Athens Greece </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/athens_greece.ics">Athens Greece (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/auckland_new_zealand.pdf">Auckland New Zealand </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/auckland_new_zealand.ics">Auckland New Zealand (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bali_indonesia.pdf">Bali Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bali_indonesia.ics">Bali Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bangalore_india.pdf">Bangalore India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bangalore_india.ics">Bangalore India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bangkok_thailand.pdf">Bangkok Thailand </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bangkok_thailand.ics">Bangkok Thailand (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/barcelona_spain.pdf">Barcelona Spain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/barcelona_spain.ics">Barcelona Spain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/beijing_china.pdf">Beijing China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/beijing_china.ics">Beijing China (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/berlin_germany.pdf">Berlin Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/berlin_germany.ics">Berlin Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/birming_uk.pdf">Birming Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/birming_uk.ics">Birming Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bradford_uk.pdf">Bradford Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bradford_uk.ics">Bradford Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bremen_germany.pdf">Bremen Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bremen_germany.ics">Bremen Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/brunei.pdf">Brunei </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/brunei.ics">Brunei (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bucaramanga_columbia.pdf">Bucaramanga Columbia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/bucaramanga_columbia.ics">Bucaramanga Columbia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/budapest_hungary.pdf">Budapest Hungary </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/budapest_hungary.ics">Budapest Hungary (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cairo_egypt.pdf">Cairo Egypt </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cairo_egypt.ics">Cairo Egypt (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/calgary_ab_canada.pdf">Calgary Ab Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/calgary_ab_canada.ics">Calgary Ab Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/canberra_australia.pdf">Canberra Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/canberra_australia.ics">Canberra Australia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cape_town_south_africa.pdf">Cape Town South Africa </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cape_town_south_africa.ics">Cape Town South Africa (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/carcare_switzerland.pdf">Carcare Switzerland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/carcare_switzerland.ics">Carcare Switzerland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chandigarh_india.pdf">Chandigarh India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chandigarh_india.ics">Chandigarh India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chennai_india.pdf">Chennai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chennai_india.ics">Chennai India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chernigov_ukraine.pdf">Chernigov Ukraine </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chernigov_ukraine.ics">Chernigov Ukraine (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chidambaram_india.pdf">Chidambaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/chidambaram_india.ics">Chidambaram India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cologne_germany.pdf">Cologne Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/cologne_germany.ics">Cologne Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/colombo_sri_lanka.pdf">Colombo Sri Lanka </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/colombo_sri_lanka.ics">Colombo Sri Lanka (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/copenhagen_denmark.pdf">Copenhagen Denmark </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/copenhagen_denmark.ics">Copenhagen Denmark (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/darwin_australia.pdf">Darwin Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/darwin_australia.ics">Darwin Australia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/doha_qatar.pdf">Doha Qatar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/doha_qatar.ics">Doha Qatar (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dubai_ae.pdf">Dubai Ae </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dubai_ae.ics">Dubai Ae (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dublin_ire.pdf">Dublin Ire </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dublin_ire.ics">Dublin Ire (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/durban_south_africa.pdf">Durban South Africa </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/durban_south_africa.ics">Durban South Africa (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dushanbe_tajikastan.pdf">Dushanbe Tajikastan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dushanbe_tajikastan.ics">Dushanbe Tajikastan (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dwarka_india.pdf">Dwarka India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/dwarka_india.ics">Dwarka India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/edmonton_canada.pdf">Edmonton Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/edmonton_canada.ics">Edmonton Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ellora_india.pdf">Ellora India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ellora_india.ics">Ellora India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/gaborone_botswana.pdf">Gaborone Botswana </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/gaborone_botswana.ics">Gaborone Botswana (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/galway_ireland.pdf">Galway Ireland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/galway_ireland.ics">Galway Ireland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/georgetown_guyana.pdf">Georgetown Guyana </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/georgetown_guyana.ics">Georgetown Guyana (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/gosnells_aust.pdf">Gosnells Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/gosnells_aust.ics">Gosnells Aust (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/grevenbroich_germany.pdf">Grevenbroich Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/grevenbroich_germany.ics">Grevenbroich Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/halifax_canada.pdf">Halifax Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/halifax_canada.ics">Halifax Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hamm_germany.pdf">Hamm Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hamm_germany.ics">Hamm Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ho_chi_minh.pdf">Ho Chi Minh </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ho_chi_minh.ics">Ho Chi Minh (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hobart_tasmania.pdf">Hobart Tasmania </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hobart_tasmania.ics">Hobart Tasmania (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hong_kong_china.pdf">Hong Kong China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hong_kong_china.ics">Hong Kong China (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hyderabad_india.pdf">Hyderabad India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/hyderabad_india.ics">Hyderabad India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/imphal_india.pdf">Imphal India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/imphal_india.ics">Imphal India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/istanbul_turkey.pdf">Istanbul Turkey </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/istanbul_turkey.ics">Istanbul Turkey (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/jakarta_indonesia.pdf">Jakarta Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/jakarta_indonesia.ics">Jakarta Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/jalandhar_india.pdf">Jalandhar India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/jalandhar_india.ics">Jalandhar India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/johannesburg_za.pdf">Johannesburg Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/johannesburg_za.ics">Johannesburg Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/karachi_pakistan.pdf">Karachi Pakistan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/karachi_pakistan.ics">Karachi Pakistan (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kathmandu_nepal.pdf">Kathmandu Nepal </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kathmandu_nepal.ics">Kathmandu Nepal (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kedarnath_india.pdf">Kedarnath India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kedarnath_india.ics">Kedarnath India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kharagpur_india.pdf">Kharagpur India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kharagpur_india.ics">Kharagpur India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kiev_ukraine.pdf">Kiev Ukraine </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kiev_ukraine.ics">Kiev Ukraine (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kingston_jamaica.pdf">Kingston Jamaica </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kingston_jamaica.ics">Kingston Jamaica (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kinshasa_zaire.pdf">Kinshasa Zaire </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kinshasa_zaire.ics">Kinshasa Zaire (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kl_malaysia.pdf">Kl Malaysia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kl_malaysia.ics">Kl Malaysia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kolkata_india.pdf">Kolkata India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kolkata_india.ics">Kolkata India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kottayam_india.pdf">Kottayam India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kottayam_india.ics">Kottayam India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kuwait_city_kuwait.pdf">Kuwait City Kuwait </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/kuwait_city_kuwait.ics">Kuwait City Kuwait (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lelystad_netherlands.pdf">Lelystad Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lelystad_netherlands.ics">Lelystad Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lima_peru.pdf">Lima Peru </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lima_peru.ics">Lima Peru (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ljubljana_solvenia.pdf">Ljubljana Solvenia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ljubljana_solvenia.ics">Ljubljana Solvenia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/london_uk.pdf">London Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/london_uk.ics">London Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lucknow_india.pdf">Lucknow India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lucknow_india.ics">Lucknow India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lusaka_zambia.pdf">Lusaka Zambia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/lusaka_zambia.ics">Lusaka Zambia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/madrid_spain.pdf">Madrid Spain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/madrid_spain.ics">Madrid Spain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/madurai_india.pdf">Madurai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/madurai_india.ics">Madurai India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/malmo_sweden.pdf">Malmo Sweden </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/malmo_sweden.ics">Malmo Sweden (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/manama_bahrain.pdf">Manama Bahrain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/manama_bahrain.ics">Manama Bahrain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/manokwari_indonesia.pdf">Manokwari Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/manokwari_indonesia.ics">Manokwari Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/medellin_colombia.pdf">Medellin Colombia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/medellin_colombia.ics">Medellin Colombia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/melbourne_aust.pdf">Melbourne Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/melbourne_aust.ics">Melbourne Aust (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mexico_city_mexico.pdf">Mexico City Mexico </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mexico_city_mexico.ics">Mexico City Mexico (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/milan_italy.pdf">Milan Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/milan_italy.ics">Milan Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/moncton_nb_canada.pdf">Moncton Nb Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/moncton_nb_canada.ics">Moncton Nb Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/montevideo_uruguay.pdf">Montevideo Uruguay </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/montevideo_uruguay.ics">Montevideo Uruguay (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/montreal_canada.pdf">Montreal Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/montreal_canada.ics">Montreal Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/moscow_russia.pdf">Moscow Russia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/moscow_russia.ics">Moscow Russia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mosul_iraq.pdf">Mosul Iraq </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mosul_iraq.ics">Mosul Iraq (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mumbai_india.pdf">Mumbai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mumbai_india.ics">Mumbai India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mundare_canada.pdf">Mundare Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/mundare_canada.ics">Mundare Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/munich_germany.pdf">Munich Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/munich_germany.ics">Munich Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/muscat_oman.pdf">Muscat Oman </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/muscat_oman.ics">Muscat Oman (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nadi_fiji_islands.pdf">Nadi Fiji Islands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nadi_fiji_islands.ics">Nadi Fiji Islands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nairobi_kenya.pdf">Nairobi Kenya </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nairobi_kenya.ics">Nairobi Kenya (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nasik_india.pdf">Nasik India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/nasik_india.ics">Nasik India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/new_delhi_india.pdf">New Delhi India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/new_delhi_india.ics">New Delhi India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/oslo_norway.pdf">Oslo Norway </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/oslo_norway.ics">Oslo Norway (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/padua_italy.pdf">Padua Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/padua_italy.ics">Padua Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/paramaribo_suriname.pdf">Paramaribo Suriname </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/paramaribo_suriname.ics">Paramaribo Suriname (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/paris_france.pdf">Paris France </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/paris_france.ics">Paris France (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/perth_aust.pdf">Perth Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/perth_aust.ics">Perth Aust (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pietermaritzburg_za.pdf">Pietermaritzburg Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pietermaritzburg_za.ics">Pietermaritzburg Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/poortugaal_netherlands.pdf">Poortugaal Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/poortugaal_netherlands.ics">Poortugaal Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/port_louis_mauritius.pdf">Port Louis Mauritius </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/port_louis_mauritius.ics">Port Louis Mauritius (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/port-of-spain_trinidad_and_tobago.pdf">Port-Of-Spain Trinidad And Tobago </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/port-of-spain_trinidad_and_tobago.ics">Port-Of-Spain Trinidad And Tobago (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/porto_portugal.pdf">Porto Portugal </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/porto_portugal.ics">Porto Portugal (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pune_india.pdf">Pune India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pune_india.ics">Pune India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pyinmana_myanmar.pdf">Pyinmana Myanmar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pyinmana_myanmar.ics">Pyinmana Myanmar (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pyrenees-orientales_france.pdf">Pyrenees-Orientales France </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/pyrenees-orientales_france.ics">Pyrenees-Orientales France (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rameswaram_india.pdf">Rameswaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rameswaram_india.ics">Rameswaram India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ranikhet_india.pdf">Ranikhet India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/ranikhet_india.ics">Ranikhet India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/regina_sk_canada.pdf">Regina Sk Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/regina_sk_canada.ics">Regina Sk Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/riga_latvia.pdf">Riga Latvia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/riga_latvia.ics">Riga Latvia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rio_de_janeiro_brazil.pdf">Rio De Janeiro Brazil </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rio_de_janeiro_brazil.ics">Rio De Janeiro Brazil (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/riyadh_saudi_arabia.pdf">Riyadh Saudi Arabia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/riyadh_saudi_arabia.ics">Riyadh Saudi Arabia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rome_italy.pdf">Rome Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/rome_italy.ics">Rome Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/saint-denis_reunion.pdf">Saint-Denis Reunion </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/saint-denis_reunion.ics">Saint-Denis Reunion (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sao_paulo_brazil.pdf">Sao Paulo Brazil </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sao_paulo_brazil.ics">Sao Paulo Brazil (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/saskatoon_canada.pdf">Saskatoon Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/saskatoon_canada.ics">Saskatoon Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/shanghai_china.pdf">Shanghai China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/shanghai_china.ics">Shanghai China (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/singapore.pdf">Singapore </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/singapore.ics">Singapore (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/somerset_west_za.pdf">Somerset West Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/somerset_west_za.ics">Somerset West Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sri_sailam_india.pdf">Sri Sailam India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sri_sailam_india.ics">Sri Sailam India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/stockholm_sweden.pdf">Stockholm Sweden </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/stockholm_sweden.ics">Stockholm Sweden (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/surabaya_indonesia.pdf">Surabaya Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/surabaya_indonesia.ics">Surabaya Indonesia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/suva_fiji_islands.pdf">Suva Fiji Islands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/suva_fiji_islands.ics">Suva Fiji Islands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sydney_australia.pdf">Sydney Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/sydney_australia.ics">Sydney Australia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tallinn_estonia.pdf">Tallinn Estonia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tallinn_estonia.ics">Tallinn Estonia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tehran_iran.pdf">Tehran Iran </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tehran_iran.ics">Tehran Iran (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/thane_maharashtra_in.pdf">Thane Maharashtra In </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/thane_maharashtra_in.ics">Thane Maharashtra In (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tirupati_india.pdf">Tirupati India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tirupati_india.ics">Tirupati India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tokyo_japan.pdf">Tokyo Japan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/tokyo_japan.ics">Tokyo Japan (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/toronto_canada.pdf">Toronto Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/toronto_canada.ics">Toronto Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trichirappalli_india.pdf">Trichirappalli India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trichirappalli_india.ics">Trichirappalli India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trieste_italy.pdf">Trieste Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trieste_italy.ics">Trieste Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trivandrum_india.pdf">Trivandrum India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/trivandrum_india.ics">Trivandrum India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/udaipur_india.pdf">Udaipur India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/udaipur_india.ics">Udaipur India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vancouver_canada.pdf">Vancouver Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vancouver_canada.ics">Vancouver Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/varanasi_india.pdf">Varanasi India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/varanasi_india.ics">Varanasi India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vienna_austria.pdf">Vienna Austria </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vienna_austria.ics">Vienna Austria (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vizianagaram_india.pdf">Vizianagaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/vizianagaram_india.ics">Vizianagaram India (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/warsaw_poland.pdf">Warsaw Poland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/warsaw_poland.ics">Warsaw Poland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/winnipeg_mb_canada.pdf">Winnipeg Mb Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/winnipeg_mb_canada.ics">Winnipeg Mb Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/winterthur_switzerland.pdf">Winterthur Switzerland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/winterthur_switzerland.ics">Winterthur Switzerland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/yangon_myanmar.pdf">Yangon Myanmar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/yangon_myanmar.ics">Yangon Myanmar (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/yogyakarta_indonesia.pdf">Yogyakarta Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2012-2013/world/yogyakarta_indonesia.ics">Yogyakarta Indonesia (iCal) </a></td></tr>
+
+
+   <!-- ***** World cities end here. ***** -->
+</td></tr></table>
+</table>
+
+
+<hr />
+
+<center>
+<h3> [Acrobat 6.0 or higher is recommended.]</h3>
+<h2><a id="2011-2012" name="2011-2012">April 19, 2011-May 6, 2012 </a></h2>
+
+</center>
+
+<table bgcolor="#EFEDC5" border="1" cellpadding="4" align="center">
+<tr>
+<th align="center">
+United States 
+</th>
+<th>
+International 
+</th>
+</tr>
+
+<tr valign="top"><td width = "200"><table summary="USA" align="left">
+   <!-- ***** USA cities start here. ***** -->
+   
+  <tr><td><a href="/charge/resources/panchangam/2011-2012/usa/albany_ny.pdf">Albany NY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/albany_ny.ics">Albany NY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/albuquerque_nm.ics">Albuquerque NM (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/albuquerque_nm.pdf">Albuquerque NM </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/amarillo_tx.ics">Amarillo TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/amarillo_tx.pdf">Amarillo TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/anchorage_ak.ics">Anchorage AK (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/anchorage_ak.pdf">Anchorage AK </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/asheville_nc.ics">Asheville NC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/asheville_nc.pdf">Asheville NC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/athens_ga.ics">Athens Ga (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/athens_ga.pdf">Athens GA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/atlanta_ga.ics">Atlanta Ga (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/atlanta_ga.pdf">Atlanta GA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/auburn_al.ics">Auburn AL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/auburn_al.pdf">Auburn AL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/austin_tx.ics">Austin TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/austin_tx.pdf">Austin TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/baton_rouge_la.ics">Baton Rouge La (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/baton_rouge_la.pdf">Baton Rouge LA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bettendorf_ia.ics">Bettendorf IA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bettendorf_ia.pdf">Bettendorf IA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/birmingham_al.ics">Birmingham AL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/birmingham_al.pdf">Birmingham AL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bloomfield_nj.ics">Bloomfield NJ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bloomfield_nj.pdf">Bloomfield NJ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bloomington_il.ics">Bloomington IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bloomington_il.pdf">Bloomington IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bloomington_in.ics">Bloomington IN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bloomington_in.pdf">BloomIngton IN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/boca_raton_fl.ics">Boca Raton FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/boca_raton_fl.pdf">Boca Raton FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/boise_id.pdf">Boise ID </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/boise_id.ics">Boise ID (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/boston_ma.ics">Boston Ma (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/boston_ma.pdf">Boston MA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bowling_green_ky.ics">Bowling Green Ky (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/bowling_green_ky.pdf">Bowling Green KY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/buffalo_ny.ics">Buffalo NY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/buffalo_ny.pdf">Buffalo NY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/cary_nc.ics">Cary NC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/cary_nc.pdf">Cary NC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/chapel_hill_nc.ics">Chapel Hill NC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/chapel_hill_nc.pdf">Chapel Hill NC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/charlotte_nc.ics">Charlotte NC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/charlotte_nc.pdf">Charlotte NC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/charlottesville_va.ics">Charlottesville VA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/charlottesville_va.pdf">Charlottesville VA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/chicago_il.ics">Chicago IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/chicago_il.pdf">Chicago IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/cincinnati_oh.ics">Cincinnati OH (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/cincinnati_oh.pdf">Cincinnati OH </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/cleveland_oh.ics">Cleveland OH (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/cleveland_oh.pdf">Cleveland OH </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/cogswell_nd.ics">Cogswell ND (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/cogswell_nd.pdf">Cogswell ND </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/columbia_sc.ics">Columbia SC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/columbia_sc.pdf">Columbia SC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/columbus_oh.ics">Columbus OH (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/columbus_oh.pdf">Columbus OH </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/dallas_tx.ics">Dallas TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/dallas_tx.pdf">Dallas TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/davenport_ia.ics">Davenport IA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/davenport_ia.pdf">Davenport IA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/denver_co.ics">Denver Co (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/denver_co.pdf">Denver CO </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/des_moines_ia.ics">Des Moines IA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/des_moines_ia.pdf">Des Moines IA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/detroit_mi.ics">Detroit MI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/detroit_mi.pdf">Detroit MI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/downers_grove_il.ics">Downers Grove IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/downers_grove_il.pdf">Downers Grove IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/easton_md.ics">Easton MD (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/easton_md.pdf">Easton MD </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/edison_nj.ics">Edison NJ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/edison_nj.pdf">Edison NJ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/el_paso_tx.ics">El Paso TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/el_paso_tx.pdf">El Paso TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/eugene_or.ics">Eugene OR (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/eugene_or.pdf">Eugene OR </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/fleminton_nj.ics">Fleminton NJ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/fleminton_nj.pdf">Fleminton NJ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/fort_lauderdale_fl.ics">Fort Lauderdale FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/fort_lauderdale_fl.pdf">Fort Lauderdale FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/fort_wayne_in.ics">Fort Wayne IN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/fort_wayne_in.pdf">Fort Wayne IN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/frederick_md.ics">Frederick MD (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/frederick_md.pdf">Frederick MD </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/fresno_ca.ics">Fresno CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/fresno_ca.pdf">Fresno CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/gainesville_fl.ics">Gainesville FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/gainesville_fl.pdf">Gainesville FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/greenville_sc.ics">Greenville SC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/greenville_sc.pdf">Greenville SC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/hartford_ct.ics">Hartford CT (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/hartford_ct.pdf">Hartford CT </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/hawaii.ics">Hawaii (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/hawaii.pdf">Hawaii</a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/houston_tx.ics">Houston TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/houston_tx.pdf">Houston TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/indianapolis_in.ics">Indianapolis IN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/indianapolis_in.pdf">Indianapolis IN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/jacksonville_fl.ics">Jacksonville FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/jacksonville_fl.pdf">Jacksonville FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/kansas_city_ks.ics">Kansas City KS (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/kansas_city_ks.pdf">Kansas City KS </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/knoxville_tn.ics">Knoxville TN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/knoxville_tn.pdf">Knoxville TN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/lanham_md.ics">Lanham MD (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/lanham_md.pdf">Lanham MD </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/lansing_mi.ics">Lansing MI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/lansing_mi.pdf">Lansing MI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/las_vegas_nv.ics">Las Vegas NV (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/las_vegas_nv.pdf">Las Vegas NV </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/los_angeles_ca.ics">Los Angeles CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/los_angeles_ca.pdf">Los Angeles CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/madison_wi.ics">Madison WI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/madison_wi.pdf">Madison WI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/memphis_tn.ics">Memphis TN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/memphis_tn.pdf">Memphis TN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/miami_fl.ics">Miami FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/miami_fl.pdf">Miami FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/midland_tx.ics">Midland TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/midland_tx.pdf">Midland TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/milwaukee_wi.ics">Milwaukee WI (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/milwaukee_wi.pdf">Milwaukee WI </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/minneapolis_st_paul_mn.ics">Minneapolis St Paul Mn (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/minneapolis_st_paul_mn.pdf">Minneapolis St Paul MN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/mobile_al.ics">Mobile AL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/mobile_al.pdf">Mobile AL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/modesto_ca.ics">Modesto CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/modesto_ca.pdf">Modesto CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/montpelier_vt.ics">Montpelier VT (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/montpelier_vt.pdf">Montpelier VT </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/nashville_tn.ics">Nashville TN (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/nashville_tn.pdf">Nashville TN </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/new_york_city_ny.ics">New York City NY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/new_york_city_ny.pdf">New York City NY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/normal_il.ics">Normal IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/normal_il.pdf">Normal IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/omaha_ne.ics">Omaha NE (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/omaha_ne.pdf">Omaha NE </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/orlando_fl.ics">Orlando FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/orlando_fl.pdf">Orlando FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/peoria_il.ics">Peoria IL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/peoria_il.pdf">Peoria IL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/philadelphia_pa.ics">Philadelphia PA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/philadelphia_pa.pdf">Philadelphia PA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/phoenix_az.ics">Phoenix AZ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/phoenix_az.pdf">Phoenix AZ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/phoenixville_pa.ics">Phoenixville PA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/phoenixville_pa.pdf">Phoenixville PA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/pittsburgh_pa.ics">Pittsburgh PA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/pittsburgh_pa.pdf">Pittsburgh PA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/portland_or.ics">Portland OR (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/portland_or.pdf">Portland OR </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/richmond_va.ics">Richmond VA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/richmond_va.pdf">Richmond VA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/sacramento_ca.ics">Sacramento CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/sacramento_ca.pdf">Sacramento CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/salt_lake_city_ut.ics">Salt Lake City UT (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/salt_lake_city_ut.pdf">Salt Lake City UT </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_antonio_tx.ics">San Antonio TX (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_antonio_tx.pdf">San Antonio TX </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_diego_ca.ics">San Diego CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_diego_ca.pdf">San Diego CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_francisco_ca.ics">San Francisco CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_francisco_ca.pdf">San Francisco CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_jose_ca.ics">San Jose CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_jose_ca.pdf">San Jose CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_ramon_ca.ics">San Ramon CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/san_ramon_ca.pdf">San Ramon CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/scottsdale_az.ics">Scottsdale AZ (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/scottsdale_az.pdf">Scottsdale AZ </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/seattle_wa.ics">Seattle WA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/seattle_wa.pdf">Seattle WA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/spokane_wa.ics">Spokane WA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/spokane_wa.pdf">Spokane WA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/springfield_or.ics">Springfield OR (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/springfield_or.pdf">Springfield OR </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/st_helena_ca.ics">St Helena CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/st_helena_ca.pdf">St Helena CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/st_louis_mo.ics">St Louis MO (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/st_louis_mo.pdf">St Louis MO </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/stamford_ct.ics">Stamford CT (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/stamford_ct.pdf">Stamford CT </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/syracuse_ny.ics">Syracuse NY (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/syracuse_ny.pdf">Syracuse NY </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/tampa_fl.ics">Tampa FL (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/tampa_fl.pdf">Tampa FL </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/walnut_creek_ca.ics">Walnut Creek CA (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/walnut_creek_ca.pdf">Walnut Creek CA </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/washington_dc.ics">Washington DC (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/washington_dc.pdf">Washington DC </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/usa/winter_garden_fl.pdf">Winter Garden FL </a></td></tr>
+
+
+
+   
+   <!-- ***** USA cities end here. ***** -->
+</table></td>
+
+
+
+
+<td width = "200"><table summary="Foreign">
+ <!-- ***** World cities start here. ***** -->
+   <tr><td><a href="/charge/resources/panchangam/2011-2012/world/abu_dhabi_ae.pdf">Abu Dhabi AE </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/abu_road_india.pdf">Abu Road India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/adana_turkey.ics">Adana Turkey (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/adana_turkey.pdf">Adana Turkey </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/adelaide_s_australia.pdf">Adelaide S Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/ahmedabad_india.pdf">Ahmedabad India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/al-khubar_saudi_arabia.ics">Al-Khubar Saudi Arabia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/al-khubar_saudi_arabia.pdf">Al-Khubar Saudi Arabia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/ambala_india.pdf">Ambala India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/amsterdam_netherlands.ics">Amsterdam Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/amsterdam_netherlands.pdf">Amsterdam Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/athens_greece.ics">Athens Greece (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/athens_greece.pdf">Athens Greece </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/auckland_new_zealand.pdf">Auckland New Zealand </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bali_indonesia.pdf">Bali Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bangalore_india.pdf">Bangalore India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bangkok_thailand.pdf">Bangkok Thailand </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/barcelona_spain.ics">Barcelona Spain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/barcelona_spain.pdf">Barcelona Spain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/beijing_china.pdf">Beijing China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/berlin_germany.ics">Berlin Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/berlin_germany.pdf">Berlin Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/birming_uk.ics">Birming Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/birming_uk.pdf">Birming Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bradford_uk.ics">Bradford Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bradford_uk.pdf">Bradford Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bremen_germany.ics">Bremen Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bremen_germany.pdf">Bremen Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/brunei.pdf">Brunei </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bucaramanga_columbia.ics">Bucaramanga Columbia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/bucaramanga_columbia.pdf">Bucaramanga Columbia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/budapest_hungary.ics">Budapest Hungary (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/budapest_hungary.pdf">Budapest Hungary </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/cairo_egypt.ics">Cairo Egypt (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/cairo_egypt.pdf">Cairo Egypt </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/calgary_ab_canada.ics">Calgary Ab Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/calgary_ab_canada.pdf">Calgary Ab Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/canberra_australia.pdf">Canberra Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/cape_town_south_africa.ics">Cape Town South Africa (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/cape_town_south_africa.pdf">Cape Town South Africa </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/carcare_switzerland.ics">Carcare Switzerland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/carcare_switzerland.pdf">Carcare Switzerland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/chandigarh_india.pdf">Chandigarh India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/chennai_india.pdf">Chennai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/chernigov_ukraine.pdf">Chernigov Ukraine </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/chidambaram_india.pdf">Chidambaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/cologne_germany.ics">Cologne Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/cologne_germany.pdf">Cologne Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/colombo_sri_lanka.pdf">Colombo Sri Lanka </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/copenhagen_denmark.ics">Copenhagen Denmark (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/copenhagen_denmark.pdf">Copenhagen Denmark </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/darwin_australia.pdf">Darwin Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/doha_qatar.pdf">Doha Qatar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/dubai_ae.pdf">Dubai AE </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/dublin_ire.ics">Dublin Ire (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/dublin_ire.pdf">Dublin IRE </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/durban_south_africa.ics">Durban South Africa (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/durban_south_africa.pdf">Durban South Africa </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/dushanbe_tajikastan.pdf">Dushanbe Tajikastan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/dwarka_india.pdf">Dwarka India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/edmonton_canada.ics">Edmonton Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/edmonton_canada.pdf">Edmonton Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/ellora_india.pdf">Ellora India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/gaborone_botswana.ics">Gaborone Botswana (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/gaborone_botswana.pdf">Gaborone Botswana </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/galway_ireland.ics">Galway Ireland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/galway_ireland.pdf">Galway Ireland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/georgetown_guyana.ics">Georgetown Guyana (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/georgetown_guyana.pdf">Georgetown Guyana </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/gosnells_aust.pdf">Gosnells Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/grevenbroich_germany.ics">Grevenbroich Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/grevenbroich_germany.pdf">Grevenbroich Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/halifax_canada.ics">Halifax Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/halifax_canada.pdf">Halifax Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/hamm_germany.ics">Hamm Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/hamm_germany.pdf">Hamm Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/hobart_tasmania.pdf">Hobart Tasmania </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/ho_chi_minh.ics">Ho Chi Minh, Viet Nam (iCal)</a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/ho_chi_minh.pdf">Ho Chi Minh, Viet Nam </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/hong_kong_china.pdf">Hong Kong China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/hyderabad_india.pdf">Hyderabad India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/imphal_india.pdf">Imphal India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/istanbul_turkey.ics">Istanbul Turkey (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/istanbul_turkey.pdf">Istanbul Turkey </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/jakarta_indonesia.pdf">Jakarta Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/jalandhar_india.pdf">Jalandhar India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/johannesburg_za.ics">Johannesburg Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/johannesburg_za.pdf">Johannesburg Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/karachi_pakistan.pdf">Karachi Pakistan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kathmandu_nepal.pdf">Kathmandu Nepal </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kedarnath_india.pdf">Kedarnath India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kharagpur_india.pdf">Kharagpur India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kiev_ukraine.ics">Kiev Ukraine (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kiev_ukraine.pdf">Kiev Ukraine </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kingston_jamaica.ics">Kingston Jamaica (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kingston_jamaica.pdf">Kingston Jamaica </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kinshasa_zaire.ics">Kinshasa Zaire (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kinshasa_zaire.pdf">Kinshasa Zaire </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kl_malaysia.pdf">KL Malaysia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kolkata_india.pdf">Kolkata India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kottayam_india.pdf">Kottayam India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/kuwait_city_kuwait.pdf">Kuwait City Kuwait </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/lelystad_netherlands.ics">Lelystad Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/lelystad_netherlands.pdf">Lelystad Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/lima_peru.ics">Lima Peru (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/lima_peru.pdf">Lima Peru </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/ljubljana_solvenia.ics">Ljubljana Solvenia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/ljubljana_solvenia.pdf">Ljubljana Solvenia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/london_uk.ics">London Uk (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/london_uk.pdf">London Uk </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/lucknow_india.pdf">Lucknow India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/lusaka_zambia.ics">Lusaka Zambia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/lusaka_zambia.pdf">Lusaka Zambia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/madrid_spain.ics">Madrid Spain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/madrid_spain.pdf">Madrid Spain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/madurai_india.pdf">Madurai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/malmo_sweden.ics">Malmo Sweden (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/malmo_sweden.pdf">Malmo Sweden </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/manama_bahrain.ics">Manama Bahrain (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/manama_bahrain.pdf">Manama Bahrain </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/manokwari_indonesia.pdf">Manokwari Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/medellin_colombia.ics">Medellin Colombia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/medellin_colombia.pdf">Medellin Colombia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/melbourne_aust.pdf">Melbourne Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/melbourne_australia.pdf">Melbourne Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/mexico_city_mexico.ics">Mexico City Mexico (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/mexico_city_mexico.pdf">Mexico City Mexico </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/milan_italy.ics">Milan Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/milan_italy.pdf">Milan Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/moncton_nb_canada.ics">Moncton Nb Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/moncton_nb_canada.pdf">Moncton Nb Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/montevideo_uruguay.ics">Montevideo Uruguay (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/montevideo_uruguay.pdf">Montevideo Uruguay </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/montreal_canada.ics">Montreal Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/montreal_canada.pdf">Montreal Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/moscow_russia.pdf">Moscow Russia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/mosul_iraq.ics">Mosul Iraq (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/mosul_iraq.pdf">Mosul Iraq </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/mumbai_india.pdf">Mumbai India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/mundare_canada.ics">Mundare Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/mundare_canada.pdf">Mundare Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/munich_germany.ics">Munich Germany (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/munich_germany.pdf">Munich Germany </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/muscat_oman.pdf">Muscat Oman </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/nadi_fiji_islands.pdf">Nadi Fiji Islands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/nairobi_kenya.pdf">Nairobi Kenya </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/nasik_india.pdf">Nasik India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/new_delhi_india.pdf">New Delhi India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/oslo_norway.ics">Oslo Norway (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/oslo_norway.pdf">Oslo Norway </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/padua_italy.ics">Padua Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/padua_italy.pdf">Padua Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/paramaribo_suriname.ics">Paramaribo Suriname (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/paramaribo_suriname.pdf">Paramaribo Suriname </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/paris_france.ics">Paris France (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/paris_france.pdf">Paris France </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/perth_aust.pdf">Perth Aust </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/pietermaritzburg_za.ics">Pietermaritzburg Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/pietermaritzburg_za.pdf">Pietermaritzburg Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/poortugaal_netherlands.ics">Poortugaal Netherlands (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/poortugaal_netherlands.pdf">Poortugaal Netherlands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/port_louis_mauritius.pdf">Port Louis Mauritius </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/port-of-spain_trinidad_and_tobago.ics">Port-Of-Spain Trinidad And Tobago (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/port-of-spain_trinidad_and_tobago.pdf">Port-Of-Spain Trinidad And Tobago </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/porto_portugal.ics">Porto Portugal (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/porto_portugal.pdf">Porto Portugal </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/pune_india.pdf">Pune India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/pyinmana_myanmar.pdf">Pyinmana Myanmar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/pyrenees-orientales_france.ics">Pyrenees-Orientales France (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/pyrenees-orientales_france.pdf">Pyrenees-Orientales France </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/rameswaram_india.pdf">Rameswaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/ranikhet_india.pdf">Ranikhet India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/regina_sk_canada.ics">Regina Sk Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/regina_sk_canada.pdf">Regina Sk Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/riga_latvia.ics">Riga Latvia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/riga_latvia.pdf">Riga Latvia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/rio_de_janeiro_brazil.ics">Rio De Janeiro Brazil (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/rio_de_janeiro_brazil.pdf">Rio De Janeiro Brazil </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/riyadh_saudi_arabia.pdf">Riyadh Saudi Arabia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/rome_italy.ics">Rome Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/rome_italy.pdf">Rome Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/saint-denis_reunion.pdf">Saint-Denis Reunion </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/sao_paulo_brazil.ics">Sao Paulo Brazil (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/sao_paulo_brazil.pdf">Sao Paulo Brazil </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/saskatoon_canada.ics">Saskatoon Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/saskatoon_canada.pdf">Saskatoon Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/shanghai_china.pdf">Shanghai China </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/singapore.pdf">Singapore </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/somerset_west_za.ics">Somerset West Za (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/somerset_west_za.pdf">Somerset West Za </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/sri_sailam_india.pdf">Sri Sailam India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/stockholm_sweden.ics">Stockholm Sweden (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/stockholm_sweden.pdf">Stockholm Sweden </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/surabaya_indonesia.pdf">Surabaya Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/suva_fiji_islands.pdf">Suva Fiji Islands </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/sydney_australia.pdf">Sydney Australia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/sydney_australia.ics">Sydney Australia (iCal)</a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/tallinn_estonia.ics">Tallinn Estonia (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/tallinn_estonia.pdf">Tallinn Estonia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/tehran_iran.pdf">Tehran Iran </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/thane_maharashtra_in.pdf">Thane Maharashtra In </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/tirupati_india.pdf">Tirupati India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/tokyo_japan.pdf">Tokyo Japan </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/toronto_canada.ics">Toronto Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/toronto_canada.pdf">Toronto Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/trichirappalli_india.pdf">Trichirappalli India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/trieste_italy.ics">Trieste Italy (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/trieste_italy.pdf">Trieste Italy </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/trivandrum_india.ics">Trivandrum India (iCal)</a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/trivandrum_india.pdf">Trivandrum India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/udaipur_india.pdf">Udaipur India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/vancouver_canada.ics">Vancouver Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/vancouver_canada.pdf">Vancouver Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/varanasi_india.pdf">Varanasi India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/vienna_austria.ics">Vienna Austria (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/vienna_austria.pdf">Vienna Austria </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/vizianagaram_india.pdf">Vizianagaram India </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/warsaw_poland.ics">Warsaw Poland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/warsaw_poland.pdf">Warsaw Poland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/winnipeg_mb_canada.ics">Winnipeg Mb Canada (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/winnipeg_mb_canada.pdf">Winnipeg Mb Canada </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/winterthur_switzerland.ics">Winterthur Switzerland (iCal) </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/winterthur_switzerland.pdf">Winterthur Switzerland </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/yangon_myanmar.pdf">Yangon Myanmar </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/yogyakarta_indonesia.pdf">Yogyakarta Indonesia </a></td></tr>
+<tr><td><a href="/charge/resources/panchangam/2011-2012/world/zagreb_croatia.pdf">Zagreb Croatia </a></td></tr>
+
+
+   <!-- ***** World cities end here. ***** -->
+</td></tr></table>
+</table>
+
+
+
+
+
+
+		
+<!-- /Panchangam Links Table -->
+		<br />
+		
+		<p>
+			If you find that our Hindu calendar is useful in your daily life and wish to show your appreciation then please send a donation to our <a href="https://www.hheonline.org/donate/fund.irev?id=84"> Panchangam Endowment Fund</a>.
+		</p>
+	</div>
+	 <div id="footer">
+           <?rev put url "file:../../ssi/ha_footer.html"?>           
+        </div>
+
+        <div id="linkList">
+        <?rev
+       getSideBarLinks
+        ?>
+        </div>
+</div>
+</body>
+</html>

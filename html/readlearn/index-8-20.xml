@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+			<media  width="296" height="384" file_id="hinduism-today-current-issue" style="float: left;"/>
+		<cta type="link" url="http://www.hinduismtoday.com">Go to the Hinduism Today Web site</cta>
+		</module>
+	
+	<module name="Promoted Collections Module">
+		<title>??Guidelines for Guests and Pilgrims</title>
+		<collection>
+			<title>??Monastery Schedule For Your Planning</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>
+			<links>
+				<link url="/va/satgurus/bodhinatha/bodhinatha-bio">About our guru</link>
+				<link url="#">??LINK?? Trilogy</link>
+				<link url="#">??Talks by Bodhinatha</link>
+				<link url="#">??Photos of Bodhinatha</link>
+			</links>
+			<cta>??View all books</cta>
+		</collection>
+		<collection>
+			<title>??Accomodations/Dining</title>
+			<thumbnail>/html/img/circles/gurudeva-hat-ocean-circle.png</thumbnail>
+			<links>
+				<link url="/va/satgurus/bodhinatha/gurudeva-bio">About Gurudeva</link>
+				<link url="#">??Talks by Gurudeva</link>
+				<link url="#">??Photos of Gurudeva</link>
+				<link url="#">??About Paramaguru Yogaswami</link>
+				<link url="#">??Our lineage in a nutshel</link>
+			</links>
+			<cta>??Read more</cta>
+		</collection>
+		<collection>
+			<title>??Programs at the Monastery</title>
+			<thumbnail>/html/img/circles/devotee-rajam-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/about/philosophy">??Our philosophy in brief</link>
+				<link url="#">??The Final Conclusions for All Mankind</link>
+				<link url="/monastery/about/hinduism">??A Bird's Eye View of Hinduism</link>
+				<link url="#">??Dancing with Siva, Hinduism's Contemporary Catechism</link>
+			</links>
+			<cta>??How to become a monk</cta>
+		</collection>
+	</module>
+
+<module name="Square Slider Module">
+		<title>Hindu History Lessons</title>
+		<slides>
+			<item>
+				<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-1_sml.jpg</image>
+				<caption>Take Your First Steps into the World of Hinduism...</caption>
+				<link>/view/hindu-history-chapter-one</link>
+			</item>
+			<item>
+				<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-2_sml.jpg</image>
+				<caption>Realize the Timeless Truths of Ancient India</caption>
+				<link>/view/hindu-history-chapter-two</link>
+			</item>
+			<item>
+				<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-3_sml.jpg</image>
+				<caption>See What's Happening Today in the Hindu World</caption>
+				<link>/view/hindu-history-chapter-three</link>
+			</item>
+			<item>
+				<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-4_sml.jpg</image>
+				<caption>Passing-on Our Heritage: Never Missing a Generation</caption>
+				<link>/view/hindu-history-chapter-four</link>
+			</item>
+			<item>
+				<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-5_sml.jpg</image>
+				<caption>Information for the Media</caption>
+				<link>/view/hindu-history-chapter-five</link>
+			</item>
+		</slides>
+		<cta>??See more photos in our gallery</cta>
+	</module>
+
+
+	<module name="Links Module">
+		<collection>
+			<title>??Even More Popular Resources</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">??About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">??Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">??San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">??About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">??Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">??San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+	</module>
+</data>

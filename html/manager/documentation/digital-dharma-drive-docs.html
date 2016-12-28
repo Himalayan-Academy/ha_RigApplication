@@ -1,0 +1,115 @@
+<h1> Digital Dharma Drive Documentation <h1>
+
+<p<b>Note:</b> In 2015 the DDD site was extracted from the himalayanacademy server and place on the PK's donation server:<br />
+<a href="https://donate.himalayanacademy.com/ddd">https://donate.himalayanacademy.com/ddd</a>
+</p>
+
+<h1> DDD Site Management/Update</h1>
+
+<h2>DDD Site CMS</h2>
+
+<ul>
+
+	<li>The entire digital dharma drive site lives independently of RevIgniter. (but uses livecode files)</li>
+	<li>All files moved to an independent site: "donate.himalayanacademy.com/ddd"</li>
+	<li>Although independent of RevIgniter, we are using livecode Server.There is no PHP in this frame work which was designed by Brahmanathaswami from a template created by Satya years ago. he also used some of Andre's monetra code.  But he turned these all into .lc files</li>
+	<li>We use a MySQL database "hap_users" with a single table "donations"  where every transaction creates a complete new record. We delimiter one year's donations from the next simply by setting the beginning date of reports to this year (cuts off previous years in reports and totals for the) OTOH we are accessing all the comments from the beginning for display</li>
+	<li>Form processing and other includes are all done locally in that folder, or from the CGI bin and we also use some includes from /opt/web/bin</li>
+	On disk see /home/himalayan/donate/ddd</li>
+		<li>A separate CSS file ddd.css exists inside the /assets/css folder. This should not be confused with the Happy Cog "styles.css" as they two are completely independent and ddd.css controls on the ddd site frame work pages.</li>
+
+</ul>
+
+
+<h2>Annual code/html Updates to the DDD site </h2>
+
+<ul>
+<li> The index.lc file should be edited to say "Read Bodhinatha's 2013-2014" where the years are from last year... should be updated for current year -dash- coming year.</li>
+<li> The same edit needs to be made at the top of the html section of "ddd-donor-list.lc"
+</li>
+<li>
+when fetching totals from the data base we use a date cut off and request for only donations greater than the end of the current year, sometime before the DDD drive starts. This select statement:
+
+put "SELECT first_name, last_name, anonymous, state, country, comment_status, comment, amount, donation_id, created_on  from donations where created_on::DATE > '2016-01-15'::DATE;" into tSQL
+
+# the above picks up donations with dates that were entered after the close of the previous year... this will move back to 
+
+Must be updated in three different files. Failure to do so will result in getting last year's donations Plus this year's donations as a new total or even double that in the "current-total.txt" file which appears on the pages. also we have these that are formatted slightly differently... current-total-httaka.html, current-total-ht.html, current-total-ddd.html. All for are update with the current total when these scripts run:
+<ul>
+<li>
+ddd-donor-list.lc
+</li>
+<li>
+ping-to-update-totals.lc
+</li>
+<li>
+process-ddd-donation.lc
+</li>
+</ul>
+</li>
+
+<li> Since the donation report pages may still be hit on, we change the link list on the left to show no ddd pages and no link to the donation page. the SSI calls  a file named: "ddd-links.html." When the drive is not running we name the file with all the links something link "ddd-links-drive-is-live-online.html" and the one named "ddd-links-jan-sept.html"  to the generic name "ddd-links.html." then when the drive goes live we simply change the names again to get the one with all the links to show. </li>
+
+</ul>
+
+<hr />
+<h1> Banner Update/Display Implementation on HA.COM</h1>
+
+<h2>Implementation in the new Design </h2>
+
+<h4> Inside - Two column and Landing Pages DDD Banners </h4
+
+
+<ul><li>banner width is 1054 minimum (as set by HC Css for the main page wrapper</li>
+<li> We have a new css file: /assets/css/ddd-banner.css which we use to style the div and anything it contains.</li>
+<li> if the display banner wrapper is set to "display:none;" in the CSS... it will  not show even if you turn everything else on! so be sure to set it back to "block" before starting up.</li>
+<li>put your banners here:  home/devhap/public_html/assets/img/ddd-banners</li>
+<li>We duplicated the page header in the  ha app views/sitewide folder. We have a copy: page-header-ddd.lc</li>
+<li> the html for the image and the links are in the div at the top of the view "#ddd-banners"</li>
+<li> random images are loaded by the global library that load the page header and navigation for all pages:  "/system/application/ha/libraries/Getsetheadnav.lc"
+See comments in the code. Basically it switches between calling "page-header.lc" or "page-header-ddd.lc" depending on what lines you have commented on or off.
+<br /><br />
+
+So we just change the call to load the view from "sitewide/page-header" to "/sitewide/page-header-ddd" and viola the ddd page header is loaded globally; so you can switch this on during dev and turn it off after finishing work. Any customizations of page-header-ddd outside of the ddd-banner div will not be ported over when we switch back. (unless you dup that file and delete the old page-header.lc and replace it with a copy of the new one)
+
+<h4> Home Page DDD Banners </h4
+
+<br /> We also have added the a parallel view "/system/application/ha/views/home-page-head-ddd.lc" view for the home page and we call the the same "getRandomBanner" function in the index command of the "/ha/controllers/home.lc" controller for the home page for the site, which runs by default and will load the banner.
+
+</li> 
+
+</ul>
+	<li>The DDD banner, image and html are placed in a <div id="ddd-banner">, immediately after the <body> opening and *before* the "div page-container"</li>
+	<li>This puts this area of the DOM  above and completely independent of any Happy Cog CSS.</li>
+	<li>A separate CSS file ddd-banner.css has been made inside the /assets/css folder Note that the ddd.css file applies to the fund raising site and the ddd-banner.css applies to the new site.</li>	
+	<li> Once you know for sure everything is working. Go back to this CSS file and set the display: none... to hide the banner. the set to display "block" just before you want to go live.	
+</ul>
+
+<h4>Sync to Go Live</h4
+
+	</ul>
+	<li>sync the DDD folder which will include the banner images</li>
+	<li>sync or manually change the ddd-banner.css at the HA site so that also displays </li>
+	<li>See changes that must also be made to /home/himalayan/public_html/system/ha/controllers/home.lc  and also "ha/libraries/getSetHead.lc"
+	</li>		
+</ul>
+
+<h2>Implementation on TAKA Blog </h2>
+
+<li> We have an external banner block file which is called by an include in the <pre>
+header.php
+</pre>, just after the body call and before the page container. The include is commented out when DDD is off line. To go live with DDD on TAKA:
+<br /><br />  
+ 
+<ul>
+	<li>Edit this file: /blog/themes/wp-content/taka/header.php</li>
+	<li>Uncomment the end of the following line, by removing the two slashes</li>
+	<li><code>[php //include("ddd-banner-block.php")</code></li>
+	<li>So you have <code> php  include("ddd-banner-block.php")</code></li>
+</ul>
+
+
+<p>FYI: The "ddd-banner-block.php" file is just a HTML chunk that is a match for the same used on the inner pages. It is self explanatory.
+There is also a function to <code> /blog/themes/wp-content/taka/functions.php "random_ddd_banner()"</code> which gets the banner image path. No changes are required to these files. When DDD is off line they are just non-functional.</p>
+
+

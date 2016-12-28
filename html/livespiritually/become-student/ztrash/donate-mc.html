@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<meta name="author" content="Himalayan Academy Publications" />
+		<meta name="keywords" content="###EnterKeyWordsFor your Area here!" />
+		<meta name="description" content="Hinduism Online is a vast resource of knowledge and experience on Hinduism, one of the world's oldest living religions." />
+		<meta name="robots" content="all" />
+		<title>
+			Donate to the Master Course
+		</title>
+		<link rel="stylesheet" type="text/css" href="/css/main_home_pages.css" />
+		<style type="text/css" title="currentStyle">
+	       /* additions and over-rides to site wide css*/
+
+form
+{
+color: #662620;
+}</style>
+
+
+  <script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script> 
+      
+           
+           <script type="text/javascript"> 
+            $(document).ready(function() {
+            
+              // Bind click event for credit card chooser ...
+              $("#method_credit_card_chooser").bind("click", function() {
+                $("#method_credit_card").show();
+              });
+              
+              // Bind PayPal chooser ...
+              $("#method_paypal_chooser").bind("click",function(){
+                var amount = $("input[name=amount][type=text]").val();
+                if (amount === "0.00" || amount == 0) {
+                  alert("Please type in the amount you want to donate.");
+                  return false;
+                }
+                $("#paypal_form > input[name=amount]").val(amount);
+                if ($("input[name=hhe-payment_plan]").attr("checked") == false) {
+                  if ($("select[name=hhe-repeat_payment]").val() !== "Monthly -- Forever until cancel") {
+                    alert("Please, for recurring donations select the frequency.");
+                    return false;
+                  }
+                  $("#paypal_form > input[name=cmd]").val("_xclick-subscriptions");
+                  $("#paypal_form > input[name=bn]").val("PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted");
+                  var a3 = $("<input></input>").attr("name","a3").attr("type","hidden").val(amount);
+                  var p3 = $("<input></input>").attr("name","p3").attr("type","hidden").val("1");
+                  var t3 = $("<input></input>").attr("name","t3").attr("type","hidden").val("M");
+                  var src3 = $("<input></input>").attr("name","src").attr("type","hidden").val("1");
+ 
+                  $("#paypal_form").append(a3).append(p3).append(t3).append(src3);
+ 
+ 
+                }
+                var item_name = $("input[name=hap_fund_name]").val();
+                if (typeof item_name == 'undefined') {
+                  alert("Please, select one of the funds");
+                  return false;
+                }
+                $("#paypal_form > input[name=item_name]").val(item_name);
+                $("#paypal_form").submit();
+              });
+            });
+            
+            
+            
+            
+           </script> 
+
+
+	</head>
+	<body id="mainHomePage">
+		<div id="container">
+			<div id="siteWideNavTop">
+<!--#include virtual="/ssi/site_wide_nav.html" -->
+			</div>
+			<div id="pageHeader">
+				<h3 class="h3">Master Course Self-Evaluation Study Worksheet donations</h3>
+				<p>This page is to be used if you are following the formal <a href="http://www.himalayanacademy.com/study/mc/about.shtml">Master Course Self-Evaluation Study</a> and wish to make your monthly donation online via credit card instead of sending cash or check with your worksheets in the mail. </p>
+				<div id="areaSymbol">
+					<img src="/images/main_page_symbol.gif" alt="Aum symbol" />
+				</div>
+			</div>
+
+		<div id="mainContentSection">
+			 <form method="post" action="https://www.himalayanacademy.com/cgi-bin/process_donor-confirm.cgi">
+			 <input name="recipients" value="publications" type="hidden" />
+			 <input name="user" value="hap" type="hidden" />
+			  <input name="log" value="publications_donations_test.txt" type="hidden" />
+			<input name="SourceURL" value="<!--#echo var="REQUEST_URI" -->" type="hidden" />
+			  <hr />
+		<p>
+	
+				
+	<input name="hap_fund_name" value="Master_Course" type="hidden" /><b>Master Course Self-Evaluation Study Donation</b></p>
+		
+		<p>All fields marked * required.</p>
+					<table border="0" cellpadding="0" cellspacing="3" width="500">
+				<tr>
+				<td colspan="2" align="left">
+					<b>* Gift Amount:</b> I wish to contribute $ 
+					<input name="amount" value="0.00" size="6" maxlength="20" type="text" />
+				</td>
+			</tr>
+			
+			</table>
+					<p>Would you like to make a
+					<br />
+					<input name="hap-payment_plan" value="NO" checked="checked" type="radio" />
+						One Time Donation 
+					<input name="hap-payment_plan" value="YES" type="radio" />
+						Recurring Donation
+					<br /><br />
+						If recurring, repeat this donation <br />
+						by charging my credit card or PayPal:  
+					<select name="hap-repeat_payment" size="1">
+						<option value="">
+							Please select 
+						</option>
+						<option value="Monthly -- Forever until cancel">
+							Monthly - in perpetuity until I cancel
+						</option>
+					</select></p>
+					<hr />
+             <h3 class="h3">Click on the PayPal image below to donate with PayPal:</h3> 
+             <div id="method_chooser"> 
+               <h2 id="method_paypal_chooser"><img  src="https://www.paypalobjects.com/WEBSCR-640-20101108-1/en_US/BR/i/bnr/horizontal_solution_US.gif" border="0" alt="PayPal"></h2> 
+                   <h3 class="h3">Click on the Visa image below to donate with a credit card:</h3><br /> 
+               <h2 id="method_credit_card_chooser"> 
+               
+                 
+               <img src="/html/img/creditcardlogos.png"/></h2> 
+               </div> 
+                   
+                     
+           
+            <div id="method_credit_card" style="display: none;"> 
+              <h3 class="h3"><font color="#990000"><strong>Donor Information</strong></font></h3> 
+									<table border="0" cellpadding="0" cellspacing="3" width="500">	
+					
+					<tr>
+						<td align="right">
+							Your Title:
+						</td>
+						<td>
+							<select name="salutation" size="1">
+								<option value="Mr.">
+									Mr. 
+								</option>
+								<option value="Mrs.">
+									Mrs. 
+								</option>
+								<option value="Ms.">
+									Ms. 
+								</option>
+								<option value="Dr.">
+									Dr. 
+								</option>
+							</select>
+						</td>
+						
+					</tr>
+					<tr>
+						<td align="right">
+							* First Name: 
+						</td>
+						<td>
+							<input name="first" value="" size="25" maxlength="40" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							* Last Name: 
+						</td>
+						<td>
+							<input name="last" value="" size="25" maxlength="50" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							* Address 1: 
+						</td>
+						<td>
+							<input name="add1" value="" size="25" maxlength="100" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							Address 2: 
+						</td>
+						<td>
+							<input name="add2" value="" size="25" maxlength="100" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							Address 3: 
+						</td>
+						<td>
+							<input name="add3" value="" size="25" maxlength="100" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							* City: 
+						</td>
+						<td>
+							<input name="city" value="" size="25" maxlength="100" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							* State: 
+						</td>
+						<td>
+							<input name="state" value="" size="25" maxlength="100" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							Zip/Pin:
+						</td>
+						<td>
+							<input name="zip" value="" size="9" maxlength="15" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							* Country: 
+						</td>
+						<td>
+							<input name="country" value="" size="25" maxlength="100" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							* Email: 
+						</td>
+						<td>
+							<input name="email" value="" size="25" maxlength="40" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							Telephone: 
+						</td>
+						<td>
+							
+							<input name="phone" value="" size="12" maxlength="18" type="text" />
+					</td>
+				</tr>
+				
+			
+			
+
+  <p><b>*  CC# - Visa, Master Card, Amex only:</b>
+<input type="text" value="" size="32" name="cc#" />  <br><b>* Credit Card Security Code:</b> <input type="text" value="" size="5" name="cvv2" /></p>
+                          <b>* Expiration Date</b> <select name="expmonth">
+                                <option value="01" selected="selected">
+                                    01
+                                </option>
+                                <option value="02">
+                                    02
+                                </option>
+                                <option value="03">
+                                    03
+                                </option>
+                                <option value="04">
+                                    04
+                                </option>
+                                <option value="05">
+                                    05
+                                </option>
+                                <option value="06">
+                                    06
+                                </option>
+                                <option value="07">
+                                    07
+                                </option>
+                                <option value="08">
+                                    08
+                                </option>
+                                <option value="09">
+                                    09
+                                </option>
+                                <option value="10">
+                                    10
+                                </option>
+                                <option value="11">
+                                    11
+                                </option>
+                                <option value="12">
+                                    12
+                                </option>
+                            </select> &nbsp; <select name="expyear">
+                                <option value="09">
+                                    2009
+                                </option>
+                                <option value="10">
+                                    2010
+                                </option>
+                <option value="11">
+                    2011
+                </option>
+                <option value="12">
+                    2012
+                </option>
+                <option value="13">
+                    2013
+                </option>
+                <option value="14">
+                    2014
+                </option>
+                <option value="15">
+                    2015
+                </option>
+                            </select>		
+		
+		<hr />
+		<p>Comments:</p>
+			<textarea id="comments" name="comments" rows="4" cols="35">
+</textarea>
+ <!-- AAG: Begin human readable captcha implementation -->
+  <p><b>Please verify that you are not an automated bot by answering the following question:</b></p>
+  
+  <!-- #include virtual="/cgi-bin/captcha.cgi" -->
+
+ <table cellpadding=5 cellspacing=0 bgcolor="#E4F8E4">
+              <tr bgcolor="#AAD6AA">
+              <td colspan="2"><font color="#FFFFFF" face="Verdana" size="2"><b>Image Verification</b></font></td>
+              </tr>
+              <tr>
+              <td style="padding: 2px;" width="10"><img src="html/captcha/captchac_code.php" id="captcha"></td>
+              <td valign="top"><font color="#000000">Please enter the text from the image</font> &nbsp; <br><input type="text" name="Turing" value="" maxlength="100" size="10">
+              [ <a href="#" onclick=" document.getElementById('captcha').src = document.getElementById('captcha').src + '?' + (new Date()).getMilliseconds(); return false;">Refresh Image</a> ] [ <a href="/html/captcha/whatisturing.html" onClick="window.open('/captcha/whatisturing.html','_blank','width=400, height=300, left=' + (screen.width-450) + ', top=100');return false;">What's This?</a> ]
+              </td>
+              </tr>
+              </table>
+             
+  
+   <!-- End human readable captcha implementation -->
+<p><br />Please click to submit your donation via our secure server. You will have a chance to review the transaction before it is processed.<br /> <input type="image" src="/html/img/SubmitDonation.gif" name="Contribute" value="Contribute" type="submit" /></p>
+</table>
+</div>
+		<hr />
+			<p>	Please direct any questions concerning online contributions to: <a href="mailto:studyhall@hindu.org">studyhall@hindu.org</a>
+			or call 808-240-3109.
+	</p>
+</form>
+<!-- begin paypal --> 
+        <div style="display: none;"> 
+        <form id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+        <input type="hidden" name="cmd" value="_donations"> 
+        <input type="hidden" name="business" value="hhe@hindu.org"> 
+        <input type="hidden" name="lc" value="EN"> 
+        <input type="hidden" name="item_name" value="Hindu Heritage Endowment"> 
+        <input type="hidden" name="amount" value="0"> 
+        <input type="hidden" name="currency_code" value="USD"> 
+        <input type="hidden" name="no_note" value="0"> 
+        <input type="hidden" name="cn" value="Add special instructions to the seller"> 
+        <input type="hidden" name="no_shipping" value="1"> 
+        <input type="hidden" name="rm" value="1"> 
+        <input type="hidden" name="return" value="http://hheonline.org/donate_thanks.html"> 
+        <input type="hidden" name="cancel_return" value="http://hheonline.org/"> 
+        <input type="hidden" name="currency_code" value="USD"> 
+        <input type="hidden" name="image_url" value="https://www.hheonline.org/images/hhe_title.jpg"> 
+        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"> 
+        <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> 
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
+        </form> 
+       </div> 
+        
+        <!-- end paypal --> 
+</div>
+		
+<div id="footer">
+<!--#include virtual="/ssi/ha_footer.html"-->
+</div></div>
+<div id="linkList">
+<!--#exec cgi="/cgi-bin/local_nav_include.cgi" -->
+</div>
+</body>
+</html>
+	

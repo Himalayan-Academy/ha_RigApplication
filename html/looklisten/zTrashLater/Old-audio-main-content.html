@@ -1,0 +1,94 @@
+<div class="page-wrapper">
+	
+		<aside class="sidebar" role="complementary">
+		
+			<h3 class="h3 header">Choose A Collection</h3>
+	<div class="sidebar-module">
+	
+<form id="search-songs" action="/audio/search" method="POST">
+		<input type="hidden" name="media_type" value="audio/song">
+	
+	<fieldset>
+		<legend class="h3">Genre <br /></legend>
+		(You must choose at least one to find any songs)<br />
+		<input class="option" name="include_natchintanai" id="genre-natchintanai" type="checkbox" value="YES" /> Natchintanai 
+		<input class="option" name="include_bhajan" id="genre-bhajan" type="checkbox" title="Short, easy to follow leader-response songs. Good for children and groups. " value="YES" /> Bhajan <br />
+		<input name="include_gitam" id="genre-gitam" title="Complex songs, must be memorized or have lyrics available "  type="checkbox" value="YES" /> Gitam 
+		<input class="option" name="include_stotram" id="genre-stotram" type="checkbox" value="YES" /> Stotram <br />
+		<input class="option" name="include_tirumurai" id="genre-tirumurai" type="checkbox" value="YES" /> Tirumurai 			
+	</fieldset>
+	
+	<fieldset>
+		 <legend class="h3">Only for</legend>		
+		<input class="option" type="Radio" name="filter_by_deity" value="ganesha" /> Ganesha
+		<input class="option" type="Radio" name="filter_by_deity" value="muruga" /> Muruga<br />
+		<input class="option" type="Radio" name="filter_by_deity" value="siva" /> Siva
+		<input class="option" type="Radio" name="filter_by_deity" value="guru" /> Guru<br />
+		<input class="option" type="Radio" name="filter_by_deity" value="vedic" /> Vedic
+		<input class="option" type="Radio" name="filter_by_deity" value="other" /> Other<br />
+			
+		<input  class="option" name="filter_by_model" id="filter_by_model" type="checkbox" title="Traditional melodies used worldwide and recommended to be learned." value="YES" />Only those for learning <br />
+	</fieldset>
+	<fieldset>
+		 <legend class="h3">Filter by Singer or Title</legend>	
+		<input class="option" type="Radio" name="filter_by_string" value="title" /> Title 
+		<input class="option" type="Radio" name="filter_by_string" value="artists" /> Artist <br />
+		Look For: <input type="text" name="query" title="Enter some letters from the title or name of a singer." /> 
+	</fieldset> 
+		<button class="commentsubmit" type="submit" id="submit" name="submit" value="songs">  Get Collection</button>
+
+</form>
+
+<hr />
+
+	
+<!-- 
+form class="form-standard" id="search-instrumental" action="/index.lc/audio/search" method="POST">
+		<legend class="h3">Instrumental Music</legend>
+		<input class="option" type="hidden" name="media_type" value="audio/instrumental">
+		<button class="commentsubmit" type="submit" id="submit" name="submit" value="instrumental"> Go All</button>
+	</form>
+	
+
+ -->
+ </div><!-- end sidebar-module -->
+		
+		</aside> <!-- end sidebar -->
+	
+		<section class="page-content" role="main">
+			
+			<div class="wrapper">
+						
+				<article class="content-article">
+				
+					<div class="article-wrapper">
+				
+						<h1 class="h1">[[ gData["pageTitle"] ]]</h1>
+						
+						<img class="float-left" style="width:364px;" src="/html/media/img/Singing_rajam_dws-S089-sp43.jpg" alt="Song Concert" />
+						
+						<p>This is your gateway to a small but growing collection of Yogaswami's Natchintanai songs, Saivite bhajans and gitams. Most are sung by the devotees of the Kailasa Parampara and include recordings by singers at all levels, trained Hindus singers, bhajan groups, children, teenagers and non-professionals.
+</p>
+
+	[[ gData["search innerHTML"] ]]
+	
+<h3 class="h3">Selected for Learning</h3>
+<p> A special note on the class of songs that are marked "selected for learning."  For Yogaswami's songs called "Natchintanai," we are slowly finding simple standard tunes which everyone will learn so that when someone asks "How do I sing it; what tune should we teach?" we are all teaching and learning the same tune. Of course there are many tunes for songs in Hinduism and there is no "law" that says you must sing it only this way. Professional trained singers may freely improvise. On the other hand, to make Natchintanai songs global and popular they each need one melody that we all know well. Consider perhaps the most famous song in Hinduism:  the "Arati Song: Aum Jeya Jagadisha Hare...." This song is sung with the same tune all over the world, thus opening the door for everyone to join in singing it, instead of just listening to someone perform it.</p>
+<p> When you choose a collection, the results will appear below and you click to go to a player.</p>
+		
+					
+
+					
+					</div> <!-- end article wrapper -->
+					
+				</article> <!-- end article -->	
+				
+				[[ gData["audioSearchForm"] ]]		
+			
+			</div> <!-- end page content wrapper -->
+		
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+	

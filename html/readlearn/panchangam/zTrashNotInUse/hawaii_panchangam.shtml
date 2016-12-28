@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Himalayan Academy Publications" />
+    <meta name="keywords" content="###EnterKeyWordsFor your Area here!" />
+    <meta name="description" content="Hinduism Online is a vast resource of knowledge and experience on Hinduism, one of the world's oldest living religions." />
+    <meta name="robots" content="all" />
+    <title>Hawaii Panchangam</title>
+    <link rel="stylesheet" type="text/css" href="/css/main_home_pages.css" />
+<style type="text/css" title="currentStyle">
+/*<![CDATA[*/
+	       /* additions and over-rides to site wide css*/
+
+form
+{
+color: #662620;
+}
+/*]]>*/
+</style>
+</head>
+<body id="mainHomePage">
+    <div id="container">
+        <div id="siteWideNavTop">
+            <!--#include virtual="/ssi/site_wide_nav.html" -->
+        </div>
+        <div id="pageHeader">
+      <td width = "200"><table summary="Panchangams">
+            <tr><td>Click here to download <a href="http://himalayanacademy.com/resources/panchangam/kapaa_12-13.pdf" target="_blank">
+						<font color=" #3333ff">Hawaii 2012-2013 pdf file</a></font></td></tr>
+						
+						<tr><td>Click here to download <a href="http://himalayanacademy.com/resources/panchangam/kapaa_12-13.ics.zip">
+						<font color=" #3333ff">Hawaii 2012-2013 iCal file</a></font></td></tr>
+						
+						
+						<tr><td>Click here to download <a href="http://himalayanacademy.com/resources/panchangam/kapaa_11-12.pdf" target="_blank">
+						<font color=" #3333ff">Hawaii 2011-2012 pdf file</a></font></td></tr>
+						
+						
+						 <tr><td>Click here to download <a href="http://himalayanacademy.com/resources/panchangam/2011-2012/hawaii_ipad_11-12.pdf" target="_blank">
+						<font color=" #3333ff">Hawaii 2011-2012 iPad pdf file</a></font>. This is the file we use on the temple iPad.</td></tr>
+						
+		</table></td>				
+						
+            <div id="areaSymbol">
+                <img src="/images/main_page_symbol.gif" alt="Aum symbol" />
+            </div>
+        </div>
+       
+            <div id="footer">
+                <!--#include virtual="/ssi/ha_footer.html"-->
+            </div>
+        </div>
+        <div id="linkList">
+            <!--#exec cgi="/cgi-bin/local_nav_include.cgi" -->
+        </div>
+    </div>
+</body>
+</html>

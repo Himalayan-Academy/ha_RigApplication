@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<title>The Year In Review</title>
+		<author>Sannyasin Senthilnathaswami</author>
+		<description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</description>
+		<cta type="link" url="/videos">View All Videos</cta>
+		<media type="lorempixel" width="629" height="384" category="nature" />
+	</module>
+	<module name="Art Gallery Module">
+		<title>Photos of The Monastery</title>
+		<cta>See more photos in our gallery</cta>
+	</module>
+	<module name="Promoted Collections Module">
+		<title>About the monastery</title>
+		<collection>
+			<title>Introductory Publications</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>
+			<links>
+				<link url="#">All About Kauai's Hindu Monastery</link>
+				<link url="#">The Guru Chronicles</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/newsletter/">Latest Monthly Newsletter</link>
+			</links>
+			<cta>View all books</cta>
+		</collection>
+		<collection>
+			<title>Our Temples</title>
+			<thumbnail>/html/img/circles/iraivan-from-road-circle.png</thumbnail>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">San Marga Iraivan Temple</link>
+			</links>
+			<cta>Read more</cta>
+		</collection>
+		<collection>
+			<title>Monastic Life</title>
+			<thumbnail>/html/img/circles/devotee-rajam-circle.png</thumbnail>
+			<links>
+				<link url="#">Meet the Monks</link>
+				<link url="#">Our Guru</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/newsletter/">Our Vows</link>
+			</links>
+			<cta type="link" url="/monastery/monks/how-to">How to become a monk</cta>
+		</collection>
+			
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>Even More Popular Resources</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+	</module>
+</data>

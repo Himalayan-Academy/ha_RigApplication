@@ -1,0 +1,69 @@
+Notes from this news letter:
+
+align="left" needs to be removed from all image tags
+
+check image margins and see if  class="float-left" is missing (text will be right against the photo)
+
+HHE needs heading
+
+MC image needs heading
+
+Spell check
+
+Super small images need to be re-done if InDesign exports miniscule sized images.
+
+Watch out for Double Horizontal Rules  <hr /><hr />
+
+
+
+
+SNIPPETS FOR RE_USE
+
+# goes above the MC ad image:
+    <h2> Study the Master Course</h2><br />
+    
+# Put this below the Title of the HHE section
+
+<p><b>Managing your financial estate. <br />Guidance from Hindu Heritage Endowment</b></p>
+    
+    EMAIL PRODUCTION NOTES:
+    
+WORK FLOW:
+
+1. Check Existing Newsletter, fix all issues; spell check; run tidy. 
+2. copy body to the 
+
+http://dev.himalayanacademy.com/html/monastery/newsletter/email/simple-page-template.html
+
+3. Remove:
+   i) Gurudeva' wisdom 
+   ii) donor table
+  iii) MC ad
+  iv) extended travels
+3. pick images you want to show in the mail version.
+4. adjust caption accordingly
+5. truncate news section and and the target link for reading more.
+6.  truncate news section and and the target link for reading more.
+7. truncate hhe section and and the target link for reading more.
+8. change all URLs to absolute.
+9. Upload and test.
+
+
+LINK TO NEWSLETTER
+
+    <p><a href="http://www.himalayanacademy.com/monastery/newsletter/">[Click to see the full newsletter on the web]</a></p>
+    
+NAME TARGETS:
+
+# these are used in the newsletter and then the link is used in the email for truncated sections which jump to that section on line.
+
+
+  <a name="news-section" id="news-section">&nbsp;</a> <!--<p><a href="http://www.himalayanacademy.com/monastery/newsletter/#news-section">[Click to read the full recent news report]</a></p> -->
+    
+      <a name="hhe-news" id="hhe-news">&nbsp;</a> <!--<a href="http://www.himalayanacademy.com/monastery/newsletter/#hhe-news">[more]</a>-->
+      
+      
+    
+    
+    
+

@@ -1,0 +1,21 @@
+<h1 class="h1">
+	Take a Walk in Cyberspace Through <br />
+  Our Beautiful Monastery and Temple Grounds. 
+</h1>
+<p> Kauai's Hindu Monastery is the home of monks dedicating their life to the spiritual path. The Monastery grounds span over 51 acres, landscaped for a sublime journey. Virtually tour the monastery and these uplifting grounds and plan your visit soon. </p>
+
+<!-- <h3>Take a look around our monastery</h3> --> 
+ <?
+      put getRecord("2014-10-04_about-monastery") into pRecordA
+      put "726" into pRecordA["width"]
+      put "448" into pRecordA["height"]
+      return emitGalleria(,pRecordA)   
+     ?>
+          <br /><br /> <br /><br />
+    <!--  <h3>Our two temples</h3> -->
+ <?
+      #put getRecord("2012-11-25_kadavul-iraivan-combo") into pRecordA
+      #put "726" into pRecordA["width"]
+      #put "448" into pRecordA["height"]
+      #return emitGalleria(,pRecordA)   
+     ?>

@@ -1,0 +1,89 @@
+<?lc
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "adminhome,report,getTimeReport,tracker,docs,index,site,report" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# NEXT: INITIALIZE LIBRARIES, INSERT GDATA, CALL HELPERS ETC IN A CONTROLLER HANDLER
+# DEDICATED TO THIS JOB AND THEN AND CALL IT AT THE END OF THE FILE
+# THIS HANDLER IS NOT RELATED IN ANYWAY TO URI ROUTING.
+
+command site
+  rigLogMessage "Requested:", rigUriString()
+	# SAVE PAGE IN CACHE DIRECTORY WITH AN EXPIRATION TIME OF n MINUTES
+	# NOTE: THIS IS NOT MANDATORY, DON'T USE CACHING WHILE WORKING ON THE CODE,
+	# OTHERWISE YOU WON'T SEE YOUR CHANGES IMMEDIATELY
+	# rigOutputCache 3	
+	# gData variableS that are inserted by helpers or custom libraries 
+	# can only be use *after* the helper  has been initialized.
+	rigLoaderLoadLibrary "Email"
+	rigLoaderLoadLibrary "Table"
+	put rigJsAsset("jquery-1.4.3.min.js",,TRUE) into gData["loadJQuery"]
+	put rigCssAsset("admin.css",,"admin",TRUE) into gData["adminCSS"]
+	
+	put rigImageAsset("ha-admin-title.png",,"admin",TRUE) into gData["adminTitle"]
+     put rigImageAsset("ha-admin-title.png") into gData["adminTitle2"]
+     put rigImageAsset("hawaiian-islands.jpg",,"admin",true) into gData["islandChain"]
+     put rigImageAsset("Iraivan_dsc8361-112px.gif","admin",true) into gData["iraivan-112px"]
+     
+end site
+
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFYED IN THE URI
+command index
+  rigLogMessage "Got to here:", "Index called"
+
+	# SET PAGE TITLE
+	put "Himalayan Academy Web Site Administration" into gData["pageTitle"]
+    
+    # You may also call your assets here if they are unique to this handler and any view it may call
+    # If you need them globally insert them in the runTimeConfig handler
+     put rigImageAsset("Iraivan_dsc8361-112px.gif",,"admin",TRUE) into gData["banner"]
+     
+     # test variable option as we will need this later:
+     
+     put "Iraivan_dsc8361-112px.gif" into tNextImage
+     put rigImageAsset(tNextImage,,"admin",TRUE) into gData["rotate"]
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("home-admin")
+end index
+
+function seconds_to_hours pT
+	repeat for each line l in pT
+		put word 1 of l & tab & ((word 2 of l / 60)/60) & cr after tR
+	end repeat
+	return tR
+end seconds_to_hours
+
+command tracker
+	# SET PAGE TITLE
+	
+	  rigLogMessage "debug:", "Tracker Called"
+	  
+	put "Himalayan Academy Web Site Administration" into gData["pageTitle"]
+    
+     # LOAD VIEWS
+     -- put rigLoadView("tracker/kauai-agenda", TRUE) into  gData["kauaiAgenda"]-- # not in use unless traveling here.
+  put   rigLoadView("tracker/roadmap", TRUE) into  gData["roadMap"] 
+  put   rigLoadView("tracker/pk-jobs", TRUE) into  gData["pkJobs"]
+  put   rigLoadView("tracker/task-list", TRUE) into  gData["taskTable"]	
+	#report
+	rigLoadModel "get-andres-time"; getTimeReport	
+	put rigLoadView("tracker/time-log", TRUE)into  gData["timeLog"]	
+	get rigLoadView("tracker/time-tracker")
+end tracker
+
+command docs
+  get rigLoadView("docs/conventions")
+end docs
+
+--| END OF home.irev
+--| Location: ./system/application/admin/controllers/home.irev
+----------------------------------------------------------------------

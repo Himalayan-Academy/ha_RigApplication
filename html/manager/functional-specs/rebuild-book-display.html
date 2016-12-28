@@ -1,0 +1,73 @@
+<h2> Draft design of the algorithm for displaying pages of our books inside our wrapper -- two column view template like all other html pages. </h2>
+
+<h1>Background</h1>
+
+<h2>Challenge</h2> 
+<ul>
+<li>Our book content is comprised of xhtml files inside the inflated epub.</li>
+<li>The CSS for the proper display of these pages is in a file relative to the xhtml files.</li>
+<li>To display the books properly our current method (as of Nov 20, 2014) is to call the page as an absolute URL call to the file from inside the media folder and present this  inside an iFrame that is inserted into our top level wrapper use the Two Column view template we use for all the simple HTML pages which also have a sidebar</li>
+<li>This works because the iframe auto-encapsulates the CSS of the book page thereby styling and display of the book data and there is no conflict between that CSS and the CSS for the main site page wrapper.</li>
+<li><b>Problem:</b> Google finds the URL inside the iFrame, indexes the book page and then caches these. So Google index has 1000's of our book pages but they are all standalone pages with no site wrapper.</li>
+<li><b>Goal:</b>we have two choices, the first of which may look good on paper but may not work at all:
+<ol>
+<li> we redirect the path to the inner pages. But then this may mean the iFrame will also be redirected. Because the iFrame itself is requesting the exact same URL. So inside the iFrame, we would see the page as we re-constructed it within the two column template. I don't see anyway around this.</li>
+<li> We find a way to display the book by call our site "styles.css" followed by styles.css for the book, and then the book content is simply embedded in the pages as it's own div and not an iFrame. CONS: we may lose some book styles if the site CSS trumps the book css. But in tests we don't see a big issue for end users. Things look quite good.</li>
+</ol>
+</ul>
+
+<h2>Current Architecture (2014-11-20)</h2>
+<br />
+<h3>Book Directory Layout ( A typical book - burn this into your brain:)</h3>
+<p>You need to have a good image of the paths to the book pages of the inflated ePub. Memorize these paths: <br /><br />/media/books/[file_id e.g. "the-guru-chronicles"]/web<br />
+ &nbsp;  &nbsp; /9781934145241.opf # xml file with the all important "spine" node  -- which contains all pages in the book in their proper display order, we use this to "pick" the page to show, and link to previous and next pages in the order of the spine<br />
+&nbsp;  &nbsp; /toc.ncx # xml file table of contents (nav points/pages for entry into the corpus of files, typically chapter or section starts in the ePub)<br />
+&nbsp;  &nbsp; /styles/stylesheet.css # css unique to this book and it's pages)<br />
+&nbsp;  &nbsp; /xhtml/[*].html # files/pages of the book)
+ </p>
+ 
+ <p>Thus a direct url to a page in the book looks like this, try it:<br />
+ 
+ <a href="http://dev.himalayanacademy.com/media/books/merging-with-siva/web/ops/xhtml/part_2ch_34a.html">http://dev.himalayanacademy.com/media/books/merging-with-siva/web/ops/xhtml/part_2ch_34a.html</a>
+ </p>
+ 
+ <p> These pages are displayed in an iFrame on our site. Therein lies the problem:  Google is indexing them; the pages are outside our wrapper and people are going to these pages and are isolated/cut off from our site as each page is a standalone "island" with no context</p>
+
+<h3>Page Assembly Engine CMS </h3>
+<p><b>NOTE:</b> paths cited here are relative to the "/system/application/ha/" folder</p>
+<ul>
+<li>config/routes.lc has these two entries
+<ul>
+	<li>put "cloudreader/simplereader/$1" into gRoute[25]["book/(:any)"]</li>
+	<li>put "cloudreader/simplereader/$1/$2" into gRoute[26]["book/(:any)/(:any)"] </li>
+</ul>
+</li>
+<li> see: "/controllers/cloudreader.lc" and "/libraries/epub.lc" where cloudreader.lc calls an epub.lc function to pick the table of contents ordinal number from the side bar, translate this to the spine. See: <br /> <br />
+(in /libraries/epub.lc) function ePubSpineItemAsIFRAME pFileID, pItem  <br /> <br />
+..and related functions. This is Andre's White Knight Ninja magic that parses the toc.ncx, generating the side bar where the links for each item, match the node ID's for the page ID in the spine of the .opf file  and assigns an ordinal number which a match for that line in the spine, if the URL has no ordinal segment at the end, the epub.lc function defaults to "1" which is the files line of the spine: ergo the very beginning of the book (usually the cover) [Andre: we could use more inline comments in those files. I don't think it helps to detail the functions outside the scripts themselves] e.g <br />
+<br />
+<a href="http://dev.himalayanacademy.com/book/dancing-with-siva/10">http://dev.himalayanacademy.com/book/dancing-with-Siva/10</a><br />
+The numeral 10 looks for the 10th item in the spine node -- which in this case is: <br />
+<xmp><itemref idref="fm_09"/></xmp> "fm_09" is the manifest node ID for the xhtml file:
+<br />
+<xmp><item id="fm_09" href="xhtml/fm_09.html" media-type="application/xhtml+xml"/></xmp>
+
+After that it is a simple matter to prepend the full path to the file from docroot, because <br />
+"/media/books/dancing-with-siva/web/ops/"  is a known, unchanging convention for the location of these files, where segment 3 of the path is the file_id of the book.
+
+<h2>Algorithm for a new display framework</h2>
+
+<ol>
+<li>Current architecture can be used up to the point where we generate the string to pass to the iFrame</li>
+<li>For testing, copy the epub.lc  function (ePubSpineItemAsIFRAME pFileID, pItem) rename it to ePubSpinItemAsDATA</li>
+<li>Instead of just passing the path  to a var for the iFrame, use the path to read the xhtml file and pass the data  gData["tBookPage"]</li>
+<li>Construct the link for the CSS which is relative to page path</li>
+<li>Prepend the link to the CSS from the book on a line above the book page data</li>
+<li>copy the simple-reader.lc view and make a new view "single-book-page.lc"</li>
+<li>replace the iFrame and instead insert [[ gData["tBookPage"] ]]</li>
+<li>next and Previous buttons need to be inserted also at the end of the text</li>
+<li>Test and debug</li>
+<li>Once this is working we can work on the redirect of directly links because there will be no conflict with the above delivery system.</li>
+</ol>
+
+

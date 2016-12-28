@@ -1,0 +1,28 @@
+<h1> Redirect Framerwork Notes </h1>
+<p>By Brahmanathaswami: last update to this documentation: 2012-11-24</p>
+
+<h2> Components:</h2>
+
+<ul>
+<li>Entry in: /system/application/ha/config/routes.lc. which looks like this: </br>
+put "redirecterrorpage/aagRedirectIfFound" into gRoute[1]["404Override"]</li>
+<li>Controller: redirecterrorpage.lc</li>
+<li>Custom error page html: /view/sitewide/error-page.lc</li>
+<li>Redirects map: /html/info/redirectmap.xml</li>
+
+</ul>
+
+<h2>Method</h2>
+
+<ul>
+<li>The core libs RevIgniter.lc and the Router.lc will, when a 404 is encountered, pass control to the controller declared in the apps routes.lc </li>
+<li>In the controller: redirecterrorpage.lc,  Andre's handler checks the XML map for a match to the GET request URI, if it finds it then sends a redirect back to the requesting browser with a 302, permanently moved header and a link to the new URL. </li>
+<li>if there is no match in the XML for a redirect, then we default our current standard method for generating a two-column html page: i) getSetNavHead to load the navigation, ii) load the error-page.lc into the main content of the page and iii) call the 2 column-view template.</li>
+<li>We dynamically generate variables to show the link on the page and build an email URL to help the user email use. In the past we had no way to pass this info easily... now we do. Hopefully now when users do report to us, we will get the URL they were look for instead of "Oh gee I could not find a page..." and then I had to write back and ask them what page they were looking for.</li>
+</ul>
+
+<h2>TO DO</h2>
+<ul>
+<li>set up separate logs for images and pages not redirected</li>
+<li>build the complete redirects map!</li>
+<ul>

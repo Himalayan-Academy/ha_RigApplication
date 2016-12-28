@@ -1,0 +1,349 @@
+<html lang="en"><head>
+
+	<meta charset="utf-8">
+
+	<title>jQuery Accordion Menu</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;" /> 
+        <meta name="apple-mobile-web-app-capable" content="yes" /> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
+
+	<style type="text/css">
+
+/* by Kyle Hamilton, response to request for help on Experts Exchange */
+/* Reset */
+
+.accordion,
+.accordion ul,
+.accordion li,
+.accordion a,
+.accordion span {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.accordion li {
+	list-style: none;
+}
+
+/* Layout & Style */
+
+.accordion li > a {
+	display: block;
+	position: relative;
+	padding: 0 10px 0 40px;
+	height: 36px;
+	color: #666;
+	font: bold 14px/36px Arial, sans-serif;
+	text-decoration: none;
+	
+	border: 1px solid #ccc;
+	border-bottom: 0;
+}
+.accordion li:last-child > a{
+	border-bottom: 1px solid #ccc;
+}
+.accordion li:last-child ul{
+	border-bottom: 1px solid #ccc;
+}
+.accordion li li > a{
+	padding: 0 10px;
+}
+.accordion > li:hover > a,
+.accordion > li:target > a,
+.accordion > li > a.active {
+	color: #3e5706;
+	background: #eee;
+}
+.accordion > li > a.active {
+	border-bottom: 1px solid #ccc;
+	}
+
+.accordion li > a span {
+	display: block;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font: normal bold 12px/18px Arial, sans-serif;
+	
+}
+
+.accordion > li:hover > a span,
+.accordion > li:target > a span,
+.accordion > li > a.active span {
+	color: #fdfdfd;
+	background: #ccc;
+}
+
+/* Images */
+
+.accordion > li > a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 18px;
+	height: 18px;
+	margin: 8px;
+
+	background-repeat: no-repeat;
+	background-image: url(../images/arrUpDown.png);
+	background-position: 0px 0px;
+}
+.accordion > li > a.active:before{
+	background-position: -18px 0px;
+}
+
+/**/
+
+/* Sub Menu */
+
+.sub-menu li a {
+	color: #797979;
+	background: #fff;
+	border:0;
+	border-bottom: 1px dotted #c9c9c9;
+}
+.sub-menu li a.active{
+	border-bottom: 0;
+}
+
+.sub-menu li:hover a { background: #efefef; }
+
+.sub-menu li:last-child a { border: none; }
+
+.sub-menu li > a span {
+	color: #797979;
+	background: transparent;
+	border: 1px solid #c9c9c9;
+}
+
+.sub-menu em {
+	margin: 0 14px 0 5px;
+	color: #a6a6a6;
+	font-style: normal;
+	font-weight: normal;
+}
+.accordion li .description{
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	color: #999;
+	font: 12px/20px arial;
+}
+/* Functionality */
+
+.accordion li > .sub-menu {
+	display: none;
+}
+
+.accordion li:target > .sub-menu {
+	display: block;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.wrapper, .accordion{
+   width:100%;
+   margin:0 auto;
+   max-width:780px;
+}
+            
+        </style>
+</head>
+<body>
+	<div class="wrapper">
+	<ul class="accordion">
+			<li>
+				<a href="#one">2014<span class="count"></span></a>
+
+				<ul class="sub-menu">
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a>
+						<ul class="sub-menu">
+							<li class="description">Some descriptiton to go here. Some descriptiton to go here, Some descriptiton to go here
+								Some descriptiton to go here. Some descriptiton to go here, Some descriptiton to go here
+								Some descriptiton to go here. Some descriptiton to go here, Some descriptiton to go here
+								Some descriptiton to go here. Some descriptiton to go here, Some descriptiton to go here
+							</li>
+						</ul>
+					</li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+				</ul>
+
+			</li>
+			
+			<li>
+
+				<a href="#two">2013<span class="count"></span></a>
+
+				<ul class="sub-menu">
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+				</ul>
+
+			</li>
+			
+			<li>
+
+				<a href="#three">2012<span class="count"></span></a>
+
+				<ul class="sub-menu">
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+				</ul>
+
+			</li>
+			
+			<li>
+
+				<a href="#four">2011<span class="count"></span></a>
+
+				<ul class="sub-menu">
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+				</ul>
+
+			</li>
+		
+		</ul>
+		<h3>new heading</h3>
+		<ul class="accordion">
+			<li>
+				<a href="#one">2014<span class="count"></span></a>
+
+				<ul class="sub-menu">
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+				</ul>
+
+			</li>
+			
+			<li>
+
+				<a href="#two">2013<span class="count"></span></a>
+
+				<ul class="sub-menu">
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+				</ul>
+
+			</li>
+			
+			<li>
+
+				<a href="#three">2012<span class="count"></span></a>
+
+				<ul class="sub-menu">
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+				</ul>
+
+			</li>
+			
+			<li>
+
+				<a href="#four">2011<span class="count"></span></a>
+
+				<ul class="sub-menu">
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+					<li><a href="#"><em>2014-01-18:</em> Chakras In Relation to the Gods; Length: 4 min;</a></li>
+				</ul>
+
+			</li>
+		
+		</ul>
+		</div>
+
+	
+
+	<script src="../../../assets/js/jquery.js"></script>
+	<script type="text/javascript">
+
+		$(function() {
+
+			// Store variables
+			
+			var accordion_head = $('.accordion > li > a'),
+				accordion_body = $('.accordion li > .sub-menu'),
+				acc_subhead =  $('.sub-menu > li > a'),
+				acc_subbody =  acc_subhead.find('sub-menu'),
+				count = $('.count');
+			// Optional: count the number of items in each sub-menu	
+			count.each(function(){
+				$(this).text($(this).parent().siblings('.sub-menu').children().length);
+			});
+			// Open the first tab on load
+			// accordion_head.first().addClass('active').next().slideDown('normal');
+
+			accordion_head.on('click', function(event) {
+
+				// Disable header links
+				
+				event.preventDefault();
+
+				// Show and hide the tabs on click
+
+				if ($(this).attr('class') != 'active'){
+					accordion_body.slideUp('normal');
+					$(this).next().stop(true,true).slideDown('normal');
+					accordion_head.removeClass('active');
+					acc_subhead.removeClass('active');
+					$(this).addClass('active');
+				}else{
+                    $(this).next('.sub-menu').slideUp('normal');
+                    $(this).removeClass('active');
+                    acc_subhead.removeClass('active');
+                }
+			});
+
+
+			acc_subhead.on('click', function(event) {
+
+				// Disable header links
+				
+				event.preventDefault();
+
+				// Show and hide the tabs on click
+
+				if ($(this).attr('class') != 'active'){
+					acc_subbody.slideUp('normal');
+					$(this).next().stop(true,true).slideDown('normal');
+					acc_subhead.removeClass('active');
+					$(this).addClass('active');
+				}else{
+                    $(this).next('.sub-menu').slideUp('normal');
+                    $(this).removeClass('active');
+                }
+			});
+
+
+
+
+
+		});
+
+	</script>
+
+</body>
+
+</html>

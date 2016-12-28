@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+<!--	  <media  type="latest" pick="1" search="media_type:video" width="629" height="384" style="float: left;" /> -->
+		<media width="629" height="384" file_id="introduction-to-the-monastery" style="float: left;"/>
+	  		<cta type="link" url="/site/search/media_type/video/description/monastery">View More Monastery Videos</cta>
+	</module> 
+	<module name="Promoted Collections Module">
+		<title class="books">About the monastery</title>
+		<collection>
+			<title>Introductory Media</title>
+			<thumbnail>/html/img/circles/bodhinatha-color_circle.png</thumbnail>
+			<links>
+				<link latest="pick:1,media_type:video,file_id:news-video">Latest Monthly News Video</link>
+				<link url="/view/all-about-kauai-hindu-monastery">All About Kauai's Hindu Monastery</link>
+                                <link url="/monastery/meet-the-monks">Meet the Monks</link>
+			</links>
+			<cta type="link" url="/monastery/newsletter">Current News</cta>
+		</collection>
+		<collection>
+			<title>Our Temples and Grounds</title>
+			<thumbnail>/html/img/circles/iraivan-from-road_circle.png</thumbnail>
+			<links>
+				<link url="/monastery/temples/kadavul">Kadavul Temple</link>
+				<link url="/monastery/temples/iraivan">San Marga Iraivan Temple</link>
+                                <link url="view/kauai-aadheenam-quad-copter-compilation">Monastery Flyover</link>
+			</links>
+			<cta  type="link" url="/monastery/temples/iraivan">Temple Progress</cta>
+		</collection>
+		<collection>
+			<title>Monastic Life</title>
+			<thumbnail>/html/img/circles/category_Monastery_circle.png</thumbnail>
+			<links>
+				<link url="/monastery/lineage-philosophy">Our Guru Lineage</link>
+				<link url="/view/holy-orders-of-sannyas">Our Vows</link>
+                                <link url="/view/the-guru-chronicles">The Guru Chronicles</link>
+			</links>
+			<cta type="link" url="/livespiritually/monastic-life/how-to"> How to become a monk</cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>The Monastery</title>
+		<slides>
+			<item>
+				<image>/html/monastery/img/square-slider/square_monastery_01.jpg</image>
+				<caption>Siva's crystal temple: Iraivan</caption>
+				<link>/monastery/temples/iraivan</link>
+			</item>
+			<item>
+				<image>/html/monastery/img/square-slider/square_monastery_02.jpg</image>
+				<caption>Nestled within Kauai's lush jungle landscape</caption>
+				<link>view/kauai-aadheenam-quad-copter-compilation</link>
+			</item>
+			 <item>
+				<image>/html/monastery/img/square-slider/square_monastery_03.jpg</image>
+				<caption>Kadavul Temple: home of Lord Nataraja</caption>
+				<link>/monastery/temples/kadavul</link>
+			</item>
+			<item>
+				<image>/html/monastery/img/square-slider/square_monastery_04.jpg</image>
+				<caption>Stewarding the World's largest crystal Lingam</caption>
+				<link>/view/book/the-guru-chronicles/44</link>
+			</item>
+			<item>
+				<image>/html/monastery/img/square-slider/square_monastery_05.jpg</image>
+				<caption>A place for sadhana, rigorous raja yoga and meditation</caption>
+				<link>/livespiritually/meditation</link>
+			</item>
+                         <item>
+				<image>/html/monastery/img/square-slider/square_monastery_07.jpg</image>
+				<caption>A fountainhead of Hindu teachings</caption>
+				<link>/readlearn</link>
+			</item>
+                         <item>
+				<image>/html/monastery/img/square-slider/square_monastery_06.jpg</image>
+				<caption>Where Heaven meets Earth</caption>
+				<link>/view/introduction-to-the-monastery</link>
+			</item>
+
+		</slides>
+		<cta type="link" file_id="2012-02-07_about-monastery">See a complete slideshow</cta>
+	</module> 
+	<module name="Links Module">
+		<collection>
+			<title>See More</title>
+			<links>
+                                <link url="readlearn/basics">Basics of Hinduism</link>
+				<link url="/view/holy-orders-of-sannyas">The Sannyasin's Path</link>
+				<link url="/monastery/lineage-philosophy/gurudeva">Our Gurudeva</link>
+				<link url="http://himalayanacademy.com/blog/taka/">Today at Kauai Aadheenam</link>
+				<link url="/monastery/temples/iraivan">San Marga Iraivan Temple</link>
+                                <link url="/visit/virtual-tour">Take a Virtual Tour</link>
+				<link url="/monastery/lineage-philosophy/bodhinatha">Our Satguru</link>
+				<link url="/visit/missions/mauritius/ssc-mauritius">Mauritius Spiritual Park</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="http://www.feedblitz.com/f/?Sub=&amp;Publisher=7522423&amp;portal=331383">Sign up for Monthly eNews</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="readlearn/books">Books and Publications</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/view/2014-midland-interfaith-event-video">2014 Interfaith Event</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/livespiritually/home-puja">Worship at Home</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>
+				<link url="/readlearn/other-languages">Translations</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+	</module>
+	
+	
+</data>

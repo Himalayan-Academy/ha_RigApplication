@@ -1,0 +1,10 @@
+Unfortunately, since version 1.6.24, there are a couple modifications
+and one addition related to the content of the application folder.
+
+Modifications:
+system/application/config/config.lc
+system/application/config/useragents.lc.
+system/application/config/mimes.lc
+
+Addition:
+system/application/modules/

@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<data> 
+	<module name="Featured Item Module">	
+	
+	<media  width="629" height="384" file_id="august-2012-news-video" style="float: left;"  />
+		
+		<comment>Latest Sun One Video won't work, we decided to use the monastery news instead-JY</comment>
+		
+		<cta type="link" url="/site/search/media_type/video">View All Videos</cta>
+	</module>	
+	<module name="Promoted Collections Module">
+	
+	<comment> These links require a function to dig the database and pick up all talks by Gurudeva or Bodhinatha (or any search criteria, sort by date entered/data stamp in descending order and then load the top three as three separate links.), in lieu of this automation we have hard coded the link to recent docs -JY
+	</comment>
+		<title>Video and Audio Resources</title>
+		<task>Andre: we need to get our podcast up and running and linked here </task>
+		<comment>: SN: podcast should go in here after we get them running ANDRE: HOW DO WE SPECIFY CLASS HERE?  --To get the right background icon</comment>
+		<collection>
+			<title>Gurudeva</title>
+			<thumbnail>/html/img/circles/gurudeva-hat-ocean-circle.png</thumbnail>		
+			<links>
+				<link url="/view/gr_1959-10-03_the-self-god">The Self God</link>
+				<link url="/view/gr_1998-08-19_the-eternal-now">The Eternal Now</link>
+				<link url="/view/gr_1999-12-20_siva-consciousness">Siva Consciousness</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/audio/author/subramuniyaswami">View all</cta>
+		</collection>
+		<collection>
+			<title>Bodhinatha</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>
+			<links>
+				<link url="/view/bd_2012-05-21_classical-definition-yoga">The Classical Definition of Yoga</link>
+				<link url="/view/bd_2012-07-27_monism-theism">Theism and Monism in Saiva Siddhanta</link>
+				<link url="/view/bd_2012-07-20_dealing-with-distraction">Dealing with Distraction</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/audio/author/Bodhinatha">View all</cta>
+		</collection>
+		<collection>
+			<title>Satguru Bodhinatha Veylanswami Reads His Quarterly Editorial</title>
+			<thumbnail>/html/img/circles/hinduism-today-circle.png</thumbnail>
+			<links>
+			<comment>JY- audio has yet to be extracted from pubdesks so for now we're using the videos</comment> 
+				<link url="/view/bd_publishers-desk_behold-the-sacred-lotus-flower">Behold the Sacred Lotus Flower</link>
+				<link url="/view/bd_publishers-desk_which-yoga-should-i-follow">Which Yoga Should I Follow? </link>
+				<link url="/view/bd_improving-our-character-publishers-desk">Improving Our Character </link>
+			</links>
+			<cta type="link" url="/site/search/media_type/video/title/desk/sort/time-descending"> View All of Bodhinatha's Publisher's Desk Editorial</cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+	
+	<comment>(SN note: I suggest that the algorithm be that it makes a random selection of six pieces out of the 30 pieces of art most recently added to the overall library of art on the site. If it is random each time, then it will be different each time for each user rather than staying the same all the time, which it would otherwise do because we will not be adding new art so often that it will change frequently otherwise.)</comment>
+	
+	<task>WE should do something and follow up later</task>
+	
+		<title>S. Rajam Art Gallery</title>
+		<slides>
+			<item>
+				<image>/media/art/painting/a6_rajam/a6_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Sage Agastya</caption>
+				<link>/view/a6_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/a3_rajam/a3_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Goddess Usha</caption>
+				<link>/view/a3_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/the-guru-chronicles_y-40_rajam/the-guru-chronicles_y-40_rajam_sml.jpg</image>
+				<caption>S. Rajam - The Guru Chronicles Collection: Iraivan Temple Creation</caption>
+				<link>/view/the-guru-chronicles_y-40_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/b47_rajam/b47_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Goddess Lakshmi</caption>
+				<link>/view/b47_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/b70_rajam/b70_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Mahabharata</caption>
+				<link>/view/b70_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/c37_rajam/c37_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Saiva Puranas</caption>
+				<link>/view/c37_rajam</link>
+			</item>
+		</slides>
+		<cta type="link" url="/site/search/media_type/art/artists/rajam">See More Rajam Art</cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>Popular Topics</title>
+			<links>
+				<link url="/site/search/media_type/inspiredtalk/title/merging/author/sivaya/">Gurudeva Reads Merging with Siva</link>
+				<link url="/site/search/media_type/shum/author/bodhinatha/">Talks on Shum??gurudeva talks suggested but none in Hapman</link>
+				<link url="/site/search/media_type/news">News Videos</link>
+				<link url="/site/search/media_type/ritual/">Festival Videos</link>
+				<link url="/site/search/media_type/video/description/Sivaya/">Gurudeva Videos??more specific?</link>
+				<link url="/site/search/media_type/travel/">Innersearch Videos</link>
+				<link url="/site/search/media_type/video/description/iraivan">Iraivan Temple Videos</link>
+				<link url="/site/search/media_type/video/">(Any other video category to expose?)</link>
+				<link url="/site/search/media_type/art/">Sacred Aums(Note: In the new system, it makes sense for this to just be a category of individual media artifacts that can be displayed as thumbnails in our Media Catalog template and then people can click to go to a Media Artifact page to see a larger version of a particular Aum and download it in whatever various formats we provide them in. I don't think we should preserve the old pages, though sub-categorization work may help. We may want to conceive of a way for a Media Catalog page to display a list of thumbnails that are distinct categories, clicking on which will open up a Media Catalog page of the items within that category.)</link>
+				<link url="/site/search/media_type/chant/title/ganesha-puja/">Home Puja Audio(Note: This plain page should introduce the home puja training and then include links to the PDF and audio files of the Ganesha puja. If it is just one audio file, then we don't need a media catalog page. If it is more than one, we may need to link to a Media Catalog page with search results or however we are going to do that.)</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="/site/search/media_type/">Gurudeva's Taka Q&amp;A</link>
+				<link url="/site/search/media_type/audio/author/bodhinatha/">Bodhinatha's Audio Talks</link>
+				<link url="/site/search/media_type/video/author/bodhinatha/">Bodhinatha's Video Talks</link>
+				<link url="/site/search/media_type/video/">Video Presentations</link>
+				<link url="/site/search/media_type/video/title/gurudeva/">Gurudeva's Video Talks</link>
+				<link url="/site/search/media_type/podcasts/">Podcasts(Note: This plain page should introduce each podcast and give access to links for people to subscribe in iTunes, plain RSS subscription links for another reader/subscriber app of their choice, and an interface to (at least) the latest episodes in the pocast)</link>
+				<link url="/site/search/media_type/art/artists/rajam/">Art by S. Rajam</link>
+				<link url="/site/search/media_type/art/artists/manivelu/">Art by Manivelu</link>
+				<link url="/site/search/media_type/slideshow/">Slideshows(How are these organized, or rather, how are these going to be organized? Do we need subcategories?)</link>
+				<link url="/site/search/media_type/song/genre/natchintanai/">Natchintanai Songs</link>
+				<link url="/site/search/media_type/song/genre/instrumental/">Instrumental Music</link>
+				<link url="/site/search/media_type/chants/">Chanting Resources</link>
+			</links>
+		</collection>
+	</module>
+</data>

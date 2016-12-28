@@ -1,0 +1,16 @@
+.nav-global .nav-parent > li > a {
+font-size: 14px;
+}
+
+.nav-global a {
+font-size: 12px;
+}
+
+.home .nav-global .nav-parent > li > a {
+	font-size: 16px;
+}
+
+.slideshow {
+height: 448px;
+overflow: hidden;
+}

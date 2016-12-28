@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+			<media  width="296" height="384" file_id="what-is-hinduism" style="float: left;"/>
+		<cta type="link" url="/site/search/media_type/book">View all our books</cta>
+		</module>
+	
+	<module name="Promoted Collections Module">
+		<title>The Core Beliefs</title>
+		<collection>
+			<title>??Monastery Schedule For Your Planning</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>
+			<links>
+				<link url="/va/satgurus/bodhinatha/bodhinatha-bio">About our guru</link>
+				<link url="#">??LINK?? Trilogy</link>
+				<link url="#">??Talks by Bodhinatha</link>
+				<link url="#">??Photos of Bodhinatha</link>
+			</links>
+			<cta></cta>
+		</collection>
+		<collection>
+			<title>Philosophy</title>
+			<thumbnail>/html/img/circles/gurudeva-hat-ocean-circle.png</thumbnail>
+			<links>
+				<link url="/va/satgurus/bodhinatha/gurudeva-bio">About Gurudeva</link>
+				<link url="#">??Talks by Gurudeva</link>
+				<link url="#">??Photos of Gurudeva</link>
+				<link url="#">??About Paramaguru Yogaswami</link>
+				<link url="#">??Our lineage in a nutshel</link>
+			</links>
+			<cta></cta>
+		</collection>
+		<collection>
+			<title>Culture and Ethics</title>
+			<thumbnail>/html/img/circles/devotee-rajam-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/about/philosophy">??Our philosophy in brief</link>
+				<link url="#">??The Final Conclusions for All Mankind</link>
+				<link url="/monastery/about/hinduism">??A Bird's Eye View of Hinduism</link>
+				<link url="#">??Dancing with Siva, Hinduism's Contemporary Catechism</link>
+			</links>
+			<cta>??How to become a monk</cta>
+		</collection>
+	</module>
+
+<module name="Square Slider Module">
+		<title>??DECISION NEEDED/WHAT TO HIGHLIGHT HERE</title>
+		<slides>
+			<item>
+				<image>/html/readlearn/basics/slider/hinduisms-nine-beliefs_hi_cover_med.jpg</image>
+				<caption>What are Nine Basic Hindu Beliefs?</caption>
+			</item>
+			<item>
+				<image></image>
+				<caption>Nine Simple Hindu Practices?</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/muruga-abhishekam_DSC_5058_sml.jpg</image>
+				<caption>Hindu Ethics: Our Code of Conduct</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>Five Precepts by which We Live</caption>
+			</item>
+			<item>
+				<image>/html/readlearn/basics/slider/4-denominationsCover.jpg</image>
+				<caption>Unity in Diversity - The Four Sects of Hinduism</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/dakshina-class_DSC_6377_sml.jpg</image>
+				<caption>Here are Answers to Common Questions about Hinduism</caption>
+			</item>
+		</slides>
+		<cta>??See more photos in our gallery</cta>
+	</module>
+
+
+	<module name="Links Module">
+		<collection>
+			<title>??Even More Popular Resources</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">??About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">??Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">??San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">??About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">??Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">??San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+	</module>
+</data>

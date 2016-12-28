@@ -1,0 +1,127 @@
+<h2>Andre's Current Account/Statement</h2>
+
+    <p> Below is a summary Andre's current hours due. Negative amount means Andre owes hours, positive means we gave yet to pay him for those hours. Minimela jobs are pay separately each month and should zero out. GKWeb and HHE are aggregated under payments and hours due; but separated in the log totals and the end of the task listling.</p>
+    
+        <?
+        # All logic is in the get-andres-time.lc model
+        
+    put "<h3> Current Account</h3><br />" into tBuf
+    put gData["currentAccount"] after tBuf
+    
+    # most recent payment for clarification
+        put "<br /><br />Most Recent Payment: $" & gData["mostRecentPayment"][1] & "<br />" after tBuf
+        put "On: " &gData["mostRecentPayment"][pDate] &"<br />" after tBuf
+        put "For: " &gData["mostRecentPayment"][pBudget]&"<br />"  after tBuf
+        put "Hours: " &gData["mostRecentPayment"][pHours]&"<br />"  after tBuf
+        put "Rate: $" &gData["mostRecentPayment"][pRate]&"<br />"  after tBuf
+        put "Comment: " &gData["mostRecentPayment"][pComment] & "<br /><br />"  after tBuf
+
+    return tBuf
+    
+    ?>
+    
+ <hr />   
+    <h2>Current Year</h2>
+    <div id="time-log">
+    <table>
+      <thead>
+        <tr>
+          <td>
+            Date
+          </td>
+          <td>
+            Project Title
+          </td>
+          <td>
+            Task Title
+          </td>
+          <td>
+            Notes
+          </td>
+          <td>
+            Budget
+          </td>
+          <td>
+            Amount of time
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+         <?
+         put empty into tBuf
+         put gData["allTasksReport"] into tList
+          repeat for each line tEntry in tList
+             set the itemdel to tab
+put "<tr><td class='border'>"& (item 1 of tEntry) &"</td><td class='border'>"& (item 2 of tEntry) &"</td><td class='border'>"&( item 3 of  tEntry) &"</td><td class='description border'>" &  (item 4 of  tEntry) &"</td><td class='border'>"& (item 5 of  tEntry) &"</td><td class='aRight border'>"& (item 6 of  tEntry) &"</td></tr>" after tBuf
+          end repeat
+      
+          return tBuf
+          ?>
+        </tbody>
+      <tfoot>
+        <?
+        put empty into tBuf
+        repeat for each key tBudget in gData["hoursDue"]["totals"]
+          put gData["hoursDue"]["totals"][tBudget] into tTotal
+          put tTotal div 60 into tHours
+          put tTotal mod 60 into tMinutes    
+          if the len of tMinutes is 1 then put 0 before tMinutes
+          put "<tr><td/><td/><td/><td/><td class='aRight lightgrey'>"&tBudget&"</td><td class='aRight lightgrey'>"&tHours &":"&tMinutes&"</td></tr>" after tBuf
+        end repeat
+        return tBuf
+        ?>
+    </table>
+ 
+        
+    <h2>All time</h2>
+       <table>
+         <thead>
+           <tr>
+             <td>
+               Date
+             </td>
+             <td>
+               Project Title
+             </td>
+             <td>
+               Task Title
+             </td>
+             <td>
+               Notes
+             </td>
+             <td>
+               Budget
+             </td>
+             <td>
+               Time
+             </td>
+              <td>
+               Due
+             </td>
+           </tr>
+         </thead>
+         <tbody>
+            <?
+            put empty into tBuf
+             repeat for each key tE in gData["allHoursDue"]["entries"]
+               put gData["allHoursDue"]["entries"][tE] into tR    
+               put "<tr><td class='border'>"&tR["start_time"]&"</td><td class='border'>"&tR["project"]&"</td><td class='border'>"&tR["task"]&"</td><td class='description border'>"&tR["description"]&"</td><td class='border'>"&tR["budget"]&"</td><td class='aRight border'>"&tR["elapsed"]&"</td><td class='aRight border'>"&tR["amount_due"]&"</td></tr>" after tBuf
+             end repeat
+             return tBuf
+             ?>
+           </tbody>
+         <tfoot>
+           <?
+           put empty into tBuf
+           repeat for each key tBudget in gData["allHoursDue"]["totals"]
+             put gData["allHoursDue"]["totals"][tBudget] into tTotal 
+             put tTotal div 60 into tHours
+             put tTotal mod 60 into tMinutes   
+             if the len of tMinutes is 1 then put 0 before tMinutes
+             put "<tr><td/><td/><td/><td/><td class='aRight lightgrey'>"&tBudget&"</td><td class='aRight lightgrey'>"&tHours&":"&tMinutes&"</td></tr>" after tBuf
+           end repeat
+           return tBuf
+           ?>
+       </table>
+          </div> 
+

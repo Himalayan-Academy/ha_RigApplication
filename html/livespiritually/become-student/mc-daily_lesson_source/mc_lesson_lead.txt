@@ -1,0 +1,4 @@
+<p>Are you on a different lesson? Enter the number, click "Get My Lesson": <form action="/livespiritually/become-student/todays-lesson" method="POST">
+<input name="lesson" id="lesson" type="text" size="5" maxlength="3">&nbsp;&nbsp;&nbsp;
+<button type="submit" id="Submit" value="Submit" width="20 height="10">Get My Lesson</button></form></p>
+<p> <a href="http://www.himalayanacademy.com/apps/gurudeva">Get the Gurudeva.app</a> </p>

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<data>
+
+	<module name="Featured Item Module">
+		<media width="629" height="384" file_id="find-the-self-gurudeva-speaks"  style="float: left;" />
+		<cta type="link" url="/site/search/media_type/video">View All Videos</cta>
+	</module> 
+		
+	<module name="Promoted Collections Module">
+	<comment> BR: we need this following "title" to pass a style to call the correct icon, once we get what we need...</comment>
+		<title>Featured Resources</title>
+		<collection>
+			<title>Study the Master Course</title>
+			<thumbnail>/html/img/circles/books-circle.png</thumbnail>
+			<links>
+				<link url="/livespiritually/become-student/mc-options">Three Ways to Study</link>
+				<link url="/livespiritually/global-fellowship/spiritual-path">Our Spiritual Path</link>
+				<link url="http://www.minimela.com/index.php?main_page=product_info&cPath=69_70&products_id=522">Buy the books</link>
+			</links>
+			<cta type="link" url="http://www.minimela.com/index.php?main_page=product_info&cPath=69_70&products_id=579">Sign up for the supervised study</cta>
+		</collection>
+		<collection>
+			<title>Hinduism's Code of Conduct</title>
+				<task>SN: Need circle here</task>
+			<thumbnail>/html/img/circles/dharmic-action.png</thumbnail>
+			<links>
+				<link url="/view/yogas-forgotten-foundation">Yoga's Forgotten Foundation</link>
+				<link url="/site/search/tags/ethics/coverage/children">Children's books on good conduct</link>
+				<link url="/view/parenting-with-love">Parenting with Love</link>
+			</links>
+			<comment>Proposed CTA: "Download an eBook": what ebook? we don't know what platform the user is on. All we can do is link a book.</comment>
+			<cta type="link" url="/view/twelve-monthly-meditations">Perform These Monthly Meditations</cta>
+		</collection>
+		<collection>
+			<title>Meditation</title>
+			<thumbnail>/html/img/circles/devotee-rajam-circle.png</thumbnail>
+			<links>
+			<task>find audio of Preparation for Meditation and process and upload to web</task>
+				<link url="#">LINK??A Simple Preparation for Meditation</link>
+				<link url="/site/search/media_type/audio/author/subramuniyaswami/description/meditation">Gurudeva Talks about Meditation</link>
+				<link url="/site/search/media_type/audio/author/veylanswami/description/sadhana">Bodhinatha talks about spiritual practice</link>
+			</links>
+			<cta>Perform a color meditation</cta>
+		</collection>
+	</module>
+	
+	<module name="Square Slider Module">
+		<title>Finding the Self Within</title>
+		<slides>
+			 <item>
+<image>/html/livespiritually/img/index-square-slider/TENQ-03-Karma.jpg</image>
+<caption>Learn about Hindu culture</caption>
+<link>/site/search/media_type/book/tags/culture</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/img/index-square-slider/56678638.jpg</image>
+<caption>Hindu Worship and Devotion</caption>
+<link>/site/search/media_type/book/description/god</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/img/index-square-slider/50-Vishesha_Diksha_Homa_DSC_6513.jpg</image>
+<caption>The Role of the Guru</caption>
+<link>/monastery/about/lineage</link>
+<comment>This link is temporary. It may be a good idea to have a little info (perhaps on the basics page) about the need for a guru</comment>
+</item>
+ 
+ <item>
+<image>/html/livespiritually/img/index-square-slider/13-Hatha.jpg</image>
+<caption>Simple Hatha Yoga</caption>
+<link>/view/hatha-yoga</link>
+</item>
+
+<item>
+<image>/html/livespiritually/img/index-square-slider/MWS-23-Yoga-of-Incantation.jpg</image>
+<caption>Foundations for Contemplation and Meditation</caption>
+<link>/view/yogas-forgotten-foundation</link>
+</item>
+
+ <item>
+<image>/html/livespiritually/img/index-square-slider/DSC_3963.jpg</image>
+<caption>Realize God through Practical Meditative Practice</caption>
+<link>/site/search/media_type/book/tags/metaphysics</link>
+
+</item>
+
+		</slides>
+		<comment>proposed: link to a gallery of more meditation photos or slideshow of such photos: BR: no such content</comment>
+		<cta></cta>
+	</module>
+	
+	<module name="Links Module">
+		<collection>
+			<title>Other Popular Collections</title>
+			<links>
+				<link url="#">Master Course worksheets</link>
+				<link url="#">Innersearch Slideshows</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="#">Saiva Dharma Shastras</link>
+				<link url="#">Twelve Shum Meditations</link>
+				<link url="#">Ganesha puja audio</link>
+				<link url="#">The Two Paths</link>
+				<link url="#">Holy Orders of Sannyas</link>
+				<link url="#">Meet the Monks</link>
+				<link url="#">Song of the Sannyasin</link>
+				<link url="#">108 Names of the Deities</link>
+				<link url="#">Self &amp; Samadhi</link>
+				<link url="#">NOTE: (Revise these lists after finishing second level pages in this area of the site, when we will know what exactly is on those pages that we can lift up here.)</link>
+			</links>
+		</collection>
+	</module>
+</data>

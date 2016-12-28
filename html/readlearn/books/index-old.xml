@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<media width="630" height="440" file_id="the-guru-chronicles" style="float: left;" />
+		<cta type="link" url="/site/search/media_type/book">View all Books</cta>
+	</module>    
+	
+	<module name="Promoted Collections Module">
+		<title class="books">Books and Publications</title>
+		<collection>
+			<title>Books by Gurudeva</title>
+			<thumbnail>/html/img/circles/category_Gurudeva_circle.png</thumbnail>
+			<links>
+				<link url="/site/search/media_type/book/tags/trilogy">The Master Course Trilogy</link>
+				<link url="/view/loving-ganesha">Loving Ganesha</link>
+				<link url="/view/how-to-become-a-hindu">How to Become a Hindu</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/book/author/sivaya">View All</cta>
+		</collection>
+		<collection>
+			<title>More Books</title>
+			<thumbnail>/html/img/circles/category_Master-Course_circle.png</thumbnail>
+			<links>
+				<link url="/view/weavers-wisdom">Weaver's Wisdom</link>
+				<link url="/site/search/media_type/book/tags/agama">Saiva Agamas</link>
+				<link url="/view/the-guru-chronicles">The Guru Chronicles</link>
+				<link url="/view/lemurian-scrolls">Lemurian Scrolls</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/book">View All</cta>
+		</collection>
+		<collection>
+			<title>Other Publications</title>
+			<thumbnail>/html/img/circles/category_Publications_circle.png</thumbnail>
+			<links>
+			<link url="http://www.hinduismtoday.com/modules/smartsection/category.php?categoryid=407">The Publisher's Desk</link>
+				<link url="/readlearn/basics/fourteen-questions">Fourteen Questions About Hinduism</link>
+				<link url="/site/search/media_type/book/title/history">Hindu History Lessons</link>				
+				<link url="http://www.feedblitz.com/f/?Sub=&Publisher=7522423&portal=331383">Sacred Verses and News by Email</link>	
+
+			</links>
+			<cta></cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>Books and Collections</title>
+		<slides>
+			<item>
+				<image>/html/readlearn/books/slider/30-Lotus-white.jpg</image>
+				<caption>Hindu Metaphysics</caption>
+				<link>/view/merging-with-siva</link>
+			</item>
+			<item>
+				<image>/html/readlearn/books/slider/Screen-shot-2011-03-09-at-9.30.53-AM.jpg</image>
+				<caption>Books on Hindu Beliefs and Practice</caption>
+				<link>/site/search/media_type/book/tags/tradition</link>
+			</item>
+			<item>
+				<image>/html/readlearn/books/slider/Master-Course-Trilogy-books.jpg</image>
+				<caption>Study the Master Course</caption>
+				<link>/site/search/media_type/book/tags/trilogy</link>
+			</item>
+			<item>
+				<image>/html/readlearn/books/slider/binder-157-015.jpg</image>
+				<caption>Read Books by Gurudeva</caption>
+				<link>/site/search/media_type/book/author/subramuniyaswami</link>
+			</item>
+			<item>
+				<image>/html/readlearn/books/slider/gd-teaching-child.jpg</image>
+				<caption>Books for the Youth</caption>
+				<link>/site/search/media_type/book/tags/youth</link>
+			</item>
+			<item>
+				<image>/html/readlearn/books/slider/AGAMAS-Siva.jpg</image>
+				<caption>Sacred Scriptures in Various Languages</caption>
+				<link>/site/search/media_type/book/tags/agama</link>
+			</item>
+		</slides>
+		<cta type="link" url="/site/search/media_type/book">View all Books</cta>
+	</module>
+	
+	<module name="Tabbed Content Module">
+		<tab title="eBooks">
+			<item file_id="how to become"/>	
+			<search media_type="book"/>
+		</tab>
+		<tab title="Agamas">
+			<search media_type="book" tags="Agama" />
+		</tab>
+		<tab title="For Children">
+			<item file_id="ten-tales-about-self-control" />
+			<item file_id="ten-tales-about-religious-life" />
+			<item file_id="mystic-mouse" />
+			<item file_id="growing-up-hindu"/>
+			<search media_type="book" title="saivite hindu religion"/>
+			
+		</tab>
+		<tab title="For Teachers">
+			<search media_type="book" title="history"/>
+			<item file_id="loving-ganesha" />
+			<item file_id="yogas-forgotten-foundation" />
+			<search media_type="book" tags="youth"/>
+		</tab>
+		<tab title="Other Languages">
+			<search media_type="book" language="french"/>
+			<search media_type="book" language="spanish"/>
+			<search media_type="book" language="sanskrit"/>
+			<search media_type="book" language="tamil"/>
+		</tab>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>Other Popular Resources</title>
+			<links>
+				 <link url="/readlearn/panchangam">Our Hindu Calendar</link>
+			  	<link url="/view/lexicon">Hindu Lexicon</link> 
+				<link url="/view/dancing-with-siva">Dancing with Siva</link>
+				<link url="/view/living-with-siva">Living with Siva</link>
+				<link url="/view/merging-with-siva">Merging with Siva</link>
+				<link url="/view/hindu-basics">Hindu Basics</link>
+				<link url="/view/loving-ganesha">The Elephant-faced God</link>
+				<link url="/view/lemurian-scrolls">Lemurian Scrolls</link>
+				 <link url="/readlearn/shum">Shum, The Language of Meditation</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+		        <links>
+				<link url="/readlearn/books/epub-info">How to Install ebooks</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>				
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/readlearn/other-languages">In Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+	</module>
+
+	</data>

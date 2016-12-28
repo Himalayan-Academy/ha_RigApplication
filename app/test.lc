@@ -1,0 +1,38 @@
+#!/usr/local/livecode/livecode-community-server
+
+-- use a global variable to hold the connection ID so other scripts can use it
+
+global gConnectionID
+
+-- set up the connection parameters - edit these to suit your database
+
+put $DEVHAP_DB_HOST into tDatabaseAddress
+
+put "jnanam" into tDatabaseName
+
+put $DEVHAP_DB_USER into tDatabaseUser
+
+put $DEVHAP_DB_PASSWORD into tDatabasePassword
+
+-- connect to the database
+
+put revOpenDatabase("MySQL", tDatabaseAddress, tDatabaseName, tDatabaseUser, tDatabasePassword) into tResult
+
+-- check if it worked and display an error message if it didn't
+
+-- & set the connection ID global
+
+if tResult is a number then
+
+put tResult into gConnectionID
+
+put "Connected to the database." & cr & "Connection ID = " & gConnectionID
+
+else
+
+put empty into gConnectionID
+
+put "Unable to connect to the database:" & cr & tResult
+
+end if
+

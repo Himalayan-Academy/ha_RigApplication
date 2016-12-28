@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<data> 
+	<module name="Hero Images Module">	
+	<comment>
+	Hindu Hero should be 1041x430 
+	
+	</comment>
+
+	
+	<hero>
+			<image>/html/home/img/heros/hero_news-video/hero-news-video-january_2016.jpg</image>
+			<title>January News Video</title>
+			<subtitle>Monthly News</subtitle>
+			<cta icon="watch" url="/view/january-2016-news-video">watch the video</cta>
+       </hero>	
+	<hero>
+			<image>/html/home/img/heros/hero_insight/hero_insight_karma-yoga.jpg</image>
+			<title>Karma Yoga Insight</title>
+			<subtitle>Insights</subtitle>
+			<cta icon="read" url="/view/karma-yoga_ei">read the article</cta>
+	</hero>
+	<hero>
+			<image>/html/home/img/heros/hero_bd-pubdesk/hero_drawing-close-to-ganesha_publishers-desk.jpg</image>
+			<title>Drawing Close to Ganesha</title>
+			<subtitle>Publisher's Desk</subtitle>
+			<cta icon="watch" url="/view/drawing-close-to-lord-ganesha_publishers-desk">watch the video</cta>
+	</hero>
+	<hero>
+			<image>/html/home/img/heros/hero_teaching/hero-history-of-hindu-india_part-2.jpg</image>
+			<title>History of Hindu India 2</title>
+			<subtitle>Educational Video</subtitle>
+			<cta icon="view-slides" url="/view/history-of-hindu-india_part-2">watch the video</cta>
+	</hero>
+	<hero>
+			<image>/html/home/img/heros/hero_teaching/hero-history-of-hindu-india_part-3.jpg</image>
+			<title>History of Hindu India 3</title>
+			<subtitle>Educational Video</subtitle>
+			<cta icon="view-slides" url="/view/history-of-hindu-india_part-3">watch the video</cta>
+	</hero>
+	
+
+<hero>
+			<image>/html/home/img/heros/hero_book/hero_book_character-traits.jpg</image>
+			<title>Character Workbook</title>
+			<subtitle>Books</subtitle>
+			<cta icon="read" url="/view/character-building-workbook">Buy the Book</cta>
+	</hero> 
+
+         <hero>
+			<image>/html/home/img/heros/hero_book/hero_books_hindu-teens.jpg</image>
+			<title>Life Skills for Hindu Teens</title>
+			<subtitle>Books</subtitle>
+			<cta icon="read" url="/view/life-skills-for-hindu-teens">read the book</cta>
+	</hero>
+	<hero>
+			<image>/html/home/img/heros/hero_news-video/hero-intro-video.jpg</image>
+			<title>Introductory Video</title>
+			<subtitle>Documentary</subtitle>
+			<cta icon="watch" url="/view/introduction-to-the-monastery">watch the video</cta>
+	</hero>
+	
+	
+	<!-- commented heroes for future use, please leave here. RJ -->
+		<!-- <hero>
+			<image>/html/home/img/heros/hero_event/hero_2014-innersearch.jpg</image>
+			<title>Innersearch Mauritius</title>
+			<subtitle>Travel-Study</subtitle>
+			<cta icon="watch" url="/view/2014-innersearch-mauritius-complilation-video">watch the video</cta>
+		</hero>
+-->
+<!--
+		<hero>
+			<image>/html/home/img/heros/hero_art-photo/hero_art-rajam_sun-moon.jpg</image>
+			<title>S. Rajam</title>
+			<subtitle>Artwork</subtitle>
+			<cta icon="view-images" url="/site/search/media_type/art/file_id/rajam">view the collection</cta>
+		</hero>
+		-->
+		
+		<!-- begin pancha ganapati heroes -->
+<!-- 
+	<hero>
+			<image>/html/home/img/heros/hero_event/hero-pancha-ganapati_day1-yellow.jpg</image>
+			<title>Pancha Ganapati Day 1</title>
+			<subtitle>Festivals</subtitle>
+			<cta icon="read" url="/view/pancha-ganapati">learn more</cta>
+	</hero>
+	<hero>
+			<image>/html/home/img/heros/hero_event/hero-pancha-ganapati_day2-blue.jpg</image>
+			<title>Pancha Ganapati Day 2</title>
+			<subtitle>Festivals</subtitle>
+			<cta icon="read" url="/view/pancha-ganapati">learn more</cta>
+	</hero>
+	<hero>
+			<image>/html/home/img/heros/hero_event/hero-pancha-ganapati_day3-red.jpg</image>
+			<title>Pancha Ganapati Day 3</title>
+			<subtitle>Festivals</subtitle>
+			<cta icon="read" url="/view/pancha-ganapati">learn more</cta>
+	</hero>
+	<hero>
+			<image>/html/home/img/heros/hero_event/hero_pancha-ganapati-day4-green.jpg</image>
+			<title>Pancha Ganapati Day 4</title>
+			<subtitle>Festivals</subtitle>
+			<cta icon="read" url="/view/pancha-ganapati">learn more</cta>
+	</hero>
+	<hero>
+			<image>/html/home/img/heros/hero_event/hero-pancha-ganapati_day5-orange.jpg</image>
+			<title>Pancha Ganapati Day 5</title>
+			<subtitle>Festivals</subtitle>
+			<cta icon="read" url="/view/pancha-ganapati">learn more</cta>
+	</hero>
+ -->
+		
+	</module>
+	
+	
+	
+	
+        <module name="Sidebar Module">
+        <title>Our Publications</title>
+        
+        <item>
+            <image>/media/books/what-is-hinduism/what-is-hinduism_cover_thm.jpg</image>
+            <title>What Is Hinduism?</title>
+            <subtitle>Modern Adventures into a Profound Global Faith</subtitle>
+            <cta url="/view/what-is-hinduism">Read Online</cta>
+        </item>
+        <item>
+            <image>/media/books/growing-up-hindu/growing-up-hindu_cover_thm.jpg</image>
+            <title>Growing Up Hindu</title>
+            <subtitle>Modern Stories for Hindu Youth: Book One</subtitle>
+            <cta url="/view/growing-up-hindu">Read Online</cta>
+        </item>
+         <item>
+            <image>/media/books/merging-with-siva/merging-with-siva_cover_thm.jpg</image>
+            <title>Merging with Siva</title>
+            <subtitle>Hinduism's Contemporary Metaphysics</subtitle>
+            <cta url="/view/merging-with-siva">Read Online</cta>
+        </item>
+        <item>
+            <image>/media/books/the-guru-chronicles/the-guru-chronicles_cover_thm.jpg</image>
+            <title>Find All Publications</title>
+            <subtitle>Decades of Hindu Literature</subtitle>
+            <cta url="/readlearn/books">100+ Publications</cta>
+        </item>
+</module> 
+
+
+	<module name="Secondary Content Module">
+		<header>Our Guru Lineage</header>
+		<image>/assets/img/FPO/img-guru-home.jpg</image>
+		<title>Satguru Sivaya Subramuniyaswami</title>
+		<description>Once in a while on this Earth there arises a soul who, by living his tradition rightly and wholly, perfects his path and becomes a light to the world. Satguru Sivaya Subramuniyaswami (1927-2001) was such a being, a living example of awakening and wisdom, a leader recognized worldwide as one of Hinduism's foremost ministers. He hailed from the Nandinatha Sampradaya's Kailasa Parampara, a line of gurus dating back 2,200 years, and passed the continuity on to his successor, Satguru Bodhinatha Veylanswami, who now heads the monastery and all of its activities worldwide, including Saiva Siddhanta Church, Himalayan Academy Publications, Hinduism Today magazine and Hindu Heritage Endowment.</description>
+		<cta type="link" url="/monastery/lineage-philosophy">learn more</cta>
+	</module>
+</data>

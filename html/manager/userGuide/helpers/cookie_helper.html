@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Cookie Helper : revIgniter User Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="all" />
+		<meta name="author" content="Ralf Bitter" />
+		<meta name='description' content='revIgniter User Guide' />
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" media="screen" href="../css/bootstrap.min.css">
+
+		<script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="../js/nav-ck.js"></script>
+		
+		<!-- Touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon-57-precomposed.png">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		    <script src="../js/html5shiv.js"></script><a href="models.html" id="" title="models">models</a>
+		    <script src="../js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+<body>
+	<!-- START PAGE HEAD -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    			<a class="navbar-brand" href="#">revIgniter User Guide Version 1.6.6</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <form class="navbar-form navbar-right" role="search" method="get" action="http://www.google.com/search">
+ 		      <div class="form-group">
+ 				<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="revigniter.com/userGuide/" />
+ 		        <span id="searchLabel">Search User Guide</span> &nbsp; <input type="search" placeholder="Search ..." name="q" id="q" class="revignitorsearch" accesskey="s" autosave="bsn_srch" results="5" />
+ 				&nbsp;<input type="image" id="submitSearch" src="../images/searchGo.png" />
+ 		      </div>
+ 		 	 		</form>
+        </div><!--/.nav-collapse -->
+     </div>
+		 
+		 <!-- START BREADCRUMB -->		 
+		 <div id="breadcrumbContainer">
+			 <div class="container">
+			 		<ol class="breadcrumb">
+			 			<li><a href="http://revigniter.com/">revIgniter Home</a></li>
+			 		 	<li><a href="../index.html">User Guide Home</a></li>
+			 		 	<li class="active">Cookie Helper</li>
+						<li id="tocListItem" class="pull-right"><a href="../toc.html">Table of Contents Page</a></li>
+			 		 </ol>
+				</div>
+		</div>
+		<!-- END BREADCRUMB -->		
+		
+		<!-- START SLIDEBOX -->
+		<div class="slide-panel top">
+			<div class="container">
+				<div id="panelContent"><script type="text/javascript">create_menu('../');</script></div>
+			</div>
+			<div id="open-button" class="slide-button">Table of Contents</div>
+			<div id="close-button" class="slide-button">Close</div>
+		</div>
+		<!-- END SLIDEBOX -->
+	 
+  </div>
+<!-- END PAGE HEAD -->
+
+<br clear="all" />
+
+<!-- START CONTENT -->
+<div class="container">
+	
+<div id="content">
+
+
+<h1>Cookie Helper</h1>
+
+<p>The Cookie Helper file contains handlers that assist in working with cookies.</p>
+
+
+<h2>Loading this Helper</h2>
+
+<p>This helper is loaded using the following code:</p>
+<pre><code>rigLoadHelper "cookie"</code></pre>
+
+<p>The following handlers are available:</p>
+
+<h3>rigSetCookie</h3>
+
+<p>Sets a cookie containing the values you specify.  There are two ways to pass information to this function so that a cookie can be set:
+Array Method, and Discrete Parameters:</p>
+
+<h4>Array Method</h4>
+
+<p>Using this method, an associative array is passed to the first parameter:</p>
+
+<pre><code>put "The Cookie Name" into tCookie["name"]
+put "The Value" into tCookie["value"]
+put 86500 into tCookie["expire"]
+put ".some-domain.com" into tCookie["domain"]
+put "/" into tCookie["path"]
+put "myprefix" into tCookie["prefix"]
+put FALSE into tCookie["replace"] -- set to TRUE, if you want to overwrite the most recent cookie header
+put TRUE into tCookie["secure"]
+put FALSE into tCookie["httponly"]
+
+rigSetCookie tCookie
+</code></pre>
+
+<p><strong>Notes:</strong></p>
+
+<p>Only the <strong>name</strong> and <strong>value</strong> are required. To delete a cookie set it with the expiration blank.</p>
+
+<p>The <strong>expiration</strong> is set in <strong>seconds</strong>, which will be added to the current time.  Do not include the time, but rather only the
+number of seconds from <em>now</em> that you wish the cookie to be valid.  If the expiration is set to
+zero the cookie will only last as long as the browser is open.</p>
+<p>For site-wide cookies regardless of how your site is requested, add your URL to the <strong>domain</strong> starting with a period, like this:  .your-domain.com</p>
+<p>The <strong>path</strong> is usually not needed since the handler sets a root path.</p>
+<p>The <strong>prefix</strong> is only needed if you need to avoid name collisions with other identically named cookies for your server.</p>
+<p>Set the <strong>replace</strong> boolean to TRUE, if you want to overwrite the most recent cookie header</p>
+<p>The <strong>secure</strong> boolean is only needed if you want to make it a secure cookie by setting it to TRUE (Cookies will only be set if a secure HTTPS connection exists).</p>
+<p>Use the <strong>httponly</strong> boolean to unset the HttpOnly flag. This flag is set by default so that the cookie can't be read locally via JavaScript.</p>
+
+<h4>Discrete Parameters</h4>
+
+<p>If you prefer, you can set the cookie by passing data using individual parameters:</p>
+
+<pre><code>rigSetCookie tName, tValue, tExp, tDomain, tPath, tPrefix, tReplace, pSecure, pHttpOnly</code></pre>
+
+<p class="important"><strong>Note:</strong> Keep in mind that the current time used to calculate the expiration date is referenced either to your server's local time or GMT, based on the "time reference" setting in your config file.</p>
+
+<h3>rigGetCookie()</h3>
+
+<p>Lets you fetch a cookie.  The first parameter will contain the name of the cookie you are looking for (including any prefixes):</p>
+
+<pre><code>put rigGetCookie("someCookie") into tCookieData</code></pre>
+
+<p>The function returns FALSE (boolean) if the item you are attempting to retrieve does not exist.</p>
+
+<p>The second optional parameter lets you run the data through the XSS filter.  It's enabled by setting the second parameter to boolean TRUE;</p>
+
+<pre><code>put rigGetCookie("someCookie", TRUE) into tCookieData</code></pre>
+
+<h3>rigDeleteCookie</h3>
+
+<p>Lets you delete a cookie.  Unless you've set a custom path or other values, only the name of the cookie is needed:</p>
+
+<pre><code>rigDeleteCookie "name"</code></pre>
+
+<p>This handler is otherwise identical to <dfn>rigSetCookie</dfn>, except that it does not have the value and expiration parameters.  You can submit an array
+of values in the first parameter or you can set discrete parameters.</p>
+
+<pre><code>rigDeleteCookie tName, tDomain, tPath, tPrefix</code></pre>
+
+
+</div>
+<!-- END CONTENT -->
+
+</div> <!-- /container -->
+
+
+<div id="footer">
+	<div class="container">
+<p>
+Previous Topic:&nbsp;&nbsp;<a href="asset_helper.html">Asset Helper</a>
+<span class="separator"> :: </span>
+<a href="#top">Top of Page</a><span class="separator"> :: </span>
+<a href="../index.html">User Guide Home</a><span class="separator"> :: </span>
+Next Topic:&nbsp;&nbsp;<a href="date_helper.html">Date Helper</a></p>
+<p><a href="http://revigniter.com/">revIgniter</a><span class="separator"> :: </span>Copyright &#169; 2009 - 2013<span class="separator"> :: </span><a href="http://www.softwaregestaltung.de/">dimensionB Bitter u. Bitter GmbH</a></p>
+	</div>
+</div>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/highlight.pack.js"></script>
+ <script>
+  	hljs.tabReplace = '    ';
+  	hljs.initHighlightingOnLoad();
+ </script>
+
+<script src="../js/script-ck.js"></script>
+<script>$(function() { Slidebox.init(); });</script>
+
+
+</body>
+</html>

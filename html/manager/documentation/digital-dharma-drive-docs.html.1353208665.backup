@@ -1,0 +1,31 @@
+<h1> Digital Dharma Drive Documentation <h1>
+
+<h2>DDD Site CMS</h2>
+
+<ul>
+
+	<li>The entire digital dharma drive site lives independently of RevIgniter. </li>
+	<li>On disk see /home/(devhap/himalayan)/donate/ddd</li>
+	<li>Although independent of RevIgniter, we are using livecode Server.There is no PHP in this frame work which was designed by Brahmanathaswami from a template created by Satya years ago. he also used some of Andre's monetra code.  But he turned these all into .lc files</li>
+	<li>We use a PostGreSQL database "hap_users" with a single table "donations"  where every transaction creates a complete new record. We delimiter one year's donations from the next simply by setting the beginning date of reports to this year (cuts off previous years in reports and totals for the) OTOH we are accessing all the comments from the beginning for display</li>
+	<li>Form processing and other includes are all done locally in that folder, or from the CGI bin and we also use some includes from /opt/web/bin</li>
+	On disk see /home/himalayan/donate/ddd</li>
+		<li>A separate CSS file ddd.css exists inside the /assets/css folder. This should not be confused with the Happy Cog "styles.css" as they two are completely independent and ddd.css controls on the ddd site frame work pages.</li>
+
+</ul>
+
+<h2>Implementation in the new Design </h2>
+
+
+<ul><li>bannder width is 1041px same as hero images</li>
+
+	<li>We duplicated the page header in the  ha app views/sitewide folder. We have a copy: page-header-ddd.lc</li>
+	<li> in the Getsetheadnav.lc  which is one of ha app libraries, we just change the call to load the view from "sitewide/page-header" to "/sitewide/page-header-ddd" and viola the ddd page header is loaded globally; so you can switch this during dev and turn it off after finishing work.</li>
+	<li>The DDD banner, image and html are placed in a <div class=ddd-banner">, immediately after the <body> opening and *before* the "div page-container"</li>
+	<li>This puts this area of the DOM  above and completely independent of any Happy Cog CSS.</li>
+	<li>TBD: A separate CSS file ddd-banner.css (will be made) inside the /assets/css folder OR include a section in the styles.css file just for this div.</li>
+		<li>either way it will be wise to use class specific selectors so as not to conflict with the regular pages styles so please start all css rules with ".ddd-banner p"  like that and we should be OK. </li>
+		<li> We will port over some of those rules</li>
+
+</ul>
+

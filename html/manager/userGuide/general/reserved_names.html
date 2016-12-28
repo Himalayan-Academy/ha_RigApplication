@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Reserved Names : revIgniter User Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="all" />
+		<meta name="author" content="Ralf Bitter" />
+		<meta name='description' content='revIgniter User Guide' />
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" media="screen" href="../css/bootstrap.min.css">
+
+		<script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="../js/nav-ck.js"></script>
+		
+		<!-- Touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon-57-precomposed.png">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		    <script src="../js/html5shiv.js"></script><a href="models.html" id="" title="models">models</a>
+		    <script src="../js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+<body>
+	<!-- START PAGE HEAD -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    			<a class="navbar-brand" href="#">revIgniter User Guide Version 1.6.6</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <form class="navbar-form navbar-right" role="search" method="get" action="http://www.google.com/search">
+ 		      <div class="form-group">
+ 				<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="revigniter.com/userGuide/" />
+ 		        <span id="searchLabel">Search User Guide</span> &nbsp; <input type="search" placeholder="Search ..." name="q" id="q" class="revignitorsearch" accesskey="s" autosave="bsn_srch" results="5" />
+ 				&nbsp;<input type="image" id="submitSearch" src="../images/searchGo.png" />
+ 		      </div>
+ 		 	 		</form>
+        </div><!--/.nav-collapse -->
+     </div>
+		 
+		 <!-- START BREADCRUMB -->		 
+		 <div id="breadcrumbContainer">
+			 <div class="container">
+			 		<ol class="breadcrumb">
+			 			<li><a href="http://revigniter.com/">revIgniter Home</a></li>
+			 		 	<li><a href="../index.html">User Guide Home</a></li>
+			 		 	<li class="active">Reserved Names</li>
+						<li id="tocListItem" class="pull-right"><a href="../toc.html">Table of Contents Page</a></li>
+			 		 </ol>
+				</div>
+		</div>
+		<!-- END BREADCRUMB -->		
+		
+		<!-- START SLIDEBOX -->
+		<div class="slide-panel top">
+			<div class="container">
+				<div id="panelContent"><script type="text/javascript">create_menu('../');</script></div>
+			</div>
+			<div id="open-button" class="slide-button">Table of Contents</div>
+			<div id="close-button" class="slide-button">Close</div>
+		</div>
+		<!-- END SLIDEBOX -->
+	 
+  </div>
+<!-- END PAGE HEAD -->
+
+<br clear="all" />
+
+<!-- START CONTENT -->
+<div class="container">
+	
+<div id="content">
+	
+<h1>revIgniter Naming Convention</h1>
+
+<p>revIgniter follows a simple, easy to memorize, naming convention to reduce potential name conflicts to a minimum:</p>
+<p>All revIgniter functions and commands are prefixed either with <kbd>rig</kbd> or <kbd>_rig</kbd> for some private handlers, they look something like <kbd>rig</kbd>SampleFunction or <kbd>_rig</kbd>SampleFunction. Besides those listed below, global variables use <kbd>gRig</kbd> and constants <kbd>rig</kbd> as prefix. Furthermore <kbd>flash</kbd> is a reserved prefix. This means, with few exceptions (see below), you can choose arbitrary names for your functions, commands, globals and constants as long as you don't prefix them with <kbd>rig</kbd>, <kbd>_rig</kbd>, <kbd>gRig</kbd> or <kbd>flash</kbd>.</p>
+
+<p class="important">Note: revIgniter (as of version 1.3.15b) no longer supports former names (those without prefix). All users are asked to replace those names by prefixing them with <kbd>rig</kbd> before upgrading to version 1.3.15b or higher. So for example convert loadHelper to <kbd>rig</kbd>LoadHelper, fetchConfigItem() to <kbd>rig</kbd>FetchConfigItem() etc.</p>
+
+<p>&nbsp;</p>
+
+<h1>Reserved Names</h1>
+
+
+<p>Following is a list of reserved names that cannot be used.</p>
+
+
+
+<div class="row">
+		<div class="col-sm-4">
+
+<h3>Functions</h3>
+<ul>
+<li>fetchValidationConf</li>
+</ul>
+
+	</div>
+
+	<div class="col-sm-4">
+	
+<h3>Variables</h3>
+<ul>
+<li>g_ElapsedTime_</li>
+<li>gActiveRecord</li>
+<li>gApplicationFolder</li>
+<li>gAPPPATH</li>
+<li>gAutoload</li>
+<li>gBASEPATH</li>
+<li>gConfig</li>
+<li>gController</li>
+<li>gControllerHandlers</li>
+<li>gCOOKIE</li>
+<li>gData</li>
+<li>gDatabaseID</li>
+<li>gDocTypes</li>
+<li>gErrorData</li>
+<li>gEXT</li>
+<li>gFCPATH</li>
+<li>gHandler</li>
+<li>gHooks</li>
+<li>gLang</li>
+<li>gRoute</li>
+<li>gRSegments</li>
+<li>gSegments</li>
+<li>gSELF</li>
+<li>gSystemFolder</li>
+</ul>
+
+	</div>
+
+	<div class="col-sm-4">
+
+<h3>Constants</h3>
+<ul>
+<li>DIR_READ_MODE</li>
+<li>DIR_READ_UMASK</li>
+<li>DIR_WRITE_MODE</li>
+<li>DIR_WRITE_UMASK</li>
+<li>FILE_READ_MODE</li>
+<li>FILE_READ_UMASK</li>
+<li>FILE_WRITE_MODE</li>
+<li>FILE_WRITE_UMASK</li>
+<li>RIVERSION</li>
+<li>RISTATE</li>
+</ul>
+
+	</div>
+</div>
+
+
+
+
+</div>
+<!-- END CONTENT -->
+
+</div> <!-- /container -->
+
+
+<div id="footer">
+	<div class="container">
+<p>
+Previous Topic:&nbsp;&nbsp;<a href="controllers.html">Controllers</a>
+<span class="separator"> :: </span>
+<a href="#top">Top of Page</a><span class="separator"> :: </span>
+<a href="../index.html">User Guide Home</a><span class="separator"> :: </span>
+Next Topic:&nbsp;&nbsp;<a href="views.html">Views</a></p>
+<p><a href="http://revigniter.com/">revIgniter</a><span class="separator"> :: </span>Copyright &#169; 2009 - 2013<span class="separator"> :: </span><a href="http://www.softwaregestaltung.de/">dimensionB Bitter u. Bitter GmbH</a></p>
+	</div>
+</div>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/script-ck.js"></script>
+<script>$(function() { Slidebox.init(); });</script>
+
+
+</body>
+</html>

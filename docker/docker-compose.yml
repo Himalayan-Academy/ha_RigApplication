@@ -1,0 +1,32 @@
+version: '2'
+services:
+    web:
+        depends_on:
+            - db
+        build: devhap-server/.
+        image: devhap/server
+        ports:
+            - "8080:80"
+            - "8443:443"
+        volumes:
+            - ../app:/var/www/html/system
+            - ../html:/var/www/html/html
+        environment: 
+            DEVHAP_DB_HOST: database
+            DEVHAP_DB_USER: devhap
+            DEVHAP_DB_PASSWORD: mysecretpassword
+        links:
+            - "db:database"
+    db:
+        image: mysql
+        ports:
+            - "3307:3306"
+        volumes:
+            - ./devhap-db:/docker-entrypoint-initdb.d
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: mysecretpassword
+            MYSQL_DATABASE: jnanam
+            MYSQL_USER: devhap
+            MYSQL_PASSWORD: mysecretpassword
+

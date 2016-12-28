@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<cta type="link" url="/site/search/media_type/slideshow">
+			View All slideshows
+		</cta>
+		<media width="'auto'" height="384" file_id="visitors-main-page-slideshow" style="float: left;" /> 
+	</module>
+	<module name="Promoted Collections Module">
+		<title class="topics">
+			What Pilgrims and Visitors Need to Know
+		</title>
+		<collection>
+			<title>
+				Plan Well In Advance
+			</title>
+			<thumbnail>
+				/html/img/circles/category_Monastery_circle.png
+			</thumbnail>
+			<links>
+				<link url="/visit/plan-your-visit">
+					Guide for Public Visitors
+				</link>
+				<link url="/visit/come-on-a-pilgrimage">
+					Guide for Members of the Hindu Faith
+				</link>
+				<link url="/visit/directions">
+					Directions
+				</link>
+			</links>
+			<cta type="link" url="/visit/come-on-a-tour">
+				Weekly Tour Reservations
+			</cta>
+		</collection>
+		<collection>
+			<title>
+				Visitor Logistics
+			</title>
+			<thumbnail>
+				/html/img/circles/category_Kauai_circle.png
+			</thumbnail>
+			<links>
+				<link url="/visit/lodging">
+					Lodgings on Kauai
+				</link>
+				<link url="/visit/dining">
+					Vegetarian Dining on Kauai
+				</link>
+				<link url="/visit/cruise-passengers">
+					Cruise Ship Passenger Visitors
+				</link>
+				<link url="/visit/weddings">
+					Weddings
+				</link>
+			</links>
+			<cta type="link" url="/visit/dress-and-guidelines">
+				What to Wear?
+			</cta>
+		</collection>
+		<collection>
+			<title>
+				Programs at the Monastery
+			</title>
+			<thumbnail>
+				/html/img/circles/category_Pilgrimage_circle.png
+			</thumbnail>
+			<links>
+				<link url="/monastery/about/two-temples">
+					Worship in our temples
+				</link>
+				<link url="/visit/meet-us-when-we-travel">
+					Meet Bodhinatha (schedule)
+				</link>
+				<link url="/monastery/about/philosophy">
+					Learn Our Tradition and Philosophy
+				</link>
+			</links>
+			<cta type="link" url="/monastery/about/faq">
+				Frequently Asked Questions
+			</cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>
+			Kauai Island
+		</title>
+		<slides>
+			<item>
+				<image>
+					/html/visit/img/square-slider/slider_kauai-north-coast.jpg
+				</image>
+				<caption>
+					The most remote land mass on earth
+				</caption>
+				<link>
+					/view/aerial-slideshow
+				</link>
+			</item>
+			<item>
+				<image>
+					/html/visit/img/square-slider/01-BACK-Island-chain.jpg
+				</image>
+				<caption>
+					Visit the oldest of the Hawaiian Islands
+				</caption>
+				<link>
+					/visit/come-on-a-pilgrimage
+				</link>
+			</item>
+			<item>
+				<image>
+					/html/visit/img/square-slider/slider_kauai-iraivan-DSC_9815.jpg
+				</image>
+				<caption>
+					Home of Iraivan Temple
+				</caption>
+				<link>
+					/view/iraivan_2012-02-03_main-slide-show
+				</link>
+			</item>
+			<item>
+				<image>
+					/html/visit/img/square-slider/slider_kauai-sunset.jpg
+				</image>
+				<caption>
+					See Our Visiting Hours
+				</caption>
+				<link>
+					/visit/co me-on-a-pilgrimage
+				</link>
+			</item>
+			<item>
+				<image>
+					/html/visit/img/square-slider/slider_kauai-waterfall.jpg
+				</image>
+				<caption>
+					Some Important Guidelines
+				</caption>
+				<link>
+					/visit/come-on-a-pilgrimage
+				</link>
+			</item>
+			<item>
+				<image>
+					/html/visit/img/square-slider/slider_kauai-beach.jpg
+				</image>
+				<caption>
+					Information about our weekly guided tour
+				</caption>
+				<link>
+					/visit/come-on-a-tour
+				</link>
+			</item>
+		</slides>
+		<cta type="link" url="http://weather.hawaiiactive.com/kauai-weather.html">
+			Kauai Weather Report
+		</cta>
+	</module>
+</data>

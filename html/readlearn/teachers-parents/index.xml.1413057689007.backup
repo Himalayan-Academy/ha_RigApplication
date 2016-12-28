@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<data>
+
+	<module name="Featured Item Module">
+		<media  width="296" height="384" file_id="growing-up-hindu" style="float: left;"/>
+		<cta type="link" url="/site/search/media_type/book/tags/youth">See more books for children</cta>
+	</module>
+
+	<module name="Promoted Collections Module">
+	<title class="books">Resources for Children and Youth</title>
+	<collection>
+		<title>Books/Videos</title>
+		<thumbnail>/html/img/circles/category_Master-Course_circle.png</thumbnail>
+		<links>
+			<link url="/view/ten-tales-about-self-control">Ten Tales About Self Control </link>
+			<link url="/view/growing-up-hindu">Growing Up Hindu</link>
+			<link url="/view/mystic-mouse">Mystic Mouse</link>
+		</links>
+		<cta type="link" url="/site/search/media_type/book/tags/youth">View All</cta>
+</collection>
+	<collection>
+		<title>For Teachers</title>
+		<thumbnail>/html/img/circles/category_Publications_circle.png</thumbnail>
+		<links>
+			<link url="/view/the-history-of-hindu-india">The History of Hindu India Book</link>
+			<link url="/readlearn/hindu-history">Hindu History Video and Book</link>
+			<link url="/view/hindu-history-chapter-one-lesson-plans/hindu-history-chapter-one-lesson-plans.pdf">Lesson Plan for Teachers</link>
+			
+		</links>
+		<cta type="link" url="/readlearn/basics">View All</cta>
+</collection>
+	<collection>
+		<title>For Parents</title>
+		<thumbnail>/html/img/circles/category_Parenting_circle.png</thumbnail>
+		<links>
+			<link url="/book/what-is-hinduism/117">Raising Children as Good Hindus</link>
+			<link url="/book/what-is-hinduism/134">Hinduism's Code of Conduct</link>
+			<link url="/book/what-is-hinduism/114">Family Life and Culture</link>
+			<link url="http://www.hinduismtoday.com/modules/smartsection/category.php?categoryid=6">Pub Desk - Contemporary Issues</link>
+		</links>
+		<cta type="link" url="/site/search/media_type/book/tags/parents">View All</cta>
+	</collection>
+</module>
+
+	<module name="Square Slider Module">
+<title>Hindu History in India, for Children</title>
+<slides>
+<item>
+	<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-1_sml.jpg</image>
+	<caption>>Hindu History Lesson Chapter One</caption>
+	<link>/view/the-history-of-hindu-india</link>
+</item>
+<item>
+	<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-2_sml.jpg</image>
+	<caption>Hindu History Lesson Chapter Two</caption>
+	<link>/view/the-history-of-hindu-india</link>
+</item>
+<item>
+	<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-3_sml.jpg</image>
+	<caption>Hindu History Lesson Chapter Three</caption>
+	<link>/view/the-history-of-hindu-india</link>
+</item>
+<item>
+	<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-4_sml.jpg</image>
+	<caption>Hindu History Lesson Chapter Four</caption>
+	<link>/view/the-history-of-hindu-india</link>
+</item>
+<item>
+	<image>/media/books/the-history-of-hindu-india/slider/Hindu-History-5_sml.jpg</image>
+	<caption>Hindu History Lesson Chapter Five</caption>
+	<link>/view/the-history-of-hindu-india</link>
+</item>
+</slides>
+<cta type="link" url="/view/the-history-of-hindu-india">Download The History of Hindu India</cta>
+</module>
+
+	<module name="Links Module">
+		<collection>
+			<title>Other Popular Resources</title>
+			<links>
+			    <link url="/readlearn/panchangam">Our Hindu Calendar</link>
+		     	<link url="/view/lexicon">Hindu Lexicon</link> 
+				<link url="/site/search/media_type/book/title/history">Teaching Kids History</link>
+				<link url="/view/ten-tales-about-religious-life">Religious Living for Kids</link>
+				<link url="/view/gurudevas-toolbox">A Spiritual Toolbox</link>
+				<link url="http://hinduismtoday.com/modules/smartsection/item.php?itemid=5167">Kids Embracing Hinduism</link>
+				<link url="http://www.hinduismtoday.com/modules/smartsection/item.php?itemid=1223">Nine Qualities to Cultivate in Children</link>
+				<link url="/site/search/media_type/book/title/saivite hindu religion">Teaching Hinduism to Children</link>
+				<link url="http://www.feedblitz.com/f/?Sub=&Publisher=7522423&portal=331383">News and Inspiration by eMail</link>	\
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+		<links>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="readlearn/basics">Basics of Hinduism</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>				
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+	</module>
+
+	<module name="Tabbed Content Module">
+		<tab title="eBooks">
+			<search media_type="book"/>
+		</tab>
+		<tab title="For Children">
+		<search media_type="book" tags="youth"/>
+		</tab>
+		 
+		<tab title="For Teachers">
+			<search media_type="book" title="history"/>
+			<item file_id="fourteen-questions" />
+			<item media_type="book" title="saivite hindu religion" />
+			<item file_id="yogas-forgotten-foundation" />
+			
+		</tab>
+		<tab title="Other Languages">
+			<search media_type="book" language="french"/>
+			<search media_type="book" language="spanish"/>
+			<search media_type="book" language="hindi"/>
+			<search media_type="book" language="tamil"/>
+			<search media_type="book" language="sanskrit"/>
+		</tab>
+	</module>
+
+</data>

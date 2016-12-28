@@ -1,0 +1,57 @@
+ <h2>Current Account (under construction.... when views are passed as data some functions are no processed by revIgniter</h2>
+    <p> Below is a summary of the advanced payments and hours due. HHE paid for 151 hours. Negative amount means Andre owes hours, positive means we have to pay him. Minimela jobs are pay separately each month and should zero out. GKWeb and HHE are aggregated under payments and hours due; but separated in the log totals at the end.</p>
+   
+  <?
+     if gData["DDDHoursDue"] < 0 then
+ 	      # oh hours due!!!
+	   put "+" into tDDDPrefix
+	   multiply gData["DDDHoursDue"] by -1
+	 else
+	   put "-" into tDDDPrefix
+	 end if
+	
+	    put gData["DDDHoursDue"] div 60 into tDDDHours
+	     put (tDDDHours * 40) into tDDDPaymentDue
+	    put gData["DDDHoursDue"] mod 60 into tDDDMinutes   
+	    Add round ((40/60*tDDDMinutes),2) to tDDDPaymentDue
+     	if the len of tMinutes is 1 then put 0 before tDDDMinutes
+     	
+     	#Set up data for the table output
+     	
+		 	put ("<b>Digital Dharma</b>")  into tData[1]{1]
+			put ("<b>" &  tDDDHours &":" & tDDDMinutes&"</b>")  into tData[1]{2]
+            put "$40.00"  into tData[1]{3]
+
+ if gData["MinimelaHoursDue"] < 0 then
+ 	      # oh hours due!!!
+	   put "+" into tMiniPrefix
+	   multiply gData["MinimelaHoursDue"] by -1
+	 else
+	   put "-" into tMiniPrefix
+	 end if
+	    put gData["MinimelaHoursDue"] div 60 into tMiniHours
+	    put (tMiniHours *40) into tMinimelaPaymentDue
+	    put gData["MinimelaHoursDue"] mod 60 into tMiniMinutes 
+	   Add round ((40/60*tMiniMinutes),2) to tMinimelaPaymentDue
+	if the len of tMinutes is 1 then put 0 before tMiniMinutes
+	
+	#Set up data for the table output
+     	
+		 	put ("<bMinimela</strong>")  into tData[2]{1]
+			put ("<b>" &  tMiniHours &":" & tMiniMinutes&"</b>")  into tData[2]{2]
+            put "$40"  into tData[2]{3]
+            put ("<b>" & tMinimelaPaymentDue  &"</b>") into tData[2]{4]
+  
+# put tMinimelaPaymentDue+ tDDDPaymentDue into tTotal	
+#put ("<p> <strong>Current Total: </strong> "  & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $" & tTotal &"</p>") into tBuf 
+   #  return tBuf
+     
+        rigSetTableHeading "<b>Fund</b>,<b>Hours</b>,<b>Rate</b>,<b>Amount</b>"
+		put format("<th align=\"left\">") into tTmpl["headingCellStart"]
+		put "<table border=" & quote & "1" & quote && "class=" & quote &"table-standard" & quote && "cellpadding=" & quote & "0" & quote && "cellspacing=" & quote & "2" & quote & ">" into tTmpl["tableOpen"]		
+		rigSetTableTemplate tTmpl 	
+	    put rigGenerateTable(tData) into tBuf 
+       return tBuf
+              
+   ?>
+	

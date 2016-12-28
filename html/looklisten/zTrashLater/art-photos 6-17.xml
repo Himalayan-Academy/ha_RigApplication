@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<data> 
+	<module name="Featured Item Module">	
+	<title>We no longer shoot Sun one Video, so latest Sun one Video Doesn't work here</title>
+		<media width="629" height="384" file_id="bd_bodhinatha-gives-mantra-diksha-at-tiruvannamalai" style="float: left;"/>
+		
+		<comment>Latest Sun One Video doesn't work</comment>
+		
+		<cta type="link" url="/site/search/media_type/video">View All Videos ( newest first coming soon)</cta>
+	</module>
+	
+	<module name="Promoted Collections Module">
+		<title>Recent Podcasts: ANDRE: HOW DO WE SPECIFY CLASS HERE?  --To get the right background icon</title>
+		<collection>
+			<title>Gurudeva's Audio Discourses</title>
+			<thumbnail>/html/img/circles/gurudeva-hat-ocean-circle.png</thumbnail>		
+			<links>
+				<link url="#">most recent audio 1 - link?</link>
+				<link url="#">most recent audio 2 - link?</link>
+				<link url="#">most recent audio 3 - link?</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/audio/author/subramuniyaswami">View all</cta>
+		</collection>
+		<collection>
+			<title>Bodhinatha's Audio Discourses</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>
+			<links>
+				<link url="/listen/bd_2012-05-21_classical-definition-yoga">The Classical Definition of Yoga</link>
+				<link url="#"></link>
+				<link url="#">??Photos of Gurudeva</link>
+				<link url="#">??About Paramaguru Yogaswami</link>
+				<link url="#">??Our lineage in a nutshel</link>
+			</links>
+			<cta>??Read more</cta>
+		</collection>
+		<collection>
+			<title>Art &amp; Photo Galleries</title>
+			<thumbnail>/html/img/circles/devotee-rajam-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/about/philosophy">??Our philosophy in brief</link>
+				<link url="#">??The Final Conclusions for All Mankind</link>
+				<link url="/monastery/about/hinduism">??A Bird's Eye View of Hinduism</link>
+				<link url="#">??Dancing with Siva, Hinduism's Contemporary Catechism</link>
+			</links>
+			<cta>??How to become a monk</cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>Special Collections</title>
+		<slides>
+			<item>
+				<image>/html/monastery/about/img/square-slider/guru-purnima_DSC7708_sml.jpg</image>
+				<caption>??The home of Satguru Bodhinatha Veylanswami</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/sannyas_DSC_5000_sml.jpg</image>
+				<caption>??The source of the spark of initiations</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/muruga-abhishekam_DSC_5058_sml.jpg</image>
+				<caption>??Kadavul Temple: home of magical Gods</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>??Nestled beneath the wettest place on earth</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/wall-meditation_IMG_0455_sml.jpg</image>
+				<caption>??A place for rigorous raja yoga meditation</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/dakshina-class_DSC_6377_sml.jpg</image>
+				<caption>??A fountain of teaching that flows to the world</caption>
+			</item>
+		</slides>
+		<cta>??See more photos in our gallery</cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>??Even More Popular Resources</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">??About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">??Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">??San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/temples.shtml">??About the Monastery's Temples</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/kadavul/">??Kadavul Temple</link>
+				<link url="http://www.himalayanacademy.com/ssc/hawaii/iraivan/">??San Marga Iraivan Temple</link>
+			</links>
+		</collection>
+	</module>
+</data>

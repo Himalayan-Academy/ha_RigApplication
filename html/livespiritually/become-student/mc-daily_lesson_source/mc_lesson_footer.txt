@@ -1,0 +1,10 @@
+			</div>
+		<div id="footer">
+			<!--#include virtual="/ssi/ha_footer.html" -->
+		</div>
+		<div id="linkList">
+			<!--#exec cgi="/cgi-bin/local_nav_include.cgi" -->
+		</div>
+		</div>
+	</body>
+</html>

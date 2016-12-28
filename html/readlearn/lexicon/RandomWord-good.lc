@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=x-mac-roman">
+	<title>Get 
+	Random Word</title>		
+	</head>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=x-mac-roman">
+	<title>Get 
+	Random Word</title>
+		
+	</head>
+	
+	<?rev
+# get the word and definition
+# note that if there is no definition, the see also appears
+local tWord, tDefinition, tBackground, tEyeGlass
+start using stack "/home/devhap/public_html/html/readlearn/lexicon/lexicon.rev"
+put getRandomWord() into tWordOfTheDay
+--put "Hello|test" into tWordOfTheDay
+set the itemdel to "|"
+put item 1 of tWordOfTheDay into tWord
+put item 2 of tWordOfTheDay into tDefinition
+
+#get background photo
+# if it is a very long definition such that we cannot see much of the photo
+# then we use a flat pattern in the background.
+
+if len(tDefinition) > 400 then
+  put "beigePattern.jpg" into tBackground
+else
+
+set the defaultfolder to ($_SERVER["DOCUMENT_ROOT"] & "/html/readlearn/lexicon/images/backgrounds/")
+put the files into tFiles
+filter tFiles without "EyeGlass.jpg"
+filter tFiles without "beigePattern.jpg"
+put the number of lines of tFiles into tPhotoCount
+put line (random(tPhotoCount)) of tFiles into tBackground
+end if
+?>
+<body style="background-image: url(/html/readlearn/lexicon/images/backgrounds/<?rev put tBackground ?>); background-repeat: no-repeat;">
+
+<?rev if len(tDefinition) > 450 then ?>
+	<div style="float:left;width:580px;padding:2px 15px 2px 15px;">
+	<img src="/html/readlearn/lexicon/images/backgrounds/EyeGlass.jpg" style="float:left; margin-right:12px;" />
+<?rev else ?>
+      <div style="float:left;width:580px;margin: 10px;background-color: #FFFFFF;padding:2px 15px 2px 15px;opacity: 0.90">
+<?rev end if ?>
+
+<h1 style="margin-top:0;text-shadow: +10% +10% 10% rgb(153,153,153);"><?rev put tWord ?>:</h1>
+<p style:"font-size: 115%;"> <?rev put tDefinition ?> </p>
+</div>
+<div style="width: 45px;float:right;margin-right:0px; "><a href="/html/readlearn/lexicon/RandomWord.lc" target="word-of-the-day"><img src="/html/readlearn/lexicon/images/next-word.png" border="0" /></a></div>
+
+</body>
+</html>
+
+	

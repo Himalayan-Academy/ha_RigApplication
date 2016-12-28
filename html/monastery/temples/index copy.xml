@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<title>Kadavul Temple</title>
+		<description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</description>
+		<cta type="link" url="/videos">Go here for Visitor Information</cta>
+		<media width="629" height="440" file_id="kadavul_main-slideshow"  style="float: left;" /> 
+	</module>
+	<module name="Square Slider Module">
+		<title>Photos of Iraivan Temple</title>
+		<slides>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/03_Bangalore-quarry_sml.jpg</image>
+				<caption>The stone quarry in India</caption>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/07_Iraivan-sanctum_sml.jpg</image>
+				<caption>Iraivan's Sanctum</caption>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/08_DSCF3596_sml.jpg</image>
+				<caption>Placing the headstone of the Rajagopuram</caption>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/19_016_sml.jpg</image>
+				<caption>The inside of Iraivan after pillars and roof completed</caption>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/33_Vimanam_sml.jpg</image>
+				<caption>Vimanam covered with gold</caption>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/iraivan-homa_sml.jpg</image>
+				<caption>Homas have begun in the temple on special occasions</caption>
+			</item>
+		</slides>
+		<cta url="/view/iraivan_2012-02-03_main-slide-show">See the full slideshow</cta>
+	</module>
+	<module name="Promoted Collections Module">
+		<title>Our Temples</title>
+		<collection>
+			<title>Kadavul Hindu Temple</title>
+			<thumbnail>/html/img/circles/kadavul-temple-circle.png</thumbnail>
+			<links>
+				<link url="#">About our current temple</link>
+				<link url="#">Photos</link>
+				<link url="#">Daily puja</link>
+			</links>
+			<cta>View all books</cta>
+		</collection>
+		<collection>
+			<title>San Marga Iraivan Temple</title>
+			<thumbnail>/html/img/circles/iraivan-from-road-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/temples/iraivan">About our new temple under construction</link>
+				<link url="#">Latest news</link>
+				<link url="/monastery/temples/iraivan/bangalore">Bangalore Carving Site</link>
+				<link url="#">Fund-raising information</link>
+			</links>
+			<cta>Read more</cta>
+		</collection>
+		<collection>
+			<title>Videos of Our Festivals</title>
+			<thumbnail>/html/img/circles/ganesha-festival-circle.png 
+			</thumbnail>
+			<links>
+				<link url="#">Our philosophy in brief</link>
+				<link url="#">The Final Conclusions for All Mankind</link>
+				<link url="#">A Bird's Eye View of Hinduism</link>
+				<link url="#">Dancing with Siva, Hinduism's Contemporary Catechism</link>
+			</links>
+			<cta>View all</cta>
+		</collection>
+	</module>
+</data>

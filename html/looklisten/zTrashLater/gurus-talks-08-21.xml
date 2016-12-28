@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<data> 
+	<title>Talks by Our Gurus</title>
+	<module name="Featured Item Module">	
+	<title>[Random Gurudeva talk audio]; class: featured audio</title>
+	
+		<media width="629" height="384" file_id="gr_2001-01-28_temple-protocol-dream-abo" style="float: left;"/>
+	
+		
+		<comment>We need to consider the design when the feature item  is not a video.</comment>
+		
+		<cta type="link" url="/site/search/media_type/inspiredtalk">Listen to More Talks(links to catalog of all guru talks, newest first</cta>
+	</module>
+	
+	<module name="Promoted Collections Module">
+	
+	<comment> Angain, we have the requirement to search for a smart collection set, and then grab either the latest OR random selection that should be chosen run each time the user hits the page, then dig the title, and create a link. This obviously needs a special way to enter a function on this page, that is process by the CMS.lc library and then some emitter will return the link.)
+	</comment>
+		<title>Special Collections; class:podcasts(this class applies to podcasts as well as any other audio)</title>
+		<collection>
+			<title>Bodhinatha's Audio Discourses</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>		
+			<links>
+				<link url="#">Latest sun 1 audio</link>
+				<link url="#">Latest Pub Desk audio</link>
+				<link url="#">Random talk by Bodhinatha</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/audio/author/Bodhinatha">View All (links to a catalog of all Bodhinatha's talks)</cta>
+		</collection>
+		<collection>
+			<title>Gurudeva's Audio Discourses</title>
+			<thumbnail>/html/img/circles/gurudeva-circle.png</thumbnail>
+			<links>
+				<link url="/site/randomitem/media_type/audio/author/subramuniyaswami">Random talk Gurudeva from the library 1</link>
+				<link url="#">Random talk Gurudeva from the library 2</link>
+				<link url="#">Random talk Gurudeva from the library 3</link>
+			</links>
+			<cta>View All (links to catalog of all videos in the keynote/presentations category)</cta>
+		</collection>
+		<collection>
+			<title>Video Teaching Presentations</title>
+			<thumbnail>/html/img/circles/presentation-screen.png</thumbnail>
+			<links>
+				<link url="#">Latest Bodhinatha keynote video from a library</link>
+				<link url="#">Random Bodhinatha keynote video from a library 1</link>
+				<link url="#">Random: Bodhinatha keynote video from a library</link>
+			</links>
+			<cta>View All (link to catalog of all videos in the keynote/presentation category. What kind of tag? Talk to SN about this)</cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>Our Gurus</title>
+		<slides>
+			<item>
+				<image>/html/monastery/about/img/square-slider/guru-purnima_DSC7708_sml.jpg</image>
+				<caption>Slideshow of 6 images of our gurus in front of microphones giving talks, 3 of Bodhinatha and 3 of Gurudeva</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/sannyas_DSC_5000_sml.jpg</image>
+				<caption>Slideshow of 6 images of our gurus in front of microphones giving talks, 3 of Bodhinatha and 3 of Gurudeva</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/muruga-abhishekam_DSC_5058_sml.jpg</image>
+				<caption>Slideshow of 6 images of our gurus in front of microphones giving talks, 3 of Bodhinatha and 3 of Gurudeva</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>Slideshow of 6 images of our gurus in front of microphones giving talks, 3 of Bodhinatha and 3 of Gurudeva</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/wall-meditation_IMG_0455_sml.jpg</image>
+				<caption>Slideshow of 6 images of our gurus in front of microphones giving talks, 3 of Bodhinatha and 3 of Gurudeva</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/dakshina-class_DSC_6377_sml.jpg</image>
+				<caption>Slideshow of 6 images of our gurus in front of microphones giving talks, 3 of Bodhinatha and 3 of Gurudeva</caption>
+			</item>
+		</slides>
+		<cta>See more photos in our gallery (links to a slideshow of Gurudeva and Bodhinatha talking/teaching)</cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>Talks by Bodhinatha (by topic)</title>
+			<links>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Transformation (all of these link to search results for this category of talks in the Media Catalog)</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Family</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Festivals and Samskaras</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">God and the Gods</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Good Conduct</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Guru</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Hinduism</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Karma</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Kauai Community</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Relationships</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Saiva Siddhanta Church</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Self Improvement</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Soul</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Spiritual Path</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Temple Worship</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Travel and Pilgrimage</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/">Ultimate Goals of Life</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Talks by Gurudeva (by topics)</title>
+			<links>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Affirmation</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Transformation</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Death and Dying</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Drugs</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Family</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Festivals and Samskaras</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">God and the Gods</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Good Conduct</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Guru</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Hinduism</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Karma</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Meditation and Yoga</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Mind</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Relationships</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Self Improvement</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Soul</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Spiritual Path</link>
+				<link url="/site/search/media_type/audio/author/Subramuniya/">Ultimate Goals of Life</link>
+			</links>
+		</collection>
+	</module>
+</data>

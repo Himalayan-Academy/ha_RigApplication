@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<data> 
+	<module name="Featured Item Module">	
+	
+	<media  width="629" height="384" file_id="august-2012-news-video" style="float: left;"  />
+	
+		
+		<comment>Latest Sun One Video won't work, we decided to use the monastery news instead-JY</comment>
+		
+		<cta type="link" url="/site/search/media_type/video">View All Videos</cta>
+	</module>	
+	<module name="Promoted Collections Module">
+	
+	<comment> JY-These links require a function to dig the database and pick up all talks by Gurudeva or Bodhinatha (or any search criteria, sort by date entered/data stamp in descending order and then load the top three as three separate links.), in lieu of this automation we have hard coded the link to recent docs.	</comment>
+		<title class="videos">Video and Audio Resources</title>
+		<task>Andre: we need to get our podcast up and running and linked here </task>
+		<comment>: SN: podcast should go in here after we get them running </comment>
+		<collection>
+			<title>Gurudeva</title>
+			<thumbnail>/html/img/circles/gurudeva-hat-ocean_circle.png</thumbnail>		
+			<links>
+				<link url="/view/gr_1959-10-03_the-self-god">The Self God</link>
+				<link url="/view/gr_1998-08-19_the-eternal-now">The Eternal Now</link>
+				<link url="/view/gr_1999-12-20_siva-consciousness">Siva Consciousness</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/audio/author/subramuniyaswami">View all</cta>
+		</collection>
+		<collection>
+			<title>Bodhinatha</title>
+			<thumbnail>/html/img/circles/bodhinatha-color_circle.png</thumbnail>
+			<links>
+				<link url="/view/bd_2012-05-21_classical-definition-yoga">The Classical Definition of Yoga</link>
+				<link url="/view/bd_2012-07-27_monism-theism">Theism and Monism in Saiva Siddhanta</link>
+				<link url="/view/bd_2012-07-20_dealing-with-distraction">Dealing with Distraction</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/audio/author/Bodhinatha">View all</cta>
+		</collection>
+		<collection>
+			<title>Satguru Bodhinatha Veylanswami Reads His Quarterly Editorial</title>
+			<thumbnail>/html/img/circles/category_Hinduism-Today_circle.png</thumbnail>
+			<links>
+			<comment>JY- audio has yet to be extracted from pubdesks so for now we're using the videos</comment> 
+				<link url="/view/bd_publishers-desk_behold-the-sacred-lotus-flower">Behold the Sacred Lotus Flower</link>
+				<link url="/view/bd_publishers-desk_which-yoga-should-i-follow">Which Yoga Should I Follow? </link>
+				<link url="/view/bd_improving-our-character-publishers-desk">Improving Our Character </link>
+			</links>
+			<cta type="link" url="/site/search/media_type/video/title/desk/sort/time-descending"> View All Publisher's Desk Editorials</cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+	
+	<comment>(SN note: I suggest that the algorithm be that it makes a random selection of six pieces out of the 30 pieces of art most recently added to the overall library of art on the site. If it is random each time, then it will be different each time for each user rather than staying the same all the time, which it would otherwise do because we will not be adding new art so often that it will change frequently otherwise.)</comment>
+	
+	<task>We should do something and follow up later</task>
+	
+		<title>S. Rajam Art Gallery</title>
+		<slides>
+			<item>
+				<image>/media/art/painting/a6_rajam/a6_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Sage Agastya</caption>
+				<link>/view/a6_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/a3_rajam/a3_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Goddess Usha</caption>
+				<link>/view/a3_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/the-guru-chronicles_y-40_rajam/the-guru-chronicles_y-40_rajam_sml.jpg</image>
+				<caption>S. Rajam - The Guru Chronicles Collection: Iraivan Temple Creation</caption>
+				<link>/view/the-guru-chronicles_y-40_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/b47_rajam/b47_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Goddess Lakshmi</caption>
+				<link>/view/b47_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/b70_rajam/b70_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Mahabharata</caption>
+				<link>/view/b70_rajam</link>
+			</item>
+			<item>
+				<image>/media/art/painting/c37_rajam/c37_rajam_sml.jpg</image>
+				<caption>S. Rajam Collection: Saiva Puranas</caption>
+				<link>/view/c37_rajam</link>
+			</item>
+		</slides>
+		<cta type="link" url="/site/search/media_type/art/artists/rajam">See More Rajam Art</cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>See More</title> 
+			<links>
+				<link url="/site/search/media_type/news">News Videos</link>	
+				<link url="/site/search/media_type/song/deity/ganesha">Ganesha Songs</link>
+				<link url="/site/search/media_type/natchintanai">Natchintanai (Various Artists)</link>
+				<link url="/site/search/media_type/video/description/gurudeva/">Videos of or about Gurudeva</link>
+				<link url="/site/search/media_type/slideshow/file_id/innersearch">Innersearch Slideshows</link>
+				<link url="/site/search/media_type/video/description/iraivan">Iraivan Temple Videos</link>
+				<link url="/site/search/media_type/inspiredtalk/title/merging/author/sivaya/">Gurudeva Reads Merging with Siva</link>
+				<link url="/site/search/media_type/video/title/desk">Bodhinatha's Quarterly Editorials</link>
+				
+			
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/llivespiritually/home puja">Chanting and Songs</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+			</links>
+		</collection>
+	</module>
+</data>

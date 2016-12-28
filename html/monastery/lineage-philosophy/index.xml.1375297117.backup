@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<media width="629" height="384" file_id="part-1-guru-lineage-of-kauais-hindu-monastery" style="float: left;"/>
+		<cta type="link" url="/site/search/media_type/video/file_id/guru-lineage">View Part 2</cta>		
+	</module>
+
+	<module name="Promoted Collections Module">
+		<title class="topics">Guru Lineage and Philosophy</title>
+		<collection>
+			<title>Satguru Bodhinatha Veylanswami</title>
+			<thumbnail>/html/img/circles/bodhinatha-color_circle.png</thumbnail>
+			<links>
+				<link url="/monastery/lineage-philosophy/bodhinatha">About Our Guru</link>
+				<link url="/visit/meet-us-when-we-travel">Bodhinatha's Travel Schedule</link>
+				<link url="/site/search/media_type/audio/author/veylanswami">Talks by Bodhinatha</link>
+			</links>
+					<cta type="link" url="/site/search/media_type/video/description/bodhinatha">Videos of bodhinatha</cta>
+		</collection>
+		<collection>
+			<title>Satguru Sivaya Subramuniyaswami</title>
+			<thumbnail>/html/img/circles/gurudeva_hat-ocean_circle.png</thumbnail>
+			<links>
+				<link url="/monastery/lineage-philosophy/gurudeva">About Gurudeva</link>
+				<link url="/site/search/media_type/audio/author/subramuniyaswami">Talks by Gurudeva</link>
+				<link url="http://www.hinduismtoday.com/modules/smartsection/category.php?categoryid=356">Memorial Edition of Hinduism Today</link>
+				<task>put the PDF of the Gurudeva memorial edition of Hinduism Today (Apr/May/Jun 2002) online as a media artifact and then link to it in the item above</task>
+			</links>
+			<cta type="link" url="/view/the-guru-chronicles">Read the guru chronicles</cta>
+		</collection>
+		<collection>
+			<title>Our Philosophy and Lineage</title>
+			<thumbnail>/html/img/circles/yogaswami_circle.png</thumbnail>
+			<links>
+				<link url="/monastery/lineage-philosophy/yogaswami">About Paramaguru Yogaswami</link>
+				<link url="/monastery/lineage-philosophy/lineage">Our Lineage in a Nutshell</link>
+				<link url="/monastery/about/philosophy">Our Philosophy in Brief</link>
+			</links>
+			<cta type="link" url="/view/dancing-with-siva">Read dancing with siva</cta>
+		</collection>
+	</module>
+	
+		<module name="Square Slider Module">
+		<task> get photos of Gurus or tag slideshows</task>
+		<title>Images of Our Gurus</title>
+		
+
+		<slides>
+		
+			<item>
+				<image>/html/monastery/lineage-philosophy/img/gurulineageandphilosophy-slider/Rishi-teashop-and-parampara.jpg</image>
+				<caption>The Rishi from the Himalayas</caption>
+				<link>/view/the-guru-chronicles</link>
+			</item>
+			<item>
+				<image>/html/monastery/lineage-philosophy/img/gurulineageandphilosophy-slider/Kadaitswami-Art-larger.jpg</image>
+				<caption>Sage Kadaitswami</caption>
+				<link>/view/the-guru-chronicles</link>
+			</item>
+			<item>
+				<image>/html/monastery/lineage-philosophy/img/gurulineageandphilosophy-slider/Chellappa.jpg</image>
+				<caption>Sage Chellappaswami</caption>
+				<link>/view/the-guru-chronicles</link>
+			</item>
+			<item>
+				<image>/html/monastery/lineage-philosophy/img/gurulineageandphilosophy-slider/24-Yogaswami-in-chair.jpg</image>
+				<caption>Sage Yogaswami of Jaffna</caption>
+				<link>/view/the-guru-chronicles</link>
+			</item>
+			<item>
+				<image>/html/monastery/lineage-philosophy/img/gurulineageandphilosophy-slider/24-GD-Temple8b.jpg</image>
+				<caption>Satguru Sivaya Subramuniyaswami</caption>
+				<link>/view/the-guru-chronicles</link>
+			</item>
+			<item>
+				<image>/html/monastery/lineage-philosophy/img/gurulineageandphilosophy-slider/02_bodhinatha.jpg</image>
+				<caption>Gurudeva and Bodhinatha</caption>
+				<link>/view/the-guru-chronicles</link>
+			</item>
+			<item>
+				<image>/html/monastery/lineage-philosophy/img/gurulineageandphilosophy-slider/Bodhinatha-good-photo.jpg</image>
+				<caption>Satguru Bodhinatha Veylanswami</caption>
+				<link>/view/the-guru-chronicles</link>
+			</item>
+		</slides>
+		<cta type="link" url="/site/search/tags/public poster">Images of Gurudeva and Bodhinatha for Printing</cta>
+		<task>the link for the cta here needs to be created</task>
+	</module>
+	
+	<module name="Links Module">
+		<collection>
+			<title>Related Resources</title>
+			<links>
+				<link url="/monastery/about/hinduism">Hinduism in a Nutshell</link>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/site/search/media_type/song/genre/natchintanai">Songs of Siva Yogaswami</link>
+				<link url="/view/the-songs-of-tayumanavar">Poems of Tayumanavar</link>
+				<link url="/view/tirumantiram">Tirumantiram</link>
+				<comment> url="#">Short History of Our Gurus</comment>
+				<task>editing team needs to create the above document</task>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+		<links>
+				<link url="/readlearn/books">Books and Booklets</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/livespiritually/meditation">Learn to Meditate</link>
+				<link url="/blog/taka/">Today at Kauai Aadheenam</link>
+				<link url="/view/holy-orders-of-sannyas">Holy Orders of Sannyas</link>
+				<link url="/monastery/meet-the-monks/how-to">How to Become a Monk</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+	</module>
+</data>

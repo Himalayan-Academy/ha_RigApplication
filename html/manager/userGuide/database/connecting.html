@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Connecting to your Database : revIgniter User Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="all" />
+		<meta name="author" content="Ralf Bitter" />
+		<meta name='description' content='revIgniter User Guide' />
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" media="screen" href="../css/bootstrap.min.css">
+
+		<script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="../js/nav-ck.js"></script>
+		
+		<!-- Touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon-57-precomposed.png">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		    <script src="../js/html5shiv.js"></script>
+		    <script src="../js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+<body>
+	<!-- START PAGE HEAD -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    			<a class="navbar-brand" href="#">revIgniter User Guide Version 1.6.6</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <form class="navbar-form navbar-right" role="search" method="get" action="http://www.google.com/search">
+ 		      <div class="form-group">
+ 				<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="revigniter.com/userGuide/" />
+ 		        <span id="searchLabel">Search User Guide</span> &nbsp; <input type="search" placeholder="Search ..." name="q" id="q" class="revignitorsearch" accesskey="s" autosave="bsn_srch" results="5" />
+ 				&nbsp;<input type="image" id="submitSearch" src="../images/searchGo.png" />
+ 		      </div>
+ 		 	 		</form>
+        </div><!--/.nav-collapse -->
+     </div>
+		 
+		 <!-- START BREADCRUMB -->		 
+		 <div id="breadcrumbContainer">
+			 <div class="container">
+			 		<ol class="breadcrumb">
+			 			<li><a href="http://revigniter.com/">revIgniter Home</a></li>
+			 		 	<li><a href="../index.html">User Guide Home</a></li>
+						<li><a href="index.html">Database Library</a></li>
+			 		 	<li class="active">Connecting</li>
+						<li id="tocListItem" class="pull-right"><a href="../toc.html">Table of Contents Page</a></li>
+			 		 </ol>
+				</div>
+		</div>
+		<!-- END BREADCRUMB -->		
+		
+		<!-- START SLIDEBOX -->
+		<div class="slide-panel top">
+			<div class="container">
+				<div id="panelContent"><script type="text/javascript">create_menu('../');</script></div>
+			</div>
+			<div id="open-button" class="slide-button">Table of Contents</div>
+			<div id="close-button" class="slide-button">Close</div>
+		</div>
+		<!-- END SLIDEBOX -->
+	 
+  </div>
+<!-- END PAGE HEAD -->
+
+<br clear="all" />
+
+<!-- START CONTENT -->
+<div class="container">
+	
+<div id="content">
+
+
+<h1>Connecting to your Database</h1>
+
+<p>There are two ways to connect to a database:</p>
+
+<h2>Automatically Connecting</h2>
+
+<p>The "auto connect" feature will load the database library with every page load.
+To enable "auto connecting", add the word <var>database</var> to the library array, as indicated in the following file:</p>
+
+<p><kbd>application/config/autoload.lc</kbd></p>
+
+<h2>Manually Connecting</h2>
+
+<p>If only some of your pages require database connectivity you can manually connect to your database by adding this
+line of code in any function where it is needed.</p>
+
+<pre><code>get rigLoadDatabase()</code></pre>
+
+<p class="important">If the above function does <strong>not</strong> contain any information in the first parameter it will connect
+to the group specified in your database config file. For most people, this is the preferred method of use.</p>
+
+<h3>Available Parameters</h3>
+
+<ol>
+	<li>The database connection values, passed either as an array or a DSN string.</li>
+	<li>TRUE/FALSE (boolean).  Whether to return the connection ID (see Connecting to Multiple Databases below).</li>
+	<li>TRUE/FALSE (boolean).  Whether to enable the Active Record library.  Set to TRUE by default.</li>
+</ol>
+
+
+<h3>Manually Connecting to a Database</h3>
+
+<p>The first parameter of this function can <strong>optionally</strong> be used to specify a particular database group
+from your config file, or you can even submit connection values for a database that is not specified in your config file.
+Examples:</p>
+
+<p>To choose a specific group from your config file you can do this:</p>
+
+<pre><code>get rigLoadDatabase("<samp>groupName</samp>")</code></pre>
+
+<p>Where <samp>groupName</samp> is the name of the connection group from your config file.</p>
+
+
+<p>To connect manually to a desired database you can pass an array of values:</p>
+
+<pre><code>put "localhost" into tConfig["hostname"]
+put "myusername" into tConfig["username"]
+put "mypassword" into tConfig["password"]
+put "mydatabase" into tConfig["database"]
+put "mysql" into tConfig["dbdriver"]
+put "" into tConfig["dbprefix"]
+put FALSE into tConfig["pconnect"]
+put TRUE into tConfig["dbdebug"]
+put FALSE into tConfig["cacheon"]
+put "" into tConfig["cachedir"]
+put "utf8" into tConfig["charset"]
+put "utf8_general_ci" into tConfig["dbcollat"]
+
+get rigLoadDatabase(<samp>tConfig</samp>);</code></pre>
+
+<p>For information on each of these values please see the <a href="configuration.html">configuration page</a>.</p>
+
+<p>Or you can submit your database values as a Data Source Name. DSNs must have this prototype:</p>
+
+<pre><code>put "'dbdriver://username:password@hostname/database'" into tDSN
+
+get rigLoadDatabase(<samp>tDSN</samp>)</code></pre>
+
+<p>To override default config values when connecting with a DSN string, add the config variables as a query string.</p>
+
+<pre><code>put "'dbdriver://username:password@hostname/database?char_set=utf8&amp;dbcollat=utf8_general_ci&amp;cache_on=true&amp;cachedir=/path/to/cache'" into tDSN
+
+get rigLoadDatabase(<samp>tDSN</samp>)</code></pre>
+
+<h2>Connecting to Multiple Databases</h2>
+
+<p>Connecting to more than one database simultaneously is currently not supported.</p>
+
+
+
+	
+
+</div>
+<!-- END CONTENT -->
+
+</div> <!-- /container -->
+
+
+<div id="footer">
+	<div class="container">
+<p>
+Previous Topic:&nbsp;&nbsp;<a href="configuration.html">Database Configuration</a>
+<span class="separator"> :: </span>
+<a href="#top">Top of Page</a><span class="separator"> :: </span>
+<a href="../index.html">User Guide Home</a><span class="separator"> :: </span>
+Next Topic:&nbsp;&nbsp;<a href="queries.html">Queries</a>
+</p>
+<p><a href="http://revigniter.com/">revIgniter</a><span class="separator"> :: </span>Copyright &#169; 2009 - 2013<span class="separator"> :: </span><a href="http://www.softwaregestaltung.de/">dimensionB Bitter u. Bitter GmbH</a></p>
+	</div>
+</div>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/highlight.pack.js"></script>
+ <script>
+  	hljs.tabReplace = '    ';
+  	hljs.initHighlightingOnLoad();
+ </script>
+
+<script src="../js/script-ck.js"></script>
+<script>$(function() { Slidebox.init(); });</script>
+
+
+</body>
+</html>

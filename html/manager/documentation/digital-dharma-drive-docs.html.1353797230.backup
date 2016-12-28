@@ -1,0 +1,42 @@
+<h1> Digital Dharma Drive Documentation <h1>
+
+<h2>DDD Site CMS</h2>
+
+<ul>
+
+	<li>The entire digital dharma drive site lives independently of RevIgniter. </li>
+	<li>On disk see /home/(devhap/himalayan)/donate/ddd</li>
+	<li>Although independent of RevIgniter, we are using livecode Server.There is no PHP in this frame work which was designed by Brahmanathaswami from a template created by Satya years ago. he also used some of Andre's monetra code.  But he turned these all into .lc files</li>
+	<li>We use a PostGreSQL database "hap_users" with a single table "donations"  where every transaction creates a complete new record. We delimiter one year's donations from the next simply by setting the beginning date of reports to this year (cuts off previous years in reports and totals for the) OTOH we are accessing all the comments from the beginning for display</li>
+	<li>Form processing and other includes are all done locally in that folder, or from the CGI bin and we also use some includes from /opt/web/bin</li>
+	On disk see /home/himalayan/donate/ddd</li>
+		<li>A separate CSS file ddd.css exists inside the /assets/css folder. This should not be confused with the Happy Cog "styles.css" as they two are completely independent and ddd.css controls on the ddd site frame work pages.</li>
+
+</ul>
+
+<h2>Implementation in the new Design </h2>
+
+
+<ul><li>banner width is 1054 minimum (as set by HC Css for the main page wrapper</li>
+<li> We have a new css file: /assets/css/ddd-banner.css which we use to style the div and anything it contains.</li>
+<li>put your banners here:  home/devhap/public_html/donate/ddd/banners-ha</li>
+<li>We duplicated the page header in the  ha app views/sitewide folder. We have a copy: page-header-ddd.lc</li>
+<li> the html for the image and the links are in the div at the top of the view "#ddd-banners"</li>
+<li> A javascript toggle has been attached to the page header, you can turn the banner div on and off with this.</li>
+<li> random images are loaded by this library:
+<br /><br />
+You can turn them on and of here: (see comments in the code) "/system/application/ha/libraries/Getsetheadnav.lc"
+<br />br />
+
+we just change the call to load the view from "sitewide/page-header" to "/sitewide/page-header-ddd" and viola the ddd page header is loaded globally; so you can switch this during dev and turn it off after finishing work. Any customizations of page-header-ddd outside of the ddd-banner div will not be ported over when we switch back. (unless you dup that file and delete the old page-header.lc and replace it with a copy of the new one)
+
+<br /> We also have added the same "home-page-head.lc" view and we call the "getRandomBanner" function in the index command for the home page for the site, which runs by default and will load the banner
+
+</li>
+	<li>The DDD banner, image and html are placed in a &lt;div id="ddd-banner"&gt;, immediately after the <body> opening and *before* the "div page-container"</li>
+	<li>This puts this area of the DOM  above and completely independent of any Happy Cog CSS.</li>
+	<li>A separate CSS file ddd-banner.css has been made inside the /assets/css folder Note that the ddd.css file applies to the fund raising site and the ddd-banner.css applies to the new site.</li>
+	<li> TBD: Implementation on TAKA </li>
+	
+</ul>
+

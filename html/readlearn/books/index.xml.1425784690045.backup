@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+
+		<media width="630" height="440" type="random" search="media_type:text" style="float: left;" />
+		<cta type="link" url="/site/search/media_type/book">View all Books</cta>
+	</module>
+
+
+
+<module name="Tabbed Content Module">
+	  <title>Browse Our Publications</title>
+		<tab title="Our Gurus">
+		        <search media_type="book" tags="our satgurus" />
+		</tab>
+		<tab title="For Meditation">
+			<search media_type="book" title="meditation"/>
+		</tab>
+                <tab title="For Teachers">
+			<search media_type="book" title="history"/>
+			<item file_id="loving-ganesha" />
+			<item file_id="yogas-forgotten-foundation" />
+<!-- 
+had to comment out until duplicate searching is disabled...
+			<search media_type="book" tags="youth"/>
+ -->
+		</tab>
+		<tab title="For Parents and Youth">
+		        <search media_type="book" tags="parents" />
+		        <!-- Commenting out until duplicates get fixed
+		        <search media_type="book" tags="youth" /> -->
+			<item file_id="how to become"/>
+			<search media_type="book" file_id="_ei" />
+			<item file_id="ten-tales-about-self-control" />
+			<item file_id="ten-tales-about-religious-life" />
+			<item file_id="saivite-virtue" />
+			<item file_id="growing-up-hindu"/>
+			<search media_type="book" title="saivite hindu religion"/>
+		</tab>
+
+	</module>
+
+	<module name="Tabbed Content Module">
+    <title></title>
+		<tab title="Educational Insights">
+			<search media_type="book" file_id="_ei" />
+		</tab>
+		<tab title="Scripture">
+			<search media_type="book" tags="agama" />
+			<!-- <search media_type="book" tags="scripture" /> -->
+			<item file_id="tirukural" />
+			<item file_id="tirumantiram" />
+		</tab>
+
+		<tab title="Other Languages">
+			<search media_type="book" language="french"/>
+			<search media_type="book" language="spanish"/>
+			<search media_type="book" language="sanskrit"/>
+			<search media_type="book" language="tamil"/>
+		</tab>
+		<tab title="Complete List">
+			<search media_type="text" />
+		</tab>
+	</module>
+
+
+	<module name="Links Module">
+		<collection>
+			<title>Other Popular Resources</title>
+			<links>
+				 <link url="/readlearn/panchangam">Our Hindu Calendar</link>
+			  	<link url="/view/lexicon">Hindu Lexicon</link>
+				<link url="/view/dancing-with-siva">Dancing with Siva</link>
+				<link url="/view/living-with-siva">Living with Siva</link>
+				<link url="/view/merging-with-siva">Merging with Siva</link>
+				<link url="/view/hindu-basics">Hindu Basics</link>
+				<link url="/view/loving-ganesha">The Elephant-faced God</link>
+				<link url="/view/lemurian-scrolls">Lemurian Scrolls</link>
+				 <link url="/readlearn/shum">Shum, The Language of Meditation</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+		        <links>
+				<link url="/readlearn/books/epub-info">How to Install ebooks</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/readlearn/other-languages">In Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link>
+			</links>
+		</collection>
+	</module>
+
+	</data>

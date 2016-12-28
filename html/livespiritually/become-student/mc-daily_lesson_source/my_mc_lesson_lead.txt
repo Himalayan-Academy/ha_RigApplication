@@ -1,0 +1,4 @@
+<form action="http://www.himalayanacademy.com/cgi-bin/build_any_mclesson.cgi" method="get"><p>
+Get another lesson? Enter the number, click and go: <input name="lesson" id="lesson" type="text" size="20" maxlength="3">&nbsp;&nbsp;&nbsp;
+<button type="submit" id="Submit" value="Submit" width="20 height="20">Get My Lesson</button></p>
+</form><br/>

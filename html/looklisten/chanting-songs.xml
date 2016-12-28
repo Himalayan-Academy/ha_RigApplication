@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<data> 
+	<module name="Featured Item Module">	
+            
+          <media type="random" search="media_type:song" style="float: left;"/>		
+						
+		<cta type="link" url="/site/search/media_type/song">View All Songs</cta>
+	</module>
+	
+	<module name="Promoted Collections Module">
+		<title class="podcasts">Chants and Songs</title>
+		<collection>
+			<title>Chants and Mantras</title>
+			<thumbnail>/html/img/circles/muruga-festival_circle.png</thumbnail>
+			<links>
+				<link url="/looklisten/chanting">Ganesha Home Puja</link>
+				<link url="/site/search/file_id/shanti-mantra">Shanti Mantra (Peace Invocation)</link>
+				<link url="/site/search/file_id/bhojana-mantra">Bhojana Mantra (Food-blessing Chant)</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/chant">View All</cta>
+		</collection>
+			
+		<collection>
+			<title>Yogaswami's Natchintanai</title>
+			<thumbnail>/html/img/circles/yogaswami_circle.png</thumbnail>
+			<links>
+			
+			<link random="media_type:song,genre:natchintanai"></link>
+
+		 	<link url="/site/search/media_type/audio/artists/Mrs. Meena Thavaratnam">By Mrs. Thavaratnam (Excellent Tamil) </link>
+									
+				<link url="/site/search/media_type/audio/genre/natchintanai/model_for_study/YES">Melodies for Learning and Teaching</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/audio/genre/natchintanai">View All Yogaswami Songs</cta>
+		</collection>
+		
+			<collection>
+			<title>Songs to the Gods</title>
+			<thumbnail>/html/img/circles/ganesha-festival_circle.png</thumbnail>		
+			<links>
+				<link url="/looklisten/music">Our Sacred Music Library</link>
+					<link url="/site/search/media_type/song/deity/Ganesha">Songs to Lord Ganesha</link>
+				<link url="/site/search/media_type/song/deity/Muruga">Songs to Lord Muruga</link>
+				<link url="/site/search/media_type/song/deity/Siva">Songs to Lord Siva</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/song">View all songs</cta>
+		</collection>
+
+	</module>
+	<module name="Square Slider Module">
+		<title>Special Collections</title>
+		<slides>
+			<item>
+				<image>/html/looklisten/img/chanting-songs-slider/Yogaswami-in-hut-singing-with-devotees.jpg</image>
+				<caption>Natchintanai: Sage Yogaswami's Love Songs to God</caption>
+				<link>/site/search/media_type/audio/genre/natchintanai</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/chanting-songs-slider/18-tambura.jpg</image>
+				<caption>Gitams: Songs of Worship</caption>
+				<link>/site/search/media_type/audio/genre/gitam</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/chanting-songs-slider/Rajam-bhajan-BB20_DxO.jpg</image>
+				<caption>Bhajans: Simple Devotional Songs for Group Singing</caption>
+				<link>/site/search/media_type/audio/genre/bhajan</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/chanting-songs-slider/MAK-105688.jpg</image>
+				<caption>Mantra Pushpam and Other Chants</caption>
+				<link>/site/search/media_type/chant/title/mantra</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/chanting-songs-slider/05_chittra-puja_DSC_6903.jpg</image>
+				<caption>Ashtottaram: Divine Names of Gods and Gurus</caption>
+				<link>/site/search/media_type/chant/title/ashtottara</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/chanting-songs-slider/MAK-70751.jpg</image>
+				<caption>Ganesha Puja Audio</caption>
+				<link>/site/search/media_type/audio/file_id/ganesha-puja</link>
+			</item>
+		</slides>
+		<cta type="link" url="/site/search/genre/bhajan">Listen to our growing collection of bhajans</cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>More to Listen to</title>
+			<links>
+				<link url="/site/search/media_type/song/genre/bhajan/deity/guru">Guru Bhajans</link>
+				<link url="/view/gurudeva-ashtottara_rt">108 names of Gurudeva</link>
+				<link url="/site/search/media_type/song/genre/bhakti-gitam">More Devotional Songs</link>
+				<link url="/view/ganesha-saranam_sa">Ganesha Saranam (Bhajan)</link>
+				<link url="/site/search/media_type/song/artists/maragatha/deity/siva">Beautiful Shiva Songs</link>
+			</links>
+		</collection>
+			<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/livespiritually/home-puja">Chanting and Songs</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+	</module>
+</data>

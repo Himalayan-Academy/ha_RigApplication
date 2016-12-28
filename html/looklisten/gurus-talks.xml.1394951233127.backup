@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<data> 
+	<title>Talks by Our Gurus</title>
+	<module name="Featured Item Module">		
+	   <media type="random" search="media_type:inspiredtalk,author:Bodhinatha" style="float: left;"/>		
+		<cta type="link" url="/looklisten/talksindex">Listen to More Inspired Talks</cta>
+	</module>
+	
+	<module name="Promoted Collections Module">
+	
+	<comment> Again, we have the requirement to search for a smart collection set, and then grab either the latest OR random selection that should be chosen run each time the user hits the page, then dig the title, and create a link. This obviously needs a special way to enter a function on this page, that is process by the CMS.lc library and then some emitter will return the link.)
+	</comment>
+		<title class="podcasts">Special Collections</title>
+		
+		<collection>
+			<title>Latest Treasures
+			</title>
+			<thumbnail>/html/img/circles/bodhinatha-b-w_circle.png</thumbnail>
+			<links>
+			   <link latest="pick:1,media_type:inspiredtalk,author:Bodhinatha">Latest Sun One Upadesha</link>
+				<link latest="pick:1,media_type:video,description:desk">Latest Publisher's Desk</link>
+				<link url="/view/gr_1996-11-08_short-meditation-18">Gurudeva Guides Meditation, 1996!</link>
+			</links>
+			<cta type="link" url="/looklisten/talksindex">View All Inspired Talks</cta>
+		</collection>
+		
+		<collection>		
+			<title>Bodhinatha's Audio Discourses</title>
+			<thumbnail>/html/img/circles/bodhinatha-color_circle.png</thumbnail>		
+			<links>
+				<link random="media_type:inspiredtalk,author:bodhinatha,description:lesson"></link>
+				<link random="media_type:inspiredtalk,author:bodhinatha,description:youth"></link>
+				<link random="media_type:inspiredtalk,author:bodhinatha"></link>
+			</links>
+			<cta type="link" url="/looklisten/talksindex">View All Bodhinatha's Discourses</cta>
+		</collection>
+		<collection>
+			<title>Gurudeva's Audio Discourses</title>
+			<thumbnail>/html/img/circles/gurudeva_pinkcoral_circle.png</thumbnail>
+			<links>
+				<link random="media_type:inspiredtalk,author:subramuniyaswami"></link>
+				<link random="media_type:inspiredtalk,author:subramuniyaswami"></link>
+				<link random="media_type:inspiredtalk,author:subramuniyaswami"></link>
+			</links>
+			<cta type="link" url="/looklisten/talksindex">View All Gurudeva's Discourses</cta>
+		</collection>
+		
+	</module>
+	<module name="Square Slider Module">
+		<title>Our Gurus</title>
+		<slides>
+			<item>
+				<image>/html/looklisten/img/gurus-talks-slider/IMG_2437.jpg</image>
+				<caption>2012 Talks by Bodhinatha</caption>
+				<link>/site/search/media_type/audio/author/bodhinatha/date_created/2012</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/gurus-talks-slider/IMG_4655.jpg</image>
+				<caption>Satgurus Speak on Temple Worship</caption>
+				<link>/site/search/media_type/inspiredtalk/description/temple+worship</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/gurus-talks-slider/Ganga_Sivanathan_210.jpg</image>
+				<caption> Satgurus Speak on God Realization</caption>
+				<link>/site/search/media_type/inspiredtalk/description/self+realization</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/gurus-talks-slider/IMG_3003.jpg</image>
+				<caption>Satgurus Speak on Raising Children</caption>
+				<link>/site/search/media_type/inspiredtalk/description/children</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/gurus-talks-slider/gr4.jpg</image>
+				<caption>Satgurus Speak on Conversion to Hinduism</caption>
+				<link>/site/search/media_type/inspiredtalk/description/conversion</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/gurus-talks-slider/Yogaswami-portrait-Sharma.jpg</image>
+				<caption>Wisdom from Sage Yogaswami</caption>
+				<link>/view/words-of-our-master</link>
+			</item>
+		</slides>
+		<cta type="link" url="/site/search/media_type/inspiredtalk">Listen to More Inspired Talks</cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>Bodhinatha's Talks (by topic)</title>
+			<links>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/family">Family</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/gods">God and the Gods</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/conduct">Good Conduct</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/the guru">Guru</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/religion">Religion</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/karma">Karma</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/relationships">Relationships</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/church">Saiva Siddhanta Church</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/character">Self Improvement</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/spiritual path">Spiritual Path</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/temple worship">Temple Worship</link>
+				<link url="/site/search/media_type/audio/author/Bodhinatha/description/the self">Ultimate Goals of Life</link>
+			</links>
+		</collection>
+			<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/livespiritually/home-puja">Chanting and Songs</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="http://dev.himalayanacademy.com/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+		</module>
+</data>

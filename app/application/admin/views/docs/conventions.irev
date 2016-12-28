@@ -1,0 +1,12 @@
+<ul>
+	<li>all html id and class names should be lower case. e.g. "masthead" "header"</li>
+
+	<li>for clarity, if you want, use hyphens and not underscores where you feel separators will make more sense e.g. "header-board"</li>
+
+	<li>FYI:   CapitalCamelCase and gHungarianForms (tBookTitle, pParamaterName) are reserved for JS, jQuery and RevServer-LiveCode variables. (thus separating the presentation layer semantic labels from the application layer); underscores are reserved for MySQL database table and row names (thus separating back end calls as an obvious dbase class of labels) (though underscores may be used in multi-segment file names, see below)</li>
+
+	<li><b>identify all major block closing tags</b> with a HTML comment<br />  e.g <code></div> <!-- main-content --> </code>
+	</li>
+
+	<li><b>Filenames for libraries</b> should include a version number e.g jquery-1.4.2.js  and not "jquery.js" </li>
+</ul>

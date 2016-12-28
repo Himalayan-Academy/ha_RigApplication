@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <title>[[gData["pageTitle"] ]]</title>
+</head>
+
+<body style="background-color: #870809;">
+
+       [[gData["adminCSS"] ]]
+
+  <div id="container" style="width:100%;">
+
+
+
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;Andre's Time and Task Tracking [On New Vel Server]</h1>
+   <!-- offline use when Andre comes to Kauai
+<div id="kauai-agenda">
+   
+        [[gData["kauaiAgenda"] ]]
+    </div>
+ -->
+    <div id="tasklist">
+        [[gData["taskTable"] ]]
+    </div>
+    
+    <div id="roadmap">
+        [[gData["roadMap"] ]]
+        
+    </div>
+    
+    <div id="PKJobs">
+    [[gData["pkJobs"] ]]
+    </div>
+
+    <div id="report">   
+       [[gData["timeLog"] ]]     
+    </div>
+  </div>
+<br /><br clear="left" />
+  <p>
+  Page rendered in {{g_ElapsedTime_}} seconds. RevIgniter version [[ RIVERSION ]]. LC Server Version [[ the version ]].</p>
+</body>
+</html>
+ 

@@ -1,0 +1,47 @@
+<h1>Himalayan Academy Web Server Administration Site</h1>
+
+<h2> Yes! It works! (smile) </h2>
+
+<hr />
+   <p> The following image is served with a direct url to the image: </p>
+   
+   <code>img src="/assets/modules/admin/img/Iraivan_dsc8361-112px.gif"</code>
+
+   <img src="/assets/modules/admin/img/Iraivan_dsc8361-112px.gif" />
+
+<hr />
+   <p> The following image is served by calling the asset using the helper statement in the view itself: </p>
+
+   <code>return rigImageAsset("Iraivan_dsc8361-112px.gif",,"admin",TRUE)</code>
+   
+  <? return rigImageAsset("Iraivan_dsc8361-112px.gif",,"admin",TRUE) ?>
+
+<hr />
+<p> The following image is served by using the helper in the controller to poke the gData array, and then using the merge variable function in the view:</p>
+
+<code> in the controller: "index.irev" handler "index" <br />
+#Set a banner image<br />
+     put rigImageAsset("Iraivan_dsc8361-112px.gif",,"admin",TRUE)) into gData["banner"]<br />
+     then on this page:<br />
+'[['gData'["banner"'] ']]'</code>
+
+
+[[gData["banner"] ]]
+
+[[gData["adminTitle2"]]
+
+
+<hr />
+<p> The following image is served by first putting the image file name into a variable
+then passing the variable to the helper, to insert into gData and then using the merge variable function in the view:</p>
+
+<code>
+  # test variable option as we will need this later: <br /> 
+     put "Iraivan_dsc8361-112px.gif" into tNextImage<br />
+     put rigImageAsset(tNextImage,,"admin",TRUE) into gData["rotate"]<br />
+     then on this page:<br />
+     '[['gData'["rotate"'] ']]' </code>
+
+[[gData["rotate"] ]]
+
+<p><br />Page rendered in {{g_ElapsedTime_}} seconds</p>

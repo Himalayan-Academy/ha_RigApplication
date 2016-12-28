@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<data> 
+	<module name="Featured Item Module">	
+	
+		<media width="629" height="384" type="random" search="media_type:galleria" style="float: left;"/>
+		
+		
+		<cta type="link" url="/site/search/media_type/slideshow">View all slideshows</cta>
+	</module>
+	
+	<module name="Promoted Collections Module">
+		<title class="slideshows">A World of Images</title>
+		<collection>
+			<title>Art and Paintings</title>
+			<thumbnail>/html/img/circles/category_Art_circle.png</thumbnail>		
+			<links>
+				<link url="/site/search/media_type/painting/file_id/suresh">Suresh Muthukulam Vision Paintings</link>
+				<link url="/site/search/media_type/painting/file_id/rajam">Artwork by S. Rajam</link>
+				<link url="/site/search/media_type/painting/file_id/the-guru-chronicles">Artwork from The Guru Chronicles</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/painting">View all</cta>
+		</collection>
+		<collection>
+		<comment> SN: need circles</comment> 
+			<title>Slideshows</title>
+			<thumbnail>/html/img/circles/bodhinatha-b-w_circle.png</thumbnail>
+			
+			<links>						
+				<link random="media_type:slideshow,file_id:innersearch">Innersearch</link>
+				<link random="media_type:slideshow,title:bodhinatha">Bodhinatha</link>
+				<link random="media_type:slideshow,file_id:ka_">Bodhinatha</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/slideshow">View all Slideshows</cta>		</collection>
+		<collection>
+			<title>Temples and Festivals</title>
+			<thumbnail>/html/img/circles/iraivan-from-road_circle.png</thumbnail>
+			<links>
+				<link random="media_type:slideshow,file_id:iraivan">Iraivan</link>
+				<link random="media_type:slideshow,description:puja">Puja</link>
+				<link random="media_type:slideshow,title:kadavul">Ikadavul</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/slideshow">View all Slideshows</cta>		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>Special Collections</title>
+		<slides>
+			<item>
+				<image>/html/looklisten/img/art-photos-slider/1Large-Pradosha-Siva.jpg</image>
+				<caption>Art from "What is Hinduism?"</caption>
+				<link>/site/search/media_type/art/tags/wih</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/art-photos-slider/gardens_54.jpg</image>
+				<caption>Beautiful Sights at Kauai's Hindu Monastery"</caption>
+				<link>/view/sacred-gardens-of-kauai-aadheenam</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/art-photos-slider/the-guru-chronicles_y-18_rajam_sml.jpg</image>
+				<caption>Art from "The Guru Chronicles"</caption>
+				<link>/site/search/media_type/art/tags/guru+chronicles</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/art-photos-slider/b1_rajam_sml.jpg</image>
+				<caption>Paintings and Drawings of Ganesha</caption>
+				<link>/site/search/media_type/art/description/Ganesha</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/art-photos-slider/b37_rajam_sml.jpg</image>
+				<caption>Paintings and Drawings of Shiva</caption>
+				<link>/site/search/media_type/art/description/siva</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/art-photos-slider/_DSC6679.jpg</image>
+				<caption>Kauai Aadheenam through a Pilgrim's Eyes</caption>
+				<link>/view/2009-12-30_thushyanthan-aadheenam</link>
+			</item>
+			<item>
+				<image>/html/looklisten/img/art-photos-slider/085_hawaii__031309.jpg</image>
+				<caption>A Temple to Inspire Mankind for 1000 Years</caption>
+				<link>/view/iraivan_2012-02-03_main-slide-show</link>
+			</item>
+		</slides>
+		<cta type="link" url="/site/search/media_type/painting">See the entire painting collection</cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>See More</title>
+			<links>
+				<link url="/site/search/media_type/slideshow">Slideshow Gallery</link>
+				<link url="/site/search/media_type/art">Complete Art Gallery</link>
+				<link url="/site/search/media_type/slideshow/tags/photo-tour">Monastery Photo Tours</link>
+				<link url="/site/search/media_type/slideshow/title/innersearch 2008/">Innersearch 2008 Slideshows</link>
+				<link url="/site/search/media_type/art/artists/rajam">Art by S. Rajam</link>
+				<link url="/site/search/media_type/slideshow/tags/mahasamadhi">Gurudeva Mahasamadhi Slideshows</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/looklisten/chanting">Chanting and Songs</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="http://dev.himalayanacademy.com/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+	</module>
+</data>

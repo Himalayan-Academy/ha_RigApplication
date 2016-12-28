@@ -1,0 +1,64 @@
+<div class="image-frame" style="float:left ;margin-right:10px; padding-right:10px;"> <img src="/assets/modules/admin/img/Andre.jpg" /> </div> <h3>
+	Roadmap
+</h3>
+<menu>
+	<li><a href="http://wiki.hindu.org/sevatracker/index.php?do=details&amp;task_id=334" target="_blank">Idea Capture Here</a> </li>
+	
+	<li><a href="http://wiki.hindu.org/sevatracker/index.php?do=details&amp;task_id=336" target="_blank">Design Questions-Decisions</a></li>
+	
+	<li><a href="http://www.lucidchart.com/documents/edit/4d6a9d8d-c194-417f-a7d6-24df0af9a3bf/0" target="_blank">Lucid Chart Overview and TimeLine</a></li>
+	
+	<li><a href="http://wiki.hindu.org/wiki/doku.php/ha-web-site/Start" target="_top">Wiki-Documentation</a></li>
+</menu>
+
+
+
+<p>
+	<strong>Subject to change:</strong>
+</p>
+<ul>
+		<li>Get single book landing-home page generated from database</li>
+		<li>Move all Cybertalks into database and set up search framework for audio.</li>
+	<li>API to port all YouTube Metadata to our dbase. (or runtime?)</li>
+	<li> Research search tools to constrain searches to use selected realms on the web site.</li>
+	<li>Create model/code for fetching TAKA posts and displaying on Home page (latest post; user "devhap" talks to dbase "Wordpress" to dig the most recent records)</li>
+	<li>Develop TAKAL desktop application</li>
+	<li>Upgrade the Photo Uploader web app.</li>
+	<li>Build all new "Home Pages" based on new navigation model and designer's input (later)</li>
+	<li>Port all old content over to new site design</li>
+	<li>Build jQuery slideshow framework</li>
+	<li>Maha Master Course Trilogy Application (Big!)</li>
+</ul>
+<hr />
+<p>
+	<strong>Blue Sky! Brainstorm! </strong>
+</p>
+
+<ul>
+		<li>Cover flow across the bottom of home page, with "features" that take you to various areas of the web site with cool "stuff" </li>
+		<li>Walk Thru Aadheenam Panoramas</li>
+		<li>walk Thru Iraivan panorama</li>
+		<li>Art Online</li>
+	<li>Better Online Tours and Photo Galleries</li>
+	<li>Slideshows (including Innersearch)</li>
+	<li>Site overview video</li>
+	<li>Weekly excerpt of Seven Sages (for a year), then next new book</li>
+	<li>YouTube video of the day (in a box)</li>
+	<li>Kadavul website, with stories of Tandavas, Nandi, crystal, Trident, vigils, etc. </li>
+	<li>Later: Encyclopedia of Hinduism </li>
+		<li>Later: Radio station!</li>
+	<li>Yamas and Niyamas Game in RevWeb Player and later as Mobile App</li>
+	<li>Gurudeva Podcase iPhone app</li>
+	<li>Aadheenam web TV (leverage existing video for starters)</li>
+	<li>Quicktime Streaming Live Web casts. "Live from Kauai Aadheenam" (stored for later view if users can't get there</li>
+<li>Quicktime Streaming Live Screen casts</li>
+	<li>cool idea here</li>
+	<li>cool idea here</li>
+	<li>cool idea here</li>
+	<li>cool idea here</li>
+	<li>cool idea here</li>
+	
+</ul>
+
+
+<p><a href="sftp://devhap@dev.himalayanacademy.com//home/devhap/public_html/system/application/admin/views/tracker/">(Update Views</a>)</p>

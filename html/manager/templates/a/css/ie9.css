@@ -1,0 +1,24 @@
+.h1,h1,.h2,h2,.h3,h3,.h4,h4,.h5,h5,.h6,h6 {
+	line-height: 1.5;
+}
+
+.action {
+	background-position: 0 -43px;
+}
+
+.action-bg {
+	background-position: 8px 3px;
+}
+
+.action:hover,
+.action:focus {
+	background-position: 0 -88px;
+}
+
+.detail .content-article .share-options .social {
+	top: 16px;
+}
+
+.sbOptions a {
+	padding: 9px 10px 7px 10px;
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<cta type="link" url="/monastery/temples/iraivan">Help Build Iraivan Temple</cta>
+		<task>TASKS: put new version of "visiting a temple" online in this book puka: PDF that is currently on the HT site and ePub that will soon be done by Atritex as an extraction from the existing ePub of the recent issue that it appeared in; create slideshow and upload... use existing file id:  kadavul_iraivan-slideshow. Description needs to be redone.</task>
+		<media width="629" height="384" file_id="2012-11-25_kadavul-iraivan-combo"  style="float: left;" /> 
+	</module>
+	<module name="Promoted Collections Module">
+		<title class="topics">Two Temples</title>
+		<collection>
+			<title>Kadavul Hindu Temple</title>
+			<thumbnail>/html/img/circles/kadavul-temple_circle.png</thumbnail>
+			<links>
+				<link url="/monastery/temples/kadavul">About Kadavul Temple</link>
+				<link url="/view/kadavul_main-slideshow">Photos</link>
+				<link url="/visit">Information for Visitors and Pilgrims</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/slideshow/title/kadavul">Kadavul Temple Slideshows</cta>
+			<task>create the 2-column page for the above link from the Siva's Cosmic Dance section at the beginning of the DWS epub</task>
+		</collection>
+		<collection>
+			<title>San Marga Iraivan Temple</title>
+			<thumbnail>/html/img/circles/iraivan-from-road_circle.png</thumbnail>
+			<links> 
+				<link url="/monastery/temples/iraivan">Iraivan Temple (under construction)</link>
+				<link url="/monastery/temples/sanmarga">Interactive Map of the Sanctuary</link> 			
+				<link url="/monastery/newsletter/">Latest News</link>
+				<comment> proposed by SN: "[links top blog posts category iraivan]" can do that later</comment>
+					<task> DECISION-TASK build widget to go to all WP POSTS in a given category by most recent. this is easily done. you just go to the category page in wordpress: http://dev.himalayanacademy.com/blog/taka/category/iraivan-temple/ - but the link above is actually going to the latest newsletter, so what is the point of this discussion?</task>
+			</links>
+				<cta type="link" url="http://www.hheonline.org/donate/iraivan_temple.shtml">Help build the temple</cta>
+		</collection>
+		<collection>
+			<title>Videos of Our Festivals</title>
+			<thumbnail>/html/img/circles/ganesha-festival_circle.png 
+			</thumbnail>
+			<links>
+<link url="/view/satguru-purnima-2013">Satguru Purnima 2013</link>
+<link url="/view/vaikasi-vishakham-2013">Vaikasi Vishakham 2013</link>
+<link url="/view/gurudeva-mahasamadhi-2012">Gurudeva Mahasamadhi, 2012</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/ritual">View more</cta>
+		
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>Photos of Iraivan Temple</title>
+		<slides>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/19_016_sml.jpg</image>
+				<caption>A Temple to Inspire Mankind for 1000 Years</caption>
+				<link>/view/iraivan_2012-02-03_main-slide-show</link>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/07_Iraivan-sanctum_sml.jpg</image>
+				<caption>Earlier Construction</caption>
+				<link>/view/the-construction-of-iraivan-temple-2008</link>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/33_Vimanam_sml.jpg</image>
+				<caption>Vimanam covered with gold</caption>
+				<link>/view/iraivan_2009-06-15_gold-gilding</link>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/08_DSCF3596_sml.jpg</image>
+				<caption>Yogaswami's Golden Words</caption>
+				<link>/view/2010-04-04_yogaswamis-golden-words</link>
+			</item>
+			<item>
+				<image>/html/monastery/temples/iraivan/img/square-slider/03_Bangalore-quarry_sml.jpg</image>
+				<caption>From Stone to Masterpiece</caption>
+				<link>/view/iraivan_2012-02-03_main-slide-show</link> 
+			</item>
+		</slides>
+		<cta type="link" url="/view/iraivan_2012-02-03_main-slide-show">See Iraivan Main Slideshow</cta>
+	</module>
+	
+	<module name="Links Module">
+		<collection>
+			<title>Other Popular Resources</title>
+			<links>
+			<link url="/monastery/temples/iraivan/shanmuga-significance-of-iraivan">Shanmuga Sthapati - Significance of Iraivan</link>
+			<link url="/monastery/temples/iraivan/in-the-news">Iraivan In the News</link>
+			<link url="/monastery/temples/iraivan/bangalore/it-takes-a-village">Bangalore Carving Site</link>
+				<link url="/view/1999-08-10_iraivan-foundation-concrete-pour">Iraivan's Unique Foundation, 1999 Concrete Pour</link>
+<link url="/view/the-construction-of-iraivan-2006">Iraivan Under Construction, 2006</link>
+<link url="/view/the-construction-of-iraivan-temple-2008">Iraivan Under Construction, 2008</link>
+			<task>editing team will go through these links after doing the necessary reconstruction on the iraivan temple pages in this area of the site</task>		
+			</links>
+		</collection>
+		<collection>
+			<title>Links to Other Temples</title>
+		<links>
+			<link url="http://tamilnadutourism.org/virtualtour/">Virtual Tours of Tamil Nadu Temples</link>
+			<link url="http://www.hinduismtoday.com/modules/smartsection/item.php?itemid=5188">UNESCO World Heritage Sites</link>
+			<link url="http://www.hinduismtoday.com/modules/smartsection/item.php?itemid=1518">Muruga's Six Temple Pilgrimage</link>
+			<link url="http://www.hinduismtoday.com/modules/smartsection/item.php?itemid=5311">Hindu Temples of the West Adjust, Adapt, Improvise</link>
+			<link url="http://www.hinduismtoday.com/modules/smartsection/item.php?itemid=3482">BAPS Shri Swaminarayan Mandir in London</link>
+			<link url="http://www.hinduismtoday.com/modules/smartsection/item.php?itemid=1384">BAPS Shri Swaminarayan Mandir in Houston</link>
+		</links>
+		</collection>
+	</module>
+</data>

@@ -1,0 +1,31 @@
+input[type="text"],
+.form-search input[type="text"] {
+	padding-top: 12px;
+	height: 24px;
+}
+
+.form-search input[type="submit"] {
+	line-height: 100px;
+}
+
+.page-header .slideshow .caption .watch {
+	background-position: 0 0;
+	padding-top: 2px;
+}
+
+.detail .content-article .share-options .social {
+	top: 16px;
+}
+
+.media-images .row {
+	background: url(../img/bg-page-alt.jpg) 0 -50px repeat-x;
+}
+
+.page-content .media-images .row {
+	background: none;
+}
+
+.gallery-item {
+	background: transparent;
+	height: 0;
+}

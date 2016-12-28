@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<data>
+
+	<module name="Featured Item Module">
+		<media width="629" height="384" file_id="find-the-self-gurudeva-speaks"  style="float: left;" />
+		<cta type="link" url="/site/search/media_type/inspiredtalk/description/meditation">More Inspired Talks about Meditation</cta>
+	</module> 
+		
+	<module name="Promoted Collections Module">
+		<title class="topics">Realize God within through Meditation</title>
+		<collection>
+			<title>Beginning to Meditate</title>
+			<thumbnail>/html/img/circles/category_Sadhana_circle.png</thumbnail>
+			<links>
+				<link url="/view/bd_2010-07-19_four-steps-meditation">Four Steps to Meditation.</link>
+				<link url="/book/merging-with-siva/176">The Fine Art of Meditation</link>
+				<link url="/view/bd_2007-06-02_clear-w-light">Seeking the Clear White Light</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/book/tags/metaphysics">Books about meditation</cta>
+		</collection>
+		<collection>
+			<title>Strengthen Your Meditations</title>
+			<thumbnail>/html/img/circles/yogaswami_circle.png</thumbnail>
+			<links>
+				<link url="/view/bd_2006-07-26_concentration">Perfecting Concentration</link>
+				<link url="/book/merging-with-siva/50">Willpower</link>
+				<link url="/book/merging-with-siva/64">The Power of Affirmation</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/inspiredtalk/description/ashtanga yoga">More about Yoga and meditation</cta>
+		</collection>
+		<collection>
+			<title>Your Meditation Foundation</title>
+			<thumbnail>/html/img/circles/category_Theology_circle.png</thumbnail>
+			<links>
+				<link url="/view/bd_2010-12-23_gradual-progress-next-generation">Natural Spiritual Progress</link>
+				<link url="/book/merging-with-siva/86">Becoming Centered</link>
+				<link url="/view/yogas-forgotten-foundation">Yoga's Forgotten Foundation</link>
+			</links>
+			<cta type="link" url="/book/merging-with-siva/129">Read about the subconscious mind</cta>
+		</collection>
+	</module>
+	
+	<module name="Square Slider Module">
+		<title>Know Thy Self by Thyself</title>
+		<slides>
+			<item>
+				<image>/html/livespiritually/img/meditation-slider/Iraivan-meditation-DSC_0820(2).jpg</image>
+				<caption>Going within...</caption>
+				<link>/view/twelve-shum-meditations</link>
+			</item>
+			<item>
+				<image>/html/livespiritually/img/meditation-slider/DSC_5864.jpg</image>
+				<caption>and within...</caption>
+				<link>/book/merging-with-siva/72</link>
+
+			</item>
+			<item>
+				<image>/html/livespiritually/img/meditation-slider/DSC_5848.jpg</image>
+				<caption>and within...</caption>
+				<link>/book/merging-with-siva/137</link>
+			</item>
+			<item>
+				<image>/html/livespiritually/img/meditation-slider/20100615_6744.jpg</image>
+				<caption>and within...</caption>
+				<link>/book/merging-with-siva/212</link>
+			</item>
+			<item>
+				<image>/html/livespiritually/img/meditation-slider/DSC_3939.jpg</image>
+				<caption>and within...</caption>
+				<link>/book/merging-with-siva/220</link>
+			</item>
+		</slides>
+		<cta type="link" url="/book/merging-with-siva/68">Beginning to Meditate</cta>
+	</module>
+	
+<module name="Links Module">
+		<collection>
+			<title>See More</title>
+			<links>
+
+				<link url="/livespiritually/home-puja/ganesha-puja">Ganesha Puja</link>
+				<link url="/monastery/meet-the-monks">Meet the Monks</link>
+				<link url="/view/ganesha-puja_13_ashtottaraganesha">108 Names of Ganesha</link>
+				<link url="/site/search/media_type/book/tags/youth">Books for Teens and Children</link>
+				<link url="/monastery/about/philosophy">Our Philosphy</link>
+				<link url="view/bodhinatha-ashtottara">108 Names of Bodhinatha</link>
+			<task> CU TASK make links live after books are up url="http://www.himalayanacademy.com/resources/books/vows/SannyasinSong.html">??Song of the Sannyasin??
+				 url="/view/twelve-shum-meditations">??Twelve Shum Meditations
+				 url="/view/holy-orders-of-sannyas">??Holy Orders of Sannyas
+				 url="/view/saiva-dharma-shastras">??Saiva Dharma Shastras??</task>
+				 			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+		<links>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+			</links>		</collection>
+	</module>
+
+</data>

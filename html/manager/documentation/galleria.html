@@ -1,0 +1,44 @@
+<h1> Galleria Framework </h1>
+<p>By Brahmanathaswami: last update to this documentation: 2012-*09-29</p>
+
+
+<h2>Modifications to Theme Twelve CSS</h2>
+
+<p> We have made some extensive modifications to the Theme Twelve CSS in order to support multi-line captions. This also involved adding a new element to the stage to serve as the black backdrop behind a taller caption. This is implement in the actual head of our documents in Word Press. It looks like this.  </p>
+
+<pre><script> type="text/javascript">
+Galleria.ready(function() {
+	this.addElement('barbac');
+	this.appendChild('bar','barbac');
+	this.appendChild('stage','info-text');
+});   
+	</script>
+	</pre>
+
+Note that you need to have a copy of the modified css file in two places. one for RevIgniter and one for WordPress
+
+<h2>RevIgniter Implementation</h2>
+
+<p>Please read the revIgniter documentation for the modifications necessary to use the Galleria plug in. Basically the CSS has to be in the CSS folder /assets/css and the Javascript in the /assets/js folder on the top level. You have to modify the theme slightly by removing the css suffix in the JS itself. But this will break the normal framework that would be used in Word Press. Then you also need to modify all the paths in the RevIgniter theme css file to find their image elements. e.g. "background-image url(separator.png)" is the normal implementation where the theme CSS is all bundled together in the same folder. but for the revIgniter implementation you have to modify all these to use full root relative paths: <br /><br />
+
+  background-image: url(/assets/js/galleria/themes/twelve/playpause.png);
+
+</p>
+
+<h2> Word Press </h2>
+
+<p>The only way I could get galleria to work inside Word press is to have the framework set up as it would normally be on installation of galleria where it is all self-contained: everything is in the /js/galleria/ folder including theme css and JS all nested as it comes when you install it. Word press/galleria can't find the CSS file otherwise. There may have been other solutions, but putting it all together the way it comes worked. </p>
+
+<h2>Upgrade Procedures</h2>
+
+<ol>
+<li> download the full package for Galleria and your theme upgrade</li>
+<li> make a copy of the numbered new update like "galleria.2.4.5.js"  and name it "galleria.js"
+	<ul><li>put a copy of this both on the top level of /asserts/js and into "/assets/js/galleria/" our headers all call for a generic, un number version so that we don't have edit the head element on every upgrade</li></ul></li>
+<li>copy the theme galleria.twelve.min.js  to the /assets/js/  folder for the revigniter implementation. For the Word press implementation everything goes into the normal install location /assets/js/galleria/ etc...</li>
+<li> now edit the /assets/js/galleria.twelve.min.js file to remove the suffix in the css property line ("css:galleria.twelve.css" becomes "css:galleria.twelve")</li>
+<li> IMPORTANT: make a copy of the current galleria.twelve.css theme. give it some new name like "galleria.twelve.-multi-line.css"
+<li>Make a copy of the new upgraded theme css e.g. "galleria.twelve.css" and put it into the top level /assets/css folder  as "galleria.twelve.css-v1.2.3" or whatever... the copy that file and name it "galleria.twelve.css". Now, you have to a) edit all paths in that file to the controls images to put back to the galleria theme folder, e.g.  "url:/assets/js/galleria/themes/twelve/bar.png" b) open the  "galleria.twelve.-multi-line.css"  and look for the comments and make the necessariy changes in the latest CSS for the theme to support the multi-line captions.</li>
+</ol>
+
+

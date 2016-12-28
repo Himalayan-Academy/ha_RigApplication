@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<data> 
+	<module name="Featured Item Module">	
+	<title>[Curated video, to be decided on]; class: featured video</title>
+		<media width="629" height="384" file_id="bd_bodhinatha-gives-mantra-diksha-at-tiruvannamalai" style="float: left;"/>
+		
+		<comment></comment>
+		
+		<cta type="link" url="/site/search/media_type/video">View All Videos</cta>
+	</module>
+	
+	<module name="Promoted Collections Module">
+		<title>Special Video Collections</title>
+		<collection>
+			<title>Monthly News Update</title>
+			<thumbnail>/html/img/circles/iraivan-temple-circle.png</thumbnail>		
+			<links>
+				<link url="#">Latest monthly news video</link>
+				<link url="#">Second most recent monthly news video</link>
+				<link url="#">Third most recent monthly news video</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/news">View All</cta>
+		</collection>
+		<collection>
+			<title>Bodhinatha's Temple Upadeshas</title>
+			<thumbnail>/html/img/circles/bodhinatha-circle.png</thumbnail>
+			<links>
+				<link url="#">Latest sun 1 talk video</link>
+				<link url="#">Second most recent sun 1 talk video</link>
+				<link url="#">Third most recent sun 1 talk video</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/video/author/Bodhinatha">View All</cta>
+		</collection>
+		<collection>
+			<title>Temple Festivals</title>
+			<thumbnail>/html/img/circles/muruga-festival-circle.png</thumbnail>
+			<links>
+				<link url="/site/search/media_type/video/ritual">Latest Temple Festival Video</link>
+				<link url="#">Random Temple festival video 1</link>
+				<link url="/monastery/about/hinduism">Random Temple festival video 2</link>
+			</links>
+			<cta>View all(link to catalog of all videos in the keynote presentation gallery)</cta>
+		</collection>
+	</module>
+	<module name="Square Slider Module">
+		<title>The Island of Kauai</title>
+		<comment>Slider should feature a show of 6 images of Kauai</comment>
+		<slides>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>??Nestled beneath the wettest place on earth</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>??Nestled beneath the wettest place on earth</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>??Nestled beneath the wettest place on earth</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>??Nestled beneath the wettest place on earth</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>??Nestled beneath the wettest place on earth</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>??Nestled beneath the wettest place on earth</caption>
+			</item>
+		</slides>
+		<cta>??See more photos in our gallery(link to Kauai Imagery)</cta>
+	</module>
+	<module name="Links Module">
+		<collection>
+			<title>Browse by Topic</title>
+			<links>
+				<link url="/site/search/media_type/">Talks by Bodhinatha )all of these lead to search results for this category of videos in the media catalog template)</link>
+				<link url="/site/search/media_type/">Talks by Gurudeva</link>
+				<link url="/site/search/media_type/">Monastery</link>
+				<link url="/site/search/media_type/">Travel</link>
+				<link url="/site/search/media_type/">Teaching Presentations</link>
+				<link url="/site/search/media_type/">Hinduism Today</link>
+				<link url="/site/search/media_type/">Innersearch</link>
+				<link url="/site/search/media_type/">Iraivan Temple</link>
+				<link url="/site/search/media_type/">Festivals</link>
+				<link url="/site/search/media_type/">News</link>
+				<link url="/site/search/media_type/">Timelapse Photography</link>
+			</links>
+		</collection>
+		<collection>
+			<title>Popular Videos</title>
+			<comment>(Populate this with 12 videos with the highest number of views on YouTube; each linking to the Media Artifact page for the video)</comment>
+			<links>
+				<link url="/site/search/media_type/video">Popular Video 1</link>
+				<link url="/site/search/media_type/video">Popular Video 2</link>
+				<link url="/site/search/media_type/video">Popular Video 3</link>
+				<link url="/site/search/media_type/video">Popular Video 4</link>
+				<link url="/site/search/media_type/video">Popular Video 5</link>
+				<link url="/site/search/media_type/video">Popular Video 6</link>
+				<link url="/site/search/media_type/video">Popular Video 7</link>
+				<link url="/site/search/media_type/video">Popular Video 8</link>
+				<link url="/site/search/media_type/video">Popular Video 9</link>
+				<link url="/site/search/media_type/video">Popular Video 10</link>
+				<link url="/site/search/media_type/video">Popular Video 11</link>
+				<link url="/site/search/media_type/video">Popular Video 12</link>
+			</links>
+		</collection>
+	</module>
+</data>

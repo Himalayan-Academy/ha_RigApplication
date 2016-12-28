@@ -1,0 +1,17 @@
+<h1>Please document your custom cron jobs here </h1>
+
+<p>Format: Name; path to cron job; start date; time of day; implementation procedure, Notes</p>
+
+<ul>
+		<li>
+				<ul>
+					<li> Rename Jnanam Database</li>
+					<li> /home/devhap/cgi-bin/rename-database.cgi</li>
+					<li> Runs daily at Midnite</li>
+					<li> Set as cron job via VirtualMin control panel -->Web Min-->System-->Scheduled Cron jobs</li>
+					<li> We set up VirtualMin to back up the Jnanam database daily but each night at midnight it over write the previous one. This script renames that file at mid-night, thereby preserving each night's back up as a separate file. We need to change path to the command in the cron tab to /home/himalayan/... after we go live.</li>
+				</ul>
+		</li>
+</ul>
+  
+

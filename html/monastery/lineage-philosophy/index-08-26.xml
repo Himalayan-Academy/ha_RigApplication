@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<media width="629" height="384" file_id="part-1-guru-lineage-of-kauais-hindu-monastery" style="float: left;"/>
+		<cta type="link" url="/videos">View All Videos</cta>		
+	</module>
+
+	<module name="Promoted Collections Module">
+		<title>Guru Lineage and Philosophy</title>
+		<collection>
+			<title>Satguru Bodhinatha Veylanswami</title>
+			<thumbnail>/html/img/circles/bodhinatha-color-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/lineage-philosophy/bodhinatha">About our guru</link>
+				<link url="/visit/meet-us-when-we-travel">Bodhinatha's Travel Schedule</link>
+				<link url="/site/search/media_type/audio/author/veylanswami">Talks by Bodhinatha</link>
+			</links>
+					<task>This was to be a link to Bodhinatha Photos, but we don't have them yet.  doing video instead for now. task: migrate all Gurudeva photos as single records OR as a slide show with big versions and then make them downloadable</task>
+					<cta type="link" url="/site/search/media_type/video/description/bodhinatha">Videos of bodhinatha</cta>
+		</collection>
+		<collection>
+			<title>Satguru Sivaya Subramuniyaswami</title>
+			<thumbnail>/html/img/circles/gurudeva-hat-ocean-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/lineage-philosophy/gurudeva">About Gurudeva</link>
+				<link url="/site/search/media_type/audio/author/subramuniyaswami">Talks by Gurudeva</link>
+				<link url="/monastery/lineage-philosophy/yogaswami">About Paramaguru Yogaswami</link>
+				<link url="/monastery/lineage-philosophy/lineage">Our lineage in a nutshell</link>
+			</links>
+			<task>This was to be a link to Gurudeva Photos, but we don't have them yet.  doing video instead for now. task: migrate all Gurudeva photos as single records OR as a slide show with big versions and then make them downloadable</task>
+			<cta type="link" url="/site/search/media_type/video/description/gurudeva">Videos of Gurudeva</cta>
+		</collection>
+		<collection>
+			<title>Saiva Siddhanta Philosophy</title>
+			<thumbnail>/html/img/circles/devotee-rajam-circle.png</thumbnail>
+			<links>
+				<link url="/monastery/about/philosophy">Our philosophy in brief</link>
+				<comment> we had a link proposal to go to The Final Conclusions for all mankind, mws ch 52, but the option to target page inside epub is unknown at this time as we are currently delivery thru Monicle and scrolling to a page inside a book is not yet doable. Save for V2 of the site. In the meantime we have completed editing the all about pages and the philosophy page works</comment>
+				
+				<link url="/monastery/about/philosophy">Our Ancient Saivite Philosophy</link>
+				<link url="/monastery/about/hinduism">A Bird's Eye View of Hinduism</link>
+				<link url="/view/dancing-with-siva">Dancing with Siva, Hinduism's Contemporary Catechism</link>
+			</links>
+			<cta type="link" url="/livespiritually/monastic-life/how-to">How to become a monk</cta>
+		</collection>
+	</module>
+	
+		<module name="Square Slider Module">
+		<task> get photos of Gurus or tag slideshows</task>
+		<title>Photos of Our Gurus</title>
+		<slides>
+			<item>
+				<image>/html/monastery/about/img/square-slider/guru-purnima_DSC7708_sml.jpg</image>
+				<caption>The home of Satguru Bodhinatha Veylanswami</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/sannyas_DSC_5000_sml.jpg</image>
+				<caption>The source of the spark of initiations</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/muruga-abhishekam_DSC_5058_sml.jpg</image>
+				<caption>Kadavul Temple: home of magical Gods</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/Waialeale_Kailash_dsc_5679_sml.jpg</image>
+				<caption>Nestled beneath the wettest place on earth</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/wall-meditation_IMG_0455_sml.jpg</image>
+				<caption>A place for rigorous raja yoga meditation</caption>
+			</item>
+			<item>
+				<image>/html/monastery/about/img/square-slider/dakshina-class_DSC_6377_sml.jpg</image>
+				<caption>A fountain of teaching that flows to the world</caption>
+			</item>
+		</slides>
+		<cta>ADD LINK See more photos in our gallery</cta>
+	</module>
+</data>

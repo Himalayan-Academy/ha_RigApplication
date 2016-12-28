@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Input Library : revIgniter User Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="all" />
+		<meta name="author" content="Ralf Bitter" />
+		<meta name='description' content='revIgniter User Guide' />
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" media="screen" href="../css/bootstrap.min.css">
+
+		<script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="../js/nav-ck.js"></script>
+		
+		<!-- Touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon-57-precomposed.png">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		    <script src="../js/html5shiv.js"></script><a href="models.html" id="" title="models">models</a>
+		    <script src="../js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+<body>
+	<!-- START PAGE HEAD -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    			<a class="navbar-brand" href="#">revIgniter User Guide Version 1.6.6</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <form class="navbar-form navbar-right" role="search" method="get" action="http://www.google.com/search">
+ 		      <div class="form-group">
+ 				<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="revigniter.com/userGuide/" />
+ 		        <span id="searchLabel">Search User Guide</span> &nbsp; <input type="search" placeholder="Search ..." name="q" id="q" class="revignitorsearch" accesskey="s" autosave="bsn_srch" results="5" />
+ 				&nbsp;<input type="image" id="submitSearch" src="../images/searchGo.png" />
+ 		      </div>
+ 		 	 		</form>
+        </div><!--/.nav-collapse -->
+     </div>
+		 
+		 <!-- START BREADCRUMB -->		 
+		 <div id="breadcrumbContainer">
+			 <div class="container">
+			 		<ol class="breadcrumb">
+			 			<li><a href="http://revigniter.com/">revIgniter Home</a></li>
+			 		 	<li><a href="../index.html">User Guide Home</a></li>
+			 		 	<li class="active">Input Library</li>
+						<li id="tocListItem" class="pull-right"><a href="../toc.html">Table of Contents Page</a></li>
+			 		 </ol>
+				</div>
+		</div>
+		<!-- END BREADCRUMB -->		
+		
+		<!-- START SLIDEBOX -->
+		<div class="slide-panel top">
+			<div class="container">
+				<div id="panelContent"><script type="text/javascript">create_menu('../');</script></div>
+			</div>
+			<div id="open-button" class="slide-button">Table of Contents</div>
+			<div id="close-button" class="slide-button">Close</div>
+		</div>
+		<!-- END SLIDEBOX -->
+	 
+  </div>
+<!-- END PAGE HEAD -->
+
+<br clear="all" />
+
+<!-- START CONTENT -->
+<div class="container">
+	
+<div id="content">
+
+
+<h1>Input Library</h1>
+
+<p>The Input Library serves two purposes:</p>
+
+<ol>
+<li>It pre-processes global input data for security.</li>
+<li>It provides some helper handlers for fetching input data and pre-processing it.</li>
+</ol>
+
+<p class="important"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
+
+
+<h2>Security Filtering</h2>
+
+<p>The security filtering function is called automatically when a new <a href="../general/controllers.html">controller</a> is invoked.  It does the following:</p>
+
+<ul>
+<li>Destroys the global GET array.  Since revIgniter does not utilize GET strings (unless you have the 
+query string option enabled in your config file), there is no reason to allow it.</li>
+<li>Filters the POST/COOKIE array keys, permitting only alpha-numeric (and a few other) characters.</li>
+<li>Provides XSS (Cross-site Scripting Hacks) filtering.  This can be enabled globally, or upon request.</li>
+<li>Standardizes newline characters to LF</li>
+</ul>
+
+
+<h2>XSS Filtering</h2>
+
+<p>revIgniter comes with a Cross Site Scripting Hack prevention filter which can either run automatically to filter
+all POST and COOKIE data that is encountered, or you can run it on a per item basis.  By default it does <strong>not</strong>
+run globally since it requires a bit of processing overhead, and since you may not need it in all cases.</p>
+
+<p>The XSS filter looks for commonly used techniques to trigger Javascript or other types of code that attempt to hijack cookies
+or do other malicious things.  If anything disallowed is encountered it is rendered safe by converting the data to character entities.</p>
+
+<p>
+Note: This function should only be used to deal with data upon submission. It's not something that should be used for general runtime processing since it requires a fair amount of processing overhead.</p>
+
+
+<p>To filter data through the XSS filter use this function:</p>
+
+<h3>rigXssClean()</h3>
+
+<p>Here is an usage example:</p>
+
+<pre><code>put rigXssClean(tData) into tData</code></pre>
+
+<p>If you want the filter to run automatically every time it encounters POST or COOKIE data you can enable it by opening your
+<kbd>application/config/config.lc</kbd> file and setting this:</p>
+
+<pre><code>put TRUE into gConfig["globalXssFiltering"]</code></pre>
+
+<p>Note: If you use the form validation library, it gives you the option of XSS filtering as well.</p>
+
+<p>An optional second parameter, <dfn>pImage</dfn>, allows this function to be used to test images for potential XSS attacks, useful for file upload security.  When this second parameter is set to <dfn>TRUE</dfn>, instead of returning an altered string, the function returns TRUE if the image is safe, and FALSE if it contained potentially malicious information that a browser may attempt to execute.</p>
+
+<pre><code>if rigXssClean(tFile, TRUE) is FALSE then
+	-- file failed the XSS test
+end if
+</code></pre>
+
+
+<h3>rigSanitizeFilename(<var>tFileName</var>, <var>tRelativePath</var>)</h3>
+
+<p>Use this function to sanitize filenames from user input to prevent directory traversal and other security related issues. Here is an example:</p>
+
+<pre><code>put rigSanitizeFilename(rigVarPost("filename")) into tFilename</code></pre>
+
+<p>If it is acceptable for the user input to include relative paths, e.g. <kbd>file/in/some/approved/folder.txt</kbd>, you can set the second optional parameter,
+	<samp>tRelativePath</samp> to TRUE.</p>
+
+<pre><code>put rigSanitizeFilename(rigVarPost("filename"), TRUE) into tFilename</code></pre>
+
+
+<h2>Cross-site request forgery (CSRF) Protection</h2>
+
+<p>You can enable CSRF protection by opening your <kbd>system/application/config/config.lc</kbd> file and setting gConfig["csrf_protection"] to TRUE. When set to TRUE, token will be checked on a submitted form using the rigFormOpen() function (included in formHelper.lc) and matched with a CSRF cookie. If you are accepting user data, it is strongly recommended CSRF protection be enabled.</p>
+
+<pre><code>put TRUE into gConfig["csrf_protection"]</code></pre>
+
+<p>Using the <a href="../helpers/form_helper.html">form helper</a> and the <var>rigFormOpen()</var> function will automatically insert a hidden CSRF token field in your forms.</p>
+
+
+<h2>CSRF Preferences</h2>
+<p>You'll find the following CSRF related preferences in your <kbd>application/config/config.lc</kbd> file:</p>
+
+<div class="table">
+<table>
+<tr>
+	<th>Preference</th>
+	<th>Default</th>
+	<th>Options</th>
+	<th>Description</th>
+</tr>
+<tr>
+	<td class="td"><strong>csrf_protection</strong></td>
+	<td class="td">FALSE</td>
+	<td class="td">TRUE/FALSE (boolean)</td>
+	<td class="td">Whether to enable CSRF protection.</td>
+</tr>
+<tr>
+	<td class="td"><strong>csrf_token_name</strong></td>
+	<td class="td">csrfTokenName</td>
+	<td class="td">None</td>
+	<td class="td">The name of the token to be set.</td>
+</tr>
+<tr>
+	<td class="td"><strong>csrf_cookie_name</strong></td>
+	<td class="td">csrfCookieName</td>
+	<td class="td">None</td>
+	<td class="td">The name of the cookie to be set.</td>
+</tr>
+<tr>
+	<td class="td"><strong>csrf_expire</strong></td>
+	<td class="td">7200</td>
+	<td class="td">Time in seconds</td>
+	<td class="td">The number in seconds from the current time the token should expire.</td>
+</tr>
+</table>
+</div>
+
+<p class="important"><strong>Note:</strong> Keep in mind that the current time used to calculate expiration time is referenced either to your server's local time or GMT, based on the "time reference" setting in your config file.</p>
+
+
+<h2>Using POST, COOKIE, or SERVER Data</h2>
+
+<p>revIgniter comes with five helper functions that let you fetch POST, COOKIE or SERVER items.  The main advantage of using the provided
+functions rather than fetching an item directly ($_POST["something"]) is that the functions will check to see if the item exists and
+return false (boolean) if not.  This lets you conveniently use data without having to test whether an item exists first.
+In other words, normally you might do something like this:</p>
+
+<pre><code>if "something" is not among the keys of $_POST then
+	put FALSE into tSomething
+else
+	put $_POST["something"] into tSomething
+}</code></pre>
+
+<p>With revIgniter's built in functions you can simply do this:</p>
+
+<pre><code>put rigVarPost("something") into tSomething</code></pre>
+
+<p>The five functions are:</p>
+
+<ul>
+<li>rigVarPost()</li>
+<li>rigVarGet() (in case you have the query string option enabled in your config file)</li>
+<li>rigVarGetPost()</li>
+<li>rigVarCookie()</li>
+<li>rigVarServer()</li>
+</ul>
+
+<h3>rigVarPost()</h3>
+
+<p>The first parameter will contain the name of the POST item you are looking for:</p>
+
+<pre><code>get rigVarPost("someData")</code></pre>
+
+<p>The function returns FALSE (boolean) if the item you are attempting to retrieve does not exist.</p>
+
+<p>The second optional parameter lets you run the data through the XSS filter.  It's enabled by setting the second parameter to boolean TRUE;</p>
+
+<pre><code>get rigVarPost("someData", TRUE)</code></pre>
+
+<h3>rigVarGet()</h3>
+
+<p>This function is identical to the post function, only it fetches get data:</p>
+
+<pre><code>get rigVarGet("someData", TRUE)</code></pre>
+
+<h3>rigVarGetPost()</h3>
+
+<p>This function will search through both the post and get streams for data, looking first in post, and then in get:</p>
+
+<pre><code>get rigVarGetPost("someData", TRUE)</code></pre>
+
+<h3>rigVarCookie()</h3>
+
+<p>This function is identical to the post function, only it fetches cookie data:</p>
+
+<pre><code>get rigVarCookie("someData", TRUE)</code></pre>
+
+<h3>rigVarServer()</h3>
+
+<p>This function is identical to the above functions, only it fetches server data:</p>
+
+<pre><code>get rigVarServer("someData")</code></pre>
+
+
+
+
+<h2>Dealing with LiveCode Arrays in Post Data</h2>
+
+<p>You can send LiveCode arrays to revIgniter using POST. For this to work the following headers must be sent along with the POST data: <kbd>"Content-Type: application/lc.array"</kbd> or <kbd>"Content-Type: application/lc.array.compressed"</kbd> respectively in case you like to send your array in compressed form.<br />Use 
+	<pre><code>urlEncode(arrayEncode(myArray))</code></pre> 
+	or 
+	<pre><code>base64Encode(compress(arrayEncode(myArray)))</code></pre> 
+to prepare LiveCode arrays on the client side.</p>
+
+<p>Then format your data using LiveCode's libURLFormData() function like:</p>
+
+<pre><code>put libURLFormData("arrayName", tMyPreparedArray, "anotherArrayName", tMyOtherPreparedArray, "keyForSomeString", "myString") into tDataToSend</code></pre> 
+
+<p>Set the correct header and send the data to revIgniter:</p>
+
+
+<pre><code>set the httpHeaders to "Content-Type: application/lc.array.compressed"
+post tDataToSend to URL "http://mysite.com/mycontroller/"
+</code></pre>
+
+
+<p>On the server side you can retrieve your data like:</p>
+
+<pre><code>put rigVarPost("arrayName") into tMyArray</code></pre>
+
+
+<h2>Dealing with JSON in Post Data</h2>
+
+<p>To post JSON send <kbd>"Content-Type: application/json"</kbd> along with the POST data. This way there is no need to send JSON as form data.<br />On the server side JSON data can be retrieved from <dfn>$_POST</dfn> and from <dfn>$_POST_RAW</dfn> as well as from <dfn>rigVarPost()</dfn> or from <dfn>rigVarPost(, TRUE)</dfn> respectively.</p>
+
+
+
+
+<h3>rigIpAddress()</h3>
+<p>Returns the IP address for the current user.  If the IP address is not valid, the function will return an IP of: 0.0.0.0</p>
+<pre><code>put rigIpAddress() into tIP</code></pre>
+
+
+<h3>rigValidIP(<var>tIP</var>)</h3>
+
+<p>Takes an IP address as input and returns TRUE or FALSE (boolean) if it is valid or not.  Note:  The rigIpAddress() function above
+validates the IP automatically.</p>
+
+<pre><code>if rigValidIP(tIP) is FALSE then
+ 	put "Not Valid" into tUserIP
+else
+ 	put "Valid" into tUserIP
+end if
+</code></pre>
+
+<p>Accepts an optional second string parameter of "IPv4" or "IPv6" to specify an IP format. The default checks for both formats.</p>
+
+
+<h3>rigUserAgent()</h3>
+<p>Returns the user agent (web browser) being used by the current user. Returns FALSE if it's not available.</p>
+<pre><code>put rigUserAgent() into tUserAgent</code></pre>
+
+
+
+
+</div>
+<!-- END CONTENT -->
+
+</div> <!-- /container -->
+
+
+<div id="footer">
+	<div class="container">
+<p>
+Previous Topic:&nbsp;&nbsp;<a href="image_lib.html">Image Manipulation Library</a>
+<span class="separator"> :: </span>
+<a href="#top">Top of Page</a><span class="separator"> :: </span>
+<a href="../index.html">User Guide Home</a><span class="separator"> :: </span>
+Next Topic:&nbsp;&nbsp;<a href="jquery.html">jQuery Library</a>
+</p>
+<p><a href="http://revigniter.com/">revIgniter</a><span class="separator"> :: </span>Copyright &#169; 2009 - 2013<span class="separator"> :: </span><a href="http://www.softwaregestaltung.de/">dimensionB Bitter u. Bitter GmbH</a></p>
+	</div>
+</div>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/highlight.pack.js"></script>
+ <script>
+  	hljs.tabReplace = '    ';
+  	hljs.initHighlightingOnLoad();
+ </script>
+
+<script src="../js/script-ck.js"></script>
+<script>$(function() { Slidebox.init(); });</script>
+
+
+</body>
+</html>

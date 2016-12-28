@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+			<media  width="296" height="384" file_id="what-is-hinduism" style="float: left;"/>
+			
+		<cta type="link" url="/site/search/media_type/book">View all our books</cta>
+		</module>
+	
+	<module name="Promoted Collections Module">
+		<title class="books">An Ancient Religion</title>
+		<collection>
+			<title>Hinduism at a Glance </title>
+			<thumbnail>/html/img/circles/category_Theology_circle.png</thumbnail>
+			<links>
+				
+				<link url="/view/what-is-hinduism">What is Hinduism?</link>
+				<link url="/readlearn/basics/four-sects">Hinduism's Four Sects</link>
+				<link url="/readlearn/basics/nine-beliefs">Nine Beliefs of Hinduism</link>
+				<link url="/readlearn/basics/fourteen-questions">Fourteen Questions About Hinduism</link>
+				
+			</links>
+			<cta></cta>
+		</collection>
+		<collection>
+			<title>Philosophy</title>
+			<thumbnail>/html/img/circles/category_Publications_circle.png</thumbnail>
+			<links>
+				<link url="/site/search/media_type/book/tags/trilogy">The Master Course</link>
+				<link url="/view/vedic-experience">Vedic Experience</link>
+				<link url="/readlearn/basics/karma-reincarnation">Karma and Reincarnation</link>
+			</links>
+			<cta></cta>
+		</collection>
+		<collection>
+			<title>Culture and Ethics</title>
+			<thumbnail>/html/img/circles/category_Education_circle.png</thumbnail>
+			<links>
+				<link url="/view/dancing-with-siva">Hinduism's Contemporary Catechism</link>
+				<link url="/view/how-to-become-a-hindu">How to Become a Hindu</link>
+				<link url="/view/weavers-wisdom">Weaver's Wisdom</link>
+				
+			</links>
+			<cta></cta>
+		</collection>
+	</module>
+
+<module name="Square Slider Module">
+		<title>Simple Gems of the Sanatana Dharma...</title>
+		<slides>
+			<comment>Each image links to a certain area of hindu basics right now. One idea for the future is to have the slider call out 6 of the 14 questions and the cta below linking to the full booklet. Slide Six is an example</comment>
+			<item>
+				<image>/html/readlearn/basics/slider/SWASTIKA-flower-design.jpg</image>
+				<caption>Learn Four Facts of Hinduism</caption>
+				<link>/readlearn/basics/four-facts</link>
+				<comment></comment>
+			</item>
+			<item>
+				<image>/html/readlearn/basics/slider/T15-siva-soul.jpg</image>
+				<caption>Nine Basic Hindu Beliefs</caption>
+				<link>/readlearn/basics/nine-beliefs</link>
+				<comment></comment>
+			</item>
+			<item>
+				<image>/html/readlearn/basics/slider/ahimsa-cover.jpg</image>
+				<caption>Hindu Ethics</caption>
+				<link>/readlearn/basics/ahimsa-nonviolence</link>
+				<comment>consider changing to the yamas and niyamas when they are uploaded</comment>
+			</item>
+			<item>
+				<image>/html/readlearn/basics/slider/walking-with-Muruga.jpg</image>
+				<caption>God and Gods of Hinduism</caption>
+				<link>/readlearn/basics/god-and-gods-of-hinduism</link>
+				<comment></comment>
+			</item>
+			<item>
+				<image>/html/readlearn/basics/slider/gardens-openlotus-it04.jpg</image>
+				<caption>Unity in Diversity - The Four Sects of Hinduism</caption>
+				<link>/readlearn/basics/four-sects</link>
+				<comment></comment>
+			</item>
+			<item>
+				<image>/html/readlearn/basics/slider/sym-cow.jpg</image>
+				<caption>What's So Special about the Cow? Find out here...</caption>
+				<link>/readlearn/basics/fourteen-questions</link>
+				<comment>since the pdf is so much more impressive with the imagery, maybe we can link users straight to it in this case.</comment>
+			</item>
+		</slides>
+		<cta type="link" url="/view/hindu-basics">Download Hindu Basics eBook</cta>
+		<comment>we need a link to our basic info pamphlets PDFs</comment>
+	</module>
+
+	<module name="Tabbed Content Module">
+		<tab title="eBooks">
+			<item file_id="hindu-basics"/>
+			<item file_id="what-is-hinduism" />
+			<item file_id="yogas-forgotten-foundation" />
+			<item file_id="loving-ganesha" />
+			<item file_id="dancing-with-siva"/>
+			<item file_id="living-with-siva"/>
+			<item file_id="merging-with-siva"/>
+			<search media_type="book" title="history"/>
+		</tab>
+		<tab title="For Children">
+			<item file_id="mystic-mouse"/>
+			<item file_id="growing-up-hindu"/>
+			<search media_type="book" title="saivite hindu religion"/>
+			<search media_type="book" title="ten tales"/>
+
+		</tab>
+		<tab title="For Teachers">
+			<search media_type="book" title="history"/>
+			<item file_id="yogas-forgotten-foundation"/>
+		</tab>
+		<tab title="Other Languages">
+			<search media_type="book" language="french"/>
+			<search media_type="book" language="spanish"/>
+			<search media_type="book" language="sanskrit"/>
+		</tab>
+	</module>
+	
+	<module name="Links Module">
+		<collection>
+			<title>Other Popular Resources</title>
+			<links>
+				 <link url="/readlearn/panchangam">Our Hindu Calendar</link>
+				<link url="https://www.hinduismtoday.com/modules/smartsection/item.php?itemid=1248">Introduction to Hinduism</link>
+				 	<link url="/view/lexicon">Hindu Lexicon</link> 
+				<link url="/book/loving-ganesha/18">Meet Lord Ganesha</link>
+				<link url="/book/hindu-basics/11">Hindu Beliefs</link>
+				<link url="/book/hindu-basics/4">What is Saivite Hinduism?</link>
+				<link url="/book/hindu-basics/5">What is Shakta Hinduism?</link>
+				<link url="/book/hindu-basics/6">What is Vaishnava Hinduism?</link>
+				<link url="/book/hindu-basics/7">What is Smarta Hinduism?</link>
+				<link url="http://www.hinduismtoday.com/modules/smartsection/item.php?itemid=1012">Hindu Values</link>
+				<link url="http://www.feedblitz.com/f/?Sub=&Publisher=7522423&portal=331383">News and Inspiration by eMail</link>	
+
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+				<links>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="readlearn/basics">Basics of Hinduism</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>				
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+				
+			</links>
+		</collection>
+	</module>
+	
+	
+</data>

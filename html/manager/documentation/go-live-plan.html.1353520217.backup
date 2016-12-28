@@ -1,0 +1,103 @@
+<h1>Here is our plan for going live on with the new site</h1>
+
+Other important associated documentation relating to the new set up:
+
+<ul>
+<li> <a href="#redirect">Redirect framework</a></li>
+<li> <a href="devsite">New Dev Site to Production Site Plan/issues</a></li>
+</ul>
+
+
+
+<h2>Reset dbase access for use himalayan</h2>
+
+<ul>
+		<li> create "himalayan" new user for jnanam and new Word Press dbase</li>
+		<li>set permissions for new user on both data bases</li>
+		<li>enter the new user and password into the config for devhap and the new word press and test</li>
+</ul>					
+				
+				
+<h2>Fix all absolute URL's pointing to dev.himalayanacademy.com</h2>
+
+</ul>
+	<li>Check all scripts/replace hard coded references to "dev.himalayanacademy.com to $_SERVER["DOCUMENT_ROOT"]</li>
+	<li>Check all .xml and .html files and replace "dev.himalayanacademy.com" with "www.himalayanacademy.com" (should be very few, mostlly https links to forms and perhaps some old links which need to be fixed anyway)</li>
+</ul>
+
+<h2>Other housekeeping</h2>
+</ul>
+	<li>delete current records in WordPress database</li>
+</ul>
+	
+	<h2>Create new live Site in Home Folder/set up "New Site Coming Soon" </h2>
+<ul>
+		<li>make a new home folder (not an actual unix user) "himalayan-new"</li>
+		<li>copy the entire devhap content to the new folder</li>
+		<li>create special "We are Updating Web Site; Stay Tuned:" index file</li>
+</ul>	
+
+<h2>Redirect Matrix Must be in Place by Now </h2>
+  <ul>
+    <li>figure our how to trap 404's ask Ralf</li>
+    <ul>	
+
+<h2>Go Live!</h2>
+   <ul> 
+      <li>change the name of the current "himalayan" home folder to "himalayan2012"</li>
+      <li>change the name of the "himalayan-new" to "himalayan" </li>
+      <li>ping the revIgniter index file to see the new site content runs as expected.</li>
+      <li>trouble shoot as needed</li>
+      <li>test TAKA and fix WP config if necessary</li>
+      <li>remove the "new Site coming " file -- we are now live</li>
+      <li>Test DDD donation form now... debug if necessary; when working then:
+      <li>turn on banners for DDD drive, globally, TAKA, Site wide and on HT
+   </ul>
+      
+  <h2> Post Production Testing </h2>
+   
+<ul> 
+      <li>monitor redirect logs immediately and continuously for several hours/days tail in terminal</li>
+      <li>check on donations pages</li>
+      <li>ping the revIgniter index file to see the new site content runs as expected.</li>
+      <li>trouble shoot as needed</li>
+      <li>test TAKA and fix WP config if necessary</li>
+      <li>remove the "new Site coming " file -- we are now live</li>
+</ul>
+       
+<hr />
+ <h1> <a name="redirect"> Redirect Framework</a> </h1>
+       
+<p>Current plan is to adopt the same method currently used at HA.com<p>
+<ul>
+<li> Script handles incoming URI, dealing with minute cases first, followed by more general cases</li>
+<li> If no matches, then default to the redirect matrix array map</li>
+<li> if above fails, then  send custom 404, link to web master and log the 404 separate.</li>
+<li> idea: create a separate long for image 404's  as these are leeches hot linking to our site which is forbidden. It would be interesting to see who does this.</li>
+</ul> 
+       
+ <p>      Hi Brahmanathaswami,
+<br />
+it is the Exceptions.lc library in system/libraries.
+In this library search for "rigShow404Page".
+This handler is called by the rigShow404 command in
+system/revigniter/Common.lc.
+<br />
+
+Best
+<br />
+Ralf
+<p>
+
+
+<hr />
+ <h1> <a name="devsite">New Development Server --> Production Server Methods</a> </h1>
+ 
+ <p> Our plan now is to keep dev.himalayanacademy.com for development purposes. Andre wants us to start following a procedure where all changes are made on the dev site and rSynced to the production site. For this to work we need to have some agreements, conventions and technology in place. Some of this has to be sorted out. Issues and requirements that we can see for now are:</p>
+ 
+<ul>
+	<li>Until rsync is set up we would need to make edits on dev.himalayanacademy.com and then copy those files to the production server or vice-versa.</li>
+	<li> What about the enyo Editor? anyone using this will be touching files live on the production server. I am already using this intensively as for small changes it is very efficient (we need to make the editing are bigger)</li>
+	<li> What if two areas of the dev site are "under construction" for example, senthilnathaswami might be be testing some CSS in the /blog/wp-content/themes/taka  directory and working on this over a period of a few days and it's not ready to go live.  But, meanwhile someone else edits to a three pages and Andre finishes some web app on the dev site. How does the sync process know what to push to production and what is not ready?</li>
+</ul>
+

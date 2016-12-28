@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>
+      Andre Time Tracking Report
+    </title>
+    <style type="text/css">
+    table {
+     
+      border-spacing: 0;
+    }
+    
+    thead {
+      border-bottom: solid 1px lightgrey;
+      background-color: lightgrey;
+    }
+    
+    .lightgrey {
+      background-color: lightgrey;
+    }
+    
+    .aRight {
+      text-align: right;
+    }
+    .aCenter {
+      text-align: center;
+    }
+    .aJustify {
+      text-align: justify;
+    }
+    .description {
+      padding: 20px;
+      width: 50%;
+      text-align: justify;
+    }
+  
+    .border {
+      border: solid 1px lightgrey;
+      border-top: 0;
+      margin: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Andres Time Tracking Report
+    </h1>
+    <p>
+      This page shows a report on Andres work and time usage
+    </p>
+    <h2>Hours due</h2>
+    <p>Below is a summary of the advanced payments and hours due. Negative amount means I own hours, positive means I got credit</p>
+    <?
+    repeat for each key tBudget in gData["payments"]["advanced"]
+      put gData["payments"]["advanced"][tBudget] into tHoursDue
+      if tHoursDue < 0 then
+      # oh hours due!!!
+        put "+" into tPrefix
+        multiply tHoursDue by -1
+      else
+        put "-" into tPrefix
+      end if
+      put tHoursDue div 60 into tHours
+      put tHoursDue mod 60 into tMinutes    
+      if the len of tMinutes is 1 then put 0 before tMinutes
+      put "<p>Hours due for <strong>"&tBudget&"</strong>:"&&tPrefix&tHours &":"&tMinutes&"</p>" after tBuf
+    end repeat
+    return tBuf
+    ?>
+    <h2>Current Month</h2>
+    <table>
+      <thead>
+        <tr>
+          <td>
+            Date
+          </td>
+          <td>
+            Project Title
+          </td>
+          <td>
+            Task Title
+          </td>
+          <td>
+            Notes
+          </td>
+          <td>
+            Budget
+          </td>
+          <td>
+            Amount of time
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+         <?
+         put empty into tBuf
+          repeat for each key tE in gData["payment"]["entries"]
+            put gData["payment"]["entries"][tE] into tR    
+            put "<tr>" after tBuf
+            put "<td class='border'>"&tR["start_time"]&"</td>" after tBuf
+            put "<td class='border'>"&tR["project"]&"</td>" after tBuf
+            put "<td class='border'>"&tR["task"]&"</td>" after tBuf
+            put "<td class='description border'>"&tR["description"]&"</td>" after tBuf
+            put "<td class='border'>"&tR["budget"]&"</td>" after tBuf
+            put "<td class='aRight border'>"&tR["amount"]&"</td>" after tBuf
+            put "</tr>" after tBuf
+
+          end repeat
+          return tBuf
+          ?>
+        </tbody>
+      <tfoot>
+        <?
+        put empty into tBuf
+        repeat for each key tBudget in gData["payment"]["totals"]
+          put gData["payment"]["totals"][tBudget] into tTotal
+          put tTotal div 60 into tHours
+          put tTotal mod 60 into tMinutes    
+          if the len of tMinutes is 1 then put 0 before tMinutes
+          put "<tr>" after tBuf
+          put "<td/>" after tBuf
+          put "<td/>" after tBuf
+          put "<td/>" after tBuf
+          put "<td/>" after tBuf
+          put "<td class='aRight lightgrey'>"&tBudget&"</td>" after tBuf
+          put "<td class='aRight lightgrey'>"&tHours &":"&tMinutes&"</td>" after tBuf
+          put "</tr>" after tBuf
+       
+        end repeat
+        return tBuf
+        ?>
+    </table>
+        
+    <h2>All time</h2>
+       <table>
+         <thead>
+           <tr>
+             <td>
+               Date
+             </td>
+             <td>
+               Project Title
+             </td>
+             <td>
+               Task Title
+             </td>
+             <td>
+               Notes
+             </td>
+             <td>
+               Budget
+             </td>
+             <td>
+               Amount of time
+             </td>
+           </tr>
+         </thead>
+         <tbody>
+            <?
+            put empty into tBuf
+             repeat for each key tE in gData["all payments"]["entries"]
+               put gData["all payments"]["entries"][tE] into tR    
+               put "<tr>" after tBuf
+               put "<td class='border'>"&tR["start_time"]&"</td>" after tBuf
+               put "<td class='border'>"&tR["project"]&"</td>" after tBuf
+               put "<td class='border'>"&tR["task"]&"</td>" after tBuf
+               put "<td class='description border'>"&tR["description"]&"</td>" after tBuf
+               put "<td class='border'>"&tR["budget"]&"</td>" after tBuf
+               put "<td class='aRight border'>"&tR["amount"]&"</td>" after tBuf
+               put "</tr>" after tBuf
+
+             end repeat
+             return tBuf
+             ?>
+           </tbody>
+         <tfoot>
+           <?
+           put empty into tBuf
+           repeat for each key tBudget in gData["all payments"]["totals"]
+             put gData["all payments"]["totals"][tBudget] into tTotal 
+             put tTotal div 60 into tHours
+             put tTotal mod 60 into tMinutes   
+             if the len of tMinutes is 1 then put 0 before tMinutes
+             put "<tr>" after tBuf
+             put "<td/>" after tBuf
+             put "<td/>" after tBuf
+             put "<td/>" after tBuf
+             put "<td/>" after tBuf
+             put "<td class='aRight lightgrey'>"&tBudget&"</td>" after tBuf
+             put "<td class='aRight lightgrey'>"&tHours&":"&tMinutes&"</td>" after tBuf
+             put "</tr>" after tBuf
+
+           end repeat
+           return tBuf
+           ?>
+       </table>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>revIgniter URLs : revIgniter User Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="all" />
+		<meta name="author" content="Ralf Bitter" />
+		<meta name='description' content='revIgniter User Guide' />
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" media="screen" href="../css/bootstrap.min.css">
+
+		<script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="../js/nav-ck.js"></script>
+		
+		<!-- Touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon-57-precomposed.png">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		    <script src="../js/html5shiv.js"></script><a href="models.html" id="" title="models">models</a>
+		    <script src="../js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+<body>
+	<!-- START PAGE HEAD -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    			<a class="navbar-brand" href="#">revIgniter User Guide Version 1.6.6</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <form class="navbar-form navbar-right" role="search" method="get" action="http://www.google.com/search">
+ 		      <div class="form-group">
+ 				<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="revigniter.com/userGuide/" />
+ 		        <span id="searchLabel">Search User Guide</span> &nbsp; <input type="search" placeholder="Search ..." name="q" id="q" class="revignitorsearch" accesskey="s" autosave="bsn_srch" results="5" />
+ 				&nbsp;<input type="image" id="submitSearch" src="../images/searchGo.png" />
+ 		      </div>
+ 		 	 		</form>
+        </div><!--/.nav-collapse -->
+     </div>
+		 
+		 <!-- START BREADCRUMB -->		 
+		 <div id="breadcrumbContainer">
+			 <div class="container">
+			 		<ol class="breadcrumb">
+			 			<li><a href="http://revigniter.com/">revIgniter Home</a></li>
+			 		 	<li><a href="../index.html">User Guide Home</a></li>
+			 		 	<li class="active">URLS</li>
+						<li id="tocListItem" class="pull-right"><a href="../toc.html">Table of Contents Page</a></li>
+			 		 </ol>
+				</div>
+		</div>
+		<!-- END BREADCRUMB -->		
+		
+		<!-- START SLIDEBOX -->
+		<div class="slide-panel top">
+			<div class="container">
+				<div id="panelContent"><script type="text/javascript">create_menu('../');</script></div>
+			</div>
+			<div id="open-button" class="slide-button">Table of Contents</div>
+			<div id="close-button" class="slide-button">Close</div>
+		</div>
+		<!-- END SLIDEBOX -->
+	 
+  </div>
+<!-- END PAGE HEAD -->
+
+<br clear="all" />
+
+<!-- START CONTENT -->
+<div class="container">
+	
+<div id="content">
+
+
+<h1>revIgniter URLs</h1>
+
+<p>By default, URLs in revIgniter are designed to be search-engine and human friendly.  Rather than using the standard "query string"
+approach to URLs that is synonymous with dynamic systems, revIgniter uses a <strong>segment-based</strong> approach:</p>
+
+<pre><code>example.com/<var>news</var>/<dfn>article</dfn>/<samp>my_article</samp></code></pre>
+
+<p class="important"><strong>Note:</strong> Query string URLs can be optionally enabled, as described below.</p>
+
+<h2>URI Segments</h2>
+
+<p>The segments in the URL, in following with the Model-View-Controller approach, usually represent:</p>
+
+<pre><code>example.com/<var>controller</var>/<dfn>handler</dfn>/<samp>ID</samp></code></pre>
+
+<ol>
+<li>The first segment represents the controller <strong>script</strong> that should be invoked.</li>
+<li>The second segment represents the controller <strong>handler</strong>, that should be called.</li>
+<li>The third, and any additional segments, represent any variables that will be passed to the controller.<br /> These segments are not, as one might think, bound to specific parameters of any handlers.</li>
+</ol>
+
+<p>The <a href="../libraries/uri.html">URI Library</a> and the <a href="../helpers/url_helper.html">urlHelper</a>
+contain handlers that make it easy to work with your URI data.  In addition, your URLs can be remapped using the
+<a href="routing.html">URI Routing</a> feature for more flexibility.</p>
+
+
+
+<h2>Removing the index.lc file</h2>
+
+<p>By default, the <strong>index.lc</strong> file will be included in your URLs:</p>
+
+<pre><code>example.com/<var>index.lc</var>/news/article/my_article</code></pre>
+
+<p>You can easily remove this file by using a .htaccess file with some simple rules. Here is an example
+ of such a file, using the "negative" method in which everything is redirected except the specified items:</p>
+
+<pre><code>&lt;IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond $1 !^(index\.lc|image|img|assets|robots\.txt|css|js)
+	RewriteRule ^(.*)$ index.lc?/$1 [L]
+&lt;/IfModule>
+</code></pre>
+
+<p>In the above example, any HTTP request other than those for index.lc, images, assets, robots.txt, css and js is treated as
+a request for your index.lc file.</p>
+
+<p class="important"><strong>Note:</strong> Adapt RewriteBase to the path to revIgniter. Typically this is /. If you place revIgniter into a subfolder, RewriteBase would be something like /yourSubfolder/yourOtherSubfolder/.</p>
+
+<p class="important"><strong>Note:</strong> To enable the rewrite engine for .htaccess files you need to set "RewriteEngine On" and "Options FollowSymLinks" must be enabled in the Apache server configuration (httpd.conf) file. See http://httpd.apache.org/docs/current/mod/mod_rewrite.html</p>
+
+
+<h2>Adding a URL Suffix</h2>
+
+<p>In your <dfn>application/config/config.lc</dfn> file you can specify a suffix that will be added to all URLs generated
+by revIgniter.  For example, if a URL is this:</p>
+
+<pre><code>example.com/index.lc/products/view/shoes</code></pre>
+
+<p>You can optionally add a suffix, like <kbd>.html</kbd>, making the page appear to be of a certain type:</p>
+
+<pre><code>example.com/index.lc/products/view/shoes.html</code></pre>
+
+
+<h2>Enabling Query Strings</h2>
+
+<p>In some cases you might prefer to use query strings URLs:</p>
+
+<pre><code>index.lc?c=products&amp;m=view&amp;id=345</code></pre>
+
+<p>revIgniter optionally supports this capability, which can be enabled in your <dfn>application/config/config.lc</dfn> file. If you
+open your config file you'll see these items:</p>
+
+<pre><code>put FALSE into gConfig["enableQueryStrings"]
+put  "c" into gConfig["controllerTrigger"]
+put "m" into gConfig["methodTrigger"]</code></pre>
+
+<p>If you change "enableQueryStrings" to TRUE this feature will become active.  Your controllers and handlers will then
+be accessible using the "trigger" words you've set to invoke your controllers and handlers:</p>
+
+<pre><code>index.lc?c=controller&amp;m=method</code></pre>
+
+
+
+<h2>Using Secure URLs (https) Along with Normal URLs (http)</h2>
+
+<p>In case you use secure URLs along with normal URLs you need to set the "Base Site URL" in your <dfn>application/config/config.lc</dfn> file to empty like:</p>
+
+<pre><code>put "" into gConfig["baseUrl"]</code></pre>
+
+<p>If gConfig["baseUrl"] is empty revIgniter will guess the protocol, domain and path to your installation.</p>
+
+
+</div>
+<!-- END CONTENT -->
+
+</div> <!-- /container -->
+
+
+<div id="footer">
+	<div class="container">
+<p>
+<a href="#top">Top of Page</a><span class="separator"> :: </span>
+<a href="../index.html">User Guide Home</a><span class="separator"> :: </span>
+Next Topic:&nbsp;&nbsp;<a href="controllers.html">Controllers</a></p>
+<p><a href="http://revigniter.com/">revIgniter</a><span class="separator"> :: </span>Copyright &#169; 2009 - 2013<span class="separator"> :: </span><a href="http://www.softwaregestaltung.de/">dimensionB Bitter u. Bitter GmbH</a></p>
+	</div>
+</div>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/highlight.pack.js"></script>
+ <script>
+  	hljs.tabReplace = '    ';
+  	hljs.initHighlightingOnLoad();
+ </script>
+
+<script src="../js/script-ck.js"></script>
+<script>$(function() { Slidebox.init(); });</script>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<aside class="sidebar" role="complementary">
+		
+			<h3 class="h3 header">Search Inspired Talks</h3>
+	<div class="sidebar-module">
+	
+<form id="search-songs" action="/index.lc/audio/search" method="POST">
+		   <input type="hidden" name="media_type" value="audio/inspiredtalk">
+	
+	<fieldset>
+		<legend class="h3">Talks By: <br /></legend>
+		<input  class="option" name="include_gurudeva" id="gurudeva" type="checkbox" value="YES" /> Gurudeva<br />
+		<input class="option" name="include_bodhinatha" id="bodhinatha" type="checkbox" value="YES"> Bodhinatha 
+	</fieldset>
+	<fieldset>
+		 <legend class="h3">Search Within:</legend>
+		 
+		 <input   class="option" name="filter_by_string" id="title" type="checkbox" value="YES"> Title <br />
+		 <input   class="option" name="filter_by_description" id="description" type="checkbox" value="YES"> Description <br />
+		<input   class="option" name="filter_by_transcript" id="transcript" type="checkbox" value="YES"> Transcript <br />
+	</fieldset>
+	<fieldset>
+		 <legend class="h3">Search For:</legend>	
+		<input type="text" name="query"  name="query" id="search-string" type="text" size="20" maxlength="100" />
+		
+		<button class="commentsubmit" type="submit" id="submit" name="submit" value="inspired-talks">Get Talks</button>
+	</fieldset>
+</form>
+
+<hr />
+<a href="/audio/">Listen To Music Here</a>
+ </div><!-- end sidebar-module -->
+		
+	</aside> <!-- end sidebar -->

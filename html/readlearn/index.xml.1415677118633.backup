@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+
+		<media  width="296" height="384" file_id="hinduism-today-current-issue" style="float: left;" />
+		<cta type="link" url="http://www.hinduismtoday.com">Go to the Hinduism Today Web site</cta>
+		</module>
+		
+	<module name="Promoted Collections Module">
+		<title class="books">Resources</title>
+		
+		<collection>
+			<title class="books">Hinduism at a Glance </title>
+			<thumbnail>/html/img/circles/iraivan-from-road_circle.png</thumbnail>
+			<links>
+				<link url="/view/what-is-hinduism">What is Hinduism?</link>
+				<link url="/view/dancing-with-siva">A Contemporary Catechism</link>
+				<link url="/readlearn/basics/fourteen-questions">Fourteen Questions</link>
+				<li><a href="http://www.feedblitz.com/f/?Sub=&Publisher=7522423&portal=331383">News and Inspiration by eMail</a></li>						
+			</links>
+					<cta type="link" url="http://www.hinduismtoday.com/modules/smartsection/category.php?categoryid=6">Pub Desk - Contemporary Issues</cta>
+					  
+		</collection>
+				
+			<collection>
+			<title>Books</title>
+			<thumbnail>/html/img/circles/category_Master-Course_circle.png</thumbnail>
+			<links>
+				<link url="/site/search/media_type/book/tags/trilogy">The Master Course Trilogy</link>
+				<link url="/view/how-to-become-a-hindu">How to Become a Hindu</link>
+				<link url="/readlearn/other-languages">Translations Into Other Languages</link>
+			</links>
+			<cta type="link" url="/site/search/media_type/book">View All</cta>
+		</collection>
+		<collection>
+			<title>For Teachers and Parents</title>
+			<thumbnail>/html/img/circles/category_Parenting_circle.png</thumbnail>
+			<links>
+				<link url="/view/ten-tales-about-self-control">Ten Tales About Self Control </link>
+				<link url="/view/growing-up-hindu">Growing Up hindu</link>
+				<link url="/view/ten-tales-about-religious-life">Ten Tales About Religious Life</link>
+		
+				</links>
+				<cta type="link" url="/site/search/media_type/book/tags/youth">View All</cta>
+			</collection>
+		
+				</module>
+
+		
+	<module name="Square Slider Module">
+		<title>Your Spiritual Journey Begins Here...</title>
+		<slides>
+			<item>
+				<image>/html/readlearn/img/slider/70-steps-to-iraivan.jpg</image>
+				<caption>Your First Steps into the World of Hinduism - Know the Basics</caption>
+				<link>/readlearn/basics</link>
+				<comment>This links to the "basic of hinduism" page. Should it link to the Hindu Basics Book instead?</comment>
+			</item>
+			<item>
+				<image>/html/readlearn/img/slider/132-Sloka_2.jpg</image>
+				<caption>Study the Timeless Truths of India</caption>
+				<link>/site/search/media_type/book</link>
+				<comment>This links to all the books. Should it link to the "Books" page instead?</comment>
+			</item>
+			<item>
+				<image>/html/readlearn/img/slider/003-sloka_2.jpg</image>
+				<caption>See What's Happening Today in the Hindu World</caption>
+				<link>http://www.hinduismtoday.com/</link>
+			</item>
+			<item>
+				<image>/html/readlearn/img/slider/dreamstime_3728612.jpg</image>
+				<caption>Take these Teaching Tools for Passing on Our Heritage</caption>
+				<link>/readlearn/teachers-parents</link>
+			</item>
+			<item>
+				<image>/html/readlearn/img/slider/32-holisept2001ht.jpg</image>
+				<caption>Resources for Sharing with the Media</caption>
+				<link>/readlearn/for-the-media</link>
+			</item>
+		</slides>
+		<cta type="link" url="/readlearn/basics">More about Hinduism</cta>
+	</module>
+
+
+	<module name="Tabbed Content Module">
+		<tab title="eBooks">
+			<search media_type="book"/>
+		</tab>
+			
+		<tab title="For Children">
+			<search media_type="book" tags="youth"/>
+		</tab>
+		
+		<tab title="For Teachers">
+			<search media_type="book" title="history"/>
+			<item file_id="fourteen-questions"/>
+			<item media_type="book" title="saivite hindu religion"/>
+			<item file_id="yogas-forgotten-foundation"/>
+		</tab>
+		
+		<tab title="Other Languages">
+			<search media_type="book" language="french"/>
+			<search media_type="book" language="spanish"/>
+			<search media_type="book" language="hindi"/>
+			<search media_type="book" language="tamil"/>
+			<search media_type="book" language="sanskrit"/>
+		</tab>
+		
+	</module>
+
+	<module name="Links Module">
+		<collection>
+			<title>See More</title>
+			<links>
+				  <link url="/readlearn/panchangam">Our Hindu Calendar</link>
+				    <link url="/readlearn/shum">The Shum Language</link>
+				   	<link url="/view/lexicon">Hindu Lexicon</link> 
+				<link url="/view/gurudevas-toolbox">Tools for Spirituality</link>
+				<link url="/book/loving-ganesha/18">The Elephant-faced God</link>
+				<link url="/view/how-to-become-a-hindu">How to Become a Hindu</link>
+				<link url="/site/search/media_type/book/title/with siva">Study the Master Course</link>
+				<link url="/livespiritually/become-student/todays-lesson">Lesson of the Day</link>
+				<link url="http://www.feedblitz.com/f/?Sub=&Publisher=7522423&portal=331383">Inspiration by eMail</link>	
+				<link url="http://hinduismtoday.com/modules/wfchannel/index.php?wfc_cid=39">Hindu Festivals</link>
+				<link url="http://hinduismtoday.com/modules/smartsection/item.php?itemid=5167">When Kids Embrace Hinduism</link>
+				
+				
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+				<links>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="readlearn/basics">Basics of Hinduism</link>
+				<link url="/livespiritually/meditation">Learning to Meditate</link>				
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/readlearn/other-languages">Translations</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+	</module>	
+
+	</data>

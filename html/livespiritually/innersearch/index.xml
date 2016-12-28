@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<data>
+	<module name="Featured Item Module">
+		<media width="629" height="384" file_id="2014-07-14_mauritius-innersearch"  style="float: left;" />
+		<cta type="link" url="/livespiritually/innersearch/next-innersearch"></cta>
+	</module> 		
+	<module name="Promoted Collections Module">
+		 <title class="topics">A Spiritual Pilgrimage Adventure</title>
+		<collection>
+			<title>Our Next Program</title>
+			<thumbnail>/html/img/circles/category_Pilgrimage_circle.png</thumbnail>
+			<links>
+				<link url="/livespiritually/innersearch/what-is-innersearch">What Is Innersearch?</link>
+				<link url="/livespiritually/innersearch/next-innersearch">About Innersearch Mauritius 2014</link>
+				<link url="/livespiritually/innersearch/2014_mauritius/application">Register Now<!-- will be titled 'Get Notified' once BR can set up a feedblitze notification for the program. We will have to build a new page for this --></link>
+			</links>
+			<cta url="/livespiritually/innersearch/next-innersearch">learn more</cta>
+		</collection>
+		<collection>
+			<title>Past Innersearches</title>
+			<thumbnail>/html/img/circles/category_Kauai_circle.png</thumbnail>
+			<links>
+				<link url="/view/2014-innersearch-mauritius-complilation-video">Mauritius 2014</link>
+				<link url="/view/innersearch-kauai-2010">Kauai 2010</link>
+				<link url="/livespiritually/innersearch/2008_asia">Asian Odyssey 2008</link>
+			</links>
+			<cta url="/site/search/media_type/slideshow/file_id/innersearch">view more slideshows</cta>
+		</collection>
+		<collection>
+			<title>The Power of Pilgrimage</title>
+			<thumbnail>/html/img/circles/category_Travel-Missions_circle.png</thumbnail>
+			<links>
+				<link url="/site/search/media_type/audio/author/bodhinatha/description/pilgrimage">Bodhinatha's Talks About Pilgrimage
+				</link>
+				<link url="/book/merging-with-siva/42">Awareness: A Pilgrimage Through the Mind</link>
+					
+			</links>
+			<cta></cta>
+		</collection>
+	</module>
+	
+	<module name="Square Slider Module">
+		<title>Innersearch Photos</title>
+		<slides>
+			<item>
+				<image>/media/slideshows/2008/innersearch_2008-01-13_thousand-lingams/source/image/dscn4166.jpg</image>
+			    <caption>Innersearch 2008, Cambodia</caption>
+			    <link>/view/innersearch_2008-01-13_thousand-lingams</link>
+			</item>
+		
+			<item>
+				<image>/media/slideshows/2008/innersearch_2008-01-26_tiruvannamalai-train/005_080126-tiruvannamalai_train.jpg</image>
+				<caption>Innersearch 2008, Rameshwaram</caption>
+				<link>/view/innersearch_2008-01-27_rameshwaram-1</link>
+			</item>
+			<item>
+				<image>/media/slideshows/2008/innersearch_2008-02-01_hatha-yoga/source/image/06hatha_yoga_moments.jpg</image>
+				<caption>Hatha Yoga in Kerala, 2008</caption>
+				<link>/view/innersearch_2008-02-01_hatha-yoga</link>
+			</item>
+			<item>
+				<image>/media/slideshows/2006/innersearch_2006-01-11_dooralong/18-060111-Dooralong.jpg</image>
+				<caption>Bodhinatha in Dooralong, Australia, 2006</caption>
+				<link>/view/innersearch_2006-01-08_sydney_dooralong</link>
+			</item>
+			<item>
+				<image>/media/slideshows/2004/2004-01-29_indian-odyssey-innersearch-thanjavur/image/04ody_than02.jpg</image>
+				<caption>Thanjavur, 2004</caption>
+				<link>/view/2004-01-29_indian-odyssey-innersearch-thanjavur</link>
+			</item>
+			<item>
+				<image>/media/slideshows/2002/2002-07-22_kauai-innersearch/image/kauai02_20.jpg</image>
+				<caption>Kauai, 2002</caption>
+				<link>/view/2002-07-22_kauai-innersearch</link>
+			</item>
+		</slides>
+		<cta type="link" url="/site/search/media_type/slideshow/tags/innersearch">View all Innersearch Slideshows</cta>
+	</module>
+	
+	<module name="Links Module">
+		<collection>
+			<title>Other Popular Resources</title>
+			<links>
+
+				<link url="/looklisten/chanting">Ganesha Puja</link>
+				<link url="/monastery/meet-the-monks">Meet the Monks</link>
+				<link url="view/ganesha-puja_13_ashtottaraganesha">108 Names of Ganesha</link>
+				<link url="/site/search/media_type/book/tags/youth">Books for Teens and Children</link>
+				<link url="/monastery/about/philosophy">Our Philosphy</link>
+				<link url="view/bodhinatha-ashtottara">108 Names of Bodhinatha</link>
+							<task> CU TASK make links live after books are up url="http://www.himalayanacademy.com/resources/books/vows/SannyasinSong.html">??Song of the Sannyasin??
+				 url="/view/twelve-shum-meditations">??Twelve Shum Meditations
+				 url="/view/holy-orders-of-sannyas">??Holy Orders of Sannyas
+				 url="/view/saiva-dharma-shastras">??Saiva Dharma Shastras??</task>
+			</links>
+		</collection>
+		<collection>
+			<title>Quick Links</title>
+			<links>
+				<link url="/readlearn/basics">Basics of Hinduism</link>
+				<link url="/monastery/about">About the Monastery</link>
+				<link url="http://www.hinduismtoday.com/">Hinduism Today Magazine</link>
+				<link url="/looklisten/art-photos">Art and Photo Galleries</link>
+				<link url="/looklisten/chanting-songs">Chanting and Songs</link>
+				<link url="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</link>
+				<link url="/readlearn/books">Books and Publications</link>
+				<link url="/livespiritually/monastic-life/how-to">How to Become a Monk</link>
+				<link url="/looklisten/gurus-talks">Inspired Talks by Our Gurus</link>
+				<link url="/livespiritually/become-student">Become a Student</link>
+				<link url="/readlearn/other-languages">Translations in Other Languages</link>
+				<link url="/readlearn/for-the-media">For the Media</link> 
+			</links>
+		</collection>
+	</module>
+
+	
+</data>

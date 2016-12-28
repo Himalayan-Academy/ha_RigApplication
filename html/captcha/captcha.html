@@ -1,0 +1,11 @@
+<table cellpadding=5 cellspacing=0 bgcolor="#E4F8E4">
+<tr bgcolor="#AAD6AA">
+<td colspan="2"><font color="#FFFFFF" face="Verdana" size="2"><b>Image Verification</b></font></td>
+</tr>
+<tr>
+<td style="padding: 2px;" width="10"><img src="/captcha/captchac_code.php" id="captcha"></td>
+<td valign="top"><font color="#000000">Please enter the text from the image</font> &nbsp; <br><input type="text" name="Turing" value="" maxlength="100" size="10">
+[ <a href="#" onclick=" document.getElementById('captcha').src = document.getElementById('captcha').src + '?' + (new Date()).getMilliseconds()">Refresh Image</a> ] [ <a href="/captcha/whatisturing.html" onClick="window.open('/captcha/whatisturing.html','_blank','width=400, height=300, left=' + (screen.width-450) + ', top=100');return false;">What's This?</a> ]
+</td>
+</tr>
+</table>

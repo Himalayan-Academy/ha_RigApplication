@@ -1,0 +1,105 @@
+<h1>November 11, 2016</h1>
+
+<h2>Cache Busting Implemented</h2>
+
+------- Documentation:
+
+<p>
+@ simon… I don’t think this affects your theme switching on the blog, but keep an eye out
+… (fyi we  are still delivering "style-old.css" on the blog, but it looks like the CSS is updated?)
+</p>
+
+<p>
+details
+</p>
+
+<p>
+both sites had this directive in .htaccess already
+</p>
+
+<p>
+RewriteRule ^(.*)-cb\d+\.(.*)$ $1.$2 [L]
+</p>
+
+<p>
+# So the actual file names of the css remain unchanged. mod_rewrite handles the redirect.
+</p>
+
+<p>
+on both dev and ha sites we edited:
+</p>
+
+<p>
+/system/application/ha/config/config.lc
+Line 46: 	put TRUE into gConfig["use_cacheBusters"]
+</p>
+
+<p>
+Then we edited views:
+</p>
+
+<p>
+/system/application/ha/views/sitewide/dochead.lc
+</p>
+
+<p>
+in the htmlhead we have 
+</p>
+
+<p>
+<? return rigCssAsset("style.css") ?>
+</p>
+
+<p>
+which is dynamically outputting (thank you Ralf!)
+:
+<link href="http://www.himalayanacademy.com/assets/css/style-cb1476160260.css" rel="stylesheet" type="text/css"  />
+</p>
+	
+<p>
+I manually set the file name  for the dDD banner css to
+</p>
+
+<p>
+<link rel="stylesheet" href="/assets/css/ddd-banner-cb20161015.css" type="text/css" media="screen, projection" />
+</p>
+
+<p>
+and on the blog/wp-content/theme/taka/header.php
+</p>
+
+<p>
+Manually changed to this:
+</p>
+
+<p>
+	<link rel="stylesheet" href="/assets/css/style-old-cb20161015.css" type="text/css" media="screen, projection" />
+</p>
+
+<p>
+and
+</p>
+
+<p>
+<link rel="stylesheet" href="/assets/css/ddd-banner-cb20161015.css" type="text/css" media="screen, projection" />
+</p>
+
+<p>
+/assets/css/style-old-cb20161015.css
+</p>
+      
+<p>
+<link rel="stylesheet" href="/assets/css/ddd-banner-cb20161015.css" type="text/css" media="screen, projection" />
+</p>
+
+<p>
+@ simon: I think some of our prototyping/testing problems will go away if, when you make changes you manually change the cacheBusting appended string to the new mod date… e.g. if you make major changes, then edit the header.php  and update like this (were, e.g. you make changes on the 20th… ) 
+</p>
+
+<p>
+<link rel="stylesheet" href="/assets/css/style-old-cb20161020.css" type="text/css" media="screen, projection" />
+</p>
+
+<p>
+The files on disk stay the same "style.css, style-old.css, ddd-banner.css" even though their mod dates changed. But browser will see their file in cache as expired and pull a new one.
+</p>

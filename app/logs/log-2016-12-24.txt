@@ -1,0 +1,31 @@
+REQUESTED: - Sat, 24 Dec 2016 03:53:24 +0000: media/books/the-guru-chronicles/the-guru-chronicles_cover_thm.jpg
+ERROR - Sat, 24 Dec 2016 03:53:25 +0000: 404 Page Not Found --> media/books
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Hooks Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Config Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: URI Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Router Library Loaded
+ERROR - Sat, 24 Dec 2016 03:53:25 +0000: 404 Page Not Found --> favicon.ico
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Output Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Input Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Global POST and COOKIE data sanitized
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Language Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Loader Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Controller Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Helper loaded: assetHelper
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Helper loaded: urlHelper
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Database Driver Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Session Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Helper loaded: stringHelper
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Session routines successfully run.
+DEBUG - Sat, 24 Dec 2016 03:53:25 +0000: Utils Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: Utils constructor called
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: FastJSON Library Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: Get Set Page Header and Navigation Loaded
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: REDIRECT-FAILURE:favicon.icoNo match found in the XML map!
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: File loaded: /var/www/html/system/application/ha/views/sitewide/error-page.lc
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: File loaded: /var/www/html/system/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: File loaded: /var/www/html/system/application/ha/views/sitewide/two-column.lc
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: File loaded: /var/www/html/system/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: File loaded: /var/www/html/system/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: Final output sent to browser
+DEBUG - Sat, 24 Dec 2016 03:53:26 +0000: Total execution time: 1.6993
