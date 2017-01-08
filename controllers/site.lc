@@ -140,6 +140,12 @@ command viewmedia
 			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
 			get rigLoadView("media/audio-details", gData)
 		break
+		case "audio/book"
+			put "Audiobook - " & gData["record"]["title"] into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			get rigLoadView("media/audio-book-details", gData)
+		break
 
 		case "app"
 			put empty into tStyle

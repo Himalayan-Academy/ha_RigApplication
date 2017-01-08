@@ -106,6 +106,9 @@ function folderForAudio pA
 		case "audio/shum"
 			put "shum" into tType
 		break
+		case "audio/book"
+			put "books" into tType
+		break
 	end switch	
 	return ($_SERVER["DOCUMENT_ROOT"] & "/media/audio/" & tType &"/"& pA["file_id"]) 
 end folderForAudio
