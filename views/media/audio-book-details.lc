@@ -18,7 +18,6 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 					<h2 class="h2"><? return gData["record"]["sub_title"]?> </h2>
 					
 					<figure class="media-detail">
-						<img src="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" itemprop="image" alt="Image of <? return gData["record"]["title"] ?>"/> 
 						<meta itemprop="encodingFormat" content="mp3" />
 						<meta itemprop="contentURL" content="<? return getAudioFile(gData["record"], "mp3") ?>" />
 					
@@ -26,8 +25,8 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 						<link  href="/assets/js/mejs-playlist/mediaelement-playlist-plugin.min.css" rel="Stylesheet" />
 						<div class="audio-player">
 							<audio 
-							  	width="400" 
-    						  	height="260" 								
+							  	width="549" 
+    						  	height="387" 								
 								data-showplaylist="true" 
 							>
 							<source src="/media/audio/books/guru-chronicles-audiobook/01 Dedication.mp3" title="Dedication" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
