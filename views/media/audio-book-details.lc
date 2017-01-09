@@ -22,6 +22,8 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 						<meta itemprop="encodingFormat" content="mp3" />
 						<meta itemprop="contentURL" content="<? return getAudioFile(gData["record"], "mp3") ?>" />
 					
+						<script src="/assets/js/mejs-playlist/mediaelement-playlist-plugin.min.js"></script>
+						<link  href="/assets/js/mejs-playlist/mediaelement-playlist-plugin.min.css" rel="Stylesheet" />
 						<div class="audio-player">
 							<audio 
 								controls="control" 
