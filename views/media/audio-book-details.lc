@@ -23,7 +23,13 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 						<meta itemprop="contentURL" content="<? return getAudioFile(gData["record"], "mp3") ?>" />
 					
 						<div class="audio-player">
-							<audio controls="control" preload="none" src="<? return getAudioFile(gData["record"], "mp3") ?>" type="<? return getAudioMime(gData["record"], "mp3") ?>" >
+							<audio 
+								controls="control" 
+								preload="none" 
+								data-showplaylist="true" 
+								type="audio/mpeg" 
+							>
+							<source src="/media/audio/books/guru-chronicles-audiobook/01 Dedication.mp3" title="Dedication" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
 							</audio>
 							<script type="text/javascript">
 							$(document).ready(function () {
@@ -32,7 +38,7 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 							</script>
 						</div>
 						<figcaption class="caption">
-							<?return gData["record"]["description"]?>
+							<?return gData["record"]["product_details"]?>
 						</figcaption>
 					
 					</figure>
@@ -106,17 +112,7 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 							?>
 												
 																					
-							<?
-							/*
-						
-							<h4 class="h3">Also Available At</h4>
-							<ul>
-								<li><a class="action" href="#">Amazon Kindle Store</a></li>
-								<li><a class="action" href="#">Apple ibookstore</a></li>
-								<li><a class="action" href="#">Google Books</a></li>
-							</ul>
-							*/
-							?>
+				
 						
 						</aside> <!-- end sidebar -->
 					
