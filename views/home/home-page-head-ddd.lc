@@ -9,14 +9,17 @@
 			<a href="https://donate.himalayanacademy.com/ddd/"  title="Go to Donation Site" ><img src="[[ gData["bannerPath"] ]]" /></a>
 
 		
-						<div id="banner-links">							
-				          <p> Goal: <span class="ddd-total ddd-progress-number">$70,000  </span>			
-					            <a href="https://donate.himalayanacademy.com/ddd/ddd-donor-list.lc">Raised So Far: </a> 
+											
+				          <div id="banner-links">
+							
+ <p> Annual Drive Goal: <span class="ddd-total ddd-progress-number">$70,000  </span>			
+					            <a href="https://donate.himalayanacademy.com/ddd/">Raised So Far: </a> 
 					            <span class="ddd-total ddd-progress-number"><a href="https://donate.himalayanacademy.com/ddd/ddd-donor-list.lc" title="View Report">[[ gData["currentTotal"] ]]</a>
 							   </span>
 											&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="https://donate.himalayanacademy.com/ddd/ddd-bodhinatha-letter.shtml" title="Bodhinatha's Message" >Learn More</a>&nbsp;&bull;&nbsp;<a href="https://donate.himalayanacademy.com/ddd/"  title="Go to Donation Site" >Donate</a>
-							</p>		  
+								<span class="bannerLine2"><a href="https://donate.himalayanacademy.com/ddd/ddd-bodhinatha-letter.shtml" title="Bodhinatha's Message" >Learn More</a>&nbsp;&bull;&nbsp;<a href="https://donate.himalayanacademy.com/ddd/"  title="Go to Donation Site" >Donate</a></span>
+							</p>			 
+						</div>	  
 						</div> <!-- end banner links -->
 			
 			</div> <!-- end ddd banner -->	

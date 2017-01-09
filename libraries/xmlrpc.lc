@@ -92,9 +92,9 @@ function callXMLRPC pMethod
 	--rigLogMessage "debug", "XML-RPC Request:" & tXMLRPCRequest
 	post tXMLRPCRequest to url sServer
 	if the result is not empty then
-		--rigLogMessage "debug", "Result:" & the result
+		rigLogMessage "debug", "Result:" & the result
 	end if
-	--rigLogMessage "debug", "It:" & it
+	rigLogMessage "debug", "It:" & it
 	put it into sLastXMLRPCResponse
 	return xmlrpcDecodeResponseToArray(it)
 end callXMLRPC

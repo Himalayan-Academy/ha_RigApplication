@@ -33,7 +33,7 @@ command home
     # let's log what page is the user hits on   
     rigLogMessage "Requested:", rigUriString()
 
-	xmlrpcSetServer ("http://" & $_SERVER["HTTP_HOST"] & "/blog/taka/xmlrpc.php")
+	xmlrpcSetServer ("http://himalayanacademy.com/blog/taka/xmlrpc.php")
 	
 end home
 
@@ -63,12 +63,12 @@ command index
 	# When DDD is offline we call the regular view 
 	# comment this out when DDD is on:	 	
 	
-	get rigLoadView("home/home-page-head")
+	# get rigLoadView("home/home-page-head")
 	
 	# To turn banners on during DDD drive we call the page head
 	# that had the DDD block. Uncomment the following line to go live:	 	
 	
-	--get rigLoadView("home/home-page-head-ddd")
+	get rigLoadView("home/home-page-head-ddd")
 	
 	put wpGetLastPosts(sWordpressBlogID, sWordpressUsername,sWordpressPassword) into gData["taka"]
 	get rigLoadView("home/main-content")	

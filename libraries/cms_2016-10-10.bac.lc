@@ -1172,11 +1172,8 @@ function emitGalleria pNode, pA
 	end if
 	set the itemdel to "-"
 	put item 1 of tRecordA["date_created"] into tYear
-
- 
-	put tHeight into tOptions["height"]
 	put tWidth into tOptions["width"]
-	put "true" into tOptions["responsive"]
+	put tHeight into tOptions["height"]
 	put "'landscape'" into tOptions["imageCrop"]
 	put "'lazy'" into tOptions["thumbnails"]
 	put "false" into tOptions["thumbCrop"]
@@ -1184,8 +1181,10 @@ function emitGalleria pNode, pA
 	put "100" into tOptions["transitionSpeed"] 
 	put "false" into tOptions["idleMode"]  
 	# See galleria docs for effects of these options http://galleria.io/docs/options/
-       put tWidth into gData["width"]
-	 put tHeight into gData["height"]
+
+	
+	put tWidth into gData["width"]
+	put tHeight into gData["height"]
 	
 	put format("media/slideshows/%s/%s", tYear, tFileID) into tPath
 	rigLogMessage "debug", "slideshow path:" && tPath

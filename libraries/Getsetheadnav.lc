@@ -61,11 +61,11 @@ function getSetHeadNav pBodyClass,pTitle,pActiveTopNav,pActiveSubNav
 	  --get getRandomBanner()
 
 	# comment out this line during DDD drive time. This loads the regular Header
-	put mergeView ("sitewide/page-header") into tPageHeader 
+	# put mergeView ("sitewide/page-header") into tPageHeader 
 
 	# for development of new navigation:
 
-	--put mergeView ("sitewide/page-header") into tPageHeader
+	put mergeView ("sitewide/page-header") into tPageHeader
 
 	# uncomment the following line to turn on DDD banner images... 
 	# it calls the view which contains the <div> which holds the banner

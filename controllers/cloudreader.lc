@@ -109,7 +109,7 @@ command readbook
 		default
 	end switch
 end readbook
-
+ 
 command simplereader pFileID,tSpineNumber
     if pFileID is empty then # it is coming from the router directly
 		put rigFetchRsegment(3) into tFileID
@@ -130,7 +130,17 @@ command simplereader pFileID,tSpineNumber
         put URL ("binfile:" & tSpineCSV) into tSpineData
         set the itemdel to comma
         put item 2 of line tTocItemRequested of tSpineData into tChapterFile
-        put "https://"& $_SERVER["SERVER_NAME"] & "/media/books/" & tFileID & "/web/" & tChapterFile into tBookURL
+        # BR: we have to use https on the HA site because Apple requires SSL for mobile
+        # but we do not have SSL enabled on the dev site... so this is a hack for now to switch 
+        put $_SERVER["SERVER_NAME"] into tServer
+        
+        if char 1 to 3 of tServer ="dev" then
+       	 put "http://" before tServer
+        else
+       	 put "https://" before tServer
+        end if
+               
+        put tServer & "/media/books/" & tFileID & "/web/" & tChapterFile into tBookURL
         rigRedirect tBookURL, "refresh", 302
         put "redirect... "
         quit
