@@ -17,6 +17,7 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 					<h1 class="h1" itemprop="name"><? return gData["record"]["title"]?>  </h1>
 					<h2 class="h2"><? return gData["record"]["sub_title"]?> </h2>
 					<figure class="media-detail">
+					<img src="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" itemprop="image" alt="Image of <? return gData["record"]["title"] ?>"/> 
 					<meta itemprop="encodingFormat" content="mp3" />
 					 <meta itemprop="contentURL" content="<? return getAudioFile(gData["record"], "mp3") ?>" />
 				
