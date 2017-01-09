@@ -26,10 +26,9 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 						<link  href="/assets/js/mejs-playlist/mediaelement-playlist-plugin.min.css" rel="Stylesheet" />
 						<div class="audio-player">
 							<audio 
-								controls="control" 
-								preload="none" 
+							  	width="400" 
+    						  	height="260" 								
 								data-showplaylist="true" 
-								type="audio/mpeg" 
 							>
 							<source src="/media/audio/books/guru-chronicles-audiobook/01 Dedication.mp3" title="Dedication" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
 							</audio>
