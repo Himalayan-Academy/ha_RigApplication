@@ -12,7 +12,7 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 			
 			<div class="wrapper">
 			
-				<aside class="featured-item" role="complementary">
+				<aside class="featured-item" role="complementary" style="text-align: center;">
 				
 					<h1 class="h1" itemprop="name"><? return gData["record"]["title"]?>  </h1>
 					<h2 class="h2"><? return gData["record"]["sub_title"]?> </h2>
