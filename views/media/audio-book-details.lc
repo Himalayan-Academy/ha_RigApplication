@@ -28,10 +28,14 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 							  	width="387" 
     						  	height="549" 								
 							>
-							<source src="/media/audio/books/guru-chronicles-audiobook/01 Dedication.mp3" title="Dedication" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
-							<source src="/media/audio/books/guru-chronicles-audiobook/02 Preface.mp3" title="Preface" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
-							<source src="/media/audio/books/guru-chronicles-audiobook/03 Introduction.mp3" title="Introduction" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
-
+							<?lc
+							repeat for each key k in gData["record"]["audiobook"]["toc"]
+								put gData["record"]["audiobook"]["toc"][k] into tItemA
+							?>
+								<source src="/media/audio/books/guru-chronicles-audiobook/<?lc return tItemA["file"] ?>" title="<?lc return tItemA["label"] ?>" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
+							<?lc
+							end repeat
+							?>
 							</audio>
 							<script type="text/javascript">
 							$(document).ready(function () {

@@ -141,6 +141,10 @@ command viewmedia
 			get rigLoadView("media/audio-details", gData)
 		break
 		case "audio/book"
+
+			rigLoadLibrary "fastjson"
+			put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/media/audio/books/" & gData["record"]["file_id"] & "/audiobook.json") into tJSON
+			put jsonToArray(tJSON) into gData["record"]["audiobook"]
 			put "Audiobook - " & gData["record"]["title"] into gData["pageTitle"]
 			put "detail art" into sPageMetadataA["body_class"]
 			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
