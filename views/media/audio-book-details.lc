@@ -37,7 +37,11 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 							</audio>
 							<script type="text/javascript">
 							$(document).ready(function () {
-									var mePlayer = $('audio').mediaelementplayer({loop: true});
+									var mePlayer = $('audio').mediaelementplayer({
+										"features": ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'shuffle', 'current', 'progress', 'duration', 'volume', 'playlist'],
+        								"audioVolume": "vertical", // just like video player
+										loop: true
+									});
 								});   
 							</script>
 						</div>
