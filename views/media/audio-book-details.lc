@@ -31,6 +31,9 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 								data-showplaylist="true" 
 							>
 							<source src="/media/audio/books/guru-chronicles-audiobook/01 Dedication.mp3" title="Dedication" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
+							<source src="/media/audio/books/guru-chronicles-audiobook/02 Preface.mp3" title="Preface" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
+							<source src="/media/audio/books/guru-chronicles-audiobook/03 Introduction.mp3" title="Introduction" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
+
 							</audio>
 							<script type="text/javascript">
 							$(document).ready(function () {
