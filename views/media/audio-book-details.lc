@@ -27,7 +27,6 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 							<audio 
 							  	width="387" 
     						  	height="549" 								
-								data-showplaylist="true" 
 							>
 							<source src="/media/audio/books/guru-chronicles-audiobook/01 Dedication.mp3" title="Dedication" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
 							<source src="/media/audio/books/guru-chronicles-audiobook/02 Preface.mp3" title="Preface" data-poster="/media/audio/books/<? return gData["record"]["file_id"] ?>/cover.jpg" type="audio/mpeg">
