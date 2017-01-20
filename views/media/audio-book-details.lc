@@ -115,13 +115,13 @@ return rigLoadView("sitewide/doc-head", TRUE) into tHead
 							See the construct-audio-data.lc library for the "audioLinkPath" function -->
 							
 							<?
-									put empty into tBuf
-									if "audio" is in gData["record"]["media_type"] then
-										//put format ("<a class=\"action-bg\" href=\"/download/" & gData["record"]["file_id"] & "\">Download</a>") into tBuf
-										put format ("<a class=\"action-bg\" title=\"Right-Control Click And Choose SAVE LINK AS, or DOWNLOAD LINKED FILE\" href=\"%s\">Download</a>", getPathForMP3(gData["record"])) into tBuf
+									-- put empty into tBuf
+									-- if "audio" is in gData["record"]["media_type"] then
+									-- 	//put format ("<a class=\"action-bg\" href=\"/download/" & gData["record"]["file_id"] & "\">Download</a>") into tBuf
+									-- 	put format ("<a class=\"action-bg\" title=\"Right-Control Click And Choose SAVE LINK AS, or DOWNLOAD LINKED FILE\" href=\"%s\">Download</a>", getPathForMP3(gData["record"])) into tBuf
 										
-									  	return tBuf
-								 	end if
+									--   	return tBuf
+								 	-- end if
 							?>
 												
 																					
