@@ -50,8 +50,39 @@ function makeDailyLesson pLessonNumber
 	  put tMonth & " " & tDay & ", " & tYear into tDate
 
 
-	  
-	  -- Next we get the integer of the day of the year since April 13th
+	  # next we have to determine the correct Tamil New Year to count from
+	  # this is tricky because from Jan-Feb-Mar-Apr 1-12: we have to use last year's date
+	
+	# set some base values for the algorithm to rollover automatically
+	put "4/13/" into tStartYear
+	put the date into tToday
+	put tToday into theNow
+	convert theNow to seconds
+	set the itemdel to "/"
+
+	if item 1 of tToday < 4 then # we are in the months of 1,2,3 Jan, Feb March
+		  put (item 3 of tToday-1)  after tStartYear  # Still counting from last April
+	  end if  
+
+	  if item 1 of tToday = 4 then 
+		  # we are in April and keep counting from last April until the 13th
+		  # the only way is to check is on the seconds
+		  put tStartYear into tNewYear
+		 put item 3 of tToday after tNewYear  # this is the April 13 of this year....
+		 convert tNewYear to seconds
+		 if theNow < tNewYear then # we are i the period of April 1-12 and retain last year's start year
+			  put (item 3 of tToday-1)  after tStartYear  
+		  else  # this is April 13-30th 
+			  put (item 3 of tToday)  after tStartYear
+                              end if
+	  end if  
+	  if item 1 of tToday > 4  then
+		  # we are in the period from May thru December and count from April of the current year
+		 put (item 3 of tToday)  after tStartYear
+	 end if
+
+
+ -- Next we get the integer of the day of the year since April 13th
 	  
 	  #  In order to find the integer we need for today's lesson, we use the
 	# rule that lesson one starts on the first day of the Hindu year, which
@@ -75,12 +106,9 @@ function makeDailyLesson pLessonNumber
 	# on April 14, 2.3 on april 15 etc.) which is 1 integer off after round
 	# because, being below .5, it rounds down (to 0 on April 13, 1 on april
 	# 14 etc.) so we add 1 to make it (1 on april 13, 2 on april 14)
+	convert tStartYear to seconds
 	
-	  put "04/13/2016" into startYear
-	  convert startYear to seconds
-	  put the date into theNow
-	  convert theNow to seconds
-	  put  (the round of ((theNow-startYear)/(24*60*60)))+ 1 into tLessonNo
+	  put  (the round of ((theNow-tStartYear)/(24*60*60)))+ 1 into tLessonNo
 	      # we want the date to appear in this case only
 	   replace "<!--###tDate### -- >" with (tDate & " - Lesson " & tLessonNo) in tempHead
 	  else
