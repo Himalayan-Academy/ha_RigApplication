@@ -22,7 +22,7 @@ put ",insertitem,listitems,getitem,getItemByFileID,saveitem,permissions,getPageM
 put ",getDataForPage,setDataForPage" after gControllerHandlers
 
 -- new APIs originally for Siva Siva app
-put ",getrandomitem,getRandomQuote,getItemRecords" after gControllerHandlers
+put ",getrandomitem,getRandomQuote,getSingleRecord" after gControllerHandlers
 
 
 global gXML
@@ -104,42 +104,31 @@ command api3
 	rigLogMessage "debug", "login:" &&  gData["request"]["login"] &"/"& gData["request"]["password"]
 
 	# Check user login
-
-	switch tCommandToCall
-
-		case "getrandomitem"
-			# AAG: doesn't require login or permission. 
-		break
-
-		case "getrandomQuote"
-		   # AAG: doesn't require login or permission. 
-		break
-
-		case "getItemRecords"
-		   # AAG: doesn't require login or permission.
-		  break
-
-		case "getItem"
-		  # AAG: doesn't require login or permission. 
-		break
-
-		default
-		  get verifyLogin()
-
-		  if it is not true then
-		    sendError it
-		  end if
-
-		# Verify if the user has permission for that command
-
-
-		get verifyPermission(tCommandToCall)
-
-		if it is not true then
-		  sendError it
-		end if
-
-	end switch
+    switch tCommandToCall
+        case "getrandomitem"
+            ## AAG: doesn't require login or permission. 
+            ## AAG: should we add other calls here?
+        break
+         case "getrandomQuote"
+            ## AAG: doesn't require login or permission. 
+            ## AAG: should we add other calls here?
+	break
+        case "getSingleRecord"
+           ## AAG: doesn't require login or permission. 
+           break
+        default
+        	get verifyLogin()
+        	if it is not true then
+        		sendError it
+        	end if
+	
+        	# Verify if the user has permission for that command
+        	get verifyPermission(tCommandToCall)
+        	if it is not true then
+        		sendError it
+        	end if
+        break
+    end switch
 	
 end api3
 
@@ -546,36 +535,33 @@ command getitem
 	outputArray tResponseA
 end getitem
 
-command getItemRecords
-	# Note : the  getItem assumes we the querys fetching a known item with it's itemID
-	#  this handler assumes we only know search criteria, and may want one or more records
-	#  "data" part of the JSON array, has the dbase column look up values
-	# we use two new elements in the JSON:  These are not dbase columns but controls for refining selection
-	# and how many records are returned :  "recordType"  and "recordCount"
-	# see usage below
+command getSingleRecord
+	# Note : the  getItem assumes we the query is fetching a known item with it's itemID
+	#  this handles assumes we only know search criteria
+	# later we should combine "getRandomItem" here because that is just  another type of  single item
+	# for now we are duplicating code from Get Random
+	# but we introduce a switch case handler for future use for the "type" of single item we want
 
-	--rigLogMessage "debug",("Get Item Records " & gData["output format"])
-	rigDbWhere "approved_for_public", "YES"  # never show not approved records
+	rigLogMessage "debug","Get Single Record"
+	rigDbWhere "approved_for_public", "YES"
 	
 
 	# just check to see if the input is valid
 	# use for development:
+	-- repeat for each key x in gData["data"]
+	--    put x &"|"& gData["data"][x] & cr after tOutput
+	-- end repeat
+	-- put gData["record-type"] after tOutput
+	-- put tOutput
 
-	repeat for each key x in gData["data"]
-	   put x &"|"& gData["data"][x] & cr after tOutput
-	end repeat
-	--put gData["recordType"] after tOutput
-	--put gData["recordCount"] after tOutput
-	rigLogMessage "JSONSENT", tOutput
-	# the data key in the JSON must include all values for the look up
-	# typically media type, author, artist etc... 
 	repeat for each key tKey in gData["data"]
 		put gData["data"][tKey] into tSearchTerm
-		rigLogMessage "debug","Key:" && tSearchTerm
-		rigDbLike tKey, tSearchTerm	
+		--rigLogMessage "debug","Key:" && tSearchTerm
+		rigDbLike tKey, tSearchTerm
 	end repeat
-	switch gData["recordType"] # different kinds of criteria will be needed for singles or small sets
-		case "latest"  
+
+	switch gData["record-type"] # different kinds of criteria will be needed for singles or small sets
+		case "latest"
 			# see the lib_SivaSivaMedia  where calls/queries are created for the SivaSiva app
 			# we are looking for the most recent additions to the  data base
 			# assume we call the last 20 additions.  Since SivaSiva app jnanm dbase
@@ -589,27 +575,15 @@ command getItemRecords
 		end switch 
 
 	put rigDbGet("item") into tQuery
-
-	# we have our cursor now (set of records)
 	# now we use the record type to get  just the one record we need
 	# from the result set .   This can be done various ways.
-	# test to see if we are getting  a value for number of records7:
-	if gData["recordCount"] is empty then
-		# input has no declared number of records requested this dangerous
-		# could download the whole database... block this:
-		put 1 into gData["recordCount"]   
-		# only fetch the top record
-		# may or may not be ordered (see above recordType switch)
-	end if
-	repeat with x = 1 to gData["recordCount"] 
-		put rigDbRow(x) into tResponseA[x]
-	end repeat
-  
-		  # useful for checking input but not useful for output later
-	--put gData["recordType"] into tResponseA["recordType"]
-	--put gData["recordCount"] into tResponseA["count"]
+	# test to see if we are getting  this:
+
+	
+	put rigDbRow(1) into tResponseA
+	put gData["record-type"] into tResponseA["record-type"]
 	outputjson  tResponseA
-end getItemRecords
+end getSingleRecord
 
 
 command getRandomItem

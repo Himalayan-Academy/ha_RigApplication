@@ -60,16 +60,19 @@ command looklisten
 	        switch 
 	           case (tSegs[2]= "gurudeva-quotes")
 	              # rigLogMessage "Reached Our Case:", "Yes"
-			    gurudevaQuotePage			    
-				break
-				# if we are actually delivering plain html
-				# we have to fire fetchHTML handlers to use the segs
-				# to dig the html folder for the content:
-				case (tSegs[3]= "sivasiva")
-					fetchExternalHTML
-					viewExternalPage
-				break
-			end switch
+		    gurudevaQuotePage			    
+		break
+			# if we are actually delivering plain html
+			# we have to fire fetchHTML handlers to use the segs
+			# to dig the html folder for the content:
+		case (tSegs[3]= "sivasiva")
+			fetchExternalHTML
+			viewExternalPage
+		break
+		default  # the 3rd segment is an html file at the top level
+		fetchExternalHTML
+		viewExternalPage
+		end switch
 			exit looklisten
 		end if
 

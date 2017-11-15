@@ -1176,19 +1176,21 @@ function emitGalleria pNode, pA
  
 	put tHeight into tOptions["height"]
 	put tWidth into tOptions["width"]
-	put "true" into tOptions["responsive"]
-	put "'landscape'" into tOptions["imageCrop"]
+	put "false" into tOptions["responsive"]
+	put "'true'" into tOptions["imageCrop"]
 	put "'lazy'" into tOptions["thumbnails"]
 	put "false" into tOptions["thumbCrop"]
 	put "true" into tOptions["imagePan"]
 	put "100" into tOptions["transitionSpeed"] 
 	put "false" into tOptions["idleMode"]  
 	# See galleria docs for effects of these options http://galleria.io/docs/options/
-       put tWidth into gData["width"]
+   	 put tWidth into gData["width"]
 	 put tHeight into gData["height"]
+
+	 rigLogMessage "debug=slideshow",  gData["height"] && gData["width"]
 	
 	put format("media/slideshows/%s/%s", tYear, tFileID) into tPath
-	rigLogMessage "debug", "slideshow path:" && tPath
+	
 
 	if there is a file ($_SERVER["DOCUMENT_ROOT"] & "/" & tPath & "/galleriaData.js") then
 		delete file ($_SERVER["DOCUMENT_ROOT"] & "/" & tPath & "/galleriaData.js")

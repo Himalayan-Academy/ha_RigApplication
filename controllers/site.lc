@@ -192,7 +192,7 @@ command viewmedia
 			put "Video - " & gData["record"]["title"] into gData["pageTitle"]
 			put "detail art" into sPageMetadataA["body_class"]
 			put fileIDToYoutubeID(gData["record"]["file_id"]) into tVideoID
-			put format("<iframe width=\"%s\" height=\"%s\" src=\"http://www.youtube.com/embed/%s?rel=0\" frameborder=\"0\" %s allowfullscreen></iframe>", tW, tH, tVideoID, tStyle) into gData["video"]
+			put format("<iframe width=\"%s\" height=\"%s\" src=\"https://www.youtube.com/embed/%s?rel=0\" frameborder=\"0\" %s allowfullscreen></iframe>", tW, tH, tVideoID, tStyle) into gData["video"]
 			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-videos") into gData["pageHeader"]
 			get rigLoadView("media/video-details", gData)
 		break
