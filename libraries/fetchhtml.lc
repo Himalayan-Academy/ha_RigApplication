@@ -91,6 +91,7 @@ put rigUriString() into sPageToLoad
 end fetchExternalHTML
 
 command viewExternalPage
+rigLogMessage "debug","fetching page: " && sPageToLoad
 	put sPageMetadataA["title"] into gData["pageTitle"] 
 	put url ("file:" & sHTMLFolder & sPageMetadataA["sidebar"]) into gData["sidebar"] 
 	
@@ -102,6 +103,12 @@ command viewExternalPage
 		case there is a file (sHTMLFolder & sPageToLoad & ".html")
 			rigLogMessage "debug", "loading external page:" &&  (sHTMLFolder & sPageToLoad & ".html")
 			  put the merge of  url (("file:" &sHTMLFolder & sPageToLoad & ".html")) into gData["singleArticle"]
+			   if gData["singleArticle"] is empty then
+				  put "empty" into tFileData
+			  else 
+				  put line 1 of gData["singleArticle"] into tFileData
+			  end if
+			  rigLogMessage "debug", "external file was loaded as: " && tFileData
 			updatePageMetadataIfPathOnDiskChanged ("/" & sPageToLoad & ".html")	
 		break
 		case there is a file (sHTMLFolder & sPageToLoad & "/index.html")

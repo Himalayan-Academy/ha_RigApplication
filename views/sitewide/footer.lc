@@ -70,8 +70,9 @@ function googleTranslateElementInit() {
 	     server side options cause any serious performance issues. Note the
 	     seconds here show how long it takes to build the page. If it takes
 	     more time to render in the browser, then it is network issue, not our server. 
-	     I added a class to the CSS to control the Look and Feel of this. 
-	<p class="rev-igniter-benchmark">Page rendered in {{g_ElapsedTime_}} seconds by <a href="http://revigniter.com/" target="_top">RevIgniter</a> version [[ RIVERSION ]] [[ RISTATE ]]. LiveCode Server version [[the version]] (build [[the buildnumber]]).</p> --> 
+	  I added a class to the CSS to control the Look and Feel of this. --> 
+	  
+	<p class="rev-igniter-benchmark">Page rendered in {{g_ElapsedTime_}} seconds by <a href="http://revigniter.com/" target="_top">RevIgniter</a> version [[ RIVERSION ]] [[ RISTATE ]]. LiveCode Server version [[the version]] (build [[the buildnumber]]).</p>
 	
 	<script type="text/javascript">
 	$("#metadata_editor_launcher").bind("click", function() {
