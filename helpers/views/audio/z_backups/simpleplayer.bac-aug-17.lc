@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>Simple Audio Player</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script> 
+    	<script src="/assets/js/mejs/mediaelement-and-player.min.js"></script>
+    	<link  href="/assets/js/mejs/mediaelementplayer.min.css" rel="Stylesheet" />
+    	<link  href="/assets/js/mejs/mejs-skins.css" rel="Stylesheet" />
+    	<meta http-equiv="content-type" content="text-html; charset=utf-8">
+  
+  </head>
+  <body>
+    <h1>[[ gData["title"] ]]</h1>
+  
+<div class="audio-player">
+    <audio controls="control" preload="none" src="[[ gData["file_path"] ]]" type="[[ gData["format_mime"] ]]" >
+    </audio>
+    <script type="text/javascript">
+    $(document).ready(function () {
+               var mePlayer = $('audio').mediaelementplayer();
+           });   
+    </script>
+    
+</div> <!-- end audio-player -->
+    
+    <p title="Right-Click or Control Click and choose Save Link As">
+   	 <b><a href="[[ gData["file_path"] ]]">Download Sound File</a></b> (File id: <b>[[ gData["file_id"] ]]</b>)
+    </p>
+    
+<!--Song Metadata Section: only displays if present in dBase -->  
+
+<div class="song-info"> 
+
+<?  
+     get gData["artists"]
+		if it <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<p><b>Artists</b>: "&it&"</p>")
+     	end if
+    ?>
+    
+    <p>
+    
+    <?  
+     get gData["genre"]
+		if it <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<b>Genre</b>: "&it&"; ")
+     	end if
+    ?>
+    
+     <?  
+     get gData["deity"]
+		if it <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<b>Deity</b>: "&it&"; ")
+     	end if
+    ?>
+    
+    
+    </p>
+
+</div> <!-- end song-info -->
+    
+<!--Music Info: only displays if present in dBase -->
+
+<div class="music-info">  
+
+</div> <!-- end music-info -->
+    
+<!--Lyrics Section: only displays if present in dBase -->
+
+<div class="lyrics">   
+	<?
+     get gData["lyrics_original"]
+		if it <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<h2>Original Lyrics</h2><p>"&it&"</p>")
+     	end if
+    ?>
+    <?
+     get gData["lyrics_original_transliteration"]
+		if it <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<h2>Transliteration</h2><p>"&it&"</p>")
+     	end if
+    ?>
+    <?
+     get gData["lyrics_literal_translation"]
+		if it <> empty then
+    		replace cr with "<br/>" in it
+    		return ("<h2>Translation</h2><p>"&it&"</p>")
+     	end if
+    ?>    
+</div> <!-- end lyrics -->
+  </body>
+</html>

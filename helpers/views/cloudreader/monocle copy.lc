@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+	<base href="[[ gData["base url"] ]]" target="_blank" />
+    <title>[[ gData["record"]["title"] ]]</title>
+	<link rel="stylesheet" href="http://dev.himalayanacademy.com/assets/css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" media="screen, projection" />
+
+	<script src="http://dev.himalayanacademy.com/assets/js/jquery-1.7.1.min.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/jquery.cycle.all.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/jquery.scroll.min.js"></script>
+	<script src="http://dev.himalayanacademy.com/assets/js/scripts.js"></script>
+	<script src="/assets/js/mejs/mediaelement-and-player.min.js"></script>
+	<link  href="/assets/js/mejs/mediaelementplayer.min.css" rel="Stylesheet" />
+	<link  href="/assets/js/mejs/mejs-skins.css" rel="Stylesheet" />
+	
+    <!-- MONOCLE CORE -->
+    <script type="text/javascript" src="/assets/js/monocle/core/monocle.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/compat/env.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/compat/css.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/compat/stubs.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/compat/browser.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/core/events.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/core/factory.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/core/styles.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/core/reader.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/core/book.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/core/component.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/core/place.js"></script>
+
+    <!-- MONOCLE FLIPPERS -->
+    <script type="text/javascript" src="/assets/js/monocle/controls/panel.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/panels/twopane.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/panels/eink.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/dimensions/columns.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/flippers/slider.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/flippers/instant.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/dimensions/vert.js"></script>
+    <script type="text/javascript" src="/assets/js/monocle/flippers/legacy.js"></script>
+
+
+	<!-- MONOCLE STANDARD CONTROLS -->
+	<script type="text/javascript" src="/assets/js/monocle/controls/placesaver.js"></script>
+	<script type="text/javascript" src="/assets/js/monocle/controls/magnifier.js"></script>
+	<script type="text/javascript" src="/assets/js/monocle/controls/scrubber.js"></script>
+	<script type="text/javascript" src="/assets/js/monocle/controls/spinner.js"></script>
+	<script type="text/javascript" src="/assets/js/monocle/controls/contents.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/assets/js/monocle/styles/monocore.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/js/monocle/styles/monoctrl.css" />
+
+   	<!-- MONOCLE GENERATOR -->
+
+
+	<!-- MONOCLE CSS -->
+	<style type="text/css">
+	div.monelem_page {
+	  right: 0;
+	  top: 0px;
+	  bottom: 36px;
+	  border: 2px solid #BBB;
+	  border-left: none;
+	  background-color: #FFF;
+	}
+
+
+	.bookTitle {
+	  position: absolute;
+	  bottom: 0;
+	  height: 20px;
+	  left: 0;
+	  right: 40px;
+	  cursor: system;
+	  background: rgb(194, 110, 64);
+	  color: rgb(255, 255, 255);
+	  padding: 12px 8px 4px;
+	  white-space: nowrap;
+	  font-size: 84%;
+	}
+
+
+	.tocButton {
+	  position: absolute;
+	  bottom: 0;
+	  right: 0;
+	  width: 40px;
+	  height: 36px;
+	  background: #282626 url(/assets/img/toc-btn.png) no-repeat;
+	}
+
+
+	.pageNumber {
+	  position: absolute;
+	  top: 12%;
+	  right: 12px;
+	  color: #555;
+	  font: bold 14pt Helvetica, Arial, sans-serif;
+	  border-bottom: 1px solid #999;
+	}
+
+	div.monelem_container {
+	  background: #CCC;
+	}
+
+	div.monelem_page {
+	  right: 0;
+	  top: 6px;
+	  bottom: 42px;
+	  border: 2px solid #BBB;
+	  border-left: none;
+	  background-color: #FFF;
+	}
+
+	div.monelem_sheaf {
+	  top: 1.2em;
+	  right: 3.5em;
+	}
+
+
+
+	div.monelem_controls_contents_container {
+	  background: #F7F4EE;
+	  border: 1px solid #DDD;
+	  width: auto;
+	  height: auto;
+	  right: auto;
+	  top: auto;
+	  left: 0;
+	  max-height: 85%;
+	  max-width: 95%;
+	  bottom: 36px;
+	  box-shadow: none;
+	  -moz-box-shadow: none;
+	  -webkit-box-shadow: none;
+	  border-radius: 0;
+	  -moz-border-radius: 0;
+	  -webkit-border-radius: 0;
+	}
+
+	ol.monelem_controls_contents_list:before {
+	  content: "Table of Contents";
+	  font-weight: bold;
+	  font-size: 16pt;
+	  padding-left: 16px;
+	  line-height: 2em;
+	}
+
+
+	li.monelem_controls_contents_chapter {
+	  border-bottom: none;
+	  list-style: none;
+	  padding-left: 16px;
+	}
+	
+.back-links {
+	color: white;
+	background-color:#C26E40;
+	height: 2.5%;
+	position:absolute;
+	width: 20%;
+    left:2.5%;
+	bottom: 0px;	
+    padding-left: 75%;
+	}
+	.action{
+	color: white;
+	background: url(/assets/img/arrows-action.png) 0 -85px no-repeat;	
+	font: 700 12px ff-meta-web-pro, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+	</style>
+
+	<!-- MONOCLE BOOK DATA AND SCRIPTS-->
+	<script type="text/javascript">
+	<?	
+	return gData["monocle"]["book data object"]
+	?>
+
+	// We only instantiante monocle if the reader clicks the "read book now links"
+	// These trigger links have an id="small-reader"
+
+	$(document).ready(function() {
+			ReaderLaunch();
+	});
+
+	// Auxiliary functions
+
+	function newBookTitle(reader) {
+	  var bookTitle = {}
+	  bookTitle.createControlElements = function () {
+	    var cntr = document.createElement('div');
+	    cntr.className = "bookTitle";
+	    var btText = document.createElement('span');
+	    btText.innerHTML = reader.getBook().getMetaData('title');
+	    cntr.appendChild(btText);
+	    this.chapText = document.createElement('span');
+	    btText.appendChild(this.chapText);
+	    this.update();
+	    return cntr;
+	  }
+	  bookTitle.update = function () {
+	    var place = reader.getPlace();
+	    var t = place.chapterTitle();
+	    if (t) {
+	      this.chapText.innerHTML = " &#8212; " + t;
+	    } else {
+	      this.chapText.innerHTML = "";
+	    }
+	  }
+
+	  reader.addControl(bookTitle);
+	  reader.listen('monocle:turn', function () { bookTitle.update() });
+	  return bookTitle;
+	}
+
+
+
+	function newBookContents(reader) {
+	  var tocMenu = Monocle.Controls.Contents(reader);
+	  reader.addControl(tocMenu, 'popover', { hidden: true });
+
+	  var tocButton = {}
+	  tocButton.createControlElements = function () {
+	    var btn = document.createElement('div');
+	    btn.className = "tocButton";
+	    Monocle.Events.listen(
+	      btn,
+	      typeof Touch == "object" ? "touchstart" : "mousedown",
+	      function (evt) {
+	        if (evt.preventDefault) {
+	          evt.stopPropagation();
+	          evt.preventDefault();
+	        } else {
+	          evt.returnValue = false;
+	        }
+	        var menuDiv = reader.dom.find('controls_contents_container');
+	        // Really really ugly code for animation effect. Don't copy this.
+	        if (typeof(WebKitCSSMatrix) == "object") {
+	          menuDiv.style.visibility = 'hidden';
+	          reader.showControl(tocMenu);
+	          menuDiv.style.webkitTransition = "";
+	          menuDiv.style.webkitTransform = "translateX(-100%)";
+	          setTimeout(
+	            function () {
+	              menuDiv.style.visibility = 'visible';
+	              menuDiv.style.webkitTransition = "-webkit-transform 300ms linear";
+	              menuDiv.style.webkitTransform = "translateX(0px)";
+	            },
+	            10
+	          );
+	        } else {
+	          reader.showControl(tocMenu);
+	        }
+	      }
+	    );
+	    return btn;
+	  }
+	  reader.addControl(tocButton);
+	  return tocButton;
+	}
+
+
+	// This function is called after monocle is initialized and is 
+	// where we add rich controls to our reader.
+	function monocleInitializedCallback(bookreader) {
+		window.reader = bookreader;
+
+		// Adding font resizer.
+		var magnifier = new Monocle.Controls.Magnifier(bookreader);
+		bookreader.addControl(magnifier);
+
+		// Spinner
+		var spinner = Monocle.Controls.Spinner(bookreader);
+		bookreader.addControl(spinner, 'page', { hidden: true });
+	    spinner.listenForUsualDelays();
+
+		// Book Title
+		newBookTitle(bookreader);
+		newBookContents(bookreader)
+
+
+	}
+
+	// We could pass options for monocle the object below.
+	// The options could set the flippers and panels.
+	// Refer to:
+	//   https://github.com/joseph/Monocle/wiki/Integrating
+	//   https://github.com/joseph/Monocle/wiki/Page-flippers
+	//   https://github.com/joseph/Monocle/wiki/Panels
+	var options = {};
+
+	function ReaderLaunch() {
+		var h = $(document).height();
+		// Start monocle
+		Monocle.DEBUG = true;
+      // $("#book").height("800"); //Setting this to 100% does not work
+		window.reader = Monocle.Reader('book', bookData, options, monocleInitializedCallback);
+	   // Bind events
+	//	 Monocle.Events.listen(
+		//	window,
+			//	'resize',
+		//	function () { 
+			//	window.reader.resized() ;
+				//}
+		   // );
+		}
+
+	</script>
+	<!-- END OF MONOCLE GENERATOR -->
+	</head>
+	<body style="background-color:#000000;">
+	
+	<div id="readerCntr">
+	  <div id="book" style="position: absolute;top: 2.5%;left: 2.5%;width: 95%;height: 95%;">Loading book...</div>   
+	    <div class="back-links">
+		    <a class="action" href="/book/[[ gData["record"]["file_id"] ]]">Web View</a>
+		      &nbsp;  
+		    <a class="action" href="/view/[[ gData["record"]["file_id"] ]]">Download</a> 
+	    </div>
+	  </div>
+	</div>
+	    
+	
+
+	</body>
+	</html>
+

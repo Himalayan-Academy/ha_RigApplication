@@ -1,0 +1,221 @@
+<?lc
+	# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+	global gControllerHandlers, gData
+
+	# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+	put "info,list_ImageFileIDs,list_GalleriaFileIDs,list_ArtPhotoFileIDs,list_AllPhotoFileIDs,list_PhotoFileIDs,list_ArtFileIDs,list_BigPhotoArray,list_PhotoArray,list_VideoArray,list_VideoFileIDs,list_AudioFileIDs,list_BookFileIDs,list_MediaTypes,index" into gControllerHandlers
+
+	# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+	# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+	# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFIED IN THE URI
+	on index
+		list_MediaTypes
+	end index
+
+	on list_GalleriaFileIDs
+		put sitemap_ListFileIDs ("Galleria") into fileIDs
+		put fileIDs
+	end list_GalleriaFileIDs
+
+	on list_ImageFileIDs
+		put sitemap_ListFileIDs ("Image") into fileIDs
+		put fileIDs
+	end list_ImageFileIDs
+
+	on list_ArtPhotoFileIDs
+		put sitemap_ListFileIDs ("ArtPhoto") into fileIDs
+		put fileIDs
+	end list_ArtPhotoFileIDs
+
+	on list_AllPhotoFileIDs
+		put sitemap_ListFileIDs ("Photo") into fileIDs
+		put fileIDs
+	end list_AllPhotoFileIDs
+
+	on list_ArtFileIDs
+		put sitemap_ListFileIDs ("Art") into fileIDs
+		put fileIDs
+	end list_ArtFileIDs
+
+	on list_PhotoFileIDs
+		put sitemap_ListFileIDs ("Photo") into fileIDs
+		put fileIDs
+	end list_PhotoFileIDs
+
+	on list_VideoFileIDs
+		put sitemap_ListFileIDs ("Video") into fileIDs
+		put fileIDs
+	end list_VideoFileIDs
+
+	on list_AudioFileIDs
+		put sitemap_ListFileIDs ("Audio") into fileIDs
+		put fileIDs
+	end list_AudioFileIDs
+
+	on list_BookFileIDs
+		put sitemap_ListFileIDs ("Book") into fileIDs
+		put fileIDs
+	end list_BookFileIDs
+
+
+	on list_PhotoArray
+		-- thumbnail entires do not appear to be present
+		put "item.item_id,file_id,title,category,description,filename,url,thumbnail" into pFieldList
+		put list_GetPhotoData (pFieldList)
+	end list_PhotoArray
+
+	on list_BigPhotoArray
+		_ItemByMediaType "art/photography,slideshow/external,slideshow/galleria"
+		rigDbJoin "item_format", "item_format.item_id = item.item_id" -- item_Format.item_id is not unique
+		put rigDbGet() into tResultArray
+		put base64Encode(arrayEncode(tResultArray)) into tEncodedArray
+		put tEncodedArray
+	end list_BigPhotoArray
+
+	on list_Books
+		put sitemap_ListFileIDs ("Book") into fileIDs
+		put list_FileIdsToURLs (fileIDs) into someURLs
+		put someURLs
+	end list_Books
+
+	on list_Video
+		put list_GetVideoData() into fileIDs
+		sort fileIDs
+		put list_FileIdsToURLs (fileIDs) into someURLs
+		put someURLs
+	end list_Video
+
+	on list_VideoArray
+		put list_GetVideoData ("file_id,title,duration,category,description,format_name,url")
+	end list_VideoArray
+
+	function sitemap_ListFileIDs refinementName
+		put hap_RefinementToMediaTypes (refinementName) into mTypeList
+		put sitemap_FileIDsFromMediaType (mTypeList) into fileIDs
+		return fileIDs
+	end sitemap_ListFileIDs
+
+	function sitemap_FileIDsFromMediaType mTypeList
+		_ItemByMediaType mTypeList
+		rigDbSelect "file_id"
+		put rigDbGet() into tQuery
+
+		put list_ExtractFirstThing (tQuery) into fileIDs
+		return fileIDs
+	end sitemap_FileIDsFromMediaType
+
+	command _ItemByMediaType mTypeList
+		rigDbFrom "item"
+		repeat for each item mType in mTypeList
+			rigDbOrWhere "media_type", mType
+		end repeat
+		rigDbWhere "approved_for_public", "YES"
+	end _ItemByMediaType
+
+	function hap_RefinementToMediaTypes refinementName
+		switch refinementName
+			case "Image"
+				put "art/photography,art/painting,art/drawing,art/vector" into mTypeList
+			case "Photo"
+				return "art/photography,slideshow/external,slideshow/galleria" into mTypeList
+			case "Art"
+				return "art/drawing,art/painting,art/vector" into mTypeList
+			case "ArtPhoto"
+				return "art/photography" into mTypeList
+			case "Galleria"
+				return "slideshow/galleria" into mTypeList
+			case "Slideshow"
+				return "slideshow/external,slideshow/galleria" into mTypeList
+			case "Book"
+				return "text/book,text/booklet,text/review" into mTypeList
+			case "Audio"
+				return "audio/inspiredtalk,audio/shum,audio/chant,audio/song" into mTypeList
+			case "Video"
+				return "video/building,video/news,video/pubdesk,video/ritual,video/talk,video/teaching,video/travel" into mTypeList
+			default
+				return empty
+		end switch
+	end hap_RefinementToMediaTypes
+
+	on list_MediaTypes
+		rigDbFrom "item"
+		rigDbSelect "media_type"
+		put rigDbGet() into tQuery
+		put list_ExtractFirstThing (tQuery) into mTypes
+		-- seems to be an empty mType ???
+		sort mTypes
+		put word 1 to -1 of mTypes
+	end list_MediaTypes
+
+	function list_GetArtData pFieldList
+		_ItemByMediaType "art/drawing,art/painting,art/vector"
+		if pFieldList is not empty then
+			rigDbJoin "item_format", "item_format.item_id = item.item_id" -- item_Format.item_id is not unique
+		end if
+		return list_GetData (pFieldList)
+	end list_GetArtData
+
+	function list_GetVideoData pFieldList
+		_ItemByMediaType "video/building,video/news,video/pubdesk,video/ritual,video/talk,video/teaching,video/travel"
+		if pFieldList is not empty then
+			rigDbJoin "item_format", "item_format.item_id = item.item_id" -- item_Format.item_id is not unique
+		end if
+		return list_GetData (pFieldList)
+	end list_GetVideoData
+
+	function list_GetPhotoData pFieldList
+		_ItemByMediaType "art/photography,slideshow/external,slideshow/galleria"
+		if pFieldList is not empty then
+			rigDbJoin "item_format", "item_format.item_id = item.item_id" -- item_Format.item_id is not unique
+		end if
+		return list_GetData (pFieldList)
+	end list_GetPhotoData
+
+	function list_GetData pFieldList
+		switch pFieldList
+			case empty
+				rigDbSelect "file_id"
+				put rigDbGet() into tQuery
+				put list_ExtractFirstThing (tQuery) into fileIDs
+				sort fileIDs
+				return fileIDs
+			case "*"
+				put rigDbGet() into tResultArray
+				put base64Encode(arrayEncode(tResultArray)) into tEncodedArray
+				return tEncodedArray
+			default
+				rigDbSelect pFieldList
+				put rigDbGet() into tResultArray
+				put base64Encode(arrayEncode(tResultArray)) into tEncodedArray
+				return tEncodedArray
+		end switch
+	end list_GetData
+
+	function media_ConstructItemUrl fileSlug
+		put "http://www.himalayanacademy.com/view/" & fileSlug into someURL
+		return someURL
+	end media_ConstructItemUrl
+
+	function list_ExtractFirstThing tQuery
+	   repeat for each key tKey in tQuery["resultarray"]
+	      put tQuery["resultarray"][tKey][1] into fThing
+	      put empty into indexArray [fThing]
+	   end repeat
+	   put keys(indexArray) into fThings
+	   return fThings
+	end list_ExtractFirstThing
+
+	function list_FileIdsToURLs fileIDs
+		repeat for each line fileID in fileIDs
+			put media_ConstructItemUrl (fileID) & CR after someURLs
+		end repeat
+		delete char -1 of someURLs
+		return someURLs
+	end list_FileIdsToURLs
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF list.lc
+--| Location: ./system/application/ha/controllers/list.lc
+----------------------------------------------------------------------

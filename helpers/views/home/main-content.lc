@@ -1,0 +1,97 @@
+<script>
+ console.log(`[[ the keys of gData["taka"] ]]`) 
+ </script>
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main">
+		
+			<div class="featured-stories">
+			
+				<div class="stories-header">
+					
+					<h2 class="blog-heading">Taka: Our Daily Blog</h2>
+					
+					<a class="action" href="/blog/taka">Read the Blog</a>
+				
+				</div>
+		
+				<article class="content-article has-image">
+									
+					<time pubdate class="timestamp" datetime="[[ gData["taka"][1]["timestamp"] ]]">[[ gData["taka"][1]["date"] ]]</time>
+					
+					<h1 class="h1"><a href="[[ gData["taka"][1]["link"] ]]">[[ gData["taka"][1]["title"] ]]</a></h1>
+					
+					[[ gData["taka"][1]["content"] ]]
+					
+					<figure class="image">
+										
+						<img src="[[ gData["taka"][1]["image"] ]]"  />
+						
+						<figcaption class="caption">[[ gData["taka"][1]["caption"] ]]</figcaption>
+					
+					</figure>
+					
+					<p>[[ gData["taka"][1]["story"] ]]</p>
+				
+					<a class="action" href="[[ gData["taka"][1]["link"] ]]">Continue Reading</a>
+					
+					<footer class="article-footer">
+					
+						<h3 class="h2">Recent Articles</h3>
+						
+						<ul class="recent-articles">
+						
+							<?
+							put empty into tBuf
+							put the keys of gData["taka"] into tKeys
+							sort numeric tKeys
+							delete line 1 of tKeys
+							repeat for each line k in tKeys
+								if k > 7 then next repeat
+								put format("<li><time pubdate class='timestamp' datetime='%s'>%s</time><a href='%s'>%s</a></li>", gData["taka"][k]["timestamp"],gData["taka"][k]["date"], gData["taka"][k]["link"], gData["taka"][k]["title"]) after tBuf
+							end repeat
+							return tBuf
+							?>
+						
+						</ul>
+					
+					</footer>
+									
+				</article> <!-- end content article -->
+				
+				<aside class="publications" role="complementary">
+				
+					<div class="pub-wrapper">
+				
+						<h3 class="h2">[[ gData["modules"]["Sidebar Module"]["title"] ]]</h3>
+						
+						<? return emitSidebarModuleItems(gData["modules"]["sidebar module"]) ?>
+					
+					</div>
+				
+				</aside> <!-- end publications -->
+			
+			</div> <!-- end featured stories -->
+			
+			<section class="guru" role="region">
+			
+				<h3 class="h2">[[ gData["modules"]["secondary content module"]["header"] ]]</h3>
+				
+				<div class="image"><img src="[[ gData["modules"]["secondary content module"]["image"] ]]" alt="[[ gData["modules"]["secondary content module"]["title"] ]]" /></div>
+				
+				<div class="description">
+				
+					<h2 class="h1"><a href="#">[[ gData["modules"]["secondary content module"]["title"] ]]</a></h2>
+					
+					<p>[[ gData["modules"]["secondary content module"]["description"] ]]</p>
+					<a class="action" href="[[ gData["modules"]["secondary content module"]["cta_link"] ]]">[[ gData["modules"]["secondary content module"]["cta"] ]]</a>
+				
+				</div>
+			
+			</section>
+											
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+	</div> <!-- end main-content -->

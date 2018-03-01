@@ -1,0 +1,250 @@
+<!-- MONOCLE GENERATOR -->
+
+
+<!-- MONOCLE CSS -->
+<style type="text/css">
+div.monelem_page {
+  right: 0;
+  top: 0px;
+  bottom: 36px;
+  border: 2px solid #BBB;
+  border-left: none;
+  background-color: #FFF;
+}
+
+
+.bookTitle {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  left: 0;
+  right: 40px;
+  cursor: system;
+  background: rgb(194, 110, 64);
+  color: rgb(255, 255, 255);
+  padding: 12px 8px 4px;
+  white-space: nowrap;
+  font-size: 84%;
+}
+
+
+.tocButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 36px;
+  background: #282626 url(/assets/img/toc-btn.png) no-repeat;
+}
+
+
+.pageNumber {
+  position: absolute;
+  top: 12%;
+  right: 12px;
+  color: #555;
+  font: bold 14pt Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #999;
+}
+
+div.monelem_container {
+  background: #CCC;
+}
+
+div.monelem_page {
+  right: 0;
+  top: 6px;
+  bottom: 42px;
+  border: 2px solid #BBB;
+  border-left: none;
+  background-color: #FFF;
+}
+
+div.monelem_sheaf {
+  top: 1.2em;
+  right: 3.5em;
+}
+
+
+
+div.monelem_controls_contents_container {
+  background: #F7F4EE;
+  border: 1px solid #DDD;
+  width: auto;
+  height: auto;
+  right: auto;
+  top: auto;
+  left: 0;
+  max-height: 85%;
+  max-width: 95%;
+  bottom: 36px;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+ol.monelem_controls_contents_list:before {
+  content: "Table of Contents";
+  font-weight: bold;
+  font-size: 16pt;
+  padding-left: 16px;
+  line-height: 2em;
+}
+
+
+li.monelem_controls_contents_chapter {
+  border-bottom: none;
+  list-style: none;
+  padding-left: 16px;
+}
+
+</style>
+
+<!-- MONOCLE BOOK DATA AND SCRIPTS-->
+<script type="text/javascript">
+<?	
+return gData["monocle"]["book data object"]
+?>
+
+// We only instantiante monocle if the reader clicks the "read book now links"
+// These trigger links have an id="small-reader"
+
+$(document).ready(function() {
+	$("#small-reader").click( function(e) {
+		e.preventDefault();
+		smallReaderLaunch();
+		//return false;
+			}
+	);
+});
+
+// Auxiliary functions
+
+function newBookTitle(reader) {
+  var bookTitle = {}
+  bookTitle.createControlElements = function () {
+    var cntr = document.createElement('div');
+    cntr.className = "bookTitle";
+    var btText = document.createElement('span');
+    btText.innerHTML = reader.getBook().getMetaData('title');
+    cntr.appendChild(btText);
+    this.chapText = document.createElement('span');
+    btText.appendChild(this.chapText);
+    this.update();
+    return cntr;
+  }
+  bookTitle.update = function () {
+    var place = reader.getPlace();
+    var t = place.chapterTitle();
+    if (t) {
+      this.chapText.innerHTML = " &#8212; " + t;
+    } else {
+      this.chapText.innerHTML = "";
+    }
+  }
+
+  reader.addControl(bookTitle);
+  reader.listen('monocle:turn', function () { bookTitle.update() });
+  return bookTitle;
+}
+
+
+
+function newBookContents(reader) {
+  var tocMenu = Monocle.Controls.Contents(reader);
+  reader.addControl(tocMenu, 'popover', { hidden: true });
+
+  var tocButton = {}
+  tocButton.createControlElements = function () {
+    var btn = document.createElement('div');
+    btn.className = "tocButton";
+    Monocle.Events.listen(
+      btn,
+      typeof Touch == "object" ? "touchstart" : "mousedown",
+      function (evt) {
+        if (evt.preventDefault) {
+          evt.stopPropagation();
+          evt.preventDefault();
+        } else {
+          evt.returnValue = false;
+        }
+        var menuDiv = reader.dom.find('controls_contents_container');
+        // Really really ugly code for animation effect. Don't copy this.
+        if (typeof(WebKitCSSMatrix) == "object") {
+          menuDiv.style.visibility = 'hidden';
+          reader.showControl(tocMenu);
+          menuDiv.style.webkitTransition = "";
+          menuDiv.style.webkitTransform = "translateX(-100%)";
+          setTimeout(
+            function () {
+              menuDiv.style.visibility = 'visible';
+              menuDiv.style.webkitTransition = "-webkit-transform 300ms linear";
+              menuDiv.style.webkitTransform = "translateX(0px)";
+            },
+            10
+          );
+        } else {
+          reader.showControl(tocMenu);
+        }
+      }
+    );
+    return btn;
+  }
+  reader.addControl(tocButton);
+  return tocButton;
+}
+
+
+// This function is called after monocle is initialized and is 
+// where we add rich controls to our reader.
+function monocleInitializedCallback(bookreader) {
+	window.reader = bookreader;
+
+	// Adding font resizer.
+	var magnifier = new Monocle.Controls.Magnifier(bookreader);
+	bookreader.addControl(magnifier);
+	
+	// Spinner
+	var spinner = Monocle.Controls.Spinner(bookreader);
+	bookreader.addControl(spinner, 'page', { hidden: true });
+    spinner.listenForUsualDelays();
+
+	// Book Title
+	newBookTitle(bookreader);
+	newBookContents(bookreader)
+			
+			
+}
+
+// We could pass options for monocle the object below.
+// The options could set the flippers and panels.
+// Refer to:
+//   https://github.com/joseph/Monocle/wiki/Integrating
+//   https://github.com/joseph/Monocle/wiki/Page-flippers
+//   https://github.com/joseph/Monocle/wiki/Panels
+var options = {};
+
+// Small reader launcher
+
+function smallReaderLaunch() {
+	console.log("launching small reader...");
+	console.log(bookData);
+	// clean book div and resize it
+	$('#book').html(' ');
+	$('#book').height(551).width(387);
+	// Start monocle
+	Monocle.DEBUG = true;
+	window.reader = Monocle.Reader('book', bookData, options, monocleInitializedCallback);
+	// Bind events
+	Monocle.Events.listen(
+			window,
+			'resize',
+			function () { window.reader.resized() }
+		);
+	}
+	
+</script>
+<!-- END OF MONOCLE GENERATOR -->

@@ -1,0 +1,86 @@
+<?rev
+# THIS IS A SPECIAL CONTROLLER TO LAUNCH THE HOME PAGE TEMPLATE.
+# ALL the code here is "Bogus" and we need another method
+# probably Andre needs to create a special index.xml file in 
+# /html/home/index.xml  
+# for this page..
+
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "home,index,test" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+put "admin" into sWordpressUsername
+put "6aiv1sm4TheWorld" into sWordpressPassword
+put "1" into sWordpressBlogID
+
+command home
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadLibrary "lorempixel"
+	rigLoadHelper "asset"
+	rigLoadPlugin "galleria" 
+	rigLoadLibrary "fetchhtml"
+	--rigLoadLibrary "xmlrpc"
+	--rigLoadLibrary "wp"
+	--rigLoadLibrary "WordpressRestAPI"
+	 rigLoadExtension "com.livecode.library.json"
+	
+    # let's log what page is the user hits on   
+    rigLogMessage "Requested:", rigUriString()
+
+	--xmlrpcSetServer ("http://himalayanacademy.com/blog/taka/xmlrpc.php")
+	
+end home
+
+
+
+command test
+	ct "application/json"
+	put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts" into tJSON
+	put jsonimport(tJSON) into gData["taka"]
+	put the keys of gData["taka"]
+end test
+
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFIED IN THE URL
+command index
+# we are not really using GetSetNavHead, but it has the function to get a random image for the ddd banner
+# can remove this later...
+	get getRandomBanner()
+	
+	put "Welcome to Kauai's Hindu Monastery and Himalayan Academy" into gData["pageTitle"]
+	put cmsParseXMLDataFile("/home/index.xml") into gData["modules"]
+	
+	# LOAD THE VIEW FILES
+	get rigLoadView("sitewide/doc-head")
+	
+	# When DDD is offline we call the regular view 
+	# comment this out when DDD is on:	 	
+	
+	 get rigLoadView("home/home-page-head")
+	
+	# To turn banners on during DDD drive we call the page head
+	# that had the DDD block. Uncomment the following line to go live:	 	
+	
+	# get rigLoadView("home/home-page-head-ddd")
+	
+	--put wpGetLastPosts(sWordpressBlogID, sWordpressUsername,sWordpressPassword) into gData["taka"]
+	put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts" into tJSON
+	put (tJSON) into gData["taka"]
+	get rigLoadView("home/main-content")	
+	get rigLoadView("sitewide/footer")
+
+
+end index
+
+--| END OF home.lc
+--| Location: ./system/application/controllers/home.lc
+----------------------------------------------------------------------

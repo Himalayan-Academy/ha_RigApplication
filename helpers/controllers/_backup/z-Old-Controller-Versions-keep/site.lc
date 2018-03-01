@@ -1,0 +1,143 @@
+<?rev
+
+global gControllerHandlers, gData
+
+put "site,index,viewPage,viewMedia" into gControllerHandlers
+
+
+local sTemplate, sPageToLoad, sHTMLFolder, sPageMetadataA
+
+command site
+	# code...
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadLibrary "lorempixel"
+	rigLoadLibrary "json"
+	rigLoadHelper "asset"
+    rigLoadPlugin "galleria"
+
+	rigLogMessage "debug", "Loading Site Controller"
+
+	put "/home/devhap/public_html/html/" into sHTMLFolder
+	
+	put rigSegmentArray() into tSegs
+	repeat with x = 2 to the number of lines in the keys of tSegs
+	    put tSegs[x] into tSegment 
+	    put tSegment & "/" after sPageToLoad
+	end repeat
+	delete char -1 of sPageToLoad
+	
+	
+	
+	
+	rigLogMessage "debug","page to load:" && sPageToLoad
+	
+	## Cascading metadata file.
+	
+	# first pick default.metadata from toplevel folder and downwards.
+	set the itemdel to "/"
+	repeat with x = 1 to (the number of items in sPageToLoad - 1)
+		put item x of sPageToLoad & "/" after tFolder
+		
+		# then here you could use:
+		# put sHTMLFolder & tFolder & tEnclosingFolder &".metadata" into sPageMetadataFile
+		# instead of this:
+		
+		put sHTMLFolder & tFolder & "default.metadata" into sPageMetadataFile
+		rigLogMessage "debug","looking for" && sPageMetadataFile
+		
+		if there is a file sPageMetadataFile then
+			rigLogMessage "debug","found metada file at:" && sPageMetadataFile	
+			put url ("file:" & sPageMetadataFile) into tTempMetadataA
+			put jsontoarray(tTempMetadataA) into tTempMetadataA
+			repeat for each key tK in tTempMetadataA
+				rigLogMessage "debug", (tFolder & "default.metadata -->" && tK && tTempMetadataA[tK] )
+				put tTempMetadataA[tK] into sPageMetadataA[tK]
+			end repeat
+		end if
+	end repeat
+	
+
+	# Now check for override
+	put sHTMLFolder & sPageToLoad & ".metadata" into sPageMetadataFile
+	if there is a file sPageMetadataFile then
+		rigLogMessage "debug","found metada file at:" && sPageMetadataFile	
+		put url  ("file:" & sPageMetadataFile) into tTempMetadataA
+		put jsontoarray(tTempMetadataA) into tTempMetadataA
+		repeat for each key tK in tTempMetadataA
+			rigLogMessage "debug", (sPageToLoad && "-->" && tK && tTempMetadataA[tK] )
+			put tTempMetadataA[tK] into sPageMetadataA[tK]
+		end repeat
+	end if
+	
+	# Check if it is an index.html call
+		
+	if there is not a file ( sHTMLFolder & sPageToLoad & ".html") then
+		if there is a file ( sHTMLFolder & sPageToLoad & "/default.metadata") then
+			put sHTMLFolder & sPageToLoad & "/default.metadata" into sPageMetadataFile
+			rigLogMessage "debug","found metada file at:" && sPageMetadataFile	
+			if there is a file sPageMetadataFile then
+				put url  ("file:" & sPageMetadataFile) into tTempMetadataA
+				put jsontoarray(tTempMetadataA) into tTempMetadataA
+				repeat for each key tK in tTempMetadataA
+					rigLogMessage "debug", (sPageToLoad && "-->" && tK && tTempMetadataA[tK] )
+					put tTempMetadataA[tK] into sPageMetadataA[tK]
+				end repeat
+			end if
+		end if
+	end if
+	
+end site
+
+command viewPage
+	put sPageMetadataA["title"] into gData["pageTitle"] 
+	put url ("file:" & sHTMLFolder & sPageMetadataA["sidebar"]) into gData["sidebar"] 
+	
+	# KT: 2012/3/21: I changed the key names  to "page_heading" "top_navigation" and "secondary Navigation" and 
+	
+	put getSetHeadNav(sPageMetadataA["body_class"],sPageMetadataA["page_heading"],sPageMetadataA["top_navigation"],sPageMetadataA["secondary_navigation"]) into gData["pageHeader"]
+	
+	switch
+		case there is a file ("/home/devhap/public_html/html/" & sPageToLoad & ".html")
+			put url(("file:/home/devhap/public_html/html/" & sPageToLoad & ".html")) into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged ("/" & sPageToLoad & ".html")	
+		break
+		case there is a file ("/home/devhap/public_html/html/" & sPageToLoad & "/index.html")
+			put url(("file:/home/devhap/public_html/html/" & sPageToLoad & "/index.html")) into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged ("/" & sPageToLoad & "/index.html")	
+		break
+	end switch
+	
+	# PROBLEM! New data base records in the page_metadata table are being created... duplicates for existing
+	# pages  but now new ones with path: /site/viewpage/monastery/*some pages*
+		 	
+	###### ABove needs fixed
+	
+	get rigLoadView(("sitewide/" & sPageMetadataA["template"]), gData)
+end viewPage
+
+
+command viewMedia
+	put sPageMetadataA["title"] into gData["pageTitle"] 
+	
+	put "detail book" into sPageMetadataA["body_class"]
+	put getSetHeadNav(sPageMetadataA["body_class"],sPageMetadataA["page_heading"],sPageMetadataA["top_navigation"],sPageMetadataA["secondary_navigation"]) into gData["pageHeader"]
+	get rigLoadView(("media/book-details"), gData)
+end viewMedia
+
+command index
+	# SET PAGE TITLE
+	put "YourPageTitle" into gData["pageTitle"]
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("siteView")
+end index
+
+
+
+
+--| END OF site.lc
+--| Location: ./system/application/controllers/site.lc
+----------------------------------------------------------------------

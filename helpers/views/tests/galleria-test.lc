@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>[[gData["pageTitle"] ]]</title>
+
+<? return rigCssAsset("galleria.twelve.css") ?>
+
+</head>
+<body>
+
+<div class="content">
+<div id="galleria"></div>
+</div>
+
+<? return rigJsAsset("jsGoogleapis-jquery-1.7.1") ?>
+<? return rigJsAsset("galleria-1.2.5.min.js") ?>
+<? return rigJsAsset("galleria.twelve.min.js") ?>
+[[gData["slideShow"] ]]
+</body>
+</html> 

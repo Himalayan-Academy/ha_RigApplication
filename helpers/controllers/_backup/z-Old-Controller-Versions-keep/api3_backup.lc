@@ -1,0 +1,466 @@
+<?rev
+
+/*
+API3.LC - The new API 3.0 for Himalayan Academy WebSite
+
+author: Andre Alves Garzia (andre@andregarzia.com)
+2011
+
+*/
+
+
+global gControllerHandlers, gData
+
+-- common handlers
+put "api3,index,enumoptions" into gControllerHandlers
+-- collection handlers
+put ",savecollection,collectiondata,newcollection,verifylogin" after gControllerHandlers
+-- API Version 2 handlers
+put ",insertitem,listitems,getitem,saveitem,permissions" after gControllerHandlers
+
+
+global gXML
+
+command api3
+	# code...
+	set the errormode to "inline"
+	rigLoadModel "get-book-data"
+	rigLoadLibrary "epub"
+	rigLoadLibrary "audio"
+	rigLoadLibrary "art"
+	rigLoadLibrary "arraytools"
+	rigLoaderLoadLibrary "Email"
+	rigLogMessage "debug","API 3.0 Controller Loaded:" && rigFetchRSegment(2)
+	
+	# The first thing to do is check the API assumptions.
+	
+	if $_SERVER["REQUEST_METHOD"] is not "POST" then
+		sendError "This API only answers POST requests."
+	end if
+	
+	put the arraydecode of the decompress of $_POST_RAW into gData
+	
+	# Check user login
+	get verifyLogin()
+	if it is not true then
+		sendError it
+	end if
+	
+	# Verify if the user has permission for that command
+	put rigFetchRsegment(2) into tCommandToCall
+	get verifyPermission(tCommandToCall)
+	if it is not true then
+		sendError it
+	end if
+	
+end api3
+
+command outputArray pA
+	put header "Content-Type: x-livecode/compressed-arrayencode"
+	put the compress of the arrayencode of pA
+	quit
+end outputArray
+
+command ping
+	sendOk "yes"
+end ping
+
+on senderror pError, pCode
+	if pCode is not empty then
+		put header "Status:" && pCode
+	end if
+	rigLogMessage "error", pError
+	put pError into tA["error"]
+	outputArray tA
+end senderror
+
+on sendOk pMsg
+	rigLogMessage "debug", pMsg
+	put pMsg into tA["value"]
+	outputArray tA
+end sendOk
+
+on index
+	senderror "Do not call index"
+end index
+
+function verifyLogin
+	switch
+		case gData["request"]["login"] is empty
+		case gData["request"]["password"] is empty
+			return "verifyloginerr, login or Password empty."
+		break
+	end switch
+	
+	put url "binfile:/home/devhap/etc/acl.xml" into tXML
+	put revCreateXMLTree(tXML, true, true, false) into gData["xml id"]
+	if gData["xml id"] is not a number then
+		return "verifyloginerr, bad acl file."
+	end if
+	
+	put revXMLMatchingNode(gData["xml id"], "/acl/users", "user", "email", gData["request"]["login"], 1) into tFoundPaths
+	put revXMLAttribute(gData["xml id"], tFoundPaths, "password") into tPassword
+	rigLogMessage "debug", "user:" && gData["request"]["login"] && tPassword
+	if gData["request"]["password"] is not tPassword then
+		return "verifyloginerr, wrong login or password."
+	end if
+	
+	put gData["request"]["login"] into gData["user"]["login"]
+	put revXMLAttribute(gData["xml id"], tFoundPaths, "group") into gData["user"]["group"]
+	
+	return true
+end verifylogin
+
+function verifyPermission pPermissionToCheck
+	repeat for each item tGroup in gData["user"]["group"]
+		put revXMLMatchingNode(gData["xml id"], "/acl/groups", "group", "name", tGroup, 1) into tFoundPath
+		put revXMLNodeContents(gData["xml id"], (tFoundPath & "/commands")) into gData["user"]["commands"]
+		put revXMLNodeContents(gData["xml id"], (tFoundPath & "/ui")) into gData["user"]["ui"]
+	end repeat
+	
+	if "ALL" is in gData["user"]["commands"] then
+		return true
+	end if
+	
+	if pPermissionToCheck is among the items of gData["user"]["commands"] then
+		return true
+	end if
+	return "User" && gData["user"]["login"] && "does not have permission for command" &&  pPermissionToCheck
+end verifyPermission
+
+command permissions
+	outputArray gData["user"]
+end permissions
+
+command listitems
+	
+	if gData["request"]["select"] is not empty then
+		rigDbSelect gData["request"]["select"]
+	end if
+	
+	if gData["request"]["limit"] is not empty then
+		rigDbLimit gData["request"]["limit"]
+	end if
+	
+	if the keys of gData["request"]["where"] is not empty then
+		repeat for each key tK in gData["request"]["where"]
+			rigDbWhere gData["request"]["where"][tK]["column"], gData["request"]["where"][tK]["value"]
+		end repeat
+	end if
+	
+	put rigDbGet(gData["request"]["table"]) into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+		put rigDbRow(x) into tResponseA[x]
+	end repeat
+	outputArray tResponseA
+end listitems
+
+command getitem
+	rigDbWhere "item_id", gData["request"]["item_id"]
+	put rigDbGet("item") into tQuery
+	put rigDbRow(1) into tResponseA
+	-- get formats
+	rigDbWhere "item_id", gData["request"]["item_id"]
+	put rigDbGet("item_format") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["formats"][x]
+    end repeat
+	-- get channels
+	rigDbWhere "item_id", gData["request"]["item_id"]
+	put rigDbGet("channel") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["channels"][x]
+    end repeat
+	outputArray tResponseA
+end getitem
+
+function lastInsertedId
+	get rigDbQuery("SELECT LAST_INSERT_ID() as TID")
+	put rigDbRow(1) into tDataA
+	return tDataA["TID"]
+end lastInsertedId
+
+command saveitem
+	
+	-- !!! SANITY CHECK !!! --
+	--
+	-- If the user is updating an existing record then we need to check if we can
+	-- get the original record back.
+	--
+	-- If the user is inserting a new record then we must be sure there is no collision
+	-- with existing file_id
+	rigLogMessage "debug","save item..."
+	
+	if the keys of gData["request"]["uploads"] is not empty then
+		-- files were uploaded. keep track of them to save later.
+		rigLogMessage "debug", "request contains uploaded files."
+		put gData["request"]["uploads"] into tUploadsA
+		delete variable gData["request"]["uploads"]
+	end if
+	
+	if gData["request"]["item_id"] is not empty then
+		rigLogMessage "debug","update operation"
+		put gData["request"]["item_id"] into tItemID
+		rigLogMessage "debug","item id:" && tItemID
+		rigDbWhere "item_id", tItemID
+		put rigDbGet("item") into tQuery
+		rigLogMessage "debug","rows:" && tQuery["numrows"]
+		if tQuery["numrows"] is not 1 then
+			-- User is trying to update an item but the item does not exist.
+			sendError "Can't update record because this item_id is not on the database."
+			exit saveItem
+		end if
+		put rigDbRow(1) into tOriginalRecord
+		rigDbWhere "item_id", gData["request"]["item_id"]
+		put rigDbGet("item_format") into tQuery
+		repeat with x = 1 to tQuery["numrows"]
+		  put rigDbRow(x) into tOriginalRecord["formats"][x]
+	  end repeat
+	  put "update" into tOperation
+	else
+		-- check for file_id collision for new records
+		rigLogMessage "debug","insert operation"
+		rigDbWhere "file_id", gData["request"]["record"]["file_id"]
+		put rigDbGet("item") into tQuery
+		if tQuery["numrows"] > 0 then
+			-- there is already a file_id like that on the database, return an error.
+			sendError "Can't add a new record because this file_id is already on the database."
+			exit saveItem
+		end if
+		put "insert" into tOperation
+	end if
+	
+	
+	-- !!! FOLDER CHECK !!! --
+	-- If the user is doing an insert, we need to create folder for the new file_id	
+	if tOperation is "insert" then
+		set the itemdel to slash
+		switch item 1 of gData["request"]["record"]["media_type"]
+			case "audio"
+				put folderForAudio(gData["request"]["record"]) into tNewFolder
+				rigLogMessage "debug","creating new audio folder:" && tNewFolder
+				create folder tNewFolder
+			break
+			case "art"
+				put folderForArt(gData["request"]["record"]) into tNewFolder
+				rigLogMessage "debug","creating new art folder:" && tNewFolder
+				create folder tNewFolder
+			break
+		end switch
+	end if
+	
+	-- If the user is doing an update, we must check if the folder changed (such as file_id change)
+	if tOperation is "update" then
+		set the itemdel to slash
+		switch item 1 of gData["request"]["record"]["media_type"]
+			case "audio"
+				put folderForAudio(gData["request"]["record"]) into tNewFolder
+				put folderForAudio(tOriginalRecord) into tCurrentFolder
+				rigLogMessage "debug","new audio folder:" && tNewFolder
+				rigLogMessage "debug","old audio folder:" && tCurrentFolder
+				if tCurrentFolder is not tNewFolder then
+					if there is a folder tNewFolder then
+						-- can't move items to new folder because it already exist
+						sendError "Can't update record because destination folder already exist"
+						exit saveItem
+					end if
+					rigLogMessage "debug","renaming audio folder."
+					rename folder tCurrentFolder to tNewFolder
+				else
+					if there is not a folder tNewFolder then
+						rigLogMessage "debug","folder does not exist!"
+						create folder tNewFolder
+					end if
+				end if
+			break
+			case "art"
+				put folderForArt(gData["request"]["record"]) into tNewFolder
+				put folderForArt(tOriginalRecord) into tCurrentFolder
+				rigLogMessage "debug","new art folder:" && tNewFolder
+				rigLogMessage "debug","old art folder:" && tCurrentFolder
+				if tCurrentFolder is not tNewFolder then
+					if there is a folder tNewFolder then
+						-- can't move items to new folder because it already exist
+						sendError "Can't update record because destination folder already exist"
+						exit saveItem
+					end if
+					rigLogMessage "debug","renaming art folder."
+					rename folder tCurrentFolder to tNewFolder
+				else
+					if there is not a folder tNewFolder then
+						rigLogMessage "debug","folder does not exist!"
+						create folder tNewFolder
+					end if
+				end if
+			break
+		end switch
+	end if
+	
+	-- !!! SAVE ITEM !!! --
+	-- Save record into the items table ...
+	
+	-- pick the formats item and take it out of the record array because
+	-- it would cause an error when passed to the active record routines
+	-- since the item table has no formats field.
+	
+	rigLogMessage "debug","saving item..."
+	
+	put gData["request"]["record"]["formats"] into tFormatsA
+	if the keys of tFormatsA is empty then
+		rigLogMessage "debug","no formats"
+	else
+		rigLogMessage "debug", "formats:" && the keys of tFormatsA
+	end if
+	delete variable gData["request"]["record"]["formats"]
+	
+	if tOperation is "insert" then
+		get rigDbInsert("item", gData["request"]["record"])
+		rigLogMessage "debug","result:" && it && "item id:" && lastInsertedID()
+		-- needs to fill tItemID
+		put lastInsertedID() into tItemID
+		rigLogMessage "debug","new item id:" && tItemID
+		
+	end if
+	 
+	if tOperation is "update" then
+		rigDbWhere "item_id", tItemID
+		get rigDbUpdate("item", gData["request"]["record"])
+		rigLogMessage "debug","result:" && it
+	end if
+	
+	-- !!! SAVE FORMATS !!! --
+	rigLogMessage "debug","saving formats..."
+	if tOperation is "insert" then
+		rigLogMessage "debug","insert operation."
+		-- For insert operations, all the formats will be new so we can just loop and insert them.
+		repeat for each key tK in tFormatsA
+			put tFormatsA[tK] into tDataA
+			put tItemID into tDataA["item_id"]
+			if tDataA["data"] is not empty then
+				if the md5digest of tDataA["data"] is tDataA["data_md5"]  then
+					rigLogMessage "debug","uploaded file:" & tNewFolder & "/" & tDataA["filename"]
+					put tDataA["data"] into url ("binfile:" & tNewFolder & "/" & tDataA["filename"])
+				else
+					rigLogMessage "error","file md5digest mismatch for item_id #" & tItemID & ". filename:" & tDataA["filename"]
+					sendError "can't upload file due to md5digest mismatch for item_id #" & tItemID & ". filename:" & tDataA["filename"]
+					exit saveItem
+				end if
+				delete variable tDataA["data"]
+				delete variable tDataA["data_md5"]
+			end if
+			if tDataA["item_format_id"] is not empty then
+				delete variable tDataA["item_format_id"]
+			end if
+			get rigDbInsert("item_format", tDataA)
+			rigLogMessage "debug","result:" && it && "item_id:" && tItemID && "item_format_id:" && lastInsertedID()
+		end repeat
+	end if
+	
+	if tOperation is "update" then
+		rigLogMessage "debug","update operation."
+		-- Updates are more tricky because the user may have deleted some formats. Must make sure things are ok.
+		--
+		-- One easy way to make sure that the records are correct is to delete the current formats for the item
+		-- and insert them again from the data received from the client.
+		
+		-- Before deleting the data, we need to check for renames on the mp3 files
+		repeat for each key tK in tFormatsA
+			put tFormatsA[tK] into tDataA
+			if tDataA["item_format_id"] is not empty then
+				rigLogMessage "debug","updating an existing format, checking for renames, id" && tDataA["item_format_id"]
+				-- search the current record for the matching item
+				repeat for each key tK2 in tOriginalRecord["formats"]
+					rigLogMessage "debug", "original" && tK2
+					put tOriginalRecord["formats"][tK2] into tCurrentDataA
+					if tCurrentDataA["item_format_id"] is tDataA["item_format_id"] then
+						rigLogMessage "debug", "match for item" && tDataA["item_format_id"]
+						rigLogMessage "debug", tCurrentDataA["filename"]
+						rigLogMessage "debug", tDataA["filename"]
+						if tCurrentDataA["filename"] is not tDataA["filename"] then
+							-- the user renamed the file, we should rename it on disk
+							rigLogMessage "debug", "files are different should rename"
+							put tCurrentFolder & "/" & tCurrentDataA["filename"] into tCurrentFilename
+							put tNewFolder & "/" & tDataA["filename"] into tNewFilename
+							rigLogMessage "debug", tCurrentFilename
+							rigLogMessage "debug", tNewFilename
+							if there is a file tCurrentFilename then
+								rigLogMessage "debug", "renaming file because user changed filename on items_format table"
+								rename file tCurrentFilename to tNewFilename
+							end if
+						end if
+					end if
+				end repeat
+			end if
+		end repeat
+		
+		-- Delete the current data
+		rigLogMessage "debug","deleting item_format records for item_id:" && tItemID
+		put tItemID into tArray["item_id"]
+		get rigDbDelete("item_format", tArray)
+		rigLogMessage "debug","result:" && it
+		
+		-- Insert new data
+		rigLogMessage "debug","inserting data... keys:" && the keys of tFormatsA
+		repeat for each key tK in tFormatsA
+			put tFormatsA[tK] into tDataA
+			put tItemID into tDataA["item_id"]
+			delete variable tDataA["item_format_id"]
+			if tDataA["data"] is not empty then
+				if the md5digest of tDataA["data"] is tDataA["data_md5"]  then
+					rigLogMessage "debug","uploaded file:" & tNewFolder & "/" & tDataA["filename"]
+					put tDataA["data"] into url ("binfile:" & tNewFolder & "/" & tDataA["filename"])
+				else
+					rigLogMessage "error","file md5digest mismatch for item_id #" & tItemID & ". filename:" & tDataA["filename"]
+					sendError "can't upload file due to md5digest mismatch for item_id #" & tItemID & ". filename:" & tDataA["filename"]
+					exit saveItem
+				end if
+				delete variable tDataA["data"]
+				delete variable tDataA["data_md5"]
+			end if
+			get rigDbInsert("item_format", tDataA)
+			rigLogMessage "debug","result:" && it && "item_id:" && tItemID && "item_format_id:" && lastInsertedID()
+		end repeat
+	end if
+	-- End of Save formats --
+	
+	
+	-- !!! REPORT !!! --
+	rigLogMessage "debug","sending report..."
+	put tOperation && gData["request"]["record"]["media_type"] && gData["request"]["record"]["title"] && ". (file_id:" && gData["request"]["record"]["file_id"] &")" into tSubject
+	
+	put "A new record was inserted/updated in the database by" & tNewDataA["entered_by"] & "." & cr & cr into tReportContent
+	put the keys of gData["request"]["record"] into tKeys
+	sort tKeys
+	repeat for each line tK in tKeys
+		put tK & ":" & tab & gData["request"]["record"][tK] & cr after tReportContent
+	end repeat
+	hapReport tSubject, tReportContent
+	
+	-- !!! SAVE ANY UPLOADED FILE !!! --
+	if the keys of tUploadsA is not empty then
+		repeat for each key tK in tUploadsA
+			put tUploadsA[tK]["data"] into url ("binfile:" & tNewFolder & "/" & tUploadsA[tK]["filename"])
+		end repeat
+	end if
+	
+
+	-- !!! ECHO THE RECORD BACK !!! --
+	rigLogMessage "debug","echoing back..."
+	rigDbWhere "file_id", gData["request"]["record"]["file_id"]
+	put rigDbGet("item") into tQuery
+	put rigDbRow(1) into tResponseA
+	rigDbWhere "item_id", tResponseA["item_id"]
+	put rigDbGet("item_format") into tQuery
+	repeat with x = 1 to tQuery["numrows"]
+	  put rigDbRow(x) into tResponseA["formats"][x]
+  end repeat
+	outputArray tResponseA
+end saveitem
+
+# CALL THE CONTROLLER HANDLER
+# api3
+
+
+--| END OF api3.irev
+--| Location: ./system/application/controllers/api2.irev
+----------------------------------------------------------------------

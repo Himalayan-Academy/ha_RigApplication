@@ -1,0 +1,279 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "search,audio,music,talks,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+# model for this controller is to use the second URL  segment
+# for commands, and third and forth segments as parameters
+# which are inserted into vars: 
+# 2nd segment = gRealm = the command, 3rd= gZone, 4th = gPage
+# we should be able construct all URLs to all page with maximum 4 segments.
+# we try to match the URL to the navigation and also the /html directory (to some extent)
+# in some cases, the top navigation string is long and the content folder short
+# e.g. "Guru Lineage and Philosophy" content pages on the Gurus are in /html/satgurus.
+# and also we use /satgurus  in the URL and not the long string. (TBD)
+
+" & $_SERVER["DOCUMENT_ROOT"] & "
+command music
+    put $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/img/song-page-slides/" into  pGalleryImagesPath	
+	# Load slideshow to global:
+	dottedSlideShow pGalleryImagesPath, "pageTopSlideshow"					 
+	put getSetHeadNav("skinny","Look &amp; Listen",">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]	   
+	put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten//music-songs-sidebar.html")  into gData["sideBar"]
+   	put "A World of Siva's Sacred Music" into gData["pageTitle"]  		
+	put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/deprecated-music-songs.html") into gData["singleArticle"]	 
+    get rigLoadView("sitewide/two-column")
+	put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/song-search-form.html") into gData["bottom-block-one"]					
+end music
+
+command talks
+ 	put getSetHeadNav("skinny","Look &amp; Listen",">Look &amp; Listen<","cat-talks-by-our-gurus") into gData["pageHeader"]	   
+	put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/inspired-talks-sidebar.html")  into gData["sideBar"]
+   	put "Discourses By Our Gurus" into gData["pageTitle"]  		
+	put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/inspired-talks.html") into gData["singleArticle"]	 
+    get rigLoadView("sitewide/two-column")
+end talks
+
+command audio
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not 	
+    put rigFetchSegment(2, 0) into gRealm # top level - depth of URLs this is the command invoked above
+    put rigFetchSegment(3, 0) into gZone  # second depth/nav
+    put rigFetchSegment(4, 0) into gPage  # pages in this realm-zone    
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages	
+	rigLoadHelper "form"
+	
+	if gRealm = 0 then 		# it means there is no second segment in the url
+							# so, for now , 2011-12, we are sending them to: 
+		   music    		# later this goes to an audio landing page based on media template
+							# then we remove this command call
+	end if		
+	   
+	  	
+end audio
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFYED IN THE URI
+
+command index
+end index
+
+/*
+* Render Search Results
+*
+* This command is used by the different search routines to display
+* the audio results from the search.
+*
+* It will loop thru the gData["search results"][x], where x = 1 to the number
+* of matches, rendering the data.
+*
+* It has the same structure as the index routines but it will add stuff to the
+* audio/audio-main-content.irev file
+*
+* OBS: RenderSearchResults is not a command to be called from a URL so it does not
+* need to be present in the commands array at the top.
+*
+*/
+
+on rendersearchresults pMediaType
+        put rigLoadView("audio/search-results",true) into gData["searchResults"]
+
+	switch pMediaType
+	
+	  case "audio/song"
+		put "A World of Siva's Sacred Music" into gData["pageTitle"] 
+		put "<b>Songs Search: </b>" & gData["queryString"] into tType
+		put tType & gData["searchResults"] into gData["singleArticle"]	
+		put getSetHeadNav("skinny","Look &amp; Listen",">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]	   
+	    put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "l/html/looklisten/music-songs-sidebar.html")  into gData["sideBar"]
+		put url "file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/song-search-form.html" into gData["bottom-block-one"]
+		break
+	
+	case "audio/inspiredtalk"
+		put "The Spiritual Discourses of our Satgurus" into gData["pageTitle"] 
+		put "<b>Satguru Speaks Search: </b>" & gData["queryString"] into tType
+		put tType & gData["searchResults"] into gData["singleArticle"]	
+	    put getSetHeadNav("skinny","Look &amp; Listen",">Look &amp; Listen<","cat-talks-by-our-gurus") into gData["pageHeader"]	    
+	    put url("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/looklisten/inspired-talks-sidebar.html")  into gData["sideBar"]		
+		break		
+end switch
+	
+	   
+    get rigLoadView("sitewide/two-column")
+					
+	
+end rendersearchresults
+
+
+/*
+* Search routine
+*/
+
+on search
+	rigLogMessage "debug","searching for audio"
+	
+	# select only the specified media type
+	rigDbWhere "media_type", rigVarPost("media_type")
+	rigDbWhere "approved_for_public","YES"
+	put rigVarPost("query") into gData["queryString"]
+	repeat for each key x in rigVarPost
+	 put x &&   rigVarPost(x) & "; " after theCheckPost
+	 end repeat
+    rigLogMessage "checkPost",	theCheckPost
+	##### Filters
+	# now we'll check the different filters. The more filters, the worst the performance
+	
+	
+    if not (rigVarPost("filter_by_deity") is "false") then
+ 	   rigLogMessage "debug","Filter by Deity: YES"
+ 	   rigDbWhere "deity", rigVarPost("filter_by_deity")	  
+ 	     
+    end if
+		 
+	# Check if model for study
+	if rigVarPost("filter_by_model") is "YES" then
+		rigLogMessage "debug","Filter by Model: YES"
+		rigDbWhere "model_for_study", "YES"
+	end if	
+	
+	# check titles or artists
+	if not (rigVarPost("filter_by_string") is "false") then
+	    if rigVarPost("filter_by_string") = "YES" then
+			rigLogMessage "debug","Filter by Title: YES"
+			rigDbLike "title", rigVarPost("query")
+		else
+			rigLogMessage "debug","Filter by Artists: YES"
+			rigDbLike "artists", rigVarPost("query")	
+		end if	
+	end if
+	
+	
+	# check description
+	if rigVarPost("filter_by_description") is "YES" then
+		rigLogMessage "debug","Filter by description: YES"
+		rigDbLike "description", rigVarPost("query")
+	end if
+	
+	# check transcription
+	if rigVarPost("filter_by_transcript") is "YES" then
+		rigLogMessage "debug","Filter by transcript: YES"
+		rigDbLike "description", rigVarPost("query")
+	end if
+		
+	put rigDbGet("item") into tQ
+	rigLogMessage "debug","Number of results:" && tQ["numrows"]
+	rigLogMessage "debug","SQL:" && rigDbLastQuery()
+	if tQ["numrows"] < 1 then
+		rigLogMessage "debug","No Results!!!"
+		RenderSearchResults ( rigVarPost("media_type") ) # added media type param 2012, jan28: skts
+		exit search
+	end if
+	
+
+	# Some filters would required "grouped or" SQL statements which we
+	# can't do with the RevIgniter Active Record implementation.
+	# 
+	# Instead of crafting this really complex SQL by hand, we avoid it by
+	# throwing more CPU cycles into the problem. We pick every results from
+	# the broad search terms and then using a loop, we refine the results cherry
+	# picking what is needed.
+	#
+	# It is a waste of resources (CPU wise) but it is the easiest way to do it.
+
+  put 0 into y
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tR
+		
+		## INSPIRED TALK ORs
+		
+		if rigVarPost("media_type") is "audio/inspiredtalk" then
+			# include Gurudevas talks in the results
+			if rigVarPost("include_gurudeva") is "YES" and tR["author"] is "Satguru Sivaya Subramuniyaswami" then
+				rigLogMessage "debug","Include Gurudevas Talks: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+
+			# include Bodhinathas talks in the results
+			if rigVarPost("include_bodhinatha") is "YES" and tR["author"] is "Satguru Bodhinatha Veylanswami" then
+				rigLogMessage "debug","Include Bodhinatas Talks: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# ... or next repeat
+			next repeat
+		end if
+		
+		
+	
+		## SONGS ORs  
+		if rigVarPost("media_type") is "audio/song" then
+					
+			## LOOP GENRE
+			## In the view, Natchintanai is on a separate form but
+			## it is just another song genre
+			
+			# include Natchintanai in the results
+			if rigVarPost("include_natchintanai") is "YES" and tR["genre"] is "natchintanai" then
+				rigLogMessage "debug","Include natchintanai: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include bhajan in the results
+			if rigVarPost("include_bhajan") is "YES" and tR["genre"] is "bhajan" then
+				rigLogMessage "debug","Include bhajan: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include gitam in the results
+			if rigVarPost("include_gitam") is "YES" and tR["genre"] is "bhakti-gitam" then
+				rigLogMessage "debug","Include gitam: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include stotram in the results
+			if rigVarPost("include_stotram") is "YES" and tR["genre"] is "stotram" then
+				rigLogMessage "debug","Include stotram: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if
+			
+			# include tirumurai in the results
+			if rigVarPost("include_tirumurai") is "YES" and tR["genre"] is "tirumurai" then
+				rigLogMessage "debug","Include tirumurai: YES"
+				add 1 to y
+				put tR into gData["search results"][y]
+				next repeat
+			end if		
+			# ... or next repeat
+			next repeat
+		end if
+				
+		add 1 to y
+		put tR into gData["search results"][y]
+	end repeat
+	RenderSearchResults ( rigVarPost("media_type") )
+end search
+
+
+
+
+
+--| END OF audio.lc
+--| Location: ./system/application/controllers/audio.lc
+----------------------------------------------------------------------

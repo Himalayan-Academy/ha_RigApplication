@@ -1,0 +1,18 @@
+<section class="slideshow" role="region">
+				
+					<ul class="slidecontrol-nextprev">
+						<li class="arrow-prev"><a href="#">Previous Slide</a></li>
+						<li class="arrow-next"><a href="#">Next Slide</a></li>
+					</ul>
+					
+					<div class="slides">
+				
+					###SLIDES###
+				
+					</div>
+					
+					<div class="slidecontrol-select">
+						
+					</div>
+				
+				</section> <!-- end slideshow -->

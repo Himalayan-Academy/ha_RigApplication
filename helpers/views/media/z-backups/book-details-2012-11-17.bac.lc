@@ -1,0 +1,251 @@
+<!--This slice is taken from the Book Detail template
+You must have body class set to "detail book" (two separate words) for it to render correctly-->
+
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+
+<!-- MONOCLE SUPPORT -->
+
+<!-- MONOCLE CORE -->
+<script type="text/javascript" src="/assets/js/monocle/core/monocle.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/compat/env.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/compat/css.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/compat/stubs.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/compat/browser.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/core/events.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/core/factory.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/core/styles.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/core/reader.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/core/book.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/core/component.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/core/place.js"></script>
+
+<!-- MONOCLE FLIPPERS -->
+<script type="text/javascript" src="/assets/js/monocle/controls/panel.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/panels/twopane.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/panels/eink.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/dimensions/columns.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/flippers/slider.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/flippers/instant.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/dimensions/vert.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/flippers/legacy.js"></script>
+
+<!-- MONOCLE STANDARD CONTROLS -->
+<script type="text/javascript" src="/assets/js/monocle/controls/placesaver.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/controls/magnifier.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/controls/scrubber.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/controls/spinner.js"></script>
+<script type="text/javascript" src="/assets/js/monocle/controls/contents.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/assets/js/monocle/styles/monocore.css" />
+<link rel="stylesheet" type="text/css" href="/assets/js/monocle/styles/monoctrl.css" />
+
+
+<link rel="stylesheet" type="text/css" href="/assets/js/monocle/styles/monocore.css" />
+
+<!-- END OF MONOCLE SUPPORT -->
+
+
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main">
+			
+			<div class="wrapper">
+			
+				<article class="content-article">
+				
+					<div class="article-wrapper">
+				
+						<aside class="featured-item" role="complementary">
+							
+							<div id="book">		
+							       
+							<figure class="media-detail">
+								<?	put "/media/books/" & gData["record"]["file_id"] & "/" & gData["record"]["file_id"] & "_cover_med.jpg" into tCoverFile				
+								?>							
+								<a class="monocle monocle-detail" id="small-reader" href="#"><img src="<? return tCoverFile ?>" alt="Image of <? return gData["record"]["title"] ?>"/> </a>																											
+							 <figcaption class="caption">
+									<p>Read Book Now: &nbsp;<a  class="action fullscreen-reader-launcher" href="/readbook/[[ gData["record"]["file_id"] ]]">Monocle Reader </a> &nbsp; <a  class="action" href="/book/[[ gData["record"]["file_id"] ]]">Web View</a></p>
+									<p><?return gData["record"]["product_details"]?></p>
+								 </figcaption>	
+								 	
+								
+							<!-- <form class="form-search">
+								<input type="text" value="search the text" />
+								<input type="submit" value="search" />
+							</form> -->
+						
+						</aside> <!-- end featured item -->
+					
+						<header class="article-header">
+													
+							<div class="share-wrapper">
+							
+								<div class="share share-options"><a class="open-menu" href="#">Share</a>
+									<ul class="social nojs">
+											<!-- Facebook -->
+											<iframe src="//www.facebook.com/plugins/like.php?href=<?return urlencode("http://" & $_SERVER["SERVER_NAME"] & $_SERVER["REQUEST_URI"]) ?>&amp;send=false&amp;layout=button_count&amp;width=45&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=429968237053054" scrolling="no" frameborder="0" style="border:none; width:45px; height:21px;" allowTransparency="true"></iframe>
+											<!-- End of Facebook -->
+
+											<!-- Google Plus -->
+											<!-- Place this tag where you want the +1 button to render. -->
+											<div class="g-plusone"></div>
+											<!-- Place this tag after the last +1 button tag. -->
+											<script type="text/javascript">
+											  (function() {
+											    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+											    po.src = 'https://apis.google.com/js/plusone.js';
+											    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+											  })();
+											</script>
+											<!-- End of Google Plus -->
+
+
+											<!-- Twitter -->
+											<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+											<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);} }(document,"script","twitter-wjs");</script>
+											<!-- End of Twitter -->
+									</ul>
+								</div>
+								
+								<a class="share" href="mailto:?subject=[[ gData["modules"]["Featured Item Module"]["Title"] ]]&body=Visit%20[[ gData["record"]["Title"] ]]%20-%20[[ "http://" & $_SERVER["HTTP_HOST"] & "/view/" & gData["record"]["file_id"] ]]">Email</a>
+							
+							</div> <!-- end share wrapper -->
+																						
+							<hgroup>						
+								<h3 class="h1"><? return gData["record"]["title"] ?></h3>
+								<h4 class="subhead"><? return gData["record"]["sub_title"] ?></h4>
+								<h5 class="byline"><? return gData["record"]["author"] ?></h5>
+							</hgroup>
+						
+						</header>
+						
+						<div class="article-body">
+							
+							<? 
+							
+							# BR: 2012-06-17 Added to compensate for overly long descriptions
+							# change this later after we decided what to do with long descriptions
+							# either edit them down, or make a disclosure for letting user see the whole thing.
+							
+							put markdown(gData["record"]["description"]) into tDesc							
+							put  word 1 to 120 of tDesc into tBuf
+							put "&hellip;"  after tBuf
+							
+							return tBuf
+							?>
+							
+						</div> <!-- end article body -->
+						
+						<aside class="book-links" role="complementary">
+						
+							<div class="column">
+								
+		
+									<?
+									if the keys of gData["record"]["formats"] is not empty then
+										put "<a class='action-bg fullscreen-reader-launcher' href='/readbook/"&gData["record"]["file_id"]&"'>Open Book Fullscreen</a>" into tBuf
+										put "<h4 class='h4'>Download Free EBook</h4>" after tBuf
+										put "<ul>" after tBuf
+										repeat for each key tK in gData["record"]["formats"]
+											if gData["record"]["formats"][tK]["filename"] is empty then
+												next repeat
+											end if
+											put "<li><a class='action' href='/media/books/"& gData["record"]["file_id"] & "/" & gData["record"]["formats"][tK]["filename"]&"'>"&gData["record"]["formats"][tK]["format_name"]&"</a></li>" after tBuf
+										end repeat
+										put "</ul>" after tBuf
+										return tBuf
+									end if
+									?>
+							</div>
+							
+							<div class="column">
+								
+								<?
+								if the keys of gData["record"]["channels"] is not empty then
+									put "<h4 class='h4'>Also Available At</h4>" into tBuf
+									put "<ul>" after tBuf
+									repeat for each key tK in gData["record"]["channels"]
+										if gData["record"]["channels"][tK]["channel_name"] is empty then
+											next repeat
+										end if
+										put "<li><a class='action' href='"& gData["record"]["channels"][tK]["url"]&"'>"&gData["record"]["channels"][tK]["channel_name"]&"</a></li>" after tBuf
+										if gData["record"]["channels"][tK]["channel_name"] is "minimela" then
+											put gData["record"]["channels"][tK]["url"] into tPurchaseURL
+										end if
+									end repeat
+									put "</ul>" after tBuf
+									put "<a class='action-bg' href='"& tPurchaseURL &"'>Order a Copy</a>" before tBuf
+									return tBuf
+								end if
+								?>
+							</div>
+						
+						</aside>
+						
+						<footer class="article-footer">
+							
+							<div class="related-content column">
+							<?
+							put empty into tBuf
+							if the keys of gData["related content"] is not empty then
+								put "<h4 class='h4'>Related Content</h4>" into tBuf
+								put "<ul>" after tBuf
+								repeat for each key x in gData["related content"]
+									put format("<li class=\"%s\"><a href=\"/view/%s\">%s</a></li>\n",gData["related content"][x]["class"],gData["related content"][x]["file_id"],gData["related content"][x]["title"]) after tBuf
+								end repeat
+								put "</ul>" after tBuf
+							end if
+							return tBuf
+							?>
+							</div>
+							
+							<div class="related-topics column">
+									<?
+									put empty into tBuf
+									if the keys of gData["related topics"] is not empty then
+										put "<h4 class='h4'>Related Topics</h4>" into tBuf
+										put "<ul>" after tBuf
+										repeat for each key x in gData["related topics"]
+											put format("<li><a href=\"/view/%s\">%s</a></li>\n",gData["related topics"][x]["file_id"],gData["related topics"][x]["title"]) after tBuf
+										end repeat
+										put "</ul>" after tBuf
+									end if
+									return tBuf
+									?>
+							</div>
+							<?
+							put empty into tBuf
+							if gData["review"]["sales_blurb"] is not empty then
+								put format("<figure class=\"quote quote-photo float-right\">") into tBuf
+								put format("<img src=\"%s\" alt=\"Photo of ... \" />", gData["review"]["circle image"]) after tBuf
+								put format("<blockquote>%s</blockquote>", gData["review"]["sales_blurb"]) after tBuf
+								put format("<figcaption>&#8212;%s</figcaption>", gData["review"]["author"]) after tBuf
+								put format("</figure>") after tBuf
+								put format("<a class=\"action reviews\" href=\"/reviews/%s\">More Reviews and comments</a>", gData["record"]["file_id"]) after tBuf
+							end if
+							return tBuf
+							?>
+						
+						</footer>
+					
+					</div> <!-- end article wrapper -->
+				
+				</article> <!-- end content article -->
+				
+			</div> <!-- end page content wrapper -->
+		
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+<!-- section media-images removed for now pick up from templates when we implement later--> 
+	
+	[[ gData["monocle"]["support data"] ]]
+
+	
+	<?
+	return rigLoadView("sitewide/footer", TRUE)
+	?>
+	

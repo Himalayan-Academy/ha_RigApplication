@@ -1,0 +1,309 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData, gBookData,gGalleryImagesPath
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "books,index,two,three,four,wSlides,getformat,viewer,viewbook" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+function getImageURLString pTaggedImage
+   set the itemdel to quote
+   return item 2 of pTaggedImage
+end getImageURLString
+
+
+##-----temporarily turn of Rotating Backgrounds ----------- ##
+function rotateMastheadBackground
+   set the defaultFolder to "/home/devhap/public_html/assets/img/masthead/rotation/"
+   put the files into tBackgrounds
+   put line (random (the number of lines of tBackgrounds)) of tBackgrounds into tBackground
+   put ("masthead/rotation/" & tBackground) into tBackGroundPath
+   put (rigImageAsset(tBackGroundPath,,,FALSE))  into pTaggedImage
+   return getImageURLString (pTaggedImage)
+end rotateMastheadBackground
+
+#function rotateMastheadBackground
+   #  put rigImageAsset("masthead.jpg",,,TRUE) into tTaggedImage
+     #put getImageURLString(tTaggedImage) into gData["mastheadBackground"] 
+#end rotateMastheadBackground
+
+command buildSlideShow
+    rigLoadLibrary "generate-slideshow"
+    put "/home/devhap/public_html/galleries/ka_2010-02-14_Maha-Sivaratri/" into gGalleryImagesPath
+    put generateSlideShow(gGalleryImagesPath) into tGalleryImages
+	put rigLoadView("media/galleria-stage.irev",TRUE) into tSlideShow
+	replace "###tGalleryDiv###" with tGalleryImages in tSlideShow
+	replace "###HEIGHT###" with "350" in tSlideShow
+	replace "###WIDTH###" with "500" in tSlideShow
+	replace "###CROP###" with "true" in tSlideShow
+	replace "###PAN###" with "true" in tSlideShow
+	put tSlideShow into gData["slideShow"]
+
+	
+end buildSlideShow
+
+command getFormat
+	put rigRUriToAssoc(3) into tDataA
+	switch tDataA["format"]
+		case "web"
+			rigRedirect ("/books/viewer/file_id/" & tDataA["file_id"])
+		break
+	end switch
+end getFormat
+
+function bookpath pID, pFile
+	return ($_SERVER["DOCUMENT_ROOT"] & "/books/" & pID & "/" & pFile)
+end bookpath
+
+command sender
+	put rigRUriToAssoc(3) into tFileID
+	put rigRUriToAssoc(4) into tRest
+	rigLogMessage "debug", "sender:" && tFileID && tRest
+end sender
+	
+
+command viewer
+	rigLoadLibrary "epub"
+	put rigRUriToAssoc(3) into tDataA
+	if tDataA["display"] is not empty then
+		put tDataA["display"] into tChapterToDisplay
+		put tChapterToDisplay+1 into gData["book"]["next_chapter"]
+		put tChapterToDisplay-1 into gData["book"]["previous_chapter"]
+		delete variable tDataA["display"]
+	else
+		put 1 into tChapterToDisplay
+		put 2 into gData["book"]["next_chapter"]
+		put 1 into gData["book"]["previous_chapter"]
+	end if
+	put findBookByArray(tDataA) into tBookA
+	put tBookA[1]["file_id"] into tFileID
+	put getBookFormat(tBookA[1],"epub") into tEpubA
+	if  tEpubA["filename"] is empty then
+		put tFileID & ".epub" into  tEpubA["filename"]
+	end if
+	put tFileID into gData["book"]["file_id"]
+	put tItemID into gData["book"]["item_id"]
+	
+	put bookPath(tFileID, tEpubA["filename"]) into tFilePath	
+	epubOpen tFileID, tFilePath
+	
+	put epubTOC(tFileID) into gData["book"]["toc"]
+	put epubSpineItem(tFileID,tChapterToDisplay) into tBaseURL
+	set the itemdel to slash
+	put item 1 to -2 of tBaseURL into tBaseURL
+	ePubRegisterBaseURL ("/books/" & tFileID & "/web/" & tBaseURL)
+	rigLogMessage "debug", "base url:" && ePubBaseURL()
+	rigLogMessage "debug", ("first page:" && ("binfile:" & epubPathForSpineItem(tFileID,tChapterToDisplay)))
+	put url ("binfile:" & epubPathForSpineItem(tFileID,tChapterToDisplay)) into gData["book"]["body"]
+	put rigLoadView("epub/head", TRUE) into tHead
+	put rigLoadView("epub/footer", TRUE) into tFooter
+	replace "<head>" with tHead in  gData["book"]["body"]
+	replace "<body>" with "<body> <div id='page-content'>" in  gData["book"]["body"]
+	replace "</body>" with tFooter in  gData["book"]["body"]
+	get rigLoadView("epub/body")
+end viewer 
+
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFIED IN THE URI
+command index
+     put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]
+	put rigCssAsset("books.css",,,TRUE) into gData["booksCSS"]
+     put rotateMastheadBackground() into gData["mastheadBackground"]
+	# SET PAGE TITLE
+	put "Books by Himalayan Academy" into gData["pageTitle"]
+	
+	 ------------- Instantiate A Galleria Slideshow---------------
+	
+	
+
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("sitewide/head")	 	
+	get rigLoadView("books/books-masthead")
+	get rigLoadView("sitewide/main-nav")
+	get rigLoadView("books/books-main-content")
+	get rigLoadView("books/books-bottom-content")
+			#get rigLoadView("sitewide/bottom-nav")
+	get rigLoadView("sitewide/footer")
+end index
+
+command two
+     put rigImageAsset("masthead.jpg",,,TRUE) into tTaggedImage
+     put getImageURLString(tTaggedImage) into gData["mastheadBackground"] 
+	put rigCssAsset("books2.css",,,TRUE) into gData["booksCSS"]
+	put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]  
+     #put rotateMastheadBackground() into gData["mastheadBackground"]
+   
+	
+	# SET PAGE TITLE
+	put "Books by Himalayan Academy" into gData["pageTitle"]
+
+	# LOAD THE VIEW FILE
+	#get rigLoadView("sitewide/head")	 	
+	get rigLoadView("books/books-masthead")
+	get rigLoadView("sitewide/main-nav")
+	get rigLoadView("books/books-main-content")
+	get rigLoadView("books/books-bottom-content")
+			#get rigLoadView("sitewide/bottom-nav")
+	get rigLoadView("sitewide/footer")
+end two
+
+command three
+	put rigRUriToAssoc(3) into tBookToFindA
+	 put findBookByArray(tBookToFindA) into tBookA
+	 if tBookA is not false then
+			put tBookA[1] into gData["book"]
+	 end if
+	#put rigLoadView("sitewide/top-banner") into gData["siteWideBanner"] 
+     put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]
+	put rigCssAsset("books.css",,,TRUE) into gData["booksCSS"]
+     put rotateMastheadBackground() into gData["mastheadBackground"]
+	# SET PAGE TITLE
+	put "Books by Himalayan Academy" into gData["pageTitle"]
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("sitewide/head")	 	
+	get rigLoadView("books/books-masthead")
+	get rigLoadView("sitewide/main-nav")
+	get rigLoadView("books/books-main-content")
+	get rigLoadView("books/books-bottom-content")
+			#get rigLoadView("sitewide/bottom-nav")
+	get rigLoadView("sitewide/footer")
+end three
+
+command viewbook
+	rigLogMessage "info", "handler viewbook"
+	put rigFetchSegment(3) into tBookA["file_id"]
+	 put findBookByArray(tBookA) into tBookA
+	 if tBookA is not false then
+			put tBookA[1] into gData["book"]
+	 end if
+	put format("/book/%s/web", tBookA[1]["file_id"]) into gData["url"]
+	## comment the following line to remove top banner
+	# put rigLoadView("sitewide/top-banner") into gData["siteWideBanner"] 
+     put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]
+	put rigCssAsset("books.css",,,TRUE) into gData["booksCSS"]
+     put rotateMastheadBackground() into gData["mastheadBackground"]
+	# SET PAGE TITLE
+	put "Books by Himalayan Academy" into gData["pageTitle"]
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("sitewide/head")	 	
+	get rigLoadView("books/books-masthead")
+	get rigLoadView("sitewide/main-nav")
+	get rigLoadView("books/books-main-viewer")
+	get rigLoadView("books/books-bottom-content")
+			#get rigLoadView("sitewide/bottom-nav")
+	get rigLoadView("sitewide/footer")
+end viewbook
+
+command four
+	#put rigLoadView("sitewide/top-banner") into gData["siteWideBanner"] 
+     put rigImageAsset("masthead.jpg",,,TRUE) into tTaggedImage
+     put getImageURLString(tTaggedImage) into gData["mastheadBackground"] 
+	put rigCssAsset("books2.css",,,TRUE) into gData["booksCSS"]
+	put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]  
+     #put rotateMastheadBackground() into gData["mastheadBackground"]
+   
+	
+	# SET PAGE TITLE
+	put "Books by Himalayan Academy" into gData["pageTitle"]
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("sitewide/head")	 	
+	get rigLoadView("books/books-masthead")
+	get rigLoadView("sitewide/main-nav")
+	get rigLoadView("books/books-main-content")
+	get rigLoadView("books/books-bottom-content")
+			#get rigLoadView("sitewide/bottom-nav")
+	get rigLoadView("sitewide/footer")
+end four
+
+on wSlides
+
+	put rigLoadView("sitewide/top-banner") into gData["siteWideBanner"] 
+     put rigImageAsset("masthead.jpg",,,TRUE) into tTaggedImage
+     put getImageURLString(tTaggedImage) into gData["mastheadBackground"] 
+	put rigCssAsset("books2.css",,,TRUE) into gData["booksCSS"]
+	put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]  
+     #put rotateMastheadBackground() into gData["mastheadBackground"]
+    
+    
+	
+	# SET PAGE TITLE
+	put "Books by Himalayan Academy" into gData["pageTitle"]
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("sitewide/head")	 	
+	get rigLoadView("books/books-masthead")
+	get rigLoadView("sitewide/main-nav")
+	get rigLoadView("books/books-main-content")
+	get rigLoadView("books/books-bottom-content")
+			#get rigLoadView("sitewide/bottom-nav")
+	get rigLoadView("sitewide/footer")
+	
+	------------- slideshow addition ---------------
+	
+	rigLoadModel "generate-slideshow"
+    put "/home/himalayan/public_html/slideshows/mauritius/2009/mauritius_2009-12-25_pancha-ganapati/" into pPath
+    put generateSlideShow(pPath) into tGalleryImages
+	
+	put rigLoadView("media/galleria-stage.irev",TRUE) into tSlideShow
+	replace "###tGalleryDiv###" with tGalleryImages in tSlideShow
+	replace "###tHeight###" with "700" in tSlideShow
+	replace "###tWidth###" with "1000" in tSlideShow
+	replace "###tCrop###" with "true" in tSlideShow
+	replace "###tPan###" with "true" in tSlideShow
+	put tSlideShow into gData["slideShow"]
+	
+end wSlides
+
+command books
+	rigLogMessage "debug", "server root:" & $_SERVER["DOCUMENT_ROOT"]
+	rigLogMessage "debug", "books controller loading:" && $_SERVER["QUERY_STRING"]
+	if there is a file ($_SERVER["DOCUMENT_ROOT"] & $_SERVER["QUERY_STRING"]) then
+		rigLogMessage "debug", "sending raw file"
+		put url ("binfile:" &$_SERVER["DOCUMENT_ROOT"] & $_SERVER["QUERY_STRING"])
+		quit
+	end if
+	# SAVE PAGE IN CACHE DIRECTORY WITH AN EXPIRATION TIME OF n MINUTES
+	# NOTE: THIS IS NOT MANDATORY, DON'T USE CACHING WHILE WORKING ON THE CODE,
+	# OTHERWISE YOU WON'T SEE YOUR CHANGES IMMEDIATELY
+	# rigOutputCache 3
+	rigLoadModel "get-book-data"
+	put getBookData() into gBookData
+	put rigJsAsset("jquery-1.4.3.min.js",,TRUE) into gData["loadJQuery"]
+     put rigJsAsset("galleria/themes/classic/galleria.classic.min.js",,TRUE) into gData["galleriaTheme"]
+
+	put rigJsAsset("dom-labels.js",,TRUE) into gData["loadDomLabelJS"]
+	put rigCssAsset("ha-new.css",,,TRUE) into gData["haNewCSS"] # Load Base Styles
+	#put rigCssAsset("books.css",,,TRUE) into gData["booksCSS"]
+	#put rigImageAsset("masthead/KHM-logo.png",,,TRUE) into gData["khmLogo"]
+	
+	
+	# if you want to apply a top banner, insert it into this variable 
+	# which is included in the masthead view
+	#put rigLoadView("sitewide/top-banner") into gData["siteWideBanner"] 
+	
+	# Call a new background each time and insert into a variable and
+	# put this into the CSS on the fly in books-masthead.irev view
+	 put rigImageAsset("masthead.jpg",,,TRUE) into tTaggedImage
+     put getImageURLString(tTaggedImage) into gData["mastheadBackground"] 
+ #put rigImageAsset("/mastheader/rotation/clouds.jpg",,,TRUE) into gData["mastheadBackground"]
+ 
+ buildSlideShow
+
+end books
+
+
+# CALL THE CONTROLLER HANDLER
+books
+
+--| END OF books.irev
+--| Location: ./system/application/ha/controllers/books.irev
+----------------------------------------------------------------------

@@ -1,0 +1,82 @@
+<?rev
+
+# this is a simple controller for handling downloads
+# later we can use this for tracking also
+
+# routes.lc is set to pass the string after "download" 
+# without treating seg 2 as a command.
+
+# The CMS mandates that there can never be a folder in the /html directory
+# that has the same name as a folder in /media directory.
+# First we test to see if the seg(2) is a media folder
+# if not, then we know it is a folder in the /html directory
+# we generate the path accordingly 
+#
+# URL's on the pages take the form of:
+# "/download/media/books/somebook/somebook.pdf # where they are in the dBase.
+# "/download/monastery/about/visitguide.pdf # where they are in the html folder
+# Here in this controller we parse the URL, remove the seg(1) "download"
+#  and build the proper path for the 
+# rigForceDownload  helper to do the work.
+# we can add hooks to our tracking dbase later
+
+global gControllerHandlers,gData,gBASEPATH
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "download,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE MAIN CONTROLLER HANDLER CALLED "the Constructor"
+# this command is the same name as this file
+
+function getPath pLocation,pFullPath
+	set the itemdel to "/"
+	switch pLocation
+		case "media"
+			delete item 1 of pFullPath	
+			put "media/" before pFullPath		
+			break
+		case "html"
+			delete item 1 of pFullPath
+			put "html/" before pFullPath
+		break
+	  end switch
+	  
+	 #GET SERVER PATH TO THE ROOT DIRECTORY
+     set the itemDelimiter to "/"
+      put (item 1 to -2 of gBASEPATH) & "/" into tRootPath
+	   put tRootPath before pFullPath
+	  return pFullPath
+end getPath
+    
+command download 
+
+  rigLoadHelper "download"
+    put rigSegmentArray() into tSegs
+    put tSegs[rigTotalSegments()] into tName  
+   	rigLogMessage "debug","fileName:" && tName
+   	put "apps,art,audio,books,collections,slideshows,video" into tMediaFolders      
+	if (tSegs[2] is among the items of tMediaFolders) then 
+			put  getPath("media",rigUriString() ) into tPath
+				rigLogMessage "debug","returnedPath:" && tPath
+		else		
+			put getPath("html",rigUriString() ) into tPath
+			rigLogMessage "debug","returnedPath:" && tPath	
+	end if
+# If you want to download an existing file from your server you'll need to read the file into a string:
+	put rigFile_get_contents(tPath) into tData -- Read the file's contents
+	rigForceDownload tName, tData 
+end download
+
+command index
+   
+end index
+
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF download.lc
+--| Location: ./system/application/ha/controllers/download.lc
+----------------------------------------------------------------------

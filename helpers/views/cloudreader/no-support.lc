@@ -1,0 +1,26 @@
+<!-- DISABLE MONOCLE SUPPORT -->
+<!-- 
+	This loads because the publication is not available as epub.
+	
+	This should disable a couple links and classes.
+-->
+
+
+<!-- MONOCLE CSS -->
+<style type="text/css">
+
+</style>
+
+<!-- DISABLE STUFF SCRIPT -->
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	// Clears full screen reader option
+	$(".fullscreen-reader-launcher").removeClass("action").removeClass("action-bg").html("&nbsp;");
+	// Clears small reader launcher
+	$(".monocle-hover").hide();
+});
+
+</script>
+<!-- END OF DISABLE MONOCLE SUPPORT -->

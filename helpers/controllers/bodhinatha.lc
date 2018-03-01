@@ -1,0 +1,82 @@
+<?rev
+
+## note we use "manager" for the name of this controller because "admin" goes to a different web app. but in the html folder we have "admin" for related content.
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData, gReportType
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "bodhinatha,index,talksindex" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+local tSegs
+
+command bodhinatha
+# NB! for this to work the /html/* folder must have the same name as the controller
+	
+	
+	rigLoaderLoadLibrary "Table"
+	rigLoadLibrary "Getsetheadnav"
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadHelper "asset"
+	rigLoadHelper "file"
+	rigLoadHelper "array"
+	rigLoadPlugin "galleria" 
+	rigLoadLibrary "fetchhtml" 
+	rigLoadLibrary "fetchbooksindex" 
+	rigLoadLibrary "fetchtalksDropdownindex" 
+		
+	     # let's log what page is the user hits on   
+		rigLogMessage "Requested:", rigCurrentUriString()
+		put rigSegmentArray() into tSegs 
+	
+	# handle special cases first and exit
+	    if tSegs[3]= "##Special Cases ##" then
+			##Special Cases ##
+			exit bodhinatha
+		end if
+						 
+				
+	# Deal with two segment 2 URI's which have special handlers
+	# or default to external html for longer URI's
+			
+			if tSegs[3] is empty  then 
+			   # it means we only have two segments and we may want to load
+			   # some other handler here to do other work..
+			   # but we don't have any so far in this controller
+			   switch 
+				 case (tSegs[2] is empty) OR (tSegs[2]="index_r1")
+				 # dig for index.html
+					 fetchInspiredTalkData
+					  fetchbooksData
+					fetchExternalHTML
+				        viewExternalPage	
+					break 		
+				
+				default 		 	
+				fetchExternalHTML
+				viewExternalPage		  	
+			 end switch 
+			 	 
+			 else 
+			 
+			  fetchExternalHTML
+			  viewExternalPage	
+			  		 
+			end if 
+	
+   	
+end bodhinatha
+
+
+command index
+# must be present in the controller
+end index
+
+ 
+--| END OF bodhinatha.lc
+--| Location: ./system/application/ha/controllers/bodhinatha.lc
+----------------------------------------------------------------------

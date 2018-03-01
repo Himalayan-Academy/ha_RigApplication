@@ -1,0 +1,47 @@
+<?rev
+
+global gControllerHandlers, gData
+
+put "index,wordlist,definition,lookfor,alpha,lexicon" into gControllerHandlers
+
+
+command lexicon
+	# code...
+	rigLoadLibrary "lexiconaux"
+	--rigLoadLibrary "json"
+end lexicon
+
+
+command index
+	
+end index
+
+
+command definition
+	put rigFetchSegment(3) into tWord
+	put lexiconGetDefinition(tWord) into tWordA
+	outputJson tWordA
+end definition
+
+command lookfor
+	put rigFetchSegment(3) into tWord
+	put lexiconGetDefinitionsFromSearch(tWord) into tWordsA
+	outputJson tWordsA
+end lookfor
+
+command alpha
+	put rigFetchSegment(3) into tAlpha
+	put lexiconGetDefinitionsFromAlpha(tAlpha) into tWordsA
+	outputJson tWordsA
+end alpha
+
+
+
+
+# CALL THE CONTROLLER HANDLER
+# lexicon
+
+
+--| END OF lexicon.irev
+--| Location: ./system/application/controllers/lexicon.irev
+----------------------------------------------------------------------

@@ -1,0 +1,236 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+
+
+
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main" itemscope="" itemtype="http://schema.org/Book">
+			
+			<div class="wrapper">
+			
+				<article class="content-article">
+				
+					<div class="article-wrapper">
+				
+						<aside class="featured-item" role="complementary">
+							
+							<div id="book">		
+							       
+							<figure class="media-detail">
+								<?	put "/media/apps/" & gData["record"]["file_id"] & "/" & gData["record"]["file_id"] & "_screenshot1.png" into tCoverFile				
+								?>							
+								<a href="#"><img src="<? return tCoverFile ?>" itemprop="image" alt="Image of <? return gData["record"]["title"] ?>"/> </a>	
+									
+						         <figcaption class="caption">
+									
+									<p><?return gData["record"]["product_details"]?> <br><span>Language: <?return gData["record"]["language"]?></span></p>
+								 </figcaption>	
+							</figure>	
+							<!-- <form class="form-search">
+								<input type="text" value="search the text" />
+								<input type="submit" value="search" />
+							</form> -->
+						</div>
+								
+						</aside> <!-- end featured item -->
+					
+						<header class="article-header" style="max-width: 350px;">
+													
+							<div class="share-wrapper">
+							
+								<div class="share share-options"><a class="open-menu" href="#">Share</a>
+									<ul class="social nojs">
+											<!-- Facebook -->
+											<div id="fb-root"></div>
+											<script>(function(d, s, id) {
+											  var js, fjs = d.getElementsByTagName(s)[0];
+											  if (d.getElementById(id)) return;
+											  js = d.createElement(s); js.id = id;
+											  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+											  fjs.parentNode.insertBefore(js, fjs);
+											}(document, 'script', 'facebook-jssdk'));</script>
+											<div class="fb-like" data-href="<?return urlencode("http://" & $_SERVER["SERVER_NAME"] & $_SERVER["REQUEST_URI"]) ?>" data-send="false" data-layout="button_count" 
+											data-width="90" data-show-faces="false" data-font="lucida grande" data-action="like"></div>
+											<!-- End of Facebook -->
+
+											<!-- Google Plus -->
+											<!-- Place this tag where you want the +1 button to render. -->
+											<div class="g-plusone"></div>
+											<!-- Place this tag after the last +1 button tag. -->
+											<script type="text/javascript">
+											  (function() {
+											    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+											    po.src = 'https://apis.google.com/js/plusone.js';
+											    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+											  })();
+											</script>
+											<!-- End of Google Plus -->
+
+
+											<!-- Twitter -->
+											<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+											<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);} }(document,"script","twitter-wjs");</script>
+											<!-- End of Twitter -->
+									</ul>
+								</div>
+								
+							<a class="share" href="mailto:?subject=[[ gData["record"]["Title"] ]]%20from%20Kauai's%20Hindu%20Monastery&body=[[ gData["record"]["Title"] ]]%20from%20Kauai's%20Hindu%20Monastery%0D[[ "http://" & $_SERVER["HTTP_HOST"] & "/view/" & gData["record"]["file_id"] ]]">Email</a>
+							
+							</div> <!-- end share wrapper -->
+																						
+							<hgroup>	
+							<!-- title duplicates page header, so we don't need it, but we need the space -->					
+							<h3>&nbsp;</h3>
+								<h4 class="subhead" itemprop="alternativeHeadline"><? return gData["record"]["sub_title"] ?></h4>
+								<h5 class="byline" itemprop="author"><? return gData["record"]["author"] ?></h5>
+							</hgroup>
+						
+						</header>
+						
+						<div class="article-body" itemprop="description" style="max-width: 350px;">
+							
+							<? 
+							
+							# BR: 2012-06-17 Added to compensate for overly long descriptions
+							# change this later after we decided what to do with long descriptions
+							# either edit them down, or make a disclosure for letting user see the whole thing.
+							
+							put markdown(gData["record"]["description"]) into tDesc	
+							return tDesc						
+						#if the number of words in tDesc <= 120 then
+#							put tDesc into tBuf
+#							return tBuf
+#						else
+#							put  word 1 to 120 of tDesc into tBuf
+#							put "&hellip;"  after tBuf
+#							return tBuf
+#						end if
+
+							?>
+							
+						</div> <!-- end article body -->
+						
+						<aside class="book-links" role="complementary">
+						
+							<div class="column">
+								
+		
+									<?
+									if the keys of gData["record"]["formats"] is not empty then
+										put "<a class='action-bg fullscreen-reader-launcher' href='/readbook/"&gData["record"]["file_id"]&"'>Open Book Fullscreen</a>" into tBuf
+										put "<h4 class='h4'>Right-click a link below <br />to Download Free EBook</h4>" after tBuf
+										put "<ul>" after tBuf
+										repeat for each key tK in gData["record"]["formats"]
+											if gData["record"]["formats"][tK]["filename"] is empty then
+												next repeat
+											end if
+											put "<li><a class='action' href='/media/books/"& gData["record"]["file_id"] & "/" & gData["record"]["formats"][tK]["filename"]&"' title='Right-Control Click/Save Link As to Download'>"&gData["record"]["formats"][tK]["format_name"]&"</a></li>" after tBuf
+										end repeat
+										put "</ul>" after tBuf
+										put "<a  class='action' href='/readlearn/books/epub-info'>Ebook Installation Help</a>" after tBuf
+
+										return tBuf
+									end if
+									?>
+										
+								</div>	
+							
+							<div class="column">
+								
+								<?
+								if the keys of gData["record"]["channels"] is not empty then
+									put "<h4 class='h4'>Download the Free App Here</h4>" into tBuf
+									put "<ul>" after tBuf
+									repeat for each key tK in gData["record"]["channels"]
+										if gData["record"]["channels"][tK]["channel_name"] is empty then
+											next repeat
+										end if
+										put "<li><a class='action' href='"& gData["record"]["channels"][tK]["url"]&"'>"&gData["record"]["channels"][tK]["channel_name"]&"</a></li>" after tBuf
+										if gData["record"]["channels"][tK]["channel_name"] contains "Minimela Print" then
+											put gData["record"]["channels"][tK]["url"] into tPurchaseURL
+										end if
+									end repeat
+									put "</ul>" after tBuf
+									return tBuf
+								end if
+								?>
+							</div>
+												
+						
+						</aside>
+						
+						<footer class="article-footer">
+							
+							<div class="related-topics column">
+								<?
+								put empty into tBuf
+							
+								if   gData["record"]["tags"] is not empty then
+									put "<h4 class='h4'>Related Media:</h4>" into tBuf
+									put "<ul>" after tBuf
+									repeat for each item x in  gData["record"]["tags"]
+									if char 1 of x = space then delete char 1 of x
+									put x into tQueryString
+									replace " " with "+" in tQueryString
+								
+									put format("<li> <a href=\"/site/search/tags/%s\">%s</a></li>\n",tQueryString,x)  after tBuf
+									end repeat
+									put "</ul>" after tBuf
+						
+								end if
+								return tBuf
+								?>
+								</div>
+
+								<div class="related-topics column">
+										<?
+								put empty into tBuf
+								put  gData["record"]["category"] into x
+								if  x is not empty then								
+									put "<h4 class='h4'>In Category:</h4>" into tBuf
+									put "<ul>" after tBuf
+									if char 1 of x = space then delete char 1 of x
+									put x into tQueryString
+									replace " " with "+" in tQueryString
+									put format("<li> <a href=\"/site/search/category/%s\">%s</a></li>\n",tQueryString,x)  after tBuf							
+									put "</ul>" after tBuf						
+								end if
+								return tBuf
+										?>
+								</div>
+							<?
+							put empty into tBuf
+							if gData["review"]["sales_blurb"] is not empty then
+								put format("<figure class=\"quote quote-photo float-right\">") into tBuf
+								put format("<img src=\"%s\" alt=\"Photo of ... \" />", gData["review"]["circle image"]) after tBuf
+								put format("<blockquote>%s</blockquote>", gData["review"]["sales_blurb"]) after tBuf
+								put format("<figcaption>&#8212;%s</figcaption>", gData["review"]["author"]) after tBuf
+								put format("</figure>") after tBuf
+								put format("<a class=\"action reviews\" href=\"/reviews/%s\">More Reviews and comments</a>", gData["record"]["file_id"]) after tBuf
+							end if
+							return tBuf
+							?>
+						
+						</footer>
+					
+					</div> <!-- end article wrapper -->
+				
+				</article> <!-- end content article -->
+				
+			</div> <!-- end page content wrapper -->
+		
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+<!-- section media-images removed for now pick up from templates when we implement later--> 
+	
+	[[ gData["monocle"]["support data"] ]]
+
+	
+	<?
+	return rigLoadView("sitewide/footer", TRUE)
+	?>
+	

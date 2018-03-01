@@ -1,0 +1,263 @@
+<?rev
+
+global gControllerHandlers, gData
+
+put "site,index,viewmedia,search,randomitem" into gControllerHandlers
+
+
+command site
+	# initialization...
+	
+	# Loading libraries
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "cms"
+	rigLoadLibrary "markdown"
+	rigLoadLibrary "audio"
+	rigLoadLibrary "construct-audio-data" # Added by Brahmanathaswami 2012-07-13
+	
+	
+	
+	# Loading helpers
+	rigLoadHelper "asset"
+	
+	# Loading plugins
+    rigLoadPlugin "galleria"
+    
+    # let's log what page is the user hits on   
+    rigLogMessage "Requested:", rigUriString()
+end site
+
+command index
+	
+end index
+
+
+command viewmedia
+	put rigFetchRsegment(3) into tFileID
+	rigLogMessage "debug", "loading" && tFileID
+	
+	put getRecord(tFileID) into gData["record"]
+	
+	switch gData["record"]["media_type"]
+		case "text/book"
+		case "text/booklet" 
+			put "detail book" into sPageMetadataA["body_class"]
+			put gData["record"]["title"] into gData["pageTitle"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Read &amp; Learn<","cat-books") into gData["pageHeader"]
+			get rigLoadView("media/book-details", gData)
+		break
+		case "audio/chant" 
+			put gData["record"]["title"] into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			get rigLoadView("media/audio-details", gData)
+		break
+		case "audio/inspiredtalk"
+			put gData["record"]["title"] into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-talks-by-our-gurus") into gData["pageHeader"]
+			buildAudioDataDisplay # Added by Brahmanathaswami 2012-07-13
+			get rigLoadView("media/audio-details", gData)
+		break
+		case "audio/song"
+			put gData["record"]["title"] into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			buildAudioDataDisplay # Added by Brahmanathaswami 2012-07-13
+			get rigLoadView("media/audio-details", gData)
+		break 
+		case "audio/podcasts" 
+		case "audio/instrumental"
+			put gData["record"]["title"] into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			get rigLoadView("media/audio-details", gData)
+		break
+		case "audio/shum" 
+			put empty into tStyle
+			put gData["record"]["title"] into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+			get rigLoadView("media/audio-details", gData)
+		break
+		case "app/mac" 
+		case "app/windows" 
+		case "app/iphone" 
+		case "app/ipad" 
+		case "app/android" 
+		case "app/linux" 
+		case "app/web" 
+		break
+		case "video/pubdesk" 
+		case "video/travel" 
+		case "video/teaching" 
+		case "video/ritual" 
+		case "video/building" 
+		case "video/talk" 
+		case "video/news"
+			put 979 into tW
+			put 600 into tH
+			if gData["record"]["framesize"] is not empty then
+				put the itemdel into tItemDel
+				set the itemdel to "x"
+				put item 1 of gData["record"]["framesize"] into tW
+				put item 2 of gData["record"]["framesize"] into tH
+				set the itemdel to tItemDel
+			end if
+			put empty into tStyle
+			put gData["record"]["title"] into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put fileIDToYoutubeID(gData["record"]["file_id"]) into tVideoID
+			put format("<iframe width=\"%s\" height=\"%s\" src=\"http://www.youtube.com/embed/%s\" frameborder=\"0\" %s allowfullscreen></iframe>", tW, tH, tVideoID, tStyle) into gData["video"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-art-photo-galleries") into gData["pageHeader"]
+			get rigLoadView("media/video-details", gData)
+		break 
+		case "external/page"
+			repeat for each key tK in gData["record"]["formats"]
+				if gData["record"]["formats"][tK]["url"] is not empty then
+					put gData["record"]["formats"][tK]["url"] into tURL
+					put header "Location: http://" & $_SERVER["SERVER_NAME"] & tURL
+					put header "Status: 301"
+					put "Loading..."
+					quit
+				end if
+			end repeat
+		break
+		case "art/photography" 
+		case "art/painting" 
+		case "art/drawing" 
+		case "art/vector"
+			put empty into tStyle
+			put gData["record"]["title"] into gData["pageTitle"]
+			put "detail art" into sPageMetadataA["body_class"]
+			put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-art-photo-galleries") into gData["pageHeader"]
+			get rigLoadView("media/art-details", gData) 
+		break
+		case "slideshow/external" 
+			repeat for each key tK in gData["record"]["formats"]
+				if gData["record"]["formats"][tK]["url"] is not empty then
+					put gData["record"]["formats"][tK]["url"] into tURL
+					rigLogMessage "debug", "slideshow url:" &&  tURL
+					put header "Location: http://" & $_SERVER["SERVER_NAME"] & tURL
+					put header "Status: 301"
+					put "Loading..."
+					quit
+				end if
+			end repeat
+		break
+		case "slideshow/galleria" 
+				put gData["record"]["title"] into gData["pageTitle"]
+			
+				put "detail art" into sPageMetadataA["body_class"]
+				put getSetHeadNav(sPageMetadataA["body_class"],gData["pageTitle"],">Look &amp; Listen<","cat-art-photo-galleries") into gData["pageHeader"]
+				
+# BR: June 11, 2012: Added code to get the frame size from the record and then  set the Galleria stage size accordingly.
+# Some slideshows are small size and we don't want them to default to 979 because they are res'd up and look bad
+				
+					put gData["record"]["framesize"] into frameSize
+					if (frameSize is empty) or (frameSize=0) then
+						put 979 into gData["record"]["width"]
+						put 600 into gData["record"]["height"]
+					else
+						put item 1 of frameSize into gData["record"]["width"]
+						put item 2 of frameSize into gData["record"]["height"]
+					end if
+				
+				put galleria(gData["record"]) into gData["slideshow_chunk"]
+				get rigLoadView("media/art-details", gData)
+			break
+		case "slideshow/vr"
+		default
+	end switch
+			
+end viewmedia
+
+on search
+	put getSetHeadNav("catalog",gData["pageTitle"],">Look &amp; Listen<","cat-art") into gData["pageHeader"]
+	
+	put rigRuriToAssoc(3) into tSearchTermsA
+	
+	rigDbLimit 100
+	
+	if the keys of tSearchTermsA is empty then
+		-- no search query causes no result page to show.
+		get rigLoadView("sitewide/search-results-notfound",gData)
+	else
+		rigDbWhere "approved_for_public", "YES"
+		repeat for each key tK in tSearchTermsA
+			put tK & ":" && tSearchTermsA[tK] &", " after gData["query string"]
+			rigLogMessage "debug", ("search" && tK && "=" && tSearchTermsA[tK])
+		 	rigDbWhere (tK && "LIKE"), ("%" & tSearchTermsA[tK] & "%")
+		end repeat
+		put rigDbGet("item") into tQ
+		rigLogMessage "debug", "number of results:" &&  tQ["numrows"]
+		repeat with x = 1 to tQ["numrows"]
+			put rigDbRow(x) into tA[x]
+		end repeat
+		delete char -2 to -1 of gData["query string"]
+		put emitSearchResultForMediaCatalogPage(tA) into gData["search results"]
+		get rigLoadView("sitewide/search-results",gData)
+	end if
+end search
+
+on randomitem
+	put rigRuriToAssoc(3) into tSearchTermsA
+	
+	rigDbLimit 100
+	
+	if the keys of tSearchTermsA is empty then
+		-- no search query causes no result page to show.
+		get rigLoadView("sitewide/search-results-notfound",gData)
+	else
+		rigDbWhere "approved_for_public", "YES"
+		repeat for each key tK in tSearchTermsA
+			put tK & ":" && tSearchTermsA[tK] &", " after gData["query string"]
+			rigLogMessage "debug", ("search" && tK && "=" && tSearchTermsA[tK])
+		 	rigDbWhere (tK && "LIKE"), ("%" & tSearchTermsA[tK] & "%")
+		end repeat
+		put rigDbGet("item") into tQ
+		rigLogMessage "debug", "number of results:" &&  tQ["numrows"]
+		put random(tQ["numrows"]) into tRandom
+		put rigDbRow(tRandom) into tA
+		put header "Status: 307"
+		put header "Location: /site/viewmedia/" & tA["file_id"]
+		put "redirect"
+		quit
+	end if
+end randomitem
+
+function galleria pRecordA
+	put pRecordA["width"] into tWidth
+	put pRecordA["height"] into tHeight
+	rigLogMessage "debug", "slideshow dimensions:" &&  tWidth&","&tHeight
+	put pRecordA["file_id"] into tFileID
+ 	set the itemdel to "-"
+	put item 1 of pRecordA["date_created"] into tYear
+	put tWidth into tOptions["width"]
+	put tHeight into tOptions["height"]
+	put "'landscape'" into tOptions["imageCrop"]
+	put "false" into tOptions["thumbCrop"]
+	put "true" into tOptions["imagePan"]
+	put "100" into tOptions["transitionSpeed"] 
+	put "false" into tOptions["idleMode"] 
+	put tWidth into gData["width"]
+	put tHeight into gData["height"]
+	
+	put format("media/slideshows/%s/%s", tYear, tFileID) into tPath
+
+	if there is a file ("/home/devhap/public_html/" & tPath & "/galleriaData.js") then
+		delete file ("/home/devhap/public_html/" & tPath & "/galleriaData.js")
+	end if
+    put rigCssAsset("galleria.twelve.css") into gData["galleriaCSS"]
+    
+	put rigGalleriaData(tPath,tOptions,,,FALSE,TRUE) into gData["slideShow"]
+	put rigLoadView("media/galleria-chunk", TRUE) into tRetVal
+	return tRetVal
+end galleria
+
+
+
+--| END OF site.lc
+--| Location: ./system/application/controllers/site.lc
+----------------------------------------------------------------------

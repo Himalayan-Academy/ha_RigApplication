@@ -1,0 +1,146 @@
+<section class="media-images">
+	
+		<div class="wrapper">
+		
+			<header class="media-images-header">
+	
+				<h2 class="h2">Images from the Book</h2>
+				
+				<ul class="archives-pagination">
+					<li class="arrow-prev"><a href="#">Previous</a></li>
+					<li class="arrow-next"><a href="#">Next</a></li>
+				</ul>
+			
+			</header>
+			
+			<div class="slidecontrol-select">
+
+			</div>
+			
+			<div class="paginate">
+			
+				<div class="row">
+				
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-1.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Lorem Ipsum Dolor</a></h3>
+						
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-2.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Sed Ut Perspiciatis</a></h3>
+						
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-3.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Consectetur Adipisicing Elit</a></h3>
+						
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+				</div> <!-- end row -->
+				
+				<div class="row">
+				
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-1.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Lorem Ipsum Dolor</a></h3>
+						
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-2.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Sed Ut Perspiciatis</a></h3>
+						
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-3.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Consectetur Adipisicing Elit</a></h3>
+						
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+				</div> <!-- end row -->
+				
+				<div class="row">
+				
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-1.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Lorem Ipsum Dolor</a></h3>
+						
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-2.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Sed Ut Perspiciatis</a></h3>
+						
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+					<div class="column">
+					
+						<a href="#"><img src="/assets/img/FPO/img-book-3.jpg" alt="Image of..." /></a>
+					
+						<h3 class="title"><a href="#">Consectetur Adipisicing Elit</a></h3>
+						
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						
+						<a class="action" href="#">View All</a>
+					
+					</div>
+					
+				</div> <!-- end row -->
+			
+			</div> <!-- end paginate container -->
+		
+		</div> <!-- end media wrapper -->
+	
+	</section> <!-- end media images -->

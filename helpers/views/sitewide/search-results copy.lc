@@ -1,0 +1,79 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+
+
+	
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main">
+		
+			<div class="wrapper">
+							
+				<section class="media-images">
+									
+					<header class="media-images-header">
+					
+						<div class="sort">
+							<h6 class="h6">Sort By:</h6>
+							<a class="share" href="#">Newest First</a>
+							<a class="share" href="#">Alphabetical</a>
+						</div>
+						
+						<h1 class="h1">Results for: [[ gData["query string"] ]]</h1>
+								
+					</header>
+											
+					[[ gData["search results"] ]]
+					
+				</section> <!-- end media images -->
+				
+				<div class="pagination">
+				
+					<ul>
+				
+						<li class="arrow-prev"><a href="[[ gData["previous page link"] ]]">Previous Page</a></li>
+						
+						<li class="pages">
+							<ul>
+							<?
+							put empty into tBuf
+							repeat with x = 1 to gData["number of pages"] times
+								if "/page" is not in $_SERVER["REQUEST_URI"] then
+									put $_SERVER["REQUEST_URI"] & "/page/" & x into tURL
+									replace "//" with "/" in tURL
+								else
+									set the itemdel to "/"
+									put $_SERVER["REQUEST_URI"] into tURL
+									get itemoffset("page", tURL)
+									put x into item (it + 1) of tURL
+								end if
+								if x is not gData["active page"] then
+									put format("<li><a href=\"%s\">%s</a></li>\n",tURL, x) after tBuf
+								else
+									put format("<li class='active'>%s</li>\n", x) after tBuf
+								end if
+							end repeat
+							return tBuf
+							?>
+								
+							</ul>
+						</li>
+						
+						<li class="arrow-next"><a href="[[ gData["next page link"] ]]">Next Page</a></li>
+					
+					</ul>
+				
+				</div>
+				
+			</div>
+											
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+
+
+	<?
+	return rigLoadView("sitewide/footer", TRUE)
+	?>

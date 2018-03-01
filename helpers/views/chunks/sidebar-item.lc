@@ -1,0 +1,12 @@
+<div class="item">
+
+	<a href="[[ gData["temporary"]["item"]["cta_link"] ]]"><img src="[[ gData["temporary"]["item"]["image"] ]]" alt="[[ gData["temporary"]["item"]["title"] ]]" /></a>
+	
+	<hgroup>
+		<h5 class="title"><a href="[[ gData["temporary"]["item"]["cta_link"] ]]">[[ gData["temporary"]["item"]["title"] ]]</a></h5>
+		<h6 class="subtitle">[[ gData["temporary"]["item"]["subtitle"] ]]</h6>
+	</hgroup>
+	
+	<a class="action" href="[[ gData["temporary"]["item"]["cta_link"] ]]">[[ gData["temporary"]["item"]["cta"] ]]</a>
+
+</div>

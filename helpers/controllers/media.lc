@@ -1,0 +1,94 @@
+<?rev
+   # PUT YOUR HANDLER NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+   put "index,media,galleriaSlideFiles,galleriaSlideFolder,viewmedia,mediaArray" into gControllerHandlers
+   start using stack (gAPPPATH & "stacks/lib_Sitemap.livecode")
+   rigLoadPlugin "galleria"
+
+   command media
+     # LOAD REQUIRED LIBRARIES, MODELS, HELPERS, PLUGINS
+     # initialization...
+
+     -- rigLoadStack "lib_Sitemap" -- this does not work without a lot of messing
+
+     # Loading libraries
+     -- rigLoadLibrary "Getsetheadnav" # required opening for all pages
+     -- rigLoadLibrary "cms"
+     -- rigLoadLibrary "markdown"
+     -- rigLoadLibrary "audio"
+     rigLoadLibrary "art"
+     -- rigLoadLibrary "construct-audio-data" # Added by Brahmanathaswami 2012-07-13
+     -- rigLoadLibrary "epub" # Added by AAG 2012-08-15 for Monocle Support
+
+     # Loading helpers
+     -- rigLoadHelper "asset"
+     -- rigLoadHelper "file"
+     -- rigLoadHelper "array"
+
+     # Loading plugins
+     -- rigLoadPlugin "galleria"
+
+     # let's log what page is the user hits on
+     rigLogMessage "Requested:", rigUriString()
+     -- rigOutputCache 0
+  end media
+
+   command index
+      put "hello world" into tFileID
+      put makeValidSelector ("p" & tFileID & "_var") into tDataVariableName
+      put tDataVariableName
+
+      /*
+      put $_SERVER["DOCUMENT_ROOT"] into docRoot
+      put docRoot
+      */
+   end index
+
+   on galleriaSlideFiles
+      put rigFetchSegment (3) into tFileID
+      put getRecord (tFileID) into recordArray
+      put galleria_GetRecordFolder (recordArray) into pGalleryPath
+      put galleria_GetRecordFiles (pGalleryPath) into pGalleryFiles
+      put pGalleryFiles
+	end galleriaSlideFiles
+
+   on galleriaSlideFolder
+      put rigFetchSegment (3) into tFileID
+      put getRecord (tFileID) into recordArray
+      put galleria_GetRecordFolder (recordArray) into slideFolder
+      put slideFolder
+   end galleriaSlideFolder
+
+   on artPath
+      put rigFetchSegment (3) into tFileID
+      put getRecord (tFileID) into recordArray
+      put getPathForArt(recordArray) into artDownloadPath
+      put artDownloadPath
+   end artPath
+
+   on mediaArray
+      put rigFetchSegment (3) into tFileID
+      put getRecord (tFileID) into recordArray
+      server_ReturnArray recordArray
+   end mediaArray
+
+   command viewmedia
+      put rigFetchRsegment (3) into tFileID
+      put rigFetchRsegment (4) into tHash
+
+      put getRecord (tFileID) into recordArray
+      -- get getGurudevaCircleQuote()
+
+      switch gData["record"]["media_type"]
+         case "text/book"
+         case "text/booklet"
+            -- _textBooklet
+            break
+         case "audio/chant"
+            -- _audioChant
+            break
+         default
+      end switch
+
+      put "Hello World!" && tFileID && tHash
+   end viewmedia
+?>

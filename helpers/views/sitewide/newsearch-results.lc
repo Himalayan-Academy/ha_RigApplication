@@ -1,0 +1,77 @@
+
+	
+	<div class="page-wrapper" ng-app="app">
+	
+		<section class="page-content" role="main" >
+            
+        <div class="wrapper">
+            
+            <header class="media-images-header">
+            
+                <h1 class="h1">Results for: <span id="query-string-display" /></h1>
+						
+                <aside class="footnotes" style="clear:left;">Note: Search results currently contain only media artifacts (books, videos, audio, art, slideshows). Informational pages and the blog will be included soon.</aside>
+        
+            </header>
+													
+        	<div id="search-results" class="row"><h1>Searching...</h1></div>	
+        
+        <div class="pagination">
+				
+        					<ul>
+				
+        						<li class="arrow-prev"><a href="/site/search/query/gur/page/7">Previous Page</a></li>
+						
+        						<li class="pages">
+        							<ul>
+        							<li><a href="/site/search/query/gur/page/1">1</a></li>
+                                    <li><a href="/site/search/query/gur/page/2">2</a></li>
+                                    <li><a href="/site/search/query/gur/page/3">3</a></li>
+                                    <li><a href="/site/search/query/gur/page/4">4</a></li>
+                                    <li><a href="/site/search/query/gur/page/5">5</a></li>
+                                    <li><a href="/site/search/query/gur/page/6">6</a></li>
+                                    <li><a href="/site/search/query/gur/page/7">7</a></li>
+                                    <li class="active">8</li>
+                                    <li><a href="/site/search/query/gur/page/9">9</a></li>
+                                    <li><a href="/site/search/query/gur/page/10">10</a></li>
+                                    <li><a href="/site/search/query/gur/page/11">11</a></li>
+                                    <li><a href="/site/search/query/gur/page/12">12</a></li>
+                                    <li><a href="/site/search/query/gur/page/13">13</a></li>
+                                    <li><a href="/site/search/query/gur/page/14">14</a></li>
+                                    <li><a href="/site/search/query/gur/page/15">15</a></li>
+                                    <li><a href="/site/search/query/gur/page/16">16</a></li>
+                                    <li><a href="/site/search/query/gur/page/17">17</a></li>
+                                    <li><a href="/site/search/query/gur/page/18">18</a></li>
+
+								
+        							</ul>
+        						</li>
+						
+        						<li class="arrow-next"><a href="/site/search/query/gur/page/9">Next Page</a></li>
+					
+        					</ul>				
+        				</div>
+        
+         </div>				
+											
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+    
+    <!-- search scripts -->
+    
+    <script src="/assets/js/handlebars-v1.3.0.js"></script>
+    <script defer src="/assets/js/searchapp/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/js/searchapp/style.css" media="screen" />
+    
+    <!-- TEMPLATES -->
+    <script id="normal-result" type="text/x-handlebars-template">
+      {{#each items}}
+      <div class="search-item">
+        <h3 class="title"><a href="{{makeLink link}}">{{{htmlTitle}}}</a></h3>
+        <p>{{{htmlSnippet}}}</p>
+      </div>  
+       {{/each}}
+    </script>
+    
+     <!-- end of search scripts -->

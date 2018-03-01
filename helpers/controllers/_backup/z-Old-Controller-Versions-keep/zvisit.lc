@@ -1,0 +1,66 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData, gRealm, gZone, gPage
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "zvisit,travel,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE MAIN CONTROLLER HANDLER CALLED "the Constructor"
+# this command is the same name as this file
+
+# model for this controller is to use the second URL  segment
+# for commands, and third and forth segments as parameters
+# which are inserted into vars: 
+# 2nd segment = gRealm = the command, 3rd= gZone, 4th = gPage
+# we should be able construct all URLs to all page with maximum 4 segments.
+# we try to match the URL to the navigation and also the /html directory (to some extent)
+# in some cases, the top navigation string is long and the content folder short
+
+
+command travel
+      	# same nav and header and side attributes for all these pages
+			
+		put getSetHeadNav("skinny","Meet Us When We Travel",">Visit<","cat-meet-us-when-we-travel") into gData["pageHeader"]
+		put url("file:/home/devhap/public_html/html/visit/visit-sidebar.html")  into gData["sideBar"]
+		
+		switch gZone # third segment in the URL 
+		
+			case "bodhinatha"
+				put "Bodhinatha's Travel Schedule" into gData["pageTitle"]  		
+				put url("file:/home/devhap/public_html/html/visit/bodhinatha-travel.html") into gData["singleArticle"]	 	 
+			break
+				
+			
+				
+		end switch
+		
+		get rigLoadView("sitewide/two-column")
+
+end travel
+
+command index
+end index
+	
+command zvisit
+    put rigFetchSegment(2, 0) into gRealm # top level - depth of URLs this is the command invoked above
+    put rigFetchSegment(3, 0) into gZone  # second depth/nav
+    put rigFetchSegment(4, 0) into gPage  # pages in this realm-zone
+    
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not 	
+	##get rigLoadView("sitewide/doc-head") # required for all pages
+		
+  
+end zvisit
+
+# CALL THE CONTROLLER HANDLER
+
+
+
+--| END OF zvisit.lc
+--| Location: ./system/application/ha/controllers/zvisit.lc
+----------------------------------------------------------------------

@@ -1,0 +1,650 @@
+<?rev
+# This Controller can be used for   one-off jobs, database work, maintenance etc.
+# and testing  new ideas without breaking existing controllers.
+
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "toolbox,index,checkResults,insertRecords,insertFormats,insertItemCategories" into gControllerHandlers
+
+# for security remove handlers when not in production use. 
+# they cannot be fired from anywhere:
+
+# insertArt,buildDailyLesson,displayServerArray,checkPostGet,UpDateVideoFields,
+# makePDF,displayServerArray, insertRecords,insertFormats,
+# toolbox,uploadCategoryTree,index,moveLyrics,updateNotes,checkResults,getID3Tags,
+# moveFolders,UpdateAudioItems,insertQuotes,insertCategories,addCategory,fetchCategories,insertSingleQuote,
+# getCategorizedQuoteIdList,insertItemCategories
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+local queryString,tCount,tData
+# add a comment
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+on toolbox
+rigLoaderLoadLibrary "Getsetheadnav" # required opening for all pages
+
+--> Load Other Libraries as needed
+--> comment when out of service 
+
+      rigLoadStack "id3lib"
+    
+    
+    # rigLoaderLoadLibrary "qrtpdflib"
+	# rigLogMessage "TOOLBOX:", "Updating Video approved"	
+ 
+	# put rigVarPost("lesson", TRUE) into queryString	
+	# rigLoadScaffolding "item"		
+end toolbox
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFYED IN THE URI
+
+command index   
+end index
+
+command getID3Tags
+
+  put "/home/devhap/public_html/media/audio/songs/bhajan/ganesha/ekadanta-umasutam-vinayaakam_pm/ekadanta-umasutam-vinayaakam_pm.mp3" into pFile
+  
+	id3_setFile pFile
+	put id3_getTitle() into tID3Tags["Title"]
+	put id3_getArtist() into tID3Tags["Artist"]
+	put id3_getAlbum() into tID3Tags["Album"]
+	put id3_getYear() into tID3Tags["Year"]
+	put id3_getTrackNumber() into tID3Tags["Track"]
+	put id3_getGenre() into tID3Tags["Genre"]
+
+	repeat for each key x in tID3tags
+		put x & ": " & 	tID3Tags[x] & "<br />" after tTags
+	end repeat
+	put tTags into gData["singleArticle"]  
+	put "Check ID3 Tags" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","ID3 Tags",">Live Spiritually<","cat-become-a-student") into gData["pageHeader"]
+	get rigLoadView("sitewide/two-column", gData)	
+
+end getID3Tags
+
+command setID3Tags
+
+  put "/home/devhap/public_html/media/audio/songs/bhajan/ganesha/ekadanta-umasutam-vinayaakam_pm/ekadanta-umasutam-vinayaakam_pm.mp3" into pFile
+  
+	id3_setFile pFile
+	put id3_getTitle() into tID3Tags["Title"]
+	put id3_getArtist() into tID3Tags["Artist"]
+	put id3_getAlbum() into tID3Tags["Album"]
+	put id3_getYear() into tID3Tags["Year"]
+	put id3_getTrackNumber() into tID3Tags["Track"]
+	put id3_getGenre() into tID3Tags["Genre"]
+
+	repeat for each key x in tID3tags
+		put x & ": " & 	tID3Tags[x] & "<br />" after tTags
+	end repeat
+	put tTags into gData["singleArticle"]  
+	put "Check ID3 Tags" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","ID3 Tags",">Live Spiritually<","cat-become-a-student") into gData["pageHeader"]
+	get rigLoadView("sitewide/two-column", gData)	
+
+end setID3Tags
+
+################ UPDATE SECTION #################
+################ CHANGE EXISTING RECORDS #################
+
+on UpdateAudioItems
+# get the data from a file first
+
+ put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/media/audio/mws-titles.txt") into tInput
+ 
+ repeat for each line x in tInput
+ 
+ set the itemdel to "|"
+ put item 1 of x into tFileID
+ 
+ put item 2 of x into tData["duration"]
+  	 
+	 # update the database	
+	rigDbWhere "file_id", tFileID
+	get rigDbUpdate("item",tData) 
+    put it into tResult	
+	# log results
+	rigLogMessage "TOOLBOX", "Update Results:" && tResult && tCount
+	
+	end repeat
+
+end UpdateAudioItems
+
+
+# on UpDateVideoFields
+# # this is  a simple update of all video to approve = yes
+# 
+# 
+# 
+# 	 put "YES"  into tData["approved_for_public"]	 
+# 	 # update the database	
+# 	 rigDbLike "media_type", "video"
+# 	get rigDbUpdate("item",tData) 
+#     put it into tResult	
+# 	# log results
+# 	rigLogMessage "TOOLBOX", "Update Results:" && tResult && tCount
+# 	
+# 
+# end UpDateVideoFields
+
+# on UpDateArtFormatFields
+# # get the data from a file first
+# 
+#  put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/tmp/drawings_image_sizes.txt") into tInput
+#  
+#  repeat for each line x in tInput
+#  put 1 into tCount
+# 	 set the itemdel to tab
+# 	 put item 1 of x into tItemFormatID
+# 	 put item 2 of x into tData["format_name"]
+# 	 
+# 	 # update the database	
+# 	 rigDbWhere "item_format_id", tItemFormatID
+# 	get rigDbUpdate("item_format",tData) 
+#     put it into tResult	
+# 	# log results
+# 	rigLogMessage "TOOLBOX", "Update Results:" && tResult && tCount
+# 	add 1 to tCount
+# end repeat
+# 
+# end UpDateArtFormatFields
+
+# on UpDateArtFormatFields
+# # get the data from a file first
+# 
+#  put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/tmp/drawings_image_sizes.txt") into tInput
+#  
+#  repeat for each line x in tInput
+#  put 1 into tCount
+# 	 set the itemdel to tab
+# 	 put item 1 of x into tItemFormatID
+# 	 put item 2 of x into tData["format_name"]
+# 	 
+# 	 # update the database	
+# 	 rigDbWhere "item_format_id", tItemFormatID
+# 	get rigDbUpdate("item_format",tData) 
+#     put it into tResult	
+# 	# log results
+# 	rigLogMessage "TOOLBOX", "Update Results:" && tResult && tCount
+# 	add 1 to tCount
+# end repeat
+# 
+# end UpDateArtFormatFields
+
+
+# on displayServerArray
+# 	put the keys of $_Server into jai
+# 		repeat for each line x in jai
+# 			put x & ": " & $_Server[x] & "<br />"  after serverArray
+# 		end repeat
+# 	put serverArray into gData["singleArticle"]		  
+# 	put "This is a Test" into gData["pageTitle"] 
+# 	put getSetHeadNav("skinny","Become A Student",">Live Spiritually<","cat-become-a-student") into gData["pageHeader"]
+# 	get rigLoadView("sitewide/two-column", gData)		
+# end displayServerArray
+
+# on makePDF
+#    local tFilePath, tDocRef
+#    put "/home/devhap/public_html/test.pdf" into tFilePath
+#    try
+#       put qrtPDF_CreateDocument() into tDocRef
+#       qrtPDF_OpenDocument tDocRef
+#       qrtPDF_CreatePage tDocRef
+#       qrtPDF_SetTextColor tDocRef, "blue"
+#       qrtPDF_SetFont tDocRef, "Arial", "bold,underline", 18
+#       qrtPDF_WriteTextBox tDocRef, 40, 10, "HelloWorld!"
+#       ## Wrap it up
+#       qrtPDF_CloseDocument tDocRef
+#       qrtPDF_SaveDocument tDocRef, tFilePath
+#       qrtPDF_DeleteDocument tDocRef
+#    catch tError
+#       answer error tError
+#       qrtPDF_DeleteAllDocuments
+#    end try
+#    rigHtmlSpecialChars(tError), TRUE 
+# end makePDF
+ 
+
+on insertSingleQuote
+		#set the outputTextEncoding to "utf8"
+		
+		# YOU NEED TO DECODE THE DATA
+		# put textDecode($_POST["quotecontent"], "UTF-8") into tData["content"]
+		put ($_POST["quotecontent"]) into tData["content"]				
+		put ($_POST["author"]) into tData["author"]
+		put ($_POST["source"]) into tData["source_url"]
+		put ($_POST["enteredby"]) into tData["entered_by"]
+		
+       get rigDbInsert("quote",tData)
+       -- put _rigDbLastInsertID("quote") into tLastInsertID
+     
+        if the result is "true" then 
+			 put "Success!"
+			 
+	   --if tLastInsertID <> FALSE then
+		--	put tLastInsertID
+		
+		else
+			put "Sorry, there is a problem, please contact admin before continuing."
+		end if
+   		
+end insertSingleQuote
+
+on moveFolders
+
+# Get the list of drawings we need to move from the paintings over to the drawings folder
+put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/media/art/manivelu-drawings.txt") into tInput
+
+
+
+# create paths for source and destination
+
+	repeat for each line x in tInput
+	
+		put  ($_SERVER["DOCUMENT_ROOT"] & "/media/art/painting/" & x) into tSourceFolder
+		put  ($_SERVER["DOCUMENT_ROOT"] & "/media/art/drawing/" & x) into tDestinationFolder
+		 rename folder tSourceFolder to tDestinationFolder
+		
+		
+	end repeat 
+	
+end moveFolders
+
+################ -- BATCH MEDIA UPLOAD ROUTINES               -- #################
+################ -- INSERT RECORDS INTO THE ITEM TABLE        -- #################
+################ -- INSERT RECORDS INTO THE ITEM_FORMAT TABLE -- #################
+
+on insertRecords
+
+# We use a text file that has all the names of the folders containing the Media
+# this list will be the file_id's of the records being added.
+# Initially we use the same name for the title of the media item
+
+ 
+#rigLogMessage "TOOLBOX", "Running Database records insertion"	
+
+
+
+--> ########## BEGIN: Inserts into the item table ############ -->
+
+# this file is uploaded from the local machine
+# and contains the file_ids of the new records
+
+put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/media/art/photography/_RealmLifeWorshipFileIDs.txt") into tInput
+
+# here we set the array of all data to be added into the records as they are created
+ 
+###### save as an example ##########
+## this repeat loop handles art and photos ###
+
+	repeat for each line x in tInput
+		put  x into tData["title"]
+		put  x into tData["file_id"]
+		put "NO"  into tData["approved_for_public"]
+		put "Used by Siva Siva App for backgrounds in various modules"
+		put "sivasivaapp, Realm of Life, Worship" into tData["tags"]
+		put "art/photography" into tData["media_type"]
+		get rigDbInsert("item", tData) 
+	end repeat
+
+## Create a description here that may require some formatting of html
+ #repeat for each line x in tInput
+# 	put  x into tData["title"]
+# 	put  x into tData["file_id"]
+# 	put "YES"  into tData["approved_for_public"]
+# 	put  "Satguru Sivaya Subramuniyaswami"  into tData["author"]
+# 	put "Metaphysics" into tData["tags"]
+# 	put "Kauai Aadheenam" into tData["geo_location"]
+# 	put "Tools for Transformation" into tData["category"]
+# 	put "All" into tData["allowed_groups"]
+# 	put "English" into tData["language"]
+# 	put "audio/inspiredtalk" into tData["media_type"]
+# 	get rigDbInsert("item", tData) 
+#end repeat
+
+
+
+ checkResults "Done","Item Table Updated"
+
+ end insertRecords
+
+--> ########## BEGIN: Inserts into the item format table ############ -->
+
+on insertFormats
+
+#inserting data into the item_format table
+#Minimum requirement: the item_id from the item table, 
+#the width and height in the form of e.g. 500x300  goes into the "format_name"
+#and the full filename
+#
+#get the data file first
+
+put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/media/art/photography/_RealmLifeWorshipFormats.txt") into tInput
+
+-- checkResults tInput,"Item Table Updated"; exit to top
+
+## parse each line and  insert items into the Array
+
+set the itemdel to tab
+
+	 repeat for each line x in tInput
+ 		put item 1 of x into tData["item_id"]
+ 		put item 2 of x into tData["format_name"]
+		put item 3 of x into tData["filename"]
+		get rigDbInsert("item_format", tData) 
+	end repeat
+
+ checkResults "Done","Item Table Updated"
+
+end insertFormats
+
+##########################################
+####### INSERTS INTO THE QUOTES TABLE
+##########################################
+
+# on insertQuotes
+# 
+# put url ("file:/home/devhap/public_html/media/books/vedic-experience/VedicVersesreadyforupload.txt") into tInput
+# 
+# # here we set the array of all data to be added into the records as they are created
+# 
+# set the itemdel to "|"
+# 
+# repeat for each item x in tInput
+# 	put  line 1 of x into tData["content"]
+# 	try
+# 		put  line 2 of x into tData["citation"]
+# 	 end try
+# 	 put "Vedas" into tData["subject"]
+# 	#put "Satguru Sivaya Subramuniyaswami" into tData["author"]
+# 	# put "1927-2001" into tData["author_dates"]
+# 	get rigDbInsert("quote", tData) 
+# end repeat
+# 
+# checkResults "Done","quote Table Updated"
+# 
+# end insertQuotes
+
+##########################################
+#######  CATEGORIES TABLES OPERATIONS
+##########################################
+
+# on insertCategories
+# 
+# put url ("file:/home/devhap/tmp/categories.txt") into tInput
+# 
+# # here we set the array of all data to be added into the records as they are created
+# 
+# #set the itemdel to "|"
+# 
+# repeat for each line x in tInput
+# 	put  x into tData["name"]
+# 	get rigDbInsert("category", tData) 
+# end repeat
+# 
+# checkResults "Done","Category Table Updated"
+# 
+# end insertCategories
+
+on insertItemCategories
+ 
+# if doing art, you can use the format input list
+# make sure you are pointing to the right file
+# and you have carefully pick you category_id # !!
+ 
+
+ put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/media/art/photography/_RealmLifeWorshipFormats.txt") into tInput
+ 
+#  it is tab delimited and item 1 is the item_id
+ 
+ set the itemdel to  tab
+
+repeat for each line x in tInput
+	put  item 1 of x into tData["item_id"]
+	# hard coded category  "7" = Realm of God, "161" = "Creation" etc..
+	put "136" into tData["category_id"] 
+	get rigDbInsert("category_item", tData) 
+end repeat
+ 
+ checkResults "Done","Category Item Table Updated"
+ 
+end insertItemCategories
+
+
+
+on fetchCategories
+
+	put rigDbGet("category") into tQuery
+
+	repeat with i = 1 to tQuery["numrows"]
+		put rigDbRow(i) into tRowData
+		put tRowData["name"] & comma & tRowData["category_id"] & cr after tCategories
+		# put "<br />" after tCategories -- for web check... comment out for production
+	end repeat
+	    sort tCategories
+		put tCategories
+end fetchCategories
+
+
+on addCategory
+   # temporarily using a GET string passed from a 
+   # HAPMAN utility until Andre gets the UI finished
+   # there are three relational tables that are used hold categories
+ # the URL string just include the table name as a data input validation
+ # the form of the input string will be simple the final segment of a URL
+ # MODEL: table_name[dash]category_id[dash]quote/faq/item_id
+ # e.g. category_quote-114-265
+  put rigFetchSegment(3) into tCategoryToAdd
+  set the itemdel to "-" 
+  put ("category_faq-category_quote-category_item") into tAssigneeTables
+    if item 1 of tCategoryToAdd is not among the items of tAssigneeTables then
+		# we don't have a valid table name to insert to
+		exit to top     
+    else # keep going
+      put item 1 of tCategoryToAdd into tTargetTable
+      put item 2 of tCategoryToAdd into tData["category_id"]
+      put item 3 of tCategoryToAdd into tAssigneeID
+      set the itemdel to "_"
+      put item 2 of tTargetTable into tTargetDataType
+      put tTargetDataType & "_id" into tAssigningItem
+      put tAssigneeID into tData[tAssigningItem] 
+      get rigDbInsert(tTargetTable, tData)  
+  end if 
+
+end addCategory
+
+#command uploadCategoryTree
+#put url "file:/home/devhap/public_html/media/apps/sivasiva/finalTreeUpload.txt" into tInputData
+#
+#set the itemdelimiter to tab
+#  
+#  
+#	repeat for each line x in tInputData
+#	if x contains "root" then
+#		next repeat # skip it; no records to enter
+#	else
+#
+#		put item 1 of x into tChildCategoryID
+#		# check col 3 for a parent and insert	
+#		put item 3 of x into tFirstParentID
+#			if tFirstParentID <> empty then
+#				put tFirstParentID into tData["parent_id"]
+#				put tChildCategoryID into tData["child_id"]
+#				get rigDbInsert("category_tree", tData)		
+#			end if
+#			# check col 5 for a second parent and insert	
+#		put item 5 of x into tSecondParentID
+#		if tSecondParentID <> empty then
+#			put tSecondParentID into tData["parent_id"]
+#			put tChildCategoryID into tData["child_id"]
+#			get rigDbInsert("category_tree", tData)		
+#		end if
+#	end if
+#end repeat
+#	
+#	checkResults "done", "Category Tree Uploaded"
+#
+#end uploadCategoryTree
+
+######  CHECK ON QUOTES THAT HAVE BEEN CATEGORIZED
+
+on getCategorizedQuoteIdList
+	rigDbSelect "category_quote_id,category_id,quote_id" 
+	put rigDbGet("category_quote") into tQuery
+	put rigDBresult() into tRecords
+	repeat for each key tKey in tRecords
+	    add 1 to tIncr
+		put tRecords[tIncr] into tRow
+		---put tRow[1] & comma after tResultData
+		put tRow[2] into tCategoryID
+		put tRow[3] into tQuoteID
+		put tCategoryId into tCategorizedQuotes[tQuoteID]		
+	end repeat
+	
+	put the keys of tCategorizedQuotes into tCategorizedQuotesList
+	sort tCategorizedQuotesList numeric ascending
+	put the number of lines of tCategorizedQuotesList into tTotal
+	repeat for each line x in tCategorizedQuotesList
+		put x & "<br />" after tOutput
+	end repeat
+	
+	
+
+# fetch all quote id's and compare to those that have categories
+ 	rigDbSelect "quote_id"
+ 	put rigDbGet("quote") into tQuoteQuery
+ 	put rigDBresult() into tQuotesRecords
+ 	repeat for each key	tKey in tQuotesRecords
+ 		add 1 to tIncr
+ 		put tQuotesRecords[tIncr]  into tRow
+ 		put tRow[1] & cr after tQuotesIDList
+ 	end repeat
+ 	put the number of lines of tQuotesIDList into tAllQuotes
+# 	repeat for each line z in tQuotesIDList
+# 		if z is among the lines of (the keys of tCategorizedQuotes) then
+# 				next repeat
+# 			else
+# 				put z & "<br />" & cr after tOutput
+# 		end if
+# 		
+# 	end repeat
+
+	checkResults ("All Quotes: " & tAllQuotes & "<br />Done So Far: " & tTotal & "<br />Remaining: " & (tAllQuotes-tTotal) & "<br /><br />" &  tOutput), "Categorized Quotes (IDs)"
+end getCategorizedQuoteIdList
+
+
+##########################################
+#######  MUSIC AND LYRICS OPERATIONS
+##########################################
+
+command moveLyrics
+    
+   # the "POST" value is just segment 3 of the URL
+   # which is the item_id of the record being worked on in HAPMAN
+   # we just get the lyrics from table "item" and insert them into table "song_lyrics"
+   
+   put rigFetchSegment(3) into tItemID
+   
+    
+   
+    # fetch the lyrics from the items table: columns are:
+    rigDbWhere "item_id", tItemID
+    rigDbSelect "title,lyrics_original,lyrics_original_transliteration,lyrics_literal_translation,production_notes"
+    put rigDbGet("item") into tResult
+    
+	repeat for each key tKey in tResult["resultarray"]
+		put tResult["resultarray"][tKey] into tRow
+		put tRow[1]  into tData["song_title"]
+		put tRow[2]  into tData["original_script"]
+		put tRow[3]  into tData["transliteration"]
+		put tRow[4]  into tData["literal_translation"]
+		put tRow[5]  into tData["production_notes"]
+	end repeat
+	
+	put rigDbInsert("song_lyrics", tData, TRUE) into tLastInsertID
+    put tLastInsertID
+ 
+
+end moveLyrics
+
+on updateNotes
+  # sometimes we want to record information in the notes about the status of the record
+  # to reflect work in progress, missing data that needs to be attended to etc.
+  # we so we need to append a string/line to the production notes, at the top
+  # we hard code the string here which need to be changed manually as needed
+  # this function steps through all records of a particular media type
+  
+   put "BR: 2014/12/06 - No Lyrics" into tUpDateNotesAddition # change as needed for the current update
+    
+   # get your records rigDbValuesSet()
+   
+    rigDbWhere "media_type", "audio/song"  # target all songs
+    rigDbSelect "production_notes,lyrics_original_transliteration,item_id,lyrics_id" 
+    
+     put rigDbGet("item") into tResult
+     # set a counter
+     put 1 into tCounter
+    
+	repeat for each key tKey in tResult["resultarray"]
+		put tResult["resultarray"][tKey] into tRow
+		put tRow[1] into tData["production_notes"]
+		put tRow[2] into tData["lyrics"]
+		put tRow[3] into tData["item_id"]
+		put tRow[4] into tData["lyrics_id"]
+		if ( (tData["lyrics"] is empty) and (tData["lyrics_id"] is empty) )  then  
+		   # we want to update the production notes to show there are no lyrics
+			put tData["production_notes"] into tNewNote
+		    put tUpDateNotesAddition & cr  before tNewNote		    
+		    rigDbWhere "item_id", tData["item_id"]
+		    get rigDbValuesSet("production_notes",tNewNote)
+		    get rigDbUpdate("item")	
+		end if
+	end repeat
+	
+	put "Update Complete" into tTestData
+	put "Lyrics Updated" into tPageHeader
+	
+	checkResults tTestData, tPageHeader
+     
+end updateNotes
+
+
+
+
+
+
+
+###########################################################################
+#######  RETURN RESULTS TO A WEB PAGE FOR VIEWING AND CONFIRMATION
+###########################################################################
+
+command checkResults tTestData, tPageHeader
+
+# Call this command anywhere in your scripts to push output to a web page... 
+ # this is easier than reading logs... note it may take time for datat to load, 
+ # but still faster than scanning logs
+       put tPageHeader into gData["pageTitle"] 
+
+		#replace cr with "<br/ >" in tTestData
+	
+
+	put tTestData into gData["singleArticle"]
+	put getSetHeadNav("skinny",tPageHeader) into gData["pageHeader"]
+	get rigLoadView("sitewide/two-column", gData)
+ 
+end checkResults
+  
+  
+
+
+
+--| END OF toolbox.lc
+--| Location: ./system/application/ha/controllers/toolbox.lc
+----------------------------------------------------------------------

@@ -1,0 +1,211 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+		
+	<div class="page-wrapper">
+        
+		<section class="page-content" role="main" itemscope="" itemtype="http://schema.org/WebPage">
+		
+			<div class="wrapper">
+               			
+				<section class="<?return featuredItemModuleClassForMediaType(gData["modules"]["Featured Item Module"]["media_type"])?>">
+				
+				    [[ gData["modules"]["Featured Item Module"]["Media"] ]]
+					<article class="content-article">
+									
+						<header class="article-header">
+							
+							<hgroup>						
+								<h2 class="h2">Featured <?return featuredItemModuleTitleForMediaType(gData["modules"]["Featured Item Module"]["media_type"]) ?></h2>
+								<h1 class="h1"><a href="/view/[[ gData["modules"]["Featured Item Module"]["file_id"] ]]">[[ gData["modules"]["Featured Item Module"]["Title"] ]]</a></h1>
+								<h5 class="byline">[[ gData["modules"]["Featured Item Module"]["Author"] ]]</h5>
+							</hgroup>
+						
+						</header>
+						
+						<div class="article-body">
+							
+							<p>[[ gData["modules"]["Featured Item Module"]["Description"] ]]</p>
+							
+							<div class="share share-options"><a class="open-menu" href="#">Share</a>
+								<ul class="social nojs">
+									<!-- Facebook -->
+									<div id="fb-root"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+									<div class="fb-like" data-href="<?return urlencode("http://" & $_SERVER["SERVER_NAME"] & $_SERVER["REQUEST_URI"]) ?>" data-send="false" data-layout="button_count" 
+									data-width="90" data-show-faces="false" data-font="lucida grande" data-action="like"></div>
+									<!-- End of Facebook -->
+									
+									<!-- Google Plus -->
+									<!-- Place this tag where you want the +1 button to render. -->
+									<div class="g-plusone"></div>
+									<!-- Place this tag after the last +1 button tag. -->
+									<script type="text/javascript">
+									  (function() {
+									    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+									    po.src = 'https://apis.google.com/js/plusone.js';
+									    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									  })();
+									</script>
+									<!-- End of Google Plus -->
+									
+									
+									<!-- Twitter -->
+									<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);} }(document,"script","twitter-wjs");</script>
+									<!-- End of Twitter -->
+								</ul>
+							</div>
+
+							<a class="share" href="mailto:?subject=[[ gData["record"]["Title"] ]]%20from%20Kauai's%20Hindu%20Monastery&body=[[ gData["record"]["Title"] ]]%20from%20Kauai's%20Hindu%20Monastery%0D[[ "http://" & $_SERVER["HTTP_HOST"] & "/view/" & gData["record"]["file_id"] ]]">Email</a>
+						
+						</div> <!-- end article body -->
+						
+						<div class="article-footer">
+							<?
+							if gData["modules"]["Featured Item Module"]["CTA"] is not empty then
+								return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Featured Item Module\"][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Featured Item Module\"][\"CTA\"] ]]</a>")
+							end if
+							?>
+						</div>
+					
+					</article>
+					
+				</section> <!-- end featured video -->
+					
+				<section class="recent-content">
+				
+					<div class="recent-[[ gData["modules"]["Promoted Collections Module"]["Class"] ]]">
+					
+						<h2 class="h2">[[ gData["modules"]["Promoted Collections Module"]["Title"] ]]</h2>
+						
+						<div class="list">
+						
+							<h3 class="h3">[[ gData["modules"]["Promoted Collections Module"]["collections"][1]["title"] ]]</h3>
+						
+							<img src="[[ gData["modules"]["Promoted Collections Module"]["collections"][1]["thumbnail"] ]]" alt="Photo of..." />
+							
+							<ul>
+								[[ emitLinkList(gData["modules"]["Promoted Collections Module"]["collections"][1]["links"]) ]]
+							</ul>
+								<?
+								
+								if gData["modules"]["Promoted Collections Module"]["collections"][1]["CTA"] is not empty then
+									return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][1][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][1][\"CTA\"] ]]</a>")
+								else
+									return "<span/>"
+								end if
+								?>
+						
+						</div>
+						
+						<div class="list">
+						
+							<h3 class="h3">[[ gData["modules"]["Promoted Collections Module"]["collections"][2]["title"] ]]</h3>
+						
+							<img src="[[ gData["modules"]["Promoted Collections Module"]["collections"][2]["thumbnail"] ]]" alt="Photo of..." />
+							
+								<ul>
+									[[ emitLinkList(gData["modules"]["Promoted Collections Module"]["collections"][2]["links"]) ]]
+								</ul>
+								<?
+								if gData["modules"]["Promoted Collections Module"]["collections"][2]["CTA"] is not empty then
+									return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][2][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][2][\"CTA\"] ]]</a>")
+								else
+									return "<span/>"
+								end if
+								?>
+						
+						</div>
+						
+						<div class="list">
+						
+							<h3 class="h3">[[ gData["modules"]["Promoted Collections Module"]["collections"][3]["title"] ]]</h3>
+						
+							<img src="[[ gData["modules"]["Promoted Collections Module"]["collections"][3]["thumbnail"] ]]" alt="Photo of..." />
+						
+							<ul>
+								[[ emitLinkList(gData["modules"]["Promoted Collections Module"]["collections"][3]["links"]) ]]
+							</ul>
+						
+								<?
+								if gData["modules"]["Promoted Collections Module"]["collections"][3]["CTA"] is not empty then
+									return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][3][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Promoted Collections Module\"][\"collections\"][3][\"CTA\"] ]]</a>")
+								else
+									return "<span/>"	
+								end if
+								?>						
+						</div>
+					
+					</div> <!-- end recent podcasts -->
+					
+					<div class="square-slider">
+					
+						<h2 class="h2">[[ gData["modules"]["Square Slider Module"]["Title"] ]]</h2>
+						
+						<div class="paginate">
+						
+						[[ gData["modules"]["Square Slider Module"]["html"] ]]
+						
+						</div> <!-- end paginate container -->
+						
+						<ul class="archives-pagination slider-pagination">
+							<li class="arrow-prev"><a href="#">Previous</a></li>
+							<li class="arrow-next"><a href="#">Next</a></li>
+						</ul>
+						
+						<?
+						if gData["modules"]["Square Slider Module"]["CTA"] is not empty then
+							return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Square Slider Module\"][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Square Slider Module\"][\"CTA\"] ]]</a>")
+						end if
+						?>
+						
+					
+					</div> <!-- end recent gallery -->
+				
+				</section> <!-- end recent content -->
+													
+				<section class="more-links">
+				
+					<div class="column">
+					
+						<h3 class="h3">[[ gData["modules"]["Links Module"]["collections"][1]["Title"] ]]</h3>
+					
+						<ul>
+						 [[ emitLinkList(gData["modules"]["Links Module"]["collections"][1]["links"]) ]]
+
+						</ul>
+					
+					</div>
+					
+					<div class="column">
+					
+						<h3 class="h3">[[ gData["modules"]["Links Module"]["collections"][2]["Title"] ]]</h3>
+					
+						<ul>
+						[[ emitLinkList(gData["modules"]["Links Module"]["collections"][2]["links"]) ]]
+						</ul>
+					
+					</div>
+				
+				</section> <!-- end more links -->
+				
+			</div> <!-- end page content wrapper -->
+											
+		</section> <!-- end page content -->		
+
+			[[ emitTabbedContentModuleHTML(gData["modules"]["Tabbed Content Module"]["tabs"]) ]]
+			
+	</div> <!-- end page wrapper -->
+	
+	
+
+<?
+return rigLoadView("sitewide/footer", TRUE)
+?>

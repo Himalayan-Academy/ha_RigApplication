@@ -1,0 +1,84 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers,gData,gRealm,gZone,gPage,gURI
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "test,monastery,temples,getTemplePages,monks,about,satgurus,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE MAIN CONTROLLER HANDLER CALLED "the Constructor"
+# this command is the same name as this file
+
+# model for this controller is to use the second URL  segment
+# for commands, and third and forth segments as parameters
+# which are inserted into vars: 
+# 2nd segment = gRealm = the command, 3rd= gZone, 4th = gPage
+# we should be able construct all URLs to all page with maximum 4 segments.
+# we try to match the URL to the navigation and also the /html directory (to some extent)
+# in some cases, the top navigation string is long and the content folder short
+# e.g. "Guru Lineage and Philosophy" content pages on the Gurus are in /html/satgurus.
+# and also we use /satgurus  in the URL and not the long string. (TBD)
+# Note the header and footer are nested in the views (mostly two-column.lc)
+
+command monastery
+	put rigFetchSegment(2, 0) into gRealm # top level - depth of URLs this is the command invoked above
+    put rigFetchSegment(3, 0) into gZone  # second depth/nav
+    put rigFetchSegment(4, 0) into gPage  # pages in this realm-zone
+
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadLibrary "lorempixel"
+	rigLoadHelper "asset"
+    rigLoadPlugin "galleria"
+       
+end monastery
+
+command index
+   loadMonasteryLandingPage   
+   # KT: I had to move this to a separate handler
+   # because it does not work to just call "index" from the about handler
+end index
+
+command about  
+  # we are not going to a different page...
+   loadMonasteryLandingPage 
+end about
+
+command loadMonasteryLandingPage
+  put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+	put "Kauai's Hindu Monastery - About The Monastery" into gData["pageTitle"] 
+    put getSetHeadNav("landing","Monastery",">Monastery<","cat-about-the-monastery") into gData["pageHeader"]			 
+
+	put cmsParseXMLDataFile("/monastery/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end loadMonasteryLandingPage
+
+command temples
+	if gZone = 0 then		
+		put "Kauai's Hindu Monastery - About The Monastery" into gData["pageTitle"] 
+		put getSetHeadNav("landing","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]			 
+		put cmsParseXMLDataFile("/monastery/temples.xml") into gData["modules"]
+		get rigLoadView("sitewide/landing", gData)	
+	end if			
+end temples
+
+command satgurus
+    put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+	put "Kauai's Hindu Monastery - Guru Lineage & Philosophy" into gData["pageTitle"] 
+    put getSetHeadNav("landing","Guru Lineage & Philosophy",">Monastery<","cat-guru-lineage-philosophy") into gData["pageHeader"]			 
+
+	put cmsParseXMLDataFile("/monastery/gurulineageandphilosophy.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end satgurus
+   
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF monastery.lc
+--| Location: ./system/application/ha/controllers/monastery.lc
+----------------------------------------------------------------------

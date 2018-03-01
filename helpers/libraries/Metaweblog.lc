@@ -1,0 +1,28 @@
+<?rev
+put gBASEPATH into gBASEPATH
+
+if gBASEPATH is "gBASEPATH" then
+    put "No direct script access allowed."
+    exit to top
+end if
+
+# LOGGING
+rigLogMessage "debug", "MetaWeblog XML-RPC Library Loaded"
+
+# DECLARE LOCAL VARIABLES
+
+# PROTOTYPE OF THE FOLLOWING HANDLER NAME: rigRunInitialLibrarynameConfig
+command rigRunInitialMetaWeblogConfig
+    --Run initial configuration procedures. Don't remove this handler, even if it does nothing.
+end rigRunInitialMetaWeblogConfig
+
+--> MetaWeblog Suite
+
+function metaWeblog.getRecentPosts pBlogID, pUser, pPassword, pNumberOfPosts
+	put callXMLRPC("metaWeblog.getRecentPosts", pBlogID, pUser, pPassword, pNumberOfPosts) into tPostsA
+	return xmlrpcDecodeArray(tPostsA["methodResponse"]["params"]["param"]["value"]["array"])
+end metaWeblog.getRecentPosts
+
+
+	
+		

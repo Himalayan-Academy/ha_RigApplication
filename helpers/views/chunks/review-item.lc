@@ -1,0 +1,8 @@
+<div class="review-item">
+<h1>[[ gData["temp review"]["title"] ]]</h1>
+<h2>By [[ gData["temp review"]["author"] ]]</h2>
+
+[[ gData["temp review"]["description"] ]]
+
+<hr/>
+</div>

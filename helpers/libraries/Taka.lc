@@ -1,0 +1,34 @@
+<?rev
+put gBASEPATH into gBASEPATH
+
+if gBASEPATH is "gBASEPATH" then
+    put "No direct script access allowed."
+    exit to top
+end if
+
+# LOGGING
+rigLogMessage "debug", "TAKA Library Loaded"
+
+# DECLARE LOCAL VARIABLES
+constant kBlogID = "2"
+constant kUsername = "taka"
+constant kPassword = "108koyil"
+
+# PROTOTYPE OF THE FOLLOWING HANDLER NAME: rigRunInitialLibrarynameConfig
+command rigRunInitialtakaConfig
+    --Run initial configuration procedures. Don't remove this handler, even if it does nothing.
+			rigLoaderLoadLibrary "xmlrpc"
+			rigLoaderLoadLibrary "wp"
+			rigLoaderLoadLibrary "metaweblog"
+			xmlrpcSetServer "http://himalayanacademy.com/blog/taka/xmlrpc.php"
+end rigRunInitialtakaConfig
+
+--> Wordpress Suite
+
+function takaGetRecentPosts pNumberOfPosts
+	return metaweblog.getRecentPosts(kBlogID, kUsername, kPassword, pNumberOfPosts)
+end takaGetRecentPosts
+
+
+	
+		

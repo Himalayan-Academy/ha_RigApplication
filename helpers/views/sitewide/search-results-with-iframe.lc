@@ -1,0 +1,79 @@
+<style>
+.wrapper {
+    padding: 15px;
+}
+</style>
+
+<div class="page-wrapper" ng-app="app">
+
+    <section class="page-content" role="main" >
+
+        <div class="wrapper">
+
+            <header class="media-images-header">
+
+                <h1 class="h1">Results for: <span id="query-string-display" /></h1>
+
+            </header>
+
+            <div id="cse" class="row"><h1>Searching...</h1></div>	
+
+        </div>
+
+    </section> <!-- end page content -->
+
+</div> <!-- end page wrapper -->
+
+<!-- search scripts -->
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
+<script type="text/javascript">
+    /* 
+    google.load('search', '1');
+    google.setOnLoadCallback(function() {
+      google.search.CustomSearchControl.attachAutoCompletion(
+        '011824322980335225530:vscdb3u8vca',
+        document.getElementById('q'),
+        'cse');
+    }); 
+    */
+</script>
+
+<script type="text/javascript"> 
+  function parseQueryFromUrl() {
+    var queryParamName = "q";
+    var search = window.location.search.substr(1);
+    var parts = search.split('&');
+    for (var i = 0; i < parts.length; i++) {
+      var keyvaluepair = parts[i].split('=');
+      if (decodeURIComponent(keyvaluepair[0]) == queryParamName) {
+        return decodeURIComponent(keyvaluepair[1].replace(/\+/g, ' '));
+      }
+    }
+    return '';
+  }
+  
+  google.load('search', '1', {language : 'en'});
+  google.setOnLoadCallback(function() {
+	var searchOps = {};
+	
+    var customSearchControl = new google.search.CustomSearchControl('017908501278066662245:7zog_atzphi',searchOps);
+    customSearchControl.setResultSetSize(15);
+    customSearchControl.setSearchStartingCallback(this,function(control, searcher) {
+      searcher.setRestriction(google.search.Search.RESTRICT_EXTENDED_ARGS,{ "filter" : "0"});
+    });
+    
+    var options = new google.search.DrawOptions();
+	options.setAutoComplete(true);
+    options.enableSearchResultsOnly();
+	customSearchControl.setLinkTarget(
+    google.search.Search.LINK_TARGET_SELF);      
+    customSearchControl.draw('cse', options);
+    var queryFromUrl = parseQueryFromUrl();
+    if (queryFromUrl) {
+      customSearchControl.execute(queryFromUrl);
+      $("#query-string-display").html(queryFromUrl);
+    }
+  }, true);
+</script>
+
+<!-- end of search scripts -->

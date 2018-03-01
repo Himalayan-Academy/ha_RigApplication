@@ -1,0 +1,228 @@
+<?rev
+# This Controller can be used for   one-off jobs, database work, maintenance etc.
+# and testing  new ideas without breaking existing controllers.
+
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "toolbox,index,moveLyrics" into gControllerHandlers
+
+# for security remove handlers when not in production use. 
+#insertArt,buildDailyLesson,displayServerArray,checkPostGet,UpDateVideoFields,
+# makePDF,displayServerArray
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+local queryString,tCount,tData
+
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+on toolbox
+       # rigLoaderLoadLibrary "qrtpdflib"
+	# rigLogMessage "TOOLBOX:", "Updating Video approved"	
+	rigLoaderLoadLibrary "Getsetheadnav" # required opening for all pages
+	#put rigVarPost("lesson", TRUE) into queryString	
+	# rigLoadScaffolding "item"		
+end toolbox
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFYED IN THE URI
+
+command index   
+end index
+
+on UpDateVideoFields
+# this is  a simple update of all video to approve = yes
+
+
+
+	 put "YES"  into tData["approved_for_public"]	 
+	 # update the database	
+	 rigDbLike "media_type", "video"
+	get rigDbUpdate("item",tData) 
+    put it into tResult	
+	# log results
+	rigLogMessage "TOOLBOX", "Update Results:" && tResult && tCount
+	
+
+end UpDateVideoFields
+
+on UpDateArtFormatFields
+# get the data from a file first
+
+ put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/tmp/drawings_image_sizes.txt") into tInput
+ 
+ repeat for each line x in tInput
+ put 1 into tCount
+	 set the itemdel to tab
+	 put item 1 of x into tItemFormatID
+	 put item 2 of x into tData["format_name"]
+	 
+	 # update the database	
+	 rigDbWhere "item_format_id", tItemFormatID
+	get rigDbUpdate("item_format",tData) 
+    put it into tResult	
+	# log results
+	rigLogMessage "TOOLBOX", "Update Results:" && tResult && tCount
+	add 1 to tCount
+end repeat
+
+end UpDateArtFormatFields
+
+on displayServerArray
+	put the keys of $_Server into jai
+		repeat for each line x in jai
+			put x & ": " & $_Server[x] & "<br />"  after serverArray
+		end repeat
+	put serverArray into gData["singleArticle"]		  
+	put "This is a Test" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Become A Student",">Live Spiritually<","cat-become-a-student") into gData["pageHeader"]
+	get rigLoadView("sitewide/two-column", gData)		
+end displayServerArray
+
+on makePDF
+   local tFilePath, tDocRef
+   put "/home/devhap/public_html/test.pdf" into tFilePath
+   try
+      put qrtPDF_CreateDocument() into tDocRef
+      qrtPDF_OpenDocument tDocRef
+      qrtPDF_CreatePage tDocRef
+      qrtPDF_SetTextColor tDocRef, "blue"
+      qrtPDF_SetFont tDocRef, "Arial", "bold,underline", 18
+      qrtPDF_WriteTextBox tDocRef, 40, 10, "HelloWorld!"
+      ## Wrap it up
+      qrtPDF_CloseDocument tDocRef
+      qrtPDF_SaveDocument tDocRef, tFilePath
+      qrtPDF_DeleteDocument tDocRef
+   catch tError
+      answer error tError
+      qrtPDF_DeleteAllDocuments
+   end try
+   rigHtmlSpecialChars(tError), TRUE 
+end makePDF
+
+
+on checkPostGet
+		put queryString into gData["singleArticle"]		  
+		  	 put "This is a Test" into gData["pageTitle"] 
+				put getSetHeadNav("skinny","Become A Student",">Live Spiritually<","cat-become-student") into gData["pageHeader"]	
+				get rigLoadView("sitewide/two-column", gData)		
+end checkPostGet
+
+# on insertArt
+# 
+# 	rigLogMessage "TOOLBOX", "Running Database Art insertion"	
+# # get the data file first
+# 
+# put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/tmp/drawings_image_dimensions.txt" into tInput
+# 
+# # parse each line and  insert items into the Array
+# set the itemdel to tab
+# put 1 into tCount
+# repeat for each line x in tInput
+# 
+# 
+# 	# Do some clean up first
+# 	#replace "&" with "and" in x
+# 	
+# 	# Fixed data first
+# # 	
+# # 	put "S. Rajam"  into tData["artists"]
+# # 	put "YES"  into tData["approved_for_public"]
+# # 	put "Water media on paper" into tData["product_details"]
+# 	
+# 	# Dig title out of description
+# # 	
+# # 	put word 1 to 10 of item 4 of x into tTitle
+# # 	put tTitle into tData["title"]
+# # 	
+# 	# If there are no digital files we need to say NO in approved
+# 	# So that these records don't appear, they have no
+# 	# associated files in the item_format table or on disk, yet.
+# 	
+# 	
+# 	# put item 5 of x into tProductionNote
+# # 		rigLogMessage "TOOLBOX:", "Production Note:" && tProductionNote	
+# # 		if (tProductionNote contains "No Painting in Archives") then
+# # 		   if  (tProductionNote constains "Scanned") ) then  
+# # 			       put "YES" into tData["Approved for Public"]
+# # 		       else
+# # 		          put "NO" into tData["Approved for Public"]
+# # 	       end if
+# # 		       
+# # 		end if
+# # 	
+# # 	put item 1 of x into tData["file_id"]
+# # 	put item 2 of x into tData["media_type"]
+# # 	put item 3 of x into tData["tags"]
+# # 	put item 4 of x into tData["description"]
+# # 	put item 5 of x into tData["production_notes"]
+# 
+# 
+# 	put item 1 of x into tData["item_id"]
+#  	put item 2 of x into tData["filename"]
+#  	put item 3 of x into tData["format_name"]
+# 
+# 
+# 	# insert into the database	
+# 	get rigDbInsert("item_format", tData) 
+# 	
+#     put it into tResult
+# 	
+# 	# log results
+# 	rigLogMessage "TOOLBOX", "Insert Results:" && tResult && tCount
+# 	add 1 to tCount
+# end repeat
+# 
+# 
+# end insertArt
+
+command moveLyrics
+    
+   # later: get  POST value which will be the item_id from the item table
+   # for testing use a hard value here.
+   
+   put rigFetchSegment(3) into tItemID
+   
+    
+   
+    # fetch the lyrics from the items table: columns are:
+    rigDbWhere "item_id", tItemID
+    rigDbSelect "title,lyrics_original,lyrics_original_transliteration,lyrics_literal_translation,production_notes"
+    put rigDbGet("item") into tResult
+    
+	repeat for each key tKey in tResult["resultarray"]
+		put tResult["resultarray"][tKey] into tRow
+		put tRow[1]  into tData["song_title"]
+		put tRow[2]  into tData["original_script"]
+		put tRow[3]  into tData["transliteration"]
+		put tRow[4]  into tData["literal_translation"]
+		put tRow[5]  into tData["production_notes"]
+	end repeat
+	
+	put rigDbInsert("song_lyrics", tData, TRUE) into tLastInsertID
+    put tLastInsertID
+ 
+
+#       put "This is a Test to see if we get results" into gData["pageTitle"] 
+#		put tData["song_title"] & "<br /><br />" after tTest
+#		put tData["original_script"]  & "<br /><br />" after tTest
+#		put tData["transliteration"]  & "<br /><br />" after tTest
+#		put tData["literal_translation"]  & "<br /><br />" after tTest
+#		put tData["production_notes"]  & "<br /><br />" after tTest
+#		replace cr with "<br/ >" in tTest
+	
+
+	#put tTest into gData["singleArticle"]
+	#put getSetHeadNav("skinny","Get Lyrics",">Live Spiritually<","cat-become-a-student") into gData["pageHeader"]
+	#get rigLoadView("sitewide/two-column", gData)
+ 
+end moveLyrics
+
+
+
+--| END OF toolbox.lc
+--| Location: ./system/application/ha/controllers/toolbox.lc
+----------------------------------------------------------------------

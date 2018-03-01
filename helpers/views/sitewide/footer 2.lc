@@ -1,0 +1,92 @@
+<? # not implemented at this time
+	# return rigLoadView("sitewide/advanced-search-form", TRUE)
+	?>	
+	
+<footer class="page-footer">
+	
+		<div class="wrapper">
+	 
+			<ul class="social">
+				<li class="twitter"><a href=" http://twitter.com/kauaimonastery">Twitter</a></li>
+				<li class="facebook"><a href="http://www.facebook.com/kauaihindumonastery">Facebook</a></li>
+				<li class="youtube"><a href="http://www.youtube.com/kauaiaadheenam">YouTube</a></li>
+				
+			</ul>
+		 
+			<nav class="nav-footer">
+			
+				<ul class="nav-parent">
+					<li><a href="http://www.minimela.com">Shop</a></li>
+					<li><a href="/info/contact">Contact</a></li>
+					<li><a href="/donations/how-can-i-help">How Can I Help?</a></li>	
+					<!-- 
+<li><div id="google_translate_element" style="display:inline-block; width:200px;"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</li>
+ -->
+				</ul>
+				
+					
+				
+				
+		
+			</nav> <!-- end footer navigation -->
+			
+			<p class="copyright"><a href="/info/copyright">Copyright &copy;  
+			
+			<script type="text/javascript">
+             var dt = new Date();
+               document.write("&copy " + dt.getFullYear());
+            </script> 
+            Kauai's Hindu Monastery. All rights reserved.</a> &nbsp;&nbsp;&nbsp;&nbsp; <span id="metadata_editor_launcher" class="meta">&#2384;</span></p>
+			
+
+			
+		</div> <!-- end footer wrapper -->
+	
+	</footer> <!-- end page footer -->
+	
+
+	
+	<style type="text/css">
+	.meta {
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+	.meta:hoover {
+		cursor: hand; 
+	}
+	#metadata_editor {
+		display: none;
+	}
+	</style>
+
+	
+	
+	<!-- please do not remove this benchmark detail for now. We can watch to see what
+	     server side options cause any serious performance issues. Note the
+	     seconds here show how long it takes to build the page. If it takes
+	     more time to render in the browser, then it is network issue, not our server. 
+	 <!--    I added a class to the CSS to control the Look and Feel of this. --> 
+	<p class="rev-igniter-benchmark">Page rendered in {{g_ElapsedTime_}} seconds by <a href="http://revigniter.com/" target="_top">RevIgniter</a> version [[ RIVERSION ]] [[ RISTATE ]]. LiveCode Server version [[the version]] (build [[the buildnumber]]).</p>-->
+	
+	<script type="text/javascript">
+	$("#metadata_editor_launcher").bind("click", function() {
+	
+		var url = "http://dev.himalayanacademy.com/media/apps/new-metadata-editor/deploy/index.html#" + location.pathname;
+		window.open(url, "METADATAEDITOR_WindowName");
+		
+	});
+	</script>
+</div> 
+
+
+
+<!-- end page container -->
+
+
+</body>
+</html>

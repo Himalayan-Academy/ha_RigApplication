@@ -1,0 +1,409 @@
+<?rev
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers,gData,gRealm,gZone,gPage
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "test,monastery,temples,getTemplePages,monks,about,satgurus,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE MAIN CONTROLLER HANDLER CALLED "the Constructor"
+# this command is the same name as this file
+
+# model for this controller is to use the second URL  segment
+# for commands, and third and forth segments as parameters
+# which are inserted into vars: 
+# 2nd segment = gRealm = the command, 3rd= gZone, 4th = gPage
+# we should be able construct all URLs to all page with maximum 4 segments.
+# we try to match the URL to the navigation and also the /html directory (to some extent)
+# in some cases, the top navigation string is long and the content folder short
+# e.g. "Guru Lineage and Philosophy" content pages on the Gurus are in /html/satgurus.
+# and also we use /satgurus  in the URL and not the long string. (TBD)
+# Note the header and footer are nested in the views (mostly two-column.lc)
+
+command monastery
+	put rigFetchSegment(2, 0) into gRealm # top level - depth of URLs this is the command invoked above
+    put rigFetchSegment(3, 0) into gZone  # second depth/nav
+    put rigFetchSegment(4, 0) into gPage  # pages in this realm-zone
+
+	rigLoadLibrary "Getsetheadnav" # required opening for all pages
+	rigLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoadLibrary "pagemetadata" 	
+	rigLoadLibrary "cms"
+	rigLoadLibrary "lorempixel"
+	rigLoadHelper "asset"
+    rigLoadPlugin "galleria"
+end monastery
+
+command index
+    # this command always fires (I think?) if there is no second segment?
+	# no 4th level segment; so there we only reference gZone to get pages.
+	# This pages is the landing page for a) the top navigation link "Monastery" 
+	# and also at the same time b) the page linked to "About the Monastery"
+
+    put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+	put "Kauai's Hindu Monastery - About The Monastery" into gData["pageTitle"] 
+    put getSetHeadNav("landing","Monastery",">Monastery<","cat-about-the-monastery") into gData["pageHeader"]			 
+
+	put cmsParseXMLDataFile("/monastery/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end index
+
+
+command about
+
+  if gZone = 0 then 
+	   # this is the landing page "About Kauai's Hindu Monastery"
+	   
+   
+       
+   else # we have another, 3rd  segment
+      	# same nav and header and side attributes for all these pages
+			
+		put getSetHeadNav("skinny","About the Monastery",">Monastery<","cat-about-the-monastery") into gData["pageHeader"]
+		put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+		
+		switch gZone # third segment in the URL 
+		
+			case "brief-overview"
+				put "Kauai's Hindu Monastery - Brief Overview" into gData["pageTitle"]  		
+				put url("file:/home/devhap/public_html/html/monastery/about/brief-overview.html") into gData["singleArticle"]	 
+				updatePageMetadataIfPathOnDiskChanged "/monastery/about/brief-overview.html"	 
+			break
+				
+			case "philosophy"
+				put "Philosophical Conclusions" into gData["pageTitle"] 
+				put url("file:/home/devhap/public_html/html/monastery/about/philosophy.html") into gData["singleArticle"]
+				updatePageMetadataIfPathOnDiskChanged "/monastery/about/philosophy.html"
+			break
+			
+			case "hinduism"
+				put "A Bird's Eye View of Hinduism" into gData["pageTitle"] 
+				put url("file:/home/devhap/public_html/html/monastery/about/hinduism.html") into gData["singleArticle"]
+				updatePageMetadataIfPathOnDiskChanged "/monastery/about/hinduism.html"
+			break
+			
+			
+			case "congregation"
+				put "All About Kauai's Hindu Monastery - Our Global Congregation" into gData["pageTitle"] 
+				put url("file:/home/devhap/public_html/html/monastery/about/congregation.html") into gData["singleArticle"]
+				updatePageMetadataIfPathOnDiskChanged "/monastery/about/congregation.html"
+			break
+			
+			case "faq"
+				put "All About Kauai's Hindu Monastery - FAQ" into gData["pageTitle"] 
+				put url("file:/home/devhap/public_html/html/monastery/about/faq.html") into gData["singleArticle"]
+				updatePageMetadataIfPathOnDiskChanged "/monastery/about/faq.html"
+			break
+				
+				
+		end switch
+		
+		get rigLoadView("sitewide/two-column")
+				
+	end if
+		           
+end about
+
+command temples
+	if gZone = 0 then		
+		put "Kauai's Hindu Monastery - About The Monastery" into gData["pageTitle"] 
+		put getSetHeadNav("landing","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]			 
+		put cmsParseXMLDataFile("/monastery/temples.xml") into gData["modules"]
+		get rigLoadView("sitewide/landing", gData)		
+	else
+			getTemplePages		
+	end if
+	
+end temples
+
+command getTemplePages 
+ # Second Level Nav (segment 2 is always a command, unless changed in routing)
+
+ # set up standard Nav for all pages in this area (this does not change for all these pages) =  
+   put getSetHeadNav("skinny","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]	
+   
+ # set the values for the different pages in this area
+ 
+    switch gZone # third segment in the URL 
+
+   case "two-temples" 
+    
+		# this the page "About the Monastery's Temples"
+		put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+		put "Kauai's Hindu Monastery - Our Two Temples" into gData["pageTitle"] 
+		put url("file:/home/devhap/public_html/html/monastery/about/two-temples.html") into gData["singleArticle"]
+		updatePageMetadataIfPathOnDiskChanged "/monastery/about/two-temples.html"	
+		break
+	case "kadavul"
+		put "Kauai's Hindu Monastery - Kadavul Temple" into gData["pageTitle"]  	
+		put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+		put url("file:/home/devhap/public_html/html/monastery/kadavul/kadavul.html") into gData["singleArticle"]
+		updatePageMetadataIfPathOnDiskChanged "/monastery/kadavul/kadavul.html"	 	 
+	  break
+    # can put other pages that are just about Kadavul here... use the model below.
+
+	case "iraivan"
+		 # every page under Iraivan gets the same sidebar 
+		 # unless we are in the Bangalore India carving site area, then we need a different one.
+		
+		 if gPage contains "bangalore" then
+		 		 put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/bangalore-sidebar.html")  into gData["sideBar"]
+		 		-- updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/bangalore-sidebar.html"
+    		 else
+				 put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-sidebar.html")  into gData["sideBar"]
+				-- updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/iraivan-sidebar.html"
+    	 end if
+     
+        switch gPage # Now we follow 3rd segment in the URL into pages under Iraivan
+        
+		 case "0" # this is the Iraivan Home page; there is no third segment in the URL 
+			put "/home/devhap/public_html/html/monastery/iraivan/img/slides/" into  pGalleryImagesPath
+			dottedSlideShow pGalleryImagesPath, "pageTopSlideshow"
+			put "Kauai's Hindu Monastery - Iraivan Temple" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/iraivan.html"
+			break	
+		 
+		case "mehta-on-flyash"
+			put "Iraivan's Foundation: the Wonder of Fly Ash Concrete" into gData["pageTitle"] 	
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/mehta-speaks-on-fly-ash-concrete.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/mehta-speaks-on-fly-ash-concrete.html"
+			break	 	 
+
+		case "help-build"
+			put "Help Build Iraivan Temple" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/help-build-temple.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/help-build-temple.html" 	 
+			break
+		
+		case "stones"
+			put "Sponsor a Temple Stone" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-stones.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/iraivan-stones.html"
+			break
+			
+		case "in-the-news"
+			put "Iraivan Temple in the News Media" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/iraivan-in-the-news.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/iraivan-in-the-news.html"
+			break
+		
+		case "bangalore"
+			put "It Takes A Village To Carve A Temple" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/it-takes-a-village.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/it-takes-a-village.html"
+			break
+			
+	# instead of adding another segment we will stop at 3 segments and just prefix all the ones for Bangalore
+		case "bangalore-site"
+			put "Bangalore Carving Site and History" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/carving-site-index.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/carving-site-index.html"
+			break
+			
+		case "bangalore-location"
+			put "Bangalore Carving Site and History" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/location.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/location.html"
+			break
+			
+		case "bangalore-sthapati"
+			put "The Master of Stone - V. Ganapati Sthapati" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/vgsthapati.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/vgsthapati.html"
+			break
+		case "bangalore-quarry"
+			put "From Stone Quarry to Temple" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/quarry.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/quarry.html"
+				break
+				
+		case "bangalore-rajasankara"
+			put "Our Carving Site Management-The Jiva Rajasankara Family" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/rajasankara.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/rajasankara.html"	
+		break
+		case "bangalore-stonestory"
+			put "The Story of India's Stone Carving Traditions" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/stone-story.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/stone-story.html"	
+		break
+			
+		case "bangalore-phases"
+			put "The Basic Phases of Manifesting a Stone Temple" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/phases.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/phases.html"	
+		break
+				
+		case "bangalore-chisels"
+				put "The Iron Chisels: Miracle Tools of Stone Carving" into gData["pageTitle"] 
+				put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/chisels.html") into gData["singleArticle"]	
+				updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/chisels.html"	
+			break
+		case "bangalore-drawing"
+				put "Implementing the Design: Drawing on Stones" into gData["pageTitle"] 
+				put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/drawing.html") into gData["singleArticle"]	
+				updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/drawing.html"	
+			break
+		case "bangalore-scenes"
+			put "Behind the Scenes, Around the Carving Site" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/scenes.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/scenes.html"	
+		break
+				case "bangalore-garbha-mukha"
+			put "Garbhagriham and Mukhamandapam Courses" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/garbha-mukha.html") into gData["singleArticle"]		
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/garbha-mukha.html"	
+		break
+				case "bangalore-vimanam"
+			put "Vimanam (Temple Dome)" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/vimanam.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/html/monastery/iraivan/bangalore/vimanam.html"	
+		break
+				case "bangalore-rajagopuram"
+			put "Rajagopuram Gopuram (Entrance Tower)" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/rajagopuram.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/html/monastery/iraivan/bangalore/rajagopuram.html"	
+		break
+				case "bangalore-pothagai"
+			put "Pothigai (Pillar Corbels)" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/pothagai.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/pothagai.html"	
+		break
+				case "bangalore-polishing"
+			put "Polishing Granite" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/polishing.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/polishing.html"	
+		break
+				case "bangalore-floor"
+			put "Red Granite Floor Stones" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/floor.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/floor.html"	
+		break
+				case "bangalore-silpis-puja"
+			put " Daily Worship" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/silpis-puja.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/silpis-puja.html"	
+		break
+				case "bangalore-silpis-ayutha"
+			put "Ayutha Puja 1997" into gData["pageTitle"] 
+			put url("file:/home/devhap/public_html/html/monastery/iraivan/bangalore/ayutha-puja.html") into gData["singleArticle"]	
+			updatePageMetadataIfPathOnDiskChanged "/monastery/iraivan/bangalore/ayutha-puja.html"	
+		break
+		end switch
+		
+
+    end switch
+
+	get rigLoadView("sitewide/two-column")
+				 	 
+end getTemplePages
+
+command monks 
+    # no 4th level segment; so there we only reference gZone to get pages. 
+        
+    put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+     switch gZone  
+	
+	# same active nav highlights and sidebar for all
+	   
+	    case "how-to"
+			put "Kauai's Hindu Monastery - How To Become a Monk" into gData["pageTitle"] 
+		    put getSetHeadNav("skinny","Monastery",">Monastery<","cat-meet-the-monks") into gData["pageHeader"]			 
+			put url("file:/home/devhap/public_html/html/monastery/monastic-life/how-to.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/monastic-life/how-to.html"
+		   break	
+	
+		 case "meet"
+			put "Kauai's Hindu Monastery - Meet the Monks" into gData["pageTitle"] 
+		    put getSetHeadNav("skinny","Meet The Monks",">Monastery<","cat-meet-the-monks") into gData["pageHeader"]			 
+			put url("file:/home/devhap/public_html/html/monastery/monastic-life/meet-the-monks.html") into gData["singleArticle"]
+			updatePageMetadataIfPathOnDiskChanged "/monastery/monastic-life/meet-the-monks.html"
+		   break		   										
+		end switch	 
+	get rigLoadView("sitewide/two-column")				
+
+end monks
+
+command test 
+    # no 4th level segment; so there we only reference gZone to get pages. 
+        
+    put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+	put "Kauai's Hindu Monastery - How To Become a Monk" into gData["pageTitle"] 
+    put getSetHeadNav("","Monastery",">Monastery<","cat-meet-the-monks") into gData["pageHeader"]			 
+	put url("file:/home/devhap/public_html/html/monastery/monastic-life/how-to.html") into gData["singleArticle"]
+
+
+
+	put cmsParseXMLDataFile("/monastery/index.xml") into gData["modules"]
+	
+	
+	get rigLoadView("sitewide/landing", gData)				
+
+end test
+
+command satgurus
+
+    put url("file:/home/devhap/public_html/html/monastery/about/monastery-sidebar.html")  into gData["sideBar"]
+	put "Kauai's Hindu Monastery - Guru Lineage & Philosophy" into gData["pageTitle"] 
+    put getSetHeadNav("landing","Guru Lineage & Philosophy",">Monastery<","cat-guru-lineage-philosophy") into gData["pageHeader"]			 
+
+	put cmsParseXMLDataFile("/monastery/gurulineageandphilosophy.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+
+/*
+ if gZone = 0 then 
+ 
+	   # this is the landing page for "Guru Lineage and Philosophy"
+       # build it here
+       # be sure to load the footer and then exit so that the two- column view is not loaded
+       
+       else # we have a third segment # page head, template & sidebar is same for all these pages
+       
+        put getSetHeadNav("skinny","Guru Lineage & Philosophy",">Monastery<","cat-guru-lineage-philosophy") into gData["pageHeader"]		
+        put url("file:/home/devhap/public_html/html/satgurus/satgurus-sidebar.html")  into gData["sideBar"]
+   
+		   switch gZone   
+		    
+				case "bodhinatha"
+					put "Satguru Bodhinatha Veylanswami - Biography" into gData["pageTitle"] 
+		    	 	put url("file:/home/devhap/public_html/html/satgurus/bodhinatha-bio.html") into gData["singleArticle"]
+		         break
+		         
+		         case "gurudeva"
+					put "Satguru Sivaya Subramuniyaswami - Biography" into gData["pageTitle"] 
+		    	 	put url("file:/home/devhap/public_html/html/satgurus/gurudeva-bio.html") into gData["singleArticle"]
+		         break
+		         
+		         case "yogaswami"
+					put "Satguru Siva Yogaswami" into gData["pageTitle"] 
+		    	 	put url("file:/home/devhap/public_html/html/satgurus/yogaswami-bio.html") into gData["singleArticle"]
+		         break
+		         
+		         case "lineage"
+					put "Our Spiritual Lineage" into gData["pageTitle"] 
+		    	 	put url("file:/home/devhap/public_html/html/satgurus/lineage.html") into gData["singleArticle"]
+		         break
+		         
+		           
+		   end switch
+		   
+   end if
+       
+    get rigLoadView("sitewide/two-column")		
+    
+    */		
+
+end satgurus
+   
+
+# CALL THE CONTROLLER HANDLER
+
+
+
+--| END OF monastery.lc
+--| Location: ./system/application/ha/controllers/monastery.lc
+----------------------------------------------------------------------
