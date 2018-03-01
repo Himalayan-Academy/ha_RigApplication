@@ -42,10 +42,21 @@ end home
 
 
 command test
-	ct "application/json"
-	put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts" into tJSON
+	ct "text/plain"
+	put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts&per_page=10&orderby=date&order=desc" into tJSON
 	put jsonimport(tJSON) into gData["taka"]
-	put the keys of gData["taka"]
+	get gData["taka"][1]["date"]
+	put ",00,00" after it
+	replace "-" with comma in it
+	replace ":" with comma in it
+	replace "T" with comma in it
+		put it & cr & cr
+	convert it to short date
+	put the result & cr & cr
+	put it & cr & cr
+	put gData["taka"][1]["guid"]["rendered"] &cr & cr
+	put gData["taka"][1]["title"]["rendered"] &cr & cr
+	put gData["taka"][1]["content"]["rendered"] &cr & cr
 end test
 
 
@@ -73,8 +84,17 @@ command index
 	# get rigLoadView("home/home-page-head-ddd")
 	
 	--put wpGetLastPosts(sWordpressBlogID, sWordpressUsername,sWordpressPassword) into gData["taka"]
-	put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts" into tJSON
-	put (tJSON) into gData["taka"]
+	put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts&per_page=10&orderby=date&order=desc" into tJSON
+	put jsonimport(tJSON) into gData["taka"]
+	repeat for each key k in gData["taka"]
+		get gData["taka"][k]["date"]
+		put ",00,00" after it
+		replace "-" with comma in it
+		replace ":" with comma in it
+		replace "T" with comma in it
+		convert it to long date
+		put it into gData["taka"][k]["date"]
+	end repeat
 	get rigLoadView("home/main-content")	
 	get rigLoadView("sitewide/footer")
 

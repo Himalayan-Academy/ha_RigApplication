@@ -17,11 +17,11 @@
 		
 				<article class="content-article has-image">
 									
-					<time pubdate class="timestamp" datetime="[[ gData["taka"][1]["timestamp"] ]]">[[ gData["taka"][1]["date"] ]]</time>
+					<time pubdate class="timestamp" datetime="[[ gData["taka"][1]["date"] ]]">[[ gData["taka"][1]["date"] ]]</time>
 					
-					<h1 class="h1"><a href="[[ gData["taka"][1]["link"] ]]">[[ gData["taka"][1]["title"] ]]</a></h1>
+					<h1 class="h1"><a href="[[ gData["taka"][1]["guid"]["rendered"] ]]">[[ gData["taka"][1]["title"]["rendered"] ]]</a></h1>
 					
-					[[ gData["taka"][1]["content"] ]]
+					[[ gData["taka"][1]["content"]["rendered"] ]]
 					
 					<figure class="image">
 										
@@ -33,7 +33,7 @@
 					
 					<p>[[ gData["taka"][1]["story"] ]]</p>
 				
-					<a class="action" href="[[ gData["taka"][1]["link"] ]]">Continue Reading</a>
+					<a class="action" href="[[ gData["taka"][1]["guid"]["rendered"] ]]">Continue Reading</a>
 					
 					<footer class="article-footer">
 					
@@ -48,7 +48,7 @@
 							delete line 1 of tKeys
 							repeat for each line k in tKeys
 								if k > 7 then next repeat
-								put format("<li><time pubdate class='timestamp' datetime='%s'>%s</time><a href='%s'>%s</a></li>", gData["taka"][k]["timestamp"],gData["taka"][k]["date"], gData["taka"][k]["link"], gData["taka"][k]["title"]) after tBuf
+								put format("<li><time pubdate class='timestamp' datetime='%s'>%s</time><a href='%s'>%s</a></li>", gData["taka"][k]["date"],gData["taka"][k]["date"], gData["taka"][k]["guid"]["rendered"], gData["taka"][k]["title"]["rendered"]) after tBuf
 							end repeat
 							return tBuf
 							?>
