@@ -21,7 +21,7 @@
 					
 					<h1 class="h1"><a href="[[ gData["taka"][1]["guid"]["rendered"] ]]">[[ gData["taka"][1]["title"]["rendered"] ]]</a></h1>
 					
-					[[ gData["taka"][1]["content"]["rendered"] ]]
+					[[ gData["taka"][1]["excerpt"]["rendered"] ]]
 					
 					<figure class="image">
 										
