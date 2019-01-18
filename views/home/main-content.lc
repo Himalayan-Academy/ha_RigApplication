@@ -14,14 +14,16 @@
 					<a class="action" href="/blog/taka">Read the Blog</a>
 				
 				</div>
-		
-				<article class="content-article has-image">
+
+
+
+			<article class="content-article has-image">
 									
 					<time pubdate class="timestamp" datetime="[[ gData["taka"][1]["date"] ]]">[[ gData["taka"][1]["date"] ]]</time>
 					
 					<h1 class="h1"><a href="[[ gData["taka"][1]["guid"]["rendered"] ]]">[[ gData["taka"][1]["title"]["rendered"] ]]</a></h1>
 					
-					[[ gData["taka"][1]["content"]["rendered"] ]]
+					[[ gData["taka"][1]["excerpt"]["rendered"] ]]
 					
 					<figure class="image">
 										
@@ -34,7 +36,7 @@
 					<p>[[ gData["taka"][1]["story"] ]]</p>
 				
 					<a class="action" href="[[ gData["taka"][1]["guid"]["rendered"] ]]">Continue Reading</a>
-					
+										
 					<footer class="article-footer">
 					
 						<h3 class="h2">Recent Articles</h3>
@@ -49,16 +51,17 @@
 							repeat for each line k in tKeys
 								if k > 7 then next repeat
 								put format("<li><time pubdate class='timestamp' datetime='%s'>%s</time><a href='%s'>%s</a></li>", gData["taka"][k]["date"],gData["taka"][k]["date"], gData["taka"][k]["guid"]["rendered"], gData["taka"][k]["title"]["rendered"]) after tBuf
-							end repeat
+						end repeat
 							return tBuf
 							?>
 						
 						</ul>
-					
+				
 					</footer>
 									
-				</article> <!-- end content article -->
-				
+				</article>
+ <!-- end content article -->
+			
 				<aside class="publications" role="complementary">
 				
 					<div class="pub-wrapper">
@@ -81,7 +84,7 @@
 				
 				<div class="description">
 				
-					<h2 class="h1"><a href="#">[[ gData["modules"]["secondary content module"]["title"] ]]</a></h2>
+					<h2 class="h1"><a href="/monastery/lineage-philosophy/gurudeva">[[ gData["modules"]["secondary content module"]["title"] ]]</a></h2>
 					
 					<p>[[ gData["modules"]["secondary content module"]["description"] ]]</p>
 					<a class="action" href="[[ gData["modules"]["secondary content module"]["cta_link"] ]]">[[ gData["modules"]["secondary content module"]["cta"] ]]</a>

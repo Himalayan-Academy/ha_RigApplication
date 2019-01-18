@@ -34,18 +34,18 @@ end rigRunInitialGetsetheadnavConfig
 function getRandomBanner
        
 		put the defaultFolder into tCurrentFolder
-		put $_SERVER["DOCUMENT_ROOT"] & "/assets/img/ddd-banners" into tBannersFolder
+		put $_SERVER["DOCUMENT_ROOT"] & "/donate/ddd/banners-ha/" into tBannersFolder
 		
 		set the defaultfolder to tBannersFolder
 		put the files into tBanners	
 		filter tBanners without ".*" 		 
 		put  random(the number of lines of tBanners) into tNextBanner		
-		put "/assets/img/ddd-banners/" & (line tNextBanner of tBanners) into gData["bannerPath"]  
+		put "/donate/ddd/banners-ha/" & (line tNextBanner of tBanners) into gData["bannerPath"]  
 		set the defaultFolder to tCurrentFolder
 		
 		# we will put the total also 
 		
-		put url ("https://donate.himalayanacademy.com/ddd/current-total.txt") into  gData["currentTotal"]
+		put url ("file:/" & $_SERVER["DOCUMENT_ROOT"] & "/donate/ddd/current-total.txt") into  gData["currentTotal"]
 end getRandomBanner
 
 function getSetHeadNav pBodyClass,pTitle,pActiveTopNav,pActiveSubNav
@@ -58,10 +58,10 @@ function getSetHeadNav pBodyClass,pTitle,pActiveTopNav,pActiveSubNav
 
 	# uncomment the following line to turn on DDD banner images... 
 
-	 #  get getRandomBanner()
+	  --get getRandomBanner()
 
 	# comment out this line during DDD drive time. This loads the regular Header
-	put mergeView ("sitewide/page-header") into tPageHeader 
+	--put mergeView ("sitewide/page-header") into tPageHeader 
 
 	# for development of new navigation:
 
@@ -70,7 +70,8 @@ function getSetHeadNav pBodyClass,pTitle,pActiveTopNav,pActiveSubNav
 	# uncomment the following line to turn on DDD banner images... 
 	# it calls the view which contains the <div> which holds the banner
 	# then comment out when the drive is over and uncomment the one above
-	# put mergeView ("sitewide/page-header-ddd", TRUE) into tPageHeader 
+
+	--put mergeView ("sitewide/page-header-ddd", TRUE) into tPageHeader 
 
 
 	replace "Body-Class" with pBodyClass in tPageHeader

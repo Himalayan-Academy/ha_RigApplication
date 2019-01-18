@@ -57,7 +57,7 @@
 	       <li class="subhead"> Our International Magazine </li>
 	       <li> <a href="http://www.hinduismtoday.com/"> Hinduism Today </a> </li>
 		<li class="subhead">Dictionary For Hinduism</li>
-		<li> <a href="/view/lexicon">Hindu Lexicon</a> </li>
+		<li> <a href="/media/apps/lexicon/app">Hindu Lexicon</a> </li>
 		
 	</ul>
 	</li>
@@ -94,19 +94,22 @@
 </li>
 <li class="nav-header looklisten"> <a href="/looklisten"> Look &amp; Listen </a> 
 <ul class="nav-child looklisten">
-<li><ul class="col1">
+<li>
+<ul class="col1">
 	<li class="subhead">Talks By Our Gurus</li>
 	<li> <a href="/looklisten/gurus-talks">Satguru Speaks</a> </li>
 	<li> <a href="/site/search/media_type/video/title/desk/sort/time-descending"> Bodhinatha's Quarterly Editorial </a> </li>
-	<li class="subhead"> Video </li>
-	<li> <a href="/site/search/media_type/news"> Monthly News Update </a> </li>
-	<li> <a href="/site/search/media_type/teaching"> Teaching Collections </a> </li>
-	<li> <a href="/site/search/media_type/video/description/puja"> Temple Fesivals </a> </li>
-	<li> <a href="/site/search/media_type/video/description/puja"> &nbsp; </a> </li>
+	
+	<li class="subhead"> Audio</li>
+		<li> <a href="/looklisten/audio"> Audio Home</a></li>
+		<li> <a href="/view/path-to-siva-audiobook">Path to Siva</a></li>
+		<li> <a href="https://www.himalayanacademy.com/view/the-guru-chronicles-audiobook"> The Guru Chronicles </a> </li>
+		<li> <a href="http://himalayanacademy.com/view/dancing-with-siva-audiobook-gujarati"> Gujarati Dancing with Siva</a> </li>
+		<li> <a href="http://himalayanacademy.com/view/living-with-siva-audiobook-gujarati"> Gujarati Living with Siva</a> </li>
 	
 	
-	
-</ul></li>
+</ul>
+</li>
 
 <li><ul class="col2">
 <li class="subhead"> Our Free Apps</li>
@@ -114,25 +117,24 @@
 
 
 <li class="subhead"> Art &amp; Photo Galleries </li>
-<li> <a href="/site/search/media_type/painting"> Art &amp; Paintings </a> </li>
+<li> <a href="/hamsa"> Art &amp; Paintings </a> </li>
 <li> <a href="/site/search/media_type/slideshow"> Slideshows </a> </li>
 <li> <a href="/looklisten/art-photos"> All Galleries </a> </li>
 
 </ul></li>
 
-
-
-<li><ul class="col3">
-<li class="subhead"> Audio Books </li>
-	<li> <a href="https://www.himalayanacademy.com/view/the-guru-chronicles-audiobook"> The Guru Chronicles </a> </li>
-	<li> <a href="http://himalayanacademy.com/view/dancing-with-siva-audiobook-gujarati"> Gujarati Dancing with Siva</a> </li>
-	<li> <a href="http://himalayanacademy.com/view/living-with-siva-audiobook-gujarati"> Gujarati Living with Siva</a> </li>
-		<!-- <li> <a href="/site/search/media_type/teaching"> Path to Siva </a> </li> -->
-		
+<li><ul class="col3">			
 <li class="subhead"> Chanting &amp; Songs </li>
-<li> <a href="/looklisten/chanting-songs">Audio Home</a> </li>
+<li> <a href="/looklisten/chanting-songs">Chanting &amp; Songs</a> </li>
 <li> <a href="/looklisten/chanting">Sanskrit Chanting</a> </li>
 <li> <a href="/looklisten/music">Sacred Music Library</a> </li>
+
+<li class="subhead"> Video </li>
+	<li> <a href="/site/search/media_type/news"> Monthly News Update </a> </li>
+	<li> <a href="/site/search/media_type/teaching"> Teaching Collections </a> </li>
+	<li> <a href="/site/search/media_type/video/description/puja"> Temple Fesivals </a> </li>
+	<li> <a href="/site/search/media_type/video/description/puja"> &nbsp; </a> </li>
+	
 </ul></li>
 </ul>
 </li>

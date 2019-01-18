@@ -105,6 +105,11 @@ command looklisten
 				fetchExternalHTML
 				viewExternalPage
 				break
+			case (tSegs[2]= "audio")
+				getAudioIndex
+				fetchExternalHTML
+				viewExternalPage
+				break
 			case (tSegs[2]= "getOneGurudeva")
 				getOneGurudevaTalk
 				break
@@ -164,12 +169,12 @@ command gurustalks
 		get rigLoadView("sitewide/landing", gData)
 end gurustalks
 
-#command talksindex
-#    put "Look &amp; Listen - Chanting and Songs" into gData["pageTitle"]
-#    put getSetHeadNav("landing","Chanting and Songs",">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
-#	put cmsParseXMLDataFile("/looklisten/chanting-songs.xml") into gData["modules"]
-#	get rigLoadView("sitewide/landing", gData)
-#end talksindex
+command talksindex
+    put "Look &amp; Listen - Chanting and Songs" into gData["pageTitle"]
+    put getSetHeadNav("landing","Chanting and Songs",">Look &amp; Listen<","cat-chanting-songs") into gData["pageHeader"]
+	put cmsParseXMLDataFile("/looklisten/chanting-songs.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end talksindex
 
 command videos
     put "Look &amp;  Listen - Videos" into gData["pageTitle"]
@@ -191,18 +196,28 @@ command chantingsongs
 		put cmsParseXMLDataFile("/looklisten/chanting-songs.xml") into gData["modules"]
 		get rigLoadView("sitewide/landing", gData)
 end chantingsongs
-
+ 
 command getTalksIndex
 		rigLoaderLoadLibrary "fetchtalksindex"
 		fetchInspiredTalkData
 		put getSetHeadNav("skinny","Talks By Our Satgurus",">Look &amp; Listen<","cat-talks-by-our-gurus") into gData["pageHeader"]
 end getTalksIndex
 
+command getAudioIndex
+    rigLoaderLoadLibrary "fetchAudioBooks"
+	fetchAudioBooksIndex
+	put "media_type:inspiredtalk,author:Bodhinatha" into tSearchTermsA
+    split tSearchTermsA by comma and ":"
+	put randomItemForSearch(tSearchTermsA)  into gData["lastestTalkBodhinatha"]
+	put getSetHeadNav("skinny","Talks By Our Satgurus",">Look &amp; Listen<","cat-talks-by-our-gurus") into gData["pageHeader"]
+end getAudioIndex
+
 command getOneGurudevaTalk
        rigLoaderLoadLibrary "fetchtalksindex"
        fetchRandomGurudevaTalk
        put gData["oneRandomGurudevaTalk"]
 end getOneGurudevaTalk
+
 
 command gurudevaQuotePage
 		

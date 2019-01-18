@@ -103,7 +103,8 @@ command sendCustomErrorPage tPage
 		put rigLoadView("sitewide/error-page",TRUE) into gData["singleArticle"]
 	end if
 	put "Kauai's Hindu Monastery - Page Note Found" into gData["pageTitle"] 
-	put getSetHeadNav("skinny","Sorry, we could not find the page you were looking for",">Monastery<","") into gData["pageHeader"]		
+	put getSetHeadNav("skinny","Sorry, we could not find the page you were looking for",">Monastery<","") into gData["pageHeader"]
+		put header "Status: 404"		
 	get rigLoadView("sitewide/two-column")  
 end sendCustomErrorPage
 

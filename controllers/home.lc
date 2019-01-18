@@ -84,17 +84,18 @@ command index
 	# get rigLoadView("home/home-page-head-ddd")
 	
 	--put wpGetLastPosts(sWordpressBlogID, sWordpressUsername,sWordpressPassword) into gData["taka"]
-	put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts&per_page=10&orderby=date&order=desc" into tJSON
-	put jsonimport(tJSON) into gData["taka"]
-	repeat for each key k in gData["taka"]
-		get gData["taka"][k]["date"]
-		put ",00,00" after it
-		replace "-" with comma in it
-		replace ":" with comma in it
-		replace "T" with comma in it
-		convert it to long date
-		put it into gData["taka"][k]["date"]
-	end repeat
+	--put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts&per_page=10&orderby=date&order=desc" into tJSON
+	--put jsonimport(tJSON) into gData["taka"]
+	--repeat for each key k in gData["taka"]
+	--	get gData["taka"][k]["date"]
+put ",00,00" after it
+	--replace "-" with comma in it
+	--	replace ":" with comma in it
+	--	replace "T" with comma in it
+	--	convert it to long date
+	--put it into gData["taka"][k]["date"]
+	--end repeat
+	
 	get rigLoadView("home/main-content")	
 	get rigLoadView("sitewide/footer")
 
