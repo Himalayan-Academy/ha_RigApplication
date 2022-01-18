@@ -1,0 +1,30 @@
+<?lc
+
+global gControllerHandlers, gData, tOptions
+put "galleria,index" into gControllerHandlers
+
+command galleria
+   rigLoadHelper "asset"
+   rigLoadHelper "galleria"
+end galleria
+
+command index
+   # SET PAGE TITLE
+   put "Galleria Plugin Example" into gData["pageTitle"]
+   
+   # SET UP THE GALLERY JSON ARRAY AND SLIDESHOW OPTIONS HERE
+   # RALF DID NOT GIVE AN FULL EXAMPLE BUT THIS WORKS
+		put "939" into tOptions[width]
+		put "600" into tOptions[height]
+		put "true" into tOptions[imageCrop]
+		put "false" into tOptions[thumbCrop]
+		put "true" into tOptions[imagePan]
+		put "100" into tOptions[transitionSpeed] 		
+		put rigGalleriaData("media/slideshows/2012/2012-02-07_about-monastery",tOptions,,,FALSE,TRUE) into gData["slideShow"]
+		
+   # LOAD THE VIEW FILE
+   get rigLoadView("tests/galleria-test")
+end index
+--| END OF galleria.lc
+--| ./application/controllers/galleria.lc
+---------------------------------------------------------------------- 

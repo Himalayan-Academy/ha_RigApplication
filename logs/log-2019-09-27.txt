@@ -1,0 +1,1191 @@
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: Total execution time: 5.3371
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:45:56 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:46:01 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:46:01 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:46:01 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:46:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:46:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:46:02 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:46:02 -0700: Total execution time: 6.3910
+DEBUG - Fri, 27 Sep 2019 23:46:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:46:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:46:06 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:46:06 -0700: Total execution time: 5.4072
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:46:14 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Art Library Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Construct Audio Data Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: ePub Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 27 Sep 2019 23:46:14 -0700: site/gsearch/
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results-gcse.lc
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Final output sent to browser. There was no view data.
+DEBUG - Fri, 27 Sep 2019 23:46:14 -0700: Total execution time: 0.1236
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:46:29 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:46:29 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:46:29 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:46:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:46:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:46:35 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:46:35 -0700: Total execution time: 5.9506
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:50:02 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:50:02 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:50:02 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:50:03 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:50:03 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:50:03 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Total execution time: 3.4451
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:50:05 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:50:05 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:05 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Total execution time: 3.4201
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:50:06 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:50:06 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:50:06 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:50:08 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:50:08 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:50:08 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:50:08 -0700: Total execution time: 3.1401
+DEBUG - Fri, 27 Sep 2019 23:50:09 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:50:09 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:50:09 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:50:09 -0700: Total execution time: 3.1120
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:52:17 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:52:17 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:52:17 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:52:18 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:52:22 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:52:22 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:52:22 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:52:22 -0700: Total execution time: 4.6085
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:55:02 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:55:02 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:55:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:55:03 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:55:03 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:55:03 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Total execution time: 4.6506
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:55:07 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:55:07 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Total execution time: 4.5608
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:55:07 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:55:07 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:55:07 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:55:11 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:55:11 -0700: Total execution time: 3.4995
+DEBUG - Fri, 27 Sep 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:55:11 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:55:11 -0700: Total execution time: 4.5862
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Hooks Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Config Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: URI Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Router Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: No URI present. Default controller set.
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Output Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Input Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Language Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Loader Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Controller Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Database Driver Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Session Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: A session cookie was not found.
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Session routines successfully run.
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Utils Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Utils constructor called
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: FastJSON Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: CMS Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: AAG DB Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Default Connection Set
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Markdown Library Loaded
+ERROR - Fri, 27 Sep 2019 23:56:28 -0700: markdown is not available.
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Array Tools Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Audio Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Libraries Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Extension loaded: 
+REQUESTED: - Fri, 27 Sep 2019 23:56:28 -0700: 
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: looking metadata for /
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Begin extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: number of tabs: 4
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Tab: Our Gurus
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for tags -> our satgurus
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: results: 20
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Tab: For Teachers
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for title -> history
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: results: 11
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for tags -> teachers
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for tags -> parents
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: results: 21
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for tags -> teen
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: results: 1
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: results: 4
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Tab: Childrens Books
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: tab node: search
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for media_type -> book
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: search for tags -> children
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: results: 6
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: End extract tabbed content
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: keys:  1
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: value:  tabs
+title
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: Result:invalid URL: 
+DEBUG - Fri, 27 Sep 2019 23:56:28 -0700: It:
+DEBUG - Fri, 27 Sep 2019 23:56:33 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 27 Sep 2019 23:56:33 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 27 Sep 2019 23:56:33 -0700: Final output sent to browser
+DEBUG - Fri, 27 Sep 2019 23:56:33 -0700: Total execution time: 4.9691

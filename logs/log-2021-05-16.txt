@@ -1,0 +1,329 @@
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT * 
+FROM (`page_metadata`) 
+WHERE `page_url` = '/looklisten/art-photos'
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Helper loaded: stringHelper
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: A session cookie was not found.
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Session routines successfully run.
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Utils Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Utils constructor called
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: FastJSON Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Dotted Slideshow Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Page Metadata Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: CMS Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: AAG DB Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Default Connection Set
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Markdown Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: innersearch_2006-01-08_sydney_dooralong
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,title:bodhinatha
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records title = bodhinatha
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 16
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '3853'
+ERROR - Sun, 16 May 2021 23:52:59 -0700: markdown is not available.
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Array Tools Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Audio Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Libraries Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: LoremPixel Library Loaded
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Helper loaded: galleriaHelper
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Fetch HTML Library Loaded
+REQUESTED: - Sun, 16 May 2021 23:52:59 -0700: info/contact
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Loading fetchhtml library
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: page to load: info/contact
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: looking for /home/devhap/public_html/html/info/default.metadata
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: found metadata file at: /home/devhap/public_html/html/info/default.metadata
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/default.metadata --> body_class skinny
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/default.metadata --> template two-column
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/default.metadata --> top_navigation >Monastery<
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/default.metadata --> page_heading Site Information
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/default.metadata --> secondary_navigation 
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/default.metadata --> title Site Information
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: found metadata file at: /home/devhap/public_html/html/info/contact.metadata
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/contact --> template two-column
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/contact --> body_class skinny
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/contact --> top_navigation >Monastery<
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/contact --> page_heading Contact Us
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/contact --> sidebar monastery/monastery-sidebar.html
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: info/contact --> title Kauai's Hindu Monastery
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: fetching page:  info/contact
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: loading external page: /home/devhap/public_html/html/info/contact.html
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: external file was loaded as:  <h1 class="h1">
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: looking metadata for /info/contact
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: travel_2011-11-19_mauritius-land-development
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,file_id:ka_
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Helper loaded: arrayHelper
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records file_id = ka_
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Helper loaded: fileHelper
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Final output sent to browser
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Total execution time: 0.1436
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 2
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '3853'
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: 2010-02-14_ka_maha-sivaratri
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,file_id:iraivan
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records file_id = iraivan
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 13
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT COUNT(*) AS `numrows` 
+FROM (`item`)
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: 2011-08-29_iraivan-pano
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,description:puja
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records description = puja
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 8
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT COUNT(*) AS `numrows` 
+FROM (`item`)
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: 2011-10-23_mahasamadhi-day-two-am
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,title:kadavul
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records title = kadavul
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 6
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT COUNT(*) AS `numrows` 
+FROM (`item`)
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: skanda-shashti-in-kadavul-2012
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,file_id:innersearch
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records file_id = innersearch
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 94
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT COUNT(*) AS `numrows` 
+FROM (`item`)
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: 2001-08-14_europe-russia-innersearch-wernemunde-ronne
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,title:bodhinatha
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records title = bodhinatha
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 16
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `file_id` = 'innersearch_2006-01-18_auckland'
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: 2011-10-15_sri-lanka_thirunavukkarasu-bodhinatha-jayanthi
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,file_id:ka_
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records file_id = ka_
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 2
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `file_id` = 'innersearch_2006-01-18_auckland'
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: 2011-10-15_sri-lanka_thirunavukkarasu-bodhinatha-jayanthi
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,file_id:iraivan
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records file_id = iraivan
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 13
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `file_id` = 'innersearch_2006-01-18_auckland'
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: iraivan_2009-03-24_stone-chain
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,description:puja
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records description = puja
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 8
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `file_id` = 'innersearch_2006-01-18_auckland'
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: 2011-10-23_mahasamadhi-day-two-am
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Random Promoted Collection! media_type:slideshow,title:kadavul
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records media_type = slideshow
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: search all records title = kadavul
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: number of results: 6
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `file_id` = 'innersearch_2006-01-18_auckland'
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Randomizer: 2007-11-01-kadavul-entry-shrines
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/landing.lc
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: begin emit tabbed content module HTML
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: no tabbed content
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Final output sent to browser
+DEBUG - Sun, 16 May 2021 23:52:59 -0700: Total execution time: 0.8698
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Hooks Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Config Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: URI Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Router Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: No URI present. Default controller set.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Output Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Input Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Language Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Loader Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Controller Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: assetHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: urlHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Database Driver Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Session Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: stringHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: A session cookie was not found.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Session routines successfully run.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Utils Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Utils constructor called
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: FastJSON Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: CMS Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: AAG DB Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Default Connection Set
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Markdown Library Loaded
+ERROR - Sun, 16 May 2021 23:55:02 -0700: markdown is not available.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Array Tools Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Audio Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Page Metadata Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Libraries Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: LoremPixel Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: galleriaHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Fetch HTML Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: XML-RPC Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Wordpress REST Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Extension loaded: 
+REQUESTED: - Sun, 16 May 2021 23:55:02 -0700: 
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: looking metadata for /
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: arrayHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: fileHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Begin extract tabbed content
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: number of tabs: 4
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Tab: Our Gurus
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for tags -> our satgurus
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: results: 32
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Tab: For Teachers
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for title -> history
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: results: 11
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for tags -> teachers
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: results: 8
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Tab: For Parents and Youth
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for tags -> parents
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: results: 24
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for tags -> teen
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: results: 1
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for title -> saivite hindu religion
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: results: 4
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Tab: Childrens Books
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: search for tags -> children
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: results: 10
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: End extract tabbed content
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: keys:  1
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: value:  tabs
+title
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Final output sent to browser
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Total execution time: 0.5416
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Hooks Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Config Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: URI Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Router Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: No URI present. Default controller set.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Output Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Input Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Language Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Loader Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Controller Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: assetHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: urlHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Database Driver Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Session Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: stringHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: A session cookie was not found.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Session routines successfully run.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Utils Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Utils constructor called
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: FastJSON Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: CMS Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: AAG DB Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Default Connection Set
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Markdown Library Loaded
+ERROR - Sun, 16 May 2021 23:55:02 -0700: markdown is not available.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Array Tools Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Audio Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Page Metadata Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Libraries Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: LoremPixel Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: galleriaHelper
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Fetch HTML Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: XML-RPC Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Wordpress REST Library Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Extension loaded: 
+REQUESTED: - Sun, 16 May 2021 23:55:02 -0700: 
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: looking metadata for /
+DEBUG - Sun, 16 May 2021 23:55:02 -0700: Helper loaded: arrayHelper
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: Helper loaded: fileHelper
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: Begin extract tabbed content
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: number of tabs: 4
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: Tab: Our Gurus
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for tags -> our satgurus
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: results: 32
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: Tab: For Teachers
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for title -> history
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: results: 11
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for tags -> teachers
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: results: 8
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: Tab: For Parents and Youth
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for tags -> parents
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: results: 24
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for tags -> teen
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: results: 1
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for title -> saivite hindu religion
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: results: 4
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: Tab: Childrens Books
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: tab node: search
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for media_type -> book
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: search for tags -> children
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: results: 10
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: End extract tabbed content
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: keys:  1
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: value:  tabs
+title
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: Final output sent to browser
+DEBUG - Sun, 16 May 2021 23:55:03 -0700: Total execution time: 0.6165

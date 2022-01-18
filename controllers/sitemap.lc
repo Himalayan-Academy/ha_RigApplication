@@ -1,0 +1,75 @@
+<?lc
+   /* =  DESCRIPTION  =
+   --
+   The sitemap.lc controller can be found at: sitemap.lc
+   
+   Once upon a time.
+   
+   Below we declare the global variables gControllerHandlers AND gData
+   And put the public method names that we wish to expose into gControllerHandlers
+   --
+   */
+   
+   global gControllerHandlers, gData
+   
+   put "index,test,list_ImageFileIDs" into gControllerHandlers
+
+   
+   /* ==  INITIALISATION  ==
+   --
+   Put all the handlers and variables that you wish to merge into your views
+   into the global array "gData".
+
+   Write any initialisation statements (loaing any neeeded libraries for instance)
+   into the initialisation handler "sitemap.lc" below.
+   
+   --
+   */
+
+   on sitemap.lc
+      start using stack (gRigA["APPPATH"] & "stacks/aagdblib.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/id3lib.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_Array.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_Fedwiki.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_Files.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_Gist.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_GitHub.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_HAP.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_HTML.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_LiveWorld.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_RemoteServer.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_RevIgniter.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_Scrape.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_Sitemap.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_Text.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_XML.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/lib_Youtube.livecode")
+      start using stack (gRigA["APPPATH"] & "stacks/libarraytools.livecode")
+   end sitemap.lc
+   
+   /* ==  CODE  ==
+   --
+   Here we put the public handlers the controller uses and exposes as urls.
+   --
+   */
+   
+   on index
+      list_ImageFileIDs
+   end index
+   
+   on list_ImageFileIDs
+      put sitemap_ListFileIDs ("Image") into fileIDs
+      put fileIDs
+   end list_ImageFileIDs
+   
+   on test
+      put rig_StackFolder() into stackFolder
+      put rigGetFileNames (stackFolder) into someArray
+      put stackFolder & CR & json_FromArray (someArray)
+   end test
+      
+   function rig_StackFolder
+      return gRigA["APPPATH"] & "stacks/"
+   end rig_StackFolder
+
+?>

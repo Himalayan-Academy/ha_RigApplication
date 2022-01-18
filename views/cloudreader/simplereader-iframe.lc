@@ -1,0 +1,27 @@
+<style type="text/css">
+.simplereader {
+	width: 100%;
+	height: auto;
+}
+</style>
+<script src="/assets/js/lexicon.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('iframe').load(function() {
+		var newSize = $('.simplereader').contents().find('body').height() + 100;
+        $('.article-wrapper').height(newSize);
+	    $('.simplereader').height(newSize);
+    });
+});
+         bindLexiconToID("#reader");
+</script>
+    
+	
+    </script>
+<iframe id="reader" class="simplereader" src="[[ gData["book"]["src"] ]]"></iframe>
+<div class="simplereader-navigation">
+<span><a href="[[ gData["book"]["previous page"] ]]">Previous</a></span> | 
+<span><a href="[[ gData["book"]["next page"] ]]">Next</a></span>
+
+</div>
+

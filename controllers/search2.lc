@@ -1,0 +1,99 @@
+<?lc
+
+/*
+SEARCH2.LC - The new search API for Himalayan Academy WebSite
+
+author: Andre Alves Garzia (andre@andregarzia.com)
+2013
+
+The objective of this controller is to provide a JSON server that can be used by other parts of the website and future programs to use
+the search functionality.
+
+This provides just a reading api so it is safe to use without authentication.
+
+*/
+
+
+global gControllerHandlers, gData
+
+-- common handlers
+put "search2,index,getitem" into gControllerHandlers
+
+command search2
+	# code...
+	set the errormode to "inline"
+	rigLoadModel "get-book-data"
+	rigLoaderLoadLibrary "epub"
+	rigLoaderLoadLibrary "audio"
+	rigLoaderLoadLibrary "art"
+	rigLoaderLoadLibrary "app"
+	rigLoaderLoadLibrary "slideshow"
+	rigLoaderLoadLibrary "arraytools"
+	--rigLoaderLoadLibrary "json"
+	rigLoaderLoadLibrary "cms"
+	rigLoaderLoadLibrary "Email"
+	rigLogMessage "debug","SEARCH2 Controller Loaded:" && rigFetchRSegment(2)
+end search2
+
+
+on getitem
+	-- this is an auxiliary command that outputs a record from 'jnanam' item table as a json. It can be used to fetch more data about a given record
+	put rigFetchRSegment(3) into tFileID
+	put getRecord(tFileID) into tRecordA
+	outputJson tRecordA
+end getitem
+
+on index
+	put rigRuriToAssoc(3) into tSearchTermsA
+	
+	put getItemsForSearchTerms(tSearchTermsA) into tRetValA
+	
+	put the seconds into tStart
+	outputjson tRetValA
+	rigLogMessage "debug", "Assembling result array json was" && the seconds - tStart && "secs"
+end index
+
+function getItemsForSearchTerms pA
+	rigDbSelect "file_id,title,sub_title,media_type,description,date_entered"
+	
+	repeat for each key k in pA
+		if k is among the items of "query" then
+			next repeat
+		end if
+		rigDbLike k, pA
+	end repeat
+	
+	if pA["query"] is not empty then
+		repeat for each word w in pSearchTermsA["query"]
+			replace quote with empty in w
+			rigDbOpenParenthesis
+			rigDbLike "title", w
+			-- AAG: Do we really need to search all these fields?!
+			repeat for each item tF in "sub_title,description,author,artists,composer,tags,source,deity,genre,language,audio_file_transcript,lyrics_original,lyrics_original_transliteration,lyrics_literal_translation,media_type"
+				rigDbOrLike tF, w
+			end repeat
+			rigDbCloseParenthesis
+		end repeat
+	end if
+	
+	put rigDbGet("item") into tQ
+	rigLogMessage "debug", "number of results:" &&  tQ["numrows"]
+	rigLogMessage "debug", "last query:" && rigDbLastQuery()
+	put the seconds into tStart
+	repeat with x = 1 to tQ["numrows"]
+		put rigDbRow(x) into tRetValA["records"][x]
+	end repeat	
+	rigLogMessage "debug", "Assembling result array from getItemsForSearchTerms() was" && the seconds - tStart && "secs"
+	
+	return tRetValA
+	
+end getItemsForSearchTerms
+
+
+# CALL THE CONTROLLER HANDLER
+# SEARCH2
+
+
+--| END OF search2.irev
+--| ./application/controllers/search2.lc
+----------------------------------------------------------------------

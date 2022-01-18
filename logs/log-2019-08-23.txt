@@ -1,0 +1,212 @@
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: LoremPixel Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Helper loaded: urlHelper
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Helper loaded: galleriaHelper
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Fetch HTML Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Extension loaded: 
+REQUESTED: - Fri, 23 Aug 2019 23:55:02 +0000: 
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: looking metadata for /
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Helper loaded: arrayHelper
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Database Driver Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Helper loaded: fileHelper
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Begin extract tabbed content
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: number of tabs: 4
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Tab: Our Gurus
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: search for tags -> our satgurus
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Session Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Helper loaded: stringHelper
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: A session cookie was not found.
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Session routines successfully run.
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Utils Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Utils constructor called
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: FastJSON Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: Dotted Slideshow Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:02 +0000: CMS Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: AAG DB Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Default Connection Set
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Markdown Library Loaded
+ERROR - Fri, 23 Aug 2019 23:55:03 +0000: markdown is not available.
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Array Tools Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Audio Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Page Metadata Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Libraries Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 20
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: LoremPixel Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: galleriaHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: For Teachers
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Fetch HTML Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for title -> history
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Extension loaded: 
+REQUESTED: - Fri, 23 Aug 2019 23:55:03 +0000: 
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: looking metadata for /
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: arrayHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: fileHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Begin extract tabbed content
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: number of tabs: 4
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: Our Gurus
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> our satgurus
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 11
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> teachers
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 20
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: For Teachers
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for title -> history
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: For Parents and Youth
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> parents
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 11
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> teachers
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 21
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> teen
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: For Parents and Youth
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> parents
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 1
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for title -> saivite hindu religion
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 4
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: Childrens Books
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> children
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: End extract tabbed content
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: keys:  1
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: value:  tabs
+title
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Final output sent to browser
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Total execution time: 0.3072
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 21
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> teen
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 1
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for title -> saivite hindu religion
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 4
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: Childrens Books
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> children
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: End extract tabbed content
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: keys:  1
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: value:  tabs
+title
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Final output sent to browser
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Total execution time: 0.3370
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Hooks Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Config Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: URI Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Router Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: No URI present. Default controller set.
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Output Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Input Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Global POST and COOKIE data sanitized
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Language Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Loader Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Controller Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: assetHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: urlHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Database Driver Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Session Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: stringHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: A session cookie was not found.
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Session routines successfully run.
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Utils Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Utils constructor called
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: FastJSON Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Dotted Slideshow Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: CMS Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: AAG DB Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Default Connection Set
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Markdown Library Loaded
+ERROR - Fri, 23 Aug 2019 23:55:03 +0000: markdown is not available.
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Array Tools Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Audio Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Page Metadata Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Libraries Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: LoremPixel Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: galleriaHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Fetch HTML Library Loaded
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Extension loaded: 
+REQUESTED: - Fri, 23 Aug 2019 23:55:03 +0000: 
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: looking metadata for /
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: arrayHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Helper loaded: fileHelper
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Begin extract tabbed content
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: number of tabs: 4
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: Our Gurus
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> our satgurus
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 20
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: For Teachers
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for title -> history
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 11
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> teachers
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: For Parents and Youth
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> parents
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 21
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> teen
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 1
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for title -> saivite hindu religion
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 4
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Tab: Childrens Books
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: search for tags -> children
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: End extract tabbed content
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: keys:  1
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: value:  tabs
+title
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Final output sent to browser
+DEBUG - Fri, 23 Aug 2019 23:55:03 +0000: Total execution time: 0.3018

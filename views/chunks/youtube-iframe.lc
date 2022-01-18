@@ -1,0 +1,7 @@
+<style>
+iframe.youtube-video {
+    max-width: [[ gData["video"]["width"] ]]px !important;
+}
+</style>
+
+<iframe class="youtube-video" width="[[ gData["video"]["width"] ]]" height="[[ gData["video"]["height"] ]]" src="//www.youtube.com/embed/[[ gData["video"]["id"] ]]" frameborder="0" [[ gData["video"]["style"] ]] allowfullscreen></iframe>

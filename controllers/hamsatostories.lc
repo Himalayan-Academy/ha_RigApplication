@@ -1,0 +1,288 @@
+<?lc
+
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "hamsatostories,index,login,search,savestory" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+/* 
+Keyword search:
+select * from image where file_missing = false and lower(metadata::text)::jsonb->'keywords' ?| array[ 'siva']
+
+All data search:
+select * from image where file_missing = false and metadata::text ILIKE ?;
+
+TODO: SEARCH, ADD COLLECTION POPUP
+*/
+
+# AUXILIARY FUNCTIONS
+
+function verifyLogin pLogin, pPassword
+	switch
+		case pLogin is empty
+		case pPassword is empty
+			return "verifyloginerr, login or password empty."
+		break
+	end switch
+	
+	put url "binfile:/home/devhap/etc/acl.xml" into tXML
+	put revCreateXMLTree(tXML, true, true, false) into gData["xml id"]
+	if gData["xml id"] is not a number then
+		return "verifyloginerr, bad acl file."
+	end if
+	
+	put revXMLMatchingNode(gData["xml id"], "/acl/users", "user", "email", pLogin, 1) into tFoundPaths
+
+	put revXMLAttribute(gData["xml id"], tFoundPaths, "password") into tPassword
+	if pPassword is not tPassword then
+		return "verifyloginerr, wrong login or password."
+	end if
+	
+	put pLogin into gData["user"]["login"]
+	put revXMLAttribute(gData["xml id"], tFoundPaths, "group") into gData["user"]["group"]
+	return true
+end verifylogin
+
+command trim @pText
+	repeat while char 1 of pText is " "
+		delete char 1 of pText
+	end repeat
+	
+	repeat while char -1 of pText is " "
+		delete char -1 of pText
+	end repeat
+end trim
+
+function listToSQLArray pList
+	put toLower(pList) into pListA
+	split pListA by comma
+	put "array[" into tBuf
+	
+	repeat for each key k in pListA
+		trim pListA[k]
+		put "'" & pListA[k] &"', " after tBuf
+	end repeat
+	
+	delete char -2 to -1 of tBuf
+	put "]" after tBuf
+	return tBuf
+end listToSQLArray
+
+function getKeywordSQL pKeywords
+	if pKeywords is not empty then
+		return " and lower(metadata::text)::jsonb->'keywords' ?|" && listToSQLArray(pKeywords)
+	else
+		return empty
+	end if
+end getKeywordSQL
+
+function getDescriptionSQL pDescription
+	if pDescription is not empty then
+		return " and ( (lower(metadata::text)::jsonb->>'caption-abstract' ILIKE '%" & pDescription & "%') or (lower(metadata::text)::jsonb->>'description' ILIKE '%" & pDescription & "%'))"
+	else
+		return empty
+	end if
+end getDescriptionSQL
+
+function getCollectionSQL pCollectionName
+	return getKeywordSQL("Collection" && pCollectionName)
+end getCollectionSQL
+	
+function getAllCollections
+	put "select keyword, count(distinct (image_id, keyword)) from image, jsonb_array_elements(case jsonb_typeof(metadata->'Keywords') when 'array' then metadata->'Keywords' else '[]' end) keyword group by keyword order by count desc;" into tSQL
+	
+	dbSetSQL tSQL
+	put dbGet() into tResultsA
+	repeat for each key k in tResultsA
+		if tResultsA[k]["keyword"] begins with "Collection" then
+			put tResultsA[k]["keyword"] & cr after tCollections
+		end if
+	end repeat
+	replace quote with empty in tCollections
+	replace "Collection " with empty in tCollections
+	delete char -1 of tCollections
+	sort tCollections
+	return tCollections
+end getAllCollections
+	
+# CONTROLLER COMMANDS
+
+
+command hamsatostories -- constructor
+	rigLoaderLoadLibrary "aagdblib"
+	rigLoadExtension "com.livecode.library.json"
+
+	# let's log what page is the user hits on
+	rigLogMessage "Requested:", rigUriString()
+	
+	put revOpenDatabase("postgresql", "127.0.0.1", "hamsa", "devhap", "Blue1Silver0God8", "sslmode=require") into tHamsaID
+
+	if tHamsaID is not a number then
+		throw tHamsaID
+	end if
+	
+	dbSetDefaultConnectionID tHamsaID
+end hamsatostories
+
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFIED IN THE URL
+command index
+	get rigLoadView("hamsatostories/login")
+end index
+
+command login 
+	put $_POST["login"] into tLogin
+	put $_POST["password"] into tPassword
+
+	if verifylogin(tLogin, tPassword) then
+		put tLogin into tSessionData["login"]
+		put tPassword into tSessionData["password"]
+
+		rigSetSessUserdata tSessionData
+		put getAllCollections() into gData["collections"]
+		get rigLoadView("hamsatostories/search")
+	else
+		put verifylogin(tLogin, tPassword) into gData["error"] 
+		get rigLoadView("hamsatostories/error")
+	end if
+end login 
+
+command search
+	put $_POST["keywords"] into tKeywords
+	put $_POST["description"] into tDescription
+	put $_POST["collection"] into tCollection
+	put rigSessUserdata("login") into tLogin
+	put rigSessUserdata("password") into tPassword
+
+	if not verifylogin(tLogin, tPassword) then
+		put verifylogin(tLogin, tPassword) into gData["error"] 
+		get rigLoadView("hamsatostories/error")
+		exit search
+	end if
+	try		
+		put tKeywords into gData["keywords"]
+		put tDescription into gData["description"]
+		put tCollection into gData["collection"]
+	    
+		put getKeywordSQL(tKeywords) into tKeywordsWhere
+		put getDescriptionSQL(tDescription) into tDescriptionWhere
+		put getCollectionSQL(tCollection) into tCollectionWhere
+		
+		put "select * from image where file_missing = false" into tSQLPrefix
+		
+		put the merge of "[[tSQLPrefix]] [[tKeywordsWhere]] [[tDescriptionWhere]] [[tCollectionWhere]]" into tSQL
+		#put tSQL into gData["debug"] -- Comment out to see SQL
+		
+		dbSetSQL tSQL
+		put dbGet("images") into tResultsA
+		
+	catch n
+		rigLogMessage "error", n, true
+		exit search
+	end try
+	
+	if the number of lines in the keys of tResultsA > 0 then 
+		put tResultsA into gData["results"]
+		rigSetSessFlashdata "results", arrayEncode(tResultsA, "7.0")
+		get rigLoadView("hamsatostories/results")
+	else
+		put "No results" into gData["error"]
+		get rigLoadview("hamsatostories/error")
+	end if
+end search 
+
+command savestory
+	put $_POST["name"] into tStoryName
+	put rigSessFlashdata("results") into tResultsRaw
+	put rigSessUserdata("login") into tLogin
+	put rigSessUserdata("password") into tPassword
+
+	if not verifylogin(tLogin, tPassword) then
+		put verifylogin(tLogin, tPassword) into gData["error"] 
+		get rigLoadView("hamsatostories/error")
+		exit savestory
+	end if
+	
+	try
+		put arrayDecode(tResultsRaw) into tResultsA
+		
+		if the number of lines in the keys of tResultsA is 0 then 
+			put "No results" into gData["error"]
+			get rigLoadview("hamsatostories/error")
+			exit savestory
+		end if
+		
+	
+		-- Sanitize story name
+		repeat for each item tChar in format(".,\r,\t,\\,/,$,{,},[,],(,)")
+			replace tChar with empty in tStoryName
+		end repeat
+	
+		-- create folder. 
+		put $_SERVER["DOCUMENT_ROOT"] & "/media/stories/" & tStoryName into tStoryFolder
+		
+		if there is not a folder tStoryFolder then
+			create folder tStoryFolder
+		end if
+		
+		put "folder:" && tStoryFolder & cr into gData["debug"]
+		
+		-- copy stuff.
+		repeat for each key x in tResultsA
+			put tResultsA[x] into tA
+		
+			
+			put jsonImport(tA["metadata"]) into tMetadataA
+			
+			set the itemdel to "/"
+			put item -1 of tA["path"] into tFilename
+			set the itemdel to "."
+			put item 1 of tFilename into tBasename
+			put tStoryFolder & "/" & tBasename & ".caption" into tDescriptionFile
+			put tStoryFolder & "/" & tBasename & ".keywords" into tKeywordsFile
+			put tStoryFolder & "/" & tFilename into tImageFile
+			
+			
+			put url ("binfile:" & tA["path"]) into url ("binfile:" & tImageFile)
+			
+			if the number of lines in the keys of tMetadataA["Keywords"] is not 0 then
+				put tMetadataA["Keywords"] into tKeywords
+				combine tKeywords with comma
+				put tKeywords into url ("file:" & tKeywordsFile)
+			end if
+			
+			set the itemdel to comma
+			repeat for each item tK in "Description,Caption-Abstract"
+				if tMetadataA[tK] is not empty then
+					put tMetadata[tK] into tCaption
+				end if
+			end repeat
+			
+			if tCaption is not empty then
+				put tCaption into url ("file:" & tDescriptionFile)
+			end if
+			
+			put cr & "file:" && tImageFile & cr after gData["debug"]
+			put "keywords:" && tKeywordsFile & cr after gData["debug"]
+			put "caption:" && tDescriptionFile & cr after gData["debug"]
+			
+		end repeat
+		
+		
+	catch n
+		rigLogMessage "error", n, true
+		exit savestory
+	end try
+	
+	put tStoryName into gData["name"]
+	put tResultsA into gData["results"]
+	get rigLoadView("hamsatostories/saved")
+
+end savestory
+
+--| END OF hamsatostories.lc
+--| ./application/controllers/hamsatostories.lc
+----------------------------------------------------------------------

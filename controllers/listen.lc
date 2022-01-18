@@ -1,0 +1,58 @@
+<?lc
+
+global gControllerHandlers, gData
+
+put "listen,index" into gControllerHandlers
+
+command listen
+	# code...
+	rigLoaderLoadLibrary "audio"
+	rigLogMessage "debug","Listen Controller Loaded:" && rigFetchRSegment(2)
+end listen
+
+# KT: See config/routes.irev where "listen" is mapped to this "listen" controller  default "index" handler.
+# See  /libraries/audio.lc where gData is poked with all the fields for  a record
+# that matches the file ID. Then if you want to play with content display, just poke the different
+# gData key/values in the view audio/simpleplayer view file
+
+# we need to move the logic in the view file over here to this controller one day 
+# so that the view file is presentation symantics only
+
+command index
+	# SET PAGE TITLE
+	set the outputTextEncoding to "utf-8"
+	put "YourPageTitle" into gData["pageTitle"]
+	
+	put rigFetchRSegment(3) into tAudioA["file_id"]
+	put rigFetchRSegment(4) into tFormatA["format_name"]
+	rigLogMessage "debug","audiodump:" && tAudioA["file_id"]
+	put findAudioByArray(tAudioA) into gData
+	if gData is false then
+		put "audioerr, can't find audio"
+		exit index
+	end if 
+	put gData[1] into gData
+	logArrayData gData
+	put getAudioFormat(gData, tFormatA["format_name"]) into tFormatA
+	logArrayData tFormatA
+	get (folderForAudio(gData) & "/" & tFormatA["filename"] )
+	replace $_SERVER["DOCUMENT_ROOT"] with empty in it
+	put it into gData["file_path"]
+		rigLogMessage "debug","audio-file-path:" && gData["file_path"]
+	put ("audio/" & tFormatA["format_name"] ) into gData["format_mime"]
+	
+	# Filter audio data for display (see library constructaudiodata.livecodescript)
+	# this builds the html for each audio type 
+	# You must put this *after* the above or there is nothing in gData!
+	   
+	    -- rigLoaderLoadLibrary "construct-audio-data"
+		 rigLoaderLoadLibrary "constructaudiodata" ---------- rabit
+        buildAudioDataDisplay
+
+	# LOAD THE VIEW FILE
+	get rigLoadView("audio/simpleplayer")
+end index
+
+--| END OF listen.irev
+--| ./application/controllers/listen.irev
+----------------------------------------------------------------------

@@ -1,0 +1,61 @@
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: Wordpress REST Library Loaded
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: Result:invalid URL: 
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: It:
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: Extension loaded: 
+REQUESTED: - Sat, 26 Oct 2019 23:55:09 -0700: 
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: looking metadata for /
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: Begin extract tabbed content
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: number of tabs: 4
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: Tab: Our Gurus
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: tab node: search
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: search for media_type -> book
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: search for tags -> our satgurus
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: results: 20
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: Tab: For Teachers
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: tab node: search
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: search for media_type -> book
+DEBUG - Sat, 26 Oct 2019 23:55:09 -0700: search for title -> history
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: results: 11
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: tab node: search
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for media_type -> book
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for tags -> teachers
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: results: 6
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: Tab: For Parents and Youth
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: tab node: search
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for media_type -> book
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for tags -> parents
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: results: 21
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: tab node: search
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for media_type -> book
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for tags -> teen
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: results: 1
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: tab node: search
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for media_type -> book
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for title -> saivite hindu religion
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: results: 4
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: Tab: Childrens Books
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: tab node: search
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for media_type -> book
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: search for tags -> children
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: results: 6
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: End extract tabbed content
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: keys:  1
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: value:  tabs
+title
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: Result:invalid URL: 
+DEBUG - Sat, 26 Oct 2019 23:55:10 -0700: It:
+DEBUG - Sat, 26 Oct 2019 23:55:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sat, 26 Oct 2019 23:55:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 26 Oct 2019 23:55:14 -0700: Final output sent to browser
+DEBUG - Sat, 26 Oct 2019 23:55:14 -0700: Total execution time: 4.6825
+DEBUG - Sat, 26 Oct 2019 23:55:15 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sat, 26 Oct 2019 23:55:15 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 26 Oct 2019 23:55:15 -0700: Final output sent to browser
+DEBUG - Sat, 26 Oct 2019 23:55:15 -0700: Total execution time: 5.7653

@@ -1,0 +1,50 @@
+<?lc
+
+# we call this controller for all cron jobs
+# If needed we can externalize long scripts to
+# the cronjobs folder (like libraries) and then
+# add these here as includes
+# in the cron tab all we need to be sure to use the full
+# absolute path so that revIgnire will take handle it
+# dev.himalayanacademy.com/cronjobs/buildDailyMCLesson
+#
+
+global gControllerHandlers,gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "cronjobs,index,run" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE MAIN CONTROLLER HANDLER CALLED "the Constructor"
+# this command is the same name as this file
+    
+command cronjobs
+
+
+end cronjobs
+
+command index
+	
+end index
+
+command run
+   	put rigFetchRsegment(3) into tCronJobToRun
+ 	if there is a file ($_SERVER["document_root"] & "/application/ha/cronjobs/" & tCronJobToRun & ".lc") then
+		rigLogMessage "info", "running cronjob:" && ($_SERVER["document_root"] & "/application/ha/cronjobs/" & tCronJobToRun & ".lc")
+		include ($_SERVER["document_root"] & "/application/ha/cronjobs/" & tCronJobToRun & ".lc")
+		rigLogMessage "info", "end of cronjob"
+	else
+		rigLogMessage "error","No such cronjob:" && ($_SERVER["document_root"] & "/application/ha/cronjobs/" & tCronJobToRun & ".lc")
+		put header "Content-Type: text/plain"
+		put "error: no such cron" 
+	end if
+end run
+
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF cronjobs.lc
+--| ./application/ha/controllers/cronjobs.lc
+----------------------------------------------------------------------

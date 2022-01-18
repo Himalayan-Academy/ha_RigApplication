@@ -1,0 +1,1040 @@
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: info/contact --> sidebar monastery/monastery-sidebar.html
+at, 2 Nov 2019 23:58:39 -0700: looking for /home/devhap/public_html/html/monastery/about/default.metadata
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: found metadata file at: /home/devhap/public_html/html/info/contact.metadata
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: found metadata file at: /home/devhap/public_html/html/monastery/about/default.metadata
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: info/contact --> template two-column
+secondary_navigation cat-about-the-monastery
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: monastery/about/default.metadata --> title All About Kauai's Hindu Monastery
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: monastery/about/default.metadata --> sidebar monastery/about/about-sidebar.html
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: info/contact --> page_heading Contact Us
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: fetching page:  monastery/about/himalayan-academy
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: info/contact --> title Kauai's Hindu Monastery
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: fetching page:  info/contact
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: loading external page: /home/devhap/public_html/html/info/contact.html
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: external file was loaded as:  <h1 class="h1">
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: looking metadata for /info/contact
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: loading external page: /home/devhap/public_html/html/monastery/about/himalayan-academy.html
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: external file was loaded as:  <h1>Himalayan Academy</h1>
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: looking metadata for /monastery/about/himalayan-academy
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: Total execution time: 0.1594
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:58:39 -0700: Total execution time: 0.1639
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:27 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:27 -0700: site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: searching with GET
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: search terms
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: page: 4
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: tags: parampara
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: search tags = parampara
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: number of results: 9
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%parampara%' 
+ORDER BY `date_entered` DESC 
+LIMIT 27, 9
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 1 the-guru-chronicles_y-09_rajam
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 2 the-guru-chronicles_y-10_rajam
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 3 the-guru-chronicles_y-11_rajam
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 4 the-guru-chronicles_y-12_rajam
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 5 the-guru-chronicles_y-56_rajam
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 6 gr_mahas_04_pt1
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 7 gr_mahas_04_pt2
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 8 gr_mahas_04_pt3
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: 9 gr_mahas_04_pt4
+DEBUG - Sat, 2 Nov 2019 23:59:27 -0700: search tags = parampara
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: search terms stored on session. Bg0AAAACAAR0YWdzCAAJcGFyYW1wYXJhAARwYWdlCAABNA==
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: sess: 
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: next page /site/search/tags/parampara/page/5
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: previous page /site/search/tags/parampara/page/3
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: result count: 9
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: getAudioFile: /media/audio/chants/gr_mahas_04_pt1/gr_mahas_04_pt1.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: getAudioFile: /media/audio/chants/gr_mahas_04_pt2/gr_mahas_04_pt2.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: getAudioFile: /media/audio/chants/gr_mahas_04_pt3/gr_mahas_04_pt3.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: getAudioFile: /media/audio/chants/gr_mahas_04_pt4/gr_mahas_04_pt4.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/parampara/page/4
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Total execution time: 0.4550
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:28 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:28 -0700: site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: searching with GET
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: search terms
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: page: 2
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: tags: history
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: search tags = history
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: number of results: 8
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%history%' 
+ORDER BY `date_entered` DESC 
+LIMIT 9, 9
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: 1 hindu-history-chapter-three-lesson-plans
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: 2 hindu-history-chapter-four-lesson-plans
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: 3 hindu-history-chapter-five-lesson-plans
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: 4 lemurian-scrolls
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: 5 hindu-history-chapter-five
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: 6 the-history-of-hindu-india
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: 7 guru-mantra
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: 8 hinduism-today-octnovdec-2009-summary
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: search tags = history
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: search terms stored on session. Bg0AAAACAAR0YWdzCAAHaGlzdG9yeQAEcGFnZQgAATI=
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: sess: 
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: next page /site/search/tags/history/page/3
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: previous page /site/search/tags/history/page/1
+DEBUG - Sat, 2 Nov 2019 23:59:28 -0700: result count: 8
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/tags/history/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Total execution time: 0.4754
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:29 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:29 -0700: site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: searching with GET
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: search terms
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: description: monastery
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: media_type: video
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: page: 7
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: search media_type = video
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: search description = monastery
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: number of results: 9
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `media_type`  LIKE '%video%'
+AND  `description`  LIKE '%monastery%' 
+ORDER BY `date_entered` DESC 
+LIMIT 54, 9
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 1 iraivan-temple-avudaiyar-casting-at-swamimalai-hd
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 2 bd_publishers-desk-jan-feb-mar-2009
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 3 bd_first-havana-at-iraivan-temple-hd
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 4 gurudeva-mahasamadhi-abhishekam-2008
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 5 bd_chicago-satsang-may-2008-part-6
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 6 bd_chicago-satsang-may-2008-part-5
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 7 bd_chicago-satsang-may-2008-part-4
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 8 bd_chicago-satsang-may-2008-part-3
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: 9 bd_iraivan-temple-status-september-2008
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: search media_type = video
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: search description = monastery
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: search terms stored on session. Bg0AAAADAARwYWdlCAABNwAKbWVkaWFfdHlwZQgABXZpZGVvAAtkZXNjcmlwdGlvbggACW1v
+bmFzdGVyeQ==
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: sess: 
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: next page /site/search/media_type/video/description/monastery/page/8
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: previous page /site/search/media_type/video/description/monastery/page/6
+DEBUG - Sat, 2 Nov 2019 23:59:29 -0700: result count: 9
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: url with search terms. /site/search/media_type/video/description/monastery/page/7
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Total execution time: 0.6912
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:30 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:30 -0700: view/bd_2007-03-27_war-creating-peace-part-2
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: loading bd_2007-03-27_war-creating-peace-part-2
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: get record: 0
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: getGurudevaCircleQuote: 0
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: its a audio/inspiredtalk
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2007/bd_2007-03-27_war-creating-peace-part-2/bd_2007-03-27_war-creating-peace-part-2.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2007/bd_2007-03-27_war-creating-peace-part-2/bd_2007-03-27_war-creating-peace-part-2.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:30 -0700: Total execution time: 0.2513
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:31 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:31 -0700: site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: searching with GET
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: search terms
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: genre: natchintanai
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: page: 2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: search genre = natchintanai
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: number of results: 9
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `genre`  LIKE '%natchintanai%' 
+ORDER BY `date_entered` DESC 
+LIMIT 9, 9
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 1 anbar-anbathu_sns
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 2 thiruneerum-ainth-elutthum_umsk
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 3 sooriyan-varuvatha_umsk
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 4 selva-gurunatha_umsk.
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 5 koovu-kuyiley-1_umsk
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 6 pg-58_paar-aiyaney_umsk
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 7 guru-bhakti-greatest-blessing_bp-sp
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 8 divine-grace-sweeps-over_bp-sp
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: 9 to-the-father-to-the-mother-mangalam
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: search genre = natchintanai
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: search terms stored on session. Bg0AAAACAAVnZW5yZQgADG5hdGNoaW50YW5haQAEcGFnZQgAATI=
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: sess: 
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: next page /site/search/genre/natchintanai/page/3
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: previous page /site/search/genre/natchintanai/page/1
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: result count: 9
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/anbar-anbathu_sns/anbar-anbathu_sns.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/thiruneerum-ainth-elutthum_umsk/
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/sooriyan-varuvatha_umsk/
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/selva-gurunatha_umsk./selva-gurunatha_umsk..m4a
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/koovu-kuyiley-1_umsk/koovu-kuyiley-1_umsk.m4a
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/pg-58_paar-aiyaney_umsk/pg-58_paar-aiyaney_umsk.m4a
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/guru-bhakti-greatest-blessing_bp-sp/guru-bhakti-greatest-blessing_bp-sp.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/divine-grace-sweeps-over_bp-sp/divine-grace-sweeps-over_bp-sp.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: getAudioFile: /media/audio/songs/natchintanai/to-the-father-to-the-mother-mangalam/to-the-father-to-the-mother-mangalam.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: url with search terms. /site/search/genre/natchintanai/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Total execution time: 0.5297
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:31 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:32 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:32 -0700: site/search/tags/yamas and niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: searching with GET
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: search terms
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: page: 2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: tags: yamas and niyamas
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: search tags = yamas and niyamas
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: number of results: 9
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%yamas and niyamas%' 
+ORDER BY `date_entered` DESC 
+LIMIT 9, 9
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 1 bd_2003-07-22_niyama-5-ishvarapujana-wo
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 2 bd_2003-07-19_niyama-4-astikya-faith
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 3 bd_2003-07-18_niyama-3-dana-giving
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 4 bd_2003-07-17_niyama-2-santosha-content
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 5 bd_2003-06-16_yama-9-mitahara-moderat
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 6 bd_2003-06-12_yama-8-arjava-honesty
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 7 bd_2003-06-11_yama-7-daya-compassion
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 8 bd_2003-06-10_yama-6-dhriti-steadfast
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: 9 bd_2003-06-06_yama-5-kshama-patience
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: search tags = yamas and niyamas
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: search terms stored on session. Bg0AAAACAAR0YWdzCAAReWFtYXMgYW5kIG5peWFtYXMABHBhZ2UIAAEy
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: sess: 
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: next page /site/search/tags/yamas+and+niyamas/page/3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: previous page /site/search/tags/yamas+and+niyamas/page/1
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: result count: 9
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-07-22_niyama-5-ishvarapujana-wo/bd_2003-07-22_niyama-5-ishvarapujana-wo.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-07-19_niyama-4-astikya-faith/bd_2003-07-19_niyama-4-astikya-faith.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-07-18_niyama-3-dana-giving/bd_2003-07-18_niyama-3-dana-giving.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-07-17_niyama-2-santosha-content/bd_2003-07-17_niyama-2-santosha-content.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-06-16_yama-9-mitahara-moderat/bd_2003-06-16_yama-9-mitahara-moderat.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-06-12_yama-8-arjava-honesty/bd_2003-06-12_yama-8-arjava-honesty.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-06-11_yama-7-daya-compassion/bd_2003-06-11_yama-7-daya-compassion.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-06-10_yama-6-dhriti-steadfast/bd_2003-06-10_yama-6-dhriti-steadfast.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-06-06_yama-5-kshama-patience/bd_2003-06-06_yama-5-kshama-patience.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: url with search terms. /site/search/tags/yamas+and+niyamas/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Total execution time: 0.5282
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:32 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:32 -0700: site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: searching with GET
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: search terms
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: author: subramuniyaswami
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: media_type: audio
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: page: 11
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: search author = subramuniyaswami
+DEBUG - Sat, 2 Nov 2019 23:59:32 -0700: search media_type = audio
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: number of results: 36
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `author`  LIKE '%subramuniyaswami%'
+AND  `media_type`  LIKE '%audio%' 
+ORDER BY `date_entered` DESC 
+LIMIT 360, 36
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 1 gr_2000-08-01_meaning-of-temple-sacrame
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 2 gr_2000-07-29_soul-mates-and-marriage
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 3 gr_2000-07-28_hinduism-is-boundless
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 4 gr_2000-07-27_transforming-sexual-thoug
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 5 gr_2000-07-26_vedanta-and-siddhanta
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 6 gr_2000-07-25_children-in-inter-religio
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 7 gr_2000-07-22_todays-hinduism
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 8 gr_2000-07-21_not-bound-by-birth
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 9 gr_2000-07-20_take-a-bath
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 10 gr_2000-07-19_inter-religious-marriage
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 11 gr_2000-07-18_maha-vasana-daha-tantra-c
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 12 gr_2000-07-14_maha-vasana-daha-tantra
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 13 gr_2000-07-13_tips-for-success
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 14 gr_2000-07-12_children-in-love
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 15 gr_2000-07-11_the-bhagavad-gita-interfa
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 16 gr_2000-07-10_a-veggie-query
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 17 gr_2000-07-07_depression-found-in-maha
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 18 gr_2000-07-06_church-and-state
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 19 gr_2000-07-05_dealing-with-noise-pollut
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 20 gr_2000-07-04_the-husband-is-responsibl
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 21 gr_2000-07-03_the-flower-penance
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 22 gr_2000-07-02_womens-dress-as-shown-in
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 23 gr_2000-06-29_the-company-we-keep
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 24 gr_2000-06-28_save-the-children-and-the
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 25 gr_2000-06-27_when-kids-enter-college
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 26 gr_2000-06-26_your-claim-to-fame
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 27 gr_2000-06-23_why-so-many-isms
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 28 gr_2000-06-22_finding-a-guru
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 29 gr_2000-06-21_how-dare-i-meditate
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 30 gr_2000-06-20_experiencing-inner-calm
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 31 gr_2000-06-19_men-and-women-in-the-work
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 32 gr_2000-06-18_deciding-to-seek-god
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 33 gr_2000-06-14_whos-poorer-house-home-ho
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 34 gr_2000-06-13_east-and-west
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 35 gr_2000-06-12_siva-lingam-worship
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: 36 gr_2000-06-11_praying-to-pictures
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: search author = subramuniyaswami
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: search media_type = audio
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: search terms stored on session. Bg0AAAADAAZhdXRob3IIABBzdWJyYW11bml5YXN3YW1pAAptZWRpYV90eXBlCAAFYXVkaW8A
+BHBhZ2UIAAIxMQ==
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: sess: 
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: next page /site/search/media_type/audio/author/subramuniyaswami/page/12
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: previous page /site/search/media_type/audio/author/subramuniyaswami/page/10
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: result count: 36
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-08-01_meaning-of-temple-sacrame/gr_2000-08-01_meaning-of-temple-sacrame.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-29_soul-mates-and-marriage/gr_2000-07-29_soul-mates-and-marriage.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-28_hinduism-is-boundless/gr_2000-07-28_hinduism-is-boundless.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-27_transforming-sexual-thoug/gr_2000-07-27_transforming-sexual-thoug.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-26_vedanta-and-siddhanta/gr_2000-07-26_vedanta-and-siddhanta.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-25_children-in-inter-religio/gr_2000-07-25_children-in-inter-religio.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-22_todays-hinduism/gr_2000-07-22_todays-hinduism.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-21_not-bound-by-birth/gr_2000-07-21_not-bound-by-birth.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-20_take-a-bath/gr_2000-07-20_take-a-bath.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-19_inter-religious-marriage/gr_2000-07-19_inter-religious-marriage.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-18_maha-vasana-daha-tantra-c/gr_2000-07-18_maha-vasana-daha-tantra-c.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-14_maha-vasana-daha-tantra/gr_2000-07-14_maha-vasana-daha-tantra.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-13_tips-for-success/gr_2000-07-13_tips-for-success.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-12_children-in-love/gr_2000-07-12_children-in-love.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-11_the-bhagavad-gita-interfa/gr_2000-07-11_the-bhagavad-gita-interfa.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-10_a-veggie-query/gr_2000-07-10_a-veggie-query.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-07_depression-found-in-maha/gr_2000-07-07_depression-found-in-maha.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-06_church-and-state/gr_2000-07-06_church-and-state.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-05_dealing-with-noise-pollut/gr_2000-07-05_dealing-with-noise-pollut.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-04_the-husband-is-responsibl/gr_2000-07-04_the-husband-is-responsibl.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-03_the-flower-penance/gr_2000-07-03_the-flower-penance.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-02_womens-dress-as-shown-in/gr_2000-07-02_womens-dress-as-shown-in.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-29_the-company-we-keep/gr_2000-06-29_the-company-we-keep.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-28_save-the-children-and-the/gr_2000-06-28_save-the-children-and-the.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-27_when-kids-enter-college/gr_2000-06-27_when-kids-enter-college.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-26_your-claim-to-fame/gr_2000-06-26_your-claim-to-fame.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-23_why-so-many-isms/gr_2000-06-23_why-so-many-isms.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-22_finding-a-guru/gr_2000-06-22_finding-a-guru.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-21_how-dare-i-meditate/gr_2000-06-21_how-dare-i-meditate.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-20_experiencing-inner-calm/gr_2000-06-20_experiencing-inner-calm.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-19_men-and-women-in-the-work/gr_2000-06-19_men-and-women-in-the-work.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-18_deciding-to-seek-god/gr_2000-06-18_deciding-to-seek-god.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-14_whos-poorer-house-home-ho/gr_2000-06-14_whos-poorer-house-home-ho.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-13_east-and-west/gr_2000-06-13_east-and-west.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-12_siva-lingam-worship/gr_2000-06-12_siva-lingam-worship.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-06-11_praying-to-pictures/gr_2000-06-11_praying-to-pictures.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:33 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: url with search terms. /site/search/media_type/audio/author/subramuniyaswami/page/11
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Total execution time: 1.2042
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:34 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:34 -0700: view/bd_2018-07-29_path-to-siva-lesson-50_commentary
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: loading bd_2018-07-29_path-to-siva-lesson-50_commentary
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: get record: 0
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: getGurudevaCircleQuote: 0
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: its a audio/inspiredtalk
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-07-29_path-to-siva-lesson-50_commentary/bd_2018-07-29_path-to-siva-lesson-50_commentary.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-07-29_path-to-siva-lesson-50_commentary/bd_2018-07-29_path-to-siva-lesson-50_commentary.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Total execution time: 0.2175
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:34 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:35 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:35 -0700: site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: searching with GET
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: search terms
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: tags: worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: search tags = worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: number of results: 9
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%worship%' 
+ORDER BY `date_entered` DESC 
+LIMIT 9
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 1 bd_2015-09-06_bhakti-key-to-meditation
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 2 kamika-agama-uttara-pada-part-2
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 3 kamika-agama-purva-pada-part-1
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 4 bd_2014-12-30_face-and-mitigate-your-karma
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 5 a-10-minute-spiritual-workout-publishers-desk
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 6 bd_2013-07-09_moderate-consistent-practice
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 7 god-of-fear-god-of-love-publishers-desk
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 8 siva-panchakshara-stotram_nd
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: 9 guru-purnima_pt
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: search tags = worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: search terms stored on session. Bg0AAAABAAR0YWdzCAAHd29yc2hpcA==
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: sess: 
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: next page /site/search/tags/worship/page/2
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: previous page /site/search/tags/worship/page/0
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: result count: 9
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-09-06_bhakti-key-to-meditation/bd_2015-09-06_bhakti-key-to-meditation.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2014/bd_2014-12-30_face-and-mitigate-your-karma/bd_2014-12-30_face-and-mitigate-your-karma.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2013/bd_2013-07-09_moderate-consistent-practice/bd_2013-07-09_moderate-consistent-practice.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: getAudioFile: /media/audio/songs/stotram/siva-panchakshara-stotram_nd/siva-panchakshara-stotram_nd.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: url with search terms. /site/search/tags/worship
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Total execution time: 0.5017
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Hooks Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Config Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: URI Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Router Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Output Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Input Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Global POST and COOKIE data sanitized
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Language Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Loader Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Controller Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: assetHelper
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: urlHelper
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Database Driver Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Session Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: stringHelper
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Session routines successfully run.
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Utils Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Utils constructor called
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: FastJSON Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Library_Name Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: CMS Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: AAG DB Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Default Connection Set
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Markdown Library Loaded
+ERROR - Sat, 2 Nov 2019 23:59:35 -0700: markdown is not available.
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Array Tools Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Audio Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Page Metadata Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Libraries Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Art Library Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Construct Audio Data Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: ePub Library Loaded
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: fileHelper
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: arrayHelper
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Sat, 2 Nov 2019 23:59:35 -0700: view/bd_2018-09-18_path-to-siva-lesson-53_commentary
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: loading bd_2018-09-18_path-to-siva-lesson-53_commentary
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: get record: 0
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: getGurudevaCircleQuote: 0
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: its a audio/inspiredtalk
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-09-18_path-to-siva-lesson-53_commentary/bd_2018-09-18_path-to-siva-lesson-53_commentary.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-09-18_path-to-siva-lesson-53_commentary/bd_2018-09-18_path-to-siva-lesson-53_commentary.mp3
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Final output sent to browser
+DEBUG - Sat, 2 Nov 2019 23:59:35 -0700: Total execution time: 0.2270

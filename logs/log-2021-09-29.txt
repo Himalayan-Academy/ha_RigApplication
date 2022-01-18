@@ -1,0 +1,2015 @@
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: number of results: 721
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: last query: SELECT `file_id` 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `author`  LIKE '%Bodhinatha%'
+AND  `media_type`  LIKE '%inspiredtalk%'
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Randomizer: bd_2012-05-08_soul-five-bodies
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Random Promoted Collection! media_type:inspiredtalk,author:bodhinatha,description:youth
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records author = bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records description = youth
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: number of results: 18
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '4099'
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Randomizer: bd_2010-06-19_self-image-moksha
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Random Promoted Collection! media_type:inspiredtalk,author:bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records author = bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Randomizer: bd_2007-05-11_story-of-awareness
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: audio: bd_2007-05-11_story-of-awareness
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: number of results: 721
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '4099'
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2007/bd_2007-05-11_story-of-awareness/bd_2007-05-11_story-of-awareness.mp3
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Getting Audio Infoaudio/inspiredtalkSatguru Bodhinatha Veylanswami
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2007/bd_2007-05-11_story-of-awareness/bd_2007-05-11_story-of-awareness.mp3
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: <div class="audio-player" style="float:left;">
+ 
+ 
+ 
+ <img src="/html/looklisten/img/featured-item-posters/bodhinatha/Bodhinatha-in-peacock-chair.jpg" />
+ 
+					    <audio id="audio-" controls="control" preload="none" src="/media/audio/inspired-talks/bodhinatha/2007/bd_2007-05-11_story-of-awareness/bd_2007-05-11_story-of-awareness.mp3" type="audio/mp3" >
+					    </audio>
+					 
+					    	      
+				
+					       
+					    <script type="text/javascript">
+					    $(document).ready(function () {
+					               var mePlayer = $('#audio-').mediaelementplayer({loop:true,
+           features: ['playpause','progress','current','duration','volume'],
+           audioWidth:517,
+						               });					              					
+					           });   
+					    </script>
+			</div>
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: random search === media_type:inspiredtalk,author:Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: author === Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: media_type === inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records author = Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: number of results: 721
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: last query: SELECT * 
+FROM (`page_metadata`) 
+WHERE `page_url` = '/looklisten/gurus-talks'
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Randomizer: bd_2002-04-09_antar-mandir-the-inner-te
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '4099'
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Randomizer: bd_2005-10-19_soul-world
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: audio: bd_2005-10-19_soul-world
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2005/bd_2005-10-19_soul-world/bd_2005-10-19_soul-world.mp3
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Getting Audio Infoaudio/inspiredtalkSatguru Bodhinatha Veylanswami
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: getAudioFile: /media/audio/inspired-talks/bodhinatha/2005/bd_2005-10-19_soul-world/bd_2005-10-19_soul-world.mp3
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: <div class="audio-player" style="float:left;">
+ 
+ 
+ 
+ <img src="/html/looklisten/img/featured-item-posters/bodhinatha/Bodhinatha-in-peacock-chair.jpg" />
+ 
+					    <audio id="audio-" controls="control" preload="none" src="/media/audio/inspired-talks/bodhinatha/2005/bd_2005-10-19_soul-world/bd_2005-10-19_soul-world.mp3" type="audio/mp3" >
+					    </audio>
+					 
+					    	      
+				
+					       
+					    <script type="text/javascript">
+					    $(document).ready(function () {
+					               var mePlayer = $('#audio-').mediaelementplayer({loop:true,
+           features: ['playpause','progress','current','duration','volume'],
+           audioWidth:517,
+						               });					              					
+					           });   
+					    </script>
+			</div>
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: Random Promoted Collection! pick:1,media_type:inspiredtalk,author:Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:01 -0700: search author = Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 9
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT COUNT(*) AS `numrows` 
+FROM (`item`)
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 1 bd_2021-09-22_mws-river-of-life-part-3
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 2 bd_2021-09-15_mws-river-of-life-part-2
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 3 bd_2021-09-08_mws-the-river-of-life
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 4 bd_2021-08-31_mambashum-9-apex-of-creation
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 5 bd_2021-08-24_gurudeva-meets-yogaswami_part-2
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 6 bd_2021-08-17_gurudeva-meets-yogaswami_part-1
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 7 bd_2021-07-26_the-story-of-iraivan.mp3
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 8 bd_2021-07-18-mambashum-8
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: 9 bd_2021-07-03_innerversity-learning-from-within
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search author = Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: gr_1998-05-15_mws-lesson-176
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! media_type:inspiredtalk,author:bodhinatha,description:lesson
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records author = bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records description = lesson
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '1076'
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 214
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT COUNT(*) AS `numrows` 
+FROM (`item`)
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: bd_2015-07-10_establish-daily-practice
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! media_type:inspiredtalk,author:bodhinatha,description:youth
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records author = bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records description = youth
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 18
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT COUNT(*) AS `numrows` 
+FROM (`item`)
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: bd_2002-04-02_malaysia-youth-seminar
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! media_type:inspiredtalk,author:bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records author = bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: gr_1999-02-19_conquering-fear
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 721
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT * 
+FROM (`category_item`) 
+JOIN `category` ON `category`.`category_id` = `category_item`.`category_id` 
+WHERE `item_id` = '993'
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '1076'
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: bd-2007-02-18_enduring-happiness
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT * 
+FROM (`category_item`) 
+JOIN `category` ON `category`.`category_id` = `category_item`.`category_id` 
+WHERE `item_id` = '993'
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: gr_1999-05-19_willpower
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/landing.lc
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: begin emit tabbed content module HTML
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: no tabbed content
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Total execution time: 2.8066
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: gr_1998-05-15_mws-lesson-232
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT * 
+FROM (`category_item`) 
+JOIN `category` ON `category`.`category_id` = `category_item`.`category_id` 
+WHERE `item_id` = '993'
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: gr_2001-03-26_end-of-the-world-how-to-b
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '943'
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Randomizer: gr_2001-01-18_holy-ash-do-we-really-hav
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: Random Promoted Collection! pick:1,media_type:inspiredtalk,author:Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:02 -0700: search author = Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: number of results: 9
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '943'
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 1 bd_2021-09-22_mws-river-of-life-part-3
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 2 bd_2021-09-15_mws-river-of-life-part-2
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 3 bd_2021-09-08_mws-the-river-of-life
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 4 bd_2021-08-31_mambashum-9-apex-of-creation
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 5 bd_2021-08-24_gurudeva-meets-yogaswami_part-2
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 6 bd_2021-08-17_gurudeva-meets-yogaswami_part-1
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 7 bd_2021-07-26_the-story-of-iraivan.mp3
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 8 bd_2021-07-18-mambashum-8
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: 9 bd_2021-07-03_innerversity-learning-from-within
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search author = Bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Random Promoted Collection! media_type:inspiredtalk,author:bodhinatha,description:lesson
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records author = bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records description = lesson
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: number of results: 214
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '943'
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Randomizer: bd_2002-12-01_good-conduct-means-to-assist
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Random Promoted Collection! media_type:inspiredtalk,author:bodhinatha,description:youth
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records author = bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records description = youth
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: number of results: 18
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '943'
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Randomizer: bd_2005-07-07_kural-chapters-13-14
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Random Promoted Collection! media_type:inspiredtalk,author:bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records author = bodhinatha
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: number of results: 721
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '943'
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Randomizer: bd_2003-02-21_staying-in-touch-with-gur
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '943'
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Randomizer: gr_1999-05-11_mothers-duty-to-stay-home
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '936'
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Randomizer: gr_2000-07-19_inter-religious-marriage
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Random Promoted Collection! media_type:inspiredtalk,author:subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records author = subramuniyaswami
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: search all records media_type = inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: number of results: 731
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: last query: SELECT * 
+FROM (`item_format`) 
+WHERE `item_id` = '936'
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Randomizer: gr_2001-02-06_physical-pain
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/landing.lc
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: begin emit tabbed content module HTML
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: no tabbed content
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:21:03 -0700: Total execution time: 2.7533
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Get Quotes Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:21:15 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Random Slider Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: Helper loaded: arrayHelper
+REQUESTED: - Wed, 29 Sep 2021 23:21:15 -0700: looklisten/talksindex
+DEBUG - Wed, 29 Sep 2021 23:21:15 -0700: FetchInspiredTalks Index Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: Loading fetchhtml library
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: page to load: looklisten/talksindex
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looking for /home/devhap/public_html/html/looklisten/default.metadata
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: found metadata file at: /home/devhap/public_html/html/looklisten/default.metadata
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/default.metadata --> top_navigation >Look &amp; Listen<
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/default.metadata --> body_class skinny
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/default.metadata --> page_heading Look and Listen
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/default.metadata --> sidebar looklisten/looklisten-sidebar.html
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/default.metadata --> title Look and Listen
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/default.metadata --> template two-column
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/default.metadata --> secondary_navigation cat-look-listen
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: found metadata file at: /home/devhap/public_html/html/looklisten/talksindex.metadata
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/talksindex --> body_class skinny
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/talksindex --> template two-column
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/talksindex --> top_navigation >Look &amp; Listen<
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/talksindex --> page_heading Inspired Talks Index
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/talksindex --> secondary_navigation cat-talks-by-our-gurus
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looklisten/talksindex --> title Look & Listen: Talks by our Satgurus
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: fetching page:  looklisten/talksindex
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: loading external page: /home/devhap/public_html/html/looklisten/talksindex.html
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: external file was loaded as:  
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: looking metadata for /looklisten/talksindex
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:21:16 -0700: Total execution time: 1.3043
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:22:44 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Art Library Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Construct Audio Data Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: ePub Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 29 Sep 2021 23:22:44 -0700: view/112about_wuca_9-26-70
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: loading 112about_wuca_9-26-70
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: get record: 0
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: getGurudevaCircleQuote: 0
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: its a audio/inspiredtalk
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/1970/112about_wuca_9-26-70/112About_WUCA_9-26-70.mp3
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: getAudioFile: /media/audio/inspired-talks/gurudeva/1970/112about_wuca_9-26-70/112About_WUCA_9-26-70.mp3
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:22:44 -0700: Total execution time: 0.2265
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:25:03 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:25:03 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:03 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Total execution time: 0.8301
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:25:04 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:25:04 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:04 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:25:05 -0700: Total execution time: 0.9726
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:30:03 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:30:03 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:30:03 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Total execution time: 0.8270
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:30:04 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:30:04 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:30:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:30:05 -0700: Total execution time: 0.7588
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Router Library Loaded
+ERROR - Wed, 29 Sep 2021 23:34:27 -0700: 404 Page Not Found --> boaform
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Final output sent to browser. There was no view data.
+DEBUG - Wed, 29 Sep 2021 23:34:27 -0700: Total execution time: 0.0799
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:34:43 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:34:43 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:34:43 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:34:44 -0700: Total execution time: 0.4442
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:35:03 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:35:03 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:35:03 -0700: Total execution time: 0.6062
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:35:04 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:35:04 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:04 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:35:05 -0700: Total execution time: 0.9842
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:35:13 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:35:13 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:13 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:35:14 -0700: Total execution time: 0.4625
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:40:03 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:40:03 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:40:03 -0700: Total execution time: 0.8643
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:40:04 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:40:04 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:40:04 -0700: Total execution time: 0.8538
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:03 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:45:04 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:45:04 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Total execution time: 0.9146
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:45:04 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:45:05 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:45:05 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:45:05 -0700: Total execution time: 0.6888
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:50:04 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:50:04 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:50:04 -0700: Total execution time: 0.8499
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:50:05 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:50:05 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:50:05 -0700: Total execution time: 0.5218
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:55:03 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:55:03 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:55:04 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Total execution time: 0.7636
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:55:04 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:55:04 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:04 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:55:05 -0700: Total execution time: 0.6886
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: No URI present. Default controller set.
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: A session cookie was not found.
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:58:34 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Fetch HTML Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: XML-RPC Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Wordpress REST Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Extension loaded: 
+REQUESTED: - Wed, 29 Sep 2021 23:58:34 -0700: 
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: looking metadata for /
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Begin extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: number of tabs: 4
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Tab: Our Gurus
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for tags -> our satgurus
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: results: 33
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Tab: For Teachers
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for title -> history
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for tags -> teachers
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: results: 11
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Tab: For Parents and Youth
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for tags -> parents
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: results: 26
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for tags -> teen
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: results: 1
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for title -> saivite hindu religion
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: results: 4
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: Tab: Childrens Books
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: tab node: search
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for media_type -> book
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: search for tags -> children
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: results: 12
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: End extract tabbed content
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: keys:  1
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: value:  tabs
+title
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 29 Sep 2021 23:58:34 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:58:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 29 Sep 2021 23:58:35 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:58:35 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:58:35 -0700: Total execution time: 0.4156
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Hooks Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Config Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: URI Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Router Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Output Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Input Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Global POST and COOKIE data sanitized
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Language Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Loader Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Controller Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Helper loaded: assetHelper
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Helper loaded: urlHelper
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Database Driver Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Session Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Helper loaded: stringHelper
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Session routines successfully run.
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Utils Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Utils constructor called
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: FastJSON Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Dotted Slideshow Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Page Metadata Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: CMS Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: AAG DB Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Default Connection Set
+DEBUG - Wed, 29 Sep 2021 23:59:35 -0700: Markdown Library Loaded
+ERROR - Wed, 29 Sep 2021 23:59:36 -0700: markdown is not available.
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Array Tools Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Audio Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Libraries Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: LoremPixel Library Loaded
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Helper loaded: galleriaHelper
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Fetch HTML Library Loaded
+REQUESTED: - Wed, 29 Sep 2021 23:59:36 -0700: info/contact
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Loading fetchhtml library
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: page to load: info/contact
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: looking for /home/devhap/public_html/html/info/default.metadata
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: found metadata file at: /home/devhap/public_html/html/info/default.metadata
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/default.metadata --> body_class skinny
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/default.metadata --> template two-column
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/default.metadata --> top_navigation >Monastery<
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/default.metadata --> page_heading Site Information
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/default.metadata --> secondary_navigation 
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/default.metadata --> title Site Information
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: found metadata file at: /home/devhap/public_html/html/info/contact.metadata
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/contact --> template two-column
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/contact --> body_class skinny
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/contact --> top_navigation >Monastery<
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/contact --> page_heading Contact Us
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/contact --> sidebar monastery/monastery-sidebar.html
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: info/contact --> title Kauai's Hindu Monastery
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: fetching page:  info/contact
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: loading external page: /home/devhap/public_html/html/info/contact.html
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: external file was loaded as:  <h1 class="h1">
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: looking metadata for /info/contact
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Helper loaded: arrayHelper
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Helper loaded: fileHelper
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Final output sent to browser
+DEBUG - Wed, 29 Sep 2021 23:59:36 -0700: Total execution time: 0.1512

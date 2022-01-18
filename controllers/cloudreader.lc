@@ -1,0 +1,205 @@
+<?lc
+
+global gControllerHandlers, gData
+
+put "cloudreader,index,readbook,bigreader,littlereader,slurp,nosvg,simplereader,bookPageToSpineNo" into gControllerHandlers
+
+
+command cloudreader
+	# initialization...
+	
+	# Loading libraries
+	rigLoaderLoadLibrary "Getsetheadnav" # required opening for all pages
+	-- rigLoaderLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoaderLoadLibrary "dottedslideshow" # use as needed, or not ------------- rabit
+	rigLoaderLoadLibrary "cms"
+	rigLoaderLoadLibrary "markdown"
+	rigLoaderLoadLibrary "audio"
+	-- rigLoaderLoadLibrary "construct-audio-data" # Added by Brahmanathaswami 2012-07-13
+	rigLoaderLoadLibrary "constructaudiodata" # Added by Brahmanathaswami 2012-07-13 --- rabit
+	rigLoaderLoadLibrary "epub" # Added by AAG 2012-08-15 for Monocle Support
+	
+	
+	
+	
+	# Loading helpers
+	rigLoadHelper "asset"
+	rigLoadHelper "url"
+	
+	# Loading plugins
+    rigLoadHelper "galleria"
+    
+    # let's log what page is the user hits on   
+    rigLogMessage "Requested:", rigUriString()
+end cloudreader
+
+command index
+	
+end index
+
+command littlereader
+	
+end littlereader
+
+command bigreader
+	
+end bigreader
+
+command slurp
+	-- figure out what file we need
+	put rigRuriString() into tURL
+	set the itemdel to slash
+	put item 4 to -1 of tURL into tFileToSend
+	-- read content of file
+	put url ("binfile:" & $_SERVER["DOCUMENT_ROOT"] & "/" & tFileToSend) into tData
+	-- escape content
+	replace "/" with "\/" in tData
+	replace "svg:" with empty in tData
+	replace format("\r") with empty in tData
+	-- send it back
+	put header "Content-Type: application/json; charset=utf-8"
+	put tData
+	quit
+end slurp
+
+command nosvg
+	-- figure out what file we need
+	put rigRuriString() into tURL
+	set the itemdel to slash
+	put item 4 to -1 of tURL into tFileToSend
+	-- read content of file
+	put url ("binfile:" & $_SERVER["DOCUMENT_ROOT"] & "/" & tFileToSend) into tData
+	-- escape content
+	replace "svg:" with empty in tData
+	repeat for each line l in tData
+		if "image" is in l then
+			put empty into tLocation
+			get matchText(l, format("href=[\'\"]?([^\'\" >]+)"), tLocation)
+			if tLocation is not empty then
+				put item 4 to -2 of tURL into tFileToSend
+				put url ("binfile:" & $_SERVER["DOCUMENT_ROOT"] & "/" & tFileToSend & "/" & tLocation) into tData
+				--put header "Status: 302"
+				--put header "Location:" && tLocation & "?time=" & the ticks
+				put header "Content-Type: image/jpeg"
+				put tData
+				--put "redirect..."
+				quit
+			end if
+		end if
+	end repeat
+	-- send it back
+	--put header "Content-Type: application/json; charset=utf-8"
+	put tData
+	quit
+end nosvg
+
+
+command readbook
+	put rigFetchRsegment(3) into tFileID
+	rigLogMessage "debug", "loading" && tFileID
+	
+	put getRecord(tFileID) into gData["record"]
+	
+	switch gData["record"]["media_type"]
+		case "text/book"
+		case "text/booklet"
+			put true into gData["monocle"]["support"]
+			put monocleGetBookDataObject(gData["record"]["file_id"]) into gData["monocle"]["book data object"]
+							
+			get rigLoadView("cloudreader/monocle", gData)
+		break
+		default
+	end switch
+end readbook
+ 
+command simplereader pFileID,tSpineNumber
+    if pFileID is empty then # it is coming from the router directly
+		put rigFetchRsegment(3) into tFileID
+		put rigFetchRsegment(4) into tTocItemRequested
+		if tTocItemRequested is not a number then
+			put 1 into tTocItemRequested
+		end if
+	else # it is coming from our BookPageToSpine command
+		put pFileID into tFileID
+		put tSpineNumber into tTocItemRequested
+	end if
+
+    ## AAG: 2016 -- begin transition to new simplified responsive reader
+    set the itemdel to "/"
+    put $_SERVER["DOCUMENT_ROOT"] & "/media/books/" & tFileID & "/web/spine.csv" into tSpineCSV
+    
+    if there is a file tSpineCSV then
+        put URL ("binfile:" & tSpineCSV) into tSpineData
+        set the itemdel to comma
+        put item 2 of line tTocItemRequested of tSpineData into tChapterFile
+        # BR: we have to use https on the HA site because Apple requires SSL for mobile
+        # but we do not have SSL enabled on the dev site... so this is a hack for now to switch 
+        put $_SERVER["SERVER_NAME"] into tServer
+        
+        if char 1 to 3 of tServer ="dev" then
+       	 put "http://" before tServer
+        else
+       	 put "https://" before tServer
+        end if
+               
+        put tServer & "/media/books/" & tFileID & "/web/" & tChapterFile into tBookURL
+        rigRedirect tBookURL, "refresh", 302
+        put "redirect... "
+        quit
+    end if
+
+    ## End of transition to simplified responsive reader
+
+
+	rigLogMessage "debug", "loading" && tFileID
+	
+	put getRecord(tFileID) into gData["record"]
+	
+	switch gData["record"]["media_type"]
+		case "text/book"
+		case "text/booklet"
+			put ("Himalayan Academy Publications - " & gData["record"]["title"]) into gData["pageTitle"] 
+			put getSetHeadNav("skinny",gData["record"]["title"],">Read &amp; Learn<","cat-books") into gData["pageHeader"]
+			
+			#BR:  this works but we get 500 links in some cases!
+			# put ePubSpineAsLinkedList(gData["record"]["file_id"],true) into gData["book"]["toc"]
+			
+			# BR: this is the original but does not work where the TOC had ID's with 
+			# fragment identfiers at the end of the ID that do not match the ID in the spine
+			
+			put ePubTocAsLinkedList(gData["record"]["file_id"],true) into gData["book"]["toc"]
+			
+			if tTocItemRequested < the number of lines in the keys of epubSpine(gData["record"]["file_id"]) then
+				put "/book/" & gData["record"]["file_id"] &"/"& (tTocItemRequested + 1) into gData["book"]["next page"]
+			end if
+			if tTocItemRequested > 1 then
+				put "/book/" & gData["record"]["file_id"] &"/"& (tTocItemRequested - 1) into gData["book"]["previous page"]
+			end if
+		
+			put ePubSpineItemAsIFRAME(gData["record"]["file_id"], tTocItemRequested) into gData["singleArticle"]
+			
+			put mergeView("cloudreader/simplereader-sidebar") into gData["sideBar"]
+			get rigLoadView("sitewide/book-reader")
+		
+		break
+		default
+	end switch
+end simplereader
+
+command bookPageToSpineNo
+	put rigFetchRsegment(3) into tFileID
+	put rigFetchRsegment(4) into tPageRequested
+	put epubFileRequestAsSpineNo (tFileID,tPageRequested) into tSpineNumber
+	simplereader tFileID,tSpineNumber
+
+	#put ("Himalayan Academy Publications - Caught Page") into gData["pageTitle"] 
+	#put getSetHeadNav("skinny","Caught Page",">Read &amp; Learn<","cat-books") into gData["pageHeader"]
+	#put ("Got a book page!<br />" & tFileID & "<br />"& tPageRequested & "<br />Spine Number:"& tSpineNumber & "<br />" )  into gData["singleArticle"]
+	#get rigLoadView("sitewide/two-column", gData)   
+	
+end bookPageToSpineNo
+
+
+--| END OF cloudreader.lc
+--| ./application/controllers/cloudreader.lc
+----------------------------------------------------------------------

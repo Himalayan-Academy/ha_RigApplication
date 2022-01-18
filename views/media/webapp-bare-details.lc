@@ -1,0 +1,15 @@
+<script type="text/javascript">
+function alertsize(pixels){
+	console.log("somebody called alertsize to change the size to "+pixels);
+	$('#webapp').height(pixels+50);
+}
+</script>	
+<style type="text/css">
+	#webapp {
+		width: 100%;
+		height: auto;
+	}
+</style>
+<iframe id="webapp" src="/media/apps/[[ gData["record"]["file_id"] ]]/web/[[ gData["temporary"]["hash"] ]]"></iframe>
+
+

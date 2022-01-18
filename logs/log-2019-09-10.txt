@@ -1,0 +1,56 @@
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: results: 4
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for title -> history
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: Tab: Childrens Books
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for tags -> children
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: results: 6
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: End extract tabbed content
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: keys:  1
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: value:  tabs
+title
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: results: 11
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: Result:invalid URL: 
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: It:
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for tags -> teachers
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: results: 6
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: Tab: For Parents and Youth
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for tags -> parents
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: results: 21
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for tags -> teen
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: results: 1
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for title -> saivite hindu religion
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: results: 4
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: Tab: Childrens Books
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: tab node: search
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for media_type -> book
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: search for tags -> children
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: results: 6
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: End extract tabbed content
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: keys:  1
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: value:  tabs
+title
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: Result:invalid URL: 
+DEBUG - Tue, 10 Sep 2019 23:55:07 -0700: It:
+DEBUG - Tue, 10 Sep 2019 23:55:10 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Tue, 10 Sep 2019 23:55:10 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Tue, 10 Sep 2019 23:55:10 -0700: Final output sent to browser
+DEBUG - Tue, 10 Sep 2019 23:55:10 -0700: Total execution time: 3.3691
+DEBUG - Tue, 10 Sep 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Tue, 10 Sep 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Tue, 10 Sep 2019 23:55:11 -0700: Final output sent to browser
+DEBUG - Tue, 10 Sep 2019 23:55:11 -0700: Total execution time: 3.9261

@@ -1,0 +1,61 @@
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 23
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: tab node: search
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for tags -> teen
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: tab node: search
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for title -> history
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 1
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: tab node: search
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for title -> saivite hindu religion
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 11
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: tab node: search
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for tags -> teachers
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 4
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: Tab: Childrens Books
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: tab node: search
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for tags -> children
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 7
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: Tab: For Parents and Youth
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: tab node: search
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for tags -> parents
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 8
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: End extract tabbed content
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: keys:  1
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: value:  tabs
+title
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 23
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: tab node: search
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for tags -> teen
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 1
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: tab node: search
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for title -> saivite hindu religion
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 4
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: Tab: Childrens Books
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: Final output sent to browser
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: Total execution time: 0.4673
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for media_type -> book
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: search for tags -> children
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: results: 8
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: End extract tabbed content
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: keys:  1
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: value:  tabs
+title
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: Final output sent to browser
+DEBUG - Sun, 17 Jan 2021 23:58:55 -0800: Total execution time: 0.4496

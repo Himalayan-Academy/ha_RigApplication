@@ -1,0 +1,79 @@
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: loading bd_2015-09-06_bhakti-key-to-meditation
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 6 Jan 2020 23:56:32 -0800: view/bd_2006-10-23_nalu-pada-saivam
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: loading bd_2006-10-23_nalu-pada-saivam
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: get record: 0
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: get record: 0
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-09-06_bhakti-key-to-meditation/bd_2015-09-06_bhakti-key-to-meditation.mp3
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-09-06_bhakti-key-to-meditation/bd_2015-09-06_bhakti-key-to-meditation.mp3
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2006/bd_2006-10-23_nalu-pada-saivam/bd_2006-10-23_nalu-pada-saivam.mp3
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2006/bd_2006-10-23_nalu-pada-saivam/bd_2006-10-23_nalu-pada-saivam.mp3
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: Final output sent to browser
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: Total execution time: 0.2998
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: Final output sent to browser
+DEBUG - Mon, 6 Jan 2020 23:56:32 -0800: Total execution time: 0.2990
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Hooks Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Config Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: URI Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Router Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Output Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Input Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Language Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Loader Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Controller Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Database Driver Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Session Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: A session cookie was not found.
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Session routines successfully run.
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Utils Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Utils constructor called
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: FastJSON Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Library_Name Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: CMS Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: AAG DB Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Default Connection Set
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Markdown Library Loaded
+ERROR - Mon, 6 Jan 2020 23:58:27 -0800: markdown is not available.
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Array Tools Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Audio Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Libraries Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Art Library Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: ePub Library Loaded
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 6 Jan 2020 23:58:27 -0800: view/bd_2006-03-01_facing-challenges
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: loading bd_2006-03-01_facing-challenges
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: get record: 0
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2006/bd_2006-03-01_facing-challenges/bd_2006-03-01_facing-challenges.mp3
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2006/bd_2006-03-01_facing-challenges/bd_2006-03-01_facing-challenges.mp3
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Final output sent to browser
+DEBUG - Mon, 6 Jan 2020 23:58:27 -0800: Total execution time: 0.2214

@@ -1,0 +1,29 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+
+
+
+	
+	<div class="page-wrapper" ng-app="app">
+	
+		<section class="page-content" role="main" >
+		
+		<ng-view><div class="wrapper">Searching...</div></ng-view>					
+				
+				
+		
+											
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script type="text/javascript">
+	        var sortingOrder = 'title';
+	    </script>
+	<script src="/assets/js/search/app.js"></script>
+
+	<?
+	return rigLoadView("sitewide/footer", TRUE)
+	?>

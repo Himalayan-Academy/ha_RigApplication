@@ -1,0 +1,1331 @@
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: tab node: search
+Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: search for title -> saivite hindu religion
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: results: 4
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Tab: Childrens Books
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: search for tags -> children
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: results: 6
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: End extract tabbed content
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: keys:  1
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: value:  tabs
+title
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Result:invalid URL: 
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: It:
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:50:05 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:50:05 -0800: view/gr_1998-05-15_mws-lesson-244
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: loading gr_1998-05-15_mws-lesson-244
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: its a audio/inspiredtalk
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1998/gr_1998-05-15_mws-lesson-244/gr_1998-05-15_mws-lesson-244.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1998/gr_1998-05-15_mws-lesson-244/gr_1998-05-15_mws-lesson-244.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:50:05 -0800: Total execution time: 0.2393
+DEBUG - Wed, 5 Feb 2020 23:50:06 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 5 Feb 2020 23:50:06 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:50:06 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:50:06 -0800: Total execution time: 1.8370
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:50:11 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:50:11 -0800: view/bd_2017-09-29_path-to-siva-lesson-32-commentary
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: loading bd_2017-09-29_path-to-siva-lesson-32-commentary
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: its a audio/inspiredtalk
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2017/bd_2017-09-29_path-to-siva-lesson-32-commentary/bd_2017-09-29_path-to-siva-lesson-32-commentary.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2017/bd_2017-09-29_path-to-siva-lesson-32-commentary/bd_2017-09-29_path-to-siva-lesson-32-commentary.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:50:11 -0800: Total execution time: 0.2106
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:50:12 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:50:12 -0800: view/bd_2018-11-02_path-to-siva-lesson-58_commentary
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: loading bd_2018-11-02_path-to-siva-lesson-58_commentary
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: its a audio/inspiredtalk
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-11-02_path-to-siva-lesson-58_commentary/bd_2018-11-02_path-to-siva-lesson-58_commentary.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-11-02_path-to-siva-lesson-58_commentary/bd_2018-11-02_path-to-siva-lesson-58_commentary.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:50:12 -0800: Total execution time: 0.2123
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:50:22 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:50:22 -0800: view/bd_2003-06-11_yama-7-daya-compassion
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: loading bd_2003-06-11_yama-7-daya-compassion
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: its a audio/inspiredtalk
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-06-11_yama-7-daya-compassion/bd_2003-06-11_yama-7-daya-compassion.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-06-11_yama-7-daya-compassion/bd_2003-06-11_yama-7-daya-compassion.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Total execution time: 0.2152
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:50:22 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:50:22 -0800: view/bd_2018-06-08_path-to-siva-lesson-47_commentary_part-1
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: loading bd_2018-06-08_path-to-siva-lesson-47_commentary_part-1
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: its a audio/inspiredtalk
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-06-08_path-to-siva-lesson-47_commentary_part-1/bd_2018-06-08_path-to-siva-lesson-47_commentary_part-1.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-06-08_path-to-siva-lesson-47_commentary_part-1/bd_2018-06-08_path-to-siva-lesson-47_commentary_part-1.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:50:22 -0800: Total execution time: 0.2117
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:50:32 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:50:32 -0800: view/bd_2011-08-26_let-go-attachments-part-1
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: loading bd_2011-08-26_let-go-attachments-part-1
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: its a audio/inspiredtalk
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2011/bd_2011-08-26_let-go-attachments-part-1/bd_2011-08-26_let-go-attachments-part-1.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2011/bd_2011-08-26_let-go-attachments-part-1/bd_2011-08-26_let-go-attachments-part-1.mp3
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:50:32 -0800: Total execution time: 0.2129
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:52:43 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:52:43 -0800: site/search/category/Satguru and Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: searching with GET
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: search terms
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: category: Satguru and Parampara
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: page: 20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: search category = Satguru and Parampara
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: number of results: 9
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `category`  LIKE '%Satguru and Parampara%' 
+ORDER BY `date_entered` DESC 
+LIMIT 171, 9
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 1 gurudeva-p0006673
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 2 gurudeva-pic0103
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 3 gurudeva-portrait-16
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 4 gurudeva-pose-profile-1995
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 5 gurudeva-with-marigolds
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 6 gurudeva-00-gurudeva
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 7 bodhinatha_purnima_meditation
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 8 gurudeva-saranam-deva_br
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: 9 yogaswami_ei
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: search category = Satguru and Parampara
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: search terms stored on session. Bg0AAAACAAhjYXRlZ29yeQgAFVNhdGd1cnUgYW5kIFBhcmFtcGFyYQAEcGFnZQgAAjIw
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: sess: 
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: next page /site/search/category/Satguru+and+Parampara/page/21
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: previous page /site/search/category/Satguru+and+Parampara/page/19
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: result count: 9
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: getAudioFile: /media/audio/songs/bhajan/guru/gurudeva-saranam-deva_br/gurudeva-saranam-deva_br.mp3
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:52:43 -0800: Total execution time: 0.4467
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:52:56 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:52:56 -0800: site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: searching with GET
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: search terms
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: page: 20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: tags: Siva
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: search tags = Siva
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: number of results: 9
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%Siva%' 
+ORDER BY `date_entered` DESC 
+LIMIT 171, 9
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 1 manivelu-mws-c04-sexual-energies
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 2 manivelu-mws-c05-control-of-speech
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 3 manivelu-mws-c06-ego
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 4 manivelu-mws-c07-sleep-dreams
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 5 manivelu-mws-c08-chakras
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 6 manivelu-mws-c09-mantras
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 7 manivelu-mws-c10-esoteric-theories
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 8 manivelu-pillar-art-01c-tamil-namasivaya
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: 9 manivelu-pillar-art-02f-kalari
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: search tags = Siva
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAEU2l2YQAEcGFnZQgAAjIw
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: sess: 
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: next page /site/search/tags/Siva/page/21
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: previous page /site/search/tags/Siva/page/19
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: result count: 9
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: url with search terms. /site/search/tags/Siva/page/20
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:52:56 -0800: Total execution time: 0.4614
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:53:07 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:53:07 -0800: view/dallas_2007-10-12_pl-ar
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: loading dallas_2007-10-12_pl-ar
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: its a slideshow/external
+DEBUG - Wed, 5 Feb 2020 23:53:07 -0800: slideshow url: /media/slideshows/2007/dallas_2007-10-12_pl-ar/index.htm
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:53:18 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:53:18 -0800: site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: searching with GET
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: search terms
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: page: 4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: tags: yoga
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: search tags = yoga
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: number of results: 9
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%yoga%' 
+ORDER BY `date_entered` DESC 
+LIMIT 27, 9
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 1 manivelu-hatha-yoga-09-hatha
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 2 manivelu-hatha-yoga-10-hatha
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 3 manivelu-loving-ganesha-lg-cd7-019004
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 4 the-aim-of-hindu-practices-publishers-desk
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 5 yogaswami_ei
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 6 bd_2014-07-27_patanjali-samadhi
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 7 2014-01-04_malaysia-waterfall-temple-sbyo
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 8 a-10-minute-spiritual-workout-publishers-desk
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: 9 interview-with-dr-james-george
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: search tags = yoga
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAEeW9nYQAEcGFnZQgAATQ=
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: sess: 
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: next page /site/search/tags/yoga/page/5
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: previous page /site/search/tags/yoga/page/3
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: result count: 9
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2014/bd_2014-07-27_patanjali-samadhi/bd_2014-07-27_patanjali-samadhi.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: url with search terms. /site/search/tags/yoga/page/4
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:53:18 -0800: Total execution time: 0.5208
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:53:28 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:53:28 -0800: site/search/category/Satguru and Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: searching with GET
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: search terms
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: category: Satguru and Parampara
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: page: 39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: search category = Satguru and Parampara
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: number of results: 9
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `category`  LIKE '%Satguru and Parampara%' 
+ORDER BY `date_entered` DESC 
+LIMIT 342, 9
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 1 bd_2003-03-28_darshan-goes-both-ways
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 2 bd_2002-09-04_why-bodhinatha-became-a-h
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 3 bd_2002-03-17_do-i-now-have-two-gurus
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 4 bd_2002-03-16_communicating-with-a-depa
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 5 bd_2002-03-02_pujas-to-gurudeva
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 6 gr_2001-08-17_god-and-guru-among-religi
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 7 gr_2001-05-11_escaping-the-external-wor
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 8 gr_2001-03-22_gurudeva-interviewed-by-l
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: 9 gr_2001-03-21_a-radio-interview-by-loni
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: search category = Satguru and Parampara
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: search terms stored on session. Bg0AAAACAAhjYXRlZ29yeQgAFVNhdGd1cnUgYW5kIFBhcmFtcGFyYQAEcGFnZQgAAjM5
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: sess: 
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: next page /site/search/category/Satguru+and+Parampara/page/40
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: previous page /site/search/category/Satguru+and+Parampara/page/38
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: result count: 9
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-03-28_darshan-goes-both-ways/bd_2003-03-28_darshan-goes-both-ways.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-09-04_why-bodhinatha-became-a-h/bd_2002-09-04_why-bodhinatha-became-a-h.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-03-17_do-i-now-have-two-gurus/bd_2002-03-17_do-i-now-have-two-gurus.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-03-16_communicating-with-a-depa/bd_2002-03-16_communicating-with-a-depa.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-03-02_pujas-to-gurudeva/bd_2002-03-02_pujas-to-gurudeva.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-08-17_god-and-guru-among-religi/gr_2001-08-17_god-and-guru-among-religi.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-05-11_escaping-the-external-wor/gr_2001-05-11_escaping-the-external-wor.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-03-22_gurudeva-interviewed-by-l/gr_2001-03-22_gurudeva-interviewed-by-l.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-03-21_a-radio-interview-by-loni/gr_2001-03-21_a-radio-interview-by-loni.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: url with search terms. /site/search/category/Satguru+and+Parampara/page/39
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:53:28 -0800: Total execution time: 0.4560
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:53:39 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:53:39 -0800: site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: searching with GET
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: search terms
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: page: 14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: tags: hindu
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: search tags = hindu
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: number of results: 9
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%hindu%' 
+ORDER BY `date_entered` DESC 
+LIMIT 117, 9
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 1 bd_bodhinatha-speaks-at-nimbark-jayanti
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 2 palaniswami-speaks-at-nimbark-jayanti
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 3 bd_bodhinatha-visits-bangalore-veda-agama-samskrutha-maha-patashala
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 4 gurudeva-at-the-parliament-of-worlds-religions-1993
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 5 bd_practice-makes-perfect-publishers-desk
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 6 two-ht-editors-speak-at-hmec
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 7 god-soul-and-world-what-is-hinduism-pilot
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 8 bd_we-are-whom-we-meet-publishers-desk
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: 9 bd_2010-09-03_monism-theism
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: search tags = hindu
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAFaGluZHUABHBhZ2UIAAIxNA==
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: sess: 
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: next page /site/search/tags/hindu/page/15
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: previous page /site/search/tags/hindu/page/13
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: result count: 9
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2010/bd_2010-09-03_monism-theism/bd_2010-09-03_monism-theism.mp3
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: url with search terms. /site/search/tags/hindu/page/14
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:53:39 -0800: Total execution time: 0.6498
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:53:49 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:53:49 -0800: view/g11_rajam
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: loading g11_rajam
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: its a art/painting
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/art-details.lc
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:53:49 -0800: Total execution time: 0.2191
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:54:04 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:54:04 -0800: view/gr_2001-07-03_guidelines-for-brahmacharinis
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: loading gr_2001-07-03_guidelines-for-brahmacharinis
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: get record: 0
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: getGurudevaCircleQuote: 0
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: its a audio/inspiredtalk
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-07-03_guidelines-for-brahmacharinis/gr_2001-07-03_guidelines-for-brahmacharinis.mp3
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-07-03_guidelines-for-brahmacharinis/gr_2001-07-03_guidelines-for-brahmacharinis.mp3
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:54:04 -0800: Total execution time: 0.2236
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:54:09 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Art Library Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: ePub Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 5 Feb 2020 23:54:09 -0800: site/search/tags/ Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: searching with GET
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: search terms
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: tags: Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: search tags = Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: number of results: 4
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%Asuras%' 
+ORDER BY `date_entered` DESC 
+LIMIT 9
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: 1 b18_rajam
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: 2 b26a_rajam
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: 3 gr_mahas_04_pt1
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: 4 gr_1999-04-18_people-running-away-from
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: search tags = Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: search terms stored on session. Bg0AAAABAAR0YWdzCAAGQXN1cmFz
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: sess: 
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: next page /site/search/tags/Asuras/page/2
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: previous page /site/search/tags/Asuras/page/0
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: result count: 4
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: getAudioFile: /media/audio/chants/gr_mahas_04_pt1/gr_mahas_04_pt1.mp3
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-04-18_people-running-away-from/gr_1999-04-18_people-running-away-from.mp3
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: url with search terms. /site/search/tags/Asuras
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:54:09 -0800: Total execution time: 0.3222
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: No URI present. Default controller set.
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Dotted Slideshow Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:55:02 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: LoremPixel Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Helper loaded: galleriaHelper
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Fetch HTML Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: XML-RPC Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Wordpress REST Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Extension loaded: 
+REQUESTED: - Wed, 5 Feb 2020 23:55:02 -0800: 
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: looking metadata for /
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Begin extract tabbed content
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: number of tabs: 4
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Tab: Our Gurus
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for tags -> our satgurus
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: results: 20
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Tab: For Teachers
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for title -> history
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: results: 11
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for tags -> teachers
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: results: 6
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Tab: For Parents and Youth
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for tags -> parents
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: results: 21
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for tags -> teen
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: results: 1
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for title -> saivite hindu religion
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: results: 4
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Tab: Childrens Books
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: search for tags -> children
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: results: 6
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: End extract tabbed content
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: keys:  1
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: value:  tabs
+title
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: Result:invalid URL: 
+DEBUG - Wed, 5 Feb 2020 23:55:02 -0800: It:
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Total execution time: 1.7377
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Hooks Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Config Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: URI Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Router Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: No URI present. Default controller set.
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Output Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Input Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Language Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Loader Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Controller Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Database Driver Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Session Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: A session cookie was not found.
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Session routines successfully run.
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Utils Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Utils constructor called
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: FastJSON Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Library_Name Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Dotted Slideshow Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: CMS Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: AAG DB Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Default Connection Set
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Markdown Library Loaded
+ERROR - Wed, 5 Feb 2020 23:55:04 -0800: markdown is not available.
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Array Tools Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Audio Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Libraries Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: LoremPixel Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Helper loaded: galleriaHelper
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Fetch HTML Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: XML-RPC Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Wordpress REST Library Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Extension loaded: 
+REQUESTED: - Wed, 5 Feb 2020 23:55:04 -0800: 
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: looking metadata for /
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Begin extract tabbed content
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: number of tabs: 4
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Tab: Our Gurus
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for tags -> our satgurus
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: results: 20
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Tab: For Teachers
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for title -> history
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: results: 11
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for tags -> teachers
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: results: 6
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Tab: For Parents and Youth
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for tags -> parents
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: results: 21
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for tags -> teen
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: results: 1
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for title -> saivite hindu religion
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: results: 4
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Tab: Childrens Books
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: tab node: search
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for media_type -> book
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: search for tags -> children
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: results: 6
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: End extract tabbed content
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: keys:  1
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: value:  tabs
+title
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: Result:invalid URL: 
+DEBUG - Wed, 5 Feb 2020 23:55:04 -0800: It:
+DEBUG - Wed, 5 Feb 2020 23:55:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 5 Feb 2020 23:55:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 5 Feb 2020 23:55:05 -0800: Final output sent to browser
+DEBUG - Wed, 5 Feb 2020 23:55:05 -0800: Total execution time: 1.7023

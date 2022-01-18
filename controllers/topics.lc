@@ -1,0 +1,96 @@
+<?lc
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "topics,loadIndex,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+# WRITE INITIAL STATEMENTS INTO THE CONTROLLER HANDLER AND CALL IT AT THE END OF THE FILE
+
+command topics		
+   rigLoaderLoadLibrary "Getsetheadnav" # required opening for all pages
+   -- rigLoaderLoadLibrary "dotted-slideshow" # use as needed, or not
+   rigLoaderLoadLibrary "dottedslideshow" # use as needed, or not ------------ rabit
+   rigLoaderLoadLibrary "pagemetadata" 	
+   rigLoaderLoadLibrary "cms"
+   rigLoaderLoadLibrary "lorempixel"
+   rigLoadHelper "asset"
+   rigLoadHelper "galleria" 
+   rigLoaderLoadLibrary "fetchhtml"
+   --rigLoaderLoadLibrary "json"
+   	
+   # let's log what page is the user hits on   
+   rigLogMessage "Requested:", rigUriString()
+   
+end topics
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFIED IN THE URI
+
+command index
+	put rigFetchRsegment(3) into tCategoryID
+   put rigFetchRsegment(4, 1) into tPageID
+
+   // Fetch category and sub-categories
+	if tCategoryID is false then
+		put empty into gData["category"]
+		put "SELECT DISTINCT c.category_id, c.name FROM `category` as c, `category_tree` as ct WHERE c.category_id NOT IN (select DISTINCT child_id from category_tree) ORDER BY c.name" into tQuery
+		   put "Topics" into gData["pageTitle"] 
+	else
+		get ("select name from category where category_id = " & rigDbEscape(tCategoryID))
+		get rigDBQuery(it)
+		put rigDBResult() into tA 
+		put tA[1][1] into gData["category"]
+		
+		 put gData["category"] into  gData["pageTitle"]
+
+		put "SELECT DISTINCT c.category_id, c.name FROM `category` as c, `category_tree` as ct WHERE ct.parent_id = " & rigDbEscape(tCategoryID) & " AND ct.child_id AND ct.child_id = c.category_id ORDER BY c.name" into tQuery
+	end if
+
+	put tQuery into gData["query"]
+
+	get rigDBQuery(tQuery) 
+	put rigDBresult() into gData["categories"]
+
+
+   // Fetch paginated items
+   if tCategoryID is not false then
+   
+      rigDbSelect "file_id, media_type, title, item.description"
+      rigDbJoin "category_item", "category_item.item_id = item.item_id"
+      rigDbJoin "category", "category.category_id = category_item.category_id"
+      rigDBWhere "category.category_id", tCategoryID
+      rigDbFrom "item"
+      put rigDbGet() into tResultA
+
+      put rigDBresult() into tResult
+   
+      put 0 into tIncr
+      repeat for each key tKey in tResult
+         
+         add 1 to tIncr
+         put rigDbRow(tIncr) into tItemA
+         
+         if tItemA["description"] is not empty then
+            put  tItemA into gData["item"]
+
+            put rigLoadView("sitewide/topic-item", TRUE) after gData["items"]
+         end if
+         
+      end repeat
+   end if
+
+   // Render view
+   --put "Topics" into gData["pageTitle"] 
+   # no secondary navigation is set, so pass the parameter empty...
+   put getSetHeadNav("landing",gData["pageTitle"],">Topics<","removeBannerLogo") into gData["pageHeader"]			 
+   get rigLoadView("sitewide/topics")
+end index
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF category.lc
+--| ./application/ha/controllers/category.lc
+----------------------------------------------------------------------

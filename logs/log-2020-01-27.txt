@@ -1,0 +1,654 @@
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: previous page /site/search/tags/saw/page/0
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: result count: 1
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: CMS Library Loaded
+devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Markdown Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: url with search terms. /site/search/tags/saw
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Total execution time: 0.3035
+ERROR - Mon, 27 Jan 2020 22:21:20 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:20 -0800: view/l2_rajam
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: loading l2_rajam
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: its a art/painting
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/art-details.lc
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:20 -0800: Total execution time: 0.2245
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 22:21:21 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:21 -0800: view/manivelu-loving-ganesha-lg-cd2-005002
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: loading manivelu-loving-ganesha-lg-cd2-005002
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: its a art/painting
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/art-details.lc
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:21 -0800: Total execution time: 0.2241
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 22:21:22 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:22 -0800: view/bd_2002-04-23_california-trip-april-200
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: loading bd_2002-04-23_california-trip-april-200
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-04-23_california-trip-april-200/bd_2002-04-23_california-trip-april-200.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-04-23_california-trip-april-200/bd_2002-04-23_california-trip-april-200.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:22 -0800: Total execution time: 0.2332
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 22:21:23 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:23 -0800: view/bd_2002-03-16_communicating-with-a-depa
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: loading bd_2002-03-16_communicating-with-a-depa
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-03-16_communicating-with-a-depa/bd_2002-03-16_communicating-with-a-depa.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-03-16_communicating-with-a-depa/bd_2002-03-16_communicating-with-a-depa.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:23 -0800: Total execution time: 0.2374
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 22:21:25 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:25 -0800: view/bd_2002-04-09_antar-mandir-the-inner-te
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: loading bd_2002-04-09_antar-mandir-the-inner-te
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-04-09_antar-mandir-the-inner-te/bd_2002-04-09_antar-mandir-the-inner-te.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-04-09_antar-mandir-the-inner-te/bd_2002-04-09_antar-mandir-the-inner-te.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:25 -0800: Total execution time: 0.2479
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 22:21:26 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:26 -0800: view/bd_2018-04-24_path-to-siva-lesson-44_commentary
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: loading bd_2018-04-24_path-to-siva-lesson-44_commentary
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-04-24_path-to-siva-lesson-44_commentary/bd_2018-04-24_path-to-siva-lesson-44_commentary.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-04-24_path-to-siva-lesson-44_commentary/bd_2018-04-24_path-to-siva-lesson-44_commentary.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:26 -0800: Total execution time: 0.2417
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 22:21:27 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:27 -0800: view/bd_2002-03-25_arun-gandhi-on-season-of
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: loading bd_2002-03-25_arun-gandhi-on-season-of
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-03-25_arun-gandhi-on-season-of/bd_2002-03-25_arun-gandhi-on-season-of.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-03-25_arun-gandhi-on-season-of/bd_2002-03-25_arun-gandhi-on-season-of.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:27 -0800: Total execution time: 0.2321
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Dotted Slideshow Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 22:21:28 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:28 -0800: book/life-skills-for-hindu-teens
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: loading simplereader
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Final output sent to browser. There was no view data.
+DEBUG - Mon, 27 Jan 2020 22:21:28 -0800: Total execution time: 0.1567
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 22:21:30 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:30 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 22:21:31 -0800: view/bd_2001-12-20_affectionate-detachment
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: loading bd_2001-12-20_affectionate-detachment
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2001/bd_2001-12-20_affectionate-detachment/bd_2001-12-20_affectionate-detachment.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2001/bd_2001-12-20_affectionate-detachment/bd_2001-12-20_affectionate-detachment.mp3
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Total execution time: 0.2701
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 22:21:31 -0ERROR - Mon, 27 Jan 2020 23:58:23 -0800: Failed to read file! System error: 0
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-08-03_improving-behavior-part-6/bd_2003-08-03_improving-behavior-part-6.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-08-03_improving-behavior-part-6/bd_2003-08-03_improving-behavior-part-6.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Total execution time: 0.2978
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 23:58:23 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 23:58:24 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 23:58:24 -0800: site/search/tags/Self Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: searching with GET
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: search terms
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: page: 9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: tags: Self Improvement
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: search tags = Self Improvement
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: number of results: 9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%Self Improvement%' 
+ORDER BY `date_entered` DESC 
+LIMIT 72, 9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 1 gr_1999-11-24_sacrifice-and-renunciatio
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 2 gr_1999-11-21_sacrifice-and-renunciatio
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 3 gr_1999-05-19_willpower
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 4 gr_1999-04-05_building-willpower
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 5 gr_1999-04-04_willpower-and-love
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 6 gr_1999-04-03_willpower-equals-soulpowe
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 7 gr_1999-04-02_being-passively-aggressiv
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 8 gr_1999-03-29_vasana-daha-tantra
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: 9 gr_1999-03-26_regular-sadhana-to-develo
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: search tags = Self Improvement
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAQU2VsZiBJbXByb3ZlbWVudAAEcGFnZQgAATk=
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: sess: 
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: next page /site/search/tags/Self+Improvement/page/10
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: previous page /site/search/tags/Self+Improvement/page/8
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: result count: 9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-11-24_sacrifice-and-renunciatio/gr_1999-11-24_sacrifice-and-renunciatio.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-11-21_sacrifice-and-renunciatio/gr_1999-11-21_sacrifice-and-renunciatio.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-05-19_willpower/gr_1999-05-19_willpower.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-04-05_building-willpower/gr_1999-04-05_building-willpower.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-04-04_willpower-and-love/gr_1999-04-04_willpower-and-love.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-04-03_willpower-equals-soulpowe/gr_1999-04-03_willpower-equals-soulpowe.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-04-02_being-passively-aggressiv/gr_1999-04-02_being-passively-aggressiv.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-03-29_vasana-daha-tantra/gr_1999-03-29_vasana-daha-tantra.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-03-26_regular-sadhana-to-develo/gr_1999-03-26_regular-sadhana-to-develo.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: url with search terms. /site/search/tags/Self+Improvement/page/9
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Total execution time: 0.5405
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Hooks Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Config Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: URI Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Router Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Output Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Input Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Global POST and COOKIE data sanitized
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Language Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Loader Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Controller Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: assetHelper
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: urlHelper
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Database Driver Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Session Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: stringHelper
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: A session cookie was not found.
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Session routines successfully run.
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Utils Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Utils constructor called
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: FastJSON Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Library_Name Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: CMS Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: AAG DB Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Default Connection Set
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Markdown Library Loaded
+ERROR - Mon, 27 Jan 2020 23:58:24 -0800: markdown is not available.
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Array Tools Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Audio Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Page Metadata Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Libraries Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Art Library Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Construct Audio Data Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: ePub Library Loaded
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: fileHelper
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: arrayHelper
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Mon, 27 Jan 2020 23:58:24 -0800: view/gr_2001-01-01_where-to-place-the-home-a
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: loading gr_2001-01-01_where-to-place-the-home-a
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: get record: 0
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getGurudevaCircleQuote: 0
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: its a audio/inspiredtalk
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-01-01_where-to-place-the-home-a/gr_2001-01-01_where-to-place-the-home-a.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-01-01_where-to-place-the-home-a/gr_2001-01-01_where-to-place-the-home-a.mp3
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Final output sent to browser
+DEBUG - Mon, 27 Jan 2020 23:58:24 -0800: Total execution time: 0.2266

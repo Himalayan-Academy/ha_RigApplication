@@ -1,0 +1,61 @@
+# Ignore config files that may contain sensitive information #
+##############################################################
+# database.lc contains passwords
+config/database.lc
+
+# config.lc contains gConfig["encryption_key"]
+config/config.lc
+
+# cannot see anything important in authentication.lc or authenticationHooks.lc
+# but ignoring in any case for safety
+config/authentication.lc
+config/authenticationHooks.lc
+
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.idea
+
+sublime*
+
+*old*
+*copy*
+*bak*
+*.bac*
+*-bac*

@@ -1,0 +1,94 @@
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looking for /home/devhap/public_html/html/monastery/default.metadata
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: found metadata file at: /home/devhap/public_html/html/monastery/default.metadata
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Language Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/default.metadata --> top_navigation >Monastery<
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/default.metadata --> body_class skinny
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/default.metadata --> page_heading About the Monastery
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/default.metadata --> sidebar monastery/monastery-sidebar.html
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/default.metadata --> title Kauai's Hindu Monastery
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/default.metadata --> template two-column
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/default.metadata --> secondary_navigation cat-about-the-monastery
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looking for /home/devhap/public_html/html/monastery/lineage-philosophy/default.metadata
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: found metadata file at: /home/devhap/public_html/html/monastery/lineage-philosophy/default.metadata
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/lineage-philosophy/default.metadata --> top_navigation >Monastery<
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/lineage-philosophy/default.metadata --> body_class skinny
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/lineage-philosophy/default.metadata --> page_heading Guru Lineage and Philosophy
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/lineage-philosophy/default.metadata --> sidebar /monastery/lineage-philosophy/lineage-philosophy-sidebar.html
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/lineage-philosophy/default.metadata --> title Kauai's Hindu Monastery - Our Guru Lineage
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/lineage-philosophy/default.metadata --> template two-column
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: monastery/lineage-philosophy/default.metadata --> secondary_navigation cat-guru-lineage-philosophy
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Loader Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: fetching page:  monastery/lineage-philosophy/yogaswami
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Controller Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Database Driver Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: loading external page: /home/devhap/public_html/html/monastery/lineage-philosophy/yogaswami/index.html
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looking metadata for /monastery/lineage-philosophy/yogaswami
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Session Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: A session cookie was not found.
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Session routines successfully run.
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Utils Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Utils constructor called
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: FastJSON Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Final output sent to browser
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Total execution time: 0.1847
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Get Quotes Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: CMS Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: AAG DB Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Default Connection Set
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Markdown Library Loaded
+ERROR - Fri, 31 Dec 2021 23:57:05 -0800: markdown is not available.
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Array Tools Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Audio Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Libraries Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Random Slider Library Loaded
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Helper loaded: arrayHelper
+REQUESTED: - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/music
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/dottedSlideshow.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Loading fetchhtml library
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: page to load: looklisten/music
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looking for /home/devhap/public_html/html/looklisten/default.metadata
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: found metadata file at: /home/devhap/public_html/html/looklisten/default.metadata
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/default.metadata --> top_navigation >Look &amp; Listen<
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/default.metadata --> body_class skinny
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/default.metadata --> page_heading Look and Listen
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/default.metadata --> sidebar looklisten/looklisten-sidebar.html
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/default.metadata --> title Look and Listen
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/default.metadata --> template two-column
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/default.metadata --> secondary_navigation cat-look-listen
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: found metadata file at: /home/devhap/public_html/html/looklisten/music/default.metadata
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/music --> top_navigation >Look &amp; Listen<
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/music --> body_class skinny
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/music --> page_heading Songs - Natchintanai, Bhajan, Stotram
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/music --> sidebar looklisten/music/music-sidebar.html
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/music --> title Look and Listen - A World of Sacred Music
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/music --> template two-column
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looklisten/music --> secondary_navigation cat-chanting-songs
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: fetching page:  looklisten/music
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: loading external page: /home/devhap/public_html/html/looklisten/music/index.html
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: looking metadata for /looklisten/music
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Final output sent to browser
+DEBUG - Fri, 31 Dec 2021 23:57:05 -0800: Total execution time: 0.2241

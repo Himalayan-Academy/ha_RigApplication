@@ -1,0 +1,103 @@
+<body class="Body-Class">
+
+<div class="page-container">
+	<aside class="pulldown" role="complementary"> 
+	<div class="pulldown-content">
+		<ul>
+			<li><a href="/monastery">Kauai's Hindu Monastery</a></li>
+			<li><a href="http://www.hinduismtoday.com">Hinduism Today</a></li>
+			<li><a href="http://www.hheonline.org">Hindu Heritage Endowment</a></li>
+			<li><a href="http://www.minimela.com">Minimela Store</a></li>
+		</ul>
+	</div>
+	</aside> 
+<!-- end header pulldown -->
+
+
+	<header class="page-header"> 
+		
+	<div class="wrapper">
+		<div class="inner-wrapper">
+			<a class="logo" href="/">
+			<h2>
+				Kauai's Hindu Monastery
+			</h2>
+			</a> 
+			<nav class="nav-global"> 
+			<ul class="nav-parent">
+				<li class="inactive"><a href="/monastery">Monastery</a> 
+				<ul class="nav-child">
+					<li class="cat-about-the-monastery"><a href="/monastery/about">About the Monastery</a></li>
+					<li class="cat-guru-lineage-philosophy"><a href="/monastery/lineage-philosophy">Guru Lineage &amp; Philosophy</a></li>
+					<li class="cat-monastery-blog"><a href="/blog/taka">Monastery Blog</a></li>
+					<li class="cat-our-temples"><a href="/monastery/temples">Our Temples</a></li>
+					<li class="cat-meet-the-monks"><a href="/monastery/meet-the-monks">Meet the Monks</a></li>
+				</ul>
+				</li>
+				<li class="inactive"><a href="/readlearn">Read &amp; Learn</a> 
+				<ul class="nav-child">
+					<li class="cat-basics-of-hinduism"><a href="/readlearn/basics">Basics of Hinduism</a></li>
+					<li class="cat-books"><a href="/readlearn/books">Books</a></li>
+					<li class="cat-hinduism-today-magazine"><a href="http://www.hinduismtoday.com">Hinduism Today Magazine</a></li>
+					<li class="cat-lesson-of-the-day"><a href="/livespiritually/become-student/todays-lesson">Lesson of the Day</a></li>
+				    <li class="cat-faq"><a href="/monastery/about/faq">FAQ</a></li>
+					<li class="cat-for-teachers-parents"><a href="/readlearn/teachers-parents">For Teachers &amp; Parents</a></li>
+				    <li class="cat-other-languages"><a href="/readlearn/other-languages">Other Languages</a></li>
+				</ul>
+				</li>
+				<li class="inactive"><a href="/looklisten">Look &amp; Listen</a> 
+				<ul class="nav-child">
+					<li class="cat-talks-by-our-gurus"><a href="/looklisten/gurus-talks">Talks By Our Gurus</a></li>
+					<li class="cat-videos"><a href="/looklisten/videos">Videos</a></li>
+					<li class="cat-art-photo-galleries"><a href="/looklisten/art-photos">Art &amp; Photo Galleries</a></li>
+					<li class="cat-chanting-songs"><a href="/looklisten/chanting-songs">Chanting &amp; Songs</a></li>
+					<!--  <li class="cat-podcasts"><a href="/looklisten/podcasts">Podcasts</a></li> -->
+				</ul>
+				</li>
+				<li class="inactive"><a href="/livespiritually">Live Spiritually</a> 
+				<ul class="nav-child">
+					<li class="cat-become-a-student"><a href="/livespiritually/become-student">Become a Student</a></li>
+					<li class="cat-global-fellowship-initiation"><a href="/livespiritually/global-fellowship">Global Fellowship &amp; Initiation</a></li>
+					<li class="cat-innersearch-travel-study"><a href="/livespiritually/innersearch">Innersearch Travel-Study</a></li>
+					<li class="cat-meditation"><a href="/livespiritually/meditation">Meditation</a></li>
+					<li class="cat-home-puja"><a href="/livespiritually/home-puja">Home Puja</a></li>
+					<li class="cat-monastic-life"><a href="/livespiritually/monastic-life/how-to">Monastic Life</a></li>
+				</ul>
+				</li>
+				<li class="inactive"><a href="/visit">Visit</a> 
+				<ul class="nav-child">
+					<li class="cat-plan-your-visit"><a href="/visit/plan-your-visit">Plan Your Visit</a></li>
+					<li class="cat-take-a-virtual-tour"><a href="/visit/virtual-tour">Take a Virtual Tour</a></li>
+					<li class="cat-daily-puja"><a href="/monastery/temples/kadavul">Daily Puja</a></li>
+					<!-- <li class="cat-come-on-a-pilgrimage"><a href="/visit/come-on-a-pilgrimage">Come on a Pilgrimage</a></li> -->
+					<li class="cat-our-center-in-mauritius"><a href="/visit/missions/mauritius/ssc-mauritius">Our Center in Mauritius</a></li>
+					<li class="cat-meet-us-when-we-travel"><a href="/visit/meet-us-when-we-travel">Meet Us When We Travel</a></li>
+					<li class="cat-shop-online"><a href="http://www.minimela.com">Shop Online</a></li>
+				</ul>
+				</li>
+			</ul>
+			</nav> 
+<!-- end global nav -->
+<!-- note that the area heading follows the currently active navigation. So there
+			must be a away to programmatically set the active class as well as pass the header -->
+			<h2 class="page-heading">
+				Page-Heading-Title  <!-- this string "Page-Heading-Title" is dynamically replaced run time  from the default.metadata file "title" value -->
+			</h2>
+                        <form class="form-search" method="post" action="/site/search">
+                            <input type="text" id="search-query" name="query" value="search this site" />
+                            <input type="submit" value="search" name="submit" title="search" />
+                        </form>
+                        <script type="text/javascript">
+                            $(".form-search").submit(function(){
+                            var tQuery = $("#search-query").val();
+                            window.location = "/site/gsearch?q=" + encodeURIComponent(tQuery);
+                            return false;
+                            })
+                        </script>
+		
+		</div>
+	</div>
+
+<!-- end header content wrapper -->
+	</header> 
+<!-- end page header -->

@@ -1,0 +1,308 @@
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for tags -> parents
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Final output sent to browser
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Total execution time: 0.2810
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 21
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for tags -> teen
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 1
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for title -> saivite hindu religion
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 4
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Tab: Childrens Books
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for tags -> children
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: End extract tabbed content
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: keys:  1
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: value:  tabs
+title
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Final output sent to browser
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Total execution time: 0.2902
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Hooks Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Config Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: URI Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Router Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: No URI present. Default controller set.
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Output Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Input Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Global POST and COOKIE data sanitized
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Language Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Loader Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Controller Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Helper loaded: assetHelper
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Helper loaded: urlHelper
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Database Driver Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Session Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Helper loaded: stringHelper
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: A session cookie was not found.
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Session routines successfully run.
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Utils Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Utils constructor called
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: FastJSON Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Dotted Slideshow Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: CMS Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: AAG DB Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Default Connection Set
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Markdown Library Loaded
+ERROR - Wed, 21 Aug 2019 23:55:03 +0000: markdown is not available.
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Array Tools Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Audio Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Page Metadata Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Libraries Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: LoremPixel Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Helper loaded: galleriaHelper
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Fetch HTML Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Extension loaded: 
+REQUESTED: - Wed, 21 Aug 2019 23:55:03 +0000: 
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: looking metadata for /
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Helper loaded: arrayHelper
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Helper loaded: fileHelper
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Begin extract tabbed content
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: number of tabs: 4
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Tab: Our Gurus
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for tags -> our satgurus
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 20
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Tab: For Teachers
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for title -> history
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 11
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for tags -> teachers
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Tab: For Parents and Youth
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for tags -> parents
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 21
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for tags -> teen
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 1
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for title -> saivite hindu religion
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 4
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Tab: Childrens Books
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: tab node: search
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for media_type -> book
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: search for tags -> children
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: results: 6
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: End extract tabbed content
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: keys:  1
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: value:  tabs
+title
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Final output sent to browser
+DEBUG - Wed, 21 Aug 2019 23:55:03 +0000: Total execution time: 0.2839
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Hooks Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Config Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: URI Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Router Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Output Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Input Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Global POST and COOKIE data sanitized
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Language Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Loader Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Controller Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Helper loaded: assetHelper
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Helper loaded: urlHelper
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Database Driver Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Session Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Helper loaded: stringHelper
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Session routines successfully run.
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Utils Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Utils constructor called
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: FastJSON Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Dotted Slideshow Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Page Metadata Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: CMS Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: AAG DB Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Default Connection Set
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Markdown Library Loaded
+ERROR - Wed, 21 Aug 2019 23:56:50 +0000: markdown is not available.
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Array Tools Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Audio Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Libraries Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: LoremPixel Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Helper loaded: galleriaHelper
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Fetch HTML Library Loaded
+REQUESTED: - Wed, 21 Aug 2019 23:56:50 +0000: visit/come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: Loading fetchhtml library
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: page to load: visit/come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: looking for /home/devhap/public_html/html/visit/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: found metadata file at: /home/devhap/public_html/html/visit/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/default.metadata --> template two-column
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/default.metadata --> body_class skinny
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/default.metadata --> top_navigation >Visit<
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/default.metadata --> page_heading Visit
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/default.metadata --> sidebar visit/visit-sidebar.html
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/default.metadata --> title Kauai's Hindu Monastery - Visit
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: found metadata file at: /home/devhap/public_html/html/visit/come-on-a-pilgrimage/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/come-on-a-pilgrimage --> top_navigation >Visit<
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/come-on-a-pilgrimage --> body_class skinny
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/come-on-a-pilgrimage --> page_heading Hindu Visitors
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/come-on-a-pilgrimage --> sidebar visit/visit-sidebar.html
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/come-on-a-pilgrimage --> title Kauai's Hindu Monastery - Information for Hindu Pilgrims
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/come-on-a-pilgrimage --> template two-column
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: visit/come-on-a-pilgrimage --> secondary_navigation cat-come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: fetching page:  visit/come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 21 Aug 2019 23:56:50 +0000: loading external page: /home/devhap/public_html/html/visit/come-on-a-pilgrimage/index.html
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Hooks Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Config Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: URI Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Router Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Output Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Input Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Global POST and COOKIE data sanitized
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Language Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Loader Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Controller Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Helper loaded: assetHelper
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Helper loaded: urlHelper
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Database Driver Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Session Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Helper loaded: stringHelper
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Session routines successfully run.
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Utils Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Utils constructor called
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: FastJSON Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Dotted Slideshow Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Page Metadata Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: CMS Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: AAG DB Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Default Connection Set
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Markdown Library Loaded
+ERROR - Wed, 21 Aug 2019 23:57:25 +0000: markdown is not available.
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Array Tools Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Audio Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Libraries Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: LoremPixel Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Helper loaded: galleriaHelper
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Fetch HTML Library Loaded
+REQUESTED: - Wed, 21 Aug 2019 23:57:25 +0000: visit/plan-your-visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Loading fetchhtml library
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: page to load: visit/plan-your-visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: looking for /home/devhap/public_html/html/visit/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: found metadata file at: /home/devhap/public_html/html/visit/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/default.metadata --> template two-column
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/default.metadata --> body_class skinny
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/default.metadata --> top_navigation >Visit<
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/default.metadata --> page_heading Visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/default.metadata --> sidebar visit/visit-sidebar.html
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/default.metadata --> title Kauai's Hindu Monastery - Visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: found metadata file at: /home/devhap/public_html/html/visit/plan-your-visit/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/plan-your-visit --> top_navigation >Visit<
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/plan-your-visit --> body_class skinny
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/plan-your-visit --> page_heading Visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/plan-your-visit --> sidebar visit/visit-sidebar.html
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/plan-your-visit --> title Kauai's Hindu Monastery - Plan Your Visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/plan-your-visit --> template two-column
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: visit/plan-your-visit --> secondary_navigation cat-plan-your-visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: fetching page:  visit/plan-your-visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: loading external page: /home/devhap/public_html/html/visit/plan-your-visit/index.html
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: File loaded: /home/devhap/public_html/application/ha/views/../../../html/visit/dress-and-guidelines.html
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: File loaded: /home/devhap/public_html/application/ha/views/../../../html/visit/come-on-a-tour/index.html
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: looking metadata for /visit/plan-your-visit
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Helper loaded: arrayHelper
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Helper loaded: fileHelper
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Final output sent to browser
+DEBUG - Wed, 21 Aug 2019 23:57:25 +0000: Total execution time: 0.0983
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Hooks Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Config Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: URI Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Router Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Output Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Input Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Global POST and COOKIE data sanitized
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Language Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Loader Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Controller Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Helper loaded: assetHelper
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Helper loaded: urlHelper
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Database Driver Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Session Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Helper loaded: stringHelper
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Session routines successfully run.
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Utils Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Utils constructor called
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: FastJSON Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Get Set Page Header and Navigation Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Dotted Slideshow Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Page Metadata Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: CMS Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: AAG DB Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Default Connection Set
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Markdown Library Loaded
+ERROR - Wed, 21 Aug 2019 23:58:14 +0000: markdown is not available.
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Array Tools Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Audio Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Libraries Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: LoremPixel Library Loaded
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Helper loaded: galleriaHelper
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Fetch HTML Library Loaded
+REQUESTED: - Wed, 21 Aug 2019 23:58:14 +0000: visit/come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Loading fetchhtml library
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: page to load: visit/come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: looking for /home/devhap/public_html/html/visit/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: found metadata file at: /home/devhap/public_html/html/visit/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/default.metadata --> template two-column
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/default.metadata --> body_class skinny
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/default.metadata --> top_navigation >Visit<
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/default.metadata --> page_heading Visit
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/default.metadata --> sidebar visit/visit-sidebar.html
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/default.metadata --> title Kauai's Hindu Monastery - Visit
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: found metadata file at: /home/devhap/public_html/html/visit/come-on-a-pilgrimage/default.metadata
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/come-on-a-pilgrimage --> top_navigation >Visit<
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/come-on-a-pilgrimage --> body_class skinny
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/come-on-a-pilgrimage --> page_heading Hindu Visitors
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/come-on-a-pilgrimage --> sidebar visit/visit-sidebar.html
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/come-on-a-pilgrimage --> title Kauai's Hindu Monastery - Information for Hindu Pilgrims
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/come-on-a-pilgrimage --> template two-column
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: visit/come-on-a-pilgrimage --> secondary_navigation cat-come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: fetching page:  visit/come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: loading external page: /home/devhap/public_html/html/visit/come-on-a-pilgrimage/index.html
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: File loaded: /home/devhap/public_html/application/ha/views/../../../html/visit/dress-and-guidelines.html
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: File loaded: /home/devhap/public_html/application/ha/views/../../../html/visit/when-to-visit-retreats.html
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: looking metadata for /visit/come-on-a-pilgrimage
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Helper loaded: arrayHelper
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Helper loaded: fileHelper
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Final output sent to browser
+DEBUG - Wed, 21 Aug 2019 23:58:14 +0000: Total execution time: 0.1017

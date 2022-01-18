@@ -1,0 +1,114 @@
+<?lc
+# THIS IS A SPECIAL CONTROLLER TO LAUNCH THE HOME PAGE TEMPLATE.
+# ALL the code here is "Bogus" and we need another method
+# probably Andre needs to create a special index.xml file in
+# /html/home/index.xml
+# for this page..
+
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "home,index,test" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+put "admin" into sWordpressUsername
+put "6aiv1sm4TheWorld" into sWordpressPassword
+put "1" into sWordpressBlogID
+
+command home
+	rigLoaderLoadLibrary "getsetheadnav" # required opening for all pages
+	-- rigLoaderLoadLibrary "dotted-slideshow" # use as needed, or not -------- rabit
+	-- had to rename lib because handler names including hyphens are not allowed,
+	-- so, rigRunInitialdotted-slideshowConfig yields an error
+	rigLoaderLoadLibrary "dottedslideshow" # use as needed, or not ----------- rabit
+	-- rigLoaderLoadLibrary "pagemetadata" -- this lib is loaded in lib cms, rabit
+	rigLoaderLoadLibrary "cms"
+	rigLoaderLoadLibrary "lorempixel"
+	rigLoadHelper "asset"
+	rigLoadHelper "galleria"
+	rigLoaderLoadLibrary "fetchhtml"
+	--rigLoaderLoadLibrary "xmlrpc"
+	rigLoaderLoadLibrary "wp"
+	rigLoaderLoadLibrary "WordpressRestAPI"
+	 rigLoadExtension "com.livecode.library.json"
+
+    # let's log what page is the user hits on
+    rigLogMessage "Requested:", rigUriString()
+
+	--xmlrpcSetServer ("http://himalayanacademy.com/blog/taka/xmlrpc.php")
+
+end home
+
+
+
+command test
+	ct "text/plain"
+	put url "https://dev.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts&per_page=10&orderby=date&order=desc" into tJSON
+	put jsonimport(tJSON) into gData["taka"]
+	get gData["taka"][1]["date"]
+	put ",00,00" after it
+	replace "-" with comma in it
+	replace ":" with comma in it
+	replace "T" with comma in it
+		put it & cr & cr
+	convert it to short date
+	put the result & cr & cr
+	put it & cr & cr
+	put gData["taka"][1]["guid"]["rendered"] &cr & cr
+	put gData["taka"][1]["title"]["rendered"] &cr & cr
+	put gData["taka"][1]["content"]["rendered"] &cr & cr
+end test
+
+
+
+# THIS COMMAND WILL BE CALLED IF NONE IS SPECIFIED IN THE URL
+command index
+# we are not really using GetSetNavHead, but it has the function to get a random image for the ddd banner
+#uncomment this for DDDrive
+
+	get getRandomBanner()
+
+	put "Welcome to Kauai's Hindu Monastery and Himalayan Academy" into gData["pageTitle"]
+	put cmsParseXMLDataFile("/home/index.xml") into gData["modules"]
+
+	# LOAD THE VIEW FILES
+	get rigLoadView("sitewide/doc-head")
+
+	# When DDD is offline we call the regular view
+	# comment this out when DDD is on:
+
+	
+	# To turn banners on during DDD drive we call the page head
+	# that had the DDD block. Uncomment the following line to go live:
+         
+     --   get rigLoadView("home/home-page-head")
+	 get rigLoadView("home/home-page-head-ddd")
+
+	put url "https://himalayanacademy.com/blog/home-page-cache.txt" into gData["blogHome"] // added by Simon - 18 Feb
+
+/*
+	put wpGetLastPosts(sWordpressBlogID, sWordpressUsername,sWordpressPassword) into gData["taka"]
+	put url "https://www.himalayanacademy.com/blog/index.php?rest_route=/wp/v2/posts&per_page=10&orderby=date&order=desc" into tJSON
+	put jsonimport(tJSON) into gData["taka"]
+	repeat for each key k in gData["taka"]
+		get gData["taka"][k]["date"]
+		put ",00,00" after it
+		replace "-" with comma in it
+		replace ":" with comma in it
+		replace "T" with comma in it
+		convert it to long date
+		put it into gData["taka"][k]["date"]
+	end repeat
+*/
+	get rigLoadView("home/main-content")
+	get rigLoadView("sitewide/footer")
+
+
+end index
+
+--| END OF home.lc
+--| ./application/controllers/home.lc
+----------------------------------------------------------------------

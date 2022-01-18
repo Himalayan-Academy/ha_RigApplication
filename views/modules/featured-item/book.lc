@@ -1,0 +1,1 @@
+<a href="/view/[[ gData["record"]["file_id"] ]]"><img src="<? return coverForPublication(gData["record"]) ?>" /></a>

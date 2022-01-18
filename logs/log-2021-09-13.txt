@@ -1,0 +1,88 @@
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for tags -> children
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Extension loaded: 
+REQUESTED: - Mon, 13 Sep 2021 23:55:04 -0700: 
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: looking metadata for /
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Helper loaded: arrayHelper
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Helper loaded: fileHelper
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Begin extract tabbed content
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: number of tabs: 4
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Tab: Our Gurus
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for tags -> our satgurus
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: results: 11
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: End extract tabbed content
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: keys:  1
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: value:  tabs
+title
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: results: 33
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Tab: For Teachers
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for title -> history
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Final output sent to browser
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Total execution time: 0.6048
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: results: 11
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for tags -> teachers
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: results: 10
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Tab: For Parents and Youth
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for tags -> parents
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: results: 25
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for tags -> teen
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: results: 1
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for title -> saivite hindu religion
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: results: 4
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Tab: Childrens Books
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: tab node: search
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for media_type -> book
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: search for tags -> children
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: results: 11
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: End extract tabbed content
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: keys:  1
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: value:  tabs
+title
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Final output sent to browser
+DEBUG - Mon, 13 Sep 2021 23:55:04 -0700: Total execution time: 0.5406
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Hooks Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Config Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: URI Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Router Library Loaded
+ERROR - Mon, 13 Sep 2021 23:56:42 -0700: 404 Page Not Found --> config
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Output Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Input Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Global POST and COOKIE data sanitized
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Language Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Loader Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Controller Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Helper loaded: assetHelper
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Helper loaded: urlHelper
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Database Driver Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Session Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Helper loaded: stringHelper
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: A session cookie was not found.
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Session routines successfully run.
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Utils Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Utils constructor called
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: FastJSON Library Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Final output sent to browser. There was no view data.
+DEBUG - Mon, 13 Sep 2021 23:56:42 -0700: Total execution time: 0.0842

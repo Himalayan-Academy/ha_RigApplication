@@ -1,0 +1,124 @@
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: Our Gurus
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: XML-RPC Library Loaded
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Wordpress REST Library Loaded
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 20
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Extension loaded: 
+REQUESTED: - Thu, 31 Oct 2019 23:55:11 -0700: 
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: looking metadata for /
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Helper loaded: arrayHelper
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: For Teachers
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for title -> history
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Helper loaded: fileHelper
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Begin extract tabbed content
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: number of tabs: 4
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: Our Gurus
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for tags -> our satgurus
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 20
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: For Teachers
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for title -> history
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 11
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 20
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for tags -> teachers
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: For Teachers
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for title -> history
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 11
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for tags -> teachers
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 11
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 6
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for tags -> teachers
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: For Parents and Youth
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for tags -> parents
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 6
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: For Parents and Youth
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for tags -> parents
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 6
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: For Parents and Youth
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for tags -> parents
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 21
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Tab: Childrens Books
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: tab node: search
+e/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for media_type -> book
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: search for tags -> children
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Result:invalid URL: 
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: It:
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 6
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: End extract tabbed content
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: keys:  1
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: value:  tabs
+title
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Result:invalid URL: 
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: It:
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: results: 6
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: End extract tabbed content
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: keys:  1
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: value:  tabs
+title
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: Result:invalid URL: 
+DEBUG - Thu, 31 Oct 2019 23:55:11 -0700: It:
+DEBUG - Thu, 31 Oct 2019 23:55:12 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 31 Oct 2019 23:55:12 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 31 Oct 2019 23:55:12 -0700: Final output sent to browser
+DEBUG - Thu, 31 Oct 2019 23:55:12 -0700: Total execution time: 5.7718
+DEBUG - Thu, 31 Oct 2019 23:55:13 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 31 Oct 2019 23:55:13 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 31 Oct 2019 23:55:13 -0700: Final output sent to browser
+DEBUG - Thu, 31 Oct 2019 23:55:13 -0700: Total execution time: 6.0227
+DEBUG - Thu, 31 Oct 2019 23:55:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 31 Oct 2019 23:55:14 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 31 Oct 2019 23:55:14 -0700: Final output sent to browser
+DEBUG - Thu, 31 Oct 2019 23:55:14 -0700: Total execution time: 4.9836
+DEBUG - Thu, 31 Oct 2019 23:55:15 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 31 Oct 2019 23:55:15 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 31 Oct 2019 23:55:15 -0700: Final output sent to browser
+DEBUG - Thu, 31 Oct 2019 23:55:15 -0700: Total execution time: 5.9507
+DEBUG - Thu, 31 Oct 2019 23:55:15 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 31 Oct 2019 23:55:15 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 31 Oct 2019 23:55:15 -0700: Final output sent to browser
+DEBUG - Thu, 31 Oct 2019 23:55:15 -0700: Total execution time: 6.5362
+DEBUG - Thu, 31 Oct 2019 23:55:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 31 Oct 2019 23:55:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 31 Oct 2019 23:55:16 -0700: Final output sent to browser
+DEBUG - Thu, 31 Oct 2019 23:55:16 -0700: Total execution time: 5.3016
+DEBUG - Thu, 31 Oct 2019 23:55:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 31 Oct 2019 23:55:16 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 31 Oct 2019 23:55:16 -0700: Final output sent to browser
+DEBUG - Thu, 31 Oct 2019 23:55:16 -0700: Total execution time: 5.9701
+DEBUG - Thu, 31 Oct 2019 23:55:17 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 31 Oct 2019 23:55:17 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 31 Oct 2019 23:55:17 -0700: Final output sent to browser
+DEBUG - Thu, 31 Oct 2019 23:55:17 -0700: Total execution time: 6.2146

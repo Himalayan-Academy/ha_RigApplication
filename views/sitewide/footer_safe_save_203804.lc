@@ -1,0 +1,139 @@
+
+		<footer class="page-footer">
+	
+		<div class="wrapper">
+		
+			<ul class="social">
+				<li class="twitter"><a href="#">Twitter</a></li>
+				<li class="facebook"><a href="#">Facebook</a></li>
+				<li class="youtube"><a href="#">YouTube</a></li>
+				<li class="rss"><a href="#">RSS</a></li>
+			</ul>
+		
+			<nav class="nav-footer">
+			
+				<ul class="nav-parent">
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Donate</a></li>
+					<li><a href="#">How Can I Help?</a></li>
+					<li><a href="#">Subscribe by email/RSS</a></li>
+				</ul>
+				
+				<form class="footer-info">
+				
+					<label>More Information For:</label>
+					<select name="select-options">
+						<option selected="selected" disabled="disabled">Choose One</option>
+						<option value="parents">Parents</option>
+						<option value="children">Children</option>
+						<option value="teachers">Teachers</option>
+						<option value="students">Students</option>
+					</select>
+				
+				</form>
+			
+			</nav> <!-- end footer navigation -->
+			
+			<p class="copyright">Copyright &copy; 2011 Kauai's Hindu Monastery. All rights reserved.</p>
+			
+			<aside class="footer-regions" role="complementary">
+			
+				<div class="footer-content">
+					<p>here's some stuff for parents!</p>
+				</div> <!-- end footer content -->
+				
+				<div class="footer-content">
+					
+					<div class="column">
+					
+						<h4 class="h4 media-book">Children's Books</h4>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Donec pretium enim lacinia</a></li>
+							<li><a href="#">Scelerisque aliquet</a></li>
+							<li><a href="#">Duis vitae eros in sem mollis</a></li>
+						</ul>
+					
+					</div>
+					
+					<div class="column">
+					
+						<h4 class="h4">Quick Links</h4>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Donec pretium enim lacinia</a></li>
+							<li><a href="#">Scelerisque aliquet</a></li>
+							<li><a href="#">Duis vitae eros in sem mollis</a></li>
+						</ul>
+					
+					</div>
+					
+					<div class="column">
+					
+						<h4 class="h4">Related Content</h4>
+						<ul>
+							<li class="media-podcast"><a href="#">Podcast For Children</a></li>
+							<li class="media-slides"><a href="#">Slideshow of Art From Books</a></li>
+							<li class="media-video"><a href="#">Video Content</a></li>
+						</ul>
+					
+					</div>
+					
+					<div class="vcard column">
+					
+						<div class="org">Himalayan Academy</div>
+						<div class="adr">
+							<em>Kauai's Hindu Monastery</em>
+							<div class="street-address">107 Kaholalele Road</div>
+							<span class="locality">Kapaa</span>, <span class="region">HI</span> <span class="postal-code">96746-9304</span>
+						</div>
+						<a class="email" href="mailto:contact@hindu.org">contact@hindu.org</a>
+					
+					</div>
+					
+				</div> <!-- end footer content -->
+				
+				<div class="footer-content">
+					
+					<p>Some more content goes here</p>
+					
+				</div> <!-- end footer content -->
+				
+				<div class="footer-content">
+					
+					<p>A fourth section for good measure</p>
+					
+				</div> <!-- end footer content -->
+			
+			</aside> <!-- end footer regions -->
+			
+		</div> <!-- end footer wrapper -->
+	
+	</footer> <!-- end page footer -->
+	
+	<!-- please do not remove this benchmakr detail for now. We can watch to see what
+	     server side options cause any serious performance issues. Note the
+	     seconds here show how long it takes to build the page. If it takes
+	     more time to render in the browser, then it is network issue, not our server. 
+	     I added a class to the CSS to controll the Look and Feel of this.-->
+	
+	<style type="text/css">
+	.meta {
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+	.meta:hoover {
+		cursor: hand; 
+	}
+	</style>     
+	<p class="rev-igniter-benchmark">Page rendered in {{g_ElapsedTime_}} seconds by <a href="http://revigniter.com/" target="_top">RevIgniter</a> version [[ RIVERSION ]] [[ RISTATE ]]. LiveCode Server version [[the version]] (build [[the buildnumber]]). <span class="meta">&#2384;</span></p>
+	
+
+</div> <!-- end page container -->
+
+
+</body>
+</html>

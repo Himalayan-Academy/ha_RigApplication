@@ -1,0 +1,131 @@
+<!--
+--This page is meant to take over the main-content div for 
+-- and given single book. The page content is dynamically generated from the model.
+-- I did something out of the box here and am using gBookData instead of gData
+-- i don't know if that breaks the rules, but I did not  know how to 
+-- get and array into and array and then actually get the data back out from
+-- gData[someArray] 
+-->
+
+<div id="main-content">
+
+
+<div id="main-book-container">
+	<div id="cover-img">
+		<img src="[[ gData["book"]["cover"] ]]" />
+		<br />
+	
+ 
+ <?
+	if EBookWebFormatIsAvailable(gData["book"]["formats"]) is true then
+  	put "/books/viewbook/" & gData["book"]["file_id"] into tFormat["url"]
+  	put format("<p>[<a href=\"%s\">%s</a>]</p>", tFormat["url"], "Read Now") into tRetVal 		  
+		return tRetVal
+	else
+		return empty
+	end if
+  ?>
+  		  
+	
+		</div>
+		<br />
+		<div id="main-catalog-entry">
+		<h1 class="title">
+	[[ gData["book"]["title"] ]]</h1>
+	<h2 class="sub-title">
+		[[ gData["book"]["sub_title"] ]]</h2>
+		<p class="author"><b>Author:</b> 
+		[[ gData["book"]["author"] ]]</p>	
+		<?
+		if gData["book"]["sales_pitch"] is not empty then
+			put format("<p class=\"promo-blurb\">") into tRetVal
+			put gData["book"]["sales_pitch"] after tRetVal
+			put "</p>" after tRetVal
+			return tRetVal
+		end if
+		?>		
+		 [[ gData["meta"]["format"] ]]  	
+		<p class="categories"><b>&nbsp;&nbsp;&nbsp;Categories:&nbsp;&nbsp;&nbsp;</b>[[ gData["book"]["category"] ]]</p>		
+		  <?
+		  put empty into tBuf
+		  if the keys of gData["book"]["channels"] is empty then
+				return empty
+			end if
+			put format("<p class=\"retailers\"><b>&nbsp;&nbsp;&nbsp;Other Channels:&nbsp;&nbsp;&nbsp;</b><br />") into tBuf
+		  repeat for each key tC in gData["book"]["channels"]
+		    put gData["book"]["channels"][tC] into tChannel
+		    put format("<a href=\"%s\">%s</a> | ", tChannel["url"], tChannel["channel_name"]) after tBuf
+	    end repeat
+		  delete char -3 to -1 of tBuf
+		  return (tBuf & "</p>")
+		  ?>
+		  
+		<p class="on-sale-date"><b>&nbsp;&nbsp;&nbsp;On Sale:</b>&nbsp;&nbsp;&nbsp; January 1, 2011</p>
+		<p class="product-detail">
+		<? if gData["book"]["product_details"] is not empty then return "Print Edition: "?> <? if gData["book"]["isbn"] is not empty then return ("ISBN-" & gData["book"]["isbn"])  ?> [[ gData["book"]["product_details"] ]]
+		</p>
+		</div><!--end main-catalog-entry -->
+	
+	<div id="description"><p>
+	<? 
+		if gData["book"]["sales_blurb"] is not empty then 
+			return gData["book"]["sales_blurb"] 
+		end if
+	?>
+	</p> <p>
+	<? 
+	if gData["book"]["description"] is not empty then 
+		return  gData["book"]["description"] 
+	end if
+	?></p></div>
+	
+	<?
+	if gBookData["bookReaderComments"] is not empty then
+		put format("<div id=\"comments\"><h2 class=\"sub-title\">Readers' Comments</h2>") into tRetVal
+	  put format("<p>gBookData[\"bookReaderComments\"]</p>") after tRetVal
+		put format("<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>") after tRetVal
+		return tRetVal
+	end if
+	?>
+
+
+
+</div> <!--end main-book-container -->
+
+<!-- 
+<div id="right-side-bar">
+<h1 class="title"> Other Links</h1>
+<br />
+<hr />
+<h2 class="sub-title">Genious Links?</h2>
+<ul id="genious-links">
+<li>Similar Titles?</li>
+<li>Latest Titles?</li>
+</ul>
+<br />
+<hr />
+		<p><b>Other Book Sites</b></p>
+
+<ul>
+	<li><a href="http://www.amazon.com/Ford-County-Stories-John-Grisham/dp/0307702103/ref=tmm_abk_title_0?ie=UTF8&amp;qid=1292733602&amp;sr=1-2">Amazon</a></li>
+	<li> <a href="http://www.harpercollins.com/books/Memories-Before-After-Sound-Music-Agathe-Von-Trapp/?isbn=9780061998812">Harper Collins</a> </li>
+	<li> <a href="http://www.randomhouse.com/catalog/results.pperl?cat_id_ex=health:90000038644">Random House</a> </li>
+	
+	<a href="http://us.penguingroup.com/nf/Book/BookDisplay/0,,9781436265508,00.html">Penguin</a>
+</ul>
+
+<hr />
+<br /><br />
+<p> <b>Scrolling catalog</b> of all books? </p>
+<br /><br />
+<p> <b>Results of constrained search</b> or Genius Links choices are posted here from the database?</p>
+<br /><br /><br />
+
+
+
+</div> 
+ -->
+
+
+
+

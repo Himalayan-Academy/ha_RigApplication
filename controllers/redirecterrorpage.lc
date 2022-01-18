@@ -1,0 +1,131 @@
+<?lc
+
+# THIS IS A SPECIAL CONTROLLER TO LAUNCH HANDLE 404's
+# IF THE URI IS FOUND IN OUR REDIRECTMAP.XML FILE
+# then the user is redirected to that page
+# otherwise a custom 404 page is sent
+# This is called by the routes.lc 
+
+# CAUTION! 
+# 1) Never place an index handler in the controller!
+# 2) This controller *must* be on the top level of your app's controller folder
+# if you put it in a sub-folder it will not be found
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers, gData
+global gRigA ----------- rabit
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "redirectErrorPage,aagRedirectIfFound,sendCustomErrorPage,dbCustomError" into gControllerHandlers
+
+command redirectErrorPage
+	rigLoaderLoadLibrary "Getsetheadnav"
+	# rigLoaderLoadLibrary "utils"	 # wierd... If I uncomment this I get and error!
+end redirectErrorPage
+
+command aagRedirectIfFound
+
+
+	 put rigCurrentURIstring() into tPage
+	 
+	 if tPage contains "taka/past" then
+		 -- put cr & the internet date & ": " & tPage after url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/system/logs/404s_redirected.log") -- rabit
+ 		put cr & the internet date & ": " & tPage after url ("file:" & gRigA["APPPATH"] & "logs/404s_redirected.log") ------- rabit
+	   sendCustomErrorPage tPage
+	   exit aagRedirectIfFound
+	end if
+	 
+	 	 
+	 # we don't want to bother showing error pages for images
+			 set the itemdel to "/"	 
+			 put "jpg/gif/jpeg/png" into tDontRedirects
+			
+	repeat for each item x in tDontRedirects
+ 		if item -1 of tPage contains x then
+ 			-- put cr & the internet date & ": " & $_SERVER["HTTP_REFERER"] &" | " & tPage after url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/system/logs/images_not_found.log") -- rabit
+ 			put cr & the internet date & ": " & $_SERVER["HTTP_REFERER"] &" | " & tPage after url ("file:" & gRigA["APPPATH"] & "logs/images_not_found.log") ---- rabit
+ 			 exit aagRedirectIfFound
+ 		end if
+ 	end repeat
+			     
+	put url ("binfile:" & $_SERVER["DOCUMENT_ROOT"] & "/html/info/redirectmap.xml") into tRedirectMapXML
+	put revCreateXMLTree(tRedirectMapXML, true, true, false) into tXML
+	if tXML is not a number then
+		exit aagRedirectIfFound
+	end if
+	
+	put empty into tNewLink
+	
+	put revXMLNumberOfChildren(tXML, "/map", "redirect", 1) into tNumberOfEntries
+	repeat with x = 1 to tNumberOfEntries
+		put "/map/redirect["&x&"]" into tNode
+		put revXMLNodeContents(tXML, (tNode & "/from")) into tFrom
+		put revXMLNodeContents(tXML, (tNode & "/to")) into tTo
+		put revXMLAttribute(sXML, tNode, "match") into tMatchingType
+		if "xmlerr" is in tMatchingType then
+			put "contains" into tMatchingType
+		end if
+		switch tMatchingType
+			case "contains"
+				if tFrom is in tPage then
+					put tTo into tNewLink
+					exit repeat
+				end if
+			break
+			case "regex"
+				if matchText(tPage, tFrom) then
+					put tTo into tNewLink
+				end if
+			break
+		end switch
+	end repeat
+	
+	if tNewLink is empty then
+	   rigLogMessage "DEBUG", ("REDIRECT-FAILURE:" & tPage & "No match found in the XML map!")
+	   -- put cr & the internet date & ": " & tPage after url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/system/logs/404s_not-redirected.log") -- rabit
+		put cr & the internet date & ": " & tPage after url ("file:" & gRigA["APPPATH"] & "logs/404s_not-redirected.log") --------- rabit
+	   sendCustomErrorPage tPage
+	   exit aagRedirectIfFound
+	end if
+		
+
+	rigLogMessage "error", "302 Redirect match" && tPage &&"matched"&& tFrom &&"redirected to --> " & tNewLink 
+	-- put cr & the internet date & ": " & tPage after url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/system/logs/404s_redirected.log") -- rabit
+	put cr & the internet date & ": " & tPage after url ("file:" & gRigA["APPPATH"] & "logs/404s_redirected.log") ---------- rabit
+
+	put header "Status: 302"
+	put header "Location:" && tNewLink
+	put "Redirecting to" && tNewLink
+	rigLogMessage "Redirect-to:", tNewLink
+	
+end aagRedirectIfFound
+
+command sendCustomErrorPage tPage
+   put tPage into gData["getRequest"]
+	if tPage contains "taka/past" then 
+		put  url ("file:" & $_SERVER["DOCUMENT_ROOT"] &"/html/info/taka-past.html")  into gData["singleArticle"]
+			else
+		put rigLoadView("sitewide/error-page",TRUE) into gData["singleArticle"]
+	end if
+	put "Kauai's Hindu Monastery - Page Note Found" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Sorry, we could not find the page you were looking for",">Monastery<","") into gData["pageHeader"]
+		put header "Status: 404"		
+	get rigLoadView("sitewide/two-column")  
+end sendCustomErrorPage
+
+Command dbCustomError
+	rigLoaderLoadLibrary "Getsetheadnav"
+	Put "<p><b>You have sent an invalid database search request. If you want us to investigate, you will need to copy the request to the email mentioned below.</b></p>" into tBadDbRequestNotice	
+    put rigLoadView("sitewide/error-page",TRUE) into gData["singleArticle"]   
+    replace "<!--###SPECIAL-MESSAGE-->"  with tBadDbRequestNotice in gData["singleArticle"]
+	put "Kauai's Hindu Monastery - Page Note Found" into gData["pageTitle"] 
+	put getSetHeadNav("skinny","Sorry, we could not find the page you were looking for",">Monastery<","") into gData["pageHeader"]		
+	get rigLoadView("sitewide/two-column")  
+end dbCustomError
+   
+   
+
+
+--| END OF home.lc
+--| ./application/ha/controllers/redirectErrorPage.lc
+----------------------------------------------------------------------

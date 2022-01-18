@@ -1,0 +1,50 @@
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: It:
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: results: 11
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for tags -> teachers
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: results: 6
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for tags -> parents
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: results: 21
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for tags -> teen
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: results: 1
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: results: 4
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: Tab: Childrens Books
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: search for tags -> children
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: results: 6
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: End extract tabbed content
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: keys:  1
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: value:  tabs
+title
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Fri, 6 Dec 2019 23:55:12 -0800: It:
+DEBUG - Fri, 6 Dec 2019 23:55:19 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 6 Dec 2019 23:55:19 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 6 Dec 2019 23:55:19 -0800: Final output sent to browser
+DEBUG - Fri, 6 Dec 2019 23:55:19 -0800: Total execution time: 16.8797
+DEBUG - Fri, 6 Dec 2019 23:55:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 6 Dec 2019 23:55:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 6 Dec 2019 23:55:20 -0800: Final output sent to browser
+DEBUG - Fri, 6 Dec 2019 23:55:20 -0800: Total execution time: 17.6416
+DEBUG - Fri, 6 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 6 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 6 Dec 2019 23:55:30 -0800: Final output sent to browser
+DEBUG - Fri, 6 Dec 2019 23:55:30 -0800: Total execution time: 17.5613
+DEBUG - Fri, 6 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 6 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 6 Dec 2019 23:55:30 -0800: Final output sent to browser
+DEBUG - Fri, 6 Dec 2019 23:55:30 -0800: Total execution time: 18.3095

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HAMSA To Stories - Results</title>
+	<style>
+		#login-box {
+			width: 50%;
+			margin: auto;
+			padding: 50px;
+			border: solid 1px;
+		}
+		
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.g {
+			width: 100%;
+		}
+		
+		.grid-container {
+		  display: grid;
+		  grid-template-columns: 1fr 1fr 1fr 1fr;
+		  grid-template-rows: 1fr 1fr 1fr;
+		  gap: 10px 10px;
+		  grid-template-areas:
+		    ". . . ."
+		    ". . . ."
+		    ". . . .";
+		}
+		
+		#name-entry {
+			border: solid 2px;
+			padding: 30px;
+			background: lightblue;
+		}
+		</style>
+</head>
+<body>
+	<div id="login-box">
+		<h1>HAMSA To Stories</h1>
+		<form action="/hamsatostories/savestory" method="POST">
+			<p>Searching for keywords: <b>[[ gData["keywords"] ]]</b> and description: <b>[[ gData["description"] ]]</b>. Found <b>[[ the number of lines of the keys of gData["results"] ]]</b> results.</p>
+			
+			
+			<div class="grid-container">
+			
+			<? 
+			put gData["results"] into tA
+			put empty into tBuf
+			repeat for each key k in tA
+				put "/hamsa-images/_cache/" & tA[k]["checksum"] & ".thumb.jpg" into tPath
+				--replace "/home/devhap/public_html" with empty in tPath
+				put "<img class='g' src='" & tPath & "'>" after tBuf
+			end repeat
+			
+			return tBuf 
+			?>
+			
+			</div>
+			<hr>	
+			<div id="name-entry">
+				<label for="name">Name for story:</label>
+				<input type="text" name="name">
+				<br>
+				<input type="submit" value="Save Story">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

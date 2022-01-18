@@ -1,0 +1,1253 @@
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: keys:  1
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: value:  tabs
+title
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Result:invalid URL: 
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: It:
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: No URI present. Default controller set.
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:52:37 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Extension loaded: 
+REQUESTED: - Fri, 14 Feb 2020 23:52:37 -0800: 
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: looking metadata for /
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Begin extract tabbed content
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: number of tabs: 4
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Tab: Our Gurus
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for tags -> our satgurus
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: results: 20
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Tab: For Teachers
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for title -> history
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: results: 11
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for tags -> teachers
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: results: 6
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for tags -> parents
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: results: 21
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for tags -> teen
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: results: 1
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: results: 4
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Tab: Childrens Books
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: search for tags -> children
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: results: 6
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: End extract tabbed content
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: keys:  1
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: value:  tabs
+title
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: Result:invalid URL: 
+DEBUG - Fri, 14 Feb 2020 23:52:37 -0800: It:
+DEBUG - Fri, 14 Feb 2020 23:52:38 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 14 Feb 2020 23:52:38 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:52:38 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:52:38 -0800: Total execution time: 2.5616
+DEBUG - Fri, 14 Feb 2020 23:52:39 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 14 Feb 2020 23:52:39 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:52:39 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:52:39 -0800: Total execution time: 1.9456
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:52:43 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Art Library Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: ePub Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 14 Feb 2020 23:52:43 -0800: site/search/tags/HInduism and tradition
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: searching with GET
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: search terms
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: tags: HInduism and tradition
+DEBUG - Fri, 14 Feb 2020 23:52:43 -0800: search tags = HInduism and tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: number of results: 9
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%HInduism and tradition%' 
+ORDER BY `date_entered` DESC 
+LIMIT 9
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 1 guru-purnima_pt
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 2 our-sacred-earth_ei
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 3 kumbha-mela_ei
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 4 home-festivals_ei
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 5 sacred-symbols_ei
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 6 12-beliefs-of-saivism_ei
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 7 dancing-with-siva
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 8 living-with-siva
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: 9 hinduisms-nandinatha-sutras
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: search tags = HInduism and tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: search terms stored on session. Bg0AAAABAAR0YWdzCAAWSEluZHVpc20gYW5kIHRyYWRpdGlvbg==
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: sess: 
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: next page /site/search/tags/HInduism+and+tradition/page/2
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: previous page /site/search/tags/HInduism+and+tradition/page/0
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: result count: 9
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: url with search terms. /site/search/tags/HInduism+and+tradition
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:52:44 -0800: Total execution time: 0.4195
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:53:01 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Art Library Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: ePub Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 14 Feb 2020 23:53:01 -0800: site/search/tags/Hinduism and tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: searching with GET
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: search terms
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: page: 1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: tags: Hinduism and tradition
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: search tags = Hinduism and tradition
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: number of results: 9
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%Hinduism and tradition%' 
+ORDER BY `date_entered` DESC 
+LIMIT 9
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 1 guru-purnima_pt
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 2 our-sacred-earth_ei
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 3 kumbha-mela_ei
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 4 home-festivals_ei
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 5 sacred-symbols_ei
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 6 12-beliefs-of-saivism_ei
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 7 dancing-with-siva
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 8 living-with-siva
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: 9 hinduisms-nandinatha-sutras
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: search tags = Hinduism and tradition
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAWSGluZHVpc20gYW5kIHRyYWRpdGlvbgAEcGFnZQgAATE=
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: sess: 
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: next page /site/search/tags/Hinduism+and+tradition/page/2
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: previous page /site/search/tags/Hinduism+and+tradition/page/0
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: result count: 9
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: url with search terms. /site/search/tags/Hinduism+and+tradition/page/1
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:53:01 -0800: Total execution time: 0.4526
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:54:31 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Art Library Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: ePub Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:54:31 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 14 Feb 2020 23:54:32 -0800: site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: searching with GET
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: search terms
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: page: 6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: tags: symbol
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: search tags = symbol
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: number of results: 9
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%symbol%' 
+ORDER BY `date_entered` DESC 
+LIMIT 45, 9
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 1 manivelu-pillar-art-03h-tambura
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 2 manivelu-pillar-art-03j-peacock
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 3 manivelu-pillar-art-03k-mridangam
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 4 manivelu-pillar-art-04j-lotus
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 5 manivelu-pillar-art-04k-shaven-head
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 6 manivelu-pillar-art-05j-rudrakshas
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 7 manivelu-pillar-art-06b-vidyarambha
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 8 manivelu-pillar-art-06h-upanayana
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: 9 manivelu-pillar-art-06i-kiradha
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: search tags = symbol
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAGc3ltYm9sAARwYWdlCAABNg==
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: sess: 
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: next page /site/search/tags/symbol/page/7
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: previous page /site/search/tags/symbol/page/5
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: result count: 9
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: url with search terms. /site/search/tags/symbol/page/6
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:54:32 -0800: Total execution time: 0.4416
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:54:44 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Art Library Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: ePub Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 14 Feb 2020 23:54:44 -0800: site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: searching with GET
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: search terms
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: page: 30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: tags: Ganesha
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: search tags = Ganesha
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: number of results: 3
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%Ganesha%' 
+ORDER BY `date_entered` DESC 
+LIMIT 261, 9
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: 1 maathanga-vadana_jmpm
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: 2 sri-ganesha-pancharatram_mamk
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: 3 nammamma-shaaradhe_mamk
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: search tags = Ganesha
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAHR2FuZXNoYQAEcGFnZQgAAjMw
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: sess: 
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: next page /site/search/tags/Ganesha/page/31
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: previous page /site/search/tags/Ganesha/page/29
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: result count: 3
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: getAudioFile: /media/audio/songs/bhajan/ganesha/maathanga-vadana_jmpm/maathanga-vadana_jmpm.mp3
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: getAudioFile: /media/audio/songs/bhakti-gitam/ganesha/sri-ganesha-pancharatram_mamk/sri-ganesha-pancharatram_mamk.mp3
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: getAudioFile: /media/audio/songs/bhakti-gitam/ganesha/nammamma-shaaradhe_mamk/nammamma-shaaradhe_mamk.mp3
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: url with search terms. /site/search/tags/Ganesha/page/30
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:54:44 -0800: Total execution time: 0.2859
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: No URI present. Default controller set.
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:55:02 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:55:03 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Extension loaded: 
+REQUESTED: - Fri, 14 Feb 2020 23:55:03 -0800: 
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: looking metadata for /
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Begin extract tabbed content
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: number of tabs: 4
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Tab: Our Gurus
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for tags -> our satgurus
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: results: 20
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Tab: For Teachers
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for title -> history
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: results: 11
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for tags -> teachers
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: results: 6
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for tags -> parents
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: results: 21
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for tags -> teen
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: results: 1
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: results: 4
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Tab: Childrens Books
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: search for tags -> children
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: results: 6
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: End extract tabbed content
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: keys:  1
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: value:  tabs
+title
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: Result:invalid URL: 
+DEBUG - Fri, 14 Feb 2020 23:55:03 -0800: It:
+DEBUG - Fri, 14 Feb 2020 23:55:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 14 Feb 2020 23:55:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:55:04 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:55:04 -0800: Total execution time: 2.0147
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: No URI present. Default controller set.
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:55:05 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Extension loaded: 
+REQUESTED: - Fri, 14 Feb 2020 23:55:05 -0800: 
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: looking metadata for /
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Begin extract tabbed content
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: number of tabs: 4
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Tab: Our Gurus
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for tags -> our satgurus
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: results: 20
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Tab: For Teachers
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for title -> history
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: results: 11
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for tags -> teachers
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: results: 6
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for tags -> parents
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: results: 21
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for tags -> teen
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: results: 1
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: results: 4
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Tab: Childrens Books
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: tab node: search
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for media_type -> book
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: search for tags -> children
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: results: 6
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: End extract tabbed content
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: keys:  1
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: value:  tabs
+title
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: Result:invalid URL: 
+DEBUG - Fri, 14 Feb 2020 23:55:05 -0800: It:
+DEBUG - Fri, 14 Feb 2020 23:55:07 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 14 Feb 2020 23:55:07 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:55:07 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:55:07 -0800: Total execution time: 2.0884
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:56:20 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Art Library Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: ePub Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 14 Feb 2020 23:56:20 -0800: site/search/tags/Good Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: searching with GET
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: search terms
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: page: 5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: tags: Good Conduct
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: search tags = Good Conduct
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: number of results: 9
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%Good Conduct%' 
+ORDER BY `date_entered` DESC 
+LIMIT 36, 9
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 1 gr_2001-08-28_good-money-bad-money
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 2 gr_2001-04-29_tithing
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 3 gr_2000-09-30_rudraksha-and-ahimsa
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 4 gr_2000-07-10_a-veggie-query
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 5 gr_2000-02-16_the-saiva-nayanars-love-o
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 6 gr_1999-12-19_true-sacrifice-part-2
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 7 gr_1999-12-18_true-sacrifice-part-1
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 8 gr_1999-12-14_merit-and-demerit
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: 9 gr_1999-12-03_sin-and-guilt-part-2
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: search tags = Good Conduct
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAMR29vZCBDb25kdWN0AARwYWdlCAABNQ==
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: sess: 
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: next page /site/search/tags/Good+Conduct/page/6
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: previous page /site/search/tags/Good+Conduct/page/4
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: result count: 9
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-08-28_good-money-bad-money/gr_2001-08-28_good-money-bad-money.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2001/gr_2001-04-29_tithing/gr_2001-04-29_tithing.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-09-30_rudraksha-and-ahimsa/gr_2000-09-30_rudraksha-and-ahimsa.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-07-10_a-veggie-query/gr_2000-07-10_a-veggie-query.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/2000/gr_2000-02-16_the-saiva-nayanars-love-o/gr_2000-02-16_the-saiva-nayanars-love-o.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-12-19_true-sacrifice-part-2/gr_1999-12-19_true-sacrifice-part-2.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-12-18_true-sacrifice-part-1/gr_1999-12-18_true-sacrifice-part-1.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-12-14_merit-and-demerit/gr_1999-12-14_merit-and-demerit.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: getAudioFile: /media/audio/inspired-talks/gurudeva/1999/gr_1999-12-03_sin-and-guilt-part-2/gr_1999-12-03_sin-and-guilt-part-2.mp3
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: url with search terms. /site/search/tags/Good+Conduct/page/5
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:56:21 -0800: Total execution time: 0.4553
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:57:02 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Art Library Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: ePub Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 14 Feb 2020 23:57:02 -0800: site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: searching with GET
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: search terms
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: page: 3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: tags: Innersearch
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: search tags = Innersearch
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: number of results: 9
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%Innersearch%' 
+ORDER BY `date_entered` DESC 
+LIMIT 18, 9
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 1 innersearch-mauritius-2014-invitation
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 2 innersearch_2008-01-13_thousand-lingams
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 3 innersearch_2008-02-04_kovalam
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 4 innersearch_2008-02-03_kovalam
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 5 innersearch_2008-02-02_kovalam
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 6 innersearch_2008-02-01_kovalam
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 7 innersearch_2008-01-31_kanyakumari-kovalam
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 8 innersearch_2008-01-30_tiruchendur-kanyakumari
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: 9 innersearch_2008-01-29_rameswaram-tiruchendur
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: search tags = Innersearch
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAALSW5uZXJzZWFyY2gABHBhZ2UIAAEz
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: sess: 
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: next page /site/search/tags/Innersearch/page/4
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: previous page /site/search/tags/Innersearch/page/2
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: result count: 9
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: url with search terms. /site/search/tags/Innersearch/page/3
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:57:02 -0800: Total execution time: 0.4623
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:58:10 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Art Library Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: ePub Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:58:10 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 14 Feb 2020 23:58:10 -0800: site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: searching with GET
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: search terms
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: author: veylanswami
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: description: sadhana
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: media_type: audio
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: page: -1
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: search media_type = audio
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: search description = sadhana
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: search author = veylanswami
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: number of results: 36
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `media_type`  LIKE '%audio%'
+AND  `description`  LIKE '%sadhana%'
+AND  `author`  LIKE '%veylanswami%' 
+ORDER BY `date_entered` DESC 
+LIMIT 36
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 1 bd_2019-01-29_path-to-siva-lesson-65_commentary
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 2 bd_2018-11-02_path-to-siva-lesson-58_commentary
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 3 bd_2018-03-18_path-to-siva-lesson-43_commentary
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 4 bd_2016-03-03_choose-to-live-above-the-problems
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 5 bd_2015-11-06_the-practice-of-contentment
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 6 bd_2015-07-10_establish-daily-practice
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 7 bd_2015-05-06_purify-subconscious-let-go-negative-attachments
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 8 bd_2015-03-21_sadhana-path-of-change
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 9 bd_2014-11-16_resolving-lifetimes-of-karma
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 10 bd_2014-09-17_8-features-natha-sampradaya
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 11 bd_2014-06-21_patanjali-practice
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 12 bd_2014-02-01_closing-off-lower-chakras
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 13 bd_2014-01-02_kundalini-strive-continuously
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 14 bd_2012-06-12_conduct-thoughts_life-cycles
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 15 bd_2012-01-11_niyama-ten-tapas
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 16 bd_2011-01-05_focus-on-sadhana-ahimsa
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 17 bd_2010-12-23_gradual-progress-next-generation
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 18 bd_2010-07-12_all-finished-complete
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 19 bd_2010-06-19_pilgrimage-sadhana
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 20 bd_2009-07-09_consistent-sadhana
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 21 bd_2009-06-23_force-fields-and-thoughts
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 22 bd_2008-07-11_desire-chakras
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 23 bd_2007-08-01_four-perspectives
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 24 bd_2004-10-07_gratitude-appreciation
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 25 bd_2004-08-24_jivana-resolution
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 26 bd_2004-05-17_getting-to-know-god
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 27 bd_2004-01-05_state-of-the-church-2004
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 28 bd_2003-11-02_relationships-with-others
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 29 bd_2003-08-14_niyama-8-vrata-vows
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 30 bd_2003-04-05_positive-attitudes-for-po
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 31 bd_2003-03-06_state-of-the-church-addre
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 32 bd_2003-01-08_state-of-the-church-addre
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 33 bd_2002-09-01_karma-management-4-3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 34 bd_2002-06-27_anger-sneaky-part-2
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 35 bd_2002-05-06_gratitude-and-appreciatio
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: 36 bd_2002-05-05_gurudevas-spiritual-toolb
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: search media_type = audio
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: search description = sadhana
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: search author = veylanswami
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: search terms stored on session. Bg0AAAAEAARwYWdlCAACLTEACm1lZGlhX3R5cGUIAAVhdWRpbwALZGVzY3JpcHRpb24IAAdz
+YWRoYW5hAAZhdXRob3IIAAt2ZXlsYW5zd2FtaQ==
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: sess: 
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: next page /site/search/media_type/audio/author/veylanswami/description/sadhana/page/0
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: previous page /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-2
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: result count: 36
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2019/bd_2019-01-29_path-to-siva-lesson-65_commentary/bd_2019-01-29_path-to-siva-lesson-65_commentary.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-11-02_path-to-siva-lesson-58_commentary/bd_2018-11-02_path-to-siva-lesson-58_commentary.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2018/bd_2018-03-18_path-to-siva-lesson-43_commentary/bd_2018-03-18_path-to-siva-lesson-43_commentary.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2016/bd_2016-03-03_choose-to-live-above-the-problems/bd_2016-03-03_choose-to-live-above-the-problems.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-11-06_the-practice-of-contentment/bd_2015-11-06_the-practice-of-contentment.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-07-10_establish-daily-practice/bd_2015-07-10_establish-daily-practice.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-05-06_purify-subconscious-let-go-negative-attachments/bd_2015-05-06_purify-subconscious-let-go-negative-attachments.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-03-21_sadhana-path-of-change/bd_2015-03-21_sadhana-path-of-change.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2014/bd_2014-11-16_resolving-lifetimes-of-karma/bd_2014-11-16_resolving-lifetimes-of-karma.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2014/bd_2014-09-17_8-features-natha-sampradaya/bd_2014-09-17_8-features-natha-sampradaya.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2014/bd_2014-06-21_patanjali-practice/bd_2014-06-21_patanjali-practice.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2014/bd_2014-02-01_closing-off-lower-chakras/bd_2014-02-01_closing-off-lower-chakras.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2014/bd_2014-01-02_kundalini-strive-continuously/bd_2014-01-02_kundalini-strive-continuously.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2012/bd_2012-06-12_conduct-thoughts_life-cycles/bd_2012-06-12_conduct-thoughts_life-cycles.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2012/bd_2012-01-11_niyama-ten-tapas/bd_2012-01-11_niyama-ten-tapas.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2011/bd_2011-01-05_focus-on-sadhana-ahimsa/bd_2011-01-05_focus-on-sadhana-ahimsa.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2010/bd_2010-12-23_gradual-progress-next-generation/bd_2010-12-23_gradual-progress-next-generation.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2010/bd_2010-07-12_all-finished-complete/bd_2010-07-12_all-finished-complete.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2010/bd_2010-06-19_pilgrimage-sadhana/bd_2010-06-19_pilgrimage-sadhana.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2009/bd_2009-07-09_consistent-sadhana/bd_2009-07-09_consistent-sadhana.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2009/bd_2009-06-23_force-fields-and-thoughts/bd_2009-06-23_force-fields-and-thoughts.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2008/bd_2008-07-11_desire-chakras/bd_2008-07-11_desire-chakras.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2007/bd_2007-08-01_four-perspectives/bd_2007-08-01_four-perspectives.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2004/bd_2004-10-07_gratitude-appreciation/bd_2004-10-07_gratitude-appreciation.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2004/bd_2004-08-24_jivana-resolution/bd_2004-08-24_jivana-resolution.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2004/bd_2004-05-17_getting-to-know-god/bd_2004-05-17_getting-to-know-god.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2004/bd_2004-01-05_state-of-the-church-2004/bd_2004-01-05_state-of-the-church-2004.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-11-02_relationships-with-others/bd_2003-11-02_relationships-with-others.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-08-14_niyama-8-vrata-vows/bd_2003-08-14_niyama-8-vrata-vows.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-04-05_positive-attitudes-for-po/bd_2003-04-05_positive-attitudes-for-po.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-03-06_state-of-the-church-addre/bd_2003-03-06_state-of-the-church-addre.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2003/bd_2003-01-08_state-of-the-church-addre/bd_2003-01-08_state-of-the-church-addre.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-09-01_karma-management-4-3/bd_2002-09-01_karma-management-4-3.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:11 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-06-27_anger-sneaky-part-2/bd_2002-06-27_anger-sneaky-part-2.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-05-06_gratitude-and-appreciatio/bd_2002-05-06_gratitude-and-appreciatio.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2002/bd_2002-05-05_gurudevas-spiritual-toolb/bd_2002-05-05_gurudevas-spiritual-toolb.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: url with search terms. /site/search/media_type/audio/author/veylanswami/description/sadhana/page/-1
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:58:12 -0800: Total execution time: 1.2003
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Hooks Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Config Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: URI Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Router Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Output Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Input Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Language Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Loader Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Controller Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Database Driver Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Session Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: A session cookie was not found.
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Session routines successfully run.
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Utils Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Utils constructor called
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: FastJSON Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Library_Name Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: CMS Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: AAG DB Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Default Connection Set
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Markdown Library Loaded
+ERROR - Fri, 14 Feb 2020 23:58:28 -0800: markdown is not available.
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Array Tools Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Audio Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Libraries Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Art Library Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: ePub Library Loaded
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 14 Feb 2020 23:58:28 -0800: site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: searching with GET
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: search terms
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: page: 1
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: tags: Yoga
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: search tags = Yoga
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: number of results: 9
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: last query: SELECT * 
+FROM (`item`) 
+WHERE `approved_for_public` <> 'NO' 
+AND  `tags`  LIKE '%Yoga%' 
+ORDER BY `date_entered` DESC 
+LIMIT 9
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 1 yoga-swamigal
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 2 surrender-is-central-to-all-yogas
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 3 karma-yoga_ei
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 4 april-2015-news-video
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 5 bd_2015-04-13_samadhi-and-satchidanada
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 6 bd_2015-03-28_patanjali-kriya-yoga
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 7 bd_2015-03-15_contentment-santosha
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 8 manivelu-weavers-wisdom-art-0004
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: 9 manivelu-pillar-art-09i-asana
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: search tags = Yoga
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: search terms stored on session. Bg0AAAACAAR0YWdzCAAEWW9nYQAEcGFnZQgAATE=
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: sess: 
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: next page /site/search/tags/Yoga/page/2
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: previous page /site/search/tags/Yoga/page/0
+DEBUG - Fri, 14 Feb 2020 23:58:28 -0800: result count: 9
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-04-13_samadhi-and-satchidanada/bd_2015-04-13_samadhi-and-satchidanada.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-03-28_patanjali-kriya-yoga/bd_2015-03-28_patanjali-kriya-yoga.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: getAudioFile: /media/audio/inspired-talks/bodhinatha/2015/bd_2015-03-15_contentment-santosha/bd_2015-03-15_contentment-santosha.mp3
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/search-results.lc
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: url with search terms. /site/search/tags/Yoga/page/1
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: Final output sent to browser
+DEBUG - Fri, 14 Feb 2020 23:58:29 -0800: Total execution time: 0.5134

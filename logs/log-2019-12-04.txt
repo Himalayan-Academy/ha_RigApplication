@@ -1,0 +1,357 @@
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Session Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: A session cookie was not found.
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Session routines successfully run.
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Utils Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Utils constructor called
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: FastJSON Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Library_Name Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Dotted Slideshow Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: CMS Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: AAG DB Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Default Connection Set
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Markdown Library Loaded
+ERROR - Wed, 4 Dec 2019 23:55:13 -0800: markdown is not available.
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Array Tools Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Audio Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Libraries Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: LoremPixel Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Helper loaded: galleriaHelper
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Fetch HTML Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: XML-RPC Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Wordpress REST Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Extension loaded: 
+REQUESTED: - Wed, 4 Dec 2019 23:55:13 -0800: 
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: looking metadata for /
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Begin extract tabbed content
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: number of tabs: 4
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Tab: Our Gurus
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: tab node: search
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for media_type -> book
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for tags -> our satgurus
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: results: 20
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Tab: For Teachers
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: tab node: search
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for media_type -> book
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for title -> history
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: results: 11
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: tab node: search
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for media_type -> book
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for tags -> teachers
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: results: 6
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: Tab: For Parents and Youth
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: tab node: search
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for media_type -> book
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for tags -> parents
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: results: 21
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: tab node: search
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for media_type -> book
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for tags -> teen
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: results: 1
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: tab node: search
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for media_type -> book
+DEBUG - Wed, 4 Dec 2019 23:55:13 -0800: search for title -> saivite hindu religion
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: results: 4
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: Tab: Childrens Books
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: tab node: search
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: search for media_type -> book
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: search for tags -> children
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: results: 6
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: End extract tabbed content
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: keys:  1
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: value:  tabs
+title
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: Result:invalid URL: 
+DEBUG - Wed, 4 Dec 2019 23:55:14 -0800: It:
+DEBUG - Wed, 4 Dec 2019 23:55:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 4 Dec 2019 23:55:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 4 Dec 2019 23:55:18 -0800: Final output sent to browser
+DEBUG - Wed, 4 Dec 2019 23:55:18 -0800: Total execution time: 16.0811
+DEBUG - Wed, 4 Dec 2019 23:55:19 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 4 Dec 2019 23:55:19 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 4 Dec 2019 23:55:19 -0800: Final output sent to browser
+DEBUG - Wed, 4 Dec 2019 23:55:19 -0800: Total execution time: 16.1696
+DEBUG - Wed, 4 Dec 2019 23:55:29 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 4 Dec 2019 23:55:29 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 4 Dec 2019 23:55:29 -0800: Final output sent to browser
+DEBUG - Wed, 4 Dec 2019 23:55:29 -0800: Total execution time: 17.1021
+DEBUG - Wed, 4 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Wed, 4 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 4 Dec 2019 23:55:30 -0800: Final output sent to browser
+DEBUG - Wed, 4 Dec 2019 23:55:30 -0800: Total execution time: 16.9949
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Hooks Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Config Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: URI Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Router Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Output Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Input Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Language Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Loader Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Controller Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Database Driver Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Session Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: A session cookie was not found.
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Session routines successfully run.
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Utils Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Utils constructor called
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: FastJSON Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Library_Name Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Dotted Slideshow Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: CMS Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: AAG DB Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Default Connection Set
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Markdown Library Loaded
+ERROR - Wed, 4 Dec 2019 23:55:35 -0800: markdown is not available.
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Array Tools Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Audio Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Libraries Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Construct Audio Data Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: ePub Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:55:35 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Wed, 4 Dec 2019 23:55:35 -0800: book/merging-with-siva/68
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Hooks Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Config Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: URI Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Router Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Output Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Input Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Language Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Loader Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Controller Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Database Driver Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Session Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: A session cookie was not found.
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Session routines successfully run.
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Utils Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Utils constructor called
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: FastJSON Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: API 3.2 Controller Loading...
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: ePub Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Audio Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Art Library Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: App Model Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Slideshow Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Array Tools Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: CMS Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: AAG DB Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Default Connection Set
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Markdown Library Loaded
+ERROR - Wed, 4 Dec 2019 23:56:33 -0800: markdown is not available.
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Libraries Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: API 3.2 Controller Loaded: getItemRecordsAndFormats
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Post Values:    
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: request is not compressed LiveCode array.
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: request is json like
+DEBUG-CHECK-JSON-KEYS - Wed, 4 Dec 2019 23:56:33 -0800: 
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: login: /
+HI - Wed, 4 Dec 2019 23:56:33 -0800: GetItemRecordsAndFormats json
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Key: 
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Key: audio
+DEBUG - Wed, 4 Dec 2019 23:56:33 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 4 Dec 2019 23:56:35 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Hooks Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Config Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: URI Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Router Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Output Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Input Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Language Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Loader Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Controller Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Database Driver Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Session Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: A session cookie was not found.
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Session routines successfully run.
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Utils Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Utils constructor called
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: FastJSON Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: API 3.2 Controller Loading...
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: ePub Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Audio Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Art Library Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: App Model Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Slideshow Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Array Tools Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: CMS Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: AAG DB Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Default Connection Set
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Markdown Library Loaded
+ERROR - Wed, 4 Dec 2019 23:56:49 -0800: markdown is not available.
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Libraries Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: API 3.2 Controller Loaded: getItemRecordsAndFormats
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Post Values:    
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: request is not compressed LiveCode array.
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: request is json like
+DEBUG-CHECK-JSON-KEYS - Wed, 4 Dec 2019 23:56:49 -0800: 
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: login: /
+HI - Wed, 4 Dec 2019 23:56:49 -0800: GetItemRecordsAndFormats json
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Key: 
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Key: audio
+DEBUG - Wed, 4 Dec 2019 23:56:49 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Hooks Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Config Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: URI Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Router Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Output Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Input Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Language Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Loader Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Controller Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Database Driver Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Session Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: A session cookie was not found.
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Session routines successfully run.
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Utils Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Utils constructor called
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: FastJSON Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Library_Name Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Dotted Slideshow Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: CMS Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: AAG DB Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Default Connection Set
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Markdown Library Loaded
+ERROR - Wed, 4 Dec 2019 23:56:51 -0800: markdown is not available.
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Array Tools Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Audio Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Libraries Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: LoremPixel Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Helper loaded: galleriaHelper
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Fetch HTML Library Loaded
+REQUESTED: - Wed, 4 Dec 2019 23:56:51 -0800: monastery/about/himalayan-academy
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Loading fetchhtml library
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: page to load: monastery/about/himalayan-academy
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: looking for /home/devhap/public_html/html/monastery/default.metadata
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: found metadata file at: /home/devhap/public_html/html/monastery/default.metadata
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/default.metadata --> top_navigation >Monastery<
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/default.metadata --> body_class skinny
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/default.metadata --> page_heading About the Monastery
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/default.metadata --> sidebar monastery/monastery-sidebar.html
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/default.metadata --> title Kauai's Hindu Monastery
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/default.metadata --> template two-column
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/default.metadata --> secondary_navigation cat-about-the-monastery
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: looking for /home/devhap/public_html/html/monastery/about/default.metadata
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: found metadata file at: /home/devhap/public_html/html/monastery/about/default.metadata
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/about/default.metadata --> secondary_navigation cat-about-the-monastery
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/about/default.metadata --> title All About Kauai's Hindu Monastery
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: monastery/about/default.metadata --> sidebar monastery/about/about-sidebar.html
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: fetching page:  monastery/about/himalayan-academy
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: loading external page: /home/devhap/public_html/html/monastery/about/himalayan-academy.html
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: external file was loaded as:  <h1>Himalayan Academy</h1>
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: looking metadata for /monastery/about/himalayan-academy
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Final output sent to browser
+DEBUG - Wed, 4 Dec 2019 23:56:51 -0800: Total execution time: 0.2522
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Hooks Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Config Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: URI Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Router Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Output Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Input Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Global POST and COOKIE data sanitized
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Language Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Loader Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Controller Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Helper loaded: assetHelper
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Helper loaded: urlHelper
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Database Driver Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Session Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Helper loaded: stringHelper
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: A session cookie was not found.
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Session routines successfully run.
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Utils Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Utils constructor called
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: FastJSON Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Library_Name Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Dotted Slideshow Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Page Metadata Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: CMS Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: AAG DB Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Default Connection Set
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Markdown Library Loaded
+ERROR - Wed, 4 Dec 2019 23:58:35 -0800: markdown is not available.
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Array Tools Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Audio Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Libraries Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: LoremPixel Library Loaded
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Helper loaded: galleriaHelper
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Fetch HTML Library Loaded
+REQUESTED: - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/global-fellowship
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Loading fetchhtml library
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: page to load: livespiritually/global-fellowship
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: looking for /home/devhap/public_html/html/livespiritually/default.metadata
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: found metadata file at: /home/devhap/public_html/html/livespiritually/default.metadata
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/default.metadata --> top_navigation >Live Spiritually<
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/default.metadata --> body_class skinny
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/default.metadata --> page_heading Live Spiritually
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/default.metadata --> sidebar livespiritually/become-student/become-student-sidebar.html
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/default.metadata --> title Live Spiritually
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/default.metadata --> template two-column
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/default.metadata --> secondary_navigation cat-become-a-student
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: found metadata file at: /home/devhap/public_html/html/livespiritually/global-fellowship/default.metadata
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/global-fellowship --> top_navigation >Live Spiritually<
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/global-fellowship --> body_class skinny
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/global-fellowship --> page_heading Global Fellowship & Initiation
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/global-fellowship --> sidebar livespiritually/global-fellowship/global-fellowship-sidebar.html
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/global-fellowship --> title Global Fellowship & Initiation
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/global-fellowship --> template two-column
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: livespiritually/global-fellowship --> secondary_navigation cat-global-fellowship-initiation
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: fetching page:  livespiritually/global-fellowship
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: loading external page: /home/devhap/public_html/html/livespiritually/global-fellowship/index.html
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: looking metadata for /livespiritually/global-fellowship
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Helper loaded: arrayHelper
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Helper loaded: fileHelper
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Final output sent to browser
+DEBUG - Wed, 4 Dec 2019 23:58:35 -0800: Total execution time: 0.1834

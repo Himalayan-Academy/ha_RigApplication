@@ -1,0 +1,23 @@
+[[gData["booksCSS"] ]]
+
+<style type="text/css" title="masthead" media="screen">
+#masthead{
+     height:100px;
+	background-image: url('[[gData["mastheadBackground"] ]]');
+	background-repeat: no-repeat;
+	}
+</style>
+
+</head>
+	<body>
+	<div id="page-container">
+[[gData["siteWideBanner"] ]]	
+	<div id="masthead" title="Reload page for new image here.">
+		<div id="khm-logo">
+			[[gData["khmLogo"] ]]
+		</div>
+		
+		[[gData["thinBorder"] ]]
+		
+		
+	</div><!-- masthead -->

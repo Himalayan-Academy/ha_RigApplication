@@ -1,0 +1,120 @@
+<?lc
+
+# DECLARE GLOBAL VARIABLES gControllerHandlers AND gData
+global gControllerHandlers,gData
+
+# PUT YOUR METHOD NAMES  INTO THE GLOBAL gControllerHandlers AS A COMMA SEPARATED LIST
+put "test,monastery,temples,getTemplePages,monks,about,doSatGurus,satgurus,index" into gControllerHandlers
+
+# PUT ALL THE VARIABLES TO BE MERGED WITH VIEWS INTO THE ARRAY VARIABLE gData
+
+
+# WRITE INITIAL STATEMENTS INTO THE MAIN CONTROLLER HANDLER CALLED "the Constructor"
+# this command is the same name as this file
+
+command monastery
+
+# NB! for this to work the /html/* folder must have the same name as the controller
+
+	rigLoaderLoadLibrary "Getsetheadnav" # required opening for all pages
+	-- rigLoaderLoadLibrary "dotted-slideshow" # use as needed, or not
+	rigLoaderLoadLibrary "dottedslideshow" # use as needed, or not -------------- rabit
+	rigLoaderLoadLibrary "pagemetadata"
+	rigLoaderLoadLibrary "cms"
+	rigLoaderLoadLibrary "lorempixel"
+	rigLoadHelper "asset"
+   rigLoadHelper "galleria" 
+	rigLoaderLoadLibrary "fetchhtml"
+	--rigLoaderLoadLibrary "json"
+
+		    # let's log what page is the user hits on
+    rigLogMessage "Requested:", rigCurrentUriString()
+
+
+    put rigSegmentArray() into tSegs
+
+    # handle special cases first for longer URI's and be done
+    # this is just here to use if needed and a reminder
+
+    	if (tSegs[3] = "sanmarga") then
+			put url ("file:" & $_SERVER["DOCUMENT_ROOT"] & "/html/monastery/temples/sanmarga/san-marga-legend-map.html") into  gData["sanMargaMap"]
+		end if
+
+	    if tSegs[3]= "specialCases" then
+			specialCases # or whatever you want to do with it...
+			exit monastery # only if needed
+		end if
+
+	# Deal with two segment 2 URI's which have special handlers
+	# or default to external html and pass longer URIs to external html
+
+    if tSegs[3] is empty  then
+       # it means we only have two segments and we may want to load
+       # some landing pages otherwise we will treat it as external html
+       switch
+         case (tSegs[2] is empty)
+             loadIndex
+			break
+
+         case (tSegs[2] = "lineage-philosophy")
+			lineagephilosophy
+			break
+		 case (tSegs[2] = "temples")
+			temples
+			break
+
+
+
+	    default  # means the second segment is an html file at the top level
+
+		fetchExternalHTML
+		viewExternalPage
+	 end switch
+
+	 else
+
+	  # We have more segments and for now we assume external HTML
+	 # if you want to use this controller for other things
+	 # using a 3 segment URL, then you need to put code in the top
+	 # if statement to handle those first and exit the constructor
+
+	  fetchExternalHTML
+	  viewExternalPage
+    end if
+        
+end monastery
+
+command index
+ # you must not put anything here because
+ # this is called by default unless you want to use it for
+ # some config or something...
+ # this is always called and you must leave it here.
+end index
+
+command loadIndex
+	put "Kauai's Hindu Monastery - About The Monastery" into gData["pageTitle"]
+    put getSetHeadNav("landing","Monastery",">Monastery<","") into gData["pageHeader"]
+	put cmsParseXMLDataFile("/monastery/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end loadIndex
+
+command temples
+		put "Kauai's Hindu Monastery - About The Monastery" into gData["pageTitle"]
+		put getSetHeadNav("landing","Our Temples",">Monastery<","cat-our-temples") into gData["pageHeader"]
+		put cmsParseXMLDataFile("/monastery/temples/index.xml") into gData["modules"]
+		get rigLoadView("sitewide/landing", gData)
+end temples
+
+command lineagephilosophy
+    put "Kauai's Hindu Monastery - Guru Lineage & Philosophy" into gData["pageTitle"]
+    put getSetHeadNav("landing","Guru Lineage & Philosophy",">Monastery<","cat-guru-lineage-philosophy") into gData["pageHeader"]
+	put cmsParseXMLDataFile("/monastery/lineage-philosophy/index.xml") into gData["modules"]
+	get rigLoadView("sitewide/landing", gData)
+end 	lineagephilosophy
+
+
+# CALL THE CONTROLLER HANDLER
+
+--| END OF monastery.lc
+--| ./application/ha/controllers/monastery.lc
+----------------------------------------------------------------------

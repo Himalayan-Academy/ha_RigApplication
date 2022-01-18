@@ -1,0 +1,99 @@
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: Tab: For Parents and Youth
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: It:
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: search for tags -> parents
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: results: 21
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: search for tags -> teen
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: results: 1
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: search for title -> saivite hindu religion
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: results: 4
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: Tab: Childrens Books
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: search for tags -> children
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: results: 6
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: End extract tabbed content
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: keys:  1
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: value:  tabs
+title
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Sun, 8 Dec 2019 23:55:12 -0800: It:
+DEBUG - Sun, 8 Dec 2019 23:55:16 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sun, 8 Dec 2019 23:55:16 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 8 Dec 2019 23:55:16 -0800: Final output sent to browser
+DEBUG - Sun, 8 Dec 2019 23:55:16 -0800: Total execution time: 14.8803
+DEBUG - Sun, 8 Dec 2019 23:55:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sun, 8 Dec 2019 23:55:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 8 Dec 2019 23:55:18 -0800: Final output sent to browser
+DEBUG - Sun, 8 Dec 2019 23:55:18 -0800: Total execution time: 16.3703
+DEBUG - Sun, 8 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sun, 8 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 8 Dec 2019 23:55:30 -0800: Final output sent to browser
+DEBUG - Sun, 8 Dec 2019 23:55:30 -0800: Total execution time: 18.0586
+DEBUG - Sun, 8 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Sun, 8 Dec 2019 23:55:30 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 8 Dec 2019 23:55:30 -0800: Final output sent to browser
+DEBUG - Sun, 8 Dec 2019 23:55:30 -0800: Total execution time: 18.6182
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Hooks Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Config Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: URI Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Router Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Output Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Input Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Global POST and COOKIE data sanitized
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Language Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Loader Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Controller Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Helper loaded: assetHelper
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Helper loaded: urlHelper
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Database Driver Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Session Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Helper loaded: stringHelper
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: A session cookie was not found.
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Session routines successfully run.
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Utils Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Utils constructor called
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: FastJSON Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Library_Name Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: CMS Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: AAG DB Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Default Connection Set
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Markdown Library Loaded
+ERROR - Sun, 8 Dec 2019 23:57:40 -0800: markdown is not available.
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Array Tools Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Audio Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Page Metadata Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Libraries Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Art Library Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Construct Audio Data Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: ePub Library Loaded
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Helper loaded: fileHelper
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Helper loaded: arrayHelper
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Sun, 8 Dec 2019 23:57:40 -0800: view/ennaalum-nalloorai_mt
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: loading ennaalum-nalloorai_mt
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: get record: 0
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: getGurudevaCircleQuote: 0
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: its a audio/song
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/audio-details.lc
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: getAudioFile: /media/audio/songs/natchintanai/ennaalum-nalloorai_mt/pg-83_ennaalum-nalloorai_mt.mp3
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: getAudioFile: /media/audio/songs/natchintanai/ennaalum-nalloorai_mt/pg-83_ennaalum-nalloorai_mt.mp3
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Final output sent to browser
+DEBUG - Sun, 8 Dec 2019 23:57:40 -0800: Total execution time: 0.2243

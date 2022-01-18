@@ -1,0 +1,103 @@
+<?lc
+if gRigA is not an array then
+	put "No direct script access allowed."
+	exit to top
+end if
+
+
+##
+#-------------------------------------------------------------------------
+# URI ROUTING
+#-------------------------------------------------------------------------
+# This file lets you re-map URI requests to specific controller functions.
+#
+# Typically there is a one-to-one relationship between a URL string
+# and its corresponding controller page library/handler. The segments in a
+# URL normally follow this pattern:
+#
+# 	example.com/pagelibrary/handler/ID/
+#
+# In some instances, however, you may want to remap this relationship
+# so that a different page library/handler is called than the one
+# corresponding to the URL.
+#
+# Please see the user guide for complete details:
+#
+#	http://revigniter.com/user_guide/general/routing.html
+#
+#-------------------------------------------------------------------------
+# RESERVED ROUTES
+# -------------------------------------------------------------------------
+#
+# There are three reserved routes:
+#
+#	put "welcome" into gRoute[1]["defaultController"] 
+#
+# This route indicates which controller page library should be loaded if the
+# URI contains no data. In the above example, the "welcome" page library
+# would be loaded.
+#
+#	put "errors/pageMissing" into gRoute[1]["404Override"]
+#
+# This route will tell the Router what URI segments to use if those
+# provided in the URL cannot be matched to a valid route. If it is
+# empty the default 404 error page is provided.
+#
+#	put "scaffolding" into gRoute[1]["scaffoldingTrigger"]
+#
+# This route lets you set a "secret" word that will trigger the
+# scaffolding feature for added security. Note: scaffolding must be
+# enabled in the controller in which you intend to use it.
+#
+# Note: The gRoute array must be numbered and the key number for
+# reserved  routes must be 1. So custom route key numbers start
+# with number 2.
+#
+##
+
+
+-- put "welcome" into gRoute[1]["defaultController"]
+put "home" into gRoute[1]["defaultController"]
+put "redirecterrorpage/aagRedirectIfFound" into gRoute[1]["404Override"]
+#put "books/viewer/file_id/$1/display/$2" into gRoute[4]["book/(:any)/web/(:num)"]
+#put "books/viewer/file_id/$1" into gRoute[5]["book/(:any)/web"]
+#put "books/getformat/file_id/$1/format/$2" into gRoute[6]["book/(:any)/(:any)"]
+#put "books/bookinfo/file_id/$1" into gRoute[7]["book/(:any)"]
+
+put "list/info/$1" into gRoute[30]["api/info/(:any)"]
+ 
+put "api/bookget/$1" into gRoute[8]["api/book/get/(:any)"]
+put "api/bookupdate/$1" into gRoute[9]["api/book/update/(:any)"]
+put "api/bookinsert/$1" into gRoute[10]["api/book/new/(:any)"]
+put "api/savecover/$1" into gRoute[11]["api/book/setcover/(:any)"]
+put "books/sender/$1/$2" into gRoute[12]["books/(:any)/web/(:any)"]
+#put "listen/index/$1/mp3" into gRoute[13]["listen/(:any)"]
+#put "listen/index/$1/$2" into gRoute[14]["listen/(:any)/(:any)"]
+put "bodhinatha" into gRoute[29]["bodhinatha/:any"]
+put "manager" into gRoute[15]["manager/:any"]
+put "info" into gRoute[15]["info/:any"]
+put "monastery" into gRoute[16]["monastery/:any"]
+put "readlearn" into gRoute[17]["readlearn/:any"]
+put "looklisten" into gRoute[18]["looklisten/:any"]
+put "https://donate.himalayanacademy.com/donatemc.shtml" into gRoute[26]["livespiritually/become-student/donate"]
+put "livespiritually" into gRoute[19]["livespiritually/:any"]
+put "visit" into gRoute[27]["visit/:any"]
+put "donations" into gRoute[20]["donations/:any"]
+put "site/viewmedia/$1" into gRoute[21]["view/(:any)"]
+put "site/downloadfile/$1" into gRoute[22]["download/(:any)"]
+put "cloudreader/readbook/$1" into gRoute[23]["readbook/(:any)"]
+put "site/reviews/$1" into gRoute[24]["reviews/(:any)"]
+put "cloudreader/simplereader/$1" into gRoute[25]["book/(:any)"]
+put "cloudreader/simplereader/$1/$2" into gRoute[26]["book/(:any)/(:any)"]
+# put "cloudreader/simplereader/$1/$2" into gRoute[27]["media/books/(:any)/web/ops/xhtml/(:any)"]
+put "cloudreader/bookPageToSpineNo/$1/$2" into gRoute[27]["media/books/(:any)/web/ops/xhtml/(:any)"]
+put "site/viewmedia/$1" into gRoute[28]["apps/(:any)"]
+put "topics/index/$1/$2" into gRoute[29]["topics/(:any)/(:any)"]
+put "topics/index/$1" into gRoute[29]["topics/(:any)"
+put "hamsatostories/$1" into gRoute[30]["hamsatostories/(:any)"]
+
+#put "" into gRoute[1]["scaffoldingTrigger"]
+
+--| END OF routes.lc
+--| Location: ./application/config/routes.lc
+----------------------------------------------------------------------

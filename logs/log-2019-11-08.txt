@@ -1,0 +1,767 @@
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: End extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: keys:  1
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: value:  tabs
+title
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Result:invalid URL: 
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: It:
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:50:12 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Extension loaded: 
+REQUESTED: - Fri, 8 Nov 2019 23:50:12 -0800: 
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: looking metadata for /
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Begin extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: number of tabs: 4
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Tab: Our Gurus
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for tags -> our satgurus
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: results: 20
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Tab: For Teachers
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for title -> history
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: results: 11
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for tags -> teachers
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for tags -> parents
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: results: 21
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for tags -> teen
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: results: 1
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: results: 4
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Tab: Childrens Books
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: search for tags -> children
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: End extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: keys:  1
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: value:  tabs
+title
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: Result:invalid URL: 
+DEBUG - Fri, 8 Nov 2019 23:50:12 -0800: It:
+DEBUG - Fri, 8 Nov 2019 23:50:19 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 8 Nov 2019 23:50:19 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:50:19 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:50:19 -0800: Total execution time: 7.0461
+DEBUG - Fri, 8 Nov 2019 23:50:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 8 Nov 2019 23:50:20 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:50:20 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:50:20 -0800: Total execution time: 7.9836
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Hooks Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Config Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: URI Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Router Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: No URI present. Default controller set.
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Output Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Input Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Language Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Loader Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Controller Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Database Driver Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Session Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: A session cookie was not found.
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:52:03 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Extension loaded: 
+REQUESTED: - Fri, 8 Nov 2019 23:52:03 -0800: 
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: looking metadata for /
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Begin extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: number of tabs: 4
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Tab: Our Gurus
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for tags -> our satgurus
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: results: 20
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Tab: For Teachers
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for title -> history
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: results: 11
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for tags -> teachers
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for tags -> parents
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: results: 21
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for tags -> teen
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: results: 1
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: results: 4
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Tab: Childrens Books
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: search for tags -> children
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: End extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: keys:  1
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: value:  tabs
+title
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: Result:invalid URL: 
+DEBUG - Fri, 8 Nov 2019 23:52:03 -0800: It:
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Hooks Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Config Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: URI Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Router Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: No URI present. Default controller set.
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Output Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Input Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Language Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Loader Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Controller Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Database Driver Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Session Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: A session cookie was not found.
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:52:04 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Extension loaded: 
+REQUESTED: - Fri, 8 Nov 2019 23:52:04 -0800: 
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: looking metadata for /
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Begin extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: number of tabs: 4
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Tab: Our Gurus
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for tags -> our satgurus
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: results: 20
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Tab: For Teachers
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for title -> history
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: results: 11
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for tags -> teachers
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for tags -> parents
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: results: 21
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for tags -> teen
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: results: 1
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: results: 4
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Tab: Childrens Books
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: search for tags -> children
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: End extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: keys:  1
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: value:  tabs
+title
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: Result:invalid URL: 
+DEBUG - Fri, 8 Nov 2019 23:52:04 -0800: It:
+DEBUG - Fri, 8 Nov 2019 23:52:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 8 Nov 2019 23:52:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:52:12 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:52:12 -0800: Total execution time: 8.8371
+DEBUG - Fri, 8 Nov 2019 23:52:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 8 Nov 2019 23:52:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:52:12 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:52:12 -0800: Total execution time: 8.7345
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Hooks Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Config Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: URI Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Router Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: No URI present. Default controller set.
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Output Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Input Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Language Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Loader Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Controller Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Database Driver Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Session Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: A session cookie was not found.
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:55:02 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Extension loaded: 
+REQUESTED: - Fri, 8 Nov 2019 23:55:02 -0800: 
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: looking metadata for /
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Begin extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: number of tabs: 4
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Tab: Our Gurus
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for tags -> our satgurus
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: results: 20
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Tab: For Teachers
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for title -> history
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: results: 11
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for tags -> teachers
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for tags -> parents
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: results: 21
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for tags -> teen
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: results: 1
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: results: 4
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Tab: Childrens Books
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: search for tags -> children
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: End extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: keys:  1
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: value:  tabs
+title
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Result:invalid URL: 
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: It:
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Hooks Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:02 -0800: Config Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: URI Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Router Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: No URI present. Default controller set.
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Output Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Input Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Language Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Loader Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Controller Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Database Driver Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Session Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: A session cookie was not found.
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:55:03 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Extension loaded: 
+REQUESTED: - Fri, 8 Nov 2019 23:55:03 -0800: 
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: looking metadata for /
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Begin extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: number of tabs: 4
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Tab: Our Gurus
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for tags -> our satgurus
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: results: 20
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Tab: For Teachers
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for title -> history
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: results: 11
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for tags -> teachers
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for tags -> parents
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: results: 21
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for tags -> teen
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: results: 1
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: results: 4
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Tab: Childrens Books
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: search for tags -> children
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: End extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: keys:  1
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: value:  tabs
+title
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: Result:invalid URL: 
+DEBUG - Fri, 8 Nov 2019 23:55:03 -0800: It:
+DEBUG - Fri, 8 Nov 2019 23:55:11 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 8 Nov 2019 23:55:11 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:55:11 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:55:11 -0800: Total execution time: 8.9586
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Hooks Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Config Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: URI Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Router Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: No URI present. Default controller set.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Output Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Input Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Language Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Loader Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Controller Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Database Driver Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Session Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: A session cookie was not found.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:55:12 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Extension loaded: 
+REQUESTED: - Fri, 8 Nov 2019 23:55:12 -0800: 
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: looking metadata for /
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Begin extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: number of tabs: 4
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Tab: Our Gurus
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> our satgurus
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 20
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Tab: For Teachers
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for title -> history
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 11
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> teachers
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> parents
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 21
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> teen
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 1
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Total execution time: 9.9524
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 4
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Tab: Childrens Books
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> children
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: End extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: keys:  1
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: value:  tabs
+title
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: It:
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Hooks Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Config Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: URI Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Router Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: No URI present. Default controller set.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Output Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Input Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Language Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Loader Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Controller Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Database Driver Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Session Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: A session cookie was not found.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:55:12 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Fetch HTML Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: XML-RPC Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Wordpress REST Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Extension loaded: 
+REQUESTED: - Fri, 8 Nov 2019 23:55:12 -0800: 
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: looking metadata for /
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Begin extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: number of tabs: 4
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Tab: Our Gurus
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> our satgurus
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 20
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Tab: For Teachers
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for title -> history
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 11
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> teachers
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Tab: For Parents and Youth
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> parents
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 21
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> teen
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 1
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for title -> saivite hindu religion
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: results: 4
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: Tab: Childrens Books
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Fri, 8 Nov 2019 23:55:12 -0800: search for tags -> children
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: results: 6
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: End extract tabbed content
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: keys:  1
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: value:  tabs
+title
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: Result:invalid URL: 
+DEBUG - Fri, 8 Nov 2019 23:55:13 -0800: It:
+DEBUG - Fri, 8 Nov 2019 23:55:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 8 Nov 2019 23:55:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:55:21 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:55:21 -0800: Total execution time: 9.0623
+DEBUG - Fri, 8 Nov 2019 23:55:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 8 Nov 2019 23:55:21 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:55:21 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:55:21 -0800: Total execution time: 9.0711
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Hooks Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Config Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: URI Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Router Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Output Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Input Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Language Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Loader Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Controller Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Database Driver Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Session Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: A session cookie was not found.
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Dotted Slideshow Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:57:32 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:57:33 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: LoremPixel Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Helper loaded: galleriaHelper
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Fetch HTML Library Loaded
+REQUESTED: - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/innersearch/2002_kauai
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Loading fetchhtml library
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: page to load: livespiritually/innersearch/2002_kauai
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: looking for /home/devhap/public_html/html/livespiritually/default.metadata
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: found metadata file at: /home/devhap/public_html/html/livespiritually/default.metadata
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/default.metadata --> top_navigation >Live Spiritually<
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/default.metadata --> body_class skinny
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/default.metadata --> page_heading Live Spiritually
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/default.metadata --> sidebar livespiritually/become-student/become-student-sidebar.html
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/default.metadata --> title Live Spiritually
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/default.metadata --> template two-column
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/default.metadata --> secondary_navigation cat-become-a-student
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: looking for /home/devhap/public_html/html/livespiritually/innersearch/default.metadata
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: found metadata file at: /home/devhap/public_html/html/livespiritually/innersearch/default.metadata
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/innersearch/default.metadata --> top_navigation >Live Spiritually<
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/innersearch/default.metadata --> body_class skinny
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/innersearch/default.metadata --> page_heading Innersearch Travel-Study
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/innersearch/default.metadata --> sidebar livespiritually/innersearch/innersearch-sidebar.html
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/innersearch/default.metadata --> title Live Spiritually - Innersearch
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/innersearch/default.metadata --> template two-column
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: livespiritually/innersearch/default.metadata --> secondary_navigation cat-innersearch-travel-study
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: fetching page:  livespiritually/innersearch/2002_kauai
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: loading external page: /home/devhap/public_html/html/livespiritually/innersearch/2002_kauai/index.html
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: looking metadata for /livespiritually/innersearch/2002_kauai
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:57:33 -0800: Total execution time: 0.2301
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Hooks Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Config Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: URI Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Router Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Output Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Input Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Global POST and COOKIE data sanitized
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Language Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Loader Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Controller Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Helper loaded: assetHelper
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Helper loaded: urlHelper
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Database Driver Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Session Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Helper loaded: stringHelper
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: A session cookie was not found.
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Session routines successfully run.
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Utils Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Utils constructor called
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: FastJSON Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Library_Name Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: CMS Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: AAG DB Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Default Connection Set
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Markdown Library Loaded
+ERROR - Fri, 8 Nov 2019 23:58:48 -0800: markdown is not available.
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Array Tools Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Audio Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Page Metadata Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Libraries Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: markdown library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: audio library already loaded. Second attempt ignored.
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Art Library Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Construct Audio Data Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: ePub Library Loaded
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Helper loaded: fileHelper
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Helper loaded: arrayHelper
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Helper loaded: galleriaHelper
+REQUESTED: - Fri, 8 Nov 2019 23:58:48 -0800: view/gurudeva
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: loading gurudeva
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: get record: 0
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: getGurudevaCircleQuote: 0
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: its a app
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: File loaded: /home/devhap/public_html/application/ha/views/media/app-details.lc
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Final output sent to browser
+DEBUG - Fri, 8 Nov 2019 23:58:48 -0800: Total execution time: 0.3019

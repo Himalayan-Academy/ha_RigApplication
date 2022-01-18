@@ -1,0 +1,1861 @@
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: info/default.metadata --> secondary_navigation 
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: info/default.metadata --> title Site Information
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: found metadata file at: /home/devhap/public_html/html/info/contact.metadata
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: info/contact --> template two-column
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: info/contact --> body_class skinny
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: info/contact --> top_navigation >Monastery<
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: info/contact --> page_heading Contact Us
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: info/contact --> sidebar monastery/monastery-sidebar.html
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: info/contact --> title Kauai's Hindu Monastery
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: fetching page:  info/contact
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: loading external page: /home/devhap/public_html/html/info/contact.html
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: external file was loaded as:  <h1 class="h1">
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: looking metadata for /info/contact
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: Total execution time: 0.1381
+DEBUG=SLIDESHOW - Fri, 3 Jul 2020 23:17:57 -0700: 0.617 
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: File loaded: /home/devhap/public_html/application/ha/views/media/galleria-load-twelve-assets.lc
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: looking metadata for /monastery/about
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:17:57 -0700: Total execution time: 0.2004
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:18:01 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:18:01 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:18:01 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:18:02 -0700: Total execution time: 0.5193
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Router Library Loaded
+ERROR - Fri, 3 Jul 2020 23:19:35 -0700: 404 Page Not Found --> vendor
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:35 -0700: REDIRECT-FAILURE:vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.phpNo match found in the XML map!
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/error-page.lc
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: Total execution time: 0.1049
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: Router Library Loaded
+ERROR - Fri, 3 Jul 2020 23:19:36 -0700: 404 Page Not Found --> vendor
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:19:36 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:20:02 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:20:02 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:20:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Total execution time: 1.0083
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:20:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:20:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:20:03 -0700: Total execution time: 0.4799
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:25:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:25:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:25:03 -0700: Total execution time: 0.4268
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:25:04 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:25:04 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:25:04 -0700: Total execution time: 0.4953
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:30:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:30:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:30:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Total execution time: 0.5168
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:30:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:30:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:30:04 -0700: Total execution time: 0.5419
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:35:02 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:35:02 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Total execution time: 0.5119
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:35:02 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:35:02 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:35:02 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:35:03 -0700: Total execution time: 0.5108
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:40:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:40:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:40:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Total execution time: 0.6671
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:40:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:40:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:40:04 -0700: Total execution time: 0.4286
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:42:37 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:42:37 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:42:37 -0700: Total execution time: 0.4445
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:45:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:45:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Total execution time: 0.4714
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:45:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:45:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:45:04 -0700: Total execution time: 0.4564
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:50:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:50:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:50:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Total execution time: 0.4506
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:50:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:50:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:50:03 -0700: Total execution time: 0.4303
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:50:05 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:50:06 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:50:06 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:50:06 -0700: Total execution time: 0.4321
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:55:02 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:55:02 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:02 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Total execution time: 0.4518
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: No URI present. Default controller set.
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:55:03 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Fetch HTML Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Wordpress XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: arraytools library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: XML-RPC Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Wordpress REST Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: JSON Library 1.0.2b Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Extension loaded: 
+REQUESTED: - Fri, 3 Jul 2020 23:55:03 -0700: 
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: looking metadata for /
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Begin extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: number of tabs: 4
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Tab: Our Gurus
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for tags -> our satgurus
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 20
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Tab: For Teachers
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for title -> history
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 11
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for tags -> teachers
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 6
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Tab: For Parents and Youth
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for tags -> parents
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 23
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for tags -> teen
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 1
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for title -> saivite hindu religion
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 4
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Tab: Childrens Books
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: tab node: search
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for media_type -> book
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: search for tags -> children
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: results: 8
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: End extract tabbed content
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: keys:  1
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: value:  tabs
+title
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:55:03 -0700: Total execution time: 0.4474
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Hooks Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Config Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: URI Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Router Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Output Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Input Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Global POST and COOKIE data sanitized
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Language Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Loader Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Controller Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Helper loaded: assetHelper
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Helper loaded: urlHelper
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Database Driver Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Session Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Helper loaded: stringHelper
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: A session cookie was not found.
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Session routines successfully run.
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Utils Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Utils constructor called
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: FastJSON Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Get Set Page Header and Navigation Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Dotted Slideshow Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Page Metadata Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: CMS Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: AAG DB Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Default Connection Set
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Markdown Library Loaded
+ERROR - Fri, 3 Jul 2020 23:55:31 -0700: markdown is not available.
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Array Tools Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Audio Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: pagemetadata library already loaded. Second attempt ignored.
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Lexicon Auxiliary Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Libraries Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: LoremPixel Library Loaded
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Helper loaded: galleriaHelper
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Fetch HTML Library Loaded
+REQUESTED: - Fri, 3 Jul 2020 23:55:31 -0700: info/copyright
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Loading fetchhtml library
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: page to load: info/copyright
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: looking for /home/devhap/public_html/html/info/default.metadata
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: found metadata file at: /home/devhap/public_html/html/info/default.metadata
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/default.metadata --> body_class skinny
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/default.metadata --> template two-column
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/default.metadata --> top_navigation >Monastery<
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/default.metadata --> page_heading Site Information
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/default.metadata --> secondary_navigation 
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/default.metadata --> title Site Information
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: found metadata file at: /home/devhap/public_html/html/info/copyright.metadata
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/copyright --> template two-column
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/copyright --> body_class skinny
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/copyright --> top_navigation >Monastery<
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/copyright --> page_heading Copyright and Permissions Guidelines
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/copyright --> sidebar monastery/monastery-sidebar.html
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: info/copyright --> title Kauai's Hindu Monastery
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: fetching page:  info/copyright
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: loading external page: /home/devhap/public_html/html/info/copyright.html
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: external file was loaded as:  <h1 class="h1">To reprint or use our materials</h1> 
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: looking metadata for /info/copyright
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Helper loaded: arrayHelper
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Helper loaded: fileHelper
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/two-column.lc
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Final output sent to browser
+DEBUG - Fri, 3 Jul 2020 23:55:31 -0700: Total execution time: 0.1477

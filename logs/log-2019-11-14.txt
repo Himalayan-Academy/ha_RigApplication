@@ -1,0 +1,47 @@
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: results: 1
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for tags -> teen
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for title -> saivite hindu religion
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: results: 1
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for title -> saivite hindu religion
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: results: 4
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: Tab: Childrens Books
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for tags -> children
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: results: 4
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: Tab: Childrens Books
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: tab node: search
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: search for tags -> children
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: results: 6
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: End extract tabbed content
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: keys:  1
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: value:  tabs
+title
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: It:
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: results: 6
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: End extract tabbed content
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: keys:  1
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: value:  tabs
+title
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Thu, 14 Nov 2019 23:55:12 -0800: It:
+DEBUG - Thu, 14 Nov 2019 23:55:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 14 Nov 2019 23:55:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 14 Nov 2019 23:55:22 -0800: Final output sent to browser
+DEBUG - Thu, 14 Nov 2019 23:55:22 -0800: Total execution time: 9.5858
+DEBUG - Thu, 14 Nov 2019 23:55:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Thu, 14 Nov 2019 23:55:22 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Thu, 14 Nov 2019 23:55:22 -0800: Final output sent to browser
+DEBUG - Thu, 14 Nov 2019 23:55:22 -0800: Total execution time: 9.8591

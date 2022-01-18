@@ -1,0 +1,65 @@
+<!--
+--This page is meant to take over the main-content div for 
+-- and given single book. The page content is dynamically generated from the model.
+-- I did something out of the box here and am using gBookData instead of gData
+-- i don't know if that breaks the rules, but I did not  know how to 
+-- get and array into and array and then actually get the data back out from
+-- gData[someArray] 
+-->
+
+<div id="main-content">
+
+
+<div id="main-book-container">	
+	<div id="description"><span id="loader">Loading Book, please wait...</span><iframe onload="$('#loader').hide();" name="web-viewer" style="border: 0px solid #ffffff;width:100%;height:900px;" src="[[ gData["url"] ]]"></iframe></div>
+
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	
+
+
+
+</div> <!--end main-book-container -->
+
+<!-- 
+<div id="right-side-bar">
+<h1 class="title"> Other Links</h1>
+<br />
+<p><a href="http://dev.himalayanacademy.com/books/" target="_top"><b>Design One</b></a> | <a href="http://dev.himalayanacademy.com/books/two" target="_top"><b>Design Two</b></a><br /><br />
+<b>With top video banner:</b><br /><br />
+<a href="http://dev.himalayanacademy.com/books/three" target="_top"><b>Design Three</b></a> | <a href="http://dev.himalayanacademy.com/books/four" target="_top"><b>Design Four</b></a>
+
+
+<hr />
+<h2 class="sub-title">Genious Links?</h2>
+<ul id="genious-links">
+<li>Similar Titles?</li>
+<li>Latest Titles?</li>
+</ul>
+<br />
+<hr />
+		<p><b>Other Book Sites</b></p>
+
+<ul>
+	<li><a href="http://www.amazon.com/Ford-County-Stories-John-Grisham/dp/0307702103/ref=tmm_abk_title_0?ie=UTF8&amp;qid=1292733602&amp;sr=1-2">Amazon</a></li>
+	<li> <a href="http://www.harpercollins.com/books/Memories-Before-After-Sound-Music-Agathe-Von-Trapp/?isbn=9780061998812">Harper Collins</a> </li>
+	<li> <a href="http://www.randomhouse.com/catalog/results.pperl?cat_id_ex=health:90000038644">Random House</a> </li>
+	
+	<a href="http://us.penguingroup.com/nf/Book/BookDisplay/0,,9781436265508,00.html">Penguin</a>
+</ul>
+
+<hr />
+<br /><br />
+<p> <b>Scrolling catalog</b> of all books? </p>
+<br /><br />
+<p> <b>Results of constrained search</b> or Genius Links choices are posted here from the database?</p>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+ -->
+
+
+
+</div> 
+
+
+
+

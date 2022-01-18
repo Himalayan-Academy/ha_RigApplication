@@ -1,0 +1,27 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+
+
+	
+	<div class="page-wrapper">
+	
+		<section class="page-content" role="main">
+			<style type="text/css">
+			.search_error {
+				padding: 15px;
+			}
+			</style>
+			<div class="search_error">
+				<h2>No results for your search</h2>
+			</div>
+											
+		</section> <!-- end page content -->
+	
+	</div> <!-- end page wrapper -->
+	
+
+
+	<?
+	return rigLoadView("sitewide/footer", TRUE)
+	?>

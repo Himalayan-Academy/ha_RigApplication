@@ -1,0 +1,9 @@
+<li class="item">
+  <span><? 
+    set the itemdel to slash
+    return item 1 of gData["item"]["media_type"] 
+    ?>
+  </span>
+  <h1><a href="/view/[[gData["item"]["file_id"] ]]">[[ gData["item"]["title"] ]]</a></h1>
+  <p><? return word 1 to 30 gData["item"]["description"] && "..." ?></p>
+</li>

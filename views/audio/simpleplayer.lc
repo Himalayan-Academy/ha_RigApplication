@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>Simple Audio Player</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script> 
+    	<script src="/assets/js/mejs/mediaelement-and-player.min.js"></script>
+    	<link  href="/assets/js/mejs/mediaelementplayer.min.css" rel="Stylesheet" />
+    	<link  href="/assets/js/mejs/mejs-skins.css" rel="Stylesheet" />
+    	<meta http-equiv="content-type" content="text-html; charset=utf-8">
+  
+  </head>
+  <body>
+  <div class="page-container" style="width:500px;">
+    <h1 style="height:40px; padding:5px; color:#FFFFFF; background-color: #daa555;">[[ gData["title"] ]]</h1>
+  [[ gData["dateDisplay"] ]]
+<div class="audio-player">
+    <audio controls="control" preload="none" src="[[ gData["file_path"] ]]" type="[[ gData["format_mime"] ]]" >
+    </audio>
+    <script type="text/javascript">
+    $(document).ready(function () {
+               var mePlayer = $('audio').mediaelementplayer();
+           });   
+    </script>
+    
+</div> <!-- end audio-player -->
+
+
+
+<div class=audio-info">
+    
+    <p title="Right-Click or Control Click and Choose Save Link As">
+   	 <b><a href="[[ gData["file_path"] ]]">Download Sound File</a></b> 
+   	 
+   	 <!--(File id: <b>[[ gData["file_id"] ]]</b>)-->
+    </p>
+    
+<!--These sections only display if present in dBase. Edit: ./system/application/libraries/construct-audio-data.lc to change the display chunks.These classes do not exist in the CSS but you could use them later to handle for different contexts for mobile --> 
+
+ 	
+   
+	[[ gData["modelDisplay"] ]] 
+          
+	<div class="audio-info"> 
+		<ul>
+	 		[[ gData["musicInfoDisplay"] ]] 
+		</ul>      
+			[[ gData["descriptionDisplay"] ]]
+	</div> <!-- end song-info -->
+
+	<div class="transcript">   
+	[[ gData["transcriptDisplay"] ]]
+</div> <!-- end transcript -->
+
+	<div class="lyrics">  
+	[[ gData["lyricsDisplay"] ]]    
+</div> <!-- end lyrics -->
+
+<!-- the following only shows at the end of the page for Natchintanai, 
+ otherwise, empty: -->
+
+	[[ gData["modelNoteDisplay"] ]]
+
+</div> <!-- end audio-info -->
+
+
+    </div>
+  </body>
+</html>

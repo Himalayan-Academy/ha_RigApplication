@@ -1,0 +1,160 @@
+<?
+return rigLoadView("sitewide/doc-head", TRUE)
+?>
+		
+<div class="page-wrapper">
+	
+<section class="page-content" role="main">
+		
+			<div class="wrapper">
+							
+			<section class="<?return featuredItemModuleClassForMediaType(gData["modules"]["Featured Item Module"]["media_type"])?>">
+			
+			    [[ gData["modules"]["Featured Item Module"]["Media"] ]]
+				<article class="content-article">
+								
+					<header class="article-header">
+						
+						<hgroup>						
+							<h2 class="h2">Featured <?return featuredItemModuleTitleForMediaType(gData["modules"]["Featured Item Module"]["media_type"]) ?></h2>
+							<h1 class="h1"><a href="/view/[[ gData["modules"]["Featured Item Module"]["file_id"] ]]">[[ gData["modules"]["Featured Item Module"]["Title"] ]]</a></h1>
+							<h5 class="byline">[[ gData["modules"]["Featured Item Module"]["Author"] ]]</h5>
+						</hgroup>
+					
+					</header>
+					
+					<div class="article-body">
+						
+						<p>[[ gData["modules"]["Featured Item Module"]["Description"] ]]</p>
+						
+						<div class="share share-options"><a class="open-menu" href="#">Share</a>
+							<ul class="social nojs">
+								<!-- Facebook -->
+								<div id="fb-root"></div>
+								<script>(function(d, s, id) {
+								  var js, fjs = d.getElementsByTagName(s)[0];
+								  if (d.getElementById(id)) return;
+								  js = d.createElement(s); js.id = id;
+								  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+								  fjs.parentNode.insertBefore(js, fjs);
+								}(document, 'script', 'facebook-jssdk'));</script>
+								<div class="fb-like" data-href="<?return urlencode("http://" & $_SERVER["SERVER_NAME"] & $_SERVER["REQUEST_URI"]) ?>" data-send="false" data-layout="button_count" 
+								data-width="90" data-show-faces="false" data-font="lucida grande" data-action="like"></div>
+								<!-- End of Facebook -->
+								
+								<!-- Google Plus -->
+								<!-- Place this tag where you want the +1 button to render. -->
+								<div class="g-plusone"></div>
+								<!-- Place this tag after the last +1 button tag. -->
+								<script type="text/javascript">
+								  (function() {
+								    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+								    po.src = 'https://apis.google.com/js/plusone.js';
+								    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+								  })();
+								</script>
+								<!-- End of Google Plus -->
+								
+								
+								<!-- Twitter -->
+								<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);} }(document,"script","twitter-wjs");</script>
+								<!-- End of Twitter -->
+							</ul>
+						</div>
+
+						<a class="share" href="mailto:?subject=[[ gData["record"]["Title"] ]]%20from%20Kauai's%20Hindu%20Monastery&body=[[ gData["record"]["Title"] ]]%20from%20Kauai's%20Hindu%20Monastery%0D[[ "http://" & $_SERVER["HTTP_HOST"] & "/view/" & gData["record"]["file_id"] ]]">Email</a>
+					
+					</div> <!-- end article body -->
+					
+					<div class="article-footer">
+						<?
+						if gData["modules"]["Featured Item Module"]["CTA"] is not empty then
+							return the merge of format("<a class=\"action\" href=\"[[ gData[\"modules\"][\"Featured Item Module\"][\"CTA_link\"] ]]\">[[ gData[\"modules\"][\"Featured Item Module\"][\"CTA\"] ]]</a>")
+						end if
+						?>
+					</div>
+				
+				</article>
+				
+			</section> <!-- end featured video -->
+					
+			
+													
+				
+				
+			</div> <!-- end page content wrapper -->
+											
+		</section> <!-- end page content -->	
+        
+        <!-- Begin new content -->
+        <?
+        repeat for each key x in gData["modules"]["Tabbed Content Modules"]
+            put emitTabbedContentModuleHTML(gData["modules"]["Tabbed Content Modules"][x]["tabs"], gData["modules"]["Tabbed Content Modules"][x]["title"]) after tTemp
+        end repeat
+        return tTemp
+        ?>
+        <!-- Begin new content -->
+
+			
+		
+			<div class="wrapper">
+			
+<section class="more-links">
+				
+					<div class="column">
+					
+						<h3 class="h3">Other Popular Resources</h3>
+					
+						<ul>
+<li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTVdnPQzxgqYlwqvo5otU7IXfS8t7CEdG938Osb-vpWCjzsHffCtmw1Hsv8bZGKMTBtGVchl5qa7PKK/pubhtml">Read All Our Works</a></li>
+<li><a href="/readlearn/panchangam">Our Hindu Calendar</a></li>
+<li><a href="/view/lexicon">Hindu Lexicon</a></li>
+<li><a href="/view/dancing-with-siva">Dancing with Siva</a></li>
+<li><a href="/view/living-with-siva">Living with Siva</a></li>
+<li><a href="/view/merging-with-siva">Merging with Siva</a></li>
+<li><a href="/view/hindu-basics">Hindu Basics</a></li>
+<li><a href="/view/loving-ganesha">The Elephant-faced God</a></li>
+<li><a href="/view/lemurian-scrolls">Lemurian Scrolls</a></li>
+<li><a href="/readlearn/shum">Shum, The Language of Meditation</a></li>
+
+
+						</ul>
+					
+					</div>
+					
+					<div class="column">
+					
+						<h3 class="h3">Quick Links</h3>
+					
+						<ul>
+<li><a href="/readlearn/books/epub-info">How to Install ebooks</a></li>
+<li><a href="/livespiritually/become-student">Become a Student</a></li>
+<li><a href="/readlearn/basics">Basics of Hinduism</a></li>
+<li><a href="/livespiritually/meditation">Learning to Meditate</a></li>
+<li><a href="/monastery/about">About the Monastery</a></li>
+<li><a href="http://www.hinduismtoday.com/">Hinduism Today Magazine</a></li>
+<li><a href="/looklisten/art-photos">Art and Photo Galleries</a></li>
+<li><a href="/looklisten/chanting-songs">Chanting and Songs</a></li>
+<li><a href="/view/iraivan_2012-02-03_main-slide-show">Take a Virtual Tour</a></li>
+<li><a href="/livespiritually/monastic-life/how-to">How to Become a Monk</a></li>
+<li><a href="/looklisten/gurus-talks">Inspired Talks by Our Gurus</a></li>
+<li><a href="/readlearn/other-languages">In Other Languages</a></li>
+<li><a href="/readlearn/for-the-media">For the Media</a></li>
+
+						</ul>
+					
+					</div>
+				
+				</section> <!-- end more links -->
+			
+			</div>	
+				
+			
+	</div> <!-- end page wrapper -->
+	
+	
+
+<?
+return rigLoadView("sitewide/footer", TRUE)
+?>

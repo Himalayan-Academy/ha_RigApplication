@@ -1,0 +1,87 @@
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for tags -> our satgurus
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for title -> history
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 11
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for tags -> teachers
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 20
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: Tab: For Teachers
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for title -> history
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 6
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: Tab: For Parents and Youth
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for tags -> parents
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 11
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for tags -> teachers
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 6
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: Tab: For Parents and Youth
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 21
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for tags -> teen
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 1
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for title -> saivite hindu religion
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 21
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for tags -> teen
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 4
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: Tab: Childrens Books
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for tags -> children
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 1
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for title -> saivite hindu religion
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 6
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: End extract tabbed content
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: keys:  1
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: value:  tabs
+title
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: It:
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 4
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: Tab: Childrens Books
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: tab node: search
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for media_type -> book
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: search for tags -> children
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: results: 6
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: End extract tabbed content
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: keys:  1
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: value:  tabs
+title
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/doc-head.lc
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/home-page-head-ddd.lc
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/global-navigation.lc
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: Result:invalid URL: 
+DEBUG - Mon, 9 Dec 2019 23:55:12 -0800: It:
+DEBUG - Mon, 9 Dec 2019 23:55:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Mon, 9 Dec 2019 23:55:18 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 9 Dec 2019 23:55:18 -0800: Final output sent to browser
+DEBUG - Mon, 9 Dec 2019 23:55:18 -0800: Total execution time: 16.2398
+DEBUG - Mon, 9 Dec 2019 23:55:19 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Mon, 9 Dec 2019 23:55:19 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 9 Dec 2019 23:55:19 -0800: Final output sent to browser
+DEBUG - Mon, 9 Dec 2019 23:55:19 -0800: Total execution time: 16.7334
+DEBUG - Mon, 9 Dec 2019 23:55:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Mon, 9 Dec 2019 23:55:27 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 9 Dec 2019 23:55:27 -0800: Final output sent to browser
+DEBUG - Mon, 9 Dec 2019 23:55:27 -0800: Total execution time: 15.4512
+DEBUG - Mon, 9 Dec 2019 23:55:28 -0800: File loaded: /home/devhap/public_html/application/ha/views/home/main-content.lc
+DEBUG - Mon, 9 Dec 2019 23:55:28 -0800: File loaded: /home/devhap/public_html/application/ha/views/sitewide/footer.lc
+DEBUG - Mon, 9 Dec 2019 23:55:28 -0800: Final output sent to browser
+DEBUG - Mon, 9 Dec 2019 23:55:28 -0800: Total execution time: 16.0070
