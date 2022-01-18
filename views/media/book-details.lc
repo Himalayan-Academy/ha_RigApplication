@@ -185,7 +185,7 @@ return rigLoadView("sitewide/doc-head", TRUE)
 							<?
 								put empty into tBuf
 
-								if   gData["record"]["tags"] is not empty then
+								if gData["record"]["tags"] is not empty then
 									put "<h4 class='h4'>Related Media:</h4>" into tBuf
 									put "<ul>" after tBuf
 									repeat for each item x in  gData["record"]["tags"]
@@ -216,7 +216,7 @@ return rigLoadView("sitewide/doc-head", TRUE)
 									put "</ul>" after tBuf
 								end if
 								return tBuf
-										?>
+							?>
 						</div>
 						<?
 							put empty into tBuf
