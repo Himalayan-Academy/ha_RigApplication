@@ -7,7 +7,8 @@ function alertsize(pixels){
 <style type="text/css">
 	#webapp {
 		width: 100%;
-		height: auto;
+		height: 775px;
+		max-height: unset !important;
 	}
 </style>
 <iframe id="webapp" src="/media/apps/[[ gData["record"]["file_id"] ]]/web/[[ gData["temporary"]["hash"] ]]"></iframe>
