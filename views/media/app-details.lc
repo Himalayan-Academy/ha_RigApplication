@@ -184,51 +184,38 @@ return rigLoadView("sitewide/doc-head", TRUE)
 								<?
 								put empty into tBuf
 							
-								if   gData["record"]["tags"] is not empty then
+								if gData["record"]["tags"] is not empty then
 									put "<h4 class='h4'>Related Media:</h4>" into tBuf
 									put "<ul>" after tBuf
 									repeat for each item x in  gData["record"]["tags"]
 									if char 1 of x = space then delete char 1 of x
 									put x into tQueryString
-									replace " " with "+" in tQueryString
-								
+									replace " " with "+" in tQueryString								
 									put format("<li> <a href=\"/site/search/tags/%s\">%s</a></li>\n",tQueryString,x)  after tBuf
 									end repeat
 									put "</ul>" after tBuf
-						
 								end if
 								return tBuf
 								?>
 								</div>
 
 								<div class="related-topics column">
-										<?
-								put empty into tBuf
-								put  gData["record"]["category"] into x
-								if  x is not empty then								
-									put "<h4 class='h4'>In Category:</h4>" into tBuf
-									put "<ul>" after tBuf
-									if char 1 of x = space then delete char 1 of x
-									put x into tQueryString
-									replace " " with "+" in tQueryString
-									put format("<li> <a href=\"/site/search/category/%s\">%s</a></li>\n",tQueryString,x)  after tBuf							
-									put "</ul>" after tBuf						
-								end if
-								return tBuf
-										?>
+								<?
+									put empty into tBuf
+									put  the keys of gData["record"]["categories"] into tKeys
+									if  tKeys is not empty then
+										put "<h4 class='h4'>In Category:</h4>" into tBuf
+										put "<ul>" after tBuf
+										repeat for each key tKey in gData["record"]["categories"]
+											put gData["record"]["categories"][tKey] into tC
+											put format("<li> <a href=\"/site/category/%s/page/1\">%s</a></li>\n",tC["category_id"],tC["name"])  after tBuf
+										end repeat
+										put "</ul>" after tBuf
+									end if
+									return tBuf
+								?>
+
 								</div>
-							<?
-							put empty into tBuf
-							if gData["review"]["sales_blurb"] is not empty then
-								put format("<figure class=\"quote quote-photo float-right\">") into tBuf
-								put format("<img src=\"%s\" alt=\"Photo of ... \" />", gData["review"]["circle image"]) after tBuf
-								put format("<blockquote>%s</blockquote>", gData["review"]["sales_blurb"]) after tBuf
-								put format("<figcaption>&#8212;%s</figcaption>", gData["review"]["author"]) after tBuf
-								put format("</figure>") after tBuf
-								put format("<a class=\"action reviews\" href=\"/reviews/%s\">More Reviews and comments</a>", gData["record"]["file_id"]) after tBuf
-							end if
-							return tBuf
-							?>
 						
 						</footer>
 					

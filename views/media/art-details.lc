@@ -179,6 +179,21 @@ return rigLoadView("sitewide/doc-head", TRUE)
 									end if
 									return tBuf
 								?>
+									<hr>
+										<?
+								put empty into tBuf
+								put  gData["record"]["category"] into x
+								if  x is not empty then								
+									put "<h4 class='h4'>In Category:</h4>" into tBuf
+									put "<ul>" after tBuf
+									if char 1 of x = space then delete char 1 of x
+									put x into tQueryString
+									replace " " with "+" in tQueryString
+									put format("<li> <a href=\"/site/search/category/%s\">%s</a></li>\n",tQueryString,x)  after tBuf							
+									put "</ul>" after tBuf						
+								end if
+								return tBuf
+										?>
 								</div>
 
 								<figure class="quote quote-photo float-right">
