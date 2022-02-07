@@ -39,6 +39,7 @@ config/authenticationHooks.lc
 *.log
 *.sql
 *.sqlite
+logs/
 
 # OS generated files #
 ######################
